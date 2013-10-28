@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>CSS List Styles</title>
+</head>
+	<body>
+		<ul class="nav">
+			<li class="currentPage"><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="work.html">Work</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<style type="text/css">
+			/*
+				With CSS style this nav similar to the answer
+				Note that there is a hover state
+				There is also a list item with the class of current page which gets styled differently
+				Use whatever colours you want
+			*/
+
+			body {
+				background:#FDCFA9;
+			}
+			ul {
+				padding:0;
+				margin:20px;
+				text-align: center;
+			}
+				ul li {
+					display:inline;
+				}
+					ul li a {
+						background:#75523D;
+						padding:10px;
+						color:white;
+						border-radius: 2px;
+						margin:0 10px;
+						font-family: sans-serif;
+						text-decoration: none;
+						border-top:2px solid #5C3B28;
+						font-size:20px;
+					}
+
+					ul li a:hover {
+						background:#678686;
+						border-top:2px solid #426161;
+					}
+
+					ul li.currentPage a {
+						font-weight:600;
+						background:#776C7B;
+						border-top:2px solid #5C515F;
+					}
+		</style>
+	</body>
+</html>

@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+*{margin:0;padding:0;}
+body {
+	font:13.34px helvetica,arial,freesans,clean,sans-serif;
+	color:black;
+	line-height:1.4em;
+	background-color: #F8F8F8;
+	padding: 0.7em;
+}
+p {
+	margin:1em 0;
+	line-height:1.5em;
+}
+table {
+	font-size:inherit;
+	font:100%;
+	margin:1em;
+}
+table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+select,option{padding:0 .25em;}
+optgroup{margin-top:.5em;}
+pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+pre {
+	margin:1em 0;
+	font-size:12px;
+	background-color:#eee;
+	border:1px solid #ddd;
+	padding:5px;
+	line-height:1.5em;
+	color:#444;
+	overflow:auto;
+	-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;border-radius:3px;
+}
+pre code {
+	padding:0;
+	font-size:12px;
+	background-color:#eee;
+	border:none;
+}
+code {
+	font-size:12px;
+	background-color:#f8f8ff;
+	color:#444;
+	padding:0 .2em;
+	border:1px solid #dedede;
+}
+img{border:0;max-width:100%;}
+abbr{border-bottom:none;}
+a{color:#4183c4;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a code,a:link code,a:visited code{color:#4183c4;}
+h2,h3{margin:1em 0;}
+h1,h2,h3,h4,h5,h6{border:0;}
+h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+h3{margin-top:1em;}
+hr{border:1px solid #ddd;}
+ul{margin:1em 0 1em 2em;}
+ol{margin:1em 0 1em 2em;}
+ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+dt{font-weight:bold;margin-left:1em;}
+dd{margin-left:2em;margin-bottom:1em;}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+  .solution, .solution code {color: #F8F8F8;}
+  .solution pre {color: #eee;}
+  .solution:hover {color: black;}
+  .solution:hover code, .solution:hover pre {color: black;}
+</style>
+<title>Week 5, Day 1: Control Flow</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>Week 5, Day 1: Control Flow</h1>
+
+<p>You have written a few programs -- congratulations! It's time to learn a very powerful programming concept but the console is an awkward place to write a lot of code. We need a more convenient way of writing Javascript.</p>
+
+
+<p>JavaScript can be included inside of HTML files in two ways:</p>
+
+<ul>
+<li>Linking to a JavaScript file (.js extension): <code>&lt;script type="text/javascript"
+  src="app.js"&gt;&lt;/script&gt;</code></li>
+<li>Using <code>&lt;script&gt;&lt;/script&gt;</code> tags like so: <code>&lt;script&gt; // JavaScript code in here &lt;/script&gt;</code></li>
+</ul>
+
+
+<h2>Boolean</h2>
+
+<p>Our code so far is executed top to bottom. If that's all we could do then our programs would be limited. This is where <strong>control flow</strong> comes in. We can write code so that a statement or group of statements is only executed if a logical condition is true (or false).</p>
+
+<p>A type of value that we need for conditionals is the <strong>boolean</strong> type. This type has two possible values: <code>true</code> or <code>false</code>. <strong>Boolean expressions</strong> produce boolean values. For example, when checking if two numbers are equal the value returned should be either true or false.</p>
+
+<h3>Comparison operators</h3>
+
+<ul>
+<li>Check equality with <code>===</code> (equal) and <code>!==</code> (not-equal)</li>
+<li>Check inequality with <code>&gt;=</code> <code>&lt;=</code> <code>&gt;</code> <code>&lt;</code> (greater than and less than)</li>
+</ul>
+
+
+<p><strong>Exercises</strong>: Write two expressions that return the boolean value <code>false</code> and two that return <code>true</code>.</p>
+
+<p>Solution:</p>
+
+<div class="solution">
+
+<pre>
+> 55 >= 65;
+false
+> "hello" === "bye";
+false
+> 2 !== "2";
+true
+> 2 > 1.5;
+true
+</pre>
+
+</div>
+
+
+<h2>Conditional statements</h2>
+
+<p>Now that you're familiar with booleans, it's time to meet <strong>conditional statements</strong>. Simply put, these statements allow us to run a statement or group of statements only when a condition is true (or false).</p>
+
+<p>This is what they look like:</p>
+
+<pre><code>if (condition) {
+    // block statement
+} else {
+    // block statement
+}
+</code></pre>
+
+
+<p>Let's break that down.</p>
+
+<ol>
+<li><code>if</code> is a keyword</li>
+<li><code>condition</code> is usually a boolean expression</li>
+<li><code>block statement</code> will be explained below</li>
+<li><code>else</code> is a keyword. a synonym in english would be "otherwise".</li>
+<li>another <code>block statement</code>. Note that the <code>else</code> block is optional.</li>
+</ol>
+
+
+<p><img src="control-flow.png" alt="image" /></p>
+
+<h3>Block Statements</h3>
+
+<p>A block statement is used to group statements. The block is delimited by a pair of curly brackets:</p>
+
+<pre><code>{
+   statement_1;
+   statement_2;
+   .
+   .
+   .
+   statement_n;
+}
+</code></pre>
+
+<p><strong>Exercises</strong>: Complete the following exercises in pairs. Put your code between <code>&lt;script&gt;</code> tags inside of an HTML file.</p>
+
+
+<ol>
+<li>Consider the code below; what is printed to the console?</li>
+</ol>
+
+
+<pre><code>var n = 4;
+if (n &gt; 10) {
+    console.log("That's a big number");
+} else {
+    console.log("It's a small number");
+}
+</code></pre>
+
+<p>Solution: <span class="solution"><code>"It's a small number"</code> is printed.</span></p>
+
+<ol>
+<li><p>Create a quizzing program. The program asks a question, the user is prompted to answer, the answer is checked and then a score is printed to the console.</p></li>
+<li><p>Consider the code below; what is printed to the console? What is <code>else if</code>?</p></li>
+</ol>
+
+
+<pre><code>var n = 55;
+if (n &gt; 100) {
+    console.log("That's a big number");
+} else if (n &gt; 10 ) {
+    console.log("It's kinda big");
+} else {
+    console.log("It's a small number");
+}
+</code></pre>
+
+<p>Solution: <span class="solution"><code>"It's kinda big"</code> is printed. <code>else if</code> is used to add branches to the conditional statement.</span></p>
+
+<ol>
+<li>Create a simple "rock-paper-scissors" game. Prompt the user to enter their choice of "rock", "paper" or "scissors" and store this value in a variable. Always compare the user's input with the value "rock" (we'll work on making this more dynamic later). If the user's input is "paper" then print to the console "You Win!". If the input is "rock" then print "Tie" and print "You Lose" if the user's input is "scissors".</li>
+</ol>
+
+
+<h2>Loops</h2>
+
+<p>Another powerful concept in programming is "loops". With loops, a block of statements is repeatedly executed while a condition is true.</p>
+
+<p><img src="loops.png" alt="image" /></p>
+
+<h3>For Statement</h3>
+
+<pre><code>for (initialExpression; condition; incrementExpression) {
+    // loop statements
+}
+</code></pre>
+
+<p>When a <strong>for loop</strong> executes, the following happens:</p>
+
+<ol>
+<li>The <code>initialExpression</code> is executed. This expression usually initializes one or more loop counters. <em>This expression can also declare variables.</em></li>
+<li>The <code>condition</code> expression is evaluated. If the value of condition is <code>true</code>, the <code>loop statements</code> execute. If the value of condition is <code>false</code>, the for loop terminates.</li>
+<li>The <code>incrementExpression</code> executes and control returns to step 2.</li>
+</ol>
+
+
+<p>Let's look at an example:</p>
+
+
+<p>Before running the code below predict what would happen.</p>
+
+<pre><code>for (var i = 0; i &lt; 10; i = i + 1) {
+    console.log(i);
+}
+</code></pre>
+
+<p><strong>Exercises</strong>:
+Complete the following exercises in pairs.</p>
+
+<p><strong>Level 1</strong>. Print the numbers between 1 and 10 in reverse (i.e. starting with 10). The output should look something like this:</p>
+
+<pre><code>10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+</code></pre>
+
+<p>Solution:</p>
+
+<div class="solution">
+<pre>
+for(var i = 10; i > 0; i--){
+  console.log(i);
+}
+<pre>
+</div>
+
+
+<p><strong>Level 2</strong>. Print the even numbers between 1 and 20. The output should look something like this:</p>
+
+<pre><code>2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+</code></pre>
+
+<p>Hint: Look up modulo.</p>
+
+<p>Solution:</p>
+
+<div class="solution">
+<pre>
+for(var i = 1; i <= 20; i++){
+  if(i % 2 === 0){
+    console.log(i);
+  }
+}
+</pre>
+</div>
+
+
+<p><strong>Level 3</strong>. Print the numbers from 1 to 100. But for multiples of 3 print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiple of both 3 and 5, print “FizzBuzz”. The output should look something like this:</p>
+
+<pre><code>1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+...
+</code></pre>
+
+<p>Hints: Look up combining boolean expressions with &amp;&amp;. Also look up modulo.</p>
+
+<p>Solution:</p>
+
+<div class="solution">
+<pre>
+for(var i = 1; i < 100; i++){
+  if(i%3 === 0 && i%5 === 0){
+    console.log("FizzBuzz");
+  }
+  else if(i%3 === 0) {
+    console.log("Fizz");
+  }
+  else if(i%5 === 0){
+    console.log("Buzz");
+  }
+  else {
+    console.log(i);
+  }
+}
+<pre>
+</div>
+
+
+<h3>While Statement</h3>
+
+<pre><code>while (condition) {
+   // loop statements
+}
+</code></pre>
+
+<p>A while loop is much simpler. The block executes repeatedly as long as the condition is true.</p>
+
+<p><strong>DANGER!!</strong> If the condition is never false then the while loop will keep going and your browser will crash. This is called an <strong>infinite loop</strong>. If you do get an infinite loop then go to "Window => Task Manager" in the browser, select the Task that is using a lot of CPU and click "End Process".</p>
+
+<p>Let's look at an example:</p>
+
+<pre><code>var i = 0;
+while (i &lt; 10) {
+    console.log(i);
+    i = i + 1;
+}
+</code></pre>
+
+<p>When <code>i === 9</code> the block executes one final time, 9 is printed and <code>i</code> is incremented to 10. The block doesn't execute anymore because the condition is false BUT the value from the last executed expression is returned (that's why <code>10</code> has a little arrow beside it). To test this, try this code:</p>
+
+<pre><code>var i = 0;
+while (i &lt; 10) {
+    console.log(i);
+    i = i + 1;
+    "this value is returned!";
+}
+</code></pre>
+
+
+<h3>Break Statement</h3>
+
+<p>We can terminate a loop at any time by using the break statement. For example:</p>
+
+<pre><code>var number = 23;
+while (true) {
+    number = number + 1
+  if (number % 9 == 0) {
+    break;
+  }
+}
+</code></pre>
+
+<p>The above example would be an infinite loop (because true is always true!) but the break statement terminates the loop when the number is divisible by 9. The returned value (27) is greater than 23 and divisible by 9.</p>
+
+<h3>Syntax</h3>
+
+<p>Don't use semicolons after the if, for, and while statements.</p>
+
+<p><strong>Exercises</strong>:
+Complete the for-loop exercises but this time by using a while-loop. Work in pairs.</p>
+</body>
+</html>

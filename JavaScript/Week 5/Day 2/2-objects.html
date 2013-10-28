@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+*{margin:0;padding:0;}
+body {
+	font:13.34px helvetica,arial,freesans,clean,sans-serif;
+	color:black;
+	line-height:1.4em;
+	background-color: #F8F8F8;
+	padding: 0.7em;
+}
+p {
+	margin:1em 0;
+	line-height:1.5em;
+}
+table {
+	font-size:inherit;
+	font:100%;
+	margin:1em;
+}
+table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+select,option{padding:0 .25em;}
+optgroup{margin-top:.5em;}
+pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+pre {
+	margin:1em 0;
+	font-size:12px;
+	background-color:#eee;
+	border:1px solid #ddd;
+	padding:5px;
+	line-height:1.5em;
+	color:#444;
+	overflow:auto;
+	-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;border-radius:3px;
+}
+pre code {
+	padding:0;
+	font-size:12px;
+	background-color:#eee;
+	border:none;
+}
+code {
+	font-size:12px;
+	background-color:#f8f8ff;
+	color:#444;
+	padding:0 .2em;
+	border:1px solid #dedede;
+}
+img{border:0;max-width:100%;}
+abbr{border-bottom:none;}
+a{color:#4183c4;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a code,a:link code,a:visited code{color:#4183c4;}
+h2,h3{margin:1em 0;}
+h1,h2,h3,h4,h5,h6{border:0;}
+h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+h3{margin-top:1em;}
+hr{border:1px solid #ddd;}
+ul{margin:1em 0 1em 2em;}
+ol{margin:1em 0 1em 2em;}
+ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+dt{font-weight:bold;margin-left:1em;}
+dd{margin-left:2em;margin-bottom:1em;}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+  .solution, .solution code {color: #F8F8F8;}
+  .solution pre {color: #eee;}
+  .solution:hover {color: black;}
+  .solution:hover code, .solution:hover pre {color: black;}
+</style>
+<title>Week 5, Day 2 Objects</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>Week 5, Day 2 Objects</h1>
+
+<p>The <strong>primitive types</strong> of JavaScript values are numbers, strings, booleans (true and false), null (haven't discussed this yet), and undefined. All other values are <strong>objects</strong>.</p>
+
+<p>We can think of objects as containers. Inside the container are <strong>properties</strong> (pairs of names and values).</p>
+
+<p><img src="objects.png" alt="image" /></p>
+
+<p>Another way to think about JavaScript objects is to compare them to real-life objects. An apple is an object and it has properties like colour, size, sugar-content, etc.</p>
+
+<h3>Syntax</h3>
+
+<p>The syntax for creating an object looks like this:</p>
+
+<pre><code>var myObject = {
+    propertyOne: value,
+    propertyTwo: value,
+    propertyThree: value
+}
+</code></pre>
+
+<p>The curly brackets with comma separated properties is the "<strong>object literal</strong>" notation for making objects. There are other ways of making objects which will be covered later.</p>
+
+<p><strong>Note</strong>:</p>
+
+<ul>
+<li>property names are always strings but the quotes are optional if the strings are valid variable names</li>
+<li>the value of an object property can be any of the primitive types or an object (creating a tree structure)</li>
+<li>the last property is not followed by a comma.</li>
+</ul>
+
+
+<p>Here is an example object:</p>
+
+<pre><code>var clothing = {
+    belt: "can't remember",
+    socks: 34,
+    shoes: 2,
+    pants: 3,
+    tShirts: {
+        smallSize: 3,
+        mediumSize: 4,
+        largeSize: 2
+    }
+}
+</code></pre>
+
+<h3>Retrieving values</h3>
+
+<p>To get a property value from an object you need to know the property name. There are two ways to get the value.</p>
+
+<p><strong>Dot-Notation</strong></p>
+
+<p>The generic syntax looks like this:
+<code>
+myObject.propertyName;
+</code></p>
+
+<p>To retrieve the amount of shoes in our clothing object:</p>
+
+<pre><code>&gt; clothing.shoes;
+2
+</code></pre>
+
+<p><strong>Bracket-Notation</strong></p>
+
+<p>The generic syntax looks like this: <code>myObject["propertyName"];</code> <strong>Note that the property name is a string with quotes here.</strong></p>
+
+<p>To retrieve the amount of shoes in our clothing object:</p>
+
+<pre><code>&gt; clothing["shoes"];
+2
+</code></pre>
+
+<p>Bracket-notation is used if the property names require quotes or if they are unknown at runtime (e.g. user's input is used to retrieve a property).</p>
+
+<h3>Updating Values</h3>
+
+<p>To update a property value you just need to know the property name. And again there are two ways to do this.</p>
+
+<p><strong>Dot-Notation</strong>
+Simply assign the value to <code>myObject.propertyName</code>, like this:</p>
+
+<pre><code>myObject.propertyName = new_value;
+</code></pre>
+
+<p>For example, if we bought some new pants then we can update the value like this:</p>
+
+<pre><code>&gt; clothing.pants = 4;
+&gt; clothing.pants;
+4
+</code></pre>
+
+<p><strong>Bracket-Notation</strong></p>
+
+<pre><code>myObject["propertyName"] = new_value;
+</code></pre>
+
+<p>The same example using bracket-notation looks like this:</p>
+
+<pre><code>&gt; clothing["pants"] = 4;
+&gt; clothing["pants"];
+4
+</code></pre>
+
+<p><strong>Exercise 1</strong>:</p>
+
+<p>Create an object called "HackerYou" which contains information about the number of courses offered, age of the school, name of instructor, etc. (any information you want to store really…).</p>
+
+<p>Solution:</p>
+
+<div class="solution">
+<pre>
+var hackerYou = {
+    schoolName: "HackerYou",
+    numberOfCourses: 4,
+    age: 1,
+    nameOfInstructor: "Wes Bos"
+}
+</pre>
+</div>
+
+
+<p><strong>Exercise 2</strong>:</p>
+
+<p>Create an object called "student" which has the properties: <code>id</code>, <code>name</code>, <code>age</code>, <code>GPA</code>, and <code>highSchool</code>. Add some reasonable values to the object. Write an expression that combines retrieving values from your object (e.g. student["id"]) with string concatenation to output a string
+that looks like the following: <code>"The student Homer Simpson (ID: 1) is 15 years old. He has a GPA of 1.4 and is from Springfield High"</code>.</p>
+
+<p>Solution: <span class="solution"><code>"The student " + student["name"] + " " + "(ID: " + student["id"] + ") is " + student["age"] + " years old. He has a GPA of " + student["GPA"] + " and is from " + student["highSchool"] + "."</code></span></p>
+
+<h2>Enumeration</h2>
+
+<p>The <strong>for-in loop</strong> can be used to iterate over the properties of an object and execute a block of statements.</p>
+
+<p>The syntax looks like this:</p>
+
+<pre><code>for (variable in object) {
+  ...
+}
+</code></pre>
+
+<p><strong>Note</strong>:</p>
+
+<ul>
+<li>The property name is assigned to the variable on each iteration.</li>
+<li>There is no guarantee that the properties are retrieved in the same order they were inserted -- don't count on the order to stay the same. Browsers will <em>usually</em> keep the order the same… <em>it's just not guaranteed</em>.</li>
+</ul>
+
+
+<p>Here's an example:</p>
+
+<pre><code>var clothing = {
+    socks: 34,
+    shoes: 2,
+    pants: 3
+}
+
+for (item in clothing) {
+    console.log("I have " + clothing[item] + " " + item);
+}
+</code></pre>
+
+<p>The output looks like this:</p>
+
+<pre><code>I have 34 socks
+I have 2 shoes
+I have 3 pants
+</code></pre>
+
+<p><strong>Exercises</strong>:</p>
+
+<p>The following object is used in the exercises:</p>
+
+<pre><code>var inventory = {
+    apples: 2,
+    oranges: 3,
+    bananas: 6,
+    milk: 2
+}
+</code></pre>
+
+<p><strong>Level 1</strong>
+Use the inventory object to print a string that looks like this: <code>"We have 2 apples, 3 oranges, 6 bananas, and 2 milk in stock."</code></p>
+
+<p>Solution: <span class="solution"><code>"We have " + inventory.apples + " apples, " + inventory.oranges + " oranges, " +inventory.bananas + " bananas, and " + inventory.milk + " milk in stock."</code></span></p>
+
+<p><strong>Level 2</strong>
+Iterate over the inventory object and print a list of the items. The output should look like this:</p>
+
+<pre><code>apples
+oranges
+bananas
+milk
+</code></pre>
+
+<p>Solution:</p>
+
+<div class="solution">
+<pre>
+for (item in inventory) {
+  console.log(item);
+}
+</pre>
+</div>
+
+
+<p><strong>Level 3</strong>
+Create an html table from the inventory object. It should look like this:</p>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Quantity</th>
+  </tr>
+
+  <tr>
+    <td>apples</td>
+    <td>2</td>
+  </tr>
+
+  <tr>
+    <td>oranges</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>bananas</td>
+    <td>6</td>
+  </tr>
+
+  <tr>
+    <td>milk</td>
+    <td>2</td>
+  </tr>
+</table>
+
+
+<p>Solution:</p>
+
+<div class="solution">
+<pre>
+var tableHtml = "&#60;table&#62; &#60;tr&#62; &#60;th&#62;Item&#60;/th&#62; &#60;th&#62;Quantity&#60;/th&#62; &#60;/tr&#62;";
+for (item in inventory) {
+  tableHtml += "&#60;tr&#62; &#60;td&#62;" + item + "&#60;/td&#62; &#60;td&#62;" + inventory[item] + "&#60;/td&#62;&#60;/tr&#62;"
+}
+tableHtml += "&#60;/table&#62;";
+</pre>
+</div>
+
+</body>
+</html>

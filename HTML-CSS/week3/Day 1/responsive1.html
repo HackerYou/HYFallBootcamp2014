@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Responsive Design</title>
+</head>
+	<body>
+		<style type="text/css">
+			/* First we do all of our regular CSS for the basics and desktop site */
+			body {
+				background:purple;
+			}
+			/* Then we use media queries for targeting other resolutions */
+
+			/* Portrait tablet and small desktops */
+			@media (max-width: 940px) {
+				body {
+					background:green;
+				}
+			}
+			 
+			/* Landscape phone to portrait tablet */
+			@media (max-width: 767px) {
+				body {
+					background:red;
+				}
+			}
+			 
+			/* Landscape phones and down */
+			@media (max-width: 480px) {
+				body {
+					background:yellow;
+				}
+			}
+
+
+		</style>
+	</body>
+</html>

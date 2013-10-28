@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Challenge Exercises!</title>
+</head>
+<body>
+  <!-- 
+    This challenge exercise will cover the following:
+    1. box-sizing: border-box;
+    2. Layouts / Floats
+    3. Border Radius
+    4. Floats / Margin / Padding
+    5. Parent Child Selectors
+    6. Typography
+    7. Widths / Heights
+   -->
+
+   <div class="wrapper">
+     
+     <div class="header">
+       <h1>C<span class="even">H</span>A<span class="even">L</span>L<span class="even">E</span>N<span class="even">G</span>E<span class="even">!</span></h1>
+       <img src="http://lorempixel.com/1000/400">
+     </div>
+
+     <div class="content">
+       <p class="featured">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique aperiam nam ducimus obcaecati! Facilis, velit, praesentium rerum similique vel iure repellat tempora adipisci tempore deleniti debitis libero possimus consequuntur odio.</p>
+       
+       <div class="posts">
+         <div class="post post1">
+           <img src="http://nicenicejpg.com/200/200">
+           <h2>Blog Post 1</h2>
+         </div>
+         <div class="post post2">
+           <img src="http://lorempixel.com/200/200">
+           <h2>Blog Post 2</h2>
+         </div>
+         <div class="post post3">
+           <img src="http://placedog.com/200/200">
+           <h2>Blog Post 3</h2>
+         </div>
+         <div class="post post4">
+           <img src="http://lorempixel.com/200/200">
+           <h2>Blog Post 4</h2>
+         </div>
+         <div class="post post5">
+           <img src="http://placedog.com/200/200">
+           <h2>Blog Post 5</h2>
+         </div>
+         <div class="post post6">
+           <img src="http://lorempixel.com/200/200">
+           <h2>Blog Post 6</h2>
+         </div>
+       </div>
+
+     </div>
+     
+     <div class="sidebar">
+        <!-- All the tweets -->
+        <div class="tweets">
+          
+          <!-- Tweet 1 -->
+          <div class="tweet">
+            <a href="http://twitter.com/wesbos" class="author">@wesbos</a>
+            <p>Man I really love HackerYou! Check it out <a href="http://hackeryou.com">hackeryou.com</a></p>
+            <span class="timestamp">02/05/23 4:34pm</span>
+          </div>
+          
+          <!-- Tweet 2 -->
+          <div class="tweet">
+            <a href="http://twitter.com/heatherpayne" class="author">@heatherpayne</a>
+            <p>203 ways that CSS makes you cool <a href="#">http://t.co/234</a></p>
+            <span class="timestamp">02/05/23 5:43am</span>
+          </div>
+          
+          <!-- Tweet 3 -->
+          <div class="tweet">
+            <a href="http://twitter.com/wesbos" class="author">@wesbos</a>
+            <p>16 things that make you nostalgic about the past <a href="#">http://wat.com</a></p>
+            <span class="timestamp">02/05/23 12:00pm</span>
+          </div>
+        </div>
+     </div>
+
+     <div class="footer">
+       <p class="cred">&copy; Your Name Here</p>
+     </div>
+   </div>
+
+
+   <style>
+      /* Make sure you are working with border-box */
+      *, *:before, *:after {
+        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+      }
+
+      /* Set your default styles on the body */
+      body {
+        background:#3498db;
+        font-family:sans-serif;
+        color:#fff;
+      }
+
+      /*
+        Style the wrapper to be 1000px wide
+        Match the style of the answer key
+      */
+      .wrapper {
+        width:800px;
+        margin:20px auto;
+        padding:20px;
+        background:#2980b9;
+      }
+
+      /* Use a parent child selector to make the header image fit. Use a percentage */
+      .header img {
+        width:100%;
+      }
+
+      /*
+        Use a parent child selector to style the text like the answer
+        You will need to search around for the answers to spacing and shadow
+       */
+      .header h1 {
+        text-align: center;
+        color:white;
+        font-size:80px;
+        letter-spacing:20px;
+        text-shadow:4px 4px 0 #2c3e50;
+        margin:0;
+      }
+
+      /*Bonus points if you can figure out how to make every other letter a different colour */
+
+      .header h1 span.even {
+        color:#e74c3c;
+      }
+
+      /* Style the featured paragraph (the first one) as the answer shows */
+      p.featured {
+        font-size:20px;
+        line-height: 1.5;
+      }
+
+      /* Use widths, padding and borders to get the sidebar and content div side by side */
+
+      .content {
+        width:70%;
+        float:left;
+        padding-right:20px;
+        border-right: 1px solid white;
+      }
+
+      .sidebar {
+        width:30%;
+        float:left;
+        padding-left:20px;
+      }
+      
+      /* Style the blog posts, three to a line
+        Hint: you will need to use percentage widths, margin and floats here
+        There are a few ways to do this
+      */
+
+      .post {
+        width:31%;
+        float:left;
+        margin-right:3.5%;
+      }
+
+      .post3, .post6 {
+        margin-right: 0;
+      }
+
+      /* Style the tweets as the answer shows 
+        make note of the styling of the twitter name and timestamp
+      */
+
+      .tweet {
+        background:white;
+        padding:10px;
+        margin:10px 0;
+        border-radius:10px;
+        color:grey;
+      }
+
+      /* Use a parent child selector to style all tweet links differently */
+
+      .tweet a {
+        color:red;
+        text-decoration: none;
+      }
+
+      .tweet a.author {
+        background:#9b59b6;
+        color:white;
+        border-radius:5px;
+        padding:2px;
+      }
+
+      span.timestamp {
+        font-size:11px;
+      }
+
+
+
+
+
+      /* Make the images in the post 100% wide so they don't spill over */
+      .post img {
+        width:100%;
+      }
+
+      /* Clear and style the footer */
+      .footer {
+        clear:both;
+        background:white;
+        color:black;
+        padding:20px;
+        text-align: center;
+      }
+   </style>
+
+
+</body>
+</html>

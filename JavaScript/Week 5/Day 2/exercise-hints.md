@@ -1,0 +1,1 @@
+5. Look up a function called reverse(). While it is not directly applicable to strings, there are other methods you can find to convert the string to something that reverse() will be usable on.

@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+*{margin:0;padding:0;}
+body {
+	font:13.34px helvetica,arial,freesans,clean,sans-serif;
+	color:black;
+	line-height:1.4em;
+	background-color: #F8F8F8;
+	padding: 0.7em;
+}
+p {
+	margin:1em 0;
+	line-height:1.5em;
+}
+table {
+	font-size:inherit;
+	font:100%;
+	margin:1em;
+}
+table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+select,option{padding:0 .25em;}
+optgroup{margin-top:.5em;}
+pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+pre {
+	margin:1em 0;
+	font-size:12px;
+	background-color:#eee;
+	border:1px solid #ddd;
+	padding:5px;
+	line-height:1.5em;
+	color:#444;
+	overflow:auto;
+	-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;border-radius:3px;
+}
+pre code {
+	padding:0;
+	font-size:12px;
+	background-color:#eee;
+	border:none;
+}
+code {
+	font-size:12px;
+	background-color:#f8f8ff;
+	color:#444;
+	padding:0 .2em;
+	border:1px solid #dedede;
+}
+img{border:0;max-width:100%;}
+abbr{border-bottom:none;}
+a{color:#4183c4;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a code,a:link code,a:visited code{color:#4183c4;}
+h2,h3{margin:1em 0;}
+h1,h2,h3,h4,h5,h6{border:0;}
+h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+h3{margin-top:1em;}
+hr{border:1px solid #ddd;}
+ul{margin:1em 0 1em 2em;}
+ol{margin:1em 0 1em 2em;}
+ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+dt{font-weight:bold;margin-left:1em;}
+dd{margin-left:2em;margin-bottom:1em;}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<title>Week 5, Day 3: A simple to-do app with JS and jQuery.</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>Week 5, Day 3: A simple to-do app with JS and jQuery.</h1>
+
+<p>This is a pair programming exercise. In pairs you will follow the instructions below to build a to-do list app. You will get an opportunity at the end to customize it but at first the functionality will be similar for everyone.</p>
+
+<p>Open up <code>to-do-app.html</code>. You'll see that bootstrap and jQuery have already been loaded for you. We've also gone ahead and added the skeleton markup required for the app. The basic app should work like this:</p>
+
+<ul>
+<li>Users type in the input field and press enter.</li>
+<li>As soon as they press enter we'll take their input and add it as a list item to the unordered list under the input field.</li>
+<li>When a user clicks on a list item, the "checkbox" should get filled and the text should turn grey to indicate that the item has been completed.</li>
+</ul>
+
+
+<h3>Document ready</h3>
+
+<p>Let's start by including the "document ready" script so that we are sure our app will work as expected.</p>
+
+<pre><code>$(document).ready(function(){
+    // code goes here
+});
+</code></pre>
+
+<h3>Event binding</h3>
+
+<p>The first thing we need to do is add an event listener to the form. We want to listen to the <code>submit</code> event and then run our code when the form is submitted (i.e. someone pressed enter).</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function() {
+        // do something
+    });
+});
+</code></pre>
+
+<p>For testing purposes let's print something to the console.</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function() {
+        console.log("form is submitted!")
+    });
+});
+</code></pre>
+
+<p>At first this doesn't seem to work and it's hard to debug the issue because we don't see any errors. The problem is that the page is being refreshed when the form submits. So if you look very closely you'll notice that the console shows our printed string for a split second before it is refreshed.</p>
+
+<h3>Prevent defaults</h3>
+
+<p>The default behaviour of a form is a browser refresh so we need to somehow prevent this default behaviour. The callback function to the event listener can optionally give us access to the event that triggered the function. We just need to pass a parameter into the function like so:</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function(event) {
+        // we can now do stuff to the event!
+        console.log("form is submitted!")
+    });
+});
+</code></pre>
+
+<p>Notice that the only different is the <code>event</code> variable. We can call this anything we want. It's just a variable/parameter that holds the event. By convention <code>e</code> is used. The event has a method called <code>preventDefault()</code> which can stop the default behaviour of the <code>submit</code> event.</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+        console.log("form is submitted!")
+    });
+});
+</code></pre>
+
+<p>We should now see <code>form is submitted!</code> in the console. This means that we've prevented the form from refreshing the page.</p>
+
+<h3>Input value</h3>
+
+<p>Instead of printing <code>form is submitted!</code> lets print the value that the user put in the input field. The jQuery documentation has an <code>attributes</code> category which will help here. In there you should find <code>val()</code>. This method will allow us to get the values of form elements.</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+
+        var toDoItem = $('input').val();
+        console.log(toDoItem);
+    });
+});
+</code></pre>
+
+<p>This works but there is a usability issue. After submitting the form users need to empty the input field manually before adding a second item. Let's empty the input field by setting its value to an empty string.</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+
+        var toDoItem = $('input').val();
+        console.log(toDoItem);
+        $('input').val('');
+    });
+});
+</code></pre>
+
+<p>We should only do something if the input value is not empty otherwise we would be adding empty items to our list.</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+
+        if ($('input').val() !== '') {
+            var toDoItem = $('input').val();
+            console.log(toDoItem);
+            $('input').val('');
+        }
+    });
+});
+</code></pre>
+
+<h3>Adding HTML elements</h3>
+
+<p>Lets construct an HTML string using concatenation that will in the end look like this: <code>&lt;li&gt; toDoItem &lt;/li&gt;</code>.</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+
+        if ($('input').val() !== '') {
+            var toDoItem = $('input').val();
+            console.log("&lt;li&gt;" + toDoItem + "&lt;/li&gt;");
+            $('input').val('');
+        }
+    });
+});
+</code></pre>
+
+<p>Instead of printing it to the console lets put these list items inside of our unordered list. In the jQuery API look for "Manipulation". The sub-categories are self explanatory. It should be clear that we're looking for "DOM Insertion, Inside" (because we want to put an element inside of <code>ul</code>).</p>
+
+<p>We want to add list items to the end of <code>ul</code> so <code>append()</code> will do. If we wanted the latest item to be added to the top then we would use <code>prepend()</code>. Let's find the <code>ul</code> element and append the list item inside of it.</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+
+        if ($('input').val() !== '') {
+            var toDoItem = $('input').val();
+            $('ul').append("&lt;li&gt;" + toDoItem + "&lt;/li&gt;");
+            $('input').val('');
+        }
+    });
+});
+</code></pre>
+
+<p>Since we have bootstrap we can add glyphicons indicating that the item is incomplete. <code>&lt;span class='glyphicon glyphicon-unchecked'&gt;&lt;/span&gt;</code> will do the trick.</p>
+
+<pre><code>$(document).ready(function(){
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+
+        if ($('input').val() !== '') {
+            var toDoItem = $('input').val();
+            $('ul').append("&lt;li&gt; &lt;span class='glyphicon glyphicon-unchecked'&gt;&lt;/span&gt;" + toDoItem + "&lt;/li&gt;");
+            $('input').val('');
+        }
+    });
+});
+</code></pre>
+
+<h3>Item completion part 1</h3>
+
+<p>A to-do app is no good if we can't check off items. We need a way change the glyphicon style from <code>glyphicon-unchecked</code> to <code>glyphicon-check</code> when an item is clicked. This means we need another event listener except this time we're listening for a <code>click</code> event. Add the following under your existing code (<strong>inside of the document ready</strong>):</p>
+
+<pre><code>$('li').on('click', function(){
+    // do something here
+});
+</code></pre>
+
+<p>Let's print a string to the console again when an item is clicked. <em>Building code incrementally in small chunks and using the console a lot will ensure that we catch errors and bugs before our code gets too big.</em></p>
+
+<pre><code>$('li').on('click', function(){
+    console.log("an item was clicked!");
+});
+</code></pre>
+
+<p>Nothing is happening. We're clicking on <code>li</code> items so why isn't the callback function being triggered? The problem is that the <code>li</code> items were added after the DOM was fully loaded. These are dynamic elements, we have no idea when they were added. Event listeners are attached when the DOM fully loads so we can't attach events directly to dynamic elements.</p>
+
+<h3>Event delegation</h3>
+
+<p>Events <strong>propagate</strong> or <strong>bubble</strong> up the DOM when they are triggered. So clicking on an element will trigger the event listeners that are directly attached to it and then the event will tell the parent element about the even, and so on until the event reaches the top object (the document).</p>
+
+<p>So what we can do is attach our listener on a "higher" level element that gets loaded with the DOM. <code>ul</code> is a good candidate because it wraps up the <code>li</code> elements and it is loaded at the start. When someone clicks an <code>li</code> element, the even goes up to the <code>ul</code> and "notifies it of what happened". The even will then go up to the container div and so on until it reaches the top most level.</p>
+
+<p>We can delegate an event by using the following syntax:</p>
+
+<pre><code>$(**parentElement**).on(event, **childElement**, function(){
+    // do something
+});
+</code></pre>
+
+<p>Notice that the only difference is that an additional argument is passed to the <code>on()</code> method. So binding an event listener on <code>ul</code> which triggers when <code>li</code> elements are clicked looks like this:</p>
+
+<pre><code>$('ul').on('click', 'li', function(){
+    console.log("an item was clicked!");
+});
+</code></pre>
+
+<p>To print the item that was clicked we use the <code>this</code> variable.</p>
+
+<pre><code>$('ul').on('click', 'li', function(){
+    console.log(this);
+});
+</code></pre>
+
+<h3>Item completion part 2</h3>
+
+<p>Instead of printing to the console we want to:</p>
+
+<ol>
+<li>Find the glyphicon inside of the item. To do that we will need to "traverse" the DOM. The jQuery documentation is helpful by telling us that <code>find()</code> is used to find "descendants of each element in the current set of matched elements".</li>
+</ol>
+
+
+<pre><code>$('ul').on('click', 'li', function(){
+    var checkBox = $(this).find('.glyphicon');
+});
+</code></pre>
+
+<ol>
+<li>Change the class from <code>glyphicon-unchecked</code> to <code>glyphicon-check</code>. In the jQuery documentation under <code>manipulation</code> we see <code>Class Attribute</code>. This sub-category shows us several useful methods including <code>addClass()</code>, <code>removeClass()</code> and <code>toggleClass()</code>.</li>
+</ol>
+
+
+<pre><code>$('ul').on('click', 'li', function(){
+    var checkBox = $(this).find('.glyphicon');
+    checkBox.removeClass("glyphicon-unchecked");
+    checkBox.addClass("glyphicon-check");
+});
+</code></pre>
+
+<h3>Item completion toggle</h3>
+
+<p>What if people change their mind about a completed item? We want users to be able to toggle the check and uncheck glyph icons. <code>toggleClass()</code> seems to be a good place to start; what does the documentation say?</p>
+
+<blockquote><p>Add or remove <strong>one or more</strong> classes from each element in the set of matched elements</p></blockquote>
+
+<p>Hey that sounds promising, we can toggle multiple classes? That's awesome.</p>
+
+<pre><code>$('ul').on('click', 'li', function(){
+    var checkBox = $(this).find('.glyphicon');
+    checkBox.toggleClass("glyphicon-unchecked glyphicon-check");
+});
+</code></pre>
+
+<p>And it works!</p>
+
+<h3>Lots more</h3>
+
+<p>Bootstrap has the class <code>text-muted</code> which will help with usability. Our completed tasks should be "muted" when compared to uncompleted tasks.</p>
+
+<pre><code>$('ul').on('click', 'li', function(){
+    var checkBox = $(this).find('.glyphicon');
+   checkBox.toggleClass("glyphicon-unchecked glyphicon-check");
+   $(this).toggleClass("text-muted");
+});
+</code></pre>
+
+<p>Have a look at <code>to-do-app-answer.html</code> for the complete app. There is so much more that you can do, here are some suggestions:</p>
+
+<ul>
+<li>allow the removal of items completely from the list</li>
+<li>drag/drop sort items (have a look at jQuery UI)</li>
+<li>when the page loads focus on the input field (i.e. cursor should load inside input, ready to type)</li>
+<li>reduce lookups with variables</li>
+<li>error if input is empty</li>
+<li>automatically move completed items to the bottom</li>
+</ul>
+
+
+<p>Have a look at <code>to-do-app-extras.html</code> to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.</p>
+</body>
+</html>

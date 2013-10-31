@@ -7,7 +7,6 @@ The Wunderground documentation lists all of the available data. For "conditions"
 For this widget we need the following data:
 
 * `temp_c`: Temperature in celsius
-* `temp_f`: Temperature in fahrenheit 
 * `display_location.city`
 * `forecast_url`
 * `observation_time_rfc822`: date and time
@@ -17,8 +16,22 @@ For this widget we need the following data:
 
 This information can be combined to create a weather widget.
 
-1. Include jQuery
-2. Build HTML skeleton for the widget
-3. Add CSS
-4. Use AJAX to inject dynamic data into widget
-5. Create a button to update data
+The HTML & CSS for the widget has been provided for you. Just open up `weather-app.html` to get started. jQuery has been included for you as well. We will write JavaScript inside of the `weather-app.js` file.
+ 
+For this app/widget we'll create an object called `weatherWidget` to namespace our code and organize it. The object will have several properties:
+
+1. `weatherData`: an empty object, we'll parse the data that comes through AJAX and put only the data that we want inside of this object.
+2. `init`: a function to initialize/start the widget. We'll invoke/call this function when the document loads. Our AJAX call will happen here.
+3. `parseData`: a callback function that gets called on successful AJAX request. We'll go through the response data and put the relevant data in `weatherData`. From here we'll call `updateDOM`.
+4. `updateDOM`: a function that will use jQuery to update the DOM with data from `weatherData`.
+
+**Note**:
+
+- remember to prefix any property call with `weatherWidget`. So `weatherWidget.parseData` instead of just `weatherWidget`.
+
+
+## Extension exercises:
+
+* Create a button to update data on click
+* Change the background colour based on the weather condition
+* Provide an input field for state and city. Refresh the widget with the right data when the form is submitted.

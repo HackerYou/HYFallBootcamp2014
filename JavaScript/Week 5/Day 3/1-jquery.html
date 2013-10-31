@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+*{margin:0;padding:0;}
+body {
+	font:13.34px helvetica,arial,freesans,clean,sans-serif;
+	color:black;
+	line-height:1.4em;
+	background-color: #F8F8F8;
+	padding: 0.7em;
+}
+p {
+	margin:1em 0;
+	line-height:1.5em;
+}
+table {
+	font-size:inherit;
+	font:100%;
+	margin:1em;
+}
+table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+select,option{padding:0 .25em;}
+optgroup{margin-top:.5em;}
+pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+pre {
+	margin:1em 0;
+	font-size:12px;
+	background-color:#eee;
+	border:1px solid #ddd;
+	padding:5px;
+	line-height:1.5em;
+	color:#444;
+	overflow:auto;
+	-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;border-radius:3px;
+}
+pre code {
+	padding:0;
+	font-size:12px;
+	background-color:#eee;
+	border:none;
+}
+code {
+	font-size:12px;
+	background-color:#f8f8ff;
+	color:#444;
+	padding:0 .2em;
+	border:1px solid #dedede;
+}
+img{border:0;max-width:100%;}
+abbr{border-bottom:none;}
+a{color:#4183c4;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a code,a:link code,a:visited code{color:#4183c4;}
+h2,h3{margin:1em 0;}
+h1,h2,h3,h4,h5,h6{border:0;}
+h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+h3{margin-top:1em;}
+hr{border:1px solid #ddd;}
+ul{margin:1em 0 1em 2em;}
+ol{margin:1em 0 1em 2em;}
+ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+dt{font-weight:bold;margin-left:1em;}
+dd{margin-left:2em;margin-bottom:1em;}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<title>Week 5, Day 3 jQuery</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>Week 5, Day 3 jQuery</h1>
+
+<p>We have covered most of what you need to know of the JavaScript language. We will now see that variables, values, expressions, statements, objects and functions can be combined to do some amazing things on the web.</p>
+
+<p>Ultimately what we need to do is manipulate the HTML on the page. JavaScript doesn't do anything magical, it's simply used to dynamically add or remove HTML. To simulate a "drag and drop" what we need to do is cut html from one part of the page and paste it elsewhere (with a delay to simulate dragging); to simulate elements "disappearing" we would dynamically add a class with the css <code>display:none</code>. To make an element "magically appear" we would dynamically add a class with the css <code>display:block</code>. So in a sense it's all smoke and mirrors!</p>
+
+<h2>The DOM</h2>
+
+<p>We need a way to programatically work with HTML and the browser allows us to do this through the <strong>DOM</strong>. DOM stands for <strong>document object model</strong>. The HTML document is represented as a tree with each element being a node on the tree. With JavaScript we can access any element/node and modify it to our heart's content.</p>
+
+<p>Have a look at the following HTML document:</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;I'm a page!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;A header with valuable information&lt;/h1&gt;
+
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit….&lt;/p&gt;
+
+  &lt;p&gt;Suscipit, maiores, commodi, sunt et laborum reiciendis est aliquam ….&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>The DOM for the HTML document above can be visualized like this:</p>
+
+<p><img src="dom.png" alt="image" /></p>
+
+<p>Each node can be accessed with JavaScript and converted into a JavaScript <code>Object</code>. In the chrome JavaScript console type <code>document</code> to get access to an <code>object</code> that represents the current HTML document. This object has many properties and many methods that the browser defines.</p>
+
+<h3>Exploring the DOM</h3>
+
+<p>The Mozilla developer network has <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document">documentation</a> with information about all of the properties and methods of the <code>document</code> object. The methods of importance for now are <code>getElementById()</code>, <code>getElementsByTagName()</code> and <code>getElementsByClassName()</code>.</p>
+
+<p><strong>Exercises</strong>:</p>
+
+<p>Open up hackeryou.com and use the console to programatically explore the page.</p>
+
+<ul>
+<li>get the element with id of "mainHead"</li>
+<li>get the elements with the class of "sidebar".</li>
+<li>get all anchor elements on the page.</li>
+</ul>
+
+
+<p><strong>Hint</strong>: Don't forget to call your objects on the document object.</p>
+
+<p><strong>Solutions</strong>:</p>
+
+<ul>
+<li><code>document.getElementById("mainHead");</code></li>
+<li><code>document.getElementsByClassName("sidebar");</code></li>
+<li><code>document.getElementsByTagName("a");</code></li>
+</ul>
+
+
+<p>The methods above return a DOM object representing the element. If more than one element is found (in the case of class name or tag name for example) then an array of objects is returned.</p>
+
+<h3>Manipulating the DOM</h3>
+
+<p>The Mozilla developer network has <a href="https://developer.mozilla.org/en-US/docs/Web/API/element">documentation</a> with information about all of the properties and methods of the element objects. We can for example get/set the <code>id</code> and <code>class</code> attributes of an element. We can get/set the HTML that makes up the element with <code>element.outerHTML</code>. Note that outerHTML is a property.</p>
+
+<p><strong>Exercises</strong>:</p>
+
+<ul>
+<li>get the element with id of "mainHead" and change the HTML to a simple paragraph containing the text 'Hello World!'.</li>
+<li>get the elements with the class "overlay" and add a class of "box"</li>
+</ul>
+
+
+<p><strong>Solutions</strong>:</p>
+
+<ul>
+<li><code>document.getElementById("mainHead").outerHTML = "&lt;p&gt; 'Hello World!' &lt;/p&gt;";</code></li>
+</ul>
+
+
+<h2>jQuery</h2>
+
+<p>Working with the DOM can be tedious because:</p>
+
+<ul>
+<li>the API (methods &amp; properties) for manipulating the DOM can be limiting</li>
+<li>the API requires quite a bit of coding</li>
+<li>different browsers implement the API differently</li>
+</ul>
+
+
+<p>The solution is to use <strong><a href="http://jquery.com/">jQuery</a></strong>, "The Write Less, Do More, JavaScript Library". jQuery is simply a huge JavaScript function. With jQuery we get a cross-browser and simpler way of manipulating the DOM. jQuery, conveniently, also gives us animations and a way to handle events (like mouse clicks).</p>
+
+<h2>Tutorial: manipulating the DOM with jQuery</h2>
+
+<h3>Load jQuery</h3>
+
+<ul>
+<li>Open <code>try-jquery.html</code> in sublime text.</li>
+<li><p>We need to load the jQuery library before we can work with it. Do this by downloading the jQuery JavaScript file from jquery.com or by using a CDN. Scroll to the bottom of the main-page of jquery.com to find the link to jQuery which is served by google.</p></li>
+<li><p>Aside: CDN stands for "content delivery network". A CDN is a network of computers which provides static resources (images, javascript, css, etc.) to users based on proximity. The resources are hosted in multiple locations and the closest computer to the user will serve the resource. CDNs are fast.</p></li>
+</ul>
+
+
+<p>Solution: <code>&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;</code>.</p>
+
+<h3>Test that jQuery is loaded</h3>
+
+<ul>
+<li>Open <code>try-jquery.html</code> in Chrome. We can test that jQuery has been successfully loaded by going to the JavaScript console. The console should show no errors. Type <code>jQuery</code> into the console and press enter. The return value should be <code>function (e,t){return new x.fn.init(e,t,r)}</code>. This is telling you that <strong>jQuery is a function</strong>. Type <code>$</code> and press enter, you should get the same return value. <code>$</code> <strong>is an alias for jQuery</strong>, meaning both will do the same thing.</li>
+</ul>
+
+
+<h3>Selecting elements</h3>
+
+<p>jQuery is a function that is defined with multiple parameters but they are optional. The <code>selector</code> parameter is all we need for the time being. To find an element on the page we call the jQuery function and pass it a selector that corresponds to the element.</p>
+
+<p><code>$(selector);</code> or <code>jQuery(selector);</code></p>
+
+<p><strong>Note that jQuery follows CSS conventions. So just like CSS we select elements by using class, id, and tag names.</strong></p>
+
+<p>So to find the <code>h1</code> element we type <code>$("h1");</code> in the console. The return value is a <strong>jQuery object</strong> or array of objects if the selector corresponds to multiple elements.</p>
+
+<h3>jQuery objects</h3>
+
+<p>jQuery objects are representations of the HTML elements and they have tons of methods. We'll explore some of these methods together and then we'll show you how to effectively use the jQuery documentation to learn more.</p>
+
+<ul>
+<li><p>Let's use jQuery to change the text of the h1 tag. First get the h1 jQuery object with <code>$("h1")</code> and then use the <code>text()</code> method to set the text. <code>$("h1").text("New h1 text!");</code> should do the trick.</p></li>
+<li><p>Lets move an element to a different location. The two paragraphs have the class names <code>firstp</code> and <code>secondp</code> respectively. jQuery objects have a method called <code>insertAfter()</code> which takes an element and moves it after another element. <code>$(".firstp").insertAfter(".secondp");</code> will do the trick.</p></li>
+<li><p>The CSS class <code>highlight</code> is already defined. We can add this class to an element with the <code>addClass()</code> method. Add the highlight class to the h1 tag. Solution: <code>$("h1").addClass("highlight");</code></p></li>
+<li><p>We can remove this class from an element with the <code>removeClass()</code> method. Remove the highlight class to the h1 tag. Solution: <code>$("h1").removeClass("highlight");</code>. The <code>toggleClass()</code> method will toggle the class on and off!</p></li>
+</ul>
+
+
+<h2>Tutorial: jQuery events</h2>
+
+<p>With jQuery we can do anything we want in response to an <strong>event</strong>. In the browser events usually consist of a mouse click, a mouse hover, scrolling, window resize, keyboard presses, etc. The process looks like this:</p>
+
+<ol>
+<li><strong>Event Binding</strong>: attach an event <strong>listener</strong> to a jQuery object with the <code>on()</code> method.</li>
+<li><strong>Specify the event</strong>: the first argument to the <code>on()</code> method is a string (e.g. <code>"click"</code>).</li>
+<li><strong>Provide Callback Function</strong>: the second argument is an anonymous function with some code that will run once the event happens.</li>
+</ol>
+
+
+<p>The generic code looks like this:</p>
+
+<pre><code>$(selector).on(event, function(){
+    // run this code when event happens
+});
+</code></pre>
+
+<p>Open <code>jQuery-events.html</code> in sublime text. jQuery has already been loaded for you. We will be writing JavaScript inside of this HTML file so we will run into an issue that we didn't see when working in the console. While in the console all of the code that we wrote was executed after the page was fully loaded. The JavaScript that we will be writing will be loading within the HTML document so there is a chance that it will execute before the page is fully loaded.</p>
+
+<p>If we try to find an element using jQuery before it's loaded, we will get an error. To prevent this from happening we use a jQuery method that will let us know when the document is ready to be manipulated.</p>
+
+<p>Inside the <code>&lt;script&gt;&lt;/script&gt;</code> tags add the following:</p>
+
+<pre><code>$(document).ready(function(){
+    // your code here
+});
+</code></pre>
+
+<p>So what we are doing is wrapping all of our code inside of an anonymous function. This function will be called once the document is ready.</p>
+
+<p>There are four boxes on the page. We want to hide the boxes when they are clicked. Let's start with the skeleton code for an event.</p>
+
+<pre><code>$(document).ready(function(){
+    $(selector).on(event, function(){
+        // run this code when event happens
+    });
+});
+</code></pre>
+
+<p>All of the boxes have the class "box" so we can use that to select them; <code>$(".box")</code> should do the trick.</p>
+
+<pre><code>$(document).ready(function(){
+    $(".box").on(event, function(){
+        // run this code when event happens
+    });
+});
+</code></pre>
+
+<p>The even we're looking for is a click:</p>
+
+<pre><code>$(document).ready(function(){
+    $(".box").on("click", function(){
+        // run this code when event happens
+    });
+});
+</code></pre>
+
+<p>jQuery has the method <code>hide()</code> that will come in handy. Let's select the box again and hide it.</p>
+
+<pre><code>$(document).ready(function(){
+    $(".box").on("click", function(){
+        $("box").hide();
+    });
+});
+</code></pre>
+
+<p>All of the boxes disappeared! This is because <code>$("box")</code> selects all of the boxes. Ok, how do we select on the box that was clicked? jQuery provides us with the variable <code>this</code> inside of the anonymous function which refers to the element that triggered the event. How convenient!</p>
+
+<pre><code>$(document).ready(function(){
+    $(".box").on("click", function(){
+        this.hide();
+    });
+});
+</code></pre>
+
+<p>Unfortunately <code>this</code> isn't a jQuery object, it's a DOM element. We need to convert it into a jQuery object with <code>$(this)</code>.</p>
+
+<pre><code>$(document).ready(function(){
+    $(".box").on("click", function(){
+        $(this).hide();
+    });
+});
+</code></pre>
+</body>
+</html>

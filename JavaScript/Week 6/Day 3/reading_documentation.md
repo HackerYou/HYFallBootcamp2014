@@ -6,7 +6,7 @@ Learning how an API works will take some time. Good APIs (and themoviedb is a go
 2. Look for information that you really need (covered below)
 3. Explore and play around (nothing beats hands-on experience)
 
-## Find the API documention
+## Find the API documentation
 First of course find the API documentation. Search google or find a link on the web-services webpage.
 
 Doing both leads us to:
@@ -104,5 +104,4 @@ The configuration section tells us that we can request the configuration object 
 > To build an image URL, you will need 3 pieces of data. The base_url, size and file_path. 
 > Here's an example URL: http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w500/8uO0gUM8aNqYLs1OsTBQiXu0fEv.jpg
 
-So what we need to do is make one request at the beginning and store the configuration object somewhere. Then we need to access the `base_url` and `poster_sizes` properties for this object.
-
+So what we need to do is make one request at the beginning and store the configuration object somewhere. Then we need to access the `base_url` and `poster_sizes` properties for this object. We use the `base_url` from the configuration object and the `poster_path` from the movie object to create a full url to the image!

@@ -15,3 +15,9 @@ The task: the UI that the instructor is working on consists of a grid of boxes. 
 - Add the literally three lines of code that is required to make this work.
 
 2nd Task: Do students have a suggestion. Is there a functionality that they want to implement? Follow the same process again, except of course this time without prepared material.
+
+Other possible plugins:
+- Fittext
+- jQuery-modal
+- unslider
+- jQuery EastTabs

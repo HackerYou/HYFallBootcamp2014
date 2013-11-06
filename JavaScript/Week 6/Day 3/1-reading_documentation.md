@@ -105,3 +105,9 @@ The configuration section tells us that we can request the configuration object 
 > Here's an example URL: http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w500/8uO0gUM8aNqYLs1OsTBQiXu0fEv.jpg
 
 So what we need to do is make one request at the beginning and store the configuration object somewhere. Then we need to access the `base_url` and `poster_sizes` properties for this object. We use the `base_url` from the configuration object and the `poster_path` from the movie object to create a full url to the image!
+
+## Wrap up
+
+- We know how to make requests to the themoviedb API
+- We know how the response data is structured
+- We know that we need to make at least two requests. One to get the configuration object and another to get the movie objects.

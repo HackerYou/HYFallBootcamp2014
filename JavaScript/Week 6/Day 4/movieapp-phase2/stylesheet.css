@@ -28,7 +28,7 @@ h1.title {
   float: left;
   border: 1px solid rgba(0,0,0,0.1);
   width: 24%;
-  height: 510px;
+  height: 550px;
 }
 #movie_list div:hover {
   background-color: rgb(108, 204, 51);
@@ -42,7 +42,8 @@ h1.title {
 }
 
 .rating:not(:checked) {
-  float:left;
+  margin: 0 auto;
+  width: 190px;
 }
 /*hide the input circles*/
 .rating:not(:checked) > input {

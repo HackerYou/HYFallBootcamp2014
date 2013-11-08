@@ -12,6 +12,7 @@ var movieApp = {
     });
 
     $('#movie_list').on('click', 'label', movieApp.ratingHandler);
+    movieApp.getSessionId();
   },
   movieConfig: function(response){
     movieApp.configuration = response;
@@ -51,7 +52,35 @@ var movieApp = {
   },
 
   ratingHandler: function(e){
-    console.log("You voted!")
+    var label = $(this);
+    var idRegex = /(\d)(\d+)/;
+    var labelFor = label.attr('for');
+    var movieId = idRegex.exec(labelFor)[2];
+    var rating = /\d/.exec(label.text())[0];
+    movieApp.rateMovie(movieId, rating);
+  },
+
+  sessionId: '',
+  getSessionId: function(){
+    $.ajax({
+      url: 'http://api.themoviedb.org/3//authentication/guest_session/new',
+      type: 'GET',
+      data: {api_key: movieApp.api_key},
+       dataType: 'jsonp',
+       success: function(response){
+          movieApp.sessionId = response.guest_session_id;
+       }
+    });
+  },
+  rateMovie: function(movieId, rating){
+    $.ajax({
+      url: 'http://api.themoviedb.org/3/movie/' + movieId + '/rating',
+      type: 'POST',
+      data: {api_key: movieApp.api_key, guest_session_id: movieApp.sessionId, value: rating*2},
+      success: function(){
+        console.log("Voted!");
+      }
+    });
   }
 };
 

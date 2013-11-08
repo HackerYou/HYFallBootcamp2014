@@ -24,8 +24,8 @@ Note that we will have twenty of these fieldsets on our page so we can't use the
 
 ```
 for (var i = 1; i <= 5; i++) {
-	var inputStar = "<input type='radio' id='star" + i + movieID + "' name='rating" + movieID + "' value='" + i + "' /><label for='star" + i + movieID + "'>" + i + "stars</label>";
-	fieldset.append(inputStar);
+	var inputStar = ["<input type='radio' id='star", i, movieID, "' name='rating", movieID, "' value='", i, "' /><label for='star", i, movieID, "'>", i, "stars</label>"];
+      fieldset.append(inputStar.join(""));
 };
 ```
 

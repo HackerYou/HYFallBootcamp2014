@@ -1,6 +1,7 @@
 var movieApp = {
   api_key: 'b41645dc385d41c36981d6f18cc717ff',
   configuration: {},
+  sessionId: '',
   init: function(){
     //save config object
     $.ajax({
@@ -17,6 +18,17 @@ var movieApp = {
   movieConfig: function(response){
     movieApp.configuration = response;
     movieApp.getTopRatedMovies();
+  },
+  getSessionId: function(){
+    $.ajax({
+      url: 'http://api.themoviedb.org/3//authentication/guest_session/new',
+      type: 'GET',
+      data: {api_key: movieApp.api_key},
+       dataType: 'jsonp',
+       success: function(response){
+          movieApp.sessionId = response.guest_session_id;
+       }
+    });
   },
   getTopRatedMovies: function(){
     $.ajax({
@@ -50,7 +62,6 @@ var movieApp = {
 
     return fieldset;
   },
-
   ratingHandler: function(e){
     var label = $(this);
     var idRegex = /(\d)(\d+)/;
@@ -58,19 +69,6 @@ var movieApp = {
     var movieId = idRegex.exec(labelFor)[2];
     var rating = /\d/.exec(label.text())[0];
     movieApp.rateMovie(movieId, rating);
-  },
-
-  sessionId: '',
-  getSessionId: function(){
-    $.ajax({
-      url: 'http://api.themoviedb.org/3//authentication/guest_session/new',
-      type: 'GET',
-      data: {api_key: movieApp.api_key},
-       dataType: 'jsonp',
-       success: function(response){
-          movieApp.sessionId = response.guest_session_id;
-       }
-    });
   },
   rateMovie: function(movieId, rating){
     $.ajax({

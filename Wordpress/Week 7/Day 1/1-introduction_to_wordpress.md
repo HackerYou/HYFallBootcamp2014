@@ -119,3 +119,13 @@ Another option is the Bitnami Wordpress Stack which includes Wordpress in the in
 Use the Wordpress Codex to help you learn about the admin dashboard.
 
 http://codex.wordpress.org/Administration_Panels
+
+**Exercises**:
+
+By the end of the week you will have a fully functional personal Wordpress website online. By the end of the day you should have most of the content for your website added.
+
+* Add at least one page (about me or profile?)
+* Migrate your blog posts here (you've been blogging right?)
+* Comment on your own post/page
+* Use the admin interface to delete the comment.
+* Add media (image or video) to a post or page.

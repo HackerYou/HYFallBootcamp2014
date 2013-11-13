@@ -4,6 +4,7 @@
 
 - Wordpress documentation/codex is super helpful. Almost everything is there. Common problems can be seen here: http://codex.wordpress.org/Troubleshooting
 - Google, Stack-overflow and the Wordpress forums are extremely useful if you can't find a solution to your problem in the codex.
+- copy/paste the error into google.
 
 **Words of advise:**
 

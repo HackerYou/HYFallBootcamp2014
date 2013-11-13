@@ -10,6 +10,7 @@ We could code everything from scratch but the reality is that most websites requ
 
 * http://themble.com/bones/
 * http://underscores.me/
+* Wes github one
 
 
 **Why use starter themes?**
@@ -26,6 +27,8 @@ We could code everything from scratch but the reality is that most websites requ
 ## Build a theme
 
 What do we want to build? Typical blog/personal website?
+
+Use an HTML/CSS template. 
 
 ## Test the theme
 

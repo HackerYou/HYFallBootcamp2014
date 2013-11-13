@@ -7,6 +7,9 @@ http://codex.wordpress.org/Using_Themes
 Find a theme that you like in the Wordpress Theme Directory, install it in your development environment and activate it.
 http://wordpress.org/extend/themes/
 
+Themes from other places - themify.me, woothemes
+settings, content, woo themes dashboard => make it look like the demo
+
 ## Developing Themes
 http://codex.wordpress.org/Theme_Development
 

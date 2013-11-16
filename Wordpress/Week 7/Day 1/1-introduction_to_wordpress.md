@@ -73,17 +73,12 @@ Differences:
 
 * use `$` instead of `var`
 * `array()` instead of `[]`
-* array function used to create objects as well
 * ... others which we'll get to
 
 ```
 $name = "Homer";
 $age = 25;
 $myArray = array(1,2,3);
-$myObject = array(
-					"one" => 1,
-					"two" => 2
-);
 ```
 
 ## Development Environment
@@ -124,7 +119,7 @@ http://codex.wordpress.org/Administration_Panels
 
 By the end of the week you will have a fully functional personal Wordpress website online. By the end of the day you should have most of the content for your website added.
 
-* Add at least one page (about me or profile?)
+* Add at least one page (e.g. about me)
 * Migrate your blog posts here (you've been blogging right?)
 * Comment on your own post/page
 * Use the admin interface to delete the comment.

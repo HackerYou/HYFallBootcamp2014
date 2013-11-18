@@ -6,7 +6,8 @@ http://wordpress.org/plugins/
 
 How to pick good plugins:
 
-* is it up to date? Is it compatible with current version of WP?
+* when was it last updated? recent = good
+* is it compatible with current version of WP?
 * how many downloads? more = better
 * Good ratings?
 * Is the support good? Check the support tab to see how many issues are still open.

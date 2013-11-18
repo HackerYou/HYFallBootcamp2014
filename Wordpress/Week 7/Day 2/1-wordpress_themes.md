@@ -5,34 +5,32 @@
 For this lesson you will be referring to the following codex:
 http://codex.wordpress.org/Using_Themes
 
-**Exercise 1**:
-Read the "What is a Theme?" section of the codex if you don't know what a Wordpress theme is. If you're familiar with the concept then skip ahead to the next exercises.
+Start by reading the "What is a Theme?" section of the codex. 
 
-**Exercise 2**:
+**Exercise 1**:
 Find a theme that you like in the Wordpress Theme Directory, install it in your development environment and activate it.
 
-1. Find a theme in the directory (http://wordpress.org/extend/themes/)
+1. Find a theme in the directory: http://wordpress.org/extend/themes/
 2. Follow the instructions in the "Adding New Themes using the Administration Panels" section of the codex above. Put the name of the theme in the search input field and you should see it.
 3. Follow the instructions in the "Selecting the Active Theme" section of the codex above to active the theme.
 
-Does your version of the theme look like the demo? Usually it doesn't because your Wordpress site likely has different content and settings. 
+Does your version of the theme look exactly like the demo? Usually it doesn't because your Wordpress site has different content and settings. 
 
-**Exercise 3**:
+**Exercise 2**:
 
-Woothemes is a very popular place to get professionally designed themes. Woothemes are the makers of Woocomerce which is a shopping cart plugin for Wordpress so their themes have built-in support for the plugin.
+Woothemes is a very popular place to get professionally designed themes. Woothemes are the makers of Woocommerce which is a shopping cart plugin for Wordpress so their themes have built-in support for the plugin.
 
 1. Find a free theme that you like from: http://www.woothemes.com/product-category/themes/?prod_cat%5B%5D=100&s=&post_type=product
+2. Install, activate and set it up so that it looks similar to the theme's demo.
 
-2. install, activate and set it up so that it looks similar to the theme's demo.
+To install a theme from outside of the Wordpress Theme Directory follow these instructions:
 
-*Instructions*
-
-* download zip file
-* go into your Wordpress directory, it should be in the htdocs folder on your local machine.
+* download the theme zip file
+* go into your Wordpress directory on your local machine
 * extract the zip file and put it in `wp-content/themes`. So if your theme's name is "Mystile" then you should have the folder `wp-content/themes/mystile`.
 * activate the theme as before
 
-WooFramework powers all Woothemes WordPress themes so explore the theme options. Try to get your website to look like the demo on the woothemes site.
+WooFramework powers all Woothemes WordPress themes so explore the theme options. Try to get your website to look like the demo on the Woothemes site.
 
 ## Developing Themes
 

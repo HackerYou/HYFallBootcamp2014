@@ -28,8 +28,6 @@ Just like any other theme, we download the zip file, put it in the proper place 
 
 We are going to build a typical personal website so that when we're done you can apply the same techniques to your own personal website.
 
-> Teacher note: We need a simple template that doesn't have too much content. The idea is just to illustrate how to go from a simple HTML template to a simple Wordpress theme.
-
 We have an HTML/CSS template to start with. Our goal is to take this template and "Wordpressify" it. We will be modifying the following theme files:
 
 * header.php & footer.php
@@ -60,9 +58,10 @@ http://wordpress.org/plugins/theme-check/
 Resources:
 How To Improve And Refine Your WordPress Theme Development Process => http://wp.smashingmagazine.com/2013/02/21/wp-theme-development-process/
 
+Theme testing process: http://codex.wordpress.org/Theme_Development#Theme_Testing_Process
+
 ## Debugging & Developer plugin
 
+To fully test the theme it's a good idea to install and activate the "developer" plugin: http://wordpress.org/plugins/developer/. 
 
-
-
- 
+This plugin will help you see if you have all of the essential developer plugins installed. These plugins allow you to see logs, easily switch users, test widgets, check for deprecation warnings, etc.

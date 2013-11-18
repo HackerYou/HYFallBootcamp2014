@@ -1,19 +1,24 @@
 # Update Wordpress
 
-With version 3.7, Wordpress will automatically update to all minor patches. Major patches still require you to request an update.
-
-Updating Wordpress is simple. You pretty much just click a link and wait for it to update.
+With version 3.7, Wordpress will automatically update itself for minor patches. Major patches still require you to update manually.
 
 ## Precautions & consequences
 
-The new Wordpress might not be compatible with your theme or a plugin. So the website might "break". So what to do?
+The updated Wordpress might not be compatible with your theme or a plugin. So the website might "break". Make sure that you:
 
-* Test upgrade on your local machine first
-* Backup your Wordpress so that you can undo bad upgrades.
+1. Backup your Wordpress so that you can undo changes.
+2. Test the update on your local machine first
+
+Wordpress has a simple "one-click" update. Follow the instructions in the codex:
+http://codex.wordpress.org/Updating_WordPress
 
 ## Backup Wordpress
 
-* Manually copy the folder
-* Go into phpmyadmin and download copy of SQL file
+To backup the Wordpress website you need a copy of the Wordpress folder and a copy of the database. Follow the instructions in the codex:
+http://codex.wordpress.org/WordPress_Backups
 
-There are services that can help do automatic backups like wpremote. There are plugins that will do the same.
+There are services and plugins that can help do automatic backups:
+
+* http://vaultpress.com/
+* http://wordpress.org/plugins/backwpup/
+* https://wpremote.com/

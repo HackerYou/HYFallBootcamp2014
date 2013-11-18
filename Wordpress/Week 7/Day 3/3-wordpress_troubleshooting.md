@@ -6,7 +6,7 @@
 - Google, Stack-overflow and the Wordpress forums are extremely useful if you can't find a solution to your problem in the codex.
 - copy/paste the error into google.
 
-**Words of advise:**
+**Words of advice:**
 
 * be persistent. most problems take a bit of time to solve
 * word your question as well as you can and your chances of being answered are higher.

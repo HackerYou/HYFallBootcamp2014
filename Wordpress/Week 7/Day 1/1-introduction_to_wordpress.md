@@ -93,6 +93,8 @@ You of course have an operating system (Windows or Mac) so what you need to get 
 * WAMP on Windows — http://www.youtube.com/watch?v=kVc_9vAO7oI 
 * MAMP on Mac — http://www.youtube.com/watch?v=KInHgUob8VM
 
+*Written instructions*: http://make.wordpress.org/core/handbook/installing-a-local-server/
+
 **Key Points**
 
 * phpMyAdmin is a user interface which is used to work with the MySQL database.
@@ -111,15 +113,21 @@ Another option is the Bitnami Wordpress Stack which includes Wordpress in the in
 
 ## Explore the Wordpress Dashboard
 
-Use the Wordpress Codex to help you learn about the admin dashboard.
-
+Use the Wordpress Codex to help you learn about the admin dashboard:
 http://codex.wordpress.org/Administration_Panels
 
-**Exercises**:
+The dashboard allows you to:
+
+* Configure WordPress (reading/writing settings, permalinks, )
+* Add / Edit Content
+* Manage Comments
+* Customize the look of your website
+
+**Exercise**:
 
 By the end of the week you will have a fully functional personal Wordpress website online. By the end of the day you should have most of the content for your website added.
 
-* Add at least one page (e.g. about me)
+* Add at least one page (e.g. about/bio)
 * Migrate your blog posts here (you've been blogging right?)
 * Comment on your own post/page
 * Use the admin interface to delete the comment.

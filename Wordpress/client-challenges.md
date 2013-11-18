@@ -4,4 +4,9 @@
 * Your client is a photographer who wants a website to showcase her work. She wants a simple admin interface that allows her to easily add, remove and edit the showcase.
 * Your client is the editor of an online magazine. To increase the reading rate, the client wants a thumbnail image associated with each article. The image should be added through a field like the post title and should automatically appear on the front-end.
 * The same magazine wants an author box with the author's image and bio at the end of each blog post.
-* Your client is a social media company who need an image slider on the front page of their Wordpress website. 
+* Your client is a social media company who need an image slider on the front page of their Wordpress website.
+* Your client is a paranormal consultant who would like to publish his scientific research regarding the paranormal on his website. Instead of selling his book he would rather offer it for free. To increase his readership he would like his audience to tweet about the book before getting it (pay with a tweet!).
+* Your client is organizing a conference so they would like you to add a Twitter widget that streams the conversations that use the conference's preferred hashtag.
+* The same conference organizer wants to make it simple for attendees to find the venue so they are requesting that you embed a google map to the website.
+* Instead of showing recent blog entries on the homepage your client would like a custom page welcoming visitors to the website.
+* Your client would like a contact form on their Wordpress website. 

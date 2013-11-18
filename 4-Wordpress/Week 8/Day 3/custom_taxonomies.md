@@ -8,8 +8,21 @@ For example let's say we create a custom taxonomy called "books". To build a lib
 http://codex.wordpress.org/Taxonomies
 
 ## How to create custom taxonomies
-http://wp.smashingmagazine.com/2012/01/04/create-custom-taxonomies-wordpress/
 
-## Add it to your portfolio
+1. Create the taxonomies by using the same plugins that we used to create custom post types and fields.
+2. Add the following template tag inside the loop:
 
-Add a custom taxonomy or two to your portfolio. The taxonomies can be used to organize and filter your portfolio. Users could click on "HTML/CSS" to see work that involves only those technologies, "Wordpress" to see themes, "JavaScript" to see the apps that you have built.
+```
+<?php the_terms( $id, $taxonomy, $before, $sep, $after ); ?>
+```
+
+If your custom post type is "department" then the code would be:
+
+```
+<?php the_terms( $post->ID, 'department', 'Departments: ', ', '); ?>
+```
+
+
+## Exercise: Add custom taxonomies to your portfolio
+
+Add a custom taxonomy or two to your portfolio. The taxonomies can be used to organize and filter your portfolio. Users could click on "HTML/CSS" to see work that involves only those technologies, "Wordpress" to see themes, "JavaScript" to see the apps that you have built, etc.

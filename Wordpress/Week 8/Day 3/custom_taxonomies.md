@@ -1,8 +1,8 @@
 # Week 8 Day 3 Custom Taxonomies
 
-You are already familiar with the built-in Wordpress taxonomies like category and tags. Taxonomies are used to classify posts and pages. When building our own "custom" post types we can add "custom" taxonomies since category and tags might not be exactly what we want.
+You are already familiar with the built-in Wordpress taxonomies like category and tags. Taxonomies are used to classify posts and pages. When building our own "custom" post types we can add "custom" taxonomies since category and tags might not be appropriate for our needs.
 
-For example let's say we create a custom taxonomy called "books". To build a library that is easy to navigate we can add several custom taxonomies. We can add binding (paperback, hardcover, ebook), language(English, French, etc.), Department (Arts, Business, Education, Health & Fitness, etc.).
+For example let's say we create a custom taxonomy called "books". To build a library that is easy to navigate we can add several custom taxonomies. We can add binding (paperback, hardcover, ebook), language (English, French, etc.), Department (Arts, Business, Education, Health & Fitness, etc.).
 
 ## Learn more about custom taxonomies
 http://codex.wordpress.org/Taxonomies

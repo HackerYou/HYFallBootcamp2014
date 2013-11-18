@@ -6,3 +6,6 @@ Your goal for this week is to transform your personal Wordpress website into a p
 * The front end should display the portfolio pieces. This is an opportunity to get creative and to use all of the design, CSS and JavaScript/jQuery knowledge that you have acquired so far.
 
 Example portfolio type Wordpress websites can be seen here: http://themify.me/themes#portfolio-theme
+
+
+If you're done that then work on something a bit more challenging. Remember that demo day is next week so try to combine your knowledge and experience of CSS, HTML, JavaScript and jQuery to come up with something impressive.

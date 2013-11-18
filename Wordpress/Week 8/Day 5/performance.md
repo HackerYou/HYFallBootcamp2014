@@ -10,6 +10,8 @@ How fast your website loads is very important. Slow website means a higher bounc
 Plugin:
 http://wordpress.org/plugins/w3-total-cache/
 
+Also at some point you need to consider upgrading your web-host to get more RAM, storage, etc. 
+
 ## Uptime
 
 Your website (or your clients') websites might go down without you knowing. Use uptime monitoring tools to get an email whenever your website goes down. Why?
@@ -17,6 +19,6 @@ Your website (or your clients') websites might go down without you knowing. Use 
 * get notified immediacy incase you can fix the issue
 * collect uptime data to help you decide where to say with the host or not
 
-Possible solutions:
+**Services**:
 http://www.monitor.us/
 https://www.pingdom.com/

@@ -1,4 +1,6 @@
-# Week 8 Day 4 Security
+# Week 8 Day 4 
+
+## Security
 
 Security is a major issue online. You need to build websites for clients that will not get hacked. Some things to consider:
 
@@ -16,8 +18,21 @@ Security is a major issue online. You need to build websites for clients that wi
 
 There are plugins that can achieve all of the above. 
 
-## DDOS
+### DDOS
 
 Distributed Denial Of Service attacks pretty much amount of million of people visiting your website at the same time. So it crashes your server.
 
 https://www.cloudflare.com/ provides some protection from this.
+
+
+The codex has more:
+http://codex.wordpress.org/Hardening_WordPress#Securing_wp-admin
+
+## SPAM
+
+Most if not all spam is done by bots. So if you don't protect your website you'll get tons of comments on your blog posts and tons of spam form submissions. 
+
+Akismet is a plugin that will provide some protection against spam.
+
+The codex has more:
+http://codex.wordpress.org/Combating_Comment_Spam

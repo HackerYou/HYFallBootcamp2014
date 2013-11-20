@@ -1,10 +1,10 @@
 # Design Theory
 
-To learn about design you will explore and complete the following lessons at hackdesign.org in groups of 2-3. You will not become a designer in one day so the goal of this exercise is to get you familiar with some of the important concepts. As a group:
+To learn about design you will explore and complete the following lessons at hackdesign.org. You will not become a designer in one day so the goal of this exercise is to get you familiar with some of the important concepts.
 
-* complete the lesson readings/videos
-* collaboratively create notes to summarize your learning
-* discuss your findings
+> In groups of 2-3 do the following readings, collaboratively create notes to summarize your learning, have discussions and complete the exercises.  As a group you need to decide how you are going to tackle this. For example, you could skim the readings as a group, stopping where a group member finds an interesting or ambiguous point to discuss.
+
+> As a freelancer you will find that part of your time is going to be spent reading articles very much like the ones you will be reading here.
 
 ## What is Design?
 Lesson 0: Hello World (Objectified: A documentary for design)
@@ -34,8 +34,8 @@ Lesson 11: Defining & Expanding User Experience
 Lesson 20: Deciding What's Good: Design Principles
 
 
-# Design Critique
+# Design Critique Exercise
 
-As a group you will conduct a design critique. Take the websites that you have built so far and "put them under the microscope". How do the websites look and function now that you know a bit more about design?
+As a group you will conduct a design critique. Take some of the websites that you have built so far and "put them under the microscope". How do the websites look and function now that you know a bit more about design?
 
 The "POSSIBLE DISCUSSION POINTS / QUESTIONS TO USE" section of the following article might be handy: http://scottberkun.com/essays/23-how-to-run-a-design-critique/. Your design critiques should also consider typography, colour, white space, visual hierarchy, user experience, etc.

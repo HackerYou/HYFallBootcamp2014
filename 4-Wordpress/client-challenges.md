@@ -9,4 +9,5 @@
 * Your client is organizing a conference so they would like you to add a Twitter widget that streams the conversations that use the conference's preferred hashtag.
 * The same conference organizer wants to make it simple for attendees to find the venue so they are requesting that you embed a google map to the website.
 * Instead of showing recent blog entries on the homepage your client would like a custom page welcoming visitors to the website.
-* Your client would like a contact form on their Wordpress website. 
+* Your client would like a contact form on their Wordpress website.
+* Your client moved their existing blog from a different platform over to Wordpress. Fortunately all of the comments and discussions were done using Disqus.com so they don't have to start all over. Your task is to turn off the default Wordpress comments and enable Disqus comments.

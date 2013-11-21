@@ -32,3 +32,11 @@ The following criteria should be considered when looking at the code of your pee
 - code efficiency: e.g. avoid querying the DOM more than you need to. If an element is queried more than once then save it in a variable to reduce lookups.
 - readability: do you understand the code or do you need to ask for clarifications often?
 - use of comments: not over-done but at the same time enough information to be informative
+
+## Extension exercise
+
+When you mouse over the large/full image a zoomed version of the image should appear allowing you to see a more detailed view of that portion of the image.
+
+Example: http://epic-image-zoom.webfactoryltd.com/
+
+Note that the example is from a paid jQuery plugin. Don't buy it. Be resourceful and find a free solution.

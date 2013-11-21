@@ -41,6 +41,6 @@ We will be taking a look at bootstrap today. Let's work our way through each of 
 
 ## Addons
 
-Bootstrap is based on creating very modular peices of HTML and CSS that can be plopped into any existing HTML document. This way, if you only need a certain part of bootstrap, then you can just steal that part and leave the rest behind!
+Bootstrap is based on creating very modular pieces of HTML and CSS that can be plopped into any existing HTML document. This way, if you only need a certain part of bootstrap, then you can just steal that part and leave the rest behind!
 
 That means that the open source community has taken to creating little snippets for things you may need. [http://bootsnipp.com/](http://bootsnipp.com/) is a great resource for this. Let's take a look!

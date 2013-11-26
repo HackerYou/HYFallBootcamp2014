@@ -1,6 +1,6 @@
-# Week 1, Day 4 Weekly Project
+# Week 1 - Weekly Project
 
-There is a major project every week. For this week you will build single page website from scratch (a personal site if you don’t have one already). This project is meant to call upon everything we have done so far.
+There is a major project every week. For this week you will build a single page website from scratch (a personal site if you don’t have one already). This project is meant to call upon everything we have done so far.
 
 If you already have a personal website then you may choose to do your website on anything you wish. Here are some ideas:
 

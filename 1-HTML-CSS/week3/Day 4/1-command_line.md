@@ -58,14 +58,24 @@ The "paths" that you saw above which started with the `/` are absolute paths, me
 
 The command line has a manual tool `man` which gives us information about all of the command line tools. Type `$ man ls` to see this in action. What we're doing is asking for the manual for the tool `ls`.
 
-You will see a colon at the bottom of the screen and you will not be able to type anything. Don't panic, this means you are in a command line program that extends beyond the view/window. To see more press the **Enter** key. To exit press the **q** key.
+> You will see a colon at the bottom of the screen and you will not be able to type anything. Don't panic, this means you are in a command line program that extends beyond the view/window. To see more press the **Enter** key. To exit press the **q** key.
 
 **Exercise 1**:
-Use the man pages (or manual) to explore the following useful tools: `ls`, `cp`, `mv`, `rm`, `rmdir`, `touch`, `curl`, `ping`.
+Use the man pages to explore the following command-line tools: `ls`, `cp`, `mv`, `rm`, `rmdir`, `touch`, `cat`. The "command-line" folder has all of the files and folders that you will need for this exercise.
 
-Since the man pages might be a bit hard to read for a beginner, here is an additional resource:
-http://freeengineer.org/learnUNIXin10minutes.html
+* Change directory into `command-line`
+* List the directory contents of `command-line`
+* Change directory into `dir5` and move back up to `command-line`
+* Move `move-me.txt` to the `files` directory
+* Remove `delete-me.txt` and `delete-me-too.txt`
+* Remove the directory `remove-me`
+* Create a text file called `create-me.txt`
+* List the hidden contents of the directory `secrets`
+* Print the contents of the files in the directory `samples`
+
 
 **Exercise 2**:
 
-Watch Star Wars from your command line! Just type the following in the prompt and press enter: `telnet towel.blinkenlights.nl`
+Watch Star Wars from your command line! Just type the following in the prompt and press enter: `telnet towel.blinkenlights.nl`.
+
+After doing this exercise you might want a few minutes of your life back...

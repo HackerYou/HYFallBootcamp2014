@@ -48,13 +48,20 @@ The workflow then looks like this:
 2. Add files to staging area when you're ready (`$ git add <file>`)
 3. Take a snapshot (`$ git commit -m "a useful commit message here"`)
 
+### Exercise
+
+* Open up the folder for your Week-2 project and make it a Git repository. 
+* Add all of the files into the staging area.
+* Take a snapshot by committing with the message "initial commit".
+
+
 ## Git Status
 
 To see which files are in the working directory and which are in the staging area just type `$git status`.
 
 ## Git push
 
-Your Git repository can be shared with others by putting it on Github. 
+Your Git repository can be shared with others by putting it on Github.com. 
 
 1. Create a free account on Github.com
 2. Follow the instructions for creating a repository: https://help.github.com/articles/create-a-repo but skip the "Create a README for your repository" section.
@@ -71,6 +78,11 @@ That's it now you have a local (your machine) repository and a remote (Github) r
 3. Take a snapshot (`$ git commit -m "a useful commit message here"`)
 4. `$ git push` to update Github
 
+### Exercise
+
+Github is a great place to put all of your web development work. Your Github account will become a portfolio to showcase your code. 
+
+**Your task**: put all of your work on Github!
 
 ## Learning more
 

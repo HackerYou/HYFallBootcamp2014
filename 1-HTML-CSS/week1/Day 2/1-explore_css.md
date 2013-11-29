@@ -1,6 +1,10 @@
 # Week 1, Day 2 Explore CSS
 
-In groups of 2-3, explore the web to learn about the following topics. Each topic has guiding questions to help you get started. Don't limit yourself to just answering the questions though; explore the web and learn something interesting to share with the class.
+As a freelancer you will get requests from clients that you will not know how to accomplish. If you say "I don't know how to do that" then you will find yourself without a job most of the time. Most requests can be handled by doing a bit of research and by being resourceful.
+
+"Exercises" are different from a regular lesson because they require you to do the research yourself. This simulates the process that freelancers have to going through on a daily basis. You will work in groups of 2-3 students and have notes to reference if you REALLY need to - this is to scaffold your learning. 
+
+Don't limit yourself to just answering the questions though; explore the web by using the titles from each section. Learn something interesting to share with the class!
 
 The markup for this exercise is in `1-explore_css_exercise.html`.
 
@@ -19,11 +23,33 @@ The markup for this exercise is in `1-explore_css_exercise.html`.
 
 ## CSS inheritance
 
-* If you wanted to set the same font size for the whole page, would you set the font for each element? If not then which element would you put the rule on?
+* How would you change the colour of all text on the page by only using one CSS rule?
 
 ## CSS Specificity
 
-* What happens when you write two rules for a single element? Come up with some guidelines for predicting which rules apply.
+* Let's say that you write two different rules for the same element, which would apply? For example:
+
+```
+p {
+	color: red;
+}
+p {
+	colour: blue;
+}
+```
+
+* What if one of the selectors is more specific? For example:
+
+```
+body p {
+	color: red;
+}
+p {
+	colour: blue;
+}
+```
+
+* Come up with some guidelines for predicting which rules apply.
 
 ## Pseudo Selectors
 

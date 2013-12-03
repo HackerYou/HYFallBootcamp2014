@@ -1,6 +1,6 @@
-# Add start rating system to MovieApp
+# Add star rating system to MovieApp
 
-Let's start by moving the CSS for the start rating system over to our movie app from yesterday.
+Let's move the CSS for the star rating system over to our movie app from yesterday.
 
 What we need to do is add a fieldset with radio buttons to each movie `div`. Let's add a method called `createRatingFields` to our movieApp object that will be in charge of creating these fieldsets. 
 

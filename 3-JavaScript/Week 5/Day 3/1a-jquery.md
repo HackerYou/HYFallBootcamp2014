@@ -118,6 +118,12 @@ jQuery objects are representations of the HTML elements and they have tons of me
 
 ## Tutorial: jQuery events
 
+### Aside: Functions as first-class objects
+
+Let's take a quick detour to the "Functions as first-class objects" notes. If we master functions then jQuery events will be really easy to work with. 
+
+### Events
+
 With jQuery we can do anything we want in response to an **event**. In the browser events usually consist of a mouse click, a mouse hover, scrolling, window resize, keyboard presses, etc. The process looks like this:
 
 1. **Event Binding**: attach an event **listener** to a jQuery object with the `on()` method.

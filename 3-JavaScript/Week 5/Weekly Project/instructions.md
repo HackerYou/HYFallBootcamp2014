@@ -11,9 +11,10 @@ This week you are going to write some JavaScript using the jQuery library in ord
 - This border also displays when you hover over the thumbnails.
 - Clicking on a full image opens a `fancybox` with a version of the image that scales with the window size.
 
+
 ## Hints and reminders:
 
-* Don't forget to only work once the document is ready to be manipulated.
+* Don't forget to execute JavaScript only once the document is ready to be manipulated.
 * You will need one event listener on the `.previews` anchor tags.
 * The `.full` div should be **emptied** when someone clicks the previews. 
 * It's possible to create elements with: `$('<tag>')`.
@@ -37,6 +38,6 @@ The following criteria should be considered when looking at the code of your pee
 
 When you mouse over the large/full image a zoomed version of the image should appear allowing you to see a more detailed view of that portion of the image.
 
-Example: http://epic-image-zoom.webfactoryltd.com/
+**Example**: http://epic-image-zoom.webfactoryltd.com/
 
 Note that the example is from a paid jQuery plugin. Don't buy it. Be resourceful and find a free solution.

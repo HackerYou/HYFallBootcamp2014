@@ -43,6 +43,18 @@ true
 
 </div>
 
+### Combining boolean expressions
+
+We can combine boolean expressions with the and(&&) and or(||) operators.
+
+* true && true // true
+* true && false // false
+* false && true // false
+* false && false // false
+* true || true // true
+* false || true // true
+* true || false // true
+* false || false // false
 
 ## Conditional statements
 Now that you're familiar with booleans, it's time to meet **conditional statements**. Simply put, these statements allow us to run a statement or group of statements only when a condition is true (or false).

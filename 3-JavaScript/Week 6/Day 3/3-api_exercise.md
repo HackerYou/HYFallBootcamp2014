@@ -1,6 +1,6 @@
 # API Exercise
 
-## Part One
+## Start with some structure
 
 Let's build an app that retrieves the top rated movies from the movie database and displays them on an HTML page. Open up `app.js` in Sublime Text and `movieapp.html` in Chrome.
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
 });
 ```
 
-## Part Two
+## Test the requests
 
 At first we just want to make the API requests and print out the JSON data. We need to be sure that the requests are being made correctly.
 
@@ -37,7 +37,7 @@ var movieApp = {
 };
 ```
 
-Contents of the init function:
+Inside of the init function we'll make two ajax requests like so:
 
 ```
 $.ajax({
@@ -60,9 +60,7 @@ $.ajax({
 });
 ```
 
-Open up the response objects in the JavaScript console and have a look at the structure of the data.
-
-The response object has a lot of data, we just need one property and that is the "results" array. The results array contains 20 objects, one for each movie:
+Open up the response objects in the JavaScript console and have a look at the structure of the data. The response object has a lot of data, we just need one property and that is the "results" array. The results array contains 20 objects, one for each movie:
 
 ```
 results = [{movie1}, {movie2}, {movie3}, ...]
@@ -85,11 +83,12 @@ vote_count: 259
 }
 ```
 
-##Part Three
+## Parse the data
 
 Now that we know:
-a) that the requests are being made correctly
-b) what the retrieved data looks like
+
+1. that the requests are being made correctly
+2. what the retrieved data looks like
 
 We can start to parse the data and create html elements.
 

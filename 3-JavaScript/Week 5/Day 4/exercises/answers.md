@@ -1,6 +1,4 @@
-# Common mistakes
-
-I will be writing an exercise for each of the following code snippets. Each snippet is an error which is representative of a common error that people make. The students will run the code and use chrome console/debugging tools to figure out the problem.
+# Debugging JavaScript - Answers
 
 ## Interpreter adding semi-colons where they don't belong.
 
@@ -15,7 +13,7 @@ function returnPerson (name) {
 }
 ```
 
-## Trailing comma
+## Trailing comma **modern browsers are ok with this**
 
 ```
 var shoppingList = {
@@ -70,7 +68,7 @@ function calculateSomething() {
 }
 ```
 
-This is why Douglas Crockford advised in his book JavaScript – The Good Parts to declare all variables at the top of the function body.
+This is why Douglas Crockford advised in his book JavaScript – The Good Parts to declare all variables at the top of the function body. If the variable is declared outside of the function then don't use the `var` keyword, simply re-assign the variable to a value.
 
 ## Function "Hoisting"
 
@@ -89,7 +87,7 @@ Hoisting examples are courtesy of: http://elegantcode.com/
 ## Assuming form input is a number
 
 ```
-var tshirtSize = $('#tshirt-sizes option:selected').val();
+var tshirtSize = $('#tshirt-size option:selected').val();
 
 if( tshirtSize === 1 ){
   console.log('Thanks for ordering a small!');
@@ -101,7 +99,3 @@ Even if a small is ordered, the above message will not be printed. This is in a 
 ```
 var tshirtSize = Number ($('#tshirt-sizes option:selected').val());
 ```
-
-## Loading jQuery after code that depends on it
-
-## 

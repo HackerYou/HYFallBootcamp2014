@@ -1,4 +1,4 @@
-# Building a Weather Widget
+# Building a Weather Widget: Code Along
 
 The data that we get back has a lot of information. The data object consists of two JavaScript objects; the object of interest to us is the one named "current_observation". This object has a lot of interesting data.
 
@@ -14,9 +14,7 @@ For this widget we need the following data:
 * `icon_url`: image representing the weather
 
 
-This information can be combined to create a weather widget.
-
-The HTML & CSS for the widget has been provided for you. Just open up `weather-app.html` to get started. jQuery has been included for you as well. We will write JavaScript inside of the `weather-app.js` file.
+We will combine this information to create a weather widget together. The HTML & CSS for the widget has been provided for you. Just open up `weather-app.html` to get started. jQuery has been included for you as well. We will write JavaScript inside of the `weather-app.js` file.
  
 For this app/widget we'll create an object called `weatherWidget` to namespace our code and organize it. The object will have several properties:
 
@@ -25,9 +23,8 @@ For this app/widget we'll create an object called `weatherWidget` to namespace o
 3. `parseData`: a callback function that gets called on successful AJAX request. We'll go through the response data and put the relevant data in `weatherData`. From here we'll call `updateDOM`.
 4. `updateDOM`: a function that will use jQuery to update the DOM with data from `weatherData`.
 
-**Note**:
-
-- remember to prefix any property call with `weatherWidget`. So `weatherWidget.parseData` instead of just `weatherWidget`.
+### Reminder
+We will prefix all property calls with `weatherWidget`. So `weatherWidget.parseData` instead of just `weatherWidget`.
 
 
 ## Extension exercises:

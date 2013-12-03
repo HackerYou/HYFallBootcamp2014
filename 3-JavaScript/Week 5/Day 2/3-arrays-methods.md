@@ -73,37 +73,19 @@ Note the chaining of expressions. `theArray[2]` gives us an object which we can 
 > Teacher note: Chaining methods/operations might not come naturally to students. Stop here and make sure that students understand that we're retrieving a value from an array which we can then work with. This is used a lot in jQuery for example.
 
 
-## Functions as first-class objects
+## Functions
 
-**JavaScript functions are first-class objects**. This behaviour is rare in programming languages. It means that functions can be passed as arguments to other functions and that they can be properties of objects. 
+Let's take a small detour and talk about functions. Functions in JavaScript are objects. This means that like a number, string or array, they can be stored in variables.
 
-### Functions as arguments
+`function myFunction(){}` creates a function and makes it available anywhere in our code. We can use function expressions to also define functions.
 
-Example:
+`var myFunction = function(){}`. This means take this function object and put it in the "myFunction" box so that we can get at it whenever we want. 
 
-```
-function taskRunner(taskName, someTask){
-	console.log("I just did: " + taskName);
-	someTask();
-}
-```
+### Reference function
+If we write `myFunction` then we get back an object. Define a function using a function expression in your chrome console and  then type its name without the parenthesis. Do you see that you get the function back?
 
-We defined a function called `taskRunner` which takes a string called `taskName` and a function called `someTask`. It then prints `"I just did: <taskName>"` and calls the function.
-
-```
-taskRunner("Adding two numbers", function(){
-	console.log(22 + 66);
-});
-```
-
-The `taskRunner` will print `I just did: Adding two numbers` and then print `88`
-
-> Teacher note: Functions as arguments is a rather weird concept. This is a good time to stop and ask students to explain the code above. See if there are any misconceptions.
-
-**Exercises**:
-
-* Write a function that accepts two arguments, a `number` and a `function`. If the number that is passed is greater than 50 then call the function. If the number is lower than 50 then print an error message.
-
+### Call function
+`myFunction()` calls the function and we get back the result of the function. The only difference is the added parenthesis `()`.
 
 ### Method
 

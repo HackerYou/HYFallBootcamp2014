@@ -68,7 +68,7 @@ In pairs, solve the following questions by using JavaScript.
 - how many seconds old are you? Solution: <span class="solution">26 * 365 * 24 * 60 * 60</span>
 
 ### String
-Another type is called **String**. Strings are sequences of characters within quotes, they are used to store text.
+Another type is called **String**. Strings are sequences of characters **within quotes**, they are used to store text.
 
 ```
 > "hello"

@@ -1,5 +1,7 @@
 # Prototypal Inheritance
 
+This content is optional. Do this if you're interested in learning more JavaScript!
+
 > JavaScript is a prototypal inheritance language. That means that objects can inherit properties directly from other objects. The language is class-free.
 > 
 > **JavaScript the Good Parts**

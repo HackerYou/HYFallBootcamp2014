@@ -11,7 +11,7 @@ Review week’s curriculum and have some questions ready for the Q/A session.
 
 # CURRI
 
-At the beginning use CURRI to let the instructors know your knowledge and comfort level with the HTML and CSS material. The instructors will use this information to better serve the students' needs.
+At the beginning use CURRI to let the instructors know your knowledge and comfort level with the material. The instructors will use this information to better serve your needs.
 
 * Each day is a "track" on CURRI. Each "checkpoint" is a learning expectations or goal for that day.
 * At the end of the day go through the checkpoints and self-assess. 

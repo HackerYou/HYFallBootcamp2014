@@ -134,12 +134,17 @@ The above function returns the sum of all positive integers between 0 and n (inc
 - a **base case** -- where for some special input value(s) the function has a simple, non-recursive definition -- in our example, addAll(0) is defined to return 0.
 - a **reduction step** -- addAll(n) = n + addAll(n-1) -- the value of addAll(n) is defined in terms of addAll(n-1) -- one step closer to our special addAll(0).
 
+
+## Problem Solving Lesson
+
+Going from a problem described in our everyday language to actual code is not easy. So the "Problem Solving Lesson" will help with that. Let's jump to those notes before doing these exercises.
+
 ## Exercises
 1. (*) Write a function `maxOfTwo(n1,n2)` which returns the higher of two numeric values.
 
 2. (*) Write a function `maxOfThree(n1,n2,n3)` which returns the higher of three numeric values.
 
-3. (*) Write a function that takes a character (i.e. a string of length 1) as argument and returns true if it is a vowel, false otherwise. E.g. `charIsVowel(“b”)` returns `false`.
+3. (*) Write a function `charIsVowel(c)` that takes a character (i.e. a string of length 1) as argument and returns true if it is a vowel, false otherwise. E.g. `charIsVowel("b")` returns `false`.
 
 4. (**) Write a function `palindrome(string)` which returns `true` if the string is a palindrome, i.e. it reads the same both backwards and forwards. E.g. `palindrome("pumpkin");` returns `false` and `palindrome("civic");` returns `true`.
 
@@ -148,3 +153,5 @@ The above function returns the sum of all positive integers between 0 and n (inc
 6. (***) Write a function `englishNumber(n)` which takes a number as an argument and returns a string which is the english version of the number. This function should work for numbers between 0 and 100.
 
 7. (***) Write a program which prints out the lyrics to the song "99 Bottles of Beer on the Wall." The function should take a number  `n` as an argument and print the lyrics starting at that number. The `englishNumber()` function will be handy here.
+
+8. Create a problem that requires a bit of JavaScript to solve and share it with the class. You should have a solution!

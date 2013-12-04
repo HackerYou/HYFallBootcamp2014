@@ -2,7 +2,7 @@
 
 This is a pair programming exercise. In pairs you will follow the instructions below to build a to-do list app. You will get an opportunity at the end to customize it but at first the functionality will be similar for everyone.
 
-Open up `to-do-app.html`. You'll see that bootstrap and jQuery have already been loaded for you. We've also gone ahead and added the skeleton markup required for the app. The basic app should work like this:
+Open up `to-do-app.html` in Sublime Text and Google Chrome. You'll see that bootstrap and jQuery have already been loaded for you. We've also gone ahead and added the skeleton markup required for the app. The basic app should work like this:
 
 * Users type in the input field and press enter.
 * As soon as they press enter we'll take their input and add it as a list item to the unordered list under the input field.
@@ -55,7 +55,7 @@ $(document).ready(function(){
 });
 ```
 
-Notice that the only different is the `event` variable. We can call this anything we want. It's just a variable/parameter that holds the event. By convention `e` is used. The event has a method called `preventDefault()` which can stop the default behaviour of the `submit` event.
+Notice that the only difference is the `event` variable. We can call this anything we want. It's just a variable/parameter that holds the event. By convention `e` is used. The event has a method called `preventDefault()` which can stop the default behaviour of the `submit` event.
 
 ```
 $(document).ready(function(){
@@ -103,9 +103,9 @@ We should only do something if the input value is not empty otherwise we would b
 $(document).ready(function(){
 	$('form').on('submit', function(e) {
 		e.preventDefault();
+		var toDoItem = $('input').val();
 		
-		if ($('input').val() !== '') {
-			var toDoItem = $('input').val();
+		if (toDoItem !== '') {
 			console.log(toDoItem);
 			$('input').val('');
 		}
@@ -121,9 +121,9 @@ Lets construct an HTML string using concatenation that will in the end look like
 $(document).ready(function(){
 	$('form').on('submit', function(e) {
 		e.preventDefault();
+		var toDoItem = $('input').val();
 		
-		if ($('input').val() !== '') {
-			var toDoItem = $('input').val();
+		if (toDoItem !== '') {			
 			console.log("<li>" + toDoItem + "</li>");
 			$('input').val('');
 		}
@@ -131,7 +131,7 @@ $(document).ready(function(){
 });
 ```
 
-Instead of printing it to the console lets put these list items inside of our unordered list. In the jQuery API look for "Manipulation". The sub-categories are self explanatory. It should be clear that we're looking for "DOM Insertion, Inside" (because we want to put an element inside of `ul`).
+Instead of printing it to the console lets put these list items inside of our unordered list. In the jQuery API look for "Manipulation". The sub-categories are self-explanatory. It should be clear that we're looking for "DOM Insertion, Inside" (because we want to put an element inside of `ul`).
 
 We want to add list items to the end of `ul` so `append()` will do. If we wanted the latest item to be added to the top then we would use `prepend()`. Let's find the `ul` element and append the list item inside of it.
 
@@ -167,7 +167,7 @@ $(document).ready(function(){
 
 ### Item completion part 1
 
-A to-do app is no good if we can't check off items. We need a way change the glyphicon style from `glyphicon-unchecked` to `glyphicon-check` when an item is clicked. This means we need another event listener except this time we're listening for a `click` event. Add the following under your existing code (**inside of the document ready**):
+A to-do app is no good if we can't check off items. We need a way change the glyphicon style from `glyphicon-unchecked` to `glyphicon-check` when an item is clicked. This means we need another event listener except this time we're listening for a `click` event. Add the following under your existing code (**inside of the document ready but after the "form" listener**):
 
 ```
 $('li').on('click', function(){
@@ -187,9 +187,9 @@ Nothing is happening. We're clicking on `li` items so why isn't the callback fun
 
 ### Event delegation
 
-Events **propagate** or **bubble** up the DOM when they are triggered. So clicking on an element will trigger the event listeners that are directly attached to it and then the event will tell the parent element about the even, and so on until the event reaches the top object (the document). 
+Events **propagate** or **bubble** up the DOM when they are triggered. So clicking on an element will trigger the event listeners that are directly attached to it and then the event will tell the parent element about the event, and so on until the event reaches the top object (the document). 
 
-So what we can do is attach our listener on a "higher" level element that gets loaded with the DOM. `ul` is a good candidate because it wraps up the `li` elements and it is loaded at the start. When someone clicks an `li` element, the even goes up to the `ul` and "notifies it of what happened". The even will then go up to the container div and so on until it reaches the top most level.
+So what we can do is attach our listener on a "higher" level element that gets loaded with the DOM. `ul` is a good candidate because it wraps up the `li` elements and it is loaded at the start. When someone clicks an `li` element, the event goes up to the `ul` and "notifies it of what happened". The event will then go up to the container div and so on until it reaches the top most level.
 
 We can delegate an event by using the following syntax:
 

@@ -66,6 +66,7 @@ The Mozilla developer network has [documentation](https://developer.mozilla.org/
 **Solutions**:
 
 * `document.getElementById("mainHead").outerHTML = "<p> 'Hello World!' </p>";`
+* `document.getElementsByClassName("overlay")[0].className = "overlay box";`
 
 
 ## jQuery
@@ -84,7 +85,7 @@ The solution is to use **[jQuery](http://jquery.com/)**, "The Write Less, Do Mor
 
 ### Load jQuery
 - Open `try-jquery.html` in sublime text.
-- We need to load the jQuery library before we can work with it. Do this by downloading the jQuery JavaScript file from jquery.com or by using a CDN. Scroll to the bottom of the main-page of jquery.com to find the link to jQuery which is served by google. 
+- We need to load the jQuery library before we can work with it. A simple way to do this is to use a remote copy via a CDN. Scroll to the bottom of the main page of jquery.com to find the "Quick Access" URL to jQuery which is served by google. Include this URL in script tags in your HTML file. 
 
 - Aside: CDN stands for "content delivery network". A CDN is a network of computers which provides static resources (images, javascript, css, etc.) to users based on proximity. The resources are hosted in multiple locations and the closest computer to the user will serve the resource. CDNs are fast.
 
@@ -94,7 +95,7 @@ Solution: `<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquer
 - Open `try-jquery.html` in Chrome. We can test that jQuery has been successfully loaded by going to the JavaScript console. The console should show no errors. Type `jQuery` into the console and press enter. The return value should be `function (e,t){return new x.fn.init(e,t,r)}`. This is telling you that **jQuery is a function**. Type `$` and press enter, you should get the same return value. `$` **is an alias for jQuery**, meaning both will do the same thing.
 
 ### Selecting elements
-jQuery is a function that is defined with multiple parameters but they are optional. The `selector` parameter is all we need for the time being. To find an element on the page we call the jQuery function and pass it a selector that corresponds to the element.
+jQuery is a function that is defined with multiple parameters, but they are optional. The `selector` parameter is all we need for the time being. To find an element on the page we call the jQuery function and pass it a selector that corresponds to the element.
 
 `$(selector);` or `jQuery(selector);`
 
@@ -124,7 +125,7 @@ Let's take a quick detour to the "Functions as first-class objects" notes. If we
 
 ### Events
 
-With jQuery we can do anything we want in response to an **event**. In the browser events usually consist of a mouse click, a mouse hover, scrolling, window resize, keyboard presses, etc. The process looks like this:
+With jQuery we can do anything we want in response to an **event**.  In the browser events usually consist of mouse clicks, mouse hovers, scrolling, window resizes, keyboard presses, etc. The process looks like this:
 
 1. **Event Binding**: attach an event **listener** to a jQuery object with the `on()` method.
 2. **Specify the event**: the first argument to the `on()` method is a string (e.g. `"click"`).

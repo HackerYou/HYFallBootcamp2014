@@ -103,33 +103,33 @@ A block statement is used to group statements. The block is delimited by a pair 
 
 1. Consider the code below; what is printed to the console?
 
-```
-var n = 4;
-if (n > 10) {
-	console.log("That's a big number");
-} else {
-	console.log("It's a small number");
-}
-```
+	```
+	var n = 4;
+	if (n > 10) {
+		console.log("That's a big number");
+	} else {
+		console.log("It's a small number");
+	}
+	```
 
-Solution: <span class="solution">`"It's a small number"` is printed.</span>
+	Solution: <span class="solution">`"It's a small number"` is printed.</span>
 
 2. Create a quizzing program. The program asks a question, the user is prompted to answer, the answer is checked and then a score is printed to the console.
 
 3. Consider the code below; what is printed to the console? What is `else if`?
 
-```
-var n = 55;
-if (n > 100) {
-	console.log("That's a big number");
-} else if (n > 10 ) {
-	console.log("It's kinda big");
-} else {
-	console.log("It's a small number");
-}
-```
+	```
+	var n = 55;
+	if (n > 100) {
+		console.log("That's a big number");
+	} else if (n > 10 ) {
+		console.log("It's kinda big");
+	} else {
+		console.log("It's a small number");
+	}
+	```
 
-Solution: <span class="solution">`"It's kinda big"` is printed. `else if` is used to add branches to the conditional statement.</span>
+	Solution: <span class="solution">`"It's kinda big"` is printed. `else if` is used to add branches to the conditional statement.</span>
 
 4. Create a simple "rock-paper-scissors" game. Prompt the user to enter their choice of "rock", "paper" or "scissors" and store this value in a variable. Always compare the user's input with the value "rock" (we'll work on making this more dynamic later). If the user's input is "paper" then print to the console "You Win!". If the input is "rock" then print "Tie" and print "You Lose" if the user's input is "scissors". 
 
@@ -192,7 +192,7 @@ Solution:
 for(var i = 10; i > 0; i--){
   console.log(i);
 }
-<pre>
+</pre>
 </div>
 
 **Level 2**. Print the even numbers between 1 and 20. The output should look something like this:
@@ -263,7 +263,7 @@ for(var i = 1; i < 100; i++){
     console.log(i);
   }
 }
-<pre>
+</pre>
 </div>
 
 ### While Statement

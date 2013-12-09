@@ -26,7 +26,7 @@ This week you are going to write some JavaScript using the jQuery library in ord
 
 ## Peer Review
 
-The following criteria should be considered when looking at the code of your peers.
+During the first time-block on Friday you should pair up with another student and do peer-reviews. Go through each other's code and try to give them as much feedback as you can. The following criteria should be considered when looking at the code of your peers.
 
 - proper indentation
 - use of naming conventions

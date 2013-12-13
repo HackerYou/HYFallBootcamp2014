@@ -20,5 +20,6 @@ Your website (or your clients') websites might go down without you knowing. Use 
 * collect uptime data to help you decide where to say with the host or not
 
 **Services**:
-http://www.monitor.us/
-https://www.pingdom.com/
+
+* http://www.monitor.us/
+* https://www.pingdom.com/

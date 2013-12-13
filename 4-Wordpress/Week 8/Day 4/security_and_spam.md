@@ -16,7 +16,7 @@ Security is a major issue online. You need to build websites for clients that wi
 * no directory browsing (use the .htaccess to do this)
 * require SSL for the admin area
 
-There are plugins that can achieve all of the above. 
+There are plugins that can achieve all of the above, checkout [Better WP SEcurity](http://wordpress.org/plugins/better-wp-security/).
 
 ### HTTPS & SSL
 

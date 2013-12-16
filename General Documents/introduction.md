@@ -13,7 +13,7 @@ This means:
 * Eat a healthy & balanced diet. `BreakFast.is("important")`
 * Exercise lightly (e.g. walk to class)
 
-Don't force the learning. Don't stay up all night coding. Don't stress out about your progress. And for the love of HTML don't drink energy drinks.
+Don't force the learning. Don't stress out about your progress. Don't stay up all night coding.
 
 ## Start of day
 At 10 AM every morning the class will get together briefly to:
@@ -21,7 +21,7 @@ At 10 AM every morning the class will get together briefly to:
 * Go over the agenda for the day.
 * Discuss how everyone is feeling about their progress and respond to your feedback.
 
-Learning is a shared responsibility between you and the instructors so be vocal. If you need the instructor to slow down then say so. If you need help then say so.
+Learning is a shared responsibility between you and the instructors so be vocal. If you need the instructor to slow down or repeat something then say so. If you need help then say so.
 
 ## Time blocks
 The days are broken down into two time blocks: 10 am to 3 pm (includes lunch) and 3 pm to 6 pm. There will be a lesson or exercise planned for each time block.

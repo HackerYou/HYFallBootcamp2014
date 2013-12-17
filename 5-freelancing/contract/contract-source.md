@@ -1,0 +1,1 @@
+This contract is a modified version of the popular "[Contract Killer](http://stuffandnonsense.co.uk/projects/contract-killer/)".

@@ -4,7 +4,7 @@ Self-assessment is the act of thinking about and monitoring our own learning. It
 
 This should not take too much of your time. At the end of each day spend just 20-30 minutes doing the following:
 
-1. Look at the day’s learning goals in CURRI. How do you feel about these goals? If you’re not feeling well then come up with a good question. If you’re doing well then what else do you want to learn?
+1. Look at the day’s learning goals in CURRI. How do you feel about these goals? Click the face indicating your level of comfort with the content. If you’re not feeling well then come up with a good question. If you’re doing well then what else do you want to learn?
 2. Summarize key points as a recipe/gist to be added to gistboxapp.com. Remember to label the gists (by technology, day, week, w/e).
 
 Learning is a shared responsibility so self-assessment doesn't mean you are on your own. Early the next day the instructors will go over the self-assessment data from CURRI and respond to the class's needs.

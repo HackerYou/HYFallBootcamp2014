@@ -30,14 +30,14 @@ The layout is also 100% up to you, provided you include most/all of the below re
 
 #### When finished
 
-When you are done, zip the folder up and submit to lore. I will review your code and make notes on your projects. Please submit by the following Monday, however earlier is definitely encouraged.
+When you are done, zip the folder up and upload to Basecamp. I will review your code and make notes on your projects. Please submit by the following Monday, however earlier is definitely encouraged.
 
 You will not be graded, I simply want to have a look at how everyone is coding and see what areas we are doing well at and what areas we need some more practice in.
 
 There are no template files to start with, but you can visit past notes or projects to pull code from. If you need some guidance on where to start, this is how I would start the project:
 
 #### Help getting Started
-1. Create a new folder your project called `day6project`.
+1. Create a new folder your project called `week1project`.
 1. Inside that folder create index.html and a folder called `images` to store all image assets
 1. Create a base HTML structure from the cheat sheet or an existing project
 1. Create our `style.css` file in the same folder as `index.html`

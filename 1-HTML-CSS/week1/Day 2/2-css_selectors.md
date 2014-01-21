@@ -1,4 +1,4 @@
-# Week 1, Day 2
+# Week 1, Day 2 Including CSS and CSS Selectors
 
 ### CSS: 3 ways
 There are three ways to write CSS and include it in your HTML document.

@@ -1,4 +1,4 @@
-# Week 1, Day 3
+# Week 1, Day 3 Units, Box Model, and Floats
 
 ## Starting the Styling!
 Now that we have a good handle on selectors, we can get to work on writing the styles (or **properties** and **values** as we call them) for those selected elements.

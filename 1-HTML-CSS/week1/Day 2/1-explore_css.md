@@ -6,7 +6,7 @@ As a freelancer you will get requests from clients that you will not know how to
 
 Don't limit yourself to just answering the questions though; explore the web by using the titles from each section. Learn something interesting to share with the class!
 
-The markup for this exercise is in `1-explore_css_exercise.html`.
+The markup for this exercise is in `explore_css_exercise.html`.
 
 
 ## Including CSS

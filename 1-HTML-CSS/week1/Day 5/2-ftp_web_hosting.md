@@ -12,9 +12,10 @@ There are many many ways to deploy your files to a web server, for example rails
 
 To connect to FTP, we need a FTP client. You may have a favourite FTP client already, and you are welcome to use it. These are the most popular and do more than enough.
 
-**Mac and Windows:** CyberDuck [http://cyberduck.ch/](http://cyberduck.ch/)
-
 **Mac and Windows:** Filezilla [http://filezilla-project.org/download.php?type=client](http://filezilla-project.org/download.php?type=client)
+
+**Mac:** Transmit [http://panic.com/transmit/](http://panic.com/transmit/)
+
 
 ## FTP Username and Password
 If you already have a FTP username and password, you can skip this step.
@@ -27,28 +28,27 @@ Go ahead and enter the information as so. Make sure the directory is set to `pub
 
 Remember your username and passowrd for just a few minutes!
 
-## Configuring Cyberduck
+## Configuring Filezilla
 
-Click the 'Open Connection' in the top left corner and you'll see an interface like this:
+Click the blue and green 'Site Manager' icon in the top left corner ![](http://f.cl.ly/items/0i0K3B0S1e273V2u0M0S/Screen%20Shot%202014-01-22%20at%201.25.49%20PM.png) then click "New Site" to enter your credentials:
 
-![](http://wes.io/L9fs/content)
-
-Server is **ftp.yourdomainname.com**
-Leave port at **21**
-Username is whatever you just set plus **@yourdomainname.com** (ex: wesbos@hackeryou.com )
-password is whatever you just set
+![](http://f.cl.ly/items/3Y0V093u08133f0b0G09/Screen%20Shot%202014-01-22%20at%201.37.16%20PM.png)
+* Rename "New Site" to whatever you like
+* Host is **ftp.yourdomainname.com**
+* Leave Port, Protocol & Encryption as is
+* Set Logon Type to **Normal**
+* User is whatever you just set plus **@yourdomainname.com** (ex: wesbos@hackeryou.com )
+* Password is whatever you just set
 
 Go ahead and click connect, you should connect to your server.
 
-If you see this popup, click **change** this will change it to SFTP, which is more secure.
+Filezilla will now show a listing of all the files on your **local** machine (left hand side) and all the files in the **root** directory of your **remote** webserver (right hand side). 
 
-![](http://wes.io/L9GE/content)
+You can navigate around the files and directories on both sides like in Explorer or Finder. To upload to the server, drag and drop from the left side to the right. 
 
-If you see this popup, click **continue**
+![](http://f.cl.ly/items/432X360I0h2T3H2Y1b24/Screen%20Shot%202014-01-22%20at%202.16.43%20PM.png)
 
-![](http://wes.io/L9Dw/content)
-
-You should then see what we call the **root** directory. This is a listing of files on your webserver. It works just like your computer, upload an **index.html** and surf to www.yourdomain.com and you will see it.
+The server works just like your computer, upload an **index.html** and surf to www.yourdomain.com and you will see it. Note that with most server configurations, you'll need to place your files in the  `public_html` directory. 
 
 Similarly, you can upload a folder called `finalproject` and surf to `www.yourdomain.com/finalproject` to see it.
 

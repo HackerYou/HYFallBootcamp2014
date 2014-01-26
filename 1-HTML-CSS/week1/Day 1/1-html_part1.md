@@ -4,7 +4,7 @@
 
 * HTML stands for HyperText Markup Language
 * HTML is the language we use to present content onto our web page
-* Think of it as the skeleton of your webpage from which everything else will be built on
+* Think of it as the skeleton of your web page from which everything else will be built on
 * We use it to define the content areas and the structure of your page
 * Very simple but very important as it is the underlying foundation of every web page
 * As we said, HTML is used for defining content based on its meaning and its important to understand that HTML has __very little to do with the style of your website and the look of the content__ - that is what CSS is for and we will get into that later.
@@ -65,7 +65,7 @@ You can view this in your browser or code editor by viewing `hello-world.html`
 	* __Links and Scripts__ to separate Stylesheets, web fonts or JavaScript Files
 		* We will be going over these all at a later date, just know that we can include other files in the current document in the **HEAD**
 	* **Page meta** - meta is defined as information about data. So, __Page Meta__ is information about the current HTML document. We can use __meta tags__ to describe various aspects of the page. A few options are:
-		* description, authors and keyworks for search engines to read
+		* description, authors and keywords for search engines to read
 		* Specifically settings the image, title and description for when we share a post on facebook
 		* Setting specific rules as to how a website scales on mobile tables and phones (more on this later!)
 	* __Let's view source on hackeryou.com and see what tags we have in our header!__
@@ -87,7 +87,7 @@ You can view this in your browser or code editor by viewing `hello-world.html`
 			</body>
 		</html>		
 
-## What does it look like? What the heck are these _tags_?
+## What does it look like? What are these _tags_?
 
 All HTML tags can be broken down to open and close like this:
 
@@ -106,6 +106,7 @@ The line above outputs something that looks like this:
 ><p>Hello there, <em>Wes Bos</em>. How are you today?</p>
 
 We wrap everything in the **`p`** tag because we are describing it as a paragraph. Inside of that we wrap __Wes Bos__ in `em` - the emphasis tag - because we are describing that content as something that has emphasis.
+
 The outputted result from the browser is human readable with some default styling.
 
 ## Separation of Content and Style (Very important)
@@ -140,13 +141,18 @@ In this example, even though we close the `</div>` and `</strong>` tags, we do i
 **Right:**
 
 	<div><h1>Welcome</h1>, Today is <strong>September 1st</strong></div>
+
 	
 ## Playing with HTML & CSS
 The first few days of learning HTML & CSS can be a bit limiting because you have to learn the underlying fundamentals before you can do anything *really* fun.
 
 This exercise is designed to give you a little taste of what we will be working with over the course of HackerYou. 
 
-[http://codepen.io/wesbos/professor/Dovrc](http://codepen.io/wesbos/professor/Dovrc)
+<http://codepen.io/wesbos/pen/Dovrc>
+
+Open the above codepen and let's step through the HTML, adding class names where the comments say to do so.
+
+When you finish that, try read through the CSS code and make some changes. Try and change values for sizes, fonts, borders, widths, padding and margin. See what happens.
 
 ## More Questions
 1. What does HTML stand for? CSS?
@@ -165,3 +171,12 @@ This exercise is designed to give you a little taste of what we will be working 
 	* <div class="hide">Content and Style</div>
 1. Why? What is HTML used for? What is CSS used for?
 	* <div class="hide">HTML is for describing content, CSS is for styling content</div>
+
+
+<style>
+	div.hide {color:white !important;}
+	div.hide:hover {
+		visibility: visible;
+		color:black !important;
+	}
+</style>

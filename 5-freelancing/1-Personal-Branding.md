@@ -1,5 +1,13 @@
-# Personal Branding 
+# Introduction to freelancing 
 
+Learning how to run a business is an entirely different skillset than learning how to code. Good developers are able to do both and successfully run their own company. 
+
+Working for yourself can be a lot of work, but can provide many freedoms in terms of where, when and who you work with. 
+
+Freelancing notes will be slightly different than our coding notes as the topic of freelancing will be more of a back and forth discussion rather than a technical walk through. Take these notes are more high level ideas that will be expanded on as we discuss. 
+
+
+# Personal Branding 
 How others perceive you and your skills is one of the most important parts of being a freelancer. While capability and coding skill matter a lot in regular jobs, your personal brand is just as important as a freelancer when you are getting referrals and reeling in new clients.
 
 ## Fake it 'till you make it
@@ -19,7 +27,7 @@ The personal branding space carries around skeeze. Much of the personal branding
 
 Personal branding isn't about business cards or a gimmicky fedora that you always wear. It's about creating a **rock solid and well rounded perception*** of yourself, your skills, your work ethic and your business.
 
-## Reputation 
+Heather will chat with each of you one on one, but here are some high level aspects to think about. 
 
 ## Pick a company name
 
@@ -48,7 +56,7 @@ George Stroumboulopoulos — <http://www.cbc.ca/strombo/>
 ### Running under a company name
 The above won't be the case for everyone. You may have your goals set on eventually (or immediately) creating a team and blooming into an agency.
 
-Running under a company name isn't always as _personal_ but it certainly can give the impression that your company is larger and more professional than you may actually be. This may allow you to bid on larger projects and have companies take you more seriously. 
+Running under a company name isn't always as _personal_ but it certainly can give the impression that your company is larger and more professional than you may actually be. This may allow you to bid on larger projects and have companies take you more seriously. It also affords you the ability to easily grow the company should you choose too in the future. 
 
 ### Examples
 
@@ -79,7 +87,7 @@ So, _how_ do you do these things?
 
 ### Be Loud, vocal, have opinions and share them
 
-THe biggest part of creating your own personal brand is being extremely vocal about what you do. As we said earlier, You must let everyone know what is it you do.
+THe biggest part of creating your own personal brand is being extremely vocal about what you do. As we said earlier, **you must let everyone know what is it you do.**
 
 Being a freelancer isn't just a job, it's going to be a huge part of your life and you need to make it seem so to others around you. To do this, you must get really involved both within the development community as well as outside. 
 
@@ -87,7 +95,7 @@ Many people don't like to talk about themselves or the work they are doing as it
 
 We will go into _how_ you can be vocal in the coming sections. 
 
-### Reliable 
+### Be Reliable 
 There are going to be times in your freelancing career where you will drop the ball, where you won't be able to finish a project on time or where you just need drop a project completely.
 
 These things are going to happen, there is no getting around it. How you handle these situations is very important to your reputation and your personal brand.
@@ -163,15 +171,60 @@ If you have a friend who is good with words, buy them a beer in trade for a litt
 
 ### Avatars & Print pictures
 
+Ditch the picture of your cat and get a real, high quality photo of yourself taken. Having a consistent avatar that really shows your face makes people feel at ease when dealing with you. They know you are a real person. 
+
+Have large, high resolution version of your photo available for anyone who asks. When you are featured on a website or in print, the last thing you want is someone pulling a photo from 4 years ago that they found on Google images. 
+
+Take care of your visual identity and always keep it up to date.
 
 ### Blog
+You have probably already been told this a million times, but having a blog is _so_ crucial to the success of a freelancer. By sharing what you know — be it about technology, business, or life — you will automatically become an expert in that area.
+
+I often share short tutorials or examples of code that I found helpful on my blog. These are not only helpful to other developers, but clients can see that you really know your stuff.
+
+Every single blog post on my blog has resulted in paid work. Let's take a look at a few examples right now on <http://wesbos.com>
 
 ### Twitter
-Tell people what do you in your twitter bio. 
+Tell people what do you in your twitter bio, air on the side of bragging. Look important. This will show people that you are really involved and interesting to follow.
+
+> Designer ❯ Developer ❯ JavaScript, jQuery, Node.js, PHP and WordPress ❯ Lead instructor at #hackeryou #ladieslearningcode ❯ Sublime Text fan ❯ ♥ @KaitBos
+
+<https://twitter.com/wesbos>
+
+> Founder of @thisishackeryou & @llcodedotcom. Early investor in @shoplocket. Super passionate about education. Find out more here: http://heatherpayne.ca/official-bio
+
+<https://twitter.com/heatherpayne>
+
+> Director of Operations at @Shopify. Co-Founder at @JetCooper (Acquired). Part of @Next36, @TEDxToronto, & #LeanCoffeeTO.
+
+<https://twitter.com/skanwar>
 
 ### Email Address
+Having a professional email address on your own domain will really up the level of your credibility. Ditch SuperSexySoccerGurl69@hotmail.com and sign up for a real email provider. 
+
+I recommend using Google Apps as it is exactly like Gmail. This will allow you to create an email address @yourdomain.com. You can also create alias to other domain names.
+
+I have 1 google apps account setup for wesbos.com, kaitbos.com and bostype.com.
+
+<http://www.google.ca/enterprise/apps/business/>
+
+It is no longer free, but well worth the $50/year per user.
+
+<http://www.google.ca/enterprise/apps/business/pricing.html>
 
 ### Speak at conferences 
+
+This is one of the scariest things I ever started to do. The first time someone asked me to speak, it was at a small meetup of about 100 people and I was terrified. I thought I didn't know enough to be a speaker. 
+
+Once you speak and attend enough conferences, you will learn that each person is just sharing what they know about a certain area.
+
+Take some time to really learn a certain topic — CSS3 Animations and Transitions — and put together a 25 min talk. You can then submit this to conferences and local meetups and possibly go deliver it. 
+
+Being a "speaker" doesn't require any prerequisite, but really elevates the level of projects you will attract. 
+
+Speaking allows you to travel, most conferences will at least pay for your travel and hotel. This is my secret link many do not know about:
+
+<http://lanyrd.com/calls/>
 
 ## Questions to ask
 
@@ -180,10 +233,8 @@ Your personal brand is going to be unique to yourself. So, everything above isn'
 Asking the right questions will get you started with developing your own personal brand.
 
 1. How do you want others to perceive you? When someone hears your name, what will others think?
-
 2. What is my unique identifier? 
-
-## Things to do
-1. Think of a name for your company. Will it be your name, a handle or a company name?
-1. Are you on twitter? Find great people to follow
-1. What is your email address? Consider a professional domain name with a Google apps account
+3. Is my online identity consistent? 
+4. What shows up when I Google my name? My company name?
+5. What kind of projects do I want to work on? 
+6. How will I position myself as a freelancer? 

@@ -333,7 +333,7 @@ Bam! with just that, we now have a very simple dropdown menu. Its very ugly, but
 
 ## Exercises
 
-We have a number of exercises today all revolving around menus.
+We have a number of exercises today all revolving around menus. Find them in your exercieses folder, labelled `lists-ex1` through `lists-ex6`.
 
 There is a challenge question for you CSS pros - exercise #6.
 

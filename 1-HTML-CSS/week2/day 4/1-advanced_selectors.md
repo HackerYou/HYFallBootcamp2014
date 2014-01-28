@@ -1,4 +1,4 @@
-# Week 2 , Day 4
+# Week 2 , Day 4 Advanced CSS Selectors
 
 # Advanced Selectors
 By now, we have become pretty comfortable with the following selectors:

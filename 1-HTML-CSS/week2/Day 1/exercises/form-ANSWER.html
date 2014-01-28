@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>CSS Forms</title>
+</head>
+	<body>
+		<form action="login.php" class="login">
+			<input type="text" name="username" class="username" placeholder="Username or email">
+			<input type="password" name="userpass" class="userpass" placeholder="Password">
+			<input type="submit" value="Sign in" class="submitButton">
+			<label for="rememberPassword">Remember Me</label>
+			<input type="checkbox" name="rememberPasword">
+			<a href="#" class="forgot">&bull; Forgot Password?</a>
+		</form>
+
+		<style type="text/css">
+		/* We get to use border-box */
+		* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+		body {
+			background:black url(http://a0.twimg.com/a/1350417493/t1/img/front_page/city-balcony@2x.jpg) top no-repeat;
+			background-size: cover;
+			font-family: sans-serif;
+		}
+		form.login {
+			border-top:1px solid white;
+			width:350px;
+			background:#DDD;
+			padding:10px;
+			margin:20px auto;
+			border-radius: 10px;
+			box-shadow:0 0 4px #000;
+			border:1px solid 1px #EEE;
+			color:#999;
+			font-size:11px;
+			text-shadow:0px 1px 0 white;
+			background: #eeeeee; /* Old browsers */
+			background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+		}
+
+		form.login a {
+			color:#999;
+			text-decoration: none;
+		}
+
+		/* Set the input types on the username and password */
+		form.login input.username, form.login input.userpass {
+			width:100%;
+			padding:7px;
+			border:1px solid #CCC;
+			border-radius: 4px;
+			font-size:12px;
+			box-shadow:0 1px 0 #fff;
+		}
+
+		/* Disable the ouline and add a box shadow for when we are focused */
+		form.login input:focus {
+			box-shadow:0 0 4px #0099E0;
+			outline:0;
+		}
+
+		/* Overwrite the 100% width on the password input */
+		form.login input.userpass {
+			width:80%; /* 80% should be good enough */
+			margin-bottom:7px;
+		}
+
+		/* Style our submit button. We could also do input[type=submit] */
+		form.login input.submitButton {
+			border:1px solid #096EB3;
+			border-radius: 4px;
+			color:white;
+			padding:7px;
+			font-size:12px;
+			font-weight: 600;
+			text-shadow:0 -1px 0 #096EB3;
+
+			background: #499bea; /* Old browsers */
+			background: -moz-linear-gradient(top,  #499bea 0%, #207ce5 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #499bea 0%,#207ce5 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
+
+		}
+
+
+		</style>
+	</body>
+</html>

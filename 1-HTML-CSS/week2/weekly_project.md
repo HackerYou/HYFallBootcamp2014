@@ -11,11 +11,12 @@ You may choose to do your website on anything you wish. Here are some ideas:
 
 The layout is also 100% up to you, provided you include most/all of the below requirements. If you need some inspiration for the this project's layout, considering crafting the below layout or visiting these websites for ideas:
 
+* http://www.designfridge.co.uk/
+* http://cssremix.com/
+* http://www.cssmania.com/
+
 ![image](projectWireframe.png)
 
-http://www.designfridge.co.uk/
-http://cssremix.com/
-http://www.cssmania.com/
 
 ## You must have at least the following:
 

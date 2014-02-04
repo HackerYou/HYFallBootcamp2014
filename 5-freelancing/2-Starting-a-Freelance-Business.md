@@ -1,9 +1,3 @@
-David Vesico — Accountant
-Nuno Alexandre — Health Insurance? 
-Mike Logashov — Life Insurance, Disability, Health + Dental
-Matt Rix — Selling Games / Apps
-Mozilla — Accessibility Demo
-
 # What is a sole proprietorship?
 In Ontario, a sole proprietorship is the simplest form of running a business. At it's core you, and only you, own and operate the business. The business is essentially an extension of yourself. 
 

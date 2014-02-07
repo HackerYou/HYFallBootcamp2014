@@ -15,6 +15,8 @@ To get started, go through the [guide](http://sass-lang.com/guide) and use the [
 
 We recommend using Sass with the [Prepros app](http://alphapixels.com/prepros/), which is available for both Windows and Mac.
 
+###Exercise
+
 Take one of your existing CSS stylesheets and turn it into a Sass file.
 
 * replace duplicate values with variables

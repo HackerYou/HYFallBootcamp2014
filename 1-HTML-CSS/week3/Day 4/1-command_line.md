@@ -29,7 +29,7 @@ The place where you put your instruction is called the **Prompt**. In the powers
 
 The command line gives us access to many small tools that can be used to perform tasks. Each tool is a piece of software much like Sublime Text or Google Chrome, the big difference is that these tools are tiny.
 
-In the command prompt we usually type: `$ <tool_name> <arguments>`. For some tools the arguments are optional.
+In the command prompt we usually type: `$ <tool_name> <arguments>`. options, and Arguments are used to set various options and are optional for some tools.
 
 ## See where you are
 
@@ -43,11 +43,11 @@ Notice that the paths are shown using forward slashes `/`.  Here are some exampl
 
 ## Make a directory
 
-`$ mkdir HYCommandLine` means make a directory called "HYCommandLine". `mkdir` is the name of the tool and `HYCommandLine` is an argument or piece of information that we give the tool. 
+`$ mkdir HYCommandLine` means make a directory (folder) called "HYCommandLine". `mkdir` is the name of the tool and `HYCommandLine` is an argument or piece of information that we give the tool. 
 
 ## Moving around
 
-`$ cd HYCommandLine` means go inside the "HYCommandLine" directory. Confirm that you're there by typing `pwd`. 
+`$ cd HYCommandLine` means go inside the "HYCommandLine" directory. Try that, then confirm that you're there by typing `pwd`. 
 
 There are a few helpful shortcuts so that you don't have to type too much. `.` is the current directory, `..` is the parent directory, and `~` is home. So `cd ..` means change up to the parent directory.
 

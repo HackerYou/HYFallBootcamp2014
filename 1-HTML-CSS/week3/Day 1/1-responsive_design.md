@@ -1,7 +1,6 @@
 # Week 3, Day 1
 
 ## Responsive Design
-![](https://si0.twimg.com/profile_banners/11855482/1348146182/web)
 
 Responsive Design aims to provide the best experience for whatever current device a user is viewing the site on. A user could view the site on a 27" IPS Display all the way down to a smaller mobile phone screen.
 

@@ -42,7 +42,7 @@ What if we wanted to animate it from 200px to 500px instead of the harsh snap to
 
 By simply appending a CSS property called `transition` and then specifying *which property should be animated and for how long** we can add animation.
 
-<small>Note: This part of CSS3 is still in development, so we need to vendor prefix it with -webkit and -moz... </small>
+<small>Note: This part of CSS3 is still in development, so we need to vendor prefix it with -webkit for Chrome and iOS Safari. </small>
 
 	<style type="text/css">
 		.myBox2 {
@@ -192,17 +192,16 @@ Be cautious with this one because it can slow down mobile phones and cause flick
 ## CSS3 Transforms
 Relativity new to CSS, is css transforms. They allow you to transform an element in a variety of ways, including in a 2D or 3D manor.
 
-The CSS property for transforms is simply just `transform`, however since it is so new, we have to vendor prefix them. For simplicity, we will be using the webkit (chrome, safari, most mobile devices) vendor prefix like so:
+The CSS property for transforms is simply just `transform`, however since it is still new, we have to vendor prefix them. For simplicity, we will be using the webkit (chrome, safari, most mobile devices) vendor prefix like so:
 
 	.myBox {
 		-webkit-transform:rotate(20deg);
 	}
 
-However, in any production code, it shoudl look like this:
+However, in any production code, it should look like this:
 
 	.myBox {
 		-webkit-transform:rotate(20deg);
-		-moz-transform:rotate(20deg);
 		-o-transform:rotate(20deg);
 		transform:rotate(20deg);
 	}
@@ -312,80 +311,80 @@ As with the last one, we can also animate them.
 <small>Note: because this is new, you may see some screen flickering on mobile devices or even desktop browsers.</small>
 
 	<style type="text/css">
-		.pug {
+		.ice {
 			-webkit-transition:all 0.5s;
 		}
-			.pug:hover {
+			.ice:hover {
 				-webkit-transform: scale(2);
 			}
 
 	</style>
-	<img src="http://pugholder.com/200" class="pug">
-	<img src="http://pugholder.com/200" class="pug">
-	<img src="http://pugholder.com/200" class="pug">
-	<img src="http://pugholder.com/200" class="pug">
+	<img src="http://www.nicenicejpg.com/200" class="ice">
+	<img src="http://www.nicenicejpg.com/200" class="ice">
+	<img src="http://www.nicenicejpg.com/200" class="ice">
+	<img src="http://www.nicenicejpg.com/200" class="ice">
 
 <style type="text/css">
-	.pug {
+	.ice {
 		-webkit-transition:all 0.5s;
 	}
-		.pug:hover {
+		.ice:hover {
 			-webkit-transform: scale(2);
 		}
 
 </style>
-<img src="http://pugholder.com/200" class="pug">
-<img src="http://pugholder.com/200" class="pug">
-<img src="http://pugholder.com/200" class="pug">
-<img src="http://pugholder.com/200" class="pug">
+<img src="http://www.nicenicejpg.com/200" class="ice">
+<img src="http://www.nicenicejpg.com/200" class="ice">
+<img src="http://www.nicenicejpg.com/200" class="ice">
+<img src="http://www.nicenicejpg.com/200" class="ice">
 
 We can also combine transforms by simply adding a space between each effect:
 
 	<style type="text/css">
-		.pug2 {
+		.ice2 {
 			-webkit-transition:all 0.5s;
 		}
-			.pug2:hover {
+			.ice2:hover {
 				-webkit-transform: scale(2) rotate(1000deg);
 			}
 
 	</style>
-	<img src="http://pugholder.com/200" class="pug2">
-	<img src="http://pugholder.com/200" class="pug2">
-	<img src="http://pugholder.com/200" class="pug2">
-	<img src="http://pugholder.com/200" class="pug2">
+	<img src="http://www.nicenicejpg.com/200" class="ice2">
+	<img src="http://www.nicenicejpg.com/200" class="ice2">
+	<img src="http://www.nicenicejpg.com/200" class="ice2">
+	<img src="http://www.nicenicejpg.com/200" class="ice2">
 
 <style type="text/css">
-	.pug2 {
+	.ice2 {
 		-webkit-transition:all 0.5s;
 	}
-		.pug2:hover {
+		.ice2:hover {
 			-webkit-transform: scale(2) rotate(1000deg);
 		}
 
 </style>
-<img src="http://pugholder.com/200" class="pug2">
-<img src="http://pugholder.com/200" class="pug2">
-<img src="http://pugholder.com/200" class="pug2">
-<img src="http://pugholder.com/200" class="pug2">	
+<img src="http://www.nicenicejpg.com/200" class="ice2">
+<img src="http://www.nicenicejpg.com/200" class="ice2">
+<img src="http://www.nicenicejpg.com/200" class="ice2">
+<img src="http://www.nicenicejpg.com/200" class="ice2">	
 
 ## scaleX and scaleY
 
 We can also just scale X or Y, not very useful on images but may be useful if you had a situation where you didn't want to change the width or height.
 
 	<style type="text/css">
-		.pug3 {
+		.ice3 {
 			-webkit-transform:scaleX(2);
 		}
 	</style>
-	<img src="http://pugholder.com/200" class="pug3">
+	<img src="http://www.nicenicejpg.com/200" class="ice3">
 
 <style type="text/css">
-	.pug3 {
+	.ice3 {
 		-webkit-transform:scaleX(2);
 	}
 </style>
-<img src="http://pugholder.com/200" class="pug3">	
+<img src="http://www.nicenicejpg.com/200" class="ice3">	
 
 ## skewX and skewY
 

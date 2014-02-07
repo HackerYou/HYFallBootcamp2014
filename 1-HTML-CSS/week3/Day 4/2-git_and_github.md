@@ -136,11 +136,13 @@ ask with something called a `pull request`. To open a new pull request:
 ![](http://f.cl.ly/items/0N203l3v3O0f1v47051c/Screen%20Shot%202014-02-07%20at%2010.16.33%20AM.png)
 3. On the next page, click "Create Pull Request."  
 ![](http://f.cl.ly/items/462Q1S101A2h2I2B2C3j/Screen%20Shot%202014-02-07%20at%2010.18.43%20AM.png)
-4. Reveiw your changes, and click the "Start a discussion about this comparrison to turn it into a pull request."
-5. Add a useful title (and optionally, a desription) describing your changes and click "Send pull request."
+4. Add a useful title (and optionally, a desription) describing your changes and click "Send pull request."  
+![](http://f.cl.ly/items/2m3F442l1r371O1q0s47/Screen%20Shot%202014-02-07%20at%2010.35.30%20AM.png)
 6. You're done! It's now up to the original owener to approve your changes. 
 
 ###Exercise
-Our course notes are stored on GitHub. Visit the repo and create your own fork and local clone of the notes! Set up the upstream branch so you can check for updates on the fly. You'll be getting your notes from here instead of having them emailed to you from now on.
+Our course notes are stored in a GitHub repository! https://github.com/HackerYou/web_dev_full_time 
+
+Visit the repo and create your own fork and local clone of the notes.  Set up the upstream branch so you can check for updates on the fly. From now on, you'll be getting the notes here instead of having them emailed to you.
 
 **Bonus:** Make a helpful edit or fix a typo in the course notes and submit a pull request for you fix!

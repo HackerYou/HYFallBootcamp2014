@@ -57,7 +57,7 @@ The workflow then looks like this:
 
 ## Git Status
 
-To see which files are in the working directory and which are in the staging area just type `$git status`.
+To see which files are in the working directory and which are in the staging area just type `$ git status`.
 
 ## Git push
 

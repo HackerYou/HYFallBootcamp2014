@@ -1,4 +1,4 @@
-# Week 3 , Day 3
+# Week 3 , Day 2
 
 <a href="#" class="snowToggle">Grinchify</a> 
 

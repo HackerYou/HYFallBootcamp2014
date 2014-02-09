@@ -1,21 +1,90 @@
 # CSS preprocessors
 
-Sass (Syntactically Awesome Style Sheets) and LESS (The dynamic stylesheet language) extend CSS with superpowers! The general idea is that instead of writing CSS you write Sass or LESS and a "compiler" converts what you write to CSS. So why bother using this stuff?
+Sass (Syntactically Awesome Style Sheets), LESS (The dynamic stylesheet language) and Stylus  extend CSS with superpowers! The general idea is that instead of writing CSS you write Sass or LESS and a "compiler" converts what you write to CSS. So why bother using this stuff?
 
-1. **Variables**: Specify values in one place and reuse them throughout the stylesheet. This allows you change a font-size or colour in one place and have the change take effect in multiple places.
-2. **Nested Rules**: You can nest selectors instead of using long selector names. This keeps your stylesheet organized and saves some space.
-3. **Partials**: You can break your CSS into organized chunks and they will be stitched together for you. This keeps the CSS organized and more maintainable. 
-4. **And more**...
+## Variables
+Specify values in one place and reuse them throughout the stylesheet. This allows you change a font-size or colour in one place and have the change take effect in multiple places.
 
-## A taste of Sass
+Example:
+
+	$peagreen : #BADA55; 
+
+	a.myLink {
+		background:$peagreen;
+	}
+
+	p.confirm {
+		border:1px solid $peagreen;
+	}
+
+
+## Nested Rules
+You can nest selectors instead of using long selector names. This keeps your stylesheet organized and saves some space.
+
+SASS:
+
+	$peagreen : #bada55;
+	ul.nav {
+		background:red;
+		width:100%;
+		li {
+			border-right:1px solid $peagreen;
+			a {
+				background:#bada55;
+				padding:10px;
+			}
+		}
+	}
+
+Spits out this CSS:
+
+	ul.nav {
+	  background: red;
+	  width: 100%;
+	}
+	ul.nav li {
+	  border-right: 1px solid #bada55;
+	}
+	ul.nav li a {
+	  background: #bada55;
+	  padding: 10px;
+	}
+
+## Partials
+
+You can break your CSS into organized chunks and they will be stitched together for you. This keeps the CSS organized and more maintainable. 
+
+Files:
+
+	_normalize.scss
+	_nav.scss
+
+Then in `style.scss`
+
+	@import "normalize"
+	@import "nav"
+
+## Functions
+SASS has something call functions which can do some of the hard work for you. Let's take a look at a few:
+
+<http://sass-lang.com/documentation/Sass/Script/Functions.html>
+
+## Much More
+There are entire frameworks built on top of SASS and there is a lot to jump into. Before we look into frameworks, let's get comfortable working with SASS. 
+
+## A taste of SASS
 
 To get started, go through the [guide](http://sass-lang.com/guide) and use the [Sassmeister tool](http://sassmeister.com/) to play around with the Sass syntax.
 
-## Sass for real
+## Using SASS in your projects
 
-We recommend using Sass with the [Prepros app](http://alphapixels.com/prepros/), which is available for both Windows and Mac.
+The idea of sass is that you will write your styles in `style.scss` which will then compile into a `style.css` file. The browser doesn't understand sass, so it needs to be compiled to regular CSS before that.
 
-###Exercise
+Instead of compiling it on every save manually, it is much easier to use a tool that will watch your SCSS file for changes and automatically compile into CSS for you. 
+
+We recommend using Sass with the [Prepros app](http://alphapixels.com/prepros/), which is available for both Windows and Mac. Prepros is a free application which we will now download and try out.
+
+### Exercise
 
 Take one of your existing CSS stylesheets and turn it into a Sass file.
 

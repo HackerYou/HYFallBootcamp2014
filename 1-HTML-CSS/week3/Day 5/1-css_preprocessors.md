@@ -19,7 +19,7 @@ Example:
 
 
 ## Nested Rules
-You can nest selectors instead of using long selector names. This keeps your stylesheet organized and saves some space.
+You can nest selectors instead of using long selector names. This keeps your stylesheet organized and saves some space. You can even tack on pseudo selectors in a nested rule using the `&` symbol!
 
 SASS:
 
@@ -32,6 +32,10 @@ SASS:
 			a {
 				background:#bada55;
 				padding:10px;
+
+				&:hover {
+					background: yellow;
+				}
 			}
 		}
 	}
@@ -49,6 +53,11 @@ Spits out this CSS:
 	  background: #bada55;
 	  padding: 10px;
 	}
+	ul.nav li a:hover {
+		background: yellow;
+	}
+
+**The Sass Inception Rule:** "Never nest more than three levels deep." http://thesassway.com/beginner/the-inception-rule
 
 ## Partials
 
@@ -65,9 +74,43 @@ Then in `style.scss`
 	@import "nav"
 
 ## Functions
-SASS has something call functions which can do some of the hard work for you. Let's take a look at a few:
+SASS has something called functions which can do some of the hard work for you. Let's take a look at a few:
 
 <http://sass-lang.com/documentation/Sass/Script/Functions.html>
+
+One I use quite frequently is the [`lighten`](http://sass-lang.com/documentation/Sass/Script/Functions.html#lighten-instance_method) function. It creates a lighter version of any colour. Let's use it to make a nice subtle hover state:
+    
+    $peagreen : #BADA55; 
+
+	a.myLink {
+		background:$peagreen;
+
+		&:hover {
+			background: lighten($peagreen, 10) //10% lighter than $peagreen
+		}
+	}
+
+## Mixins
+
+Remember the DRY rule? It stands for "Don't Repeat Yourself." Sass can help you with this through the use of mixins - little chuncks of CSS that we can call repeatedly in our Sass files.
+
+Let's take a look at a mixin for some flashy text styles you might want to reuse:
+
+    @mixin flashy-text {
+    	font-family: "Lobster", serif;
+    	font-size: 30px;
+    	font-weight: bold;
+    	color: DarkSlateGray;
+    }
+    
+    h1 {
+    	@include flashy-text;
+    }
+    
+    .announcementBox p {
+    	@include flashy-text;
+    }
+
 
 ## Much More
 There are entire frameworks built on top of SASS and there is a lot to jump into. Before we look into frameworks, let's get comfortable working with SASS. 

@@ -150,6 +150,42 @@ It is best practice to have each rule on a single line as well as the selector a
 
 	h2 {color:red; font-size:50px; }
 	
+## Review
+<style>.white {color:white;border-bottom:1px solid black;} .white:hover{color:black;}</style>
+
+
+1. CSS Typography
+	1. What do we use the change the spacing between lines?
+		* <span class="white">line-height</span>
+	1. What do we use to change the spacing between elements? Inside? Outside?
+		* <span class="white">padding inside, margin outside</span>
+	1. what do we use to change the spacing between letters?
+		* <span class="white">letter-spacing</span>
+	1. ... to change everything to CAPITALS? lowercase? Capitalize?
+		* <span class="white">text-transform: uppercase OR lowercase OR capitalize</span>
+	1 ... to change the font size?
+		* <span class="white">font-size</span>
+	1. ... to change the font?
+		* <span class="white">font-family</span>
+	1. What do we use to ensure a proper fall-back of fonts?
+		* <span class="white">We use a font stack</span>
+	1. What fonts can we use on a website? (without webfonts)
+		* <span class="white">only fonts that the current user has installed on their computer</span>
+	1. What are webfonts? How and why do we use them?
+		* <span class="white">fonts we can install to our webpage so anyone can use that font</span>
+	1. How many text shadows can we have?
+		* <span class="white">unlimited!</span>
+1. What is the box model? What are the two kinds
+		* <span class="white">the regular box model adds padding and border to the size of the element. So a 100px box with a 10px border and 10px padding would really be a 140px box. box-sizing:border-box; removes this and takes away from the total width/height. Remember: in any case, you must always account for margin.</span>
+1. Why do we float things?
+		* <span class="white">to line elements side by side</span>	
+1. What are 4 ways we can set a background color?
+		* <span class="white">black, #000, #000000, rgb(0,0,0), rgba(0,0,0,0.5)</span>
+1. What is the difference between `background` and `background-image`?
+	background is a catch-all, we can set anything on it.
+1. What kind of elements can a background image be set on?
+		* <span class="white">anything!</span>
+
 ## Cross Browser Testing
 Testing your code across multiple browsers can be a pain, but its crucial do do if you want to maintain a good experience for all users.
 
@@ -164,28 +200,51 @@ There are five main browsers:
 
 Chrome has a rapid release schedule and it automatically updates, so you usually only have to support the latest version.
 
-Firefox recently switched to a similar schedule, however some users are still on 3.6. For this class, the latest firefox is okay.
+Firefox recently switched to a similar schedule, so supporting the latest version is 100% okay.
 
-Safari is pretty aggressive about updating as well, most support the latest two versions.
+Safari is pretty aggressive about updating as well, most support the latest two versions of Safari. 
 
-Opera isn't a huge market share so the latest version is fine.
+Opera has recently abandoned their browser engine and adopted Chromium / Blink, which is the engine behind Chrome. So, testing for Chrome is essentially testing for Opera.
 
-Internet Explorer is the pain in every developer's ass. There are currently versions 6,7,8,9 and 10 in use. Most IE users are stuck on IE at a corporate job or are too out of touch to understand what a browser is. For these people we often have to support old and buggy versions.
+Internet Explorer is the pain in every developer's ass. There are currently versions 6,7,8,9,10, and 11 in use. Most IE users are stuck on IE at a corporate job and cannot upgrade. While the future of IE looks very good and fast, at the moment we are stuck supporting buggy versions of IE.
 
+Right now, most developers still support IE8, which is considered the last of the buggy browsers to support. 
 
-IE tester for Internet Explorer: [http://www.my-debugbar.com/wiki/IETester/HomePage](http://www.my-debugbar.com/wiki/IETester/HomePage) - lets you open IE in every version. If you are on a mac, you need to either have another PC or Virtual Box and install windows to that. I recommend supporting IE 8,9 and 10 at the moment.
+### Testing Internet Explorer
 
-MultiFirefox - good tool here: [http://davemartorana.com/multifirefox/](http://davemartorana.com/multifirefox/) but I use my own method on OSX
+#### IE Tester
+IE tester for Internet Explorer: [http://www.my-debugbar.com/wiki/IETester/HomePage](http://www.my-debugbar.com/wiki/IETester/HomePage) - lets you open IE in every version. I recommend supporting IE 8,9 and 10 at the moment although I encourage you to view alanytics of existing sites to see if IE8 support is nessecary. 
 
-[http://wesbos.com/run-two-versions-of-firefox-on-mac-osx/](http://wesbos.com/run-two-versions-of-firefox-on-mac-osx/)
+#### Virtual Box + Modern.ie
+Regardless of PC/MAC/Linux, you can run a copy of windows right inside of your operating system. Microsoft knows the pain of testing on multiple versions of IE, so they have provided images of windows with different versions of IE loaded onto them. You can download them at [http://www.modern.ie/en-us/virtualization-tools](http://www.modern.ie/en-us/virtualization-tools). These are huge downloads, so plan to do so on a stable internet connection.
 
-For Google Chrome you don't need to worry about old versions - it auto updates.
+To run them, you need a free program called Virtual Box — [https://www.virtualbox.org/](https://www.virtualbox.org/).
 
+You can download a copy of windows specially made for testing IE on <http://modern.ie>
+
+### Testing Firefox, Chrome & Opera
+For Google Chrome you don't need to worry about old versions - it auto updates. It is always wise to check your website on both a PC and Mac version of both. 
+
+### Testing Safari
 For Safari you generally don't need to worry either, but in some edge cases I use this: [http://michelf.ca/projects/multi-safari/](http://michelf.ca/projects/multi-safari/)
 
-For Opera you don't need to support older versions, most users are savvy enough to update. 
-
-
+### Other Testing
 Here are a few tools you can use to help test:
 
 [http://www.smashingmagazine.com/2011/08/07/a-dozen-cross-browser-testing-tools/](http://www.smashingmagazine.com/2011/08/07/a-dozen-cross-browser-testing-tools/)
+
+* [Browser Stack](http://www.browserstack.com/) Provides live testing across mulitple browsers and mobile devices.
+* [Sauce Labs](https://saucelabs.com/) also provides a similar service
+* [Browser Shots](http://browsershots.org/) Gives you screenshots in many different types of browsers
+* [Litmus](https://litmus.com/) provides testing in every type of email program you can imagine. Testing email is extremely difficult and this tool is invaluable. If you are coding an email for someone, make sure to bake a few months of Litmus into the price ($80/month). 
+	* Paid MailChimp accounts also have litmus integration. It is slower (~10 mins for each test VS 2 mins) but cheaper ($20/month). 
+
+
+### Mobile Testing
+All tools aside, I prefer just to test on acutal hardware. I try and keep at least one device with every major version of the mobile operating system on it. If you are on your own, this can get expensive as phones aren't cheap. 
+
+Many cities have Device Labs where you can go and test your website on every single device. 
+
+HackerYou is starting a device lab that will be up and running very soon!
+
+[http://devicelab.fi/](http://devicelab.fi/)

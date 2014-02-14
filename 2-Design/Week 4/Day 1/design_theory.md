@@ -1,10 +1,25 @@
-# Design Theory
+#Futher Reading: Design Theory Resources
 
-To learn about design you will explore and complete the following lessons at hackdesign.org. You will not become a designer in one day so the goal of this exercise is to get you familiar with some of the important concepts.
+If you're curious about some of the theory behind what we've learned today, here are some things to read up on.
 
-> In groups of 2-3 do the following readings, collaboratively create notes to summarize your learning, have discussions and complete the exercises.  As a group you need to decide how you are going to tackle this. For example, you could skim the readings as a group, stopping where a group member finds an interesting or ambiguous point to discuss.
+Note: a lot of these links are from the amazing [Hack Design](http://hackdesign.org/), an online design course targeted specifically at developers. 
 
-> As a freelancer you will find that part of your time is going to be spent reading articles very much like the ones you will be reading here.
+##UX
+[Mobile First Design](http://www.lukew.com/ff/entry.asp?933)
+
+##Layout 
+
+
+##Typography
+[Typograpy Terminology](http://freelancefolder.com/typography-essentials-a-getting-started-guide/)
+
+
+##Interaction Design
+
+[Beginners Guide to Interaction Design](http://www.uxbooth.com/articles/complete-beginners-guide-to-interaction-design/)
+
+##
+
 
 ## What is Design?
 Lesson 0: Hello World (Objectified: A documentary for design)

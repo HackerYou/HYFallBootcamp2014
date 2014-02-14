@@ -58,4 +58,4 @@ Offers great suggestions on wording and organizing your content.
 ![](http://f.cl.ly/items/2k3Q1f1J1a2h33454739/good-ui.png)
 
 
-**A word of caution:** Not everything that's popular is good UI design! Web design can be prone to fads, so always ask yourself if a desgin pattern is *functional* before implementing it.
+**A word of caution:** Not everything that's popular is good UI design! Web design can be prone to fads, so always ask yourself if a design pattern is *functional* before implementing it.

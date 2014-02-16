@@ -27,9 +27,16 @@ Here are some general guidelines to follow.
 * for big headings, decreased letter spacing looks much better than the default
 * for small caps, increased letter spacing looks great
 * (Use smart quotes!)[http://practicaltypography.com/straight-and-curly-quotes.html] Designers will LOVE you. 
+* make sure your line-length (measure) is appropriate for readability - you want to aim for 50 - 80 characters (incuding spaces) per line.  Adjust font-size or the element's width to get it right.
 
 ##Interactivity
 
 * don't go overboard - use only where appropriate
 * subtle CSS transitions on your links and hover effect go a long way
 * keep all animation and transition durations short - users don’t like waiting!
+
+###Exercise: Design Critique 
+
+Pick out a few websites that you think look great, then try to dissect *what makes them look great*.  Which best practices have they employed and how? Is there anything you think could be imporoved upon?
+
+If you don't have an awesome site in mind, check out [The Best Designs](http://www.thebestdesigns.com/) or [Design Fridge](http://www.designfridge.co.uk/).

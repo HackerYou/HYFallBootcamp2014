@@ -1,18 +1,30 @@
+<style> .note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; } </style>
+
 # Week 5, Day 1: Control Flow
 
 You have written a few programs -- congratulations! It's time to learn a very powerful programming concept but the console is an awkward place to write a lot of code. We need a more convenient way of writing Javascript.
 
-> Teacher note: Discussion: have any of the students programmed before? What is a better environment for writing code (the answer should be a code editor). Why (can save code, easier to copy/paste, easier to write multi-line code)? Where can we put the JS code (answer script tags or .js files)?
+
+## Linking JavaScript
 
 JavaScript can be included inside of HTML files in two ways:
 
-* Linking to a JavaScript file (.js extension): `<script type="text/javascript"
-    src="app.js"></script>`
-* Using `<script></script>` tags like so: `<script> // JavaScript code in here </script>`
+### Linking an external JavaScript File
+Linking to a JavaScript file (.js extension) works similarily to how we used external CSS:
 
+	<script type="text/javascript" src="app.js"></script>
 
+Its a best practice to put these *just before* the closing body tag as they will not affect your site load at all. Unfortunately with some WordPress plugins, they might need to go in the head. 
 
-## Boolean
+### Script Tags
+
+Using `<script></script>` tags like so:
+
+	<script>
+		alert('holla');
+	</script>
+
+## Booleans
 
 Our code so far is executed top to bottom. If that's all we could do then our programs would be limited. This is where **control flow** comes in. We can write code so that a statement or group of statements is only executed if a logical condition is true (or false).
 
@@ -22,7 +34,7 @@ A type of value that we need for conditionals is the **boolean** type. This type
 
 ### Comparison operators
 
-* Check equality with `===` (equal) and `!==` (not-equal)
+* Check equality with `===` (equal) and `!==` (not-equal). Note how we **do not use regular equals**. Why?
 * Check inequality with `>=` `<=` `>` `<` (greater than and less than)
 
 **Exercises**: Write two expressions that return the boolean value `false` and two that return `true`.

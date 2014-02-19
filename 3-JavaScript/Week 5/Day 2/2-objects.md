@@ -1,6 +1,6 @@
 # Week 5, Day 2 Objects
 
-The **primitive types** of JavaScript values are numbers, strings, booleans (true and false), null (haven't discussed this yet), and undefined. All other values are **objects**.
+The **primitive types** of JavaScript values are numbers, strings, booleans (true and false), null (haven't discussed this yet), and undefined. All other values are something called **objects**.
 
 We can think of objects as containers. Inside the container are **properties** (pairs of names and values).
 
@@ -21,13 +21,17 @@ var myObject = {
 
 The curly brackets with comma separated properties is the "**object literal**" notation for making objects. There are other ways of making objects which will be covered later.
 
+You may remember a similar layout from your sublime text settings:
+
+![](http://wes.io/U0dv/content)
+
 **Note**:
 
 * property names are always strings but the quotes are optional if the strings are valid variable names
 * the value of an object property can be any of the primitive types or an object (creating a tree structure)
 * the last property is not followed by a comma.
 
-Here is an example object:
+Here is an example object. Note how objects can be nested inside eachother. 
 
 ```
 var clothing = {

@@ -32,7 +32,7 @@ We call the function by typing its name including the parentheses.
 
 ## Parameters
 
-If that was all that functions could do then latte art would be impossible! This is where **parameters** come in. Parameters are the comma separated list of variables that serve as placeholders for the values passed to the function (i.e. arguments).
+Functions can do much more than this. This is where **parameters** come in. Parameters are the comma separated list of variables that serve as placeholders for the values passed to the function (i.e. arguments).
 
 ```
 function nameOfFunction(parameter1, parameter2) {
@@ -64,7 +64,7 @@ So first we *define* a function called "add" that takes the parameters `a` and `
 
 ## Return vs. print
 
-A function can print values to the console with `console.log()` or write values to the HTML page with `document.write()`. Don't confuse this with `return`. Returning a value is useful if you want to store this value and reuse it.
+A function can print / log values to the console with `console.log()`. Don't confuse this with `return`. Returning a value is useful if you want to store this value and reuse it.
 
 For example, the following function prints a value to the console.
 
@@ -95,7 +95,11 @@ function add(a,b) {
 3
 ```
 
+
+<div class="note">
 > **Teacher note**: Discussion: Can students think of other problems that can be easily solved by returned a value? Do students think that they can both return and print a value? Get them to test this out.
+</div>
+
 
 **Exercise**: How can we use the `add()` function to add three numbers together?
 
@@ -113,9 +117,9 @@ Solution 2:
 add(1,add(2,3))
 ```
 
-The second solution above shows a function calling itself. A function can even call itself **from inside its own definition**; this is a very powerful if mind-blowing concept called **recursion**. 
+The second solution above shows a function calling itself. A function can even call itself **from inside its own definition**; this is a very powerful if mind-blowing concept called **recursion**. For beginners, it is much easier to use the first method as it makes more sense with reading the code. Don't worry about recursion for now.
 
-> **Teacher note**: Ask students if they have encountered recursion before? Is this intuitive? It can appear a bit magical at first.
+<!-- way too complex for beginners 
 
 Here is an example of a function definition using recursion:
 
@@ -134,7 +138,7 @@ The above function returns the sum of all positive integers between 0 and n (inc
 - a **base case** -- where for some special input value(s) the function has a simple, non-recursive definition -- in our example, addAll(0) is defined to return 0.
 - a **reduction step** -- addAll(n) = n + addAll(n-1) -- the value of addAll(n) is defined in terms of addAll(n-1) -- one step closer to our special addAll(0).
 
-
+-->
 ## Problem Solving Lesson
 
 Going from a problem described in our everyday language to actual code is not easy. So the "Problem Solving Lesson" will help with that. Let's jump to those notes before doing these exercises.

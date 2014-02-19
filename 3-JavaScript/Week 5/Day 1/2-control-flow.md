@@ -15,6 +15,7 @@ Linking to a JavaScript file (.js extension) works similarily to how we used ext
 	<script type="text/javascript" src="app.js"></script>
 
 Its a best practice to put these *just before* the closing body tag as they will not affect your site load at all. Unfortunately with some WordPress plugins, they might need to go in the head. 
+<<<<<<< HEAD
 
 ### Script Tags
 
@@ -24,6 +25,17 @@ Using `<script></script>` tags like so:
 		alert('holla');
 	</script>
 
+=======
+
+### Script Tags
+
+Using `<script></script>` tags like so:
+
+	<script>
+		alert('holla');
+	</script>
+
+>>>>>>> 5538f5c1e81712e3fd97cbfd9fbb3f9d8dae0b08
 ## Booleans
 
 Our code so far is executed top to bottom. If that's all we could do then our programs would be limited. This is where **control flow** comes in. We can write code so that a statement or group of statements is only executed if a logical condition is true (or false).

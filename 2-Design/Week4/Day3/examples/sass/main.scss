@@ -30,8 +30,8 @@ $bold: 600;
 @import "mixins";
 
 
-// -------------------------------------------
-// GLOBAL STYLES
+
+// Global
 // -------------------------------------------
 body {
 	margin: 0;
@@ -60,31 +60,81 @@ a {
  }
 
 
+
+// Header
 // -------------------------------------------
-// HEADER
+header {
+
+}
+
+
+// Footer
 // -------------------------------------------
+footer {
+
+}
 
 
+// To refactor example
 // -------------------------------------------
-// FOOTER
-// -------------------------------------------
+.icons{
+ 	padding-bottom: 5%;
 
+ }
 
+ .icons a{
+ 	text-indent: 5000px;
+ 	display: inline-block;
+ 	
+ }
 
-// -------------------------------------------
-// HOME 
-// -------------------------------------------
+ .twitter{
+ 	background: url(images/icon-twitter-32x32.png)top left no-repeat;
+ 	width: 32px;
+ 	height: 32px;
+ 	display: inline-block;
+ 	float: left;
 
+ }
 
+ .twitter:hover{
+ 	background-position: -32px 0;
+ }
 
+ .facebook{
+ 	background: url(images/icon-facebook-32x32.png)top left no-repeat;
+ 	width: 32px;
+ 	height: 32px;
+ 	display: inline-block;
+ 	float: left;
+ }
 
-// -------------------------------------------
-// ABOUT
-// -------------------------------------------
+ .facebook:hover{
+ 	background-position: -32px 0;
+ }
 
+ .email{
+ 	background: url(images/icon-email-32x32.png)top left no-repeat;
+ 	width: 32px;
+ 	height: 32px;
+ 	display: inline-block;
+ 	float: left;
+ }
 
+ .eamil:hover{
+ 	background-position: -32px 0;
+ }
 
-// -------------------------------------------
-// CONTACT
-// -------------------------------------------
+ .rss{
+ 	background: url(images/icon-rss-32x32.png)top left no-repeat;
+ 	width: 32px;
+ 	height: 32px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+ .rss:hover{
+ 	background-position: -32px 0;
+ }
+
 

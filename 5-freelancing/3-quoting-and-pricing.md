@@ -171,7 +171,7 @@ Your quote will end up being a document that includes the following sub-headings
 
 ## Worrying
 
-Think you are charing too much? Everyone does. Quit worrying. 
+Think you are charging too much? Everyone does. Quit worrying. 
 
 Put together a fair and honest quote, don't discount it because you think they won't go for it. Submit the quote to them with full confidence. 
 

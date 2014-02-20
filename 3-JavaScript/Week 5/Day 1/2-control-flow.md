@@ -1,18 +1,42 @@
+<style> .note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; } </style>
+
 # Week 5, Day 1: Control Flow
 
 You have written a few programs -- congratulations! It's time to learn a very powerful programming concept but the console is an awkward place to write a lot of code. We need a more convenient way of writing Javascript.
 
-> Teacher note: Discussion: have any of the students programmed before? What is a better environment for writing code (the answer should be a code editor). Why (can save code, easier to copy/paste, easier to write multi-line code)? Where can we put the JS code (answer script tags or .js files)?
+
+## Linking JavaScript
 
 JavaScript can be included inside of HTML files in two ways:
 
-* Linking to a JavaScript file (.js extension): `<script type="text/javascript"
-    src="app.js"></script>`
-* Using `<script></script>` tags like so: `<script> // JavaScript code in here </script>`
+### Linking an external JavaScript File
+Linking to a JavaScript file (.js extension) works similarily to how we used external CSS:
 
+	<script type="text/javascript" src="app.js"></script>
 
+Its a best practice to put these *just before* the closing body tag as they will not affect your site load at all. Unfortunately with some WordPress plugins, they might need to go in the head. 
+<<<<<<< HEAD
 
-## Boolean
+### Script Tags
+
+Using `<script></script>` tags like so:
+
+	<script>
+		alert('holla');
+	</script>
+
+=======
+
+### Script Tags
+
+Using `<script></script>` tags like so:
+
+	<script>
+		alert('holla');
+	</script>
+
+>>>>>>> 5538f5c1e81712e3fd97cbfd9fbb3f9d8dae0b08
+## Booleans
 
 Our code so far is executed top to bottom. If that's all we could do then our programs would be limited. This is where **control flow** comes in. We can write code so that a statement or group of statements is only executed if a logical condition is true (or false).
 
@@ -22,7 +46,7 @@ A type of value that we need for conditionals is the **boolean** type. This type
 
 ### Comparison operators
 
-* Check equality with `===` (equal) and `!==` (not-equal)
+* Check equality with `===` (equal) and `!==` (not-equal). Note how we **do not use regular equals**. Why?
 * Check inequality with `>=` `<=` `>` `<` (greater than and less than)
 
 **Exercises**: Write two expressions that return the boolean value `false` and two that return `true`.
@@ -63,13 +87,14 @@ This is what they look like:
 
 ```
 if (condition) {
-	// block statement
+	// block statement (do something)
 } else {
-	// block statement
+	// block statement (do something)
 }
 ```
-
+<div class="note">
 > **Teacher note**: Read this code to give students the idea that it reads very much like a natural language. "If condition is true then do the following, otherwise do this."
+</div>
 
 Let's break that down.
 
@@ -79,7 +104,9 @@ Let's break that down.
 4. `else` is a keyword. a synonym in english would be "otherwise". 
 5. another `block statement`. Note that the `else` block is optional.
 
+<div class="note">
 > **Teacher note**: Have students draw a diagram to represent the conditional statement. It should look something like this: 
+</div>
 
 ![image](control-flow.png)
 
@@ -87,19 +114,19 @@ Let's break that down.
 A block statement is used to group statements. The block is delimited by a pair of curly brackets:
 
 ```
-{
-   statement_1;
-   statement_2;
-   .
-   .
-   .
-   statement_n;
+if (name == 'wes') {
+   // do all of the following things
+   fadeInModal();
+   logRequest();
+   addToCart();
 }
 ```
 
 **Exercises**: Complete the following exercises in pairs. Put your code between `<script>` tags inside of an HTML file.
 
+<div class="note">
 > **Teacher note**: Suggest to students that they should write the skeleton conditional statement first and then add the condition and statements. That way they are less likely to make syntax errors and it's easier to see which "branch" they are on.
+</div>
 
 1. Consider the code below; what is printed to the console?
 
@@ -156,7 +183,9 @@ When a **for loop** executes, the following happens:
 
 Let's look at an example:
 
+<div class="note">
 > **Teacher note**: Ask students to predict what would happen if we ran the code below. Ask students to explain their answer before seeing the code in action.
+</div>
 
 Before running the code below predict what would happen. 
 
@@ -169,9 +198,13 @@ for (var i = 0; i < 10; i = i + 1) {
 **Exercises**:
 Complete the following exercises in pairs.
 
+<div class="note">
 > **Teacher note**: It might be a good idea at this point to explain how pair programming works, its benefits, who uses it etc. 
+</div>
 
-**Level 1**. Print the numbers between 1 and 10 in reverse (i.e. starting with 10). The output should look something like this:
+**Level 1** Log the numbers between 5 and 12.
+
+**Level 2**. Log the numbers between 1 and 10 in reverse (i.e. starting with 10). The output should look something like this:
 
 ```
 10
@@ -210,7 +243,7 @@ for(var i = 10; i > 0; i--){
 20
 ```
 
-Hint: Look up modulo.
+Hint: Look up the modulo operator and use an if statement.
 
 Solution:
 <div class="solution">
@@ -299,7 +332,9 @@ while (i < 10) {
 }
 ```
 
+<div class="note">
 > **Teacher note**: This is a good time to stress the difference between printed values (to the console and to the window) and returned values. 
+</div>
 
 ### Break Statement
 We can terminate a loop at any time by using the break statement. For example:
@@ -315,10 +350,6 @@ while (true) {
 ```
 
 The above example would be an infinite loop (because true is always true!) but the break statement terminates the loop when the number is divisible by 9. The returned value (27) is greater than 23 and divisible by 9.
-
-### Syntax
-
-Don't use semicolons after the if, for, and while statements.
 
 **Exercises**:
 Complete the for-loop exercises but this time by using a while-loop. Work in pairs.

@@ -1,22 +1,37 @@
 #Refactoring and Maintaining HTML & CSS
 
-Writing clean, organized and efficient code will not only make your pages run faster but make it easier to maintain the code as well potentially reduce browser bugs. It's tempting to say "I'll fix it later" but later doesn't always come. It's important to refactor your code as you go along.
+Writing clean, organized and efficient code will not only make your pages run faster but it will be easier to maintain and can potentially reduce browser bugs. It's tempting to say "I'll fix it later" but later doesn't always come. It's important to refactor your code as you go along.
 
 Here are some tips for writing purty code.
 
 ##Write clean code
 Duh, right?
 
-###Semantic HTML
-Using proper indentation not only makes for better readability but also makes your work look more polished and professional.  
+###HTML
+Using proper indentation not only makes for better readability but also makes your work look more polished and professional.  Use the appropriate HTML tag to describe the *content* and make the CSS work with the HTML, rather than write non-semantic HTML just for styling purposes.
 
 HTML indentation should *clearly* show which elements are nested. This will also make it possible to collapse code blocks in Sublime Text which comes in handy when the codebase gets really long.
 
 Cure the *divitis*! It's not always necessary to throw a `<div>` around anything that needs to be styled because *every* HTML element is a box anyway! It's best to use a `<div>` when multiple elements need to styled together **as a group**.
 
+Before:
+
+ 	<div class="header">
+		<div class="logo">
+			<img src="company-logo.jpg">
+		</div>
+	</div>
+
+After: 
+	
+	<header>
+		<h1>Company Name</h1>
+	</header>
+
+
 ###Images - HTML or CSS?
 
-Use `<img>` if the image is part of the content.
+Use `<img>` if the image is part of the content. (Exception: for logo images, many prefer to use the text replacement method to include a name in the `<h1>`)
 
 ex. diagrams, profile picture, if the image needs to be printed
 
@@ -35,8 +50,7 @@ If styles are common on most of the page, it's better to add the CSS to a parent
 
 If using a CSS preprocessor (Sass, Less, Stylus), declare base variables for commonly repeated styles such as colours and font styles.
 
-Use comments to section off related styles to make for better organization.
-
+Use comments to section off related styles to make for better organization. Be diligent about keeping related CSS grouped together. (ex. header, footer, buttons, etc)
 
 ##CSS best practices
 
@@ -70,9 +84,40 @@ However, use padding and margin to style spacing around the element, not for pag
 
 
 ###Lean & Mean CSS
-Writing efficient CSS makes it easier to make changes. No matter how much you plan, there will always be changes.  
+Writing efficient CSS will makes it easier to make changes.
 
 If you find you are declaring the same styles over and over again, try combining selectors, using a shared class or apply the style to the parent selector.
+
+When writing media queries and adding responsive changes, *only add the specific CSS property* that needs to be change. Do not repeat styles.
+
+	.wrapper {
+		max-width: 1140px;
+		font-family: helvetica, arial, sans-serif;
+		background: white;
+		padding: 20px;
+	}
+
+	@media (max-width: 940px) {
+		.wrapper {
+			max-width: 900px;
+			padding-top: 10px;
+		}
+	}
+
+Avoid mixing shorthand and longhand properties.
+
+Before:
+
+	.example {
+		padding: 5%;
+		padding-top: 1%;
+	}
+
+After:
+
+	.example {
+		padding: 1% 5% 5% 5%;
+	}
 
 ####Going Beyond Basic Selectors
 

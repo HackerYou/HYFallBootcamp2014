@@ -9,5 +9,6 @@ This course covers:
 3. JavaScript & jQuery
 4. WordPress
 5. Freelancing Tips
+6. how to make the best cookies. 
 
 All course notes and exercises &copy; 2014 [HackerYou Inc.](http://hackeryou.com) Not to be be redistributed without permission.

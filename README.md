@@ -11,3 +11,5 @@ This course covers:
 5. Freelancing Tips
 
 All course notes and exercises &copy; 2014 [HackerYou Inc.](http://hackeryou.com) Not to be be redistributed without permission.
+
+Hey Brenna! Approve this! Pleeeeeeeeeeeeeease?    

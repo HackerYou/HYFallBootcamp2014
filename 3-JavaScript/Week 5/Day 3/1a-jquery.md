@@ -2,10 +2,63 @@
 
 We have covered most of what you need to know of the JavaScript language. We will now see that variables, values, expressions, statements, objects and functions can be combined to do some amazing things on the web.
 
-Ultimately what we need to do is manipulate the HTML on the page. JavaScript doesn't do anything magical, it's simply used to dynamically add or remove HTML. To simulate a "drag and drop" what we need to do is cut html from one part of the page and paste it elsewhere (with a delay to simulate dragging); to simulate elements "disappearing" we would dynamically add a class with the css `display:none`. To make an element "magically appear" we would dynamically add a class with the css `display:block`. So in a sense it's all smoke and mirrors!
+## Quick Review:
+
+**String**
+	
+	var myString = "Hello There";
+
+**Number**
+
+	var myNumber = 10;
+
+**Array**
+	
+	var myArray = ["Wes","Brenna",54];
+
+**Object**
+	
+	var myObject = {
+		name : "Wes",
+		age : 47 // jokes
+	}
+
+**Function**
+	
+	var findSquareRoot = function(width,height) {
+		return width * height;
+	}
+
+**Boolean**
+	
+	var myBoolean = true; // true
+	var myBoolean = 1; // true
+	var myBoolean = false; // false
+	var myBoolean = 0; // false
+
+
+**Operators**
+
+`>` - Greater than
+`<` - Less than
+`>=` Greater or equal
+`<=` Less or equal
+
+`!` - Opposite
+
+`!true` // false
+
 
 ## The DOM
-We need a way to programatically work with HTML and the browser allows us to do this through the **DOM**. DOM stands for **document object model**. The HTML document is represented as a tree with each element being a node on the tree. With JavaScript we can access any element/node and modify it to our heart's content.
+We need a way to programatically work with HTML and the browser allows us to do this through the **DOM**. 
+
+DOM stands for **document object model**. The HTML document is represented as a tree with each element being a node on the tree. 
+
+With JavaScript we can access any element/node and modify it however we want. With JavaScript, we can:
+
+- Add or remove a class which can trigger CSS3 transitions
+- Update the text in any element
+- hide / show elements
 
 Have a look at the following HTML document:
 
@@ -75,11 +128,12 @@ Working with the DOM can be tedious because:
 
 * the API (methods & properties) for manipulating the DOM can be limiting
 * the API requires quite a bit of coding
-* different browsers implement the API differently
+* different browsers implement the API differently.
 
 
-The solution is to use **[jQuery](http://jquery.com/)**, "The Write Less, Do More, JavaScript Library". jQuery is simply a huge JavaScript function. With jQuery we get a cross-browser and simpler way of manipulating the DOM. jQuery, conveniently, also gives us animations and a way to handle events (like mouse clicks).
+jQuery is the solution to poor cross-browser APIs. jQuery is a JavaScript Library that makes doing things with the DOM much, much easier. Without it, your JavaScript would be much harder to write and your code would be much longer. 
 
+**jQuery is JavaScript**. When you write jQuery, you are writing javascript, you can and will still use all the existing things you learned about numbers/strings/arrays/objects and if statements.
 
 ## Tutorial: manipulating the DOM with jQuery
 
@@ -92,18 +146,31 @@ The solution is to use **[jQuery](http://jquery.com/)**, "The Write Less, Do Mor
 Solution: `<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>`.
 
 ### Test that jQuery is loaded
-- Open `try-jquery.html` in Chrome. We can test that jQuery has been successfully loaded by going to the JavaScript console. The console should show no errors. Type `jQuery` into the console and press enter. The return value should be `function (e,t){return new x.fn.init(e,t,r)}`. This is telling you that **jQuery is a function**. Type `$` and press enter, you should get the same return value. `$` **is an alias for jQuery**, meaning both will do the same thing.
+- Open `try-jquery.html` in Chrome. We can test that jQuery has been successfully loaded by going to the JavaScript console. The console should show no errors. Type `jQuery` into the console and press enter. The return value should be `function (e,t){return new x.fn.init(e,t,r)}`. This is telling you that **jQuery is a function**. Type `$` and press enter, you should get the same return value. `$` **is an alias for jQuery**, meaning both will do the same thing, $ is just easier. 
 
 ### Selecting elements
 jQuery is a function that is defined with multiple parameters, but they are optional. The `selector` parameter is all we need for the time being. To find an element on the page we call the jQuery function and pass it a selector that corresponds to the element.
 
 `$(selector);` or `jQuery(selector);`
 
-**Note that jQuery follows CSS conventions. So just like CSS we select elements by using class, id, and tag names.**
+#### jQuery Selectors 
+jQuery selectors are exactly the same as CSS selectors! So just like CSS we select elements by using classes, and tag names. All of your existing 20+ types of selectors will totally work in jQuery.
 
-So to find the `h1` element we type `$("h1");` in the console. The return value is a **jQuery object** or array of objects if the selector corresponds to multiple elements.
+So to find the `h1` element we type `$("h1");` in the console. The returned is an array with the h1 tag in it.
+
+![](http://wes.io/U24E/content)
+
+If we select something where there is more than 1, like span tags:
+
+	$('span')
+
+We will get an array back of multiple items:
+
+![](http://wes.io/U1uo/content)
  
 ### jQuery objects
+
+When we got the above `h1` tag back. It isn't just the plain ol' h1 tag, its actually something called a **jQuery Object** which has a number of **methods** on it. (Remember that methods are just functions that are on an object).
 
 jQuery objects are representations of the HTML elements and they have tons of methods. We'll explore some of these methods together and then we'll show you how to effectively use the jQuery documentation to learn more. 
 
@@ -119,10 +186,12 @@ jQuery objects are representations of the HTML elements and they have tons of me
 
 ## Tutorial: jQuery events
 
+<!-- 
 ### Aside: Functions as first-class objects
 
 Let's take a quick detour to the "Functions as first-class objects" notes. If we master functions then jQuery events will be really easy to work with. 
-
+ -->
+ 
 ### Events
 
 With jQuery we can do anything we want in response to an **event**.  In the browser events usually consist of mouse clicks, mouse hovers, scrolling, window resizes, keyboard presses, etc. The process looks like this:

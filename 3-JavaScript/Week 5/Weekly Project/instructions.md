@@ -1,6 +1,6 @@
 # Weekly Project: jQuery Gallery
 
-This week you are going to write some JavaScript using the jQuery library in order to build an interactive gallery. There is a demo of what the gallery should look like.
+This week you are going to write some JavaScript using the jQuery library in order to build an interactive gallery. There is a demo of what the gallery should look like. You can start with the HTML in `start.html`
 
 ## Gallery requirements
 
@@ -15,11 +15,13 @@ This week you are going to write some JavaScript using the jQuery library in ord
 ## Hints and reminders:
 
 * Don't forget to execute JavaScript only once the document is ready to be manipulated.
-* You will need one event listener on the `.previews` anchor tags.
-* The `.full` div should be **emptied** when someone clicks the previews. 
+* You will need one event listener on the `.previews a` anchor tags.
 * It's possible to create elements with: `$('<tag>')`.
+	* Create a span with $('<span>')
 * It's possible to set any element attribute with the `attr(attributeName, content)` method.
+	* 	Example: `$('img').attr('src','images/dog.jpg');`
 * Note that all of the thumbnail images have a data attribute. This data points you to the image's larger version. You can access this data with `data(nameOfData)`.
+	* $('a').data('full') will return the url of the image
 * The nice "blinking" effect that you see when a full image is loaded can be achieved by hiding and then fading in the image.
 * The full images will be added after the DOM has been completely loaded so you'll need delegated events for the fancy box.
 * Fancybox is already loaded for you. You just need to open it up with `$.fancybox.open(sourceOfImage)`.

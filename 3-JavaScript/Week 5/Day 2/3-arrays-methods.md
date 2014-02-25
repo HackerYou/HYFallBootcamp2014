@@ -13,7 +13,7 @@ var musicObject = {
 	"3": "fa",
 	"4": "sol",
 	"5": "la",
-	"6": "si",
+	"6": "ti",
 	"7": "do"
 }
 ```
@@ -27,7 +27,7 @@ var musicObject = [
 	"fa",
 	"sol",
 	"la",
-	"si",
+	"ti",
 	"do"
 ]
 ```
@@ -35,7 +35,7 @@ var musicObject = [
 or to save space:
 
 ```
-var musicObject = [ "do", "re", "mi", "fa", "sol", "la", "si", "do" ]
+var musicObject = [ "do", "re", "mi", "fa", "sol", "la", "ti", "do" ]
 ```
 
 <div class="note">

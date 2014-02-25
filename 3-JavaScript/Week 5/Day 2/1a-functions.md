@@ -151,31 +151,36 @@ Going from a problem described in our everyday language to actual code is not ea
 
 ## Exercises
 1. The following function isn't printing anything to the console.  What did we forget?
-
+	```
 	function iLovePizza(){
 		console.log("Pizza is my favourite food!");
 	}
+	```
 
-2. The following function isn't printing anything to the console. Can you spot the styntax error?
+2. The following function isn't printing anything to the console. Can you spot the styntax error? 
+	```
 	function iLoveCoffee{
 		console.log("Coffee is delicious.");
 	}
 
 	iLoveCoffee();
+	```
 
-3. Edit this `iLovePizza` function to accept a single `topping` parameter, then log it to the console
-Start with this code:
+3. Write a fucntion `myInfo()` that logs both your name and email to the console.
+
+4. Edit this `iLovePizza` function to accept a single `topping` parameter that logs to the console. Then call your function three times, passing in a different topping agrument each time.
+	```
 	function iLovePizza(){
 		console.log("I love pizza!");
 		console.log("And my favourite topping is...");
 		//log your favourite topping to the console here
 	}
+	```
 
-4. Write a fucntion `myInfo()` that logs both your name and email to the console.
 
-5. Write a function with one parameter, `whatsForDinner(meal)`, which alerts the name of the meal passed to it.
+5. Write a function with one parameter, `whatsForDinner(meal)`, which alerts the name of the meal passed to it. Call your function three times with a different meal argument each time.
 
-6. Write a function `multiply(n1, n2)` that returns the value of n1 and n2 multiplied together. *Hint:* We use the `*` character to denote multiplication in JavaScript.
+6. Write a function `multiply(n1, n2)` that returns the value of n1 and n2 multiplied together. *Hint:* We use the `*` character to denote multiplication in JavaScript. Make sure you test to see that your function does what you expect.
 
 7. Write a function `greaterThanThree(n)` which logs "Yes" to the console if a n is greater than three. *Hint:* You will need to use the `>` comparrison operator and a conditional statement inside your function.
 

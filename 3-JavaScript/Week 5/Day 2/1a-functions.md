@@ -151,25 +151,30 @@ Going from a problem described in our everyday language to actual code is not ea
 
 ## Exercises
 1. The following function isn't printing anything to the console.  What did we forget?
-
+	
+	```
 	function iLovePizza(){
 		console.log("Pizza is my favourite food!");
 	}
+	```
 
 2. The following function isn't printing anything to the console. Can you spot the styntax error?
 	function iLoveCoffee{
 		console.log("Coffee is delicious.");
 	}
 
-	iLoveCoffee();
+	`iLoveCoffee();`
 
 3. Edit this `iLovePizza` function to accept a single `topping` parameter, then log it to the console
 Start with this code:
+	
+	```
 	function iLovePizza(){
 		console.log("I love pizza!");
 		console.log("And my favourite topping is...");
 		//log your favourite topping to the console here
 	}
+	```
 
 4. Write a fucntion `myInfo()` that logs both your name and email to the console.
 

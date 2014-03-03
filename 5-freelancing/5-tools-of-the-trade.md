@@ -142,3 +142,14 @@ Once in a blue moon you will actually have to fax something. I have about 4 time
 HelloFax lets you send faxes by scanning them in or taking a picture. No need for a fax machine or running to Kinkos. 
 
 # Screencast Updates
+I've talked about doing a screencast for your clients. To reiterate: Use a screenrecording software to record your screen and run them through how to use every part of their new website. This cuts back on emails back and forth on how to use the system as well as when a new person is hired at the client company. 
+
+I use ScreenFlow, which is $100. Well worth the money when compared to time saved.
+
+<http://www.telestream.net/Screenflow/>
+
+For shorter clips, you can use free, web-based software screenr. It is based on Java and can be difficult to get up and running.
+
+<http://www.screenr.com/>
+
+Another option is to "broadcast" a public google hangout which can then be pushed to youtube. This doesn't provide any editing tools. 

@@ -8,12 +8,29 @@ Variables declared outside of functions are in the "**global**" scope. This mean
 
 To reduce bad interactions with other code create a global object that contains your application: `var MYAPP = {};`. Define all variables and functions as properties of this object.
 
-```
-MYAPP.myFunction = function(){
-	// something here;
-};
-MYAPP.myObject = {name: "HackerYou", location: "Toronto"};
-```
+    // First create a blank object
+    var app = {};
+    // put a function on our namespace object
+    app.yell = function() {
+      alert("STOP YELLING!!");
+    }
+    app.goGetIt = function() {
+      // go select an element
+    }
+    // put an array on our namespace object
+    app.toppings = ['Cheese','Roni','Mushrooms'];
+    // put a number on our namespace object
+    app.numberOfPizzas = 592;
+    // put a string on our namespace object
+    app.name = "Wes";
+    // put an object on our namespace object
+    app.tshirts = {
+      small : 100,
+      medium : 200,
+      large : 500
+    };
+    // put a boolean on our namespace object
+    app.boo = false;
 
 # Closure
 

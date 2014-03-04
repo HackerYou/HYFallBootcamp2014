@@ -55,3 +55,9 @@ On MAMP, visit <http://localhost:8888/wordpress>
 On XAMPP, visit <http://localhost/wordpress>
 
 If you had renamed your directory in step 2, change `wordpress` with the new directory name.
+
+You should see the following:
+
+![](http://wes.io/UEZc/content)
+
+Go ahead and follow the steps to install.

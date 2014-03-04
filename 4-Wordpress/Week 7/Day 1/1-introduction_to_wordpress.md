@@ -118,7 +118,7 @@ http://codex.wordpress.org/Administration_Panels
 
 The dashboard allows you to:
 
-* Configure WordPress (reading/writing settings, permalinks, )
+* Configure WordPress ([reading](http://codex.wordpress.org/Settings_Reading_Screen)/[writing](http://codex.wordpress.org/Settings_Writing_Screen) [general settings](http://codex.wordpress.org/Settings_General_Screen), [permalinks](http://codex.wordpress.org/Settings_Permalinks_Screen), )
 * Add / Edit Content
 * Manage Comments
 * Customize the look of your website

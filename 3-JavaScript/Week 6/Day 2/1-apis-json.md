@@ -14,7 +14,7 @@ In order to interface with an API, the interaction needs to be predictable. If e
 ## API keys and Authentication
 
 APIs are best learned by doing some hands-on work. Go to:
-http://www.wunderground.com/weather/api
+[http://www.wunderground.com/weather/api](http://www.wunderground.com/weather/api)
 
 1. Create a free account
 2. Sign in

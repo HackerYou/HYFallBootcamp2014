@@ -12,7 +12,7 @@ Tips for reading API documentation:
 To locate API docs, check to see if they're linked off the service's main page (eg. somewhere on themoviedb.org) or try searching for the name of the service + "API".
 
 Doing both for The Movie Database leads us to:
-http://docs.themoviedb.apiary.io/
+[http://docs.themoviedb.apiary.io/](http://docs.themoviedb.apiary.io/)
 
 ## Response format
 Next we need to know how the responses of this API are delieverd to us.  Common formats you'll come across are XML and JSON. For The Movie Database, the docs say we get a JSON response.
@@ -56,7 +56,7 @@ On the side we see that there are sections to the API. Let's have a look at the 
 
 ## Play around with API
 
-<www.hurl.it> is a great app for testing out HTTP requests. 
+[www.hurl.it](www.hurl.it) is a great app for testing out HTTP requests. 
 
 1. Choose method (GET is default, which is what we want)
 2. Add the request path for the API you're using

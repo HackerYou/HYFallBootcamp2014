@@ -120,19 +120,16 @@ pre {
 /* =============================================================================
                    Navigation 
    ========================================================================== */
-.menu {
-
-}
-  .menu ul {
+  ul.menu {
     margin:0;
     padding:0;
   }
-    .menu ul li {
+    ul.menu li {
       display:inline;
       margin-right: 10px;
     }
 
-      .menu ul li a {
+      ul.menu li a {
         color:#333;
         padding:10px;
         background:#333;

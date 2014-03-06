@@ -8,6 +8,10 @@ A jar to store a something you might want to use again in your code.
     var myNumberVariable = 42 
     var myBooleanVariable = true  // can only be 'true' or 'false'
 
+You can also over-write exiting variables and give them a new value. Note the omission of the `var` keyword.
+
+    myNumberVariable = 7;
+
 ##Functions 
 
 A group of code that can be run repeatedly.
@@ -48,9 +52,39 @@ Logs:
     > whatever
     > But also, pshaw!
 
-##Arrays
+##Stopping a function (return)
 
-A grouped collection of items, ordered by a numeric index.
+We can use `return` to quit out of a function without executing any further code.
+
+    function singMeASong(){
+        console.log("I got my first real six string.");
+        return;
+        console.log("Played it 'til my fingers bled.");
+    }
+
+    singMeASong();
+
+logs:   
+
+    > I got my first real six string.
+
+We can also use return to make our function give back a value when it's called.
+
+    function bakeACake(){
+        //do some cake baking things
+        return "oreo cheesecake";
+    }
+
+    var myCake = bakeACake();
+    console.log(myCake);
+
+logs:
+
+    > oreo cheesecake 
+
+##Arrays
+ 
+A grouped collection of items, ordered by a numeric index. You can think of an array as a fancy variable that can hold more than hold multiple things.
 
 ###Define an empty array
 

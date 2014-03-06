@@ -1,7 +1,7 @@
 # Start Ratings
 
 Inspired by:
-http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/
+[http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/](http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/)
 
 ## The markup
 

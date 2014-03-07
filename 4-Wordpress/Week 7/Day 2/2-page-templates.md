@@ -85,6 +85,14 @@ Main stylesheet.
 Like `category.php`, but for tags!
 
 
+## Building up a page
+
+So when a page needs to be built, WordPress will take the template it needs, say `page.php` and then pull all the different parts it needs.
+
+Here is a visual example:
+
+![](http://cl.ly/Buih/Screen%20Shot%202011-11-17%20at%204.38.53%20PM.png)
+
 ## Template Exercise
 
 Open up `single.php` and type some text right above the opening section div.

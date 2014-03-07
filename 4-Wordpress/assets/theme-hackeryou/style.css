@@ -52,7 +52,9 @@ a {
 
 .left {
   float:left;
-  width:70%;
+  width:68%;
+  margin-right: 2%;
+
 }
 
 .full {

@@ -29,7 +29,7 @@ Use an FTP program to upload all your WordPress site files to your server. This 
 ##2. Export your local database.
 
 To export our local databse, we need to access our local phpMyAdmin. 
-From MAMP/XAMPP, click "Open StartPage", then from the start page, click phpMyAdmin in the top bar.
+From MAMP, click "Open StartPage", then from the start page, click phpMyAdmin in the top bar. From XAMPP, click the "Admin" button to the right of MySQL.
 
 From phpMyAdmin, select your WordPress database from the sidebar, then click the "Export" tab.
 

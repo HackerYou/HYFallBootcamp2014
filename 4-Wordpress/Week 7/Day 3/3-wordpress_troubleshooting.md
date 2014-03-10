@@ -24,8 +24,6 @@ If you think that a **plugin** might be the culprit, you can try disabling all o
 
 If you suspect that **your theme** is the issue, you can eliminate that variable by disabling your custom theme and temporarily activating a default theme like **Twenty Fourteen**. Does the issue go away? If so, you've narrowed down the issue to your theme's files.
 
-There can be lots of causes of WordPress issues - your database, your
-
 ###Step 4: Get some information
 
 If you're dealing with a White Screen of Death™, it's likely that the culprit is somewhere in your PHP. If something's wrong in your PHP code, it can cause the whole page to not load, because when PHP encounters a problem, it gives up and doesn't try to load anything else.

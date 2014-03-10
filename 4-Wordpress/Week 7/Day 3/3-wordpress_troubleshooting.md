@@ -14,11 +14,17 @@ Could the problem with your site be in your HTML, CSS or JavaScript? If so, you 
 
 But if you know that your front-end code is just fine, then try to...
 
-###Step 3: Trace your steps
+###Step 3: Trace your steps/eliminate potential culprits
 
 What were you doing just before the problem happened? Were you editing a theme file? Did you just install a new plugin?
 
 The first thing you'll want to do is try undoing what you just did. That might just fix the problem.
+
+If you think that a **plugin** might be the culprit, you can try disabling all of your plugins to see if that gets rid of your problem. If it does, then re-enable each plugin one by one to find out which one is the troublemaker.
+
+If you suspect that **your theme** is the issue, you can eliminate that variable by disabling your custom theme and temporarily activating a default theme like **Twenty Fourteen**. Does the issue go away? If so, you've narrowed down the issue to your theme's files.
+
+There can be lots of causes of WordPress issues - your database, your
 
 ###Step 4: Get some information
 
@@ -63,6 +69,14 @@ Wrong! This can be dangerous. While HTML and CSS are pretty forgiving, it's real
 
 *Friends don't let friends develop in the built-in editor!*
 
+###Use Git to track your changes
+
+If you've realized that you messed up something in your theme but have no idea what exactly you did, Git can come in handy in a couple of ways:
+
+* You can compare differences between commits on GitHub, so you'll know exactly what you changed and when you changed it.
+* You can use Git to roll back to a previous version of your project
+
+Using version control can make your life a lot easier when things go wrong!
 
 ## Words of advice
 

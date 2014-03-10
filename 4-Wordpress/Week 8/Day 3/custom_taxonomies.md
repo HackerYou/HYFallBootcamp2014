@@ -44,10 +44,6 @@ Tags are an example of a non-hierarchical taxonomy, where all the terms are at t
 
 Sometimes, even if your taxonomy terms are going to be flat, you can choose to make it a hierarchical taxonomy anyway, because you might find that interface a little easier to use. It's up to you!
 
-## Learn more about custom taxonomies
-
-http://codex.wordpress.org/Taxonomies
-
 ## How to create custom taxonomies
 
 1. Create the taxonomies by using the same plugins that we used to create custom post types and fields.
@@ -62,6 +58,10 @@ If your custom post type is "department" then the code would be:
 ```
 <?php the_terms( $post->ID, 'department', 'Departments: ', ', '); ?>
 ```
+
+## Bonus reading
+
+For an overview of what taxonomies are and how to use them, you can check out [Taxonomies in the WordPress codex](http://codex.wordpress.org/Taxonomies).
 
 
 ## Exercise: Add custom taxonomies to your portfolio

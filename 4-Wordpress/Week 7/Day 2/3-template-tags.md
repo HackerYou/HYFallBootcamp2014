@@ -13,9 +13,13 @@ Let's take a look at some of the template tags being using in the HackerYou them
 Aside from the loop, we see:
 
 `get_header();` gets the header.php file and includes the contents in your template  
+
 `the_title();` echo's out the title of the current post or page
+
 `the_content();`  echo's out the content (what was added via the WYSIWYG editor) of the current post or page
+
 `get_sidebar();` gets the contents of sidebar.php and includes the contents in your template
+
 `get_footer();` get the footer.php file and includes the contents in your template  
 
 These are some of the most common template tags you'll see, but there are [many more](https://codex.wordpress.org/Template_Tags)! This is part of what makes WordPress so powerful and easy to use. 

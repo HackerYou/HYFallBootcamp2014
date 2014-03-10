@@ -35,7 +35,6 @@ Using `<script></script>` tags like so:
 		alert('holla');
 	</script>
 
->>>>>>> 5538f5c1e81712e3fd97cbfd9fbb3f9d8dae0b08
 ## Booleans
 
 Our code so far is executed top to bottom. If that's all we could do then our programs would be limited. This is where **control flow** comes in. We can write code so that a statement or group of statements is only executed if a logical condition is true (or false).

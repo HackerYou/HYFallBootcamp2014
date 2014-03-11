@@ -114,7 +114,7 @@ This will be the start of your own personal blog / portfolio. Take a look at the
 
 Suggestions include:
 
-* Display the tags in little tag icons. Similar to something like this: <http://cdn.instantshift.com/wp-content/uploads/2012/12/free-tags-psd-12.jpg>
+* Display the tags in little tag icons. Similar to something like this: <http://cdn.instantshift.com/wp-content/uploads/2012/12/free-tags-psd-12.jpg> or get more inspiration here:  <http://patterntap.com/>. 
 * Create a second menu and put it in the footer
 * Display the categories of each post in a more attractive way
 * Show the number of comments the post has beside the title

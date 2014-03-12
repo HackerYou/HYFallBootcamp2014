@@ -18,13 +18,9 @@ For example, let's say we've created a custom post type called **books**. To bui
 * **Language** (e.g. English, French, etc.)
 * **Subject** (e.g. Arts, Business, Education, Health & Fitness, etc.)
 
-Or, say you made a custom post type called **Recipes**. You could create a bunch of relevant taxonomies, including:
+Or, say you made a custom post type called **Movie reviews**. You could create a taxonomy for **genre**, **actors**, or whatever you find useful to categorize this post type.
 
-* **Cuisine** (e.g. Italian, Indian, Chinese, etc.)
-* **Recipe type** (e.g. appetizer, dessert, main)
-* **Dietary restrictions** (e.g. gluten free, vegan)
-
-The possibilities are really endless. Using custom taxonomies along with custom post types are what let you take WordPress from being a simple CMS made up of posts and pages to a really powerful, custom CMS that you make into whatever you want it to be.
+The possibilities are really endless! Using custom taxonomies along with custom post types are what let you take WordPress from being a simple CMS made up of posts and pages to a really powerful, custom CMS that you make into whatever you want it to be.
 
 ##The two different types of taxonomies
 
@@ -47,23 +43,33 @@ Sometimes, even if your taxonomy terms are going to be flat, you can choose to m
 ## How to create custom taxonomies
 
 1. Create the taxonomies by using the same plugins that we used to create custom post types and fields.
-2. Add the following template tag inside the loop:
+2. You'll want to pay attention to a few settings, like which post type you want it attached to, and whether the taxonomy is hierarchical or not.
+
+## A couple of things you can do with taxonomies
+
+#### 1. Adding the terms for a particular post (which is just like adding the tags or categories associated with a particular post):
+
+In the right template of the post type you've associated the taxonomy width, add the following template tag inside the loop:
 
 ```
 <?php the_terms( $id, $taxonomy, $before, $sep, $after ); ?>
 ```
 
-If your custom post type is "department" then the code would be:
+For example, if your custom post type is "movies" then the code would be:
 
 ```
-<?php the_terms( $post->ID, 'department', 'Departments: ', ', '); ?>
+<?php the_terms( $post->ID, 'movies', 'Movies: ', ', '); ?>
 ```
 
-## Bonus reading
+If you want to know why this code works and what each parameter is for, check out [what the Codex has to say about it](https://codex.wordpress.org/Function_Reference/the_terms)!
 
-For an overview of what taxonomies are and how to use them, you can check out [Taxonomies in the WordPress codex](http://codex.wordpress.org/Taxonomies).
+####2. Creating a special taxonomy archive
+
+Remember the awesome [Template Hierarchy graphic](https://codex.wordpress.org/Template_Hierarchy) we looked at last week? You'll notice that you have the ability to make a custom archive for taxonomies. This can be really handy!
+
+You can create an archive for all taxonomies by creating a **taxonomy.php** file, an archive for a specific taxonomy by creating a **taxonomy-[taxonomyname].php** file, or even a specific archive for a taxonomy's term by creating **taxonomy-[taxonomyname]-[taxonomyterm].php**.
 
 
 ## Exercise: Add custom taxonomies to your portfolio
 
-Add a custom taxonomy or two to your portfolio. The taxonomies can be used to organize and filter your portfolio. Users could click on "HTML/CSS" to see work that involves only those technologies, "Wordpress" to see themes, "JavaScript" to see the apps that you have built, etc.
+Add a custom taxonomy or two to your portfolio. The taxonomies can be used to organize and filter your portfolio. Users could click on "HTML/CSS" to see work that involves only those technologies, "Wordpress" to see themes, "JavaScript" to see the apps that you have built, etc. Be creative!

@@ -45,7 +45,7 @@ Sometimes, even if your taxonomy terms are going to be flat, you can choose to m
 1. Create the taxonomies by using the same plugins that we used to create custom post types and fields.
 2. You'll want to pay attention to a few settings, like which post type you want it attached to, and whether the taxonomy is hierarchical or not.
 
-## A couple of things you can do with taxonomies
+## A couple of the many things you can do with taxonomies
 
 #### 1. Adding the terms for a particular post (which is just like adding the tags or categories associated with a particular post):
 
@@ -72,4 +72,6 @@ You can create an archive for all taxonomies by creating a **taxonomy.php** file
 
 ## Exercise: Add custom taxonomies to your portfolio
 
-Add a custom taxonomy or two to your portfolio. The taxonomies can be used to organize and filter your portfolio. Users could click on "HTML/CSS" to see work that involves only those technologies, "Wordpress" to see themes, "JavaScript" to see the apps that you have built, etc. Be creative!
+1. Add a custom taxonomy or two to your portfolio, which can be used to organize and filter your portfolio. For example, users could click on "HTML/CSS" to see work that involves only those technologies, "Wordpress" to see themes, "JavaScript" to see the apps that you have built, etc. Be creative!
+2. Try displaying the selected taxonomy term(s) to a single portfolio page (e.g. "Project type: JavaScript, HTML/CSS")
+3. **Bonus**: If you want your portfolio to be even more easily browseable, you can generate links to each of your taxonomy terms, which, when clicked, will list only the items in that specific term. Try that out!

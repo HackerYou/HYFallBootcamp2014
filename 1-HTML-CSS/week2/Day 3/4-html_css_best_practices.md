@@ -66,6 +66,8 @@ To make our websites faster we can compress the CSS and images. The CSS minifyin
 * minify CSS: [http://www.csscompressor.com/](http://www.csscompressor.com/)
 * compress images: [http://www.smushit.com/](http://www.smushit.com/)
 
+*JPEG mini in the Apple App Store is a good paid option that enables you to drop a full folder of images. 
+
 ## Reduce HTTP Requests & Image Sprites
 
 Every image, CSS and JavaScript file referenced in your HTML file will make an HTTP request. Each request takes time to execute so it will increase the load time of your website. One way of reducing HTTP requests is to combine files. Stylesheets should be combined together into one file.

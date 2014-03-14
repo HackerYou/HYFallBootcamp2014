@@ -10,7 +10,9 @@
     margin:20px;
     float:left;
   }
-
+  a {
+    float: left;
+  }
   .box1 {background:red;}
   .box2 {background:green;}
   .box3 {background:blue;}
@@ -18,19 +20,31 @@
 </style>
 
 <body>
-
+<a href="#">Toggle</a>
 <div class="box box1"></div>
+<a href="#">Toggle</a>
 <div class="box box2"></div>
+<a href="#">Toggle</a>
 <div class="box box3"></div>
+<a href="#">Toggle</a>
 <div class="box box4"></div>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $('.box').on('click', function(){
-    $(this).hide();
-  });
-});
+  $(document).ready(function (){
+    $(".box").on("click", function(){
+      $(this).slideUp();
+     }); //click box ends
+
+    $("a").on("click", function(){
+      $(this).next().slideToggle();
+    });
+  }); //end document ready
+
+
+
+
 </script>
 </body>
 </html>

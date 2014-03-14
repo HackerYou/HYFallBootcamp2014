@@ -120,3 +120,27 @@ Another really cool feature of CSS3 is the ability to create gradients in pure C
 [http://www.colorzilla.com/gradient-editor/](http://www.colorzilla.com/gradient-editor/) is an excellent site for creating gradients, it even has an image uploader.
 
 Writing gradients by hand isn't advised as the syntax is very long and different for each browser, so the tool at ColorZilla is a great resources.
+
+#### Additional Color Resources
+
+[The Color Scheme Designer](http://colorschemedesigner.com)
+[http://hex2rgba.devoth.com](http://hex2rgba.devoth.com)
+[Flat UI Colors](http://flatuicolors.com/)
+[Instant Eyedropper](http://instant-eyedropper.com)
+[Color Grab](https://play.google.com/store/apps/details?id=com.loomatix.colorgrab&hl=en)
+[Match Colors To An Image](http://www.pictaculous.com)
+[Kuler](https://kuler.adobe.com/create/color-wheel)
+[0 to 255](http://0to255.com)
+[CSS Colors](http://colours.neilorangepeel.com)
+
+#### Additional Image Resources
+
+[http://join.deathtothestockphoto.com/]
+[http://unsplash.com/]
+[http://365psd.com/]
+[http://freefoodphotos.com/]
+[https://medium.com/p/62ae4bcbe01b]
+[http://pixlr.com/]
+[http://lorempixel.com/]
+[http://www.gratisography.com/]
+[http://www.psdcovers.com/]

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Plugin</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+</head>
+<body>
+
+<div class="box">Drag me!</div>
+
+<ul class="items">
+	<li>Milk</li>
+	<li>Eggs</li>
+	<li>Bread</li>
+</ul>
+
+<div class="cart"></div>
+
+<style>
+	.box {
+	width: 200px;
+	height: 200px;
+	background: red;
+	color: white;
+}
+
+.cart {
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.items li {
+	cursor: move;
+	list-style-type: none;
+	display:inline-block;
+	padding: 15px 25px;
+}
+
+
+</style>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+<script>
+	$(function(){
+		//Document is now ready
+		$(".box").draggable({
+			grid : [80,80]
+
+		}); //end box draggable
+
+	//make list items draggable
+		$(".items li").draggable();
+		$(".cart").droppable({
+
+			drop : function(event, ui){
+				console.log("YA DROPPED IT!");
+			},
+
+			over : function() {
+
+				console.log("You are hovering a droppable element on me");
+				$(this).css("background", "red");
+			},
+
+			out : function() {
+				console.log("You took it out of the car");
+				$(this).css("background", "white");
+			}
+		});
+
+
+
+			
+	}); // end document ready
+</script>a
+</body>
+</html>
+
+
+
+
+

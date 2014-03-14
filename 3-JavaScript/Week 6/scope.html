@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scope</title>
+</head>
+<body>
+	<script>
+	var pie ="peach";
+
+	//blank array 
+	var pies = [];
+	var flavours = ["apple", "blueberry", "raspberry"];
+
+	//create a function to make pie
+	var makePie = function(){
+		//loop over each flavour
+
+		for (var i = 0; i < flavours.length; i++) {
+			console.log(flavours[i])
+			var myPie = "Granny Famous " + flavours[i] + " Pie";
+			pies.push(myPie);
+
+		};
+		//when finished looping, console log the pies
+		console.log(pies);
+		return pies;
+		};
+
+	
+	</script>
+</body>
+</html>

@@ -239,6 +239,9 @@ Here are a few tools you can use to help test:
 * [Litmus](https://litmus.com/) provides testing in every type of email program you can imagine. Testing email is extremely difficult and this tool is invaluable. If you are coding an email for someone, make sure to bake a few months of Litmus into the price ($80/month). 
 	* Paid MailChimp accounts also have litmus integration. It is slower (~10 mins for each test VS 2 mins) but cheaper ($20/month). 
 
+* [MultiFirefox](http://davemartorana.com/multifirefox/) Allows you to run various version of Firefox simultaneously.
+* [DebugBar](http://www.my-debugbar.com/)
+
 
 ### Mobile Testing
 All tools aside, I prefer just to test on acutal hardware. I try and keep at least one device with every major version of the mobile operating system on it. If you are on your own, this can get expensive as phones aren't cheap. 
@@ -248,3 +251,5 @@ Many cities have Device Labs where you can go and test your website on every sin
 HackerYou is starting a device lab that will be up and running very soon!
 
 [http://devicelab.fi/](http://devicelab.fi/)
+
+

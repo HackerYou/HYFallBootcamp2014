@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercises Day 2</title>
+</head>
+<body>
+
+	<script>
+
+
+	function iLovePizza(){
+     console.log("I love pizza!");
+     console.log("And my favourite topping is...");
+     console.log("mushrooms");
+    //log your favourite topping to the console here
+}
+
+ 
+		function myName() {
+			console.log("Jessica");
+			console.log("jessicanduarte@gmail.com");
+		}
+
+		myName();
+
+	function multiply(n1,n2) {
+		var product = n1*n2;
+		return product;
+	}
+
+		var productAnswer = multiply(2,4);
+		console.log(productAnswer);
+//exercise 7
+	function greaterThanThree(n) {
+		
+		if (n > 3) {
+			console.log("yes");
+		}
+
+		else {
+			console.log ("no");
+		}
+	}
+
+
+	greaterThanThree(5);
+
+//exercise 8
+	function maxOfTwo(n1,n2) {
+		var findBigGuy = Math.max(n1,n2)
+		return findBigGuy;
+	}
+
+	var bigGuy = maxOfTwo(5,7);
+	console.log(bigGuy);
+
+//exercise 9
+
+	function maxOfThree(n1,n2,n3) {
+		var theMax = Math.max(n1,n2,n3);
+		return theMax;
+	}
+
+		var thisIsTheMax = maxOfThree(2,4,10);
+		console.log(thisIsTheMax);
+
+//exercise 10
+
+	function charIsVowel(c) {
+		var c = c.toLowerCase();
+		if (c === "a" || c === "e" || c === "i" || c==="o" || c==="u") {
+			return "true";
+			console.log ("true")
+		}
+
+		else {
+			return "false";
+			console.log ("false");
+		}
+	}
+
+	charIsVowel("d");
+
+//Objects- Exercise 1
+	var hackerYou = {
+	courses : 10,
+	age : 3,
+	instructors: { 
+		instructor1 : "Wes",
+		instructor2 : "Brenna",
+		instructor3 : "Christina",
+		instructor4 : "Dara"
+		},
+	founder : "Heather Payne"
+	}
+//Objects - Exercise 2
+	var student = {
+		idnumber : 45678,
+		firstName : "John",
+		age : 14,
+		gpa: 2.5,
+		highSchool : "Sinclair Secondary School"
+	};
+
+	var myString = "The student " + student["firstName"] + " (ID:" + student["idnumber"] + ") is " + student["age"] + ". " + "He has a GPA of " + student["gpa"] + " and is from " + student["highSchool"] ;
+
+	console.log(myString);
+
+//Objects - Exercise 3
+
+		var inventory = {
+		apples: 2,
+		oranges: 3,
+		bananas: 6,
+		milk: 2
+	};
+
+	var inventorySentence = "We have " + inventory.apples + " apples, " + inventory.oranges + " oranges, " + inventory.bananas + " bananas, and " + inventory.milk + " milk in stock." ; 
+
+	console.log(inventorySentence);
+
+	// for (item in inventory) {
+	// 	console.log(item);
+	// };
+
+	for (item2 in inventory) {
+
+		var myFancySentence = "I have " + inventory[item2] + " " + item2 +  ". That's a hell of a lot of " + item2 + "!";
+
+		console.log(myFancySentence);
+	};
+
+
+
+ 	</script>
+
+
+	
+</body>
+</html>

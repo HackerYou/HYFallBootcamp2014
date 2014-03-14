@@ -1,0 +1,96 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>2-ajax</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+html,body{color:black}*:not('#mkdbuttons'){margin:0;padding:0}#wrapper{font:15px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.7;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}#wrapper{background-color:#fff;padding:30px;margin:15px;font-size:15px;line-height:1.6}#wrapper>*:first-child{margin-top:0 !important}#wrapper>*:last-child{margin-bottom:0 !important}@media screen{#wrapper{box-shadow:0 0 0 1px #cacaca, 0 0 0 4px #eee}}h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.7;cursor:text;position:relative;margin:1em 0 15px;padding:0}h1{font-size:2.5em;border-bottom:1px solid #ddd}h2{font-size:2em;border-bottom:1px solid #eee}h3{font-size:1.5em}h4{font-size:1.2em}h5{font-size:1em}h6{color:#777;font-size:1em}p,blockquote,table,pre{margin:15px 0}ul{padding-left:30px}ol{padding-left:30px}ol li ul:first-of-type{margin-top:0px}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;margin:15px 0;padding:0}#wrapper>h2:first-child{margin-top:0;padding-top:0}#wrapper>h1:first-child{margin-top:0;padding-top:0}#wrapper>h1:first-child+h2{margin-top:0;padding-top:0}#wrapper>h3:first-child,#wrapper>h4:first-child,#wrapper>h5:first-child,#wrapper>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p,ul li>:first-child,ol li>:first-child{margin-top:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{border-collapse:collapse;border-spacing:0;font-size:100%;font:inherit}table th{font-weight:bold;border:1px solid #ccc;padding:6px 13px}table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px;font-family:Consolas, 'Liberation Mono', Courier, monospace;font-size:12px;color:#333}pre>code{margin:0;padding:0;white-space:pre;border:none;background:transparent}.highlight pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:14px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px;margin:26px 0}pre code,pre tt{background-color:transparent;border:none}.poetry pre{font-family:Georgia, Garamond, serif !important;font-style:italic;font-size:110% !important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia, Garamond, serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,table,figure{page-break-inside:avoid}#wrapper{background:#fff;border:none}pre code{overflow:visible}}@media screen{body.inverted{color:#eee !important;border-color:#555;box-shadow:none}.inverted #wrapper,.inverted hr,.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee !important;border-color:#555;box-shadow:none}.inverted td,.inverted th{background:#333}.inverted pre,.inverted code,.inverted tt{background:#eeeeee !important;color:#111}.inverted h2{border-color:#555555}.inverted hr{border-color:#777;border-width:1px !important}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eeeeee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eeeeee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}.inverted{background:#0b2531;background:#252a2a}.inverted #wrapper{background:#252a2a}.inverted a{color:#acd1d5}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k,.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086B3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne,.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#099}.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc,.highlight .vg,.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#EAF2F5}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2B91AF}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#A31515}body.dark #wrapper{background:transparent !important;box-shadow:none !important}
+
+@media print{
+#generated-toc-clone,#generated-toc{display:none!important}
+}
+
+</style>
+
+</head>
+<body class="normal firstload">
+  <div id="wrapper">
+      <h1 id="ajax">AJAX</h1>
+
+<p>Instead of typing our request in the browser and pressing enter we want to programatically make the request. Asynchronous JavaScript and XML (AJAX) can be used to do this. What&#8217;s interesting is that the requests will be done &#8220;asynchronously&#8221;, i.e. without having to refresh the page. This means with JavaScript we can &#8220;talk&#8221; to another server, get some data, and update the current page without a browser refresh. This makes for a great user experience. </p>
+
+<p>Note that even though XML is in the name, we will be using the JSON data format. </p>
+
+<p>Making AJAX requests can be rather complicated, especially when you factor in browser differences so again jQuery comes to the rescue. </p>
+
+<h2 id="ajaxmethod">$.ajax method</h2>
+
+<p>jQuery has a method called <code>ajax</code> which can be used to make these kinds of requests. The method takes two arguments, one is the <strong>url</strong> and the other is an optional <strong>object</strong> with the settings.</p>
+<pre><code>$.ajax(&apos;path&apos;, {
+	type: &apos;GET&apos;, // default is &apos;GET&apos;
+	dataType: &apos;json&apos;, // default is a guess
+	success: function(){} // callback function if call is successful
+});</code></pre>
+
+<p>Let&#8217;s try this with our wunderground API. We need jQuery loaded so we can either create an HTML page and load jQuery or use the chrome JavaScript console while on the jQuery website (since they have it loaded already!).</p>
+<pre><code>$.ajax(&apos;http://api.wunderground.com/api/61f0a55cb00602dc/conditions/q/CA/San_Francisco.json&apos;, {
+	type: &apos;GET&apos;,
+	dataType: &apos;json&apos;,
+	success: function(){console.log(&quot;Hi!&quot;)}
+});</code></pre>
+
+<p>The result should be an error: </p>
+
+<p><code>Origin http://jquery.com is not allowed by Access-Control-Allow-Origin.</code> </p>
+
+<p>If you search &#8220;Access-Control-Allow-Origin&#8221; in Google you&#8217;ll see that the first result points to an MDN page talking about <strong>Cross-site HTTP requests</strong>. When making an HTTP request to a domain name that is different from the domain name that we are currently using, we are creating cross-site http requests. </p>
+
+<p>Unfortunately AJAX is restricted by the &#8220;same origin policy&#8221;, meaning that these types of requests can only happen from the same domain/subdomain. This is a security feature of all browsers. </p>
+
+<h2 id="jsonp">JSONP</h2>
+
+<p>One way of getting around the &#8220;same origin policy&#8221; is to use JSONP. <strong>JSON with padding</strong> is a popular technique which requires the server you&#8217;re requesting data from to cooperate with you and send you JavaScript instead of JSON data. Requesting JavaScript from another domain is permitted and we do it all of the time (think loading jQuery from google&#8217;s CDN). </p>
+
+<p>What jQuery can do is inject a script tag into your website temporarily when a request is made. The script &#8220;src&#8221; will point to a bit of JavaScript on the server you requested data from. What the server needs to do is wrap the JSON data in a JavaScript function (thus &#8220;padding&#8221;). This function becomes available to us, it gets executed, we get our data, and the script tag is removed. </p>
+
+<p>Let&#8217;s modify our previous request and just change <code>json</code> to <code>jsonp</code>.</p>
+<pre><code>$.ajax(&apos;http://api.wunderground.com/api/61f0a55cb00602dc/conditions/q/CA/San_Francisco.json&apos;, {
+	type: &apos;GET&apos;,
+	dataType: &apos;jsonp&apos;,
+	success: function(){console.log(&quot;Hi!&quot;)}
+});</code></pre>
+
+<p>It should work, you&#8217;ll see &#8220;Hi!&#8221; in the console. But where&#8217;s the data? It&#8217;s available, we just need to learn to use it. Reading the jQuery API will tell us what we need. </p>
+
+<p>http://api.jquery.com/jQuery.ajax/ </p>
+
+<p>For the &#8220;success&#8221; callback function it says: </p>
+
+<blockquote>
+<p>A function to be called if the request succeeds. The function gets <strong>passed three arguments</strong>: The data returned from the server, formatted according to the dataType parameter; a string describing the status; and the jqXHR (in jQuery 1.4.x, XMLHttpRequest) object. </p>
+</blockquote>
+
+<p>The important part here is the fact that the success function gets passed three arguments. The JSON data is the first argument and that&#8217;s all we need right now. Modifying our code we see the data:</p>
+<pre><code>$.ajax(&apos;http://api.wunderground.com/api/61f0a55cb00602dc/conditions/q/CA/San_Francisco.json&apos;, {
+	type: &apos;GET&apos;,
+	dataType: &apos;jsonp&apos;,
+	success: function(ourData){console.log(ourData)}
+});</code></pre>
+
+<p>What you should see in the console is two objects. The first one is the jQuery AJAX object which can generally be ignored. The second object is our data. </p>
+
+<h2 id="jsonparsing">JSON Parsing</h2>
+
+<p>Clicking on the little arrow on the side will open up the object for inspection. Note that the object doesn&#8217;t use strings for the property names. This is because what we&#8217;re seeing is not JSON, it&#8217;s a JavaScript object. </p>
+
+<p>What jQuery did was &#8220;parse&#8221; (read and convert) the JSON into a JavaScript object so that we can work with it. </p>
+
+<h2 id="cors">CORS</h2>
+
+<p>Another technique to get around the &#8220;same origin policy&#8221; is called CORS, it stands for <strong>Cross-Origin Resource Sharing</strong>. This is a new protocol which is simply an &#8220;opt out&#8221; of the &#8220;same origin policy&#8221;. The server that has the data would need to tell the browser that it&#8217;s opting out. Unfortunately the wunderground API doesn&#8217;t use CORS.</p>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>

@@ -48,7 +48,7 @@ Creating your own loop with WP_Query doesn't actually look very different from a
 That wasn't too scary! The biggest differences between a standard loop and a custom loop are:
 
 * We create a new variable for our custom loop and use that its name throughout the new loop. In this case, we called it $newAwesomeQuery
-* On the first line, we pass WP_Query parameters that describe what kind content we want returned, how we want it filtered, and in what order. More on that in a minute!
+* On the first line, we pass WP_Query parameters that describe what kind content we want returned, how we want it filtered, and in what order. More on that in a minute.
 * After we're finished with our custom loop, it's important to call the **wp_reset_postdata()** function, which resets global post variables to their original values. For example, let's say we're using a custom loop in a single post. By using **wp_reset_postdata()** after our custom loop, template tags like **the_permalink()** will refer to your original post again.
 
 ##A few common parameters
@@ -88,6 +88,7 @@ The default loop will work great to show the items and display a single item, bu
 
 Here's how we could do that:
 
+	<?php
 	// First, let's find out what type of project we're dealing with by finding out which terms of our custom 'project_type' taxonomy apply to this post
 	
 	$projectTerms = wp_get_post_terms( $post->ID, 'project_type' );
@@ -126,7 +127,7 @@ Let's break that down a bit and look at the parameters that we passed our new WP
 * **'project_type' => $projectTerms** is a taxonomy parameter that tells the loop to only return items in the custom "Project Type" taxonomy that match the terms of this post (we'd figured out what those were before we ran the loop and assigned them to that $projectTerms variable)
 * **'post__not_in' => array( $post->ID )** this tells the loop to exclude the current post (because we wouldn't want the current post in a list of related posts!)
 
-Then, inside the loop, we grabbed the featured image for each item, and linked to the item using the title as the link text.
+Then, inside the loop, we grabbed the featured image for each item, and linked to the item using the title as the link text. 
 
 
 ##The possibilities are nearly endless

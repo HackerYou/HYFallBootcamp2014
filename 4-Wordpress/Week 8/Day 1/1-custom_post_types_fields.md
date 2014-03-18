@@ -340,13 +340,13 @@ Finally, when you visit `/portfolio` on your site, you should see a listing of y
 
 ## Exercise
 
-Now that you can view each individual portfolio item as well as view all portfolio items when visiting `/portoflio`, we have a few questions:
+Now that you can view each individual portfolio item as well as view all portfolio items when visiting `/portfolio`, we have a few questions:
 
 1. Why is it styled exactly like our blog? 
 2. Where did our custom fields go? How do I pull them into this page?
 3. How do I style it differently from the blog? Add my own classes?
 
-For this, we will need to create ourselves a new file called `archive-portoflio.php` which will control how our portfolio items are pushed out. You can start with all the code from `single-portoflio.php` and work from there.
+For this, we will need to create ourselves a new file called `archive-portfolio.php` which will control how our portfolio items are pushed out. You can start with all the code from `single-portfolio.php` and work from there.
 
 So, for this exercise, we need to do the following:
 

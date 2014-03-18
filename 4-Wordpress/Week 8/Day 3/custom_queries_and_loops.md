@@ -147,7 +147,8 @@ Then, inside the loop, we grabbed the featured image for each item, and linked t
 	
 		<?php while ($onePageQuery->have_posts()) : $onePageQuery->the_post(); ?>
 
-			<section class="<?php echo $post->post_name ?>">
+			<section id="<?php echo $post->post_name; ?>">
+				<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
 			</section>
 		<?php endwhile; ?>
@@ -164,6 +165,9 @@ Now, let's break this one down as well.
 * **'post_type' => 'page'** tells the custom loop to only display pages, as opposed to posts and custom post types
 * **'orderby' => 'menu_order'** This parameter tells us how to order the posts. We could have told the query to order the pages chronologically or alphabetically, but this is a little arbitrary, and you might not get the posts in the order you actually want them. By setting the order to **"menu_order"**, this lets us set the order from the WordPress editor. You do that here, right below the Template in the Page Attributes: ![](http://cl.ly/image/3e2v1K3d321x/Screen%20Shot%202014-03-18%20at%202.30.50%20PM.png)
 * **'post__not_in' => array( 42 )** tells the loop to exclude a specific page by ID, if you wanted to do so.
+
+You might also notice that, in the loop, we surrounded the content with a section and gave it the class of **"$post->post_name"**. That's a bit of WordPress code that outputs the name of the 'slug' of each page, and that gives us a unique ID to link to in the nav menu.
+
 
 One page site accomplished!
 

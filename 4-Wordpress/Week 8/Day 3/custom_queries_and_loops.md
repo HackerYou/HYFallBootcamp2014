@@ -91,7 +91,7 @@ Here's how we could do that:
 	<?php
 	// First, let's find out what type of project we're dealing with by finding out which terms of our custom 'project_type' taxonomy apply to this post
 	
-	$projectTerms = wp_get_post_terms( $post->ID, 'project_type' );
+	$projectTerms = wp_get_post_terms( $post->ID, 'project_type' );	
 	
 	// Next, let's build our custom query!
 	
@@ -128,6 +128,44 @@ Let's break that down a bit and look at the parameters that we passed our new WP
 * **'post__not_in' => array( $post->ID )** this tells the loop to exclude the current post (because we wouldn't want the current post in a list of related posts!)
 
 Then, inside the loop, we grabbed the featured image for each item, and linked to the item using the title as the link text. 
+
+##A custom query for a one-page site
+
+	<?php
+	
+	$onePageQuery = new WP_Query( 
+		array( 
+			'posts_per_page' => -1,
+			'post_type' => 'page', 
+			'orderby' => 'menu_order',
+			'order' => 'ASC',
+			'post__not_in' => array( 42 ) // if you wanted to exclude a page with the ID of 42
+			) 
+	); ?>
+	
+	<?php if ( $onePageQuery->have_posts() ) : ?>
+	
+		<?php while ($onePageQuery->have_posts()) : $onePageQuery->the_post(); ?>
+
+			<section class="<?php echo $post->post_name ?>">
+				<?php the_content(); ?>
+			</section>
+		<?php endwhile; ?>
+		
+		<?php wp_reset_postdata(); ?>
+		
+	<?php else:  ?>
+		[stuff that happens if there aren't any posts]
+	<?php endif; ?>
+	
+Now, let's break this one down as well.
+
+* **'posts_per_page' => -1** means that this loop will run for as many items match the query. -1 means unlimited. We're doing this because your WordPress settings might default to showing 5 or 10 posts per page, but if there are more sections than this, we want the loop to go as long as it has to.
+* **'post_type' => 'page'** tells the custom loop to only display pages, as opposed to posts and custom post types
+* **'orderby' => 'menu_order'** This parameter tells us how to order the posts. We could have told the query to order the pages chronologically or alphabetically, but this is a little arbitrary, and you might not get the posts in the order you actually want them. By setting the order to **"menu_order"**, this lets us set the order from the WordPress editor. You do that here, right below the Template in the Page Attributes: ![](http://cl.ly/image/3e2v1K3d321x/Screen%20Shot%202014-03-18%20at%202.30.50%20PM.png)
+* **'post__not_in' => array( 42 )** tells the loop to exclude a specific page by ID, if you wanted to do so.
+
+One page site accomplished!
 
 
 ##The possibilities are nearly endless

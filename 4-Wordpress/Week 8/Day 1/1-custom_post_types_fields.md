@@ -25,7 +25,7 @@ Each Post type gets ability to edit just as if they were pages or blog posts.
 
 ### Exercise
 
-To learn custom post types, we will code along to create an entire portfolio listing for our website. This will be useful to add/edit/remote portfolio items on your website.
+To learn custom post types, we will code along to create an entire portfolio listing for our website. This will be useful to add/edit/remove portfolio items on your website.
 
 Make sure you have your XAMPP / MAMP running and you are logged into your local install of WordPress.
 
@@ -41,7 +41,7 @@ Once installed, click `activate plugin`
 
 You should now see a new item in your sidebar called `CPT UI`. Click __Add New__.
 
-On the left we can create a post type, on the right you will see the interface for create a custom taxonomy. We will go into those later.
+On the left we can create a post type, on the right you will see the interface to create a custom taxonomy. We will go into those later.
 
 Start by filling out the names and labels. The post type name is the most important part so pay attention here:
 

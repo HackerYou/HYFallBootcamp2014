@@ -9,11 +9,6 @@
   ul li {
     cursor: move;
   }
-
-  .finished {
-    text-decoration: line-through;
-    color: #ccc;
-  }
 </style>
 <body>
 
@@ -21,7 +16,7 @@
   <div class="container">
     <div class="page-header"> <h1>jQuery To Do List App</h1></div>
     <form>
-      <input class="form-control input-lg" type="text" placeholder="Add an item..." autofocus>
+      <input class="form-control input-lg" type="text" placeholder="Add an item...">
     </form>
     <ul>
       <!-- To do items get added dynamically here -->
@@ -29,32 +24,35 @@
   </div>
 </div>
 
-<script src="jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script>
 $(document).ready(function(){
-  $('ul').sortable();
-  $('form').on('submit', function(e){
-    //prevent the default refresh
-    e.preventDefault();
-    //grab the value of the input and store it in the todo variable
-    var toDo = $(".form-control").val();
-    //check if todo acgtually has something in it
-    if (!toDo) {
-      //then yell at them
-      alert("YOU DIDN'T DO ANYTHING!!!!");
-      return false; //abandon all ship;
-    };
-    //clear the input with the class of form-control
-    $(".form-control").val('');
-    $('ul').append("<li>" + toDo + "</li>");
+  //regular event listner
+  $('form').on('submit', function(event){
+    event.preventDefault();
 
-    return true;
-  }); // end form submit listener
-  $('ul').on('click',"li", function(){
-    $(this).toggleClass('finished');
+    var toDoItem = "<li><span class='completion glyphicon glyphicon-unchecked'></span>" + $('input').val() + "<span class='glyphicon glyphicon-trash'></span></li>";
+
+    $('ul').append(toDoItem);
+
+    $('input').val('');
   });
-});// end doc ready
+
+  // delegated event listner
+  $('ul').on('click', 'li', function(){
+    $(this).find('.completion').toggleClass('glyphicon-unchecked glyphicon-check');
+    $(this).toggleClass('text-muted');
+  });
+
+  //sort list
+  $('ul').sortable();
+
+  //delete list items
+  $('ul').on('click', '.glyphicon-trash', function(){
+    $(this).parent().remove();
+  });
+});
 </script>
 </body>
 </html>

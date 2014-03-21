@@ -49,7 +49,7 @@ Sometimes, even if your taxonomy terms are going to be flat, you can choose to m
 
 #### 1. Adding the terms for a particular post (which is just like adding the tags or categories associated with a particular post):
 
-In the right template of the post type you've associated the taxonomy width, add the following template tag inside the loop:
+In the right template of the post type you've associated the taxonomy with, add the following template tag inside the loop:
 
 ```
 <?php the_terms( $id, $taxonomy, $before, $sep, $after ); ?>

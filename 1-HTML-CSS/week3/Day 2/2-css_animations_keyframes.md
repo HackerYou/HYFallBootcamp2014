@@ -80,11 +80,16 @@ You can also set them independently as well as add a few other options:
 		-webkit-animation-direction: alternate;  
 	}
 
+
 ## Stepping it up
 
 We have animated `top` so far, but just like css transitions, you can animate **any property** you can think of!
 
 width, height, scale, font color, background color, font size, position and so on. If you have some extra time on your final project, add some fun animation to it!
+
+Take a look at [this CodePen](http://codepen.io/jessynd/pen/JHeqs) by a past hackerYou student that demonstrates how keyframes work in action. You can even play around with the code. 
+
+
 
 <style type="text/css">
 	/* Setup all snowflakes */

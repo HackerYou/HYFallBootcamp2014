@@ -347,6 +347,15 @@ It is reccomended you use at least 144x144 and let the device size it down for y
 
 	<style>span.white {border-bottom:1px solid black; color:white; } span.white:hover {color:black;}}</style>
 
+##Additional Resources: 
+
+Here is a list of useful cross-browser testing sites for you to explore: 
+* <http://www.responsinator.com/>
+* <http://quirktools.com/screenfly/ (This one is awesome!)>
+* <http://responsive.victorcoulon.fr/>
+
+	 
+
 ## Review
 1. What is a Media Query?
 	* <span class="white">A way to specify CSS to be applied only at certain points (width, height, etc...)</span>
@@ -366,3 +375,5 @@ It is reccomended you use at least 144x144 and let the device size it down for y
 	* <span class="white">Usually size our wrapper in pixels with a max-width and the rest in percentages</span>
 1. What CSS property do we use to make sure our site doesn't get wider than a certain point?
 	* <span class="white">max-width!</span>
+
+

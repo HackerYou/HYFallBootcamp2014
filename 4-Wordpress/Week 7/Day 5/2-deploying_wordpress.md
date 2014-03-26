@@ -37,7 +37,9 @@ You should see this screen:
 
 ![](http://f.cl.ly/items/3q0t0s0I3k3j0L181C3U/exportDB.png)
 
-Some phpMyAdmin installs are a little different. You may need to click **Custom - display all possible options** and then select **Save output to file** :
+Some phpMyAdmin installs are a little different. You will encounter different interfaces for phpMyAdmin on different hosts.
+
+You may need to click **Custom - display all possible options** and then select **Save output to file** :
 
 ![](http://wes.io/UeOr/content)
 

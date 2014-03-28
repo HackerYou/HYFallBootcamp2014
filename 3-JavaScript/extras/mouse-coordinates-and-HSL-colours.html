@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <style>
+    body {
+      height:100%;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $(window).on('mousemove',function(e){
+        var hueMultiple = $(window).width() / 360;
+        var satMultiple = $(window).height() / 100;
+        console.log(e.clientX,e.clientY);
+        $('body').css('background', 'hsl('+e.clientX / hueMultiple+','+e.clientY / satMultiple+'%,50%)');
+      });
+    });
+  </script>
+
+  <style>
+    body {
+      -webkit-transition:all .1s;
+    }
+  </style>
+</body>
+</html>

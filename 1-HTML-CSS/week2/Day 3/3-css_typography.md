@@ -262,3 +262,16 @@ Take a look at `box-shadow.html` for two examples on how to use box shadow - you
 **For some great examples of taking pure text to the next level, take a look at the examples at [http://tympanus.net/Tutorials/TypographyStyles/index4.html](http://tympanus.net/Tutorials/TypographyStyles/index4.html)**
 
 ![](http://wes.io/JPhe/Screen%20Shot%202012-09-12%20at%201.20.12%20PM.png)
+
+### Additional Resources
+
+[This is a great resource on the google webfonts that look best.](http://sachagreif.com/more-google-webfonts-that-dont-suck/)
+[And more by the same author](http://sachagreif.com/google-webfonts-that-dont-suck/)
+[A library of Typography](http://losttype.com/browse/)
+[CSS Fonts](http://cssfontstack.com/)
+[More Free Fonts...](http://www.fontsquirrel.com/)
+[Wes can tell you about this](http://fontn.com/)
+[Fonts that you have to pay for](http://typecast.com/)
+[http://hellohappy.org/beautiful-web-type/]
+[More tympanus awesomeness](http://tympanus.net/Tutorials/HeadingSets/index6.html)
+[Use the right quotes peeps!](http://practicaltypography.com/straight-and-curly-quotes.html)

@@ -115,3 +115,4 @@ Here is a list of settings you will probably enjoy. Feel free to modify or delet
 **If you change "theme", You will need to restart sublime text after you save this settings file as you are changing the skin of sublime**
 
 A full list of available setting defaults is available at `Preferences` → `Settings - Default` (Do not change these, simply restate them in your own file).
+

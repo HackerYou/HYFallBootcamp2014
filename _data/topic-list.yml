@@ -7,6 +7,9 @@
   - title: HTML Intro
     path: week1/Day%201/exercises/intro.html 
     answerPath: week1/Day%201/exercises/intro-ANSWER.html
+  - title: Markup Excercise
+    path: week1/Day%201/exercises/markup-exercise.html
+    answerPath: week1/Day%201/exercises/markup-exercise-answers.html
 - name: UX and Design
   slug: ux
   directory: 2-Design 

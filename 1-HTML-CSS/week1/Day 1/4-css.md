@@ -1,4 +1,10 @@
-# Week 1, Day 1 Lesson: Intro to CSS
+---
+layout: notes
+title: Intro to CSS
+topic: html
+---
+
+#Intro to CSS
 
 ## Introducing CSS
 

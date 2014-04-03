@@ -2,3 +2,6 @@ Icon
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+.bundle
+vendor
+_site

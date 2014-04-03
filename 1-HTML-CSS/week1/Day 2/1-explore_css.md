@@ -1,4 +1,10 @@
-# Week 1, Day 2 Explore CSS
+---
+layout: notes
+title: Explore CSS
+topic: html
+---
+
+#Explore CSS
 
 As a freelancer you will get requests from clients that you will not know how to accomplish. If you say "I don't know how to do that" then you will find yourself without a job most of the time. Most requests can be handled by doing a bit of research and by being resourceful.
 

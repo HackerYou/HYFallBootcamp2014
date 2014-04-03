@@ -1,4 +1,10 @@
-# Week 1, Day 4
+---
+layout: notes
+title: Chrome Developer Tools and Sublime Text Pro-tips
+topic: html
+---
+
+#Chrome Developer Tools and Sublime Text Pro-tips
 
 ## Developer Tools!
 Developer Tools are the secret weapon of any web designer or developer, without them the web would look a whole lot worse. 

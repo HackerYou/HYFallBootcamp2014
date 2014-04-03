@@ -1,33 +1,37 @@
-<style>.white {color:white; border-bottom:1px solid black;} .white:hover {color:black;}</style>
+---
+layout: notes
+title: HTML &amp; CSS Best Practices
+topic: html
+---
 
 # Week 1, Day 2 Best Practices
 
 ## Review
 
 1. We Write ____ to create our website
-	* <div class="white">HTML</div>
+	* <span class="hide">HTML</span>
 1. We use **HTML** purely for __________ our content
-	* <div class="white">describing</div>
-1. We can mark up our content by surrounding it in <span class="white">**tags**</span> that make up <span class="white">**html elements**</span>
+	* <span class="hide">describing</span>
+1. We can mark up our content by surrounding it in <span class="hide">**tags**</span> that make up <span class="hide">**html elements**</span>
 1. We use `<h1>` to `<h6>` tags for headings, `<p></p>` for paragraphs as well as many others which you will now tell me what they do: 
 	1. `<strong></strong>`
 	1. `<em></em>`
 	1. `<img src="" alt="">`
-	1. What are the two types of image paths? <span class="white">absolute and relative</span>
+	1. What are the two types of image paths? <span class="hide">absolute and relative</span>
 1. We use  the `<span></span>` tags to wrap elements and target them with CSS.
 1. We use `<div></div>` tags to group and organize elements on a page as well as target with styling later on
 1. What is the difference between spans and divs?
-	* <span class="white">divs are block, spans are inline. We generally use divs to group elements together, and spans to target single words</span>
+	* <span class="hide">divs are block, spans are inline. We generally use divs to group elements together, and spans to target single words</span>
 1. We use attributes such as **alt, src and title** to provide additional data to the HTML tag. What do these do?
 1. We use the **class** and **id** attribute to name our elements and to make them selectable with CSS
 	1. What is the difference between a class and an id?
-		* <span class="white">ids can only be used once</span>
+		* <span class="hide">ids can only be used once</span>
 	1. Can an element have multiple classes and ids?
-		* <span class="white">Yes multiple classes, no only a single id</span>
+		* <span class="hide">Yes multiple classes, no only a single id</span>
 	1. What can I name my classes and ids?
-		* <span class="white">Anything!</span>		
+		* <span class="hide">Anything!</span>		
 	1. What is camelcasing?
-		* <span class="white">itsWhenYouWriteLikeThis. First letter of every word is capitalized except the very first word.</span>
+		* <span class="hide">itsWhenYouWriteLikeThis. First letter of every word is capitalized except the very first word.</span>
 1. We use **CSS** to style the look and feel of our website
 1. We select elements from **html document** with CSS Selectors and then write **CSS Rules** to apply styles to them.
 1. CSS rules have a definition made up of 1 or many property and values
@@ -38,7 +42,7 @@
 		h2.bigTitles { font-size: 100px; }
 	1. We use **hashes** to select elements with id names
 	1. Why do we recommend not using ids? 
-		* <span class="white">They can only be used once!</span>
+		* <span class="hide">They can only be used once!</span>
 	1. How would I select a span with the class or warning?
 
 
@@ -151,8 +155,6 @@ It is best practice to have each rule on a single line as well as the selector a
 	h2 {color:red; font-size:50px; }
 	
 ## Review
-<style>.white {color:white;border-bottom:1px solid black;} .white:hover{color:black;}</style>
-
 
 1. CSS Typography
 	1. What do we use the change the spacing between lines?

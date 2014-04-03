@@ -1,8 +1,12 @@
-# Week 1, Day 5
+---
+layout: notes
+title: FTP & Hosting Your Site
+topic: html
+---
 
 # FTP & Web Hosting
 
-# FTP-ing
+## FTP-ing
 
 Soon it will come time to get your site up on the net. We have already talked about what servers are, but lets take a look how to acutally use FTP to get our site online.
 

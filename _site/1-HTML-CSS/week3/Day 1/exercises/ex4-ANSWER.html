@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Responsive Design</title>
+</head>
+	<body>
+		<div class="wrapper">
+			<div class="blocks">
+				<div class="third block">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut nulla eget lacus gravida rutrum. Fusce sit amet tellus arcu. Nam in accumsan diam. Etiam quis augue risus, eget molestie sapien. Fusce vehicula aliquet neque, in cursus tellus venenatis eget. Pellentesque in magna nisl, vel dapibus dolor. Nullam a ante vel libero vehicula aliquet et sit amet mauris. Morbi dapibus pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>
+				<div class="third block">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut nulla eget lacus gravida rutrum. Fusce sit amet tellus arcu. Nam in accumsan diam. Etiam quis augue risus, eget molestie sapien. Fusce vehicula aliquet neque, in cursus tellus venenatis eget. Pellentesque in magna nisl, vel dapibus dolor. Nullam a ante vel libero vehicula aliquet et sit amet mauris. Morbi dapibus pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>
+				<div class="third block">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut nulla eget lacus gravida rutrum. Fusce sit amet tellus arcu. Nam in accumsan diam. Etiam quis augue risus, eget molestie sapien. Fusce vehicula aliquet neque, in cursus tellus venenatis eget. Pellentesque in magna nisl, vel dapibus dolor. Nullam a ante vel libero vehicula aliquet et sit amet mauris. Morbi dapibus pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>				
+			</div>
+			<div class="blocks">
+				<div class="sixth block">
+					<p>Lorem ipsum dolor sit amet, cons pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>
+				<div class="sixth block">
+					<p>Lorem ipsum dolor sit amet, cons pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>
+				<div class="sixth block">
+					<p>Lorem ipsum dolor sit amet, cons pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>
+				<div class="sixth block">
+					<p>Lorem ipsum dolor sit amet, cons pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>
+				<div class="sixth block">
+					<p>Lorem ipsum dolor sit amet, cons pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>
+				<div class="sixth block">
+					<p>Lorem ipsum dolor sit amet, cons pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>	
+			</div>
+			<div class="blocks">
+				<div class="half block">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut nulla eget lacus gravida rutrum. Fusce sit amet tellus arcu. Nam in accumsan diam. Etiam quis augue risus, eget molestie sapien. Fusce vehicula aliquet neque, in cursus tellus venenatis eget. Pellentesque in magna nisl, vel dapibus dolor. Nullam a ante vel libero vehicula aliquet et sit amet mauris. Morbi dapibus pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>
+				<div class="half block">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut nulla eget lacus gravida rutrum. Fusce sit amet tellus arcu. Nam in accumsan diam. Etiam quis augue risus, eget molestie sapien. Fusce vehicula aliquet neque, in cursus tellus venenatis eget. Pellentesque in magna nisl, vel dapibus dolor. Nullam a ante vel libero vehicula aliquet et sit amet mauris. Morbi dapibus pellentesque nisi sit amet sagittis. Aenean mollis porttitor neque. Aenean cursus convallis feugiat. Quisque et nisi sed lectus mattis auctor non at eros.</p>
+				</div>
+			</div>
+		</div>
+		
+
+		<style type="text/css">
+			* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+			/* 
+				Using CSS, match the answer. I've provided the media queries for you
+				I hope you like fractions, width and margins should add up to 100%
+			*/
+			body {
+				background:#efefef;
+				font-family: sans-serif;
+			}
+
+			.wrapper {
+				width:80%;
+				margin: 0 auto;
+			}
+
+			.block {
+				padding:20px;
+				background:white;
+				box-shadow: 0 0 10px #ccc;
+				float:left;
+				margin-bottom:20px;
+			}
+
+			.third {
+				width:32.3%;
+				margin-right:1%;
+			}
+
+			.sixth {
+				width:16%;
+				margin-right:0.6666%;
+			}
+			.half {
+				width:49%;
+				margin-right:1%;
+			}
+
+
+			
+			/* First we do all of our regular CSS for the basics and desktop site */
+
+			/* Then we use media queries for targeting other resolutions */
+
+			/* Portrait tablet and small desktops */
+			@media (max-width: 940px) {
+				.third {
+					/* Change our original thirds to halves */
+					width:49%;
+					margin-right:1%;
+				}
+				.third:first-child {
+					/* Make the first one 100% */
+					width:100%;
+					margin-right:0;
+					font-weight: 600;
+					text-align: center;
+				}
+
+				.sixth {
+					/* Make our sixths into thirds */
+					width:32%;
+					margin-right:1%;
+				}
+
+			}
+			 
+			/* Landscape phone to portrait tablet */
+			@media (max-width: 767px) {
+				.sixth {
+					width:49%;
+					margin-right: 1%;
+				}
+				.half {
+					width:100%;
+					margin-right:0;
+				}
+			}
+			 
+			/* Landscape phones and down */
+			@media (max-width: 480px) {
+				/*  Make everything 100%! */
+				.sixth,.third,.half {
+					width:100%;
+					margin-right: 0;
+				}
+			}
+
+
+		</style>
+	</body>
+</html>

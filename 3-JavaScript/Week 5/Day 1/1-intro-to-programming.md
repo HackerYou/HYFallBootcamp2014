@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Introduction to Programming
+topic: js
+---
+
 <style>
 	.note {
 		display: none; /* Hide teachers notes */

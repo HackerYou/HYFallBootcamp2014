@@ -1,0 +1,25 @@
+- name: HTML & CSS
+  slug: html
+  directory: 1-HTML-CSS 
+  exercises:
+  - title: hello-world example
+    path: week1/Day%201/exercises/hello-world.html 
+  - title: HTML Intro
+    path: week1/Day%201/exercises/intro.html 
+    answerPath: week1/Day%201/exercises/intro-ANSWER.html
+- name: UX and Design
+  slug: ux
+  directory: 2-Design 
+  exercises:
+- name: Git and GitHub
+  slug: git
+  directory: 1-HTML-CSS
+- name: JavaScript & jQuery
+  slug: js
+  directory: 3-Javascript   
+- name: WordPress
+  slug: wp
+  directory: 4-Wordpress
+- name: Freelancing
+  slug: freelance
+  directory: 5-freelancing

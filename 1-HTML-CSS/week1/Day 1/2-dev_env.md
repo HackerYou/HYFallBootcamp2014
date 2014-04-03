@@ -1,4 +1,10 @@
-# Week 1, Day 1 Lesson: Your Development Environment
+---
+layout: notes
+title: Your Development Environement
+topic: html
+---
+
+#Your Development Environment
 
 ## Say Hello to your Text Editor!
 At HackerYou, we can't stress enough how important having the right tools for the job is. Probably the most important tool you have as a web developer or designer is your text editor in which we use to edit our code.

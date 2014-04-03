@@ -1,0 +1,140 @@
+// -------------------------------------------
+// VARIABLES
+// -------------------------------------------
+
+// Colours 
+// -------------------------------------------
+$gray-dark:  	#333;
+$gray: 			#666;
+$gray-light: 	#eee;
+$magenta:   	#cc0066;
+
+// Typography
+// -------------------------------------------
+$sans-serif: 	helvetica, arial, sans-serif;
+$serif: 		georgia, garamond, serif;
+
+$font-size-small: 	0.8rem;
+$font-size-base:  	1rem;
+$font-size-large: 	1.2rem;
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+
+// -------------------------------------------
+// IMPORTING PARTIALS
+// -------------------------------------------
+@import "mixins";
+
+
+
+// Global
+// -------------------------------------------
+body {
+	margin: 0;
+	padding: 0;
+	font-size: $font-size-base;
+	font-family: $sans-serif;
+}
+h1, h2, h3, h4 {
+	font-family: $serif;
+}
+p {
+	color: $gray-dark;
+}
+a {
+	color: $magenta;
+}
+.wrapper {
+	max-width: 1140px;
+}
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+
+
+// Header
+// -------------------------------------------
+header {
+
+}
+
+
+// Footer
+// -------------------------------------------
+footer {
+
+}
+
+
+// To refactor example
+// -------------------------------------------
+.icons{
+ 	padding-bottom: 5%;
+
+ }
+
+ .icons a{
+ 	text-indent: 5000px;
+ 	display: inline-block;
+ 	
+ }
+
+ .twitter{
+ 	background: url(images/icon-twitter-32x32.png)top left no-repeat;
+ 	width: 32px;
+ 	height: 32px;
+ 	display: inline-block;
+ 	float: left;
+
+ }
+
+ .twitter:hover{
+ 	background-position: -32px 0;
+ }
+
+ .facebook{
+ 	background: url(images/icon-facebook-32x32.png)top left no-repeat;
+ 	width: 32px;
+ 	height: 32px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+ .facebook:hover{
+ 	background-position: -32px 0;
+ }
+
+ .email{
+ 	background: url(images/icon-email-32x32.png)top left no-repeat;
+ 	width: 32px;
+ 	height: 32px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+ .eamil:hover{
+ 	background-position: -32px 0;
+ }
+
+ .rss{
+ 	background: url(images/icon-rss-32x32.png)top left no-repeat;
+ 	width: 32px;
+ 	height: 32px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+ .rss:hover{
+ 	background-position: -32px 0;
+ }
+
+

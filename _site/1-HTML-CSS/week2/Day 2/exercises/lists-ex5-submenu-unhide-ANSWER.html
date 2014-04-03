@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>CSS List Styles</title>
+</head>
+	<body>
+		<ul class="nav">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About <span class="arrow">&#x25BC;</span></a>
+				<ul class="sub-menu">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+			<li><a href="work.html">Work <span class="arrow">&#x25BC;</span></a>
+				<ul class="sub-menu">
+					<li><a href="work.html">Work</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<style type="text/css">
+		/* 
+			Using CSS, create a dropdown menu from the above HTML
+			This one is different to pay attention to which element you make position:relative;
+		*/
+
+
+		body {
+			margin:0;
+			font-family: sans-serif;
+		}
+		a {
+			color:white;
+			text-decoration: none;
+		}
+		ul {
+			margin:0;
+			padding:0;
+			background:#CA0002;
+			float:left;
+			width:100%;
+			position: relative;
+		}
+			ul li {
+				display:inline;
+			}
+				ul li a {
+					padding:10px;
+					float:left;
+				}
+
+			ul li ul {
+				position: absolute;
+				top:38px;
+				float:left;
+				background:#DFDFDF;
+				display:none;
+			}
+				ul li ul li a {
+					padding:5px 10px;
+					color:black;
+				}
+		
+			ul li:hover ul {
+				display:block;				
+			}
+
+			ul li:hover a {
+				background:#dfdfdf;
+				color:black;
+			}
+
+			span.arrow {
+				font-size:10px;
+			}
+
+
+		</style>
+	</body>
+</html>

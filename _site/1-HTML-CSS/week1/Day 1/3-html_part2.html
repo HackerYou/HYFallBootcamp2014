@@ -1,0 +1,394 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/github.css">
+  <link rel="stylesheet" href="/assets/notes.css">
+</head>
+<body>
+<header>
+  <div class="wrapper"> 
+    <h1>HackerYou FullTime Bootcamp Notes </h1>
+    
+    <a href="/">&lt; Table of Contents</a>
+    
+  </div>
+</header>
+<div class="wrapper">
+<h1 id="intro-to-html-elements">Intro to HTML Elements</h1>
+
+<h2 id="viewing-html-in-the-browser">Viewing HTML in the browser</h2>
+
+<p>When we write HTML, we save our files with the extension of <code>.html</code>. To open an HTML file, you can either double click the file in your computer’s file finder/explorer or right from Sublime Text, you can right click and select “Open in browser”</p>
+
+<p><img src="http://wes.io/NpjT/content" alt="" /></p>
+
+<p>If these are opening in another browser, you may want to set Chrome as the default browser. If you need help — grab a mentor or me at the break and we will set that up for you.</p>
+
+<h2 id="creating-elements-with-available-tags">Creating Elements with available tags</h2>
+
+<p>As of the latest HTML5 Specification - there are just over 100 different kinds of HTML tags at our disposal, many of which we either shouldn’t be using (as we learned earlier) or aren’t as commonly used.</p>
+
+<p>There is a full list of all available tags at <a href="http://www.quackit.com/html_5/tags/">http://www.quackit.com/html_5/tags/</a></p>
+
+<p>Let’s take a look at the most commonly used tags used to mark up a document.</p>
+
+<h3 id="a-quick-word-on-styles">A quick word on styles</h3>
+
+<p>As a convenience, the browser gives us a handful of default styles that are applied to our HTML. So, even though we haven’t touched CSS yet, all of the below elements have some styling to them already. If you don’t like these styles, no problem! We will change them to <em>anything</em> we want in the future.</p>
+
+<h3 id="six-types-of-headings-h1h1---h6h6">Six types of Headings <code>&lt;h1&gt;&lt;/h1&gt;</code> -&gt; <code>&lt;h6&gt;&lt;/h6&gt;</code></h3>
+
+<p>Remember when we said HTML tags are use to describe the document? Well for our page’s headings, we need to categorize the importance of each of those headings.</p>
+
+<p>Think of your HTML document as if you were writing a paper.<br />
+You would have 1 main heading at the top of the page with the paper’s name on it. This would be your Heading 1 - <code>&lt;h1&gt;Paper Title&lt;/h1&gt;</code></p>
+
+<p>Then under that you may have several high level sections to break down the paper. These would be your Heading 2 titles. <code>&lt;h2&gt;</code></p>
+
+<p>Under each of those sections, you will probably have a few more smaller sections (<code>&lt;h3&gt;&lt;/h3&gt;</code>) and so on through to <code>&lt;h6&gt;</code>.</p>
+
+<p><strong>As a rule of thumb, your web page should only ever have 1 <code>&lt;h1&gt;</code> tag which is usually the websites name. After that, use your discretion of a title’s importance appending H2 to H6 tags</strong></p>
+
+<h3 id="paragraph-tags-pp">Paragraph Tags <code>&lt;p&gt;&lt;/p&gt;</code></h3>
+
+<p>The paragraph tag is one of the most used tags on the Internet as a large part of all content on the web is text. This one is fairly easy to use: every time you have a full line break in your text, wrap that entire block of text with <code>&lt;p&gt;&lt;/p&gt;</code> tags. Let’s use this following block of text from my website as an example:</p>
+
+<blockquote>
+  <p>I’m super passionate about design, development, and business. I’ve been very fortunate to be able to do all three as a career.</p>
+</blockquote>
+
+<blockquote>
+  <p>From a technical standpoint, I spend most of my time working with JavaScript, CSS3, HTML5 and PHP. I’ve been a WordPress developer for 5 years now and over the past year have been working a lot with HTML5, NodeJS and many sprinkles of CSS3. New and open sources web technologies make me super excited and I can’t wait to see whats to come of the web in the next few years.</p>
+</blockquote>
+
+<blockquote>
+  <p>I learn from the community and love to share what I have learned back. I regularly have speaking events on everything from HTML5 to UI/UX. I’m part of the amazing Ladies Learning Code where I instruct the WordPress courses.</p>
+</blockquote>
+
+<p>You can clearly see there are three paragraphs in this block of text. I would mark it up as follows:</p>
+
+<pre><code>&lt;p&gt;I’m super passionate about design, development, and business. I’ve been very fortunate to be able to do all three as a career.&lt;/p&gt;
+
+&lt;p&gt;From a technical standpoint, I spend most of my time working with JavaScript, CSS3, HTML5 and PHP. I’ve been a WordPress developer for 5 years now and over the past year have been working a lot with HTML5, NodeJS and many sprinkles of CSS3. New and open sources web technologies make me super excited and I can’t wait to see whats to come of the web in the next few years.&lt;/p&gt;
+
+&lt;p&gt;I learn from the community and love to share what I have learned back. I regularly have speaking events on everything from HTML5 to UI/UX. I’m part of the amazing Ladies Learning Code where I instruct the WordPress courses.&lt;/p&gt;
+</code></pre>
+
+<h3 id="unordered-ordered-lists-and-list-items-ulul-olol-and-lili">Unordered, Ordered Lists and list items <code>&lt;ul&gt;&lt;/ul&gt;</code>, <code>&lt;ol&gt;&lt;/ol&gt;</code> and <code>&lt;li&gt;&lt;/li&gt;</code></h3>
+<p>Suppose you wanted to create a bulleted list in html. You may be tempted to put an asterisk beside each line item and be done with it. <strong>Remember we are describing the content to the browser</strong> so this is how lists are done in HTML. We have two types:</p>
+
+<ul>
+  <li><strong>Unordered lists</strong> for when the order of the bulleted items does not matter:
+    <ul>
+      <li>Milk</li>
+      <li>Eggs</li>
+      <li>Bread</li>
+    </ul>
+  </li>
+  <li><strong>Ordered lists</strong> for when the order <em>does</em> matter:
+    <ol>
+      <li>Combine Ingredients</li>
+      <li>Blend Mixture <em>slowly</em></li>
+      <li>Bake at 350 for 30 mins</li>
+    </ol>
+  </li>
+</ul>
+
+<p>Each item inside an unordered or ordered list is called a <strong>list item</strong> and is wrapped inside <code>&lt;li&gt;&lt;/li&gt;</code>. So our first unordered and ordered lists look like this:</p>
+
+<pre><code>&lt;ul&gt;
+	&lt;li&gt;Milk&lt;/li&gt;
+	&lt;li&gt;Eggs&lt;/li&gt;
+	&lt;li&gt;Bread&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Combine Ingredients&lt;/li&gt;
+	&lt;li&gt;Blend Mixture &lt;em&gt;slowly&lt;/em&gt;&lt;/li&gt;
+	&lt;li&gt;Bake at 350 for 30 mins&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+<p><strong>Quick Test:</strong></p>
+
+<ul>
+  <li>What Tags are above?</li>
+  <li>What Content is above?</li>
+  <li>What elements are above?</li>
+  <li>How many elements are above? </li>
+  <li>What else can you use lists for on the web?</li>
+</ul>
+
+<h3 id="strongstrong-and-emem---strong-and-emphasis"><code>&lt;strong&gt;&lt;/strong&gt;</code> and <code>&lt;em&gt;&lt;/em&gt;</code> - Strong and Emphasis</h3>
+<p>Remember when I said using the <code>&lt;b&gt;</code> tag and <code>&lt;i&gt;</code> tag was bad? thats because those tags are old and were purely presentational.</p>
+
+<p>In their place, we use STRONG and EM to note that they are important and should have emphasis. Default styling in the browser already bolds and italicizes them accordingly.</p>
+
+<h3 id="divdiv-divs"><code>&lt;div&gt;&lt;/div&gt;</code> divs</h3>
+<p>The DIV tag in HTML is foundation for laying out a web page. We use divs to group together HTML elements into a defined section of content.</p>
+
+<p>*record scratch* — let’s go over that again because divs are super important. Divs are used as containers to group together common elements. We do this primarily for two reasons:</p>
+
+<ol>
+  <li>To keep our HTML modular — we should be able to easily move around chunks of HTML</li>
+  <li>To later target a group of elements with CSS</li>
+</ol>
+
+<p>Later, when we get into CSS, we will see how we can style divs however we want, but for now let’s take a look at how a very simple website may be laid out.</p>
+
+<p><img src="http://wes.io/IJQK/diagrams.png" alt="" /></p>
+
+<p>See how we divided up each section into a div? See how everything is nested inside the <em>*wrapper</em> div? The code for something like this would look like:</p>
+
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="wrapper"&gt;
+			&lt;div class="header"&gt;
+				&lt;p&gt;I'm a header&lt;/p&gt;
+			&lt;/div&gt;
+			
+			&lt;div class="content"&gt;
+				&lt;p&gt;I'm the content&lt;/p&gt;
+			&lt;/div&gt;
+			
+			&lt;div class="sidebar"&gt;
+				&lt;p&gt;I'm the sidebar&lt;/p&gt;
+			&lt;/div&gt;
+
+			&lt;div class="footer"&gt;
+				&lt;p&gt;I'm the footer!&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="aa-anchor-links"><code>&lt;a&gt;&lt;/a&gt;</code> Anchor Links</h3>
+<p>Chances are you have probably had to write a link to another page or website at some point in your life. Anchor links allow us to link to other</p>
+
+<p>Links take an <em>attribute</em> of <code>href</code> which tells the link where to link do. Here are a few examples:</p>
+
+<pre><code>&lt;!-- Links to other sites --&gt;
+&lt;a href="http://google.com"&gt;Google.com&lt;/a&gt;
+&lt;a href="http://hackeryou.com"&gt;Visit the hckerYou site!&lt;/a&gt;
+&lt;!-- Links within our website --&gt;
+&lt;a href="about.html"&gt;Visit my about page&lt;/a&gt;
+&lt;!--linking a nested image to another page --&gt;
+&lt;a href="contact.html"&gt;
+	&lt;img src="images/contact.png" alt=""&gt;
+&lt;/a&gt;
+</code></pre>
+
+<h3 id="spanspan-spans"><code>&lt;span&gt;&lt;/span&gt;</code> Spans</h3>
+<p>The span tag is a small, yet mighty HMTL tag. A span is an <strong>inline element</strong> which means that you can pop one right in the middle of a sentence and it wont give you a line break or any other unwanted effect. Suppose we were writing a sentence about our favourite foods and wanted to add a background colour to each of the foods names so they could be easily referenced.</p>
+
+<blockquote>
+  <p>My favourite foods are sushi, pizza and pulled pork</p>
+</blockquote>
+
+<p>We would first wrap it in our paragraph tag:</p>
+
+<pre><code>&lt;p&gt;My favourite foods are sushi, pizza and pulled pork&lt;/p&gt;
+</code></pre>
+
+<p>and then around each food, we wrap it in a span with the class of food. We use a class so we can target just these specific spans with a style. More on classes and styles later!</p>
+
+<pre><code>&lt;p&gt;My favourite foods are &lt;span class='food'&gt;sushi&lt;/span&gt;, &lt;span class='food'&gt;pizza&lt;/span&gt; and &lt;span class='food'&gt;pulled pork&lt;/span&gt;&lt;/p&gt;
+</code></pre>
+
+<p>My favourite foods are <span class="food" style="background:red; color:#fff;">sushi</span>, <span class="food" style="background:red; color:#fff;">pizza</span> and <span class="food" style="background:red; color:#fff;">pulled pork</span></p>
+
+<h4 id="div-or-span">div or span?!!?!?!</h4>
+<p>This is a big source of confusion — when do we use a div and when do we use a span? Whats the difference? </p>
+
+<p>The technical difference between the two is <code>div</code> is a block element and <code>span</code> is an inline element. Now these probably don’t mean much to you right now, so let’s take a look at the previous example using divs instead of spans:</p>
+
+<pre><code>&lt;p&gt;My favourite foods are &lt;div class='food'&gt;sushi&lt;/div&gt;, &lt;div class='food'&gt;pizza&lt;/div&gt; and &lt;div class='food'&gt;pulled pork&lt;/div&gt;&lt;/p&gt;
+</code></pre>
+
+<p>My favourite foods are <div class="food" style="background:red; color:#fff;">sushi</div>, <div class="food" style="background:red; color:#fff;">pizza</div> and <div class="food" style="background:red; color:#fff;">pulled pork</div></p>
+
+<p>Why does each item go onto a new line? Because <code>div</code>s are block element, which means they should not be used <strong>in a line</strong> or <strong>inline</strong>.</p>
+
+<p>As a general rule of thumb, spans go inside other elements — such as <code>&lt;p&gt;</code> or <code>&lt;h2&gt;</code> — so we can later specifically target that bit of content. Divs are used to wrap larger sections of content together.</p>
+
+<h3 id="img-embedded-image"><code>&lt;img&gt;</code> Embedded Image</h3>
+<p>Finally the image tag! Used to embed images into your webpage. We have two mandatory attributes here:</p>
+
+<p><strong>src</strong> this is the source of the image that is to appear
+<strong>alt</strong> this is the alternate text. It’s used to describe the image to people who can’t see images or search engine robots (who also can’t see images… yet)</p>
+
+<pre><code>&lt;!-- using a url relative to the HTML page --&gt;
+&lt;img src="images/dog.jpg" alt="My Dog Hugo"&gt;
+
+&lt;!-- using an absolute url from another website --&gt;
+&lt;img src="http://dogpictures.com/dog.jpg" alt="Someone else's dog"&gt;
+</code></pre>
+
+<h4 id="place-dogs-and-pug-holders">Place dogs and pug holders</h4>
+
+<p>One of the many fun parts of being a web developer is using funny images for placeholders. So, in many of our examples, we will use random images that we found on the net. Often is the case where we require a specific size of image, so instead of finding an image and using photoshop to resize it, we can make use of services that provide placeholder images.</p>
+
+<p>A few of my favourites:</p>
+
+<ul>
+  <li>http://placedog.com/200/200</li>
+  <li>http://pugholder.com/200/200</li>
+  <li>http://nicenicejpg.com/200/200</li>
+</ul>
+
+<p>For each of the above, instead of setting the image src to a .jpg url, we set it to one of the previous URLs with the last two numbers being the <code>width</code> and the <code>height</code>:</p>
+
+<pre><code>&lt;img src="http://placedog.com/200/200"&gt;
+</code></pre>
+
+<p><img src="http://placedog.com/200/200" /></p>
+
+<pre><code>&lt;img src="http://pugholder.com/200/600"&gt;	
+</code></pre>
+
+<p><img src="http://pugholder.com/200/600" />	</p>
+
+<pre><code>&lt;img src="http://nicenicejpg.com/700/300"&gt;	
+</code></pre>
+
+<p><img src="http://nicenicejpg.com/700/300" />	</p>
+
+<h2 id="attributes">Attributes</h2>
+<p>Before we jump into all the tags, its important to understand what <strong>attributes</strong> are.</p>
+
+<p>Attributes are used to provide additional info on the HTML element. Different elements require different types of attributes. Here are the ones you will be using:</p>
+
+<ul>
+  <li><strong>src</strong> - used to pass in the source of an element. Most commonly used on an image element:
+    <ul>
+      <li><code>&lt;img src="dog.jpg" alt="My Dog"&gt;</code></li>
+    </ul>
+  </li>
+  <li><strong>href</strong> - with anchor links, we pass the href to tell the anchor link where to point to
+    <ul>
+      <li><code>&lt;a href="http://hackeryou.com"&gt;HackerYou&lt;/a&gt;</code></li>
+    </ul>
+  </li>
+  <li><strong>alt</strong>  - the alternate text that describes an image. Helpful for both search engines and visually impaired users
+    <ul>
+      <li><code>&lt;img src="dog.jpg" alt="My Dog"&gt;</code></li>
+    </ul>
+  </li>
+  <li><strong>title</strong> - provides extra information about an element such as a link or list item. When the user hovers over it, the little yellow tooltip shows up.
+    <ul>
+      <li><code>&lt;a href="http://google.com" title="Google is a great search engine!"&gt;Google.com&lt;/a&gt;</code></li>
+      <li><img src="http://wes.io/IKT5/Screen%20Shot%202012-07-25%20at%204.24.20%20PM.png" alt="" /></li>
+    </ul>
+  </li>
+  <li><strong>class</strong> - This is probably one of the most important attributes that you can assign to <strong>any</strong> element. It allows us to be able to grab onto element(s) with that class with our CSS code and style only those elements. More on this when we learn CSS	
+    <ul>
+      <li><code>&lt;p class='largeText'&gt;Welcome to our site, we hope you enjoy browsing around!&lt;/p&gt;</code></li>
+    </ul>
+  </li>
+  <li><strong>id</strong> - Exactly the same as class, but can only be used <strong>once</strong> on a website. In general and in this course we wont use IDs because we value code reuse. 
+    <ul>
+      <li><code>&lt;div id="wrapper"&gt;... entire website ...&lt;/div&gt;</code></li>
+    </ul>
+  </li>
+  <li><strong>Many More</strong> - We will run into many more attributes as we work with HTML, most of which will be obvious as to what they do.
+    <ul>
+      <li><code>type=""</code>,<code>value=""</code>,<code>placeholder=""</code>,<code>style=""</code>, <code>checked=""</code>, <code>for="'</code>, <code>name="'</code></li>
+    </ul>
+  </li>
+  <li><strong>The Bad Parts</strong> - As with HTML tags, older versions of HTML introduced some attributes which you should never use. As you may have guessed, these all relate to presentation.
+    <ul>
+      <li><code>width="'</code>, <code>height="'</code>, <code>align="'</code>, <code>color="'</code>, <code>size="'</code>, <code>bgcolor=""</code>, <code>font=""</code></li>
+      <li>Any of the above still work in the browser, but it is <strong>not the job of HTML</strong>. All of the above can be completed with CSS</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="the-br-and-hr-tag">The <code>&lt;br&gt;</code> and <code>&lt;hr&gt;</code> Tag</h2>
+<p>A quick word on these two tags. The <code>&lt;br&gt;</code> tag (the break tag) lets you clear lines in your html (similar to pressing enter in MS word) and the <code>&lt;hr&gt;</code> tag lets you insert an horizontal ruler.</p>
+
+<p>You should try and stay away from these tags as much as possible because they both are doing something visual inside your HTML (the job of CSS!). <strong>BUT</strong>, they can be helpful when we are doing todays exercises as we haven’t taken a dive in CSS yet.</p>
+
+<pre><code>&lt;img src="images/dog.jpg" alt="A Dog"&gt;
+&lt;br&gt;
+&lt;img src="images/dog2.jpg" alt="Another Dog"&gt;
+</code></pre>
+
+<h3 id="commenting-your-code">Commenting Your Code</h3>
+
+<p>As developers, its super important that comment our code.</p>
+
+<p>Commenting your code means leaving little notes for both yourself and future developers explaining what the code is doing. Often times you may stumble upon some code and either wonder why it was done that way, or wonder what the heck its doing all together. A well commented document allows anyone to jump in and start working without very much code reading.</p>
+
+<p>Comments are also great for temporarily deactivating code from your document without deleting it entirely. Anything in comments is invisible to both the browser and the website visitor.</p>
+
+<p>Every language has its own syntax for commenting code. We are HTML and CSS coders, so were going to take a look at how to do it in these two languages.</p>
+
+<h4 id="html-comments">HTML Comments</h4>
+<p>HTML comments out anything between <code>&lt;!--</code> and <code>--&gt;</code></p>
+
+<pre><code>&lt;!-- This is a basic comment --&gt;
+&lt;!-- &lt;p&gt;This is some &lt;strong&gt;HTML&lt;/strong&gt; commented out --&gt;
+&lt;!--
+	This is a
+	muli line
+	comment
+--&gt;
+</code></pre>
+
+<p>Another useful way to use comments is to mark what closing divs belong to. This if very helpful when your page is hundreds of lines long.</p>
+
+<pre><code>&lt;div class="wrapper"&gt;
+	&lt;div class="header"&gt;
+		&lt;div class="nav"&gt;&lt;/div&gt;
+	&lt;/div&gt;&lt;!-- /.header --&gt;
+&lt;/div&gt;&lt;!-- /.wrapper --&gt;
+</code></pre>
+
+<p>Or marking where content starts and stops:</p>
+
+<pre><code>&lt;!-- Header Code STARTS --&gt;
+	My HTML Code...
+&lt;!-- Header Code ENDS --&gt;
+</code></pre>
+
+<h4 id="css-comments">CSS Comments</h4>
+<p>CSS Comments are almost the same as HTML comments except we use <code>/*</code> and <code>*/</code> to start and stop them.</p>
+
+<pre><code>.body {
+	color : red; /* I love red */
+}
+</code></pre>
+
+<p>You can also comment out entire lines:</p>
+
+<pre><code>.body {
+	/* font-size:100px; */
+}
+</code></pre>
+
+<p>Or entire rules all together while adding your own comments as to why its commented out:</p>
+
+<pre><code>/*  This rule was a terrible idea, so ugly!
+.body {
+	color : red;
+	background:green;
+	padding:20px;
+} */
+</code></pre>
+
+<h2 id="exercise-time">Exercise Time</h2>
+<p>We are going to take a whole document of unformatted text and mark it up with HTML tags to it is an HTML document.</p>
+
+<p>Open up <code>markup-exercise.html</code> in your text editor and follow the comments through the entire document, marking them up as requested.</p>
+
+</div>
+</body>
+</html>

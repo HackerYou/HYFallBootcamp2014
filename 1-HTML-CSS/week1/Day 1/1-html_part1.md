@@ -1,4 +1,10 @@
-# Week 1, Day 1 Lesson: Intro to HTML Part 1
+---
+layout: notes
+title: Intro to HTML
+topic: html
+---
+
+#Intro to HTML Part
 
 ## What the heck is HTML?
 
@@ -60,7 +66,6 @@ You can view this in your browser or code editor by viewing `hello-world.html`
 				All Head goes in here...
 			</head>
 		</html>	
-
 	* The **`<title>Title Tag</title>`** which is used to set the text in the browser's current tab: ![Title Tag Image](http://wes.io/IGed/Screen%20Shot%202012-07-23%20at%203.46.33%20PM.png)
 	* __Links and Scripts__ to separate Stylesheets, web fonts or JavaScript Files
 		* We will be going over these all at a later date, just know that we can include other files in the current document in the **HEAD**
@@ -156,27 +161,18 @@ When you finish that, try read through the CSS code and make some changes. Try a
 
 ## More Questions
 1. What does HTML stand for? CSS?
-	* HyperText Markup Language, Cascading Stylesheets
+	* <span class="hide">HyperText Markup Language, Cascading Stylesheets</span>
 1. Give me an example of a tag
-	* <div class="hide">html,head, link,body,p</div>
+	* <span class="hide">html,head, link,body,p</span>
 1. Give me an example of content
-	* <div class="hide">"HackerYou is great!"</div>
+	* <span class="hide">"HackerYou is great!"</span>
 1. Give me an example of two HTML Elements
-	* <div class="hide">`<p>I'm the body, everything you see goes here!</p>`</div>
+	* <span class="hide">`<p>I'm the body, everything you see goes here!</p>`</span>
 1. What is the entire thing called?
-	* <div class="hide">The HTML Document</div>
+	* <span class="hide">The HTML Document</span>
 1. What tags are bad?
-	* <div class="hide">b,i,u,blink,marquee</div>
+	* <span class="hide">b,i,u,blink,marquee</span>
 1. We are really concerned with separation of `_______` and `_____`
-	* <div class="hide">Content and Style</div>
+	* <span class="hide">Content and Style</span>
 1. Why? What is HTML used for? What is CSS used for?
-	* <div class="hide">HTML is for describing content, CSS is for styling content</div>
-
-
-<style>
-	div.hide {color:white !important;}
-	div.hide:hover {
-		visibility: visible;
-		color:black !important;
-	}
-</style>
+	* <span class="hide">HTML is for describing content, CSS is for styling content</span>

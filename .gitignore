@@ -4,3 +4,4 @@ Icon
 *.sublime-workspace
 .bundle
 vendor
+_site

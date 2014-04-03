@@ -10,6 +10,8 @@
   - title: Markup Excercise
     path: week1/Day%201/exercises/markup-exercise.html
     answerPath: week1/Day%201/exercises/markup-exercise-answers.html
+  - title: CSS Fun
+    path: week1/Day%201/exercises/css-fun.html
 - name: UX and Design
   slug: ux
   directory: 2-Design 

@@ -1,8 +1,13 @@
 /*note specific styles*/
-span.hide {
+span.hide,
+div.hide,
+.white {
 	color:white !important;
+	border-bottom: solid 1px #ddd;
 }
-span.hide:hover {
+span.hide:hover,
+div.hide:hover,
+.white:hover {
   visibility: visible;
   color:black !important;
 }

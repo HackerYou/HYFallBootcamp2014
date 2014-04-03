@@ -1,0 +1,4 @@
+exclude: ["vendor"]
+markdown: kramdown
+kramdown:
+  input: GFM

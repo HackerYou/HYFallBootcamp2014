@@ -1,4 +1,10 @@
-# Week 1, Day 2 Including CSS and CSS Selectors
+---
+layout: notes
+title: Including CSS and CSS Selectors
+topic: html
+---
+
+# CSS and CSS Selectors
 
 ### CSS: 3 ways
 There are three ways to write CSS and include it in your HTML document.

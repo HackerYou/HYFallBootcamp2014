@@ -1,6 +1,10 @@
 # CSS preprocessors
 
-Sass (Syntactically Awesome Style Sheets), LESS (The dynamic stylesheet language) and Stylus  extend CSS with superpowers! The general idea is that instead of writing CSS you write Sass or LESS and a "compiler" converts what you write to CSS. So why bother using this stuff?
+Sass (Syntactically Awesome Style Sheets), LESS (The dynamic stylesheet language) and Stylus extend CSS with superpowers! The general idea is that instead of writing CSS you write Sass or LESS and a "compiler" converts what you write to CSS. 
+
+We'll be demonstrating the power of pre-processors using Sass. Think of Sass as extension of CSS, and note that all your regular CSS is also valid Sass! Use as much or as little Sass as you're comfortable with when you're getting started.
+
+![](http://cl.ly/image/15293X1N0c0J/sass-css.png)
 
 ## Variables
 Specify values in one place and reuse them throughout the stylesheet. This allows you change a font-size or colour in one place and have the change take effect in multiple places.
@@ -115,13 +119,15 @@ Let's take a look at a mixin for some flashy text styles you might want to reuse
 ## Much More
 There are entire frameworks built on top of SASS and there is a lot to jump into. Before we look into frameworks, let's get comfortable working with SASS. 
 
-## A taste of SASS
+## A taste of Sass
 
 To get started, go through the [guide](http://sass-lang.com/guide) and use the [Sassmeister tool](http://sassmeister.com/) to play around with the Sass syntax.
 
-## Using SASS in your projects
+## Using Sass in your projects
 
 The idea of sass is that you will write your styles in `style.scss` which will then compile into a `style.css` file. The browser doesn't understand sass, so it needs to be compiled to regular CSS before that.
+
+![](http://cl.ly/image/1W0E2w1l1j3q/compiling-scss.png)
 
 Instead of compiling it on every save manually, it is much easier to use a tool that will watch your SCSS file for changes and automatically compile into CSS for you. 
 

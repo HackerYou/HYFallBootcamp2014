@@ -1,13 +1,15 @@
 # Wordpress Themes
 
+Themes allow you to control the look and feel of your website. This is the presentation layer of your site and it is where you will write all of you HTML, CSS and JavaScript.
+
+There are a million and one themes available with WordPress. You may or may not choose to use an existing theme to develop with, but getting comfortable with how themes work is a large part of becoming a WordPress developer. 
+
 ## Using Themes
 
-For this lesson you will be referring to the following codex:
-http://codex.wordpress.org/Using_Themes
+### Exercise 1 - Using the WordPress Theme Repo
 
-Start by reading the "What is a Theme?" section of the codex. 
+We want to install a WordPress theme from the theme directory. You can do this by clicking `appearance` → `themes` → `add new theme`. This will show you the search page for finding a theme.
 
-**Exercise 1**:
 Find a theme that you like in the Wordpress Theme Directory, install it in your development environment and activate it.
 
 1. Find a theme in the directory: http://wordpress.org/extend/themes/
@@ -16,7 +18,7 @@ Find a theme that you like in the Wordpress Theme Directory, install it in your 
 
 Does your version of the theme look exactly like the demo? Usually it doesn't because your Wordpress site has different content and settings. 
 
-**Exercise 2**:
+### Exercise 2 - Using an external theme from WooThemes
 
 Woothemes is a very popular place to get professionally designed themes. Woothemes are the makers of Woocommerce which is a shopping cart plugin for Wordpress so their themes have built-in support for the plugin.
 
@@ -31,6 +33,29 @@ To install a theme from outside of the Wordpress Theme Directory follow these in
 * activate the theme as before
 
 WooFramework powers all Woothemes WordPress themes so explore the theme options. Try to get your website to look like the demo on the Woothemes site.
+
+### Exercise 3: Installing the HackerYou Theme
+
+In the `assets` folder for WordPress, you will see a folder called `theme-hackeryou`. This is a base theme from which you can build all of your websites. 
+
+Existing themes are great for tweakers and clients on small budgets, but you won't want to buy/get an existing theme and then build a website off of it. You will find yourself battling with existing styles and layouts you do not want as well as large bloated codebases.
+
+
+So, the HackerYou theme is meant to be a base to build upon. It works with many of our existing best practices and includes many already set items, such as:
+
+1. style.css file filled with some base styles, normalize, clearfix, border-box
+2. mq.css with three media queries and some base styles
+3. jQuery and a blank scripts.js file loaded
+4. Many templates 
+
+Over time, you will tweak your "starter theme" to become totally yours. This can save you _hours_ when starting a project. 
+
+Go ahead and install this theme.
+
+
+
+<!-- garbo
+
 
 ## Developing Themes
 
@@ -68,3 +93,5 @@ The following resources will be very handy:
 * http://codex.wordpress.org/The_Loop
 
 Consolidating exercise: combine the findings of all groups into one document.
+
+-->

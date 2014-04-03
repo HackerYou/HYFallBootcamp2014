@@ -1,4 +1,10 @@
-# Week 1, Day 4
+---
+layout: notes
+title: Chrome Developer Tools and Sublime Text Pro-tips
+topic: html
+---
+
+#Chrome Developer Tools and Sublime Text Pro-tips
 
 ## Developer Tools!
 Developer Tools are the secret weapon of any web designer or developer, without them the web would look a whole lot worse. 
@@ -115,3 +121,4 @@ Here is a list of settings you will probably enjoy. Feel free to modify or delet
 **If you change "theme", You will need to restart sublime text after you save this settings file as you are changing the skin of sublime**
 
 A full list of available setting defaults is available at `Preferences` → `Settings - Default` (Do not change these, simply restate them in your own file).
+

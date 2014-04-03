@@ -1,0 +1,34 @@
+{% include header.html %}
+<div class="wrapper">
+<h2>Curriculum</h2>
+{% for topic in site.data.topic-list %}
+	{% assign topicNumber = forloop.index %}
+	<h4>{{topicNumber}}. {{topic.name}}</h4>
+	<ul>
+		{% assign count = '0' %}
+		{% for page in site.pages %}
+			{% if page.layout == 'notes' and page.topic == topic.slug %}
+				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+				<li><a href="{{page.url}}">{{topicNumber}}.{{count}} {{page.title}}</a></li>
+			{% endif %}
+		{% endfor %}
+		
+		<h5>Exercises and Examples</h5>
+		<ul class="exercises">
+		{% for exercise in topic.exercises %}
+			<li>
+				<a href="{{topic.directory}}/{{exercise.path}}" download>
+					{{topicNumber}}-{{site.data.alphabet[forloop.index0]}} {{exercise.title}}
+				</a>
+			</li>
+			{% if exercise.answerPath %}
+			<li class="answer">
+				<a href="{{topic.directory}}/{{exercise.answerPath}}" download>
+					{{topicNumber}}-{{site.data.alphabet[forloop.index0]}} {{exercise.title}} [ANSWER]
+				</a>
+			</li>
+			{% endif %}
+		{% endfor %}
+		</ul>
+	</ul>
+{% endfor %}

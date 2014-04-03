@@ -54,7 +54,7 @@ $.ajax('http://api.wunderground.com/api/61f0a55cb00602dc/conditions/q/CA/San_Fra
 
 It should work, you'll see "Hi!" in the console. But where's the data? It's available, we just need to learn to use it. Reading the jQuery API will tell us what we need.
 
-http://api.jquery.com/jQuery.ajax/
+[http://api.jquery.com/jQuery.ajax/](http://api.jquery.com/jQuery.ajax/)
 
 For the "success" callback function it says:
 

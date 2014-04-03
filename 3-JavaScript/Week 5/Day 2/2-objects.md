@@ -1,3 +1,5 @@
+<style> .note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; } </style>
+
 # Week 5, Day 2 Objects
 
 The **primitive types** of JavaScript values are numbers, strings, booleans (true and false), null (haven't discussed this yet), and undefined. All other values are something called **objects**.
@@ -211,6 +213,7 @@ for (item in inventory) {
 </pre>
 </div>
 
+<!--
 **Level 3**
 Create an html table from the inventory object. It should look like this:
 
@@ -253,3 +256,4 @@ for (item in inventory) {
 
 tableHtml += "</table>";
 ```
+-->

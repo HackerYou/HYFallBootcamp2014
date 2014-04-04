@@ -32,3 +32,11 @@
 		</ul>
 	</ul>
 {% endfor %}
+
+<h2>Weekly Projects</h2>
+
+	{% for page in site.pages %}
+		{% if page.layout == 'project' %}
+			<p><a href="{{page.url}}">{{page.title}}</a></p>
+		{% endif %}
+	{% endfor %}

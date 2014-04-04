@@ -1,4 +1,9 @@
-# Week 1 - Weekly Project
+---
+layout: project
+title: Week 1 Project - One Page Website
+---
+
+# Week 1 Project - Create a single page website!
 
 There is a major project every week. For this week you will build a single page website from scratch (a personal site if you don’t have one already). This project is meant to call upon everything we have done so far.
 

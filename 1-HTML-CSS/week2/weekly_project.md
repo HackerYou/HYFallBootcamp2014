@@ -1,4 +1,9 @@
-# Weekly Project
+---
+layout: project
+title: Week 2 Project - Three Page Website
+---
+
+# Week 2 Project - Three Page Website
 
 This project is meant to call upon everything we have done so far. Like our last project, we are going to be creating a website from scratch. This one will be about the same difficulty level as the last one, just with more requirements based on what we have done previously.
 

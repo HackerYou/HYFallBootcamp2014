@@ -1,4 +1,4 @@
-# Week 1, Day 5 Challenges: Answers
+# Challenges: Answers
 
 ## Challenge 1
 

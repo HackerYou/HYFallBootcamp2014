@@ -1,0 +1,66 @@
+- name: HTML & CSS
+  slug: html
+  directory: 1-HTML-CSS 
+  exercises:
+  - title: hello-world example
+    path: week1/Day%201/exercises/hello-world.html 
+  - title: HTML Intro
+    path: week1/Day%201/exercises/intro.html 
+    answerPath: week1/Day%201/exercises/intro-ANSWER.html
+  - title: Markup Excercise
+    path: week1/Day%201/exercises/markup-exercise.zip
+    answerPath: week1/Day%201/exercises/markup-exercise-answers.zip
+  - title: CSS Fun
+    path: week1/Day%201/exercises/css-fun.html
+  - title: Explore CSS
+    path: week1/Day%202/exercises/explore_css_exercise.html
+  - title: CSS Selectors Exercise
+    path: week1/Day%202/exercises/css-selector-exercises.html
+    answerPath: week1/Day%202/exercises/css-selector-exercises-ANSWER.html
+  - title: CSS Selector Challenge
+    path: week1/Day%202/exercises/css-challenge-selectors.html
+    answerPath: week1/Day%202/exercises/css-challenge-selectors-ANSWER.html
+  - title: CSS Class Selectors
+    path: week1/Day%202/exercises/css-class-selectors.html
+  - title: CSS Multi-Class Selectors
+    path: week1/Day%202/exercises/css-multi-class-selectors.html
+  - title: CSS Box Model
+    path: week1/Day%203/exercises/css-box-model.html
+  - title: CSS Width and Height
+    path: week1/Day%203/exercises/css-width-height.html
+  - title: CSS Margin and Padding
+    path: week1/Day%203/exercises/css-margin-padding.html
+  - title: CSS Margin and Padding Exercise
+    path: week1/Day%203/exercises/css-margin-padding-exercise.html
+    answerPath: week1/Day%203/exercises/css-margin-padding-exercise-ANSWER.html
+  - title: CSS Floats Example 1
+    path: week1/Day%203/exercises/css-floats1.html  
+  - title: CSS Floats Example 2
+    path: week1/Day%203/exercises/css-floats2.html    
+  - title: CSS Layout Exercise
+    path: week1/Day%203/exercises/css-layout-exercise.html
+    answerPath: week1/Day%203/exercises/css-layout-exercise-ANSWER.html
+  - title: DevTools Testing
+    path: week1/Day%204/exercises/devtools-testing.html
+  - title: HTML &amp; CSS Challenge 1
+    path: week1/Day%205/challenges/challenge_1.html
+    answerPath: week1/Day%205/challenges/challenges_answers.md
+  - title: HTML &amp; CSS Challenge 2
+    path: week1/Day%205/challenges/challenge_2.html
+    answerPath: week1/Day%205/challenges/challenges_answers.md
+- name: UX and Design
+  slug: ux
+  directory: 2-Design 
+  exercises:
+- name: Git and GitHub
+  slug: git
+  directory: 1-HTML-CSS
+- name: JavaScript & jQuery
+  slug: js
+  directory: 3-Javascript   
+- name: WordPress
+  slug: wp
+  directory: 4-Wordpress
+- name: Freelancing
+  slug: freelance
+  directory: 5-freelancing

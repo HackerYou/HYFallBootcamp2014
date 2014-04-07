@@ -1,0 +1,40 @@
+@media(min-width: 600px){
+
+	header img {
+		float: left;
+		margin-right: 30px;
+	}
+
+	header h1 {
+		margin-top: 1.15em;
+	}
+}
+
+a.toc {
+	color: black;
+	font-size: 13px;
+}
+
+a.toc:hover {
+	color: #d12026;
+	text-decoration: none;
+}
+
+/* curriculum page styles */
+li.answer {
+	opacity: 0.7;
+}
+
+/*note specific styles*/
+span.hide,
+div.hide,
+.white {
+	color:white !important;
+	border-bottom: solid 1px #ddd;
+}
+span.hide:hover,
+div.hide:hover,
+.white:hover {
+  visibility: visible;
+  color:black !important;
+}

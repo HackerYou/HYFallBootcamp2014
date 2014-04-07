@@ -1,4 +1,10 @@
-# Week 1, Day 1 Lesson: Intro to HTML Part 2
+---
+layout: notes
+title: Intro to HTML Elements
+topic: html
+---
+
+# Intro to HTML Elements
 
 ## Viewing HTML in the browser
 

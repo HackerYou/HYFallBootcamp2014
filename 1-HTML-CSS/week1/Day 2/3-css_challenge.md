@@ -1,4 +1,10 @@
-# Week 1, Day 2 CSS Challenge
+---
+layout: notes
+title: CSS Challenge
+topic: html
+---
+
+#CSS Challenge
 
 ##Exercise
 

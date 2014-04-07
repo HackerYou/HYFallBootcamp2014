@@ -1,3 +1,9 @@
+---
+layout: notes
+title: UX (User Experience) Design 
+topic: ux
+---
+
 ##UX (User Experience) Design
 
 User experience design is about enabling visitors to effectively and enjoyably use your website. Good UX is informed by many different disiplines - design, psychology, communication - but a lot of it comes down to plain old common sense. You're a user of the web too! Try to keep in mind sites you find easy to use or features that frustrate you as a web user.

@@ -1,3 +1,9 @@
+---
+layout: omit
+topic: js
+---
+
+
 # Regular Expressions
 
 A **Regular expression** (abbreviated regex) is a sequence of characters used for pattern matching in strings. Regular expressions can be thought of as their own language. They are implemented in JavaScript and in other programming languages as well. The implementation of regex should be the same no matter what programming language you use so learning regex is worthwhile.

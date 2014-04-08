@@ -1,4 +1,10 @@
-#Week 2, Day 1 HTML Challenge
+---
+layout: notes
+title: HTML Challenge
+topic: html
+---
+
+#HTML Challenge
 
 ##Exercise
 

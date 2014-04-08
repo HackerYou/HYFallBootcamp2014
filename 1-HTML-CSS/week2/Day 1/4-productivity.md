@@ -1,4 +1,10 @@
-# Week 2, Day 1 Productivity Tools
+---
+layout: notes
+title: Productivity Tools
+topic: html
+---
+
+# Productivity Tools
 
 # Sublime Tricks
 ## Snippets!

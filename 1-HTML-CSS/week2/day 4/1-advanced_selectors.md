@@ -1,4 +1,10 @@
-# Week 2 , Day 4 Advanced CSS Selectors
+---
+layout: notes
+title: Advanced CSS Selectors
+topic: html
+---
+
+# Advanced CSS Selectors
 
 # Advanced Selectors
 By now, we have become pretty comfortable with the following selectors:

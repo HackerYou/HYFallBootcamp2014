@@ -1,4 +1,9 @@
-# Week 2, Day 1 HTML Forms
+---
+layout: notes
+title: HTML Forms
+topic: html
+---
+# HTML Forms
 
 ## HTML Forms and Inputs
 There is one part of HTML markup that we haven't talked about yet, and that is HTMl Form.

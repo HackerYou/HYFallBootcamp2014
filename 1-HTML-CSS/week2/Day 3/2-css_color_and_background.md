@@ -1,4 +1,10 @@
-# Week 2, Day 3 CSS Color and Backgrounds
+---
+layout: notes
+title: CSS Color and Backgrounds
+topic: html
+---
+
+# CSS Color and Backgrounds
 
 ## Color and Background Color
 

@@ -57,7 +57,11 @@
   directory: 1-HTML-CSS
 - name: JavaScript & jQuery
   slug: js
-  directory: 3-Javascript   
+  directory: 3-Javascript  
+  exercises:
+  - title: Tic Tac Toe App Exercise
+    path: Week%206/Day%201/exercises/tic-tac-toe.html
+    answerPath: Week%206/Day%201/exercises/tic-tac-toe-answer.html
 - name: WordPress
   slug: wp
   directory: 4-Wordpress

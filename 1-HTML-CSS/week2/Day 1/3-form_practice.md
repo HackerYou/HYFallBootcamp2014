@@ -1,4 +1,10 @@
-#Week 2, Day 1 Form Practice
+---
+layout: notes
+title: Form Practice
+topic: html
+---
+
+#Form Practice
 
 ## Problem 1
 

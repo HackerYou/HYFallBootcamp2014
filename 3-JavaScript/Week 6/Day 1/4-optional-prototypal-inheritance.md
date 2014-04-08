@@ -1,3 +1,8 @@
+---
+layout: omit
+topic: js
+---
+
 # Prototypal Inheritance
 
 This content is optional. Do this if you're interested in learning more JavaScript!
@@ -28,7 +33,10 @@ In the console let's create an object `var myObject = {}`. Next type the name of
 ```
 var Mammal = {
   kingdom: "Animalia",
-  class: "Mammalia",  get_name: function () {            return this.name;        }
+  class: "Mammalia",
+  get_name: function () {
+            return this.name;
+        }
 };
 ```
 
@@ -60,7 +68,10 @@ var Mammal = {
   init: function(name, age) {
         this.name = name;
         this.age = age;
-    },  identify: function() {        return this.name + " is " + this.age + " years old.";   }
+    },
+  identify: function() {
+        return this.name + " is " + this.age + " years old.";
+   }
 };
 var myCat = Object.create(Mammal);
 myCat.init("Panthera Tigris", 12);

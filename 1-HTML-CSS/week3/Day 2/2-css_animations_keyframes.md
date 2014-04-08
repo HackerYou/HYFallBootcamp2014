@@ -1,4 +1,8 @@
-# Week 3 , Day 2
+---
+layout: notes
+title: CSS3 Animations & Keyframes
+topic: html
+---
 
 <a href="#" class="snowToggle">Grinchify</a> 
 
@@ -93,7 +97,7 @@ Take a look at [this CodePen](http://codepen.io/jessynd/pen/JHeqs) by a past hac
 
 <style type="text/css">
 	/* Setup all snowflakes */
-	body, #wrapper {
+	body, .wrapper {
 		background:#0F284E;
 		color:white;
 	}

@@ -57,7 +57,7 @@
   directory: 1-HTML-CSS
 - name: JavaScript & jQuery
   slug: js
-  directory: 3-Javascript  
+  directory: 3-JavaScript  
   exercises:
   - title: Tic Tac Toe App Exercise
     path: Week6/Day1/exercises/tic-tac-toe.html

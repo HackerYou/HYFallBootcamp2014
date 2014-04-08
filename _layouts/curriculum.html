@@ -6,7 +6,7 @@
 	<h4>{{topicNumber}}. {{topic.name}}</h4>
 	<ul>
 		{% assign count = '0' %}
-		{% for page in site.pages %}
+		{% for page in site.pages | sort:"path"%}
 			{% if page.layout == 'notes' and page.topic == topic.slug %}
 				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
 				<li><a href="{{page.url}}">{{topicNumber}}.{{count}} {{page.title}}</a></li>

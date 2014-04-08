@@ -1,5 +1,10 @@
-# Week 2 , Day 2
-## Styling Lists with CSS
+---
+layout: notes
+title: Styling Lists with CSS
+topic: html
+---
+
+# Styling Lists with CSS
 
 So we have already learned that we have both **ordered lists** and **unordered lists**
 

@@ -1,6 +1,10 @@
-# Week 3, Day 1
+---
+layout: notes
+title: Responsive Design
+topic: html
+---
 
-## Responsive Design
+#Responsive Design
 
 Responsive Design aims to provide the best experience for whatever current device a user is viewing the site on. A user could view the site on a 27" IPS Display all the way down to a smaller mobile phone screen.
 

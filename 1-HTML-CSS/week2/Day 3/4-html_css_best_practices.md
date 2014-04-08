@@ -1,4 +1,10 @@
-# Week 2, Day 3 HTML & CSS Best Practices
+---
+layout: notes
+title: HTML & CSS Best Practices
+topic: html
+---
+
+#HTML & CSS Best Practices
 
 ## Organizing CSS
 

@@ -1,4 +1,10 @@
-# Week 2, Day 3 CSS Typography and Webfonts
+---
+layout: notes
+title: Typography and Webfonts
+topic: html
+---
+
+# CSS Typography and Webfonts
 
 ## CSS Typography
 Having good CSS Typography is one of the best ways to make your site look amazing. With CSS we have complete control over how our text looks and feels. We will spend the next while going through some of the available properties to style your text, but first we let's review a few different ways we can mark up text:

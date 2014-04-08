@@ -1,4 +1,10 @@
-# Week 3 , Day 2
+---
+layout: notes
+title: CSS3 Transitions and Transforms
+topic: html
+---
+
+#CSS3 Transitions and Transforms
 
 ## CSS3 Transitions
 I've talked a little but about CSS3 Transitions before, but I wanted to document them so you are able to use them in your projects

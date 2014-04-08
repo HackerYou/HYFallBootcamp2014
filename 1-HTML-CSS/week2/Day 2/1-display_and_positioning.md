@@ -1,4 +1,10 @@
-# Week 2, Day 2 Normalize, In-page Links, Display and Positioning
+---
+layout: notes
+title: Normalize, In-page Links, Display and Positioning
+topic: html
+---
+
+# Normalize, In-page Links, Display and Positioning
 
 ## CSS Normalize
 

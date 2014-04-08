@@ -1,4 +1,10 @@
-# Week 2, Day 5 Embeddable Media
+---
+layout: notes
+title: Embeddable Media
+topic: html
+---
+
+#Embeddable Media
 
 ## Working with embeddable media
 Its quite common to embed some sort of (social) media into your website - it can take your website to the next level without having to code any of our own server-side languages or JavaScript.

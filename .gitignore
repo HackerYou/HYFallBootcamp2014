@@ -3,5 +3,6 @@ Icon
 *.sublime-project
 *.sublime-workspace
 .bundle
+.env
 vendor
 _site

@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Introduction to Programming
+title: Introduction to JavaScript
 topic: js
 ---
 
@@ -18,218 +18,350 @@ topic: js
 	}
 
 </style>
-# Week 5, Day 1: Introduction to Programming
+#Introduction to JavaScript
 
+##Programming languages
 
-<div class="note">
-> **Teacher Notes:** 
+Programming languages are used to communicate a set of instructions to a machine. There are many different programming languages for different situations / projects.
 
-> * Throughout these notes there will be comments labelled as "teacher note". This stuff shouldn't end up in the student notes.
-* You'll notice some things are skipped… curriculum is only introduced in context. Resist the urge to discuss things that are yet to come.
-* The lessons are intended to be chunked. Not too much lecturing at a time happens. There are exercises and discussions that divide the content. Don't lead the exercises, give students a chance to try them out. They can struggle (it's ok) - you'll be there to discuss the answers after some time.
-* Encourage students to do the exercises in pairs.
-</div>
+For example, Objective C is used for iPhone apps. Java is used for Android Apps. Ruby, Python and PHP are great for the backend of websites and web apps. 
 
-Programming languages are created to create a communicate a set of instructions to a machine. There are many different programming languages that are preferable in different situations / projects. At the end of the day, every programming language will eventually be turned into 1s and 0s that your computer will understand. 
+JavaScript is used primarily for front-end programming; things that happen in the browser. 
 
-There are very **low level languages**, like C and assembly, which are used for things like creating the underlying of an operating system or the logic in elevator buttons.
-
-Then we have **medium to high level languages** which are used for specific use cases and environments. 
-
-Objective C is used for iPhone apps. Java is used for Android Apps.
-
-Ruby, Python and PHP are great for the backend of websites and web apps. 
-
-JavaScript is used primarily for front-end programming. Things that happen in the browser. 
-
-All languages do the same thing: take instructions from the programmer and run them in their environment. The **syntax**, or how the language is written, for each of these languages are different. 
-
-Spitting out the text "Hello World" in each language is different, let's look at a few examples:
+Programming is like having a conversation with your computer so sticking to the "grammar rules", known as the **syntax**, specific to each language is important. For example, spitting out the text "Hello World" is different in each language. Let's look at a few examples:
 
 <http://en.wikipedia.org/wiki/List_of_Hello_world_program_examples>
 
-The role of a programmer is to think of a solution to a real-world problem and break the solution down into "code" (simple mechanical instructions that the computer can understand). The computer simply runs the series of instructions.
+The role of a programmer is to think of a solution to a real-world problem and break the solution down into "code" (simple mechanical instructions that the computer can understand). The computer simply runs the series of instructions in it's environment.
 
 ## JavaScript
-Instructions to the computer are given by using a series of 0's and 1's. Fortunately for us, programming languages have been created to allow us to communicate with the computer in a more natural way. JavaScript is one such language.
+Instructions to the computer are given by using a series of 0’s and 1’s. Programming languages, such as JavaScript, have been created to allow us to communicate with the computer in a more natural way.
+
+**HTML** defines the content.  
+**CSS** defines the presentation.  
+**JavaScript** defines the behaviour & functionality.
+
+HTML + CSS + JavaScript = Front-end development / client-side
 
 **Read more about JavaScript** - especially the history, ECMAScript and the uses of JavaScript.
 
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript (just the Introduction for now)
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/JavaScript_Overview
+* [A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) (just the Introduction for now)
+* [JavaScript Overview](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/JavaScript_Overview)
 
 
 ## REPL
-A REPL (read, eval, print, loop) is an interactive environment where you can type instructions for the computer and the computer will read it, evaluate/run it, print the result and then make itself ready for the next instruction. 
+A REPL (read, eval, print, loop) is an interactive environment where you can type instructions for the computer to read it, evaluate/run it, print the result and then make itself ready for the next instruction. 
 
-Put simply, a REPL will take the code you give it and return a result. 
+A REPL will take the code you give it and return a result. 
 
 A JavaScript REPL is available inside the Google Chrome Web Browser. Open the JavaScript console by going to `View => Developer => JavaScript Console` or by clicking the **console** tab in chrome dev tools.
 
-If you see `>` and a blinking cursor… then you're there! Ok, give the computer a simple instruction:
+If you see `>` and a blinking cursor… then you're there! Give the computer a simple instruction like `1 + 1`, press enter and the REPL will return a value. 
 
 ```
 > 1 + 1
 2
 ```
 
+
 ## Expressions and values
-The instruction that you gave is called an **expression**. What the computer returns is a **value**. In the example above `1 + 1` is an expression and `2` is a value. Values are simply pieces of data (sequences of 0's and 1's). An expression is any piece of code that resolves to a value.
+The instruction that you gave is called an **expression**. What the computer returns is a **value**. In the example above `1 + 1` is the expression and `2` is the value. In the console, the value is returned immediately after you press enter.
+
+**Values** are simply pieces of data (sequences of 0's and 1's).  
+An **expression** is any piece of code or instruction given to the computer that produces a value.
 
 Vocabulary is very important because it helps us ask coherent questions and adds structure to our thinking. Just as we learned **selector, rule, property and value** in CSS, go ahead and drill **expression** and **value** into your head now.
 
-## Types
+##Intro to Functions
 
-### Number
-Every value has a type. So far you have seen numbers. In other programming languages you can have different types of numbers such as floats or decimals, luckily for us JavaScript just has one type of nuber, just like regular math.
+**Functions** are used to make the code "do things" and are basically chunks of code/instructions that can be repeated and run any time. We can create our own functions (to be discussed later) but there many handy ones already built into JavaScript. 
 
-You can do basic arithmetic with numbers.
+To get the function to execute, you have to *call the function*. The syntax is the function name followed by parentheses. 
+
+**Calling a function:** 
+	
+	functionName();
+
+Functions often (but not always) need to *pass* some data into the function called **arguments**.  
+
+**Calling a function with an argument:** 
+
+	functionName(argument);
+
+Let's take a closer look at some terminology:  
+
+- **Argument:** a value provided to a function
+- **Pass:** to provide arguments to a function
+- **Call:** ask JavaScript to evaluate/execute a function
+- **Return:** pass back the value from the function
+
+A few built-in JavaScript functions are `prompt()`, `alert()` and `confirm()`. All three display a dialog box containing a message but `prompt()` also allows the user to input some text and `confirm()` also includes a "cancel" button in addition to "ok".
+
+Let's try calling these functions in the browser console with and without arguments and see what happens.
+	
+** Without arguments **
+
+	prompt();
+	alert();	
+	confirm();
+	
+** With arguments **
+
+	prompt("What is your name?");
+	alert("hello");
+	comfirm("yay or nay?");
+
+In the example above, the *value* "What's your name?", "hello" and "yay or nay" was *passed* as an *argument* to the function named `prompt` and `alert`. We *called* the function and it *returned* different values for each function.
+
+For the `prompt()` function, when the user clicks OK, the text entered in the input field is returned. If the user clicks OK without entering any text, an empty *string* is returned. If the user clicks the Cancel button, this function returns `null`.
+
+For the `alert()` function, the *argument* shows in the dialogue but returns an `undefined` value in the console.
+
+`confirm()` returns `true` if "ok" was selected and `false` if "cancel" was selected.
+
+Note that the arguments being passed were contained within quotes as well as some of the values being returned. That's because different values have different **types**. Let's go over these different types of values that were returned.
+
+##Types
+Every JavaScript value has a type which determine the role it plays. Listed below are some types you will encounter.
+
+* Numbers — Integers & decimals/floats (e.g. 10, 10.001)
+* Strings — characters including spaces.   
+ **Must be contained within single or double quotes** (e.g. "Hello" or 'How are you today?')
+* Booleans — true or false
+* Undefined — means "I don't have a value"
+* Null — means "I have a value of nothing"
+* Objects — (to be discussed later)
+* Functions — (to be discussed later)
+
+
+##Comments
+Sometimes you want to write notes to yourself (or others) to organize blocks of code or leave explanations. Just like HTML & CSS, JavaScript will ignore comments and not execute them.
+
+Single line comments can be added with `//`.
 
 ```
-> 55 * 20
-> 23.5 - 11
-> 6 / 1.5
-> 34 + 66.3
+// There are 365 days in a year.
 ```
 
-The symbols (*, -, /, +) are called **operators**. Parentheses can be used to group operations. Just like you learned in gradeschool, BEDMASS applies. The order in which the computer will do the math is:
-
-Brackets 
-Exponents 
-Division 
-Multiplication 
-Addition 
-Subtraction 
-
-**Exercises**
-In pairs, solve the following questions by using JavaScript. You can type all your equations into the chrome developer tools console. 
-
-**Hint: ** When in the console, press the up arrow on your keyboard to bring back the last run line of code.
-
-
-- how many hours are in a year? Solution: <span class="solution">365 * 24</span>
-- how many minutes are in a decade? Solution: <span class="solution">10 * 365 * 24 * 60</span>
-- how many seconds old are you? Solution: <span class="solution">26 * 365 * 24 * 60 * 60</span>
-
-### String
-Another type is called **String**. Strings are sequences of characters **within quotes**, they are used to store text. Put simply, strings are text. 
+Just like in CSS,  /\*  \*/ are used for multiline comments.
 
 ```
-> "hello"
-> "hello there!"
+/* 
+	Many 
+	Lines
+	wow
+*/
 ```
 
-**Exercises**
-
-- *String concatenation* is the "addition" or joining of strings. Joining the three strings "Javascript", "is" and "awesome!" to get "JavaScript is awesome!"? Would be `"Javascript" + " " + "is" + " " + "awesome!"`
-
-- You can create strings by using either single or double quotes. For example, 'HackerYou' and "HackerYou" are equivalent. Again, pick one and stay consistent. 
+Multi-line comments are also great for "hiding" large blocks of code so you can try something new without erasing your old code.
 
 
-What happens when you type in the console: `'She's a HackerYou student'`. 
+##Variables
+Variables are like "containers" used to name and store data. The data can be accessed by referring to the name of the variable. Basically, we can store a piece of data and retrieve it whenever we want using variables.
 
-How would you solve this issue?
+###Declaring a variable
+To use a variable, it must be *declared* first. The **keyword** `var` is used to declare a variable and bring it into existence. The name of the variable is determined by you. Be sure to name it something descriptive, based on what kind of value it will hold.
 
-Solution: <span class="solution">SyntaxError! When you need to use a character that will break your string, you can Escape the character with a backslash \ So: , `'She\'s a HackerYou student'`</span>
+```
+> var email;
+```
 
-- What happens when you type in the console
+Type the above into your console. What does it return? `undefined`.   Remember,`undefined`is a data **type** that means it doesn't have a value. 
 
-`'HackerYou' * 6`
-`'HackerYou' + 6`
-`'HackerYou' * 'Class'`
+Now reference it's value by typing 'email'. What do you see? Nothing! We have created the variable but not yet assigned any value to it.
 
-NaN (not a number) for first and third examples. We can't do some operations (like multiplication) with types that are not numbers. Multiplying two strings doesn't make sense anyhow!
 
-There are more types (including **undefined** and **boolean**) but we'll cover them when appropriate.
+**Keyword:** Special words reserved in JavaScript to denote specific behaviours.  Check out the [MDN Keyword List](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words) for reference.
 
-## Variables
-A variable refers to or holds a value. 
-
-You can think of a variable as a way to name, hang on to and reference data that may or may not change in the future. 
 
 ### Assigning a value to a variable
-We can store a piece of data and retrieve it whenever we want with variables. The keyword `var` is used to declare a variable into existence.
-
-```
-> var name;
-```
-
-Type the above into your terminal. Now reference it's value by typing 'name'. What do you see? Nothing! We have created the variable but not yet assigned anything to it. 
-
 We can make a variable refer to a value by using the assignment operator `=`:
 
 ```
-> name = "Homer";
-"Homer"
+> var email;
+> email = "hello@email.com";
+"hello@email.com"
 ```
 *The value on the right hand side is stored in the variable on the left hand side.*
 
-Now type `name` into your console again. What do you see? 
+Now type `email` into your console again. What do you see? 
 
-We can combine the above into a single line of code:
+Variables can also be declared and assigned a value in a single line of code:
 
 ```
-> var name = "Homer";
+> var email = "hello@email.com";
 undefined
 ```
 
-What's that "undefined"? Although it may look like an error, it is not. **Undefined** is a value type that means “I don’t have a value” (pretty meta!). No value is returned because `var name = "Homer"` is not an expression, it's a **statement**. And statements don't always return a value.
+Why did the above example return undefined?   
+No value is returned because `var email = "hello@email.com";` is not an expression, it's a **statement**. 
 
-You can always double check your variables by typing the variable name into your console and seeing what it returns. 
+**Statements** are similar to expressions, as they both give instructions to the computer but expressions *always* return a value, statements *don't always* return a value. It's best practice to declare variables using the keyword `var` and at the top of your code to avoid confusion.
 
-Once you have declared a variable with `var` you don't need to keep using the keyword `var`. You can for example reassign a variable to another value without using `var`. It is best practice to declare all of our variables at the top of our code to avoid confusion:
-
-```
-> var name;
-> name = "Homer";
-> "My name is " + name
-> name = "Marge";
-> "My name is " + name
-```
-
-<div class="note">
-> **Teacher Note:** This is not a good time to get into scopes and why we use var rather than just using expression assignments. It's sufficient to say "An expression always returns/resolves to a value but a statement does not always do that". Adding `var` makes the assignment expression a statement, it's a best practice to use `var` and leave it at that.
-</div>
-**Exercises**:
-
-1. Consider the following code, what value does x refer to in the end?
+Once you have declared a variable with `var` you don't need to keep using the keyword `var`. We've already seen that referencing the variable name returns it value but you can also *reassign* a variable to another value without using `var`. 
 
 ```
-var x = 55;
-var y = 10;
-x = 12;
-```
-Solution: <span class="solution">x refers to the value 12.</span>
-
-2. Consider the following code, predict what the result will be:
+> var email = "hello@email.com";
+> email = "hi@email.com";
+> email;
 
 ```
-var 8 = x;
-```
-Solution: <span class="solution">`SyntaxError: Unexpected number`</span>
- 
 
-### Using Variables
-Reuse this data in another expression by just typing the name of the variable.
+What do you think `email` will return?
+
+### Variable naming conventions
+* Variables can't contain spaces. Start with a non-numeric character (letter, _, or $) followed by any character. (e.g. `var 23people` is invalid)
+* Use camelCase to separate words. (e.g. `var myName`)
+* JavaScript is case sensitive so variable names are also case sensitive.
+* Another convention is to use underscores to_separate_words. This is common in other programming languages (like PHP) but is generally avoided in JavaScript.
+* When naming a variable, it's best to give it a descriptive name. (e.g. `var name` instead of `var n`)
+
+Consider the following code: 
+	
+	var 8 = x;
+	
+What the result will be?
+Solution: SyntaxError: Unexpected number
+
+
+### Using variables as values
+After a variable is declared, it can be used as an *expression* in another variable declaration by referring to the name of the variable.
 
 ```
 > var years = 25;
 > var days = years * 365;
 ```
 
-## Syntax
-Why did we use semi-colons at the end of the expressions above? Why did the computer complain when we typed `'She's a HackerYou student'`? Just like any other language, there are rules (or grammar) to be followed. Computers need code written in a very specific way or they will not understand it. Syntax errors are very common -- professional programmers make these errors all of the time. Don't be intimidated by these errors; they're easy to fix!
+##Operators
+You can do basic arithmetic with numbers using **operators**. Arithmetic operators in JavaScript are (`+`) for addition, (`-`) for subtraction, (`*`) for multiplication and (`/`) for division.
+
+```
+> 55 * 20 
+> 23.5 - 11
+> 6 / 1.5
+> 34 + 66.3
+```
+
+Parentheses can be used to group operations. Just like you learned in grade school, BEDMAS applies. The order in which the computer will do the math is:
+
+**B**rackets   
+**E**xponents  
+**D**ivision  
+**M**ultiplication  
+**A**ddition  
+**S**ubtraction 
+
+**Note:** When numbers are contained within quotes, they are considered strings and arithmetic operations cannot be performed.
+
+**Exercise**  
+In pairs, solve the following questions by using **operators**. You can type all your equations into the Chrome developer tools console. 
+
+**Hint:** When in the console, press the up arrow on your keyboard to bring back the last run line of code.
+
+- how many hours are in a year? Solution: <span class="solution">365 * 24</span>
+- how many minutes are in a decade? Solution: <span class="solution">10 * 365 * 24 * 60</span>
+- how many seconds old are you? Solution: <span class="solution">26 * 365 * 24 * 60 * 60</span>
+
+##Concatenation
+Unlike the other arithmetic operators, the `+` operator has another purpose other than adding numbers. It is the "addition" or joining of strings, known as **concatenation**. If you use the `+` operator with only numerical values, it will add the values. Otherwise, it will combine the outputs as a string.
+
+You can concatenate variables, strings or a combination of both but strings must always be contained within quotes.
+
+To join the three strings "Javascript", "is" and "awesome!" to get "JavaScript is awesome!" it would be:
+
+	"Javascript " + "is" + " awesome!"
+
+To join strings and variables, it would be:
+
+	var language = "Javascript";
+	var sentence = language + " is awesome!";
+	sentence;
+	
+What happens when you type in the console:
+
+```
+'HackerYou' * 6 
+```
+```	  
+'HackerYou' + 6
+``` 
+```
+'HackerYou' * 'Class'
+```
+
+`NaN` (not a number) for first and third examples. We can't do some operations (like multiplication) with types that are not numbers.
+
+**Note:** You can create strings by using either single or double quotes. For example, 'HackerYou' and "HackerYou" are equivalent. Pick one and stay consistent. 
+
+**Exercises**  
+What happens when you type in the console: `'She's a HackerYou student'`. 
+
+SyntaxError! How would you solve this issue?
+
+Solution: <span class="solution">When you need to use a character that will break your string, you can *escape* the character with a backslash `\` So: , `'She\'s a HackerYou student'`</span>
+
+### Whitespace
+Whitespace refers to blank characters and includes spaces, tabs and line breaks. JavaScript usually ignores whitespace except when a *string* is being outputted into the browser.
+
+Note how a single space is added to the strings in the concatenating examples above.
+
+**Exercise**: In the statement `var email = "hello@email.com";`, which whitespaces are optional and which are not?
+
+Solution: <span class="solution">a space is needed between `var` and `email` but the other whitespaces are unnecessary. `var email="hello@email.com"` will work just fine but `varemail="hello@email.com"` will create a variable called `varemail`</span>
+
+
+##Variables and Functions
+
+Let's look at another example of reassigning a variable to another value using a function.  We know that the `prompt()` function allows the user to input text. What if we wanted to hold onto that text input value to use for later?
+
+Remember, functions are also a data **type** and can therefore be assigned to a variable as a value. Since variables are used to hold a value, it can also be passed as an argument in a function.
+
+**Exercise:** Using `prompt("What is your name?")`, let's create a variable to hold the value and `alert()` a message with that value.
+
+	var name = prompt("What is your name?");
+	alert("Hello " + name + ".");
+
+The text added by the user in the prompt window is passed as a *value* into the variable `name`. `name` is then passed as an *argument* into the alert function and will reassign the value of `name` every time the user inputs new text.
+
+
+##Syntax & Code Conventions
+When do we use semi-colons? Why did the computer complain when we typed `'She's a HackerYou student'`? Just like any other language, there are rules (or grammar) to be followed. Computers need code written in a very specific way or they will not understand it. 
 
 ### Semi-colons
-Code is composed of **statements** (instructions) that are usually executed one at a time from top to bottom. Each **statement** ends with a semicolon. There are exceptions but we'll explain them when the time comes.
+Code is composed of **statements** (instructions) that are usually executed one at a time from top to bottom. Statements end with a semi-colon to indicate the end of the instruction.
 
+	var name = "Your Name";
+	name;
+	
+	//same as
+	
+	var name = "Your Name"; name;
 
-![image](statements-expressions-values-diagram.png)
+**Note:** Because of a technique called **automatic semicolon insertion** (ASI), some statements that are well formed on a new line will be executed as if a semicolon had been added. 
+	
+	// will execute both statements
+	var name = "Your Name" 
+	name;
+	
+	// will throw an error
+	var name = "Your Name" name;
 
-A value is an expression, an expression is a statement, therefore a value is technically a statement.
+In the example above, when the statement is on a new line, the instruction will run as if there was a semicolon there thanks to ASI.
 
-Javascript is extremely non-forgiving with it's syntax, so you must pay very special attention to things like semi-colons. Just like CSS, the computer needs to know when one line ends and another one starts. 
+**To avoid errors, it's best practice to put each new statement on it's own line and end it with a semicolon.**
 
+**Block Statements:** Used to group zero or more statements enclosed by a pair of curly brackets `{ }`. Single line statements must end in a semi-colon but the block itself does not. Generally used with **control flow statements** (to be discussed later).
+
+	var singleLineStatement = "hello"; //needs semi-colon
+	
+	if (condition === "something"){
+		var singleLineStatement = "hello"; //needs semi-colon
+		var anotherStatement = "hi"; //needs semi-colon
+	} //does not need semi-colon
+
+Here's a handy [Stack Overflow discussion](http://stackoverflow.com/questions/1834642/best-practice-for-semicolon-after-every-function-in-javascript) about when semi-colons are needed.
+
+   
 **Exercise**: Add semicolons and line breaks where appropriate to make the below code work without errors.
 
 ```
@@ -253,36 +385,12 @@ schoolName + " has " + numOfStudents + " students.";
 > **Teacher note**: Ask students to point out which part of the above code is a value, expression and statement.
 </div>
 
-### Whitespace
-Whitespace is usually insignificant in JavaScript. There are some situations where whitespace is needed to avoid ambiguity. 
+###Variable declarations
 
-**Exercise**: In the statement `var name = "Homer" ;`, which whitespaces are optional and which are not?
+All variables should be declared before used. JavaScript does not require this, but doing so makes the program easier to read.
 
-Solution: <span class="solution">a space is needed between `var` and `name` but the other whitespaces are unnecessary. `var name="homer"` will work just fine but `varname="homer"` will create a variable called `varname`… which is not what we wanted.</span>
-
-### Naming Conventions
-* Variable names are expected to start with a non-numeric character (letter, _, or $) followed by any character. So `var 23people` is invalid.
-* Do not use spaces. Avoid underscores. Dashes will not work. Use camelCasing. For example, `var myName` is preferred to `var my_name` and `var my name` is invalid.
-
-See why we recommended camelCasing in CSS now? Consistency across programming languages is preferred. 
-
-### Commenting
-Comments are not executed so you can use them to puts some notes that will help you remember what your code does. Inline comments can be added with `//`. For example:
-
-```
-// There are 365 days in a year
-var ageInDays = 26 * 365;
-```
-
-Just like in Sass,  /\*  \*/ are used for multiline and mid-line comments.
-
-```
-/* 
-	Many 
-	Lines
-	wow
-*/
-```
+###Quotes
+Single or double quotes can be used but pick one and be consistent.  Also, make sure that the closing quote matches the opening quote.  
 
 ### Some common errors:
 Have a look at the code below and see if you can spot the error. Then run the code and verify that you spotted an error. Fix the code and verify that it runs properly.
@@ -292,7 +400,7 @@ Have a look at the code below and see if you can spot the error. Then run the co
 > myNme;
 ```
 
-Solution: <span class="solution">`ReferenceError: myNme is not defined`. The variable was simply misspelled but the computer doesn't know that. So it tells you that the misspelled variable doesn't exist. </span>
+Solution: <span class="solution">`ReferenceError: myNme is not defined`. The variable was simply misspelled but the computer doesn't know that. So it tells you that the misspelled variable doesn't exist. [This error usually means that the computer can find the variable so most likely there is a spelling or syntax error.]</span>
 
 Now repeat the above steps with the following code:
 
@@ -302,41 +410,11 @@ Now repeat the above steps with the following code:
 
 Solution: <span class="solution">Syntax error. Missing a double-quote. `"JavaScript" + " is " + 18 + "years old";`</span>
 
-We will of course see more errors, get used to it!
-
-## Built-in Functions
-So far we can do basic operations but nothing too complicated. Type the following in the console: `prompt("What's your name?");`
-
-`prompt` is a JavaScript **function**. Functions at their most basic level are simply chunks of code that can be run at any point in time.
-
-**Syntax:** `functionName(arguments)`. The parenthesis are required even if the function doesn't have any arguments.
-
-**Terminology:**
-
-- Argument: a value provided to a function
-- Pass: to provide arguments to a function
-- Call: ask JavaScript to evaluate a function
-- Return: pass back a value
-
-In the example above, the *value* "What's your name?" was *passed* as an *argument* to the function named `prompt`. We *called* the function and it *returned* the value that the user typed in.
 
 
-### Assigning a value from a function.
+##More built-in functions
+We've already looked `prompt()`, `alert()` and `confirm()` but there are many more built-in functions. For example:
 
-Functions return values and you can then assign them to variables. For example, the `prompt()` function will return whatever the user types in. 
-
-To assign the user-entered value to a variable, run:
-
-	var name = prompt("What is your name?");
-
-Then type `name` into the terminal. Does that value come back?
-
-![](http://wes.io/Tysf/ss%202014-02-18%20at%205.29.25%20PM.png)
-
-**Exercises**
-There are many built-in functions that you can play with, for example:
-
-* alert()
 * console.log()
 * Type `Math.` (without hitting enter) and you'll see a list pop up of available math related functions. E.g., Math.cos(), Math.max(), Math.min().
 
@@ -355,8 +433,10 @@ After 5 minutes we will review each of these functions together.
 </div>
 
 **Exercise 1**: Create a program that asks for a person's age in years and then returns their age in seconds.
-
+[ * Note that these lines have to be executed at once, not line by line *]
+ 
 Solution:
+[**change to age = age * etc... to show reassignment more clearly **]
 <div class="solution">
 
 
@@ -364,6 +444,8 @@ Solution:
 var age = prompt("What's your age in years?");
 age * 365 * 24 * 60 * 60
 </pre>
+
+
 
 Multiply by 365 to get days, by 24 to get hours, by 60 to get minutes and then 60 again for seconds.
 

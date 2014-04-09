@@ -1,63 +1,135 @@
-# APIs & JSON
+---
+layout: notes
+topic: js
+title: Working With APIs
+---
 
-Application Programming Interfaces (APIs) are "interfaces", meaning where two entities interact. An API can be thought of as a connection point; it's a program that allows one program to exchange data with another. 
+#Working with APIs
 
-For example, Twitter is a piece of software with lots of data. The Twitter API exists so that another piece of software can connect to Twitter and grab or manipulate some of its data.
+##What's an API?
+
+API stands for **"Application Programming Interface"**. This is a general term in comptuer programming, but when it comes to the web, this is just a fancy way of saying "a service that lets two websites talk to each other."
+
+Lots of popular websites provide APIs so that you can retrive or send data inside your own website or app.
+
+> A twitter widget on your website connects to the twitter API to retrive your three most recent tweets.
+
+>A facebook share button communicates with the facebook API to post a new article share on your wall.
+
+APIs are also a common method for providing data feeds, like weather forecasts, a movie catalogue, or the NewYorkTimes Best Sellers list.
+
+Take a look at this crazy huge list of public APIs. <http://www.programmableweb.com/apis/directory/1?protocol=REST> 
 
 ## RESTful APIs
 
-In order to interface with an API, the interaction needs to be predictable. If every API had its own rules then we would have to learn each API separately. Thankfully, the APIs that we will be working with will be RESTful Web Services. Representational State Transfer (**REST**) is a way to architect/design web APIs.
+To help make our lives as developers easier, many APIs conform to a set of standards called **REST** (which stands for "Representational State Transfer", if you were curious). We'll be working with RESTful APIs in this course.
 
-1. Represent data as "resources". The URL specifies which resource we want to work with. Example: `<base_url>/books/55`, this says we're looking for a book that can be identified with the id 55.
-2. Standard methods (GET, POST, PUT, DELETE) are used to work with resources. Read a resource with GET, create a resource with POST, update a resource with PUT and you guessed it... delete a resource with DELETE.
+What does this mean for us?
+
+**REST APIs use the same standards as ordinary web URLs.**
+
+1. data lives at a URL eg. `http://api.cupcakes.com/flavours/` 
+2. we can interact with data using the standard HTTP methods, **GET, POST, PUT,** and **DELETE** 
+
+You might remember GET and POST from our work with forms.
+ 
+**GET** requests data 
+`http://api.cupcakes.com/favours` gets a list of all available flavours
+
+**POST** creates new data
+`http://api.cupcakes.com/flavours/new` creates a new flavour, you would have to send new flavour information along with this request
+
+**PUT** is used to update data, and **DELETE** is used to remove data, but you probably won't come across these that often.
+
+Try viewing some of these GET examples in your browser.      
+
+* <http://myttc.ca/vehicles/near/queen_and_spadina.json>  
+* <https://api.github.com/users/hackeryou>  
+* <http://api.icndb.com/jokes/random/10>
+* <http://api.wunderground.com/api/61f0a55cb00602dc/conditions/q/Ontario/Toronto.json>
+* <http://isithackday.com/arrpi.php?format=json&text=hackeryou%20is%20the%20coolest>
+* <http://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&text=hackeryou&api_key=9ffc680dbb093e647be2784acdb4eb56>
+
+### Anatomy of a GET Request
+
+The URLs we use to access data are referred to as **API endpoints**.
+
+Additional options can be passed along with our request after the URL in the **query string**. 
+
+These options are called **parameters**, and each parameter consists of a **key value** pair.
+
+![](http://cl.ly/image/093S2d001811/api-query.png)
 
 ## API keys and Authentication
 
-APIs are best learned by doing some hands-on work. Go to:
-[http://www.wunderground.com/weather/api](http://www.wunderground.com/weather/api)
+Notice how some of our sample requests had strings of random letters and numbers in them?  
 
-1. Create a free account
-2. Sign in
+That's actually a unique passphrase, called an **API key**. It identifies us to the app, authorizing us for use. APIs use this or other forms of authentication (like OAuth or a username and password) to prevent spammy requests. 
+
+You can often sign up for an API key for free. Let's try it with the Wunderground Weather API.
+
+1. Visit [http://www.wunderground.com/weather/api](http://www.wunderground.com/weather/api)
+2. Create a free account and sign in
 3. From the API link above click on "Pricing".
 4. The default options will work just fine. With a free developer account you can make up to 10 requests per minute and up to 500 requests per day. This will be plenty for our needs. Click on "Purchase Key".
 5. Fill out the API form and upon completion you will see your Key ID.
 
-APIs that are unprotected can be abused by spammers. So most if not all APIs require that the user of the API identify themselves in some way. The API key serves as authentication, it tells the API owner (Wunderground in this case) who you are. Incidentally the keys are also a way to limit the amount of requests from each user.
+Remember, API keys are like your secret ID, so treat them like passwords. Make a note of your newly created API key somewhere safe. We'll need it during our exercises.
 
-Note: the key is supposed to be like a password, don't share it with others. Put the key somewhere safe, we'll need it soon.
+## JSON formatting
 
-## Making a request
-
-1. Click on the "documentation" link at the top.
-2. The documentation shows us an example of an API request:
+Let's take a closer look at some of the data we got back from our sample API calls.
 
 ```
-http://api.wunderground.com/api/61f0a55cb00602dc/conditions/q/CA/San_Francisco.json
+{
+  "login": "HackerYou",
+  "id": 2479724,
+  "avatar_url": "https://avatars.githubusercontent.com/u/2479724?",
+  "gravatar_id": "adcc01adbba244c5eb41968040c6741e",
+  "url": "https://api.github.com/users/HackerYou",
+  "blog": "http://www.hackeryou.com",
+  "location": "Toronto",
+  "email": "info@hackeryou.com",
+}
 ```
 
-Let's break that down:
+Curly braces, comma separated key value pairs. Looks a lot like a JavaScript object, right?  That's because it is!
 
-- `http://api.wunderground.com/api/` is the base url. We're telling the browser to get data from underground's API.
-- `61f0a55cb00602dc` is an API key. This should be your key if you're logged in.
-- `conditions` is a resource. If you look on the side you'll see a list of resources (forecast, astronomy, hourly, etc.).
-- In order to specify a city to get current weather conditions for we add a query. `q/CA/San_Francisco`, CA for California and of course the city San Francisco.
-- JSON is a data format. `.json` says that we want data formatted in JSON.
-- We can change the url to `.xml` to get the data formatted in XML.
+This is a data format called **JavaScript Object Notation** or **JSON** for short.  
 
-So the URL represents the path to the **resource** that want. That's the first half of making an API request. Next we need to specific a method. Pasting the url in your browser and pressing enter is by default a **GET request**. You should see a bunch of text, this is the resource that we requested.
+APIs can return data in many formats (you might also see XML), but we prefer to work with JSON becuase it's easy to work with in our JavaScript code. We'll see soon how to take data from and API and do things like ouput in into the DOM. 
 
-## JSON
+Just like in JavaScript, you can include all kinds of data inside a JSON object, including strings, numbers, booleans, and nested arrays and objects.
 
-If you look closely at the result you should notice that the data looks suspiciously like JavaScript objects. This is because JSON based on JavaScript’s object literal syntax. JavaScript Object Notation (JSON) is a data format that is extremely popular on the web because it's easy to work with for both humans and machines.
-
-JSON objects are collections of name/value pairs separated by commas. Note that the names must be strings. So `{name: "Homer"}` is invalid JSON, `{"name": "Homer"}` is valid.
-
-> JSON has six kinds of values: objects, arrays, strings, numbers, booleans (true and false), and the special value null.
->
-> JavaScript The Good Parts
-
-## Recap
-
-* We have communicated with an API using an authentication key. * We retrieved some data. 
-
-Now what? How do we use this data? This is where AJAX comes in.
+```
+{
+   "vehicles":[
+      {
+         "source":"schedule",
+         "type":"CLRV",
+         "trip_id":96411,
+         "lng":-79.392334,
+         "distance":448.427203,
+         "long_name":"504 King To Dundas West Station",
+         "angle":192.025269,
+         "velocity":16.096636,
+         "short_name":"504",
+         "lat":43.646019
+      },
+      {
+         "source":"schedule",
+         "type":"CLRV",
+         "trip_id":97177,
+         "lng":-79.390724,
+         "distance":531.363251,
+         "long_name":"504 King To Broadview Station",
+         "angle":12.222412,
+         "velocity":16.150303,
+         "short_name":"504",
+         "lat":43.64637
+      }
+   ],
+   "lat":43.648716,
+   "lng":-79.3964754
+}
+```

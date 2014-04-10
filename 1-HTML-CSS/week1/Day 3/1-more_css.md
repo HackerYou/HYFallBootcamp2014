@@ -11,27 +11,29 @@ Now that we have a good handle on selectors, we can get to work on writing the s
 
 ![Diagram](http://wes.io/J3WP/diagrams.png)
 
-I'm sure you have already picked up on a few, or even know a few from previous experience. color sets the font colour, font-size sets the font size. You may have even picked up on a few such as width and height.
+I'm sure you have already picked up on a few, or even know a few from previous experience. `color` sets the font colour, `font-size` sets the font size. You may have even picked up on a few such as `width` and `height`.
 
-Let's start off by saying that there are hundreds of possible properties and each of those have at least a handful of possible values. You'll get the hang of them as you go, but there is absolutely nothing wrong with googling for them. In fact I still do it daily and its encouraged!
+Let's start off by saying that there are hundreds of possible properties and each of those have at least a handful of possible values. You'll get the hang of them as you go, but there is absolutely nothing wrong with googling for them. In fact I still do it daily and it's encouraged!
 
 ### Measurement Units
 A large part of CSS is declaring what the size of something will be. It may be the width of a div, the amount of padding or the size of a font. There are a number of ways to declare sizes on the web - and no there are no CMs or inches on the web.
 
-1. **px -  pixels** are probably the most popular way to size widths, heights and fonts on the web. Its the easiest one to understand because our monitors are measured in pixels. Font sizes from photoshop also line up exactly with pixel sizes. As a general rule of thumb, a website (that isn't responsive) should never be wider than 1000 pixels so it can fit on every type of monitor.
+1. **px -  pixels** are probably the most popular way to size widths, heights and fonts on the web. It's the easiest one to understand because our monitors are measured in pixels. Font sizes from photoshop also line up exactly with pixel sizes. As a general rule of thumb, a website (that isn't responsive) should never be wider than 1000 pixels so it can fit on every type of monitor.
 
 2. **% - Percentages** - Another popular way to size up your fonts and elements is by using percentages of an element's parent. You can imagine how this works. A wrapper div with 100% width and two children - sidebar of 25% and the main content of 75%. This also works for fonts. If the parent has a font size of 20px, a 50% font size would be 10px.
 
-Percentages will be really helpful when we get into responsive design.
+	Percentages will be really helpful when we get into responsive design.
 
-3. **em - Ems** - Almost identical to the percentage approach of having scalable units. We set a base font size on the body and then all text on the page is based of of that.Sizing fonts with ems is a bit of a tricky subject to wrap your head around so for simplicity's sake we will be sticking with px and percentages.
+3. **em - Ems** - Almost identical to the percentage approach of having scalable units. We set a base font size on the body and then all text on the page is based off of that *or* relative to its closest ancestor's font size. Because of this, sizing fonts with `ems` is a bit of a tricky subject to wrap your head around so for simplicity's sake we will be sticking with px and percentages.
 
-4. **keywords** - sometimes we will be able to supply keywords for sizes of elements and fonts. You will see the keywords **auto** and **inherit** most often. Auto allows an element to automatically size itself based on both its surroundings and content and inherit allows an element to inherit the style from its parent. We will talk about this more in future exercises.
+4. **rem - Rem** - Introduced in CSS3 so it's not supported by older browsers. Similar to ems as it stands for "root em." This unit is also relative but only to the root, the `html` element. The base font size is defined in the `html` tag and all rem units will be relative to only that. (More on ems and rems [here](http://snook.ca/archives/html_and_css/font-size-with-rem).)
 
-5. **cm, in, ex, pt, pc** - I thought I said there were no cms or inches in the web? Well there are are few other measurements that are meant primarily for printing documents. To be honest I've never used any of these measurements and you probably will never have to either.
+5. **keywords** - sometimes we will be able to supply keywords for sizes of elements and fonts. You will see the keywords **auto** and **inherit** most often. Auto allows an element to automatically size itself based on both its surroundings and content and inherit allows an element to inherit the style from its parent. We will talk about this more in future exercises.
+
+6. **cm, in, ex, pt, pc** - I thought I said there were no cms or inches in the web? Well there are are few other measurements that are meant primarily for printing documents. To be honest I've never used any of these measurements and you probably will never have to either.
 
 ### Widths and Heights
-Let us start things off easy and work a little with width and height. Lets make a quick document with four divs (**see css-width-height.html** for the answer, but let's code ours from the ground up.):
+Let us start things off easy and work a little with `width` and `height`. Lets make a quick document with four divs (**see css-width-height.html** for the answer, but let's code ours from the ground up.):
 
 	<div class="box1"></div>
 	<div class="box2"></div>
@@ -110,10 +112,10 @@ If 100% width takes up the entire width of the browser, shouldn't 100% height ta
 
 ![](http://wes.io/JGxM/Screen%20Shot%202012-09-06%20at%2011.58.58%20AM.png)
 
-Because its child **Box 5** is 150px high, **Box 4** reacts and changes its height to 150px + the height of the text 'Box #4'
+Because its child **Box 5** is 150px high, **Box 4** reacts and changes its height to 150px + the height of the text 'Box #4'.
 
 ### Padding and Margin
-Along with your pals width and height, two of your CSS best friends will be **padding** and **margin**
+Along with your pals `width` and `height`, two of your CSS best friends will be `padding` and `margin`.
 
 These two properties do what you might think - provide space between elements on your page so everything isn't squished together.
 
@@ -205,7 +207,7 @@ Open `css-margin-padding-exercise-ANSWER.html` in your browser to see what you a
 		padding: 10px 20px 25px 5%;
 	}
 
-**The Order** of the above is **top, right, bottom left**. You can remember it easily because its the same direction as a compass or a clock. I prefer to remember **TROUBLE** or **TRBL** (top, right bottom, left). Stupid, I know, but it works!
+**The order** of the above is **top, right, bottom, left**. You can remember it easily because its the same direction as a compass or a clock. I prefer to remember **TROUBLE** or **TRBL** (top right bottom left). Stupid, I know, but it works!
 
 You may also set the **top and bottom** and **right and left** at the same time with the two number syntax:
 
@@ -310,7 +312,7 @@ By specifying `* { box-sizing: border-box }` at the top of our CSS, we tell all 
 
 ![](http://wes.io/JGjL/Screen%20Shot%202012-09-06%20at%203.38.46%20PM.png)
 
-<small>Read more on the topic at [Paul Irish's Blog](http://paulirish.com/2012/box-sizing-border-box-ftw/)</small>
+<small>Read more on the topic at [Paul Irish's Blog](http://paulirish.com/2012/box-sizing-border-box-ftw/).</small>
 
 ### Floats
 
@@ -346,7 +348,7 @@ We have Four main divs: header,content, sidebar and footer. We want to make them
 
 We want the content and sidebar divs to be side by side, so their widths together, need to make up 100% of the wrapper.
 
-so naturally, we would use CSS to make content 75% and the sidebar 25%:
+So naturally, we would use CSS to make content 75% and the sidebar 25%:
 
 	.content {
 		float:left;
@@ -384,8 +386,8 @@ There are two fixes for this:
 
 This works great but the downside is that you often don't want to hide the overflow of something because you want to overlap or extend elements outside the wrapper.
 
-**clearfix**
-The better alternative is to apply something called a clearfix, which is a CSS hack that targets elements with the class of 'clearfix'
+**clearfix**  
+The better alternative is to apply something called a clearfix, which is a CSS hack that targets elements with the class of 'clearfix'.
 
 The clearfix CSS looks like this:
 
@@ -402,15 +404,15 @@ The clearfix CSS looks like this:
 
 And you should add it to every project you do.
 
-Then when we apply it, we just add the class clearfix to our `.wrapper`
+Then when we apply it, we just add the class `clearfix` to our `.wrapper` (or whichever is the parent element of the floated elements).
 
 
 
 #### Problem #2: Footer is in the sidebar
 
-This is a common problem with CSS, since the sidebar is only so high, the footer snugs up against the smallest child - the sidebar.
+This is a common problem with CSS, since the sidebar is only so high, the footer will also try to float and snugs up against the smallest child - the sidebar.
 
-We solve this with clearing the footer. This means that we tell the footer to clear all elements before it and start on a new line.
+We solve this with clearing the footer. This means that we tell the footer to clear all the floats from the elements before it and start on a new line.
 
 Simple css:
 
@@ -423,7 +425,8 @@ Simple css:
 
 This is because of the box model that we talked about ealier. The width of a box includes its padding and borders!
 
-There are two fixes for this:
+There are two fixes for this: 
+
 1. Adjusting the width of the box to include the borders and padding
 2. Set the box sizing to `border-box` (Not supported in IE7)
 
@@ -441,19 +444,18 @@ Work with eachother to write the selectors and please ask questions to me and th
 ## Review
 1. Selectors, selectors, selectors!
 	1. How do I select the body element?
-		* <span class="white">boy {...}</span>
+		* <span class="white">body {...}</span>
 	1. Why would someone select the body element?
-		* <span class="white">We often set default color and and font styles on the body because it is the highest element</span>
-		1. How do I select all paragraphs within `<div class="content">...</div>`
-	* <span class="white">.content p {...}</span>
+		* <span class="white">We often set default color and font styles on the body because it is the highest element</span>
+	1. How do I select all paragraphs within `<div class="content">...</div>`
+		* <span class="white">.content p {...}</span>
 	1. How do I select all divs with **both** the class of food and human?
 		* <span class="white">div.food.human</span>
 	1. How do I select divs with the class of human **and** list items with the class of warning?
 		* <span class="white">div.human, li.warning {...}</span>
-	1. Why do we sometimes forgo putting the element name infront of something like `.sidebar { ... }` verses `div.sidebar {...}`
+	1. Why do we sometimes forgo putting the element name in front of something like `.sidebar { ... }` verses `div.sidebar {...}`
 		* <span class="white">We either want to select all elements with the class of sidebar **or** we are sure we won't have anything else with the class of sidebar so we are confident in leaving it off</span>
-1. Borders
-	How do I add a 1px border around my div that is dotted and black?
+1. Borders: How do I add a 1px border around my div that is dotted and black?
 		* <span class="white">div.className { border: 1px dotted black; }</span>
 1. Margin and padding
 	1. What is margin?
@@ -461,14 +463,13 @@ Work with eachother to write the selectors and please ask questions to me and th
 	1. What is padding?
 		* <span class="white">Spacing on the _inside_ of elements</span>
 	1. Explain the traditional box model
-		* <span class="white">**padding** and **border** add to the size of a box.</span>
+		* <span class="white">**padding** and **border** add to the total size of a box.</span>
 	1. If I want my div to be 800px wide TOTAL with 20px of padding, and 2px of border. What should I use for width?
-		* <span class="white">Let's figure it out..</span>
+		* <span class="white">Let's figure it out...</span>
 	1. What CSS3 feature can we use to avoid this weird box model?
-	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+		* { -moz-box-sizing: border-box; 	-webkit-box-sizing: border-box; box-sizing: border-box; }
 1. Floats
 	1. What does a float do?
 	1. What elements can be floated?
-	1. What do we do to
 	1. How do we tell an element to go on the next line?
-	1. What CSS hack do we use when our wrapper div doesn't contain its insides properly?
+	1. What CSS hack do we use when our wrapper div doesn't contain its insides/children properly?

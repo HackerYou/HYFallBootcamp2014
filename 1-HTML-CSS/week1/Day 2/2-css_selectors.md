@@ -1,12 +1,12 @@
 ---
 layout: notes
-title: Including CSS and CSS Selectors
+title: CSS Selectors
 topic: html
 ---
 
-# CSS and CSS Selectors
+# CSS Selectors
 
-### CSS: 3 ways
+### Including CSS: 3 ways
 There are three ways to write CSS and include it in your HTML document.
 
 **1. External Stylesheet**
@@ -290,7 +290,11 @@ There is also an answer key provided, open it in your browser to view what it sh
 
 ![Final Product](http://wes.io/J6Kh/Screen%20Shot%202012-08-29%20at%203.54.25%20PM.png)
 
-## Selector Exercise & Review
+Once you've got a good handle on CSS selectors, open up [`css-challenge.html`](exercises/css-challenge-selectors.html) and see if you can write some complete CSS rules of your own. 
+
+The full answers and a reference of what your version should like like is [here](exercises/css-challenge-selectors-ANSWER.html)
+
+## Selector Review
 Review:
 
 1. How to we select elements?

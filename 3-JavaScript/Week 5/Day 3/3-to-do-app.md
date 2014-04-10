@@ -1,4 +1,10 @@
-# Week 5, Day 3: A simple to-do app with JS and jQuery.
+---
+layout: notes
+topic: js
+title: jQuery to-do app code along
+---
+
+# A simple to-do app with JS and jQuery.
 
 This is a pair programming exercise. In pairs you will follow the instructions below to build a to-do list app. You will get an opportunity at the end to customize it but at first the functionality will be similar for everyone.
 

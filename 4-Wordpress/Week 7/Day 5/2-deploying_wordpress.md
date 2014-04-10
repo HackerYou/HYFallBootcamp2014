@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Deploying Wordpress
+---
+
 # Deploying Wordpress
 
 Once you've finished developing your WordPress site locally, you'll want to send it out into the wild by deploying to a production server.

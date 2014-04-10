@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: js
+title: Functions as first-class objects
+---
+
 ## Functions as first-class objects
 
 **JavaScript functions are first-class objects**. This behaviour is rare in programming languages. It means that functions can be passed as arguments to other functions and that they can be properties of objects. 

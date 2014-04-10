@@ -1,4 +1,10 @@
-# Week 8 Day 3 Custom Taxonomies
+---
+layout: notes
+topic: wp
+title: Custom Taxonomies
+---
+
+# Custom Taxonomies
 
 ##What's a taxonomy?
 

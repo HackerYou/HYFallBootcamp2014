@@ -1,6 +1,10 @@
-# Week 8 Day 4 
+---
+layout: notes
+topic: wp
+title: WordPress Security
+---
 
-## Security
+## WordPress Security
 
 Security is a major issue online. You need to build websites for clients that will not get hacked. Some things to consider:
 

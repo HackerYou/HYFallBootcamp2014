@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Web Design Best Practices
+topic: ux
+---
+
 #Web Design Best Practices
 
 While traditional graphic and print design often help inform web design, web design has it's own set of standards and best practices tailored to the online medium.

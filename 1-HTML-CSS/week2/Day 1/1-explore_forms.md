@@ -1,9 +1,3 @@
----
-layout: notes
-title: Explore HTML Forms
-topic: html
----
-
 # Week 2, Day 1 Explore HTML Forms
 
 A client is hiring a freelance web-developer for a project that involves many web forms. To win the contract you pretty much need to be a form expert. 

@@ -1,3 +1,11 @@
+---
+layout: notes
+topic: wp
+title: Configuring WordPress
+---
+
+#Configuring WordPress
+
 ## Jargon
 **Codex** - The WordPress documentation. Very helpful when you require a reference or assistance with a certain part of WordPress. http://codex.wordpress.org/
 

@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: FTP & Hosting Your Site
-topic: html
+topic: tools
 ---
 
 # FTP & Web Hosting

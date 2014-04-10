@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Template Tags
+---
+
 # Template Tags
 
 With templates, we don't just code our content straight into `page.php` or `single.php` because these are re-usable for every single page or blog post.

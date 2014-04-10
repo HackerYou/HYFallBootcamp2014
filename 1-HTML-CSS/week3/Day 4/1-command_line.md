@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: tools
+title: Intro to the Command Line
+---
+
 # Command Line
 
 The command line (terminal in Mac, powershell in PC) is a tool that allows us to interact directly with the operating system. The Operating System's user interface is pretty much just a layer on top of the command line. We can do tasks that the UI does through the command line (open files, edit files, delete files, run programs etc.). 

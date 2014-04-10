@@ -1,6 +1,12 @@
+---
+layout: notes
+topic: js
+title: Reading jQuery Documentation
+---
+
 <style> .note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; } </style>
 
-# Week5 Day3, Reading jQuery API documentation
+# Reading jQuery API documentation
 
 jQuery objects have tons of methods, it would take forever to cover how all of them work. What we will do here is introduce you to the jQuery API documentation. The jQuery API will be an invaluable resource as your write jQuery code. 
 

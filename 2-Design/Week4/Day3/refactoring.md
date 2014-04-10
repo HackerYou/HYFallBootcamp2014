@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Refactoring HTML & CSS
+topic: html
+---
+
 #Refactoring and Maintaining HTML & CSS
 
 Writing clean, organized and efficient code will not only make your pages run faster but it will be easier to maintain and can potentially reduce browser bugs. It's tempting to say "I'll fix it later" but later doesn't always come. It's important to refactor your code as you go along.

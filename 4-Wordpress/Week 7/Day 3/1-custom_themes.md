@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Custom Themes
+---
+
 # Custom Themes
 
 As a class we're going to create a custom theme, test it and package it. 

@@ -1,6 +1,12 @@
+---
+layout: notes
+topic: js
+title: Control Flow
+---
+
 <style> .note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; } </style>
 
-# Week 5, Day 1: Control Flow
+# Control Flow
 
 You have written a few programs -- congratulations! It's time to learn a very powerful programming concept but the console is an awkward place to write a lot of code. We need a more convenient way of writing Javascript.
 

@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Introduction to WordPress
+---
+
 # Introduction to WordPress
 
 We started out by creating "static" websites with just HTML and CSS. To add some interactivity to our websites we learned about JavaScript and jQuery. Now the final step of this journey is to learn about server-side languages like PHP and the applications that they make like WordPress.

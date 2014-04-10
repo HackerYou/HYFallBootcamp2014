@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Personal Branding
+topic: freelance
+---
+
 # Introduction to freelancing 
 
 Learning how to run a business is an entirely different skillset than learning how to code. Good developers are able to do both and successfully run their own company. 

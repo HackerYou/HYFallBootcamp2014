@@ -1,3 +1,8 @@
+---
+layout: project
+title: Week 6 Project - jQuery API App
+---
+
 # Weekly Project
 
 Your task for the weekly project is to create your very own movie app. Use the movie app that we built together as a guide.

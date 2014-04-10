@@ -1,4 +1,10 @@
-# Update Wordpress
+---
+layout: notes
+topic: wp
+title: Updating Wordpress
+---
+
+# Updating Wordpress
 
 With version 3.7, Wordpress will automatically update itself for minor patches. Major patches still require you to update manually.
 

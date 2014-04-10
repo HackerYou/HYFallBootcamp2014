@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Page Templates
+---
+
 # Template Files
 
 Themes are filled with *template files* that control how different pages or parts of the website are laid out.

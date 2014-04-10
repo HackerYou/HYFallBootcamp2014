@@ -1,4 +1,10 @@
-# Building a Weather Widget: Code Along
+---
+layout: notes
+topic: js
+title: Weather App Code Along
+---
+
+# Building a Weather App: Code Along
 
 The data that we get back has a lot of information. The data object consists of two JavaScript objects; the object of interest to us is the one named "current_observation". This object has a lot of interesting data.
 

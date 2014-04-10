@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Custom Post Types and Custom Fields
+---
+
 # Custom Post Types and Custom Fields
 
 Out of the box, WordPress is great for running a blog and powering static pages.

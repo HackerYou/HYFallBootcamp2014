@@ -1,10 +1,10 @@
 ---
 layout: notes
-title: Intro to HTML Elements
+title: HTML Elements
 topic: html
 ---
 
-# Intro to HTML Elements
+# HTML Elements
 
 ## Viewing HTML in the browser
 

@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Quoting and Pricing
+topic: freelance
+---
+
 # Quoting and Pricing
 
 Quoting is one of the hardest things about being a freelancer. Most freelancers hate quoting as putting a price on their skill isn't cut and clear and there are really no firm answers.

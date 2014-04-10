@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: The Loop
+---
+
 # The Loop
 
 The loop is the lifeblood of a WordPress Theme, is it use to iterate over and display each of the posts that are available on a given page.

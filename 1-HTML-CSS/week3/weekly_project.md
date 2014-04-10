@@ -1,3 +1,8 @@
+---
+layout: project
+title: Week 3 Project - Responsive 'Client' Website
+---
+
 # Weekly Project
 
 This week you will be build a responsive multi-page website for a "fake" client. We will provide you with 3-5 designs to choose from (desktop and mobile).

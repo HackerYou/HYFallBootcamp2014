@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Freelance Tools
+topic: freelance
+---
+
 # Tools of the trade
 
 By now you have probably heard me talk about productivity and proper tools for the job. 

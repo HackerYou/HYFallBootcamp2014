@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: js
+title: Objects
+---
+
 <style> .note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; } </style>
 
 # Week 5, Day 2 Objects

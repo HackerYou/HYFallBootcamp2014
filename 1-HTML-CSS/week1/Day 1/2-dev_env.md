@@ -9,16 +9,16 @@ topic: tools
 ## Say Hello to your Text Editor!
 At HackerYou, we can't stress enough how important having the right tools for the job is. Probably the most important tool you have as a web developer or designer is your text editor in which we use to edit our code.
 
-HTML is written is plain text, so we could technically use notepad(windows) or textedit(mac) to view and code our HTML files. The downside to this is that its just black text on a white background, making it very easy to make a mistake!
+HTML is written is plain text, so we could technically use Notepad (Windows) or TextEdit (Mac) to view and code our HTML files. The downside to this is that its just black text on a white background, making it very easy to make a mistake!
 
-Text editors give you something called Syntax Highlighting. It changes the colours of your tags helping you to quickly view scan your code for relevant parts. When you make a mistake, the colour of the tag changes and its visually apparent that something isn't right. Let's take a look at our earlier snippet in textedit:
+Text editors give you something called Syntax Highlighting. It changes the colours of your tags helping you to quickly view scan your code for relevant parts. When you make a mistake, the colour of the tag changes and its visually apparent that something isn't right. Let's take a look at our earlier snippet in TextEdit:
 
 ![Using Textedit or Notepad](http://wes.io/IJBn/Screen%20Shot%202012-07-24%20at%203.11.49%20PM.png)
 
 
 ![Using a Text Editor](http://wes.io/IINV/Screen%20Shot%202012-07-24%20at%203.15.00%20PM.png)
 
-Note how all the tags are blue colour and the current selected tag `<BODY>` is underlined yellow? When your code gets long an nested, its very helpful to take advantage of these features.
+Note how all the tags are blue colour and the current selected tag `<body>` is underlined yellow? When your code gets long an nested, its very helpful to take advantage of these features.
 
 Text editors can do a ton more, this is just the beginning. I highly recommend using [Sublime Text 3](http://www.sublimetext.com/3) because I will be using it throughout this course. I also firmly believe that it is by far the best text editor available. Its available on Mac, PC and Linux with an unlimited free trial period. You only need to pay for it when you get sick of clicking the popup box every 15 or so saves. 
 

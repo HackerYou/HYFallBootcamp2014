@@ -24,7 +24,7 @@ Let's take a look at the most commonly used tags used to mark up a document.
 
 ### A quick word on styles
 
-As a convenience, the browser gives us a handful of default styles that are applied to our HTML. So, even though we haven't touched CSS yet, all of the below elements have some styling to them already. If you don't like these styles, no problem! We will change them to _anything_ we want in the future.
+HTML was originally created for formatting text only. So as a convenience, the browser gives us a handful of default styles that are applied to our HTML. Even though we haven't touched CSS yet, all of the below elements have some styling to them already. If you don't like these styles, no problem! We will change them to _anything_ we want using CSS.
 
 ### Six types of Headings `<h1></h1>` -> `<h6></h6>` 
 
@@ -37,7 +37,7 @@ Then under that you may have several high level sections to break down the paper
 
 Under each of those sections, you will probably have a few more smaller sections (`<h3></h3>`) and so on through to `<h6>`.
 
-**As a rule of thumb, your web page should only ever have 1 `<h1>` tag which is usually the websites name. After that, use your discretion of a title's importance appending H2 to H6 tags**
+**As a rule of thumb, your web page should only ever have 1 `<h1>` tag which is usually the website's name. After that, use your discretion of a title's importance appending H2 to H6 tags. Don't let the default style of the tag determine which level heading you use.**
 
 ### Paragraph Tags `<p></p>` 
 
@@ -94,12 +94,12 @@ Each item inside an unordered or ordered list is called a **list item** and is w
 
 
 ### `<strong></strong>` and `<em></em>` - Strong and Emphasis
-Remember when I said using the `<b>` tag and `<i>` tag was bad? thats because those tags are old and were purely presentational.
+Remember when I said using the `<b>` tag and `<i>` tag was not preferred?
 
-In their place, we use STRONG and EM to note that they are important and should have emphasis. Default styling in the browser already bolds and italicizes them accordingly.
+Instead, STRONG and EM to note that they are important and should have emphasis. Default styling in the browser already bolds and italicizes them accordingly.)
 
 ### `<div></div>` divs
-The DIV tag in HTML is foundation for laying out a web page. We use divs to group together HTML elements into a defined section of content.
+The DIV tag in HTML is foundation for laying out a web page. We use divs to group together HTML elements into a defined section of content. Divs are also one of the few tags that have *no semantic meaning* and is used as a generic container. 
 
 \*record scratch\* — let's go over that again because divs are super important. Divs are used as containers to group together common elements. We do this primarily for two reasons:
 
@@ -154,7 +154,9 @@ Links take an *attribute* of `href` which tells the link where to link do. Here 
 	</a>
 
 ### `<span></span>` Spans
-The span tag is a small, yet mighty HMTL tag. A span is an **inline element** which means that you can pop one right in the middle of a sentence and it wont give you a line break or any other unwanted effect. Suppose we were writing a sentence about our favourite foods and wanted to add a background colour to each of the foods names so they could be easily referenced.
+The span tag is a small, yet mighty HMTL tag. A span is an **inline element** which means that you can pop one right in the middle of a sentence and it wont give you a line break or any other unwanted effect. The span tag itself, like divs, have no semantic meaning.
+
+Suppose we were writing a sentence about our favourite foods and wanted to add a background colour to each of the foods names so they could be easily referenced.
 
 > My favourite foods are sushi, pizza and pulled pork
 
@@ -183,9 +185,9 @@ As a general rule of thumb, spans go inside other elements — such as `<p>` or 
 
 
 ### `<img>` Embedded Image
-Finally the image tag! Used to embed images into your webpage. We have two mandatory attributes here:
+Finally the image tag! Used to embed images into your webpage. We have two mandatory *attributes* here:
 
-**src** this is the source of the image that is to appear
+**src** this is the source of the image that is to appear  
 **alt** this is the alternate text. It's used to describe the image to people who can't see images or search engine robots (who also can't see images... yet)
 
 	<!-- using a url relative to the HTML page -->
@@ -198,49 +200,77 @@ Finally the image tag! Used to embed images into your webpage. We have two manda
 
 One of the many fun parts of being a web developer is using funny images for placeholders. So, in many of our examples, we will use random images that we found on the net. Often is the case where we require a specific size of image, so instead of finding an image and using photoshop to resize it, we can make use of services that provide placeholder images.
 
-A few of my favourites:
+Here are a few options:
 
-* http://placedog.com/200/200
-* http://pugholder.com/200/200
-* http://nicenicejpg.com/200/200
+* [http://placehold.it/](http://placehold.it/)
+* [http://placekitten.com/](http://placekitten.com/)
+* [http://baconmockup.com/](http://baconmockup.com/)
+* [http://nicenicejpg.com/](http://nicenicejpg.com/)
 
 For each of the above, instead of setting the image src to a .jpg url, we set it to one of the previous URLs with the last two numbers being the `width` and the `height`:
 
-	<img src="http://placedog.com/200/200">
+	<img src="http://placehold.it/350x150">
 
-<img src="http://placedog.com/200/200">
+<img src="http://placehold.it/350x150">
 
-	<img src="http://pugholder.com/200/600">	
+	<img src="http://placekitten.com/200/200">
 
-<img src="http://pugholder.com/200/600">	
+<img src="http://placekitten.com/200/200">
+
+	http://baconmockup.com/400/200	
+
+<img src="http://baconmockup.com/400/200">	
 
 	<img src="http://nicenicejpg.com/700/300">	
 
 <img src="http://nicenicejpg.com/700/300">	
+(A quick google search will turn up many more placeholder image services!)
 
 ## Attributes
 Before we jump into all the tags, its important to understand what **attributes** are.
 
-Attributes are used to provide additional info on the HTML element. Different elements require different types of attributes. Here are the ones you will be using:
+Attributes are used to provide additional info on the HTML element. Different elements require different types of attributes. Here are some common ones you will be using:
 
-*	**src** - used to pass in the source of an element. Most commonly used on an image element:
-	*	`<img src="dog.jpg" alt="My Dog">`
-* 	**href** - with anchor links, we pass the href to tell the anchor link where to point to
-	*	`<a href="http://hackeryou.com">HackerYou</a>`
-*	**alt**  - the alternate text that describes an image. Helpful for both search engines and visually impaired users
-	*	`<img src="dog.jpg" alt="My Dog">`
-*	**title** - provides extra information about an element such as a link or list item. When the user hovers over it, the little yellow tooltip shows up.
-	*	`<a href="http://google.com" title="Google is a great search engine!">Google.com</a>`
-	*	![](http://wes.io/IKT5/Screen%20Shot%202012-07-25%20at%204.24.20%20PM.png)
-*	**class** - This is probably one of the most important attributes that you can assign to **any** element. It allows us to be able to grab onto element(s) with that class with our CSS code and style only those elements. More on this when we learn CSS	
-	*	`<p class='largeText'>Welcome to our site, we hope you enjoy browsing around!</p>`
-*	**id** - Exactly the same as class, but can only be used **once** on a website. In general and in this course we wont use IDs because we value code reuse. 
-	*	`<div id="wrapper">... entire website ...</div>`
-*	**Many More** - We will run into many more attributes as we work with HTML, most of which will be obvious as to what they do.
-	*	`type=""`,`value=""`,`placeholder=""`,`style=""`, `checked=""`, `for="'`, `name="'`
-*	**The Bad Parts** - As with HTML tags, older versions of HTML introduced some attributes which you should never use. As you may have guessed, these all relate to presentation.
-	*	`width="'`, `height="'`, `align="'`, `color="'`, `size="'`, `bgcolor=""`, `font=""`
-	*	Any of the above still work in the browser, but it is **not the job of HTML**. All of the above can be completed with CSS
+**src** - used to pass in the source of an element. Most commonly used on an image element:
+
+	<img src="dog.jpg" alt="My Dog">
+	
+**href** - with anchor links, we pass the href to tell the anchor link where to point to
+	
+	<a href="http://hackeryou.com">HackerYou</a>
+	
+**alt**  - the alternate text that describes an image. Helpful for both search engines and visually impaired users
+
+	<img src="dog.jpg" alt="My Dog">
+	
+**title** - provides extra information about an element such as a link or list item. When the user hovers over it, the little yellow tooltip shows up.
+
+	<a href="http://google.com" title="Google is a great search engine!">Google.com</a>
+
+![](http://wes.io/IKT5/Screen%20Shot%202012-07-25%20at%204.24.20%20PM.png)
+
+**class** - This is probably one of the most important attributes that you can assign to **any** element. It allows us to be able to grab onto element(s) with that class with our CSS code and style only those elements. More on this when we learn CSS.	
+	
+	<p class='largeText'>Welcome to our site, we hope you enjoy browsing around!</p>
+	
+**id** - Exactly the same as class, but can only be used **once** on a website. In general and in this course we wont use IDs because we value code reuse. 
+	
+	<div id="wrapper">... entire website ...</div>
+
+**lang** - This classifies the language and can be used for translation tools, improve quality of search results and even be used for styling the fonts based on the language!
+
+	<html lang="en"> 
+
+**charset** - helps the browser translates computer language (bytes) into characters & symbols. Special characters like round quotes and accented characters can be more effectively rendered.
+
+	<meta charset="utf-8">
+
+**Many More** - We will run into many more attributes as we work with HTML, most of which will be obvious as to what they do.  
+`type=""`,`value=""`,`placeholder=""`,`style=""`, `checked=""`, `for="'`, `name="'`
+
+**The Bad Parts** - As with HTML tags, older versions of HTML introduced some attributes which you should never use. As you may have guessed, these all relate to presentation. Any of these will work in the browser, but it is **not the job of HTML**. All of these can be completed with CSS.  
+`width="'`, `height="'`, `align="'`, `color="'`, `size="'`, `bgcolor=""`, `font=""`
+
 
 ## The `<br>` and `<hr>` Tag
 A quick word on these two tags. The `<br>` tag (the break tag) lets you clear lines in your html (similar to pressing enter in MS word) and the `<hr>` tag lets you insert an horizontal ruler.

@@ -164,17 +164,20 @@ Going from a problem described in our everyday language to actual code is not ea
 	```
 
 2. The following function isn't printing anything to the console. Can you spot the styntax error? 
+	
 	```
 	function iLoveCoffee{
 		console.log("Coffee is delicious.");
 	}
-
 	iLoveCoffee();
 	```
 
 3. Write a fucntion `myInfo()` that logs both your name and email to the console.
 
-4. Edit this `iLovePizza` function to accept a single `topping` parameter that logs to the console. Then call your function three times, passing in a different topping agrument each time.
+
+3. Edit this `iLovePizza` function to accept a single `topping` argument, then log the argument to the console.
+Start with this code:
+	
 	```
 	function iLovePizza(){
 		console.log("I love pizza!");
@@ -182,7 +185,6 @@ Going from a problem described in our everyday language to actual code is not ea
 		//log your favourite topping to the console here
 	}
 	```
-
 
 5. Write a function with one parameter, `whatsForDinner(meal)`, which alerts the name of the meal passed to it. Call your function three times with a different meal argument each time.
 

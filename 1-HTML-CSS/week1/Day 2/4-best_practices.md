@@ -8,9 +8,9 @@ topic: html
 
 ## Review
 
-1. We Write ____ to create our website
+1. We write ____ to create our website content structure.
 	* <span class="hide">HTML</span>
-1. We use **HTML** purely for __________ our content
+1. We use **HTML** purely for __________ our content.
 	* <span class="hide">describing</span>
 1. We can mark up our content by surrounding it in <span class="hide">**tags**</span> that make up <span class="hide">**html elements**</span>
 1. We use `<h1>` to `<h6>` tags for headings, `<p></p>` for paragraphs as well as many others which you will now tell me what they do: 
@@ -18,7 +18,7 @@ topic: html
 	1. `<em></em>`
 	1. `<img src="" alt="">`
 	1. What are the two types of image paths? <span class="hide">absolute and relative</span>
-1. We use  the `<span></span>` tags to wrap elements and target them with CSS.
+1. We use  the `<span></span>` tags to wrap inline elements and target them with CSS.
 1. We use `<div></div>` tags to group and organize elements on a page as well as target with styling later on
 1. What is the difference between spans and divs?
 	* <span class="hide">divs are block, spans are inline. We generally use divs to group elements together, and spans to target single words</span>
@@ -39,7 +39,7 @@ topic: html
 		> h {color:red; }
 		1. ![](http://wes.io/J3WP/diagrams.png)
 	1. We use **dots** to select elements with class names
-		h2.bigTitles { font-size: 100px; }
+		.bigTitles { font-size: 100px; }
 	1. We use **hashes** to select elements with id names
 	1. Why do we recommend not using ids? 
 		* <span class="hide">They can only be used once!</span>
@@ -58,12 +58,12 @@ We have covered this briefly before, but lets dive in and get some notes on it:
 ### Separate Files & Folder Structure
 In last weeks example, we put the CSS inside `<style>` tags. This is okay for a single file, but the best practice is to separate it out into its own `style.css` file. Down the road you may even have 3 or 4 css files that you are working with - print and mobile stylesheets for example.
 
-When the number of files in your project becomes large, its helpful to group similar assets into folders. A nice clean web project that has HTML, CSS, JavaScript, and Images would look like this:
+When the number of files in your project becomes large, its helpful to group similar assets into folders. A nice clean web project that has HTML, CSS, JavaScript, and images would look like this:
 
 	index.html
 	about.html
 
-	/javascripts/
+	/javascript/
 	  -- scripts.js
 	  -- jquery.js
 
@@ -125,17 +125,16 @@ OR
 	</html>
 
 
-The second one is longer, but you are able to get an idea for the page structure almost right away. If you are messy with indentation, changes are you end up with extra(or not enough) closing div elements.
+The second one is longer, but you are able to get an idea for the page structure almost right away. If you are messy with indentation, chances are you end up with extra (or not enough) closing div elements.
 
-Indenting code is easy, just press the tab button in front of your line. Most good text editors (sublime text included) will automatically indent your code as you write it as well as provide shortcuts for indenting large blocks of code.
+Indenting code is easy, just press the tab button in front of your line. Most good text editors (Sublime Text included) will automatically indent your code as you write it as well as provide shortcuts for indenting large blocks of code.
 
 #### Sublime Text Indentation
-Sometimes you will paste a block of code into a file and the indentation will be all goofed up. Sublime text has something called **paste and indent**
-
+Sometimes you will paste a block of code into a file and the indentation will be all goofed up. Sublime Text has something called **paste and indent**
 
 Instead of pressing `cmd/ctrl` + `v` to paste (cmd + v for mac), press `cmd/ctrl` + `shift` + `v` to paste and indent properly.
 
-Sometimes you will also have to indent several lines at a time. To do this, select all the lines you want and press `cmd/ctrl` + `{` to indent all of them at once.
+Sometimes you will also have to indent several lines at a time. To do this, select all the lines you want and press `cmd/ctrl` + `}` to indent all of them at once, forward and `cmd/ctrl` + `{` to indent back.
 
 **cmd⌘ on mac, ctrl on windows**
 
@@ -152,7 +151,7 @@ It is best practice to have each rule on a single line as well as the selector a
 
 **Also works when tight on space**
 
-	h2 {color:red; font-size:50px; }
+	h2 { color:red; font-size:50px; }
 	
 ## Review
 
@@ -178,15 +177,15 @@ It is best practice to have each rule on a single line as well as the selector a
 	1. How many text shadows can we have?
 		* <span class="white">unlimited!</span>
 1. What is the box model? What are the two kinds
-		* <span class="white">the regular box model adds padding and border to the size of the element. So a 100px box with a 10px border and 10px padding would really be a 140px box. box-sizing:border-box; removes this and takes away from the total width/height. Remember: in any case, you must always account for margin.</span>
+	* <span class="white">the regular box model adds padding and border to the size of the element. So a 100px box with a 10px border and 10px padding would really be a 140px box. box-sizing:border-box; removes this and takes away from the total width/height. Remember: in any case, you must always account for margin.</span>
 1. Why do we float things?
-		* <span class="white">to line elements side by side</span>	
+	* <span class="white">to line elements side by side</span>	
 1. What are 4 ways we can set a background color?
-		* <span class="white">black, #000, #000000, rgb(0,0,0), rgba(0,0,0,0.5)</span>
+	* <span class="white">black, #000, #000000, rgb(0,0,0), rgba(0,0,0,0.5)</span>
 1. What is the difference between `background` and `background-image`?
-	background is a catch-all, we can set anything on it.
+	* <span class="white">background is a catch-all, we can set anything on it.</span>
 1. What kind of elements can a background image be set on?
-		* <span class="white">anything!</span>
+	* <span class="white">anything!</span>
 
 ## Cross Browser Testing
 Testing your code across multiple browsers can be a pain, but its crucial do do if you want to maintain a good experience for all users.
@@ -246,7 +245,7 @@ Here are a few tools you can use to help test:
 
 
 ### Mobile Testing
-All tools aside, I prefer just to test on acutal hardware. I try and keep at least one device with every major version of the mobile operating system on it. If you are on your own, this can get expensive as phones aren't cheap. 
+All tools aside, I prefer just to test on actual hardware. I try and keep at least one device with every major version of the mobile operating system on it. If you are on your own, this can get expensive as phones aren't cheap. 
 
 Many cities have Device Labs where you can go and test your website on every single device. 
 

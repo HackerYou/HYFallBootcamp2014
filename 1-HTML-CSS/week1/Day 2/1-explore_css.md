@@ -6,7 +6,7 @@ topic: html
 
 #Explore CSS
 
-As a freelancer you will get requests from clients that you will not know how to accomplish. If you say "I don't know how to do that" then you will find yourself without a job most of the time. Most requests can be handled by doing a bit of research and by being resourceful.
+As a web developer, whether you are freelancing or even if you're working at a company, you will often get requests that you may not know how to accomplish. If you say "I don't know how to do that" then you may find yourself without a job and can restrict your own learning. Web techniques are always changing and even pros don't always know how to do everything right away. Most requests can be handled by doing a bit of research and by being resourceful.
 
 "Exercises" are different from a regular lesson because they require you to do the research yourself. This simulates the process that freelancers have to going through on a daily basis. You will work in groups of 2-3 students and have notes to reference if you REALLY need to - this is to scaffold your learning. 
 

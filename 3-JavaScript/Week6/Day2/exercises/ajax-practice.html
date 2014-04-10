@@ -20,7 +20,7 @@
 		$.ajax({
 			url: 'http://myttc.ca/vehicles/near/queen_and_spadina.json',
 			type: 'GET',
-			dataType: 'jsonp',
+			dataType: 'jsonp'
 			success: function(data){
 				console.log('1a. syntax error FIXED!');
 			}
@@ -35,7 +35,7 @@
 		$.ajax({
 			url: 'http://myttc.ca/vehicles/near/queen_and_spadina.json',
 			type: 'GET',
-			dataType: 'jsonp',
+			dataType: 'json',
 			success: function(data){
 				console.log("1b. debugging cross-domain errors, FIXED!");
 			}
@@ -54,18 +54,18 @@
 				argument to hold the data the API passes back.
 				One convention is to call this 'response'. Go ahead and write
 				that inside the function parentheses. */
-			success: function(response){
+			success: function(){
 				if (typeof data !== 'undefined'){console.log("2a. You named the success argument. YEAH!");}
 				/*2b. We're not sure exactly what info this API give
 					us, so console.log() out your new `data` argument
 					here so we can look at the info in the console. */
-					console.log(response);
+					console.log('????');
 
 				/*2c. Let's practice getting a specific piece of information.
 					Look through the data object we logged and find the email
 					address. See if you can get it to log out by accessing
 					the email property from the data object. */
-					console.log(response.data.email);
+					console.log('????');
 			}
 		});
 
@@ -89,7 +89,7 @@
 				a settng called data.  Add in this new option on the line 
 				below and set it equal to the query string (don't include
 				the question mark). */
-			data: "firstName=Paul&lastName=Irish",
+
 			success: function(response){
 				if (response.value.joke.indexOf('Paul') >= 0){
 					console.log(response.value.joke);
@@ -106,30 +106,10 @@
 			query string with an object of your own first and last name.
 			Remeber, object syntax goes like this:
 			{
-				city: "Tooront",
+				city: "Toronto",
 				province: "Ontario"
 			} 
 			*/
-
-		$.ajax({
-			url: 'http://api.icndb.com/jokes/random',
-			type: 'GET',
-			dataType: 'jsonp',
-			/* 3a. Go to the $.ajax documentation page:
-				https://api.jquery.com/jQuery.ajax/
-				and search the page (cmd/ctrl+F) for query string to find 
-				out what setting you need to add. You should see that it's
-				a settng called data.  Add in this new option on the line 
-				below and set it equal to the query string (don't include
-				the question mark). */
-			data: {
-				firstName: "Brenna",
-				lastName: "O'Brien"
-			},
-			success: function(response){
-				console.log(response.value.joke);
-			}
-		});
 
 	});
 	</script>

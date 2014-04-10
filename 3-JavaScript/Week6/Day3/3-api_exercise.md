@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: js
+title: Movie API Exercise
+---
+
 # API Exercise
 
 ## Start with some structure

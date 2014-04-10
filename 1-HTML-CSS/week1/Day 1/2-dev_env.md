@@ -1,7 +1,7 @@
 ---
 layout: notes
-title: Your Development Environement
-topic: html
+title: Sublime Text 
+topic: tools
 ---
 
 #Your Development Environment

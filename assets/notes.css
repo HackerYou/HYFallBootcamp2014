@@ -38,3 +38,5 @@ div.hide:hover,
   visibility: visible;
   color:black !important;
 }
+
+.note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; }

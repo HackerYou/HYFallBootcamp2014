@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: js
+title: Debuggin AJAX Requests
+---
+
 # Seeing AJAX Requests
 
 It's often useful to see what the browser is doing behind the scenes when we're making AJAX requests. Luckily, dev tools can help us here.

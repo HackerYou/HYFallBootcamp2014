@@ -34,10 +34,11 @@ title: Intro to HTML
 Choices for topics are:
 
 `html` for HTML & CSS  
-`git` for GitHub   
+`tools` for GitHub, SublimeText etc.   
 `ux` for Design and UX  
 `js` for JavaScript and jQuery  
 `wp` for WordPress
+`freelance` for Freelancing
 
 Title is up to you.
 

@@ -1,3 +1,8 @@
+---
+layout: project
+title: Week 8 Project - Portfolio Site
+---
+
 # Weekly Project
 
 Your goal for this week is to transform your personal Wordpress website into a proper portfolio by using custom post types. By the end of the week you should have both the front-end and back-end set up so that showing your work becomes much easier.

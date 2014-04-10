@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: js
+title: Reading API Documentation
+---
+
 # Reading Documentation
 
 Learning how an API works will take some time. Good APIs (and [The Movie Database](http://themoviedb.org/) is a good one) have enough information and examples to get you started. The examples should show how to make the request and what the response data looks like. Reading this stuff helps a lot. So it can't be stressed enough, read the documentation carefully.

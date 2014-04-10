@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Custom queries and loops
+---
+
 #Custom queries and loops
 
 So, we've all seen the loop a bunch of times by now - loops are found in **index.php**, **archive.php**, **page.php**, **single.php**, and any template that displays post content entered into WordPress. That looks something like this:

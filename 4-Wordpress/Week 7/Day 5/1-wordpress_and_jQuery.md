@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: jQuery with Wordpress
+---
+
 # jQuery with Wordpress
 
 Wordpress themes are at the end of the day going to resolve to just HTML and CSS so we can easily add jQuery to the mix. In fact jQuery is automatically loaded by Wordpress.

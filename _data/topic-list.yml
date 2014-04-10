@@ -52,13 +52,15 @@
   slug: ux
   directory: 2-Design 
   exercises:
-- name: Git and GitHub
-  slug: git
+- name: Tools of the Trade
+  slug: tools
   directory: 1-HTML-CSS
 - name: JavaScript & jQuery
   slug: js
   directory: 3-JavaScript  
   exercises:
+  - title: JS Cheat Sheet
+    path: javascript-cheat-sheet.html
   - title: Tic Tac Toe App Exercise
     path: Week6/Day1/exercises/tic-tac-toe.html
     answerPath: Week6/Day1/exercises/tic-tac-toe-answer.html

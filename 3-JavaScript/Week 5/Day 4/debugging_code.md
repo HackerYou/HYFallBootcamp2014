@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: js
+title: Debugging JavaScript
+---
+
 # Week 5, Day 4 Debugging code with developer tools
 
 You will hear people say "JavaScript fails silently". This is not entirely true. JavaScript debugging tools have come a long way. Usually if there is an error it will be printed to the console, you just have to look.

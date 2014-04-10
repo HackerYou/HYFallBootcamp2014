@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Client and Time Management
+topic: freelance
+---
+
 # Client and Time Management
 Managing both your time as well as your clients requests can take up a large portion of your day. 
 

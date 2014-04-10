@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Finding and Winning Clients
+topic: freelance
+---
+
 # Finding and Winning Clients
 
 Finding clients for established freelancers is incredibly easy. Finding clients for beginner freelancers can be tough, but it doesn't have to be. Since a large majority of your clients will come from referrals, breaking into the referral scene will take some work.

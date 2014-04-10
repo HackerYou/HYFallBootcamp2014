@@ -1,3 +1,8 @@
+---
+layout: default
+title: JS cheat sheet
+---
+
 #JavaScript Terminology and Syntax Cheat Sheet
 
 ##Variables

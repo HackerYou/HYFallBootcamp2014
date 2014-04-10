@@ -1,3 +1,8 @@
+---
+layout: project
+title: Week 7 Project - Custom WordPress Theme
+---
+
 # Weekly Project
 
 This week you will take an existing HTML & CSS site and turn it into a **responsive** Wordpress theme. We recommend doing this for the personal blog/portfolio website that you built earlier.

@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Wire-framing and Grids
+topic: ux
+---
+
 # Wire-framing and Grids
 
 How do you go about designing a website? Should you start in Photoshop? draw on paper? or maybe code right away?

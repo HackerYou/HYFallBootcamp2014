@@ -1,3 +1,8 @@
+---
+layout: project
+title: Week 4 Project - Wireframe and Style Guide
+---
+
 # Week 4 Project
 For this week's project, you will be given a client brief of a client who would like a website built. 
 

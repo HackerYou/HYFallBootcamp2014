@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Widgets and Navigation
+---
+
 # Widgets and Navigation
 
 ## Widgets

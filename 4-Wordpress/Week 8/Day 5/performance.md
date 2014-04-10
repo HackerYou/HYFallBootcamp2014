@@ -1,4 +1,10 @@
-# Week 8 Day 5 Performance 
+---
+layout: notes
+topic: wp
+title: WordPress Performance
+---
+
+# Performance 
 
 How fast your website loads is very important. Slow website means a higher bounce rate; users will leave out of frustration. To speed up your website:
 

@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Wordpress Themes
+---
+
 # Wordpress Themes
 
 Themes allow you to control the look and feel of your website. This is the presentation layer of your site and it is where you will write all of you HTML, CSS and JavaScript.

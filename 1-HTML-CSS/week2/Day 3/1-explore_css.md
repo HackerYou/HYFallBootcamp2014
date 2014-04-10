@@ -1,9 +1,3 @@
----
-layout: notes
-title: Explore CSS
-topic: html
----
-
 # Explore CSS
 
 In groups of 2-3 people use the following guiding questions to explore and learn about CSS. At the end of the exercise you will share your findings with the class. The class will then collaborate to form notes.

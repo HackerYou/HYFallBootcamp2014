@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Wordpress Troubleshooting
+---
+
 # Wordpress Troubleshooting
 
 You will probably run into many issues when using Wordpress. Troubleshooting is a very important skill to have as a developer, and the more WordPress sites you'll work on, the better you'll get at it.

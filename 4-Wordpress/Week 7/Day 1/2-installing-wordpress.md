@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Installing WordPress
+---
+
 # Installing WordPress
 Installing WordPress is really fast. Let's go through the steps on how to install WordPress locally. 
 

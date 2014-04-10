@@ -1,4 +1,10 @@
-# Week 5, Day 3 jQuery
+---
+layout: notes
+topic: js
+title: Intro to jQuery
+---
+
+# Intro to jQuery
 
 We have covered most of what you need to know of the JavaScript language. We will now see that variables, values, expressions, statements, objects and functions can be combined to do some amazing things on the web.
 

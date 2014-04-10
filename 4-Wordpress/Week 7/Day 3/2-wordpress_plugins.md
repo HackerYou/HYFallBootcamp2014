@@ -1,3 +1,9 @@
+---
+layout: notes
+topic: wp
+title: Wordpress Plugins
+---
+
 #Wordpress Plugins
 
 Wordpress has a huge ecosystem of plugins to add functionality to your website. Explore the plugin directory here:

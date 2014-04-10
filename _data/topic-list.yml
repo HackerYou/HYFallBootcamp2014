@@ -62,6 +62,11 @@
   - title: Tic Tac Toe App Exercise
     path: Week6/Day1/exercises/tic-tac-toe.html
     answerPath: Week6/Day1/exercises/tic-tac-toe-answer.html
+  - title: Sample AJAX Request and Response
+    path: Week6/Day2/exercises/ajax-response.html
+  - title: AJAX Practice
+    path: Week6/Day2/exercises/ajax-practice.html
+    answerPath: Week6/Day2/exercises/ajax-practice-answer.html
 - name: WordPress
   slug: wp
   directory: 4-Wordpress

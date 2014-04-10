@@ -1,8 +1,28 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<title>CSS Exercise</title>
-</head>
+	<head>
+		<title>CSS Exercise</title>
+		<style type="text/css">
+
+			.clearfix:after {
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				content: " ";
+				clear: both;
+				height: 0;
+				}
+			* html .clearfix             { zoom: 1; } /* IE6 */
+			*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+			body {
+				background: lightgrey;
+				font-family:Arial, Helvetica, sans-serif;
+				line-height:25px;
+			}
+			
+		</style>
+	</head>
 	<body>
 
 		<div class="wrapper">
@@ -46,27 +66,5 @@
 
 		</div>
 
-		<style type="text/css">
-
-			.clearfix:after {
-				visibility: hidden;
-				display: block;
-				font-size: 0;
-				content: " ";
-				clear: both;
-				height: 0;
-				}
-			* html .clearfix             { zoom: 1; } /* IE6 */
-			*:first-child+html .clearfix { zoom: 1; } /* IE7 */
-
-			body {
-				background: lightgrey;
-				font-family:Arial, Helvetica, sans-serif;
-				line-height:25px;
-			}
-
-	
-
-		</style>
 	</body>
 </html>

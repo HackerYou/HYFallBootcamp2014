@@ -16,16 +16,26 @@
 
     var countdown = window.setInterval(function() {
       // Update the span text with the number of seconds
+      $('.seconds').text(seconds);
       
       // Update the browsers tab to reflect the current time  + "Seconds Left!"
+      $('title').text(seconds + " Seconds Left!");
       
       // Decrement the number of seconds left
+      seconds = seconds -1; // or seconds--;
 
       // if there are 10 or less seconds left, turn the background yellow. Use the css() method
+      if(seconds < 10) {
+        $('body').css('background','#f1c40f');
+      }
 
       // if there are 0 seconds left, turn the background red
       // kill the timeout if we reach 0 so we don't see negative seconds
       // For this you will need to research clearInterval();
+      if(seconds < 0) {
+        $('body').css('background','red');
+        window.clearInterval(countdown);
+      }
 
     },1000);
 

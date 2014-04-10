@@ -12,26 +12,11 @@
 					<li><a href="{{page.url}}">{{topicNumber}}.{{count}} {{page.title}}</a></li>
 				{% endif %}
 			{% endfor %}
-			
-			<h5>Exercises and Examples</h5>
-			<ul class="exercises">
-			{% for exercise in topic.exercises %}
-				<li>
-					<a href="{{topic.directory}}/{{exercise.path}}" download>
-						{{topicNumber}}-{{site.data.alphabet[forloop.index0]}} {{exercise.title}}
-					</a>
-				</li>
-				{% if exercise.answerPath %}
-				<li class="answer">
-					<a href="{{topic.directory}}/{{exercise.answerPath}}" download>
-						{{topicNumber}}-{{site.data.alphabet[forloop.index0]}} {{exercise.title}} [ANSWER]
-					</a>
-				</li>
-				{% endif %}
-			{% endfor %}
-			</ul>
 		</ul>
 	{% endfor %}
+
+	<h2>Exercises and Examples</h2>
+	Most exercises are linked within your notes, but you can also view a full catalogue <a href="exercises.html">here</a>.
 
 	<h2>Weekly Projects</h2>
 

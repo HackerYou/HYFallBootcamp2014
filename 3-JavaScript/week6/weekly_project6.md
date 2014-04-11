@@ -5,25 +5,28 @@ title: Week 6 Project - jQuery API App
 
 # Weekly Project
 
-Your task for the weekly project is to create your very own movie app. Use the movie app that we built together as a guide.
+Your task for this week is to create your very own web app using jQuery and an API. 
+
+We've provided a lits of RESTful APIs that can be accessed publicly and have good documentation. Try to work with an API that has data you find interesting - it'll be way more fun that way! If you're interested in one that's not on the list, come talk to me or one of the mentors and we'll let you know if it's appropriate for this project.
+
+##API choices
+* TTC data feed <http://myttc.ca/developers>
+* New York Times Best Sellers list <http://developer.nytimes.com/docs/best_sellers_api>
+* The MovieDB movie and TV info <https://www.themoviedb.org/documentation/api>
+* Disccogs.com music info <http://www.discogs.com/developers/>
+
 
 ## Minimum Requirements
 
-* A custom style/design.
-* A list of Movies or TV shows of your choice.
-* The ability to rate the movies/shows using a real user session (we used a guest session in our tutorial).
-* Use at least one of the other API categories that we haven't worked with yet (e.g. collections, people, credits, lists, genres, search, reviews, etc.).
-* Have fun!
+* organize your code using an object app
+* access at least two endpoints of your chosen API
+* allow a user to interact with your app in some way, eg. a search field or drop-down list that changes results
+* Display results in your own custom format
+* Your own style/design
 
-### Other APIs you could work with:
 
-http://www.programmableweb.com/apis/directory/1?apicat=Science&protocol=REST&format=JSON
-http://datamob.org/datasets/
-http://www.astronomyapi.com/docs#overview
-http://isithackday.com/arrpi.php
-http://www.icndb.com/api/
-https://github.com/JimAllanson/api.ponycountdown.com
-http://myttc.ca/developers
-http://developer.nytimes.com/docs/best_sellers_api
+##Bonus points for
+* accessing more than one API (eg. pull in a flickr photo that's tagged with a weather condition)
+
 
 

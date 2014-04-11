@@ -1,8 +1,82 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<title>CSS Floats</title>
-</head>
+	<head>
+		<title>CSS Floats</title>
+		<style type="text/css">
+			body {
+				margin: 0; /* Just overriding the browser default to zero */
+				background:#95A9AF;
+			}
+
+			/* Box sizing border box and clearfix */
+			* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+			.clearfix:after {
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				content: " ";
+				clear: both;
+				height: 0;
+				}
+			* html .clearfix             { zoom: 1; } /* IE6 */
+			*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+			/* 
+				This one has  the regular header, content and sidebar divs
+				You may use pixels for this one if thats easier
+
+				in the content make the .post divs three to a line
+				in the sidebar make the .widget divs separate
+				in the header center and adjust letter spacing
+				There are hover styles on .post and the links in the sidebar
+				match the styling best you can to the answer
+
+				All selectors are written for you EXCEPT the hover states
+
+			*/
+			
+			.wrapper {
+				border:2px solid black;
+				margin:20px auto;
+				background:white;
+				width:1000px;
+			}
+
+			/* Header */
+
+			.header {
+			}
+
+			/* Content */
+			.content {
+				padding:20px;
+			}
+			.content .post {
+				background:#F5F5F5;
+				border:1px solid #ccc;
+			}
+				
+
+
+				.content .post img {
+				}
+
+			/* Sidebar */
+			.sidebar {
+			}
+			.widget {
+				background:#D8E2E6;
+			}
+				.widget ul {
+					list-style-position: inside;
+					list-style-type:square;
+				}
+
+				.widget a {
+				}
+		</style>
+	</head>
 	<body>
 		<div class="wrapper clearfix">
 			<div class="header">
@@ -67,84 +141,5 @@
 
 			</div>
 		</div>
-
-		<style type="text/css">
-			body {
-				margin: 0; /* Just overriding the browser default to zero */
-				background:#95A9AF;
-			}
-
-			/* Box sizing border box and clearfix */
-			* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-			.clearfix:after {
-				visibility: hidden;
-				display: block;
-				font-size: 0;
-				content: " ";
-				clear: both;
-				height: 0;
-				}
-			* html .clearfix             { zoom: 1; } /* IE6 */
-			*:first-child+html .clearfix { zoom: 1; } /* IE7 */
-
-			/* 
-				This one has  the regular header, content and sidebar divs
-				You may use pixels for this one if thats easier
-
-				in the content make the .post divs three to a line
-				in the sidebar make the .widget divs separate
-				in the header center and adjust letter spacing
-				There are hover styles on .post and the links in the sidebar
-				match the styling best you can to the answer
-
-				All selectors are written for you EXCEPT the hover states
-
-			*/
-			
-			.wrapper {
-				border:2px solid black;
-				margin:20px auto;
-				background:white;
-				width:1000px;
-			}
-
-			/* Header */
-
-			.header {
-			}
-
-			/* Content */
-			.content {
-				padding:20px;
-			}
-				.content .post {
-					background:#F5F5F5;
-					border:1px solid #ccc;
-				}
-					
-
-
-					.content .post img {
-					}
-
-			/* Sidebar */
-			.sidebar {
-			}
-				.widget {
-					background:#D8E2E6;
-				}
-					.widget ul {
-						list-style-position: inside;
-						list-style-type:square;
-					}
-
-					.widget a {
-					}
-
-
-
-	
-		</style>
 	</body>
 </html>

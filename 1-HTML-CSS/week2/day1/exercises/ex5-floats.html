@@ -1,23 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<title>CSS Floats</title>
-</head>
-	<body>
-		<h1>Totally Resizeable - Set all widths in %</h1>
-		<div class="wrapper clearfix">
-			<div class="half left">
-				<div class="third"></div>
-				<div class="third"></div>
-				<div class="third"></div>
-			</div>
-			<div class="half right">
-				<div class="third"></div>
-				<div class="third"></div>
-				<div class="third"></div>
-			</div>
-		</div>
-
+	<head>
+		<title>CSS Floats</title>
 		<style type="text/css">
 			body {
 				margin: 0; /* Just overriding the browser default to zero */
@@ -45,7 +29,6 @@
 				I've written all the selectors you need, but you may add more if you want to do it a different way
 			*/
 			
-
 			div {
 				min-height:100px; /* some default styling because the divs have no content */
 			}	
@@ -53,26 +36,34 @@
 			.wrapper {
 				border:2px solid black;
 				margin:20px auto;
-
 			}
-
 			.half {
 				background:#F5895F;
 				border:1px solid red;
-
 			}
-
 			.left {
 			}
 			.right {
 			}
-
 			.third {
 				background:yellow;
 				border:1px solid red;
 			}
-
-	
 		</style>
+	</head>
+	<body>
+		<h1>Totally Resizeable - Set all widths in %</h1>
+		<div class="wrapper clearfix">
+			<div class="half left">
+				<div class="third"></div>
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+			<div class="half right">
+				<div class="third"></div>
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+		</div>
 	</body>
 </html>

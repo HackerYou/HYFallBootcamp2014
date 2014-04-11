@@ -169,6 +169,35 @@ Our CSS:
 		text-transform:capitalize;
 	}
 
+## text-decoration
+
+This property, `text-decoration`, can be used to add or remove an underline.
+It's not used very often because it's a best practice to only underline links. But if you do need to use it, here is an example:
+
+	.underline {
+		text-decoration: underline;
+	}
+
+<p style="font-size:20px; text-decoration:underline;">Underline</p>
+
+	.overline {
+		text-decoration: overline;
+	}
+	
+<p style="font-size:20px; text-decoration:overline;">Overline</p>
+	
+	.line-through {
+		text-decoration: line-through;
+	}
+<p style="font-size:20px; text-decoration:line-through;">line-through</p>
+
+`text-decoration` is used often to take the default underline off of links.
+
+	a {
+		text-decoration:none;
+	}
+
+
 ## Review
 1. CSS Typography
 	1. What do we use the change the spacing between lines?

@@ -7,13 +7,13 @@
 		<ul class="exercises">
 		{% for exercise in topic.exercises %}
 			<li>
-				<a href="{{topic.directory}}/{{exercise.path}}" download>
+				<a href="{{topic.directory}}/{{exercise.path}}">
 					{{topicNumber}}-{{site.data.alphabet[forloop.index0]}} {{exercise.title}}
 				</a>
 			</li>
 			{% if exercise.answerPath %}
 			<li class="answer">
-				<a href="{{topic.directory}}/{{exercise.answerPath}}" download>
+				<a href="{{topic.directory}}/{{exercise.answerPath}}">
 					{{topicNumber}}-{{site.data.alphabet[forloop.index0]}} {{exercise.title}} [ANSWER]
 				</a>
 			</li>

@@ -1,4 +1,6 @@
 {% include header.html %}
+{% comment %}force ordering of lesson by file path {% endcomment %}
+{% assign sorted_pages = site.pages | sort:"path" %}
 <div class="wrapper">
 	<h2>Curriculum</h2>
 	{% for topic in site.data.topic-list %}
@@ -6,10 +8,10 @@
 		<h4>{{topicNumber}}. {{topic.name}}</h4>
 		<ul>
 			{% assign count = '0' %}
-			{% for page in site.pages | sort:"path"%}
-				{% if page.layout == 'notes' and page.topic == topic.slug %}
+			{% for lesson in sorted_pages %}
+				{% if lesson.layout == 'notes' and lesson.topic == topic.slug %}
 					{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-					<li><a href="{{page.url}}">{{topicNumber}}.{{count}} {{page.title}}</a></li>
+					<li><a href="{{lesson.url}}">{{topicNumber}}.{{count}} {{lesson.title}}</a></li>
 				{% endif %}
 			{% endfor %}
 		</ul>
@@ -19,8 +21,8 @@
 	Most exercises are linked within your notes, but you can also view a full catalogue <a href="exercises.html">here</a>.
 
 	<h2>Weekly Projects</h2>
-
-	{% for page in site.pages %}
+	
+	{% for project in sorted_pages %}
 		{% if page.layout == 'project' %}
 			<p><a href="{{page.url}}">{{page.title}}</a></p>
 		{% endif %}

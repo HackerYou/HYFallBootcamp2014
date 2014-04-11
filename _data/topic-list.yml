@@ -3,51 +3,51 @@
   directory: 1-HTML-CSS 
   exercises:
   - title: hello-world example
-    path: week1/Day%201/exercises/hello-world.html 
+    path: week1/day1/exercises/hello-world.html 
   - title: HTML Intro
-    path: week1/Day%201/exercises/intro.html 
-    answerPath: week1/Day%201/exercises/intro-ANSWER.html
+    path: week1/day1/exercises/intro.html 
+    answerPath: week1/day1/exercises/intro-ANSWER.html
   - title: Markup Excercise
-    path: week1/Day%201/exercises/markup-exercise.zip
-    answerPath: week1/Day%201/exercises/markup-exercise-answers.zip
+    path: week1/day1/exercises/markup-exercise.zip
+    answerPath: week1/day1/exercises/markup-exercise-answers.zip
   - title: CSS Fun
-    path: week1/Day%201/exercises/css-fun.html
+    path: week1/day1/exercises/css-fun.html
   - title: Explore CSS
-    path: week1/Day%202/exercises/explore_css_exercise.html
+    path: week1/day2/exercises/explore_css_exercise.html
   - title: CSS Selectors Exercise
-    path: week1/Day%202/exercises/css-selector-exercises.html
-    answerPath: week1/Day%202/exercises/css-selector-exercises-ANSWER.html
+    path: week1/day2/exercises/css-selector-exercises.html
+    answerPath: week1/day2/exercises/css-selector-exercises-ANSWER.html
   - title: CSS Selector Challenge
-    path: week1/Day%202/exercises/css-challenge-selectors.html
-    answerPath: week1/Day%202/exercises/css-challenge-selectors-ANSWER.html
+    path: week1/day2/exercises/css-challenge-selectors.html
+    answerPath: week1/day2/exercises/css-challenge-selectors-ANSWER.html
   - title: CSS Class Selectors
-    path: week1/Day%202/exercises/css-class-selectors.html
+    path: week1/day2/exercises/css-class-selectors.html
   - title: CSS Multi-Class Selectors
-    path: week1/Day%202/exercises/css-multi-class-selectors.html
+    path: week1/day2/exercises/css-multi-class-selectors.html
   - title: CSS Box Model
-    path: week1/Day%203/exercises/css-box-model.html
+    path: week1/day3/exercises/css-box-model.html
   - title: CSS Width and Height
-    path: week1/Day%203/exercises/css-width-height.html
+    path: week1/day3/exercises/css-width-height.html
   - title: CSS Margin and Padding
-    path: week1/Day%203/exercises/css-margin-padding.html
+    path: week1/day3/exercises/css-margin-padding.html
   - title: CSS Margin and Padding Exercise
-    path: week1/Day%203/exercises/css-margin-padding-exercise.html
-    answerPath: week1/Day%203/exercises/css-margin-padding-exercise-ANSWER.html
+    path: week1/day3/exercises/css-margin-padding-exercise.html
+    answerPath: week1/day3/exercises/css-margin-padding-exercise-ANSWER.html
   - title: CSS Floats Example 1
-    path: week1/Day%203/exercises/css-floats1.html  
+    path: week1/day3/exercises/css-floats1.html  
   - title: CSS Floats Example 2
-    path: week1/Day%203/exercises/css-floats2.html    
+    path: week1/day3/exercises/css-floats2.html    
   - title: CSS Layout Exercise
-    path: week1/Day%203/exercises/css-layout-exercise.html
-    answerPath: week1/Day%203/exercises/css-layout-exercise-ANSWER.html
+    path: week1/day3/exercises/css-layout-exercise.html
+    answerPath: week1/day3/exercises/css-layout-exercise-ANSWER.html
   - title: DevTools Testing
-    path: week1/Day%204/exercises/devtools-testing.html
+    path: week1/day4/exercises/devtools-testing.html
   - title: HTML &amp; CSS Challenge 1
-    path: week1/Day%205/challenges/challenge_1.html
-    answerPath: week1/Day%205/challenges/challenges_answers.md
+    path: week1/day5/challenges/challenge_1.html
+    answerPath: week1/day5/challenges/challenges_answers.md
   - title: HTML &amp; CSS Challenge 2
-    path: week1/Day%205/challenges/challenge_2.html
-    answerPath: week1/Day%205/challenges/challenges_answers.md
+    path: week1/day5/challenges/challenge_2.html
+    answerPath: week1/day5/challenges/challenges_answers.md
 - name: UX and Design
   slug: ux
   directory: 2-Design 
@@ -62,13 +62,13 @@
   - title: JS Cheat Sheet
     path: javascript-cheat-sheet.html
   - title: Tic Tac Toe App Exercise
-    path: Week6/Day1/exercises/tic-tac-toe.html
-    answerPath: Week6/Day1/exercises/tic-tac-toe-answer.html
+    path: week6/day1/exercises/tic-tac-toe.html
+    answerPath: week6/day1/exercises/tic-tac-toe-answer.html
   - title: Sample AJAX Request and Response
-    path: Week6/Day2/exercises/ajax-response.html
+    path: week6/day2/exercises/ajax-response.html
   - title: AJAX Practice
-    path: Week6/Day2/exercises/ajax-practice.html
-    answerPath: Week6/Day2/exercises/ajax-practice-answer.html
+    path: week6/day2/exercises/ajax-practice.html
+    answerPath: week6/day2/exercises/ajax-practice-answer.html
 - name: WordPress
   slug: wp
   directory: 4-Wordpress

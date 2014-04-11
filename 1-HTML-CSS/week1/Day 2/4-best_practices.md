@@ -35,12 +35,12 @@ topic: html
 1. We use **CSS** to style the look and feel of our website
 1. We select elements from **html document** with CSS Selectors and then write **CSS Rules** to apply styles to them.
 1. CSS rules have a definition made up of 1 or many property and values
-	1. A selector can target all elements but just typing the element name:
-		> h {color:red; }
-		1. ![](http://wes.io/J3WP/diagrams.png)
-	1. We use **dots** to select elements with class names
-		.bigTitles { font-size: 100px; }
-	1. We use **hashes** to select elements with id names
+	1. A selector can target all elements but just typing the element name:  
+		![](http://wes.io/J3WP/diagrams.png)
+	1. We use **dots** to select elements with class names  
+		`.bigTitles { font-size: 100px; }`
+	1. We use **hashes** to select elements with id names  
+		`#nav { width: 100% }`
 	1. Why do we recommend not using ids? 
 		* <span class="hide">They can only be used once!</span>
 	1. How would I select a span with the class or warning?

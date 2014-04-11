@@ -1,23 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<title>CSS Floats</title>
-</head>
-	<body>
-		<h1>Totally Resizeable - Set all widths in %</h1>
-		<div class="wrapper clearfix">
-			<div class="half left">
-				<div class="third"></div>
-				<div class="third"></div>
-				<div class="third"></div>
-			</div>
-			<div class="half right">
-				<div class="third"></div>
-				<div class="third"></div>
-				<div class="third"></div>
-			</div>
-		</div>
-
+	<head>
+		<title>CSS Floats</title>
 		<style type="text/css">
 			body {
 				margin: 0; /* Just overriding the browser default to zero */
@@ -48,7 +32,6 @@
 			div {
 				min-height:100px; /* some default styling because the divs have no content */
 			}	
-
 			.wrapper {
 				border:2px solid black;
 				margin:20px auto;
@@ -57,7 +40,6 @@
 				padding:20px;
 				background:white;
 			}
-
 			.half {
 				background:#F5895F;
 				border:1px solid red;
@@ -66,22 +48,33 @@
 				width:48%;
 				padding:2%;
 			}
-
 			.left {
 				margin-right:2%;
 			}
 			.right {
 				margin-left:2%;
 			}
-
 			.third {
 				background:yellow;
 				float:left;
 				border:1px solid red;
 				width:33.3%;
 			}
-
-	
 		</style>
+	</head>
+	<body>
+		<h1>Totally Resizeable - Set all widths in %</h1>
+		<div class="wrapper clearfix">
+			<div class="half left">
+				<div class="third"></div>
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+			<div class="half right">
+				<div class="third"></div>
+				<div class="third"></div>
+				<div class="third"></div>
+			</div>
+		</div>
 	</body>
 </html>

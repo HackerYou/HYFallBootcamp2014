@@ -27,6 +27,7 @@ We've provided a lits of RESTful APIs that can be accessed publicly and have goo
 
 ##Bonus points for
 * accessing more than one API (eg. pull in a flickr photo that's tagged with a weather condition)
+* incorporating a jQuery plugin that enhances the UI (eg. isotope, flexslider, custom drop-down menu)
 
 
 

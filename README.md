@@ -2,7 +2,7 @@
 
 ###Notes and exercises for our Front-end Web Development Immersive course
 
-http://hackeryou-fulltime-notes.herokuapp.com/
+http://hackeryou.herokuapp.com/
 
 This course covers:
 

@@ -48,12 +48,59 @@
   - title: HTML &amp; CSS Challenge 2
     path: week1/day5/challenges/challenge_2.html
     answerPath: week1/day5/challenges/challenges_answers.md
+  - title: Border Radius Demo
+    path: week2/day1/exercises/border-radius.html
+  - title: In-Page Links
+    path: week2/day1/exercises/link-within.html
+  - title: HTML Challenge
+    path: week2/day1/exercises/html-challenge.html
+    answerPath: week2/day1/exercises/html-challenge-ANSWER.html 
+  - title: CSS Display Demo
+    path: week2/day1/exercises/display.html
+  - title: Position Relative Exercise
+    path: week2/day1/exercises/ex1-position-relative.html
+    answerPath: week2/day1/exercises/ex1-position-relative-ANSWER.html
+  - title: Position Absolute Exercise
+    path: week2/day1/exercises/ex2-position-absolute.html
+    answerPath: week2/day1/exercises/ex2-position-absolute-ANSWER.html
+  - title: Position Exercise
+    path: week2/day1/exercises/ex3-position.html
+    answerPath: week2/day1/exercises/ex3-position-ANSWER.html
+  - title: Position Relative Exercise 2
+    path: week2/day1/exercises/ex4-position-relative-border.html
+    answerPath: week2/day1/exercises/ex4-position-relative-border-ANSWER.html
+  - title: Floats Exercise
+    path: week2/day1/exercises/ex5-floats.html
+    answerPath: week2/day1/exercises/ex5-floats-ANSWER.html
+  - title: Floats Exercise 2
+    path: week2/day1/exercises/ex6-floats.html
+    answerPath: week2/day1/exercises/ex6-floats-ANSWER.html
+  - title: z-index Exercise
+    path: week2/day1/exercises/ex7-zindex.html
+    answerPath: week2/day1/exercises/ex7-zindex-ANSWER.html
+  - title: Position Fixed Exercise
+    path: week2/day1/exercises/ex8-position-fixed.html
+    answerPath: week2/day1/exercises/ex8-position-fixed-ANSWER.html
 - name: UX and Design
   slug: ux
   directory: 2-Design 
   exercises:
+  - title: Style Guide Starter HTML
+    path: day1/exercises/style-guide.html
+  - title: kalynnakano.com Design Details
+    path: day1/exercises/kalynnakano.com.zip
+    answerPath: day1/exercises/kalynnakano.com-answer.zip
 - name: Tools of the Trade
   slug: tools
+  exercises:
+  - title: border-box snippet
+    path: week2/day1/snippets/border-box.sublime-snippet
+  - title: clearfix snippet
+    path: week2/day1/snippets/clearfix.sublime-snippet
+  - title: normalize.css snippet
+    path: week2/day1/snippets/normalize.sublime-snippet 
+  - title: jQuery CDN snippet
+    path: week2/day1/snippets/jquerycdn.sublime-snippet  
   directory: 1-HTML-CSS
 - name: JavaScript & jQuery
   slug: js
@@ -61,17 +108,74 @@
   exercises:
   - title: JS Cheat Sheet
     path: javascript-cheat-sheet.html
+  - title: Arrays Practice
+    path: week5/day2/arrays.html
+    answerPath: week5/day2/arrays-ANSWER.html
+  - title: Try jQuery
+    path: week5/day3/try-jquery.html
+  - title: jQuery Events
+    path: week5/day3/jquery-events.html
+  - title: Array Loop 
+    path: week5/day3/exercises/array-loop.html
+    answerPath: week5/day3/exercises/array-loop-ANSWER.html
+  - title: Adding and Removing Classes 
+    path: week5/day3/exercises/add-remove-toggle-class.html
+    answerPath: week5/day3/exercises/add-remove-toggle-class-ANSWER.html
+  - title: Countdown Clock
+    path: week5/day3/exercises/countdown.html
+    answerPath: week5/day3/exercises/countdown-ANSWER.html  
+  - title: Adding and Removing Classes 
+    path: week5/day3/exercises/add-remove-toggle-class.html
+    answerPath: week5/day3/exercises/add-remove-toggle-class-ANSWER.html
+  - title: Random Colours 
+    path: week5/day3/exercises/randowm-colours.html
+    answerPath: week5/day3/exercises/randowm-colours-ANSWER.html
+  - title: jQuery Challenge 1 
+    path: week5/day3/exercises/challenge-1.html
+  - title: jQuery Challenge 2 
+    path: week5/day3/exercises/challenge-2.html
+  - title: To-do App Exercise
+    path: week5/to-do-app/to-do-app.html
+    answerPath: week5/to-do-app/to-do-app-answer.html
+  - title: To-do App Extras
+    path: week5/to-do-app/to-do-app-extras.html
+  - title: Degbugging JavaScript
+    path: week5/day4/exercises/debugging.html
+    answerPath: week5/day4/exercises/debugging-answer.html
   - title: Tic Tac Toe App Exercise
     path: week6/day1/exercises/tic-tac-toe.html
     answerPath: week6/day1/exercises/tic-tac-toe-answer.html
+  - title: First AJAX Request
+    path: week6/day2/exercises/first-ajax-request.html
+    answerPath: week6/day2/exercises/first-ajax-request-fixed.html
   - title: Sample AJAX Request and Response
     path: week6/day2/exercises/ajax-response.html
   - title: AJAX Practice
     path: week6/day2/exercises/ajax-practice.html
     answerPath: week6/day2/exercises/ajax-practice-answer.html
+  - title: Weather App Code Along
+    path: week6/day2/weather-app.zip
+    answerPath: week6/day2/weather-app-answer.zip
 - name: WordPress
   slug: wp
   directory: 4-Wordpress
+  exercises:
+  - title: HackerYou Starter Theme
+    path: assets/theme-hackeryou.zip
+  - title: ACF Repeater
+    path: assets/acf-repeater.zip
+  - title: ACF Flexible Content
+    path: assets/acf-flexible-content.zip
+  - title: ACF Gallery
+    path: assets/acf-gallery.zip
+  - title: ACF Options Page
+    path: assets/acf-options-page.zip
+  - title: Custom Theme Exercise
+    path: week7/day3/custom-theme-start.zip
+    answerPath: week7/day3/custom-theme-answer.zip
 - name: Freelancing
   slug: freelance
   directory: 5-freelancing
+  exercises:
+  - title: Sample Client Contract
+    path: contract/company-name-contract.pdf

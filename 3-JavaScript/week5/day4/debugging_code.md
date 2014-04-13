@@ -21,12 +21,14 @@ Complete level 4 of CodeSchool's free course "Discover Devtools" to learn the ab
 
 ## Exercises
 
-For these exercises make sure that the JavaScript console in chrome is open. Errors will be printed there.
+Open up [`debugging.html`](exercises/debugging.html) and make sure your console in chrome is open! Errors will be printed there.
 
-1. `bug1.html` has a simple JavaScript function. We pass it a name and it returns an object. Unfortunately we get `undefined` when we try to write the function's return value to the page. What is wrong?
-2. In `bug2.html` we're simply printing to the console a DOM object. Instead of the object we get an error message; what's wrong?
-3. The function in `bug3.html` is really simple, we just want to print our current physical location. Why isn't it working?
-4. The boolean logic in `bug4.html` doesn't seem to work. We want to print "D'oh!" only if the name is "Homer". Clearly the name is "Marge" so why isn't this program doing what we want?
-5. The output of `calculateSomething()` from `bug5.html` is undefined and then 12. You would think that the output would be 56 and then 12. This doesn't make any sense!! What's going on?
-6. In `bug6.html` I'm defining two functions at the bottom and calling them both at the top of the script. The `sayHello` function seems to work just fine but I get an error for `sayGoodbye`. Both are functions so why is this happening?
-7. We have a simple select element in `bug7.html`. When a T-shirt size is selected we check if it's the first one, if it is then we print out "Thanks for the ordering a small". This should work but it isn't. What's going on?
+1. The function in **bug 3** should log our current location. Why isn't it working?
+2. In **bug 2** we  want to print a DOM object to the console. Instead of the object we get an error message; what's wrong?
+3. **Bug 3** has a simple JavaScript function. We pass it a name and it returns an object. Unfortunately we get `undefined` when we try to write the function's return value to the page. What is wrong?
+4. The boolean logic in **bug4*** doesn't seem to work. We want to print "D'oh!" only if the name is "Homer". We set the name to be "Marge" so why is it still printing "D'oh!"?
+5. The output of `calculateSomething()` from **bug 5** is undefined and then 12. You would think that the output would be 56 and then 12. This doesn't make any sense!! What's going on?
+6. In **bug 6** we've defined two functions at the bottom and we call them both at the top of the script. The `sayHello` function seems to work just fine but we get an error for `sayGoodbye`. The code seems the same. What's going on here?
+7. We have a select element in **bug 7**, where the "small" option has been given value of 1. When the selection changes, we check to see if the selected value matches 1 for small, and alert "Thanks for ordering a small". This should work but it isn't. What's going on?
+
+The squashed bug version is [here](exercises/debugging-answer.html).

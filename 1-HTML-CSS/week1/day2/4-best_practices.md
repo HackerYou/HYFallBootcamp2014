@@ -1,10 +1,10 @@
 ---
 layout: notes
-title: HTML &amp; CSS Best Practices
+title: Formatting and Cross-Browser Testing
 topic: html
 ---
 
-# Week 1, Day 2 Best Practices
+# Formatting and Cross-Browser Testing
 
 ## Review
 

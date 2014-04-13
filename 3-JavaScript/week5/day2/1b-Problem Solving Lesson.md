@@ -1,3 +1,5 @@
+<!-- OMIT from table of contents -->
+
 # Solving problems
 
 Problems usually involve `input => procedure => output`. Imagine the input/values going into a black box. The box is like a function, unless we have the source code we don't actually know what its doing to the input. Then the box spits out the answer/output.

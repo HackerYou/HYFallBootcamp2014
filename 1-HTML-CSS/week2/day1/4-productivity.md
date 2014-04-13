@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: Sublime Productivity Tools
-topic: tool
+topic: tools
 ---
 
 # Productivity Tools

@@ -23,8 +23,8 @@
 	<h2>Weekly Projects</h2>
 	
 	{% for project in sorted_pages %}
-		{% if page.layout == 'project' %}
-			<p><a href="{{page.url}}">{{page.title}}</a></p>
+		{% if project.layout == 'project' %}
+			<p><a href="{{project.url}}">{{project.title}}</a></p>
 		{% endif %}
 	{% endfor %}
 </div>

@@ -69,7 +69,9 @@ You can view this in your browser or code editor by viewing [hello-world.html](e
 			<head>
 				All head info goes in here...
 			</head>
-		</html>	
+		</html>
+	
+					
 	* The **`<title>Title Tag</title>`** which is used to set the text in the browser's current tab:   
 	![Title Tag Image](http://wes.io/IGed/Screen%20Shot%202012-07-23%20at%203.46.33%20PM.png)
 	* __Links and Scripts__ to separate Stylesheets, web fonts or JavaScript Files

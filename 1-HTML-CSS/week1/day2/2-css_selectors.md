@@ -34,7 +34,7 @@ The downside to this is that you can only use those styles on that element and w
 
 ## Writing your own CSS Selectors!
 
-Once you get the hang of changing some existing CSS, its time to learn how to write our own CSS Selectors.
+Once you get the hang of changing some existing CSS, it's time to learn how to write our own CSS selectors.
 
 **Remember, selectors are used to specify which elements on the page have the style applied to it.**
 
@@ -82,7 +82,7 @@ CSS:
 	}
 
 **We get it!**   
-The selector for any element, is just that element without the open `<` and close `>`
+The selector for any element is just that element without the open `<` and close `>`
 
 `<strong>...</strong>` &rarr; `strong { ... }`
 
@@ -122,19 +122,22 @@ And then in our CSS, we can write a new selector. We use the `.` period to denot
 
 As a general rule of thumb, it's best to start writing your CSS using less specific selectors, and then get as specific as you need. In the first rule, the .special class has to be applied specifically to a `<p>` tag in order for the style to appear.  In the second example, the class can be applied to any element (p, div, a, etc). Decide how specific you need to be. 
 
-*\*\*\*Note: you may also sometimes see elements with an **ID** instead of a class such as `<p id="special">...</p>`. IDs are just like classes, but they can **only be used once** per page. As a best practice, we won't be using IDs in this class, however, if you run into them in the wild, simple substitute the `.` period for the `#` hash like so:*
+**Note**: you may also sometimes see elements with an **ID** instead of a class such as `<p id="special">...</p>`. IDs are just like classes, but they can **only be used once** per page. As a best practice, we won't be using IDs in this class, however, if you run into them in the wild, simple substitute the `.` period for the `#` hash like so:
 
 	/* Turns the only paragraph with the id of special yellow */
 	p#special {
 		background:yellow;
 	}
-Note that you can name your classes and ids anything you want but choose a specific functional name. It also cannot contains spaces. Use camel casing (myClassName), dashes (my-class-name) or underscores (my_class_name) to separate words. Pick one and be consistent.
+
+You can name your classes and ids anything you want but choose a specific, functional name that describes the what the style is being used for. 
+
+The name cannot contains spaces. Use camel casing (myClassName), dashes (my-class-name) or underscores (my_class_name) to separate words. Pick one and be consistent.
 
 #### Example & Small Exercise
 
-Open up `css-class-selector.html` in your files to see this live.
+Open up [css-class-selector.html](exercises/css-class-selector.html) in your files to see this live.
 
-1. Can you change all p tags to have `font-size` of `20px` ?
+1. Can you change all p tags to have `font-size` of `20px`?
 1. Can you add a new class and write a new CSS rule to turn the last one blue?
 1. Turn all paragraphs red using a class of **warning**.
 1. Can you write a single rule that targets both **special** and **warning** and change the font colour?
@@ -159,7 +162,7 @@ When we select one class, we use a leading period (`.`). To select multiple clas
 		background: lightblue;
 	}
 
-Open `css-multi-class-selector.html` to see this in action!
+Open [css-multi-class-selector.html](css-multi-class-selector.html) to see this in action!
 
 #### Multiple Selector Exercise
 
@@ -170,7 +173,7 @@ Open `css-multi-class-selector.html` to see this in action!
 Once you have had some time to work on them, We will review the questions and answer together.
 
 ### CSS Inheritance
-You may have noticed in our first CSS exercise `css-fun.html` that I applied a bunch of generic style to the `body` selector. Why is this?
+You may have noticed in our first CSS exercise [css-fun.html](../day1/exercises/css-fun.html) that I applied a bunch of generic style to the `body` selector. Why is this?
 
 Well, there are certain styles that get passed down from the parent to the children. If we want all text on the page to be `lightgrey`, then we only have to specify it once and it will be applied to all of its children.
 
@@ -311,13 +314,13 @@ In order to get amazing with CSS, you need selector chops! The only way to get g
 
 Since we aren't familiar with all of the available styles, I've included them for you, you just need to write the selectors.
 
-Open up `css-selector-exercises.html` in both your browser and editor and replace `____` with your own selectors. You'll need to study the markup for a bit before. If you get stuck feel free to reference the notes, ask a mentor, help eachother and reference sites you find on Google.
+Open up [css-selector-exercises.html](exercises/css-selector-exercises.html) in both your browser and editor and replace `____` with your own selectors. You'll need to study the markup for a bit before. If you get stuck feel free to reference the notes, ask a mentor, help eachother and reference sites you find on Google.
 
 There is also an answer key provided, open it in your browser to view what it should look like.
 
 ![Final Product](http://wes.io/J6Kh/Screen%20Shot%202012-08-29%20at%203.54.25%20PM.png)
 
-Once you've got a good handle on CSS selectors, open up [`css-challenge-selectors.html`](exercises/css-challenge-selectors.html) and see if you can write some complete CSS rules of your own. 
+Once you've got a good handle on CSS selectors, open up [css-challenge-selectors.html](exercises/css-challenge-selectors.html) and see if you can write some complete CSS rules of your own. 
 
 The full answers and a reference of what your version should be like is [here](exercises/css-challenge-selectors-ANSWER.html).
 

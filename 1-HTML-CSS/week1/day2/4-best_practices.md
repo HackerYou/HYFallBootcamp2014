@@ -45,6 +45,11 @@ topic: html
 		* <span class="hide">They can only be used once!</span>
 	1. How would I select a span with the class or warning?
 
+## Including CSS
+
+* What are the three ways of including CSS to style HTML elements?
+* What are the pros and cons of each approach?
+
 
 ## Firefox 3D View
 Let's look at css-fun.html in 3D view. This should help you get a better idea as to how and why we nest elements.

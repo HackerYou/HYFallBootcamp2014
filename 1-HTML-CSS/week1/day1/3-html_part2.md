@@ -342,4 +342,6 @@ Or entire rules all together while adding your own comments as to why its commen
 ## Exercise Time
 We are going to take a whole document of unformatted text and mark it up with HTML tags to it is an HTML document.
 
-Open up [markup-exercise.html](exercises/markup-exercise/markup-exercise.html) in your text editor and follow the comments through the entire document, marking them up as requested.
+Open up [markup-exercise.zip](exercises/markup-exercise.zip) in your text editor and follow the comments through the entire document, marking them up as requested.
+
+You can open up the [answer](exercises/markup-exercise-answer.zip) in your browswer to see how the completed exercise should look.

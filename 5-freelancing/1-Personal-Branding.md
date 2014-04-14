@@ -10,7 +10,7 @@ Learning how to run a business is an entirely different skillset than learning h
 
 Working for yourself can be a lot of work, but can provide many freedoms in terms of where, when and who you work with. 
 
-Freelancing notes will be slightly different than our coding notes as the topic of freelancing will be more of a back and forth discussion rather than a technical walk through. Take these notes are more high level ideas that will be expanded on as we discuss. 
+Freelancing notes will be slightly different than our coding notes as the topic of freelancing will be more of a back and forth discussion rather than a technical walk through. Take these notes are more high level ideas that will be expanded on as we discuss. Most of these freelancer sessions will be led by Wes Bos, but some will be led by others.
 
 
 # Personal Branding 
@@ -19,9 +19,9 @@ How others perceive you and your skills is one of the most important parts of be
 ## Fake it 'till you make it
 As a web developer, you want to be *perceived* as the best in x, y and z. Let's use WordPress for an example. Of course you want to be the best WordPress developer out there, but when you are just starting out, you won't be the best! 
 
-There is always going to be someone who is better at WordPress than you are. The key to still get work is to have other perceive you as someone who would be a good fit for the job. You want your name or company to be synonymous with the sort of projects you want to work on. 
+There is always going to be someone who is better at WordPress than you are. The key to still landing gigs is to have others perceive you as someone who would be a good fit for the job. You want your name or company to be synonymous with the sort of projects you want to work on. 
 
-In my case, I worked really hard create a personal brand so that people associated me with web development, more specifically WordPress, and later on JavaScript and HTML5. Whenever someone mentioned they needed someone to work on WordPress, I was the first person that would come to mind.
+In Wes's case, he worked really hard create a personal brand so that people associated me with web development, more specifically WordPress, and later on JavaScript and HTML5. Eventually, whenever someone mentioned they needed someone to work on WordPress, Wes was the first person that would come to mind. And still is.
 
 ## Personal Branding Skeeze
 
@@ -33,22 +33,22 @@ The personal branding space carries around skeeze. Much of the personal branding
 
 Personal branding isn't about business cards or a gimmicky fedora that you always wear. It's about creating a **rock solid and well rounded perception*** of yourself, your skills, your work ethic and your business.
 
-Heather will chat with each of you one on one, but here are some high level aspects to think about. 
+We're happy to chat with you one on one about your personal brands throughout the course, but here are some high level aspects to think about. 
 
 ## Pick a company name
 
 One question I get fairly often is whether to run your personal brand and company under your own name, under a company name or a mix of the two. All three of these are all fantastic and the decision ultimately comes down to how you see your personal brand unfolding in the future. 
 
-### My own personal brand 
-When I first got started, I spend hours and hours thinking of company names that might work well for me. I ran them past friends until someone asked me:
+### Wes's personal brand 
+When Wes first got started, he spent hours and hours thinking of company names that might work well for him. He ran them past friends until someone asked him:
 
 **"Why would you use a company name? You are _Wes Bos_"**. 
 
-Right then it hit me, I had years of _"Wes Bos, that website guy"_ behind me and it would be a shame to throw it away. I'm also lucky enough to have a fairly short, snappy and memorable name. 
+Right then it hit him, he had years of _"Wes Bos, that website guy"_ behind me and it would be a shame to throw it away. Wes is also lucky to have a fairly short, snappy and memorable name. 
 
-A few years later I transitioned my freelancing into a full blown company (albeit just my Wife and I), named BosType Inc. Even though I do business under the name **BosType**, I still put most of my effort into into my "Wes Bos" personal brand.
+A few years later Wes transitioned his freelancing business into a full blown company (albeit just his wife and him), named BosType Inc. Even though they do business under the name **BosType** (e.g. people write cheques to BosType, Inc.), Wes still puts most of his effort into into his "Wes Bos" personal brand.
 
-The reasoning behind this is that I made a decision that I wasn't getting into the web development word to grow a huge company, but rather to become an expert in certain areas. I wanted clients to pay me top dollar for my own expertise rather than a company that is good at xyz.
+The reasoning behind this is that Wes knew he wasn't getting into the web development word to grow a huge company, but rather to work for himself. He wants clients to pay me top dollar for my own expertise rather than a company that is good at xyz. He also doesn't have plans to hire other people, pay for an office space, etc.
 
 ### Examples
 Lea Verou <http://lea.verou.me/> — Speaker, Writer, Developer, Designer 

@@ -44,7 +44,7 @@ Writing CSS from scratch can be confusing if you are new to the game. The best w
 
 In coming classes, we will be learning a **ton** more about CSS, and what the values are, but for now we will be playing with some simple CSS properties and values.
 
-Go ahead and open up `css-fun.html` in both your browser and your text editor. Change around the css values and see what happens!
+Go ahead and open up [css-fun.html](exercises/css-fun.html) in both your browser and your text editor. Change around the css values and see what happens!
 
 ## Adding your own markup (Exercise 3)
-To get a handle on how to add your own markup, take a few paragraphs and and images that you either write or pull off a website and try and code them into `css-fun.html` after the last paragraph. Add an h3 heading above the text and inset the image. You should use the proper HTML tags to insert the content. Good luck and be sure to ask questions as you go along.
+To get a handle on how to add your own markup, take a few paragraphs and and images that you either write or pull off a website and try and code them into [css-fun.html](exercises/css-fun.html) after the last paragraph. Add an h3 heading above the text and inset the image. You should use the proper HTML tags to insert the content. Good luck and be sure to ask questions as you go along.

@@ -145,7 +145,7 @@ Links take an *attribute* of `href` which tells the link where to link do. Here 
 	
 	<!-- Links to other sites -->
 	<a href="http://google.com">Google.com</a>
-	<a href="http://hackeryou.com">Visit the hckerYou site!</a>
+	<a href="http://hackeryou.com">Visit the HackerYou site!</a>
 	<!-- Links within our website -->
 	<a href="about.html">Visit my about page</a>
 	<!--linking a nested image to another page -->
@@ -342,4 +342,4 @@ Or entire rules all together while adding your own comments as to why its commen
 ## Exercise Time
 We are going to take a whole document of unformatted text and mark it up with HTML tags to it is an HTML document.
 
-Open up `markup-exercise.html` in your text editor and follow the comments through the entire document, marking them up as requested.
+Open up [markup-exercise.html](exercises/markup-exercise/markup-exercise.html) in your text editor and follow the comments through the entire document, marking them up as requested.

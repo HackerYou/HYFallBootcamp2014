@@ -3,71 +3,97 @@ layout: project
 title: Week 1 Project - One Page Website
 ---
 
-# Week 1 Project - Create a single page website!
+# Week 1 Project - Create a single page website
 
-There is a major project every week. For this week you will build a single page website from scratch (a personal site if you don’t have one already). This project is meant to call upon everything we have done so far.
 
-If you already have a personal website then you may choose to do your website on anything you wish. Here are some ideas:
+For this week's project, you will build a single page website. The purpose of this project is to apply the concepts and techniques covered this week.
 
-* Try and recreate an existing website. A student last year replicated the hackeryou website.
-* Site for a your own or a friends business
-* Small site for a local charity
+Create a personal site. If you already have one, here are some other suggestions: 
 
-The layout is also 100% up to you, provided you include most/all of the below requirements. If you need some inspiration for the this project's layout, considering crafting the below layout or visiting these websites for ideas:
+* recreate an existing website
+* create a site for a friend's business
+* create a site for a local charity
 
-* [http://www.designfridge.co.uk/](http://www.designfridge.co.uk/)
-* [http://cssremix.com/](http://cssremix.com/)
-* [http://www.cssmania.com/](http://www.cssmania.com/)
+##Project requirements
 
-![](http://wes.io/KLYI/projectWireframe.png)
+1. use an external `.css` file
+2. use box-sizing:border-box;
+3. floats and proper use of clearfix
+4. header div & footer div
+5. three additional divs of content (ex. intro, about, sidebar for social networks links)
+6. use percentages for sizing of the main divs - (header, general info, content, sidebar in the example below).
 
-## You must have at least the following:
-1. When sizing the main divs - (header, general info, content, sidebar and footer in my example) - use percentages.
-1. 1 `.html` page
-1. 1 external `.css` file
-1. box-sizing:border-box;
-1. Clearfix
-1. header div
-1. footer div
-1. Three divs that hold content (content and sidebar are two examples we have used so far)
+Here are a list of approved designs. If you do not want to use one of the designs listed below, please see an instructor to approve your design.
 
-## Bonus points for things we haven't covered yet
+<ul>
+	<li>telephasic (<a href="http://html5up.net/uploads/demos/telephasic/left-sidebar.html">preview</a>)</li>
+	<li>webworld (<a href="http://w3layouts.com/preview/?l=/webworld-corporate-flat-responsive-web-template">preview</a>)</li>
+	<li>organic corporate (<a href="http://w3layouts.com/preview/?l=/organic-corporate-responsive-mobile-website-template">preview</a>)</li>
+	<li>golden gate (<a href="http://w3layouts.com/preview/?l=/golden-gate-a-sleek-responsive-mobile-website-template">preview</a>)</li>
+	<li>fore (<a href="http://eatapapaya.com/Fore/fore.html">preview</a>)</li>
+	<li>socialike (<a href="http://elemisdesign.com/demos/socialike-html/">preview</a>)</li>
+	<li>tessellate (<a href="http://html5up.net/tessellate/">preview</a>)</li>
+	<li>zeni (<a href="http://luiszuno.com/themes/zeni/">preview</a>)</li>
+	<li>goodnatured (<a href="http://www.freecsstemplates.org/preview/goodnatured/">preview</a>)</li>
+	<li>untamed (<a href="http://www.freecsstemplates.org/preview/untamed/">preview</a>)</li>
+	<li>serendipity (<a href="http://elemisdesign.com/demos/serendipity-html/">preview</a>)</li>
+	<li>veridical (<a href="http://www.freecsstemplates.org/preview/veridical/">preview</a>)</li>
+	<li>sweetcourse (<a href="http://www.freecsstemplates.org/preview/sweetcourse/">preview</a>)</li>
+	<li>strongly typed (<a href="http://html5up.net/uploads/demos/strongly-typed/">preview</a>)</li>
+	<li>clearcut (<a href="http://www.freecsstemplates.org/preview/clearcut/">preview</a>)</li>
+	<li>two colours (<a href="http://www.freecsstemplates.org/preview/twocolours/">preview</a>)</li>
+	<li>justifiable (<a href="http://www.freecsstemplates.org/preview/justifiable/">preview</a>)</li>
+	<li>dopetrope (<a href="http://html5up.net/uploads/demos/dopetrope/">preview</a>)</li>
+	<li>nina (<a href="http://nina.ries.cz/">preview</a>)</li>
+	<li>liquid gem (<a href="http://demo.html5xcss3.com/demo.php?cat=html5themes&amp;host=birondesign&amp;temp=liquidgem">preview</a>)</li>
+	<li>deadstocker (<a href="http://www.code-pal.com/deadstocker-fashion-template/">preview</a>)</li>
+	<li>legend (<a href="http://www.dzyngiri.com/legend-free-responsive-one-page-template/">preview</a>)</li>
+	<li>txt (<a href="http://html5up.net/uploads/demos/txt/">preview</a>)</li>
+	<li>escape velocity (<a href="http://html5up.net/uploads/demos/escape-velocity/">preview</a>)</li>
+</ul>
 
-#### When finished
+**Bonus points for exploring topics we haven't covered yet!**
 
-When you are done, zip the folder up and upload to Basecamp. I will review your code and make notes on your projects. Please submit by the following Monday, however earlier is definitely encouraged.
+## Getting Started
+1. Create a folder for your project called `week1project`.
+2. Inside the folder:
+	* create an **index.html**
+	* create an **images** folder to store all image assets
+3. Create a base HTML structure.
+4. Create your **style.css** file & link it to **index.html**
+5. Write all your HTML content markup first, add classes & divs as necessary.
+6. Write your CSS rules, saving and viewing in the browser as you go.
 
-You will not be graded, I simply want to have a look at how everyone is coding and see what areas we are doing well at and what areas we need some more practice in.
-
-There are no template files to start with, but you can visit past notes or projects to pull code from. If you need some guidance on where to start, this is how I would start the project:
-
-#### Help getting Started
-1. Create a new folder your project called `week1project`.
-1. Inside that folder create index.html and a folder called `images` to store all image assets
-1. Create a base HTML structure from the cheat sheet or an existing project
-1. Create our `style.css` file in the same folder as `index.html`
-1. Link the CSS from `index.html` with `<link rel="stylesheet" type="text/css" href="style.css">` in the HEAD
-1. Write all your markup, adding classes where you think necessary
-1. Write your CSS rules, saving and viewing in the browser as you go
-
-##### Here is my base HTML if you need some help:
+##### Here is the base HTML to get you started:
 
 	<!DOCTYPE HTML>
 	<html>
-	<head>
-		<title>My First Project</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+		<head>
+			<title>My First Project</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+		</head>
 		<body>
 			<p>get going!</p>
 		</body>
 	</html>
 
-##### And then in my style.css file:
-<small>Remember: becase we have a seperate style.css file, we **do not need** the `<style>` tags</small>
+##### Base CSS to add to style.css:
+<small>**Remember**, external CSS files **do not need** the `<style>` tags.</small>
 
-	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	* { -moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box; 
+	}
 
 	body {
 		/* start body styles here */
 	}
+	
+	
+##Submit your project
+
+Zip the main project folder and upload it to Basecamp. Please submit by the **following Monday**, at the latest.  Submissions before Monday will also be accepted.
+
+You projects will not be graded though the code will be reviewed. Submitting your project will allow for individualized feedback as well as help identify areas that require more practice or areas of proficiency.
+
+

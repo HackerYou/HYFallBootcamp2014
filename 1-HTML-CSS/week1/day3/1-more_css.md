@@ -7,33 +7,49 @@ topic: html
 # Units, Box Model, and Floats
 
 ## Starting the Styling!
-Now that we have a good handle on selectors, we can get to work on writing the styles (or **properties** and **values** as we call them) for those selected elements.
+Now that we have a good handle on selectors, we can get to work on writing the styles (or **properties** and **values**) for the selected elements.
 
 ![Diagram](http://wes.io/J3WP/diagrams.png)
 
-I'm sure you have already picked up on a few, or even know a few from previous experience. `color` sets the font colour, `font-size` sets the font size. You may have even picked up on a few such as `width` and `height`.
+I'm sure you have already picked up on a few, or even know a few from previous experience such as `width` and `height`. There are other properties such as `color` which sets the font colour and `font-size` sets the font size.
 
-Let's start off by saying that there are hundreds of possible properties and each of those have at least a handful of possible values. You'll get the hang of them as you go, but there is absolutely nothing wrong with googling for them. In fact I still do it daily and it's encouraged!
+There are lots and lots of different types of CSS properties for creating various styles such as colours, backgrounds, typography and page layouts. So it's pretty much near impossible to memorize them all. It's good to have some resources or a cheat sheet bookmarked or printed nearby to reference.  Here's a few to get you started:
+
+* [SitePoint: CSS Properties](http://reference.sitepoint.com/css/propertyref)
+* [28 Handy CSS Cheat Sheets](http://www.1stwebdesigner.com/freebies/css-cheat-sheets-designers/)
+* [dochub.io](http://dochub.io/#css/)
+
+You'll get the hang of them as you go, but feel free to with google them. It's encouraged!
 
 ### Measurement Units
-A large part of CSS is declaring what the size of something will be. It may be the width of a div, the amount of padding or the size of a font. There are a number of ways to declare sizes on the web - and no there are no CMs or inches on the web.
+A large part of CSS is declaring what the size of something will be. It may be the width of a div, the amount of padding or the size of a font. There are a number of ways to declare sizes on the web.
 
-1. **px -  pixels** are probably the most popular way to size widths, heights and fonts on the web. It's the easiest one to understand because our monitors are measured in pixels. Font sizes from photoshop also line up exactly with pixel sizes. As a general rule of thumb, a website (that isn't responsive) should never be wider than 1000 pixels so it can fit on every type of monitor.
+####px - Pixels
+Pixels are probably the most popular way to size widths, heights and fonts on the web. It's the easiest to understand because our monitors are measured in pixels. Font sizes from Photoshop also line up exactly with pixel sizes. As a general rule of thumb, a website (that isn't responsive) shouldn't be wider than 1000 pixels so it can fit on every type of monitor.
 
-2. **% - Percentages** - Another popular way to size up your fonts and elements is by using percentages of an element's parent. You can imagine how this works. A wrapper div with 100% width and two children - sidebar of 25% and the main content of 75%. This also works for fonts. If the parent has a font size of 20px, a 50% font size would be 10px.
+####% - Percentages
+Another popular way to size up your fonts and elements is by using percentages of an element's parent. 
 
-	Percentages will be really helpful when we get into responsive design.
+For example, a wrapper div with 100% width can contain two children; sidebar of 25% and the main content of 75%. This also works for fonts. If the parent has a font size of 20px, a 50% font size would be 10px.
 
-3. **em - Ems** - Almost identical to the percentage approach of having scalable units. We set a base font size on the body and then all text on the page is based off of that *or* relative to its closest ancestor's font size. Because of this, sizing fonts with `ems` is a bit of a tricky subject to wrap your head around so for simplicity's sake we will be sticking with px and percentages.
+**Percentages will be really helpful when we get into responsive design.**
 
-4. **rem - Rem** - Introduced in CSS3 so it's not supported by older browsers. Similar to ems as it stands for "root em." This unit is also relative but only to the root, the `html` element. The base font size is defined in the `html` tag and all rem units will be relative to only that. (More on ems and rems [here](http://snook.ca/archives/html_and_css/font-size-with-rem).)
+####em - Ems
+Similar to the percentage approach because these units are also scalable. We set a base font size on the body and then all text on the page is based off of that *or* relative to its closest *ancestor's* font size. Because of this, sizing fonts with `ems` is a bit of a tricky subject to wrap your head around so for simplicity's sake we will be sticking with px and percentages.
 
-5. **keywords** - sometimes we will be able to supply keywords for sizes of elements and fonts. You will see the keywords **auto** and **inherit** most often. Auto allows an element to automatically size itself based on both its surroundings and content and inherit allows an element to inherit the style from its parent. We will talk about this more in future exercises.
+####rem - Rem
+Introduced in CSS3 so it's not supported by older browsers. Similar to `ems` and stands for "root em." This unit is also relative but only to the **root**, which is the `html` element. The base font size is defined in the `html` tag and all `rem` units will be relative to **only** the `html` element. 
 
-6. **cm, in, ex, pt, pc** - I thought I said there were no cms or inches in the web? Well there are are few other measurements that are meant primarily for printing documents. To be honest I've never used any of these measurements and you probably will never have to either.
+More on [ems and rems here](http://snook.ca/archives/html_and_css/font-size-with-rem).
 
-### Widths and Heights
-Let us start things off easy and work a little with `width` and `height`. Lets make a quick document with four divs (**see css-width-height.html** for the answer, but let's code ours from the ground up.):
+####keywords
+Sometimes we can use keywords for sizes of elements and fonts. You will see the keywords **auto** and **inherit** most often. **Auto** allows an element to automatically size itself based on both its surroundings and content. **Inherit** allows an element to inherit the style from its parent. We will talk about this more in future exercises.
+
+####cm, in, ex, pt, pc
+There are a few other measurements that are meant primarily for **printing** documents. These elements are rarely used for styling the web and a usually avoided.
+
+### Width and Height
+Let start things off easy and work with `width` and `height`. Let's make a quick document with four divs (see <a href="exercises/css-width-height.html" class="exercise">css-width-height.html</a> for the answer, but let's code ours from the ground up.):
 
 	<div class="box1"></div>
 	<div class="box2"></div>
@@ -42,33 +58,33 @@ Let us start things off easy and work a little with `width` and `height`. Lets m
 
 And then a little CSS so we can tell each box apart:
 
-	<style type="text/css">
-		.box1 {
-			background:red;
-		}
-		.box2 {
-			background:blue;
-		}
-		.box3 {
-			background:green;
-		}
-		.box4 {
-			background:orange;
-		}
-	</style>
+    <style type="text/css">
+        .box1 {
+            background:red;
+        }
+        .box2 {
+            background:blue;
+        }
+        .box3 {
+            background:green;
+        }
+        .box4 {
+            background:orange;
+        }
+    </style>
 
-So what does that look like so far? Nothing! Because there is no content, no width and no height in our boxes, they aren't taking up any room. We can fix that by adding some content to each box:
+So what does this look like so far? Nothing! Because there is no content, there is no width and no height in our boxes. They aren't taking up any room. We can change that by adding some content to each box:
 
 	<div class="box1">Box #1</div>
 	<div class="box2">Box #2</div>
 	<div class="box3">Box #3</div>
 	<div class="box4">Box #4</div>
 
-<small>Note: in a normal document you should never put text inside a div without first wrapping it in a tag (such as `<p>`p tags`</p>`</small>) but we are leaving them out for simplicity :)
+**Note:** in a normal document you should never put text inside a div without first wrapping it in a tag (such as `<p>`p tags`</p>`) but we are leaving them out for simplicity :)
 
 #### Auto Width
 
-Now we have something that looks like the screen below. You'll notice that they extend the **entire width** of the browser while the text is only a few characters long. Why? This is because **divs are block elements and have a width of auto** by default!
+Now we have something that looks like the screenshot below. You'll notice that they extend the **entire width** of the browser while the text is only a few characters long. Why? This is because **divs are block elements and have a width of auto** by default!
 
 ![](http://wes.io/JGZb/Screen%20Shot%202012-09-06%20at%2011.37.53%20AM.png)
 
@@ -76,34 +92,34 @@ Now we have something that looks like the screen below. You'll notice that they 
 
 Lets try a few different ways of specifying width and height:
 
-	<style type="text/css">
-		.box1 {
-			background:red;
-			width: 200px;
-			height:200px;
-		}
-		.box2 {
-			background:blue;
-			width:100%;
-			height:90px;
-		}
-		.box3 {
-			background:green;
-			width:2000px;
-			height:150px;
-		}
-		.box4 {
-			background:orange;
-			width:500px;
-			height:100%;
-		}
-	</style>
+    <style type="text/css">
+        .box1 {
+            background:red;
+            width: 200px;
+            height:200px;
+        }
+        .box2 {
+            background:blue;
+            width:100%;
+            height:90px;
+        }
+        .box3 {
+            background:green;
+            width:2000px;
+            height:150px;
+        }
+        .box4 {
+            background:orange;
+            width:500px;
+            height:100%;
+        }
+    </style>
 
 Produces the following:
 
 ![](http://wes.io/JGk7/Screen%20Shot%202012-09-06%20at%2011.46.52%20AM.png)
 
-1. Box 1 is 200px by 200px - makes sense..
+1. Box 1 is 200px by 200px - makes sense, right?
 2. Box 2 is spanning 100% of the browser and 90px high - good!
 3. Box 3 is 150px high and 2000px wide - much wider than my screen so we have to scroll right to see the entire box.
 4. Box 4 is 500px wide - good - and 100% height - **Woah, hold on**. Why isn't box 4 taking up the rest of the room in the browser?
@@ -122,7 +138,7 @@ These two properties do what you might think - provide space between elements on
 The only difference between the two is that margin adds space on the **outside** of an element while padding adding space on the **inside** of the element. It can be tough to remember which one does what so a stupid little trick I used was saying "**Padding** protects your **insides**".
 
 #### Giving it a shot
-Let's give it a shot with some real markup. Start off with three basic divs: (See file **css-margin-padding.html**)
+Let's give it a shot with some real markup. Start off with three basic divs: (See file <a href="exercises/css-margin-padding.html" class="exercise">css-margin-padding.html</a>.
 
 	<div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
 	<div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
@@ -130,17 +146,17 @@ Let's give it a shot with some real markup. Start off with three basic divs: (Se
 
 And some styling similar to the last one:
 
-	<style type="text/css">
-		.box1 {
-			background:red;
-		}
-		.box2 {
-			background:blue;
-		}
-		.box3 {
-			background:green;
-		}
-	</style>
+    <style type="text/css">
+        .box1 {
+            background:red;
+        }
+        .box2 {
+            background:blue;
+        }
+        .box3 {
+            background:green;
+        }
+    </style>
 
 No big surprises here:
 
@@ -150,21 +166,21 @@ No big surprises here:
 Go ahead and add some margin to box1, padding to box2 and both to box3:
 
 
-	<style type="text/css">
-		.box1 {
-			background:red;
-			margin:20px;
-		}
-		.box2 {
-			background:blue;
-			padding:20px;
-		}
-		.box3 {
-			background:green;
-			padding:20px;
-			margin:20px;
-		}
-	</style>
+    <style type="text/css">
+        .box1 {
+            background:red;
+            margin:20px;
+        }
+        .box2 {
+            background:blue;
+            padding:20px;
+        }
+        .box3 {
+            background:green;
+            padding:20px;
+            margin:20px;
+        }
+    </style>
 
 ![](http://wes.io/JHf6/Screen%20Shot%202012-09-06%20at%202.10.52%20PM.png)
 
@@ -176,59 +192,59 @@ Go ahead and add some margin to box1, padding to box2 and both to box3:
 
 In the last examples, we supplied a single value of 20px. What if we want to add margin/padding just to a single side? We can just append `-[side]` to the property.
 
-	.box1 {
-		/* Specific margin values */
-		margin-top: 10px;
-		margin-right: 5%;
-		margin-bottom:10px;
-		margin-left: 25px;
-		/* Same goes for padding */
-		padding-top:10px;
-		padding-right:20px;
-		padding-bottom:25px;
-		padding-left:5%;
-	}
+    .box1 {
+        /* Specific margin values */
+        margin-top: 10px;
+        margin-right: 5%;
+        margin-bottom:10px;
+        margin-left: 25px;
+        
+        /* Same goes for padding */
+        padding-top:10px;
+        padding-right:20px;
+        padding-bottom:25px;
+        padding-left:5%;
+    }
 
 ### Exercise
 
 Its time to get comfortable with margin, padding and widths of elements as well as brush up on our selector writing.
 
-Open `css-margin-padding-exercise.html` in your code editor and browser. You will find a set of instructions.
+Open <a href="exercises/css-margin-padding-exercise.html" class="exercise">css-margin-padding-exercise.html</a> in your code editor and browser. You will find a set of instructions.
 
-Open `css-margin-padding-exercise-ANSWER.html` in your browser to see what you are working towards.
+Open <a href="exercises/css-margin-padding-exercise-ANSWER.html" class="exercise">css-margin-padding-exercise-ANSWER.html</a> in your browser to see what you are working towards.
 
 
 #### Thats too much typing! - CSS Shorthand
 
 8 lines just for padding and margin? Seems like a lot of typing! Luckily we have something call **CSS shorthand** for specify padding and margin values (among other properties which we will learn about later). We can just supply the four values with spaces inbetween:
 
-	.box1 {
-		margin: 10px 5% 10px 25px;
-		padding: 10px 20px 25px 5%;
-	}
+    .box1 {
+        margin: 10px 5% 10px 25px;
+        padding: 10px 20px 25px 5%;
+    }
 
 **The order** of the above is **top, right, bottom, left**. You can remember it easily because its the same direction as a compass or a clock. I prefer to remember **TROUBLE** or **TRBL** (top right bottom left). Stupid, I know, but it works!
 
 You may also set the **top and bottom** and **right and left** at the same time with the two number syntax:
 
-	.box1 {
-		margin:10px 20px; /* renders the same as 10px 20px 10px 20px */
-	}
+    .box1 {
+        margin:10px 20px; /* renders the same as 10px 20px 10px 20px */
+    }
 
 Occasionally you will see three numbers which sets **left and right** with a single value. This is confusing and doesn't save much typing, I recommend against it.
 
-	.box1 {
-		margin:10px 20px 50px; /* renders the same as 10px 20px 50px 20px */
-	}
-
+    .box1 {
+        margin:10px 20px 50px; /* renders the same as 10px 20px 50px 20px */
+    }
 
 #### Centering elements with margins
 
 Often we will want to center our website on a page. Since CSS doesnt have a center property for elements, we just use **auto margins** on the left and right to do this.
 
-	.wrapper {
-		margin:0 auto;
-	}
+    .wrapper {
+        margin:0 auto;
+    }
 
 This will set the `top` and `bottom` margins to zero (you could set it to anything you want) and then the `left` and `right` to auto, which centers the element within the browser.
 
@@ -236,11 +252,11 @@ This will set the `top` and `bottom` margins to zero (you could set it to anythi
 
 Borders work very much the same way padding and margin do except that we have three properties instead of one.
 
-	.box1 {
-		border-width:10px;
-		border-color:red;
-		border-style:solid;
-	}
+    .box1 {
+        border-width:10px;
+        border-color:red;
+        border-style:solid;
+    }
 
 Width and color are pretty self explanatory. The **border style** allows you to set various styles of borders:
 
@@ -255,53 +271,59 @@ Width and color are pretty self explanatory. The **border style** allows you to 
 #### Targeting Single Sides
 Just like padding and margin, we can target single sides, just add the side like so:
 
-	.box1 {
-		border-[side]-width:10px;
-		border-[side]-color:10px;
-		border-[side]-style:10px;
-	}
+    .box1 {
+        border-[side]-width:10px;
+        border-[side]-color:10px;
+        border-[side]-style:10px;
+    }
 
 #### Common Shorthand
 Chances are you won't be using the above code too much as you usually want the border to be the same `size`, `style` and `color` all the way around your element. If this is the case, we can use the commonly used border property and feed it each item separated by a space:
 
-	.box1 {
-		border:3px dotted red; /* [width] [style] [color] Much more sane */
-	}
+    .box1 {
+        border:3px dotted red; /* [width] [style] [color] Much more sane */
+    }
 
 #### Exercise
 
-Take a few minutes with `css-margin-padding-exercise.html` again and try and change the layout to:
+Take a few minutes with <a href="exercises/css-margin-padding-exercise.html" class="exercise">css-margin-padding-exercise.html</a> again and try and change the layout to:
 
 1. Add borders to at least three elements
 1. Make the wrapper have a different border for each side
 1. Center the `.moreinfo` div properly
-1. Play around with margin and padding shorthand to make things look nicer
+1. Play around with margin and padding. Try using shorthand.
 
 ### The Box Model
 
-Sweet, now that we are equipped with width, height, padding, margin and borders, its important to learn about the **box model**. (See **`css-box-model.html`**);
+Sweet, now that we are equipped with width, height, padding, margin and borders, it's important to learn about the **box model**. (See **[css-box-model.html](exercises/css-box-model.html download)**);
 
-Lets start off with a simple 150px x 150px box:
+Lets start off with a simple 150px by 150px box (set with `width` and `height`):
 
-<div style="width:150px;height:150px; background:#D12026;">I'm a 150px150px box!</div>
+<div style="width:150px;height:150px; background:#D12026;">I'm a 150px by 150px box!</div>
 
-Now let's add some padding so that text isn't all squished.
+Now let's add some padding so the text isn't all squished to the edge of the box.
 
-<div style="width:150px;height:150px; background:#D12026;padding:20px;">I'm a 150px150px box with 20px of padding!</div>
+<div style="width:150px;height:150px; background:#D12026;padding:20px;">I'm a 150px by 150px box with 20px of padding!</div>
 
-Finally add a border:
+Finally, add a border:
 
-<div style="width:150px;height:150px; background:#D12026;padding:20px; border:10px solid black;">I'm a 150px150px box with 20px of padding and a 10px black border!</div>
+<div style="width:150px;height:150px; background:#D12026;padding:20px; border:10px solid black;">I'm a 150px by 150px box with 20px of padding and a 10px black border!</div>
 
 Notice anything weird? The boxes grow as we add **padding** and **border**. Suddenly our 150px box isn't 150px anymore!
 
-Shouldn't the padding and border take away from the 150 pixels? This is another CSS Quirk that is quite an annoyance in web development. The **CSS box model** by default works in such a way that if we want the final element to be 150px, we have to take into consideration that padding and borders add their values on top of that.
+If the width and height of the box is set to 150px, why does the box get bigger? Why doesn't the padding and border take away from the 150 pixels? This is another CSS quirk that is quite an annoyance in web development. By default, `padding` and `border` changes the element's total size and `margin` adds to how much space the element is taking up. This interaction is referred to as **The Box Model**.
 
-#### New techniques with CSS3 - border-box
 
-Lucky for us, CSS3 has brought us relief from this. If your project is going to be supported only on Internet Explorer 8 and up (and I recommend this), then we can use box-sizing:border-box;
+#### New techniques with CSS3 - `border-box`
 
-By specifying `* { box-sizing: border-box }` at the top of our CSS, we tell all elements (hence the wildcard * selector) to take **padding** and **border** away from the set width and height. Go ahead and uncomment the selector in `css-box-model.html` to see how it works.
+Lucky for us, CSS3 has brought us relief from this. If your project is only going to support Internet Explorer 8 and up, then we can use the `box-sizing` property like so: 
+
+    * {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+By specifying this rule at the top of our CSS, we tell **all** elements (using the wildcard `*` selector) to take **padding** and **border** away from the set width and height. Go ahead and uncomment the selector in <a href="exercise/css-box-model.html" class="exercise">css-box-model.html</a> to see how it works.
 
 <small>**Note:** This is fairly new in the web development world, so chances are most projects you run into in the wild will be using the **old** box model. Its helpful to know both.</small>
 
@@ -318,8 +340,7 @@ By specifying `* { box-sizing: border-box }` at the top of our CSS, we tell all 
 
 Floats are a really important part of CSS that help you align your elements to either the right or the left.
 
-So far all of our exercises have had elements stacked vertically, what if we want them to be side by side? What if we want text to wrap around an image? Let's look at a few example to wrap our heads around floats. **open up `css-floats1.html` in your editor and browser.**
-
+So far all of our exercises have had elements stacked vertically, what if we want them to be side by side? What if we want text to wrap around an image? Let's look at a few example to wrap our heads around floats. Open up <a href="exercises/css-floats1.html" class="exercise">css-floats1.html</a> in your editor and browser.
 
 We have a document with a bunch of text, two pictures and a little styling. Whats the deal with the text not wrapping around the pictures of the puppies?
 
@@ -328,21 +349,21 @@ We have a document with a bunch of text, two pictures and a little styling. What
 ### Floating Images
 This is where floats come in. If we float an image to the right, the text will wrap around its self (and vice versa). Write a selector for the first dog image and float it left. We will also add some margin so the text isn't squished right up against the picture.
 
-	img.dog1 {
-		float:left;
-		margin-right:20px;
-	}
-
+    img.dog1 {
+        float:left;
+        margin-right:20px;
+    }
+    
 Go ahead and write the CSS to float the other one right. The end result should look like this:
 
 ![](http://wes.io/JGvc/Screen%20Shot%202012-09-06%20at%204.51.21%20PM.png)
 
-**Note: If you take a look at the exercise we did last class with `css-selector-exercises.html` you'll see that I'm using multiple image floats so the team pictures all line up beside each other**
+**Note: If you take a look at the exercise we did last class with <a href="../day2/exercises/css-selector-exercises.html" class="exercise">css-selector-exercises.html</a> you'll see that I'm using multiple image floats so the team pictures all line up beside each other**
 
 ### Floating other elements in a layout
 Let's take a look at a basic HTML layout and see how floats make it happen.
 
-Open up `css-floats2.html` and we will take a look at the markup
+Open up <a href="exercises/css-floats2.html" class="exercise">css-floats2.html</a> and we will take a look at the markup
 
 We have Four main divs: header,content, sidebar and footer. We want to make them look like a normal website.
 
@@ -350,17 +371,17 @@ We want the content and sidebar divs to be side by side, so their widths togethe
 
 So naturally, we would use CSS to make content 75% and the sidebar 25%:
 
-	.content {
-		float:left;
-		background:red;
-		width:75%;
-	}
+    .content {
+        float:left;
+        background:red;
+        width:75%;
+    }
 
-	.sidebar {
-		background:green;
-		width:25%;
-		float:left;
-	}
+    .sidebar {
+        background:green;
+        width:25%;
+        float:left;
+    }
 
 **Problems?** What do you spot right away?
 
@@ -380,9 +401,9 @@ There are two fixes for this:
 
 **hide overflow** - this is a cheat but a quick fix. If you tell the element to hide its overflows, it automatically smartens up.
 
-	.wrapper {
-		overflow:hidden;
-	}
+    .wrapper {
+        overflow:hidden;
+    }
 
 This works great but the downside is that you often don't want to hide the overflow of something because you want to overlap or extend elements outside the wrapper.
 
@@ -391,16 +412,16 @@ The better alternative is to apply something called a clearfix, which is a CSS h
 
 The clearfix CSS looks like this:
 
-	.clearfix:after {
-		visibility: hidden;
-		display: block;
-		font-size: 0;
-		content: " ";
-		clear: both;
-		height: 0;
-		}
-	* html .clearfix             { zoom: 1; } /* IE6 */
-	*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+        }
+    * html .clearfix             { zoom: 1; } /* IE6 */
+    *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 And you should add it to every project you do.
 
@@ -416,14 +437,14 @@ We solve this with clearing the footer. This means that we tell the footer to cl
 
 Simple css:
 
-	.footer {
-		clear:both;
-	}
+    .footer {
+        clear:both;
+    }
 
 
 #### Problem #3 - If we add padding or a border to any of the boxes, the layout breaks!
 
-This is because of the box model that we talked about ealier. The width of a box includes its padding and borders!
+This is because of the box model that we talked about earlier. The width of a box includes its padding and borders!
 
 There are two fixes for this: 
 
@@ -435,11 +456,11 @@ There are two fixes for this:
 
 This exercise will throw you into the deep end. We will be using widths, floats, clearing, margin and padding.
 
-Open `css-layout-exercise.html` in your editor and browser.
+Open <a href="exercise/css-layout-exercise.html" class="exercise">css-layout-exercise.html</a> in your editor and browser.
 
-Write the selectors and the CSS code to make it look like `css-layout-exercise-ANSWER.html`
+Write the selectors and the CSS code to make it look like <a href="exercise/css-layout-exercise-ANSWER.html" class="exercise">css-layout-exercise-ANSWER.html</a>
 
-Work with eachother to write the selectors and please ask questions to me and the mentors. This one is a tough one so you may need to sneak a peak at the answer code every now and then.
+Work with each other to write the selectors and please ask questions to me and the mentors. This one is a tough one so you may need to sneak a peak at the answer code every now and then.
 
 ## Review
 1. Selectors, selectors, selectors!

@@ -5,36 +5,43 @@ title: Week 2 Project - Three Page Website
 
 # Week 2 Project - Three Page Website
 
-This project is meant to call upon everything we have done so far. Like our last project, we are going to be creating a website from scratch. This one will be about the same difficulty level as the last one, just with more requirements based on what we have done previously.
+This project is meant to call upon everything we have done so far. Like our last project, we are going to be creating a website from scratch. This one will be about the same difficulty level as the last one, just with more requirements based on what we have done this week.
 
 You may choose to do your website on anything you wish. Here are some ideas:
 
 * An online resume
-* Try and recreate an existing website. A student last year replicated the hackeryou website.
-* Site for a your own or a friends business
+* Recreate an existing website. (i.e. the HackerYou website)
+* A site for a your own business or a friend's business
 * Small site for a local charity
 
 The layout is also 100% up to you, provided you include most/all of the below requirements. If you need some inspiration for the this project's layout, considering crafting the below layout or visiting these websites for ideas:
 
-* http://www.designfridge.co.uk/
-* http://cssremix.com/
-* http://www.cssmania.com/
+* [http://www.designfridge.co.uk/](http://www.designfridge.co.uk/)
+* [http://cssremix.com/](http://cssremix.com/)
+* [http://www.cssmania.com/](http://www.cssmania.com/)
 
 ![image](projectWireframe.png)
+
+Here are some samples from the HackerYou Cohort 1: 
+
+* [Sharon Chan](http://projects.hackeryou.com/week2/sharon-chan)
+* [Emma Harris](http://projects.hackeryou.com/week2/emma-harris)
+* [Nathan Foon](http://projects.hackeryou.com/week2/nathan-foon)
+* [Evelyn Low](http://projects.hackeryou.com/week2/evelyn-low)
 
 
 ## You must have at least the following:
 
-* When sizing the main divs - (header, general info, content, sidebar and footer in my example) - use percentages.
-* 3 .html pages
-* 1 external .css file
+* use percentages for sizing of the main divs - (header, general info, content, sidebar in the example above).
+* 3 html pages
+* Use external .css files
 * box-sizing:border-box;
 * CSS Normalize
-* Clearfix
+* floats and the proper use of .clearfix
 * 1 Dropdown navigation
 * header div
 * footer div
-* Three divs that hold content (content and sidebar are two examples we have used so far)
+* Three divs that hold content (i.e. content and sidebar)
 * Two web fonts
 * 5 CSS typography styles (text shadow, font size, family, color, transform, etc..)
 * box shadow
@@ -48,8 +55,8 @@ The layout is also 100% up to you, provided you include most/all of the below re
 
 Since we spent quite a bit of time on forms, your form should:
 
-* be functional. I.e. use Wufoo.com to receive the data that users submit through the form.
-* have custom CSS styles (http://www.wufoo.com/2011/05/20/form-anatomy-custom-css/)
+* be functional. i.e. use Wufoo.com to receive the data that users submit through the form.
+* have custom CSS form styles ([http://www.wufoo.com/2011/05/20/form-anatomy-custom-css/](http://www.wufoo.com/2011/05/20/form-anatomy-custom-css/))
 
 ## Bonus points for
 

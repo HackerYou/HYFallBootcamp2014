@@ -14,6 +14,13 @@ Create a personal site. If you already have one, here are some other suggestions
 * create a site for a friend's business
 * create a site for a local charity
 
+Here are a few samples from the HackerYou Cohort 1:
+
+* personal site by [Lindsay Fry](http://projects.hackeryou.com/week1/lindsay-fry/)
+* personal site by [Robyn Larsen](http://projects.hackeryou.com/week1/robyn-larsen/)
+* breakfast site by [Gab White](http://projects.hackeryou.com/week1/gab-white/)
+
+
 ##Project requirements
 
 1. use an external `.css` file
@@ -66,28 +73,28 @@ Here are a list of approved designs. If you do not want to use one of the design
 
 ##### Here is the base HTML to get you started:
 
-	<!DOCTYPE HTML>
-	<html>
-		<head>
-			<title>My First Project</title>
-			<link rel="stylesheet" type="text/css" href="style.css">
-		</head>
-		<body>
-			<p>get going!</p>
-		</body>
-	</html>
+    <!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>My First Project</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
+        <body>
+            <p>get going!</p>
+        </body>
+    </html>
 
 ##### Base CSS to add to style.css:
 <small>**Remember**, external CSS files **do not need** the `<style>` tags.</small>
 
-	* { -moz-box-sizing: border-box; 
-		-webkit-box-sizing: border-box; 
-		box-sizing: border-box; 
-	}
+    * { -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box; 
+    }
 
-	body {
-		/* start body styles here */
-	}
+    body {
+        /* start body styles here */
+    }
 	
 	
 ##Submit your project

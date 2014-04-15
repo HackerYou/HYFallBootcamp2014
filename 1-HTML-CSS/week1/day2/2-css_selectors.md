@@ -391,6 +391,6 @@ They can go multiple levels deep:
 
 Writing efficient and appropriate selectors take practice and everyone eventually develops their own preferences.  Here's a couple suggested readings that are oldies but goodies and can help you have a better understanding of all these different types of selectors:
 
-[Writing efficient CSS selectors](http://csswizardry.com/2011/09/writing-efficient-css-selectors/)  
-[Efficiently
+* [Writing efficient CSS selectors](http://csswizardry.com/2011/09/writing-efficient-css-selectors/)  
+* [Efficiently
 Rendering CSS](http://css-tricks.com/efficiently-rendering-css/)

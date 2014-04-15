@@ -135,7 +135,7 @@ The name cannot contains spaces. Use camel casing (myClassName), dashes (my-clas
 
 #### Example & Small Exercise
 
-Open up [css-class-selector.html](exercises/css-class-selector.html) in your files to see this live.
+Open up <a href="exercises/css-class-selector.html" class="exercise">`css-class-selector.html`</a> in your files to see this live.
 
 1. Can you change all p tags to have `font-size` of `20px`?
 1. Can you add a new class and write a new CSS rule to turn the last one blue?
@@ -162,7 +162,7 @@ When we select one class, we use a leading period (`.`). To select multiple clas
 		background: lightblue;
 	}
 
-Open [css-multi-class-selector.html](css-multi-class-selector.html) to see this in action!
+Open <a href="exercises/css-multi-class-selector.html" class="exercise">`css-multi-class-selector.html`</a> to see this in action!
 
 #### Multiple Selector Exercise
 
@@ -173,7 +173,7 @@ Open [css-multi-class-selector.html](css-multi-class-selector.html) to see this 
 Once you have had some time to work on them, We will review the questions and answer together.
 
 ### CSS Inheritance
-You may have noticed in our first CSS exercise [css-fun.html](../day1/exercises/css-fun.html) that I applied a bunch of generic style to the `body` selector. Why is this?
+You may have noticed in our first CSS exercise `css-fun.html` that I applied a bunch of generic style to the `body` selector. Why is this?
 
 Well, there are certain styles that get passed down from the parent to the children. If we want all text on the page to be `lightgrey`, then we only have to specify it once and it will be applied to all of its children.
 
@@ -314,15 +314,15 @@ In order to get amazing with CSS, you need selector chops! The only way to get g
 
 Since we aren't familiar with all of the available styles, I've included them for you, you just need to write the selectors.
 
-Open up [css-selector-exercises.html](exercises/css-selector-exercises.html) in both your browser and editor and replace `____` with your own selectors. You'll need to study the markup for a bit before. If you get stuck feel free to reference the notes, ask a mentor, help eachother and reference sites you find on Google.
+Open up <a href="exercises/css-selector-exercises.html" class="exercise">`css-selector-exercises.html`</a> in both your browser and editor and replace `____` with your own selectors. You'll need to study the markup for a bit before. If you get stuck feel free to reference the notes, ask a mentor, help eachother and reference sites you find on Google.
 
-There is also an answer key provided, open it in your browser to view what it should look like.
+There is also an <a href="exercises/css-selector-exercises-ANSWER.html" class="exercise">answer key</a> provided, open it in your browser to view what it should look like.
 
 ![Final Product](http://wes.io/J6Kh/Screen%20Shot%202012-08-29%20at%203.54.25%20PM.png)
 
-Once you've got a good handle on CSS selectors, open up [css-challenge-selectors.html](exercises/css-challenge-selectors.html) and see if you can write some complete CSS rules of your own. 
+Once you've got a good handle on CSS selectors, open up <a href="exercises/css-challenge-selectors.html" class="exercise">`css-challenge-selectors.html`</a> and see if you can write some complete CSS rules of your own. 
 
-The full answers and a reference of what your version should be like is [here](exercises/css-challenge-selectors-ANSWER.html).
+The full answers and a reference of what your version should be like is <a href="exercises/css-challenge-selectors-ANSWER.html" class="exercise">here</a>.
 
 ## Selector Review
 Review:

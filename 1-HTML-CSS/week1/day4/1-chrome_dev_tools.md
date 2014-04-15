@@ -14,7 +14,7 @@ Every browser has their own set of dev tools - Chrome has dev tools, Firefox has
 Chrome dev tools are packed with tons of helpful little tools for developing a website, we are going to take a look at the most common use of inspecting elements. By now you may be pulling your hair out wondering how someone can know which CSS rule applies to which element(s). The good news is that we aren't _that smart_ - we use dev tools to help us with this.
 
 ### Trying Dev Tools
-Open up `devtools-testing.html` in Google Chrome. You'll notice this is the same markup and CSS from our selector exercise.
+Open up <a href="exercises/devtools-testing.html" class="exercise">`devtools-testing.html`</a> in Google Chrome. You'll notice this is the same markup and CSS from our selector exercise.
 
 Let's left click our page and select **inspect element**. This brings up two panels:
 

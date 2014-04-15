@@ -21,9 +21,9 @@
     path: week1/day2/exercises/css-challenge-selectors.html
     answerPath: week1/day2/exercises/css-challenge-selectors-ANSWER.html
   - title: CSS Class Selectors
-    path: week1/day2/exercises/css-class-selectors.html
+    path: week1/day2/exercises/css-class-selector.html
   - title: CSS Multi-Class Selectors
-    path: week1/day2/exercises/css-multi-class-selectors.html
+    path: week1/day2/exercises/css-multi-class-selector.html
   - title: CSS Box Model
     path: week1/day3/exercises/css-box-model.html
   - title: CSS Width and Height

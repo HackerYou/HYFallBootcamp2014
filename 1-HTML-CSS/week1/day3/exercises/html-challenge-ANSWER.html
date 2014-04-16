@@ -3,6 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <title>Challenge Exercises!</title>
+  <style>
+    /* Make sure you are working with border-box */
+    *, *:before, *:after {
+      -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    }
+
+    /* Set your default styles on the body */
+    body {
+      background:#3498db;
+      font-family:sans-serif;
+      color:#fff;
+    }
+
+    /*
+      Style the wrapper to be 1000px wide
+      Match the style of the answer key
+    */
+    .wrapper {
+      width:800px;
+      margin:20px auto;
+      padding:20px;
+      background:#2980b9;
+    }
+
+    /* Use a parent child selector to make the header image fit. Use a percentage */
+    .header img {
+      width:100%;
+    }
+
+    /*
+      Use a parent child selector to style the text like the answer
+      You will need to search around for the answers to spacing and shadow
+     */
+    .header h1 {
+      text-align: center;
+      color:white;
+      font-size:80px;
+      letter-spacing:20px;
+      text-shadow:4px 4px 0 #2c3e50;
+      margin:0;
+    }
+
+    /*Bonus points if you can figure out how to make every other letter a different colour */
+    .header h1 span.even {
+      color:#e74c3c;
+    }
+
+    /* Style the featured paragraph (the first one) as the answer shows */
+    p.featured {
+      font-size:20px;
+      line-height: 1.5;
+    }
+
+    /* Use widths, padding and borders to get the sidebar and content div side by side */
+
+    .content {
+      width:70%;
+      float:left;
+      padding-right:20px;
+      border-right: 1px solid white;
+    }
+
+    .sidebar {
+      width:30%;
+      float:left;
+      padding-left:20px;
+    }
+    
+    /* Style the blog posts, three to a line
+      Hint: you will need to use percentage widths, margin and floats here
+      There are a few ways to do this
+    */
+
+    .post {
+      width:31%;
+      float:left;
+      margin-right:3.5%;
+    }
+
+    .post3, .post6 {
+      margin-right: 0;
+    }
+
+    /* Style the tweets as the answer shows 
+      make note of the styling of the twitter name and timestamp
+    */
+
+    .tweet {
+      background:white;
+      padding:10px;
+      margin:10px 0;
+      border-radius:10px;
+      color:grey;
+    }
+
+    /* Use a parent child selector to style all tweet links differently */
+    .tweet a {
+      color:red;
+      text-decoration: none;
+    }
+
+    .tweet a.author {
+      background:#9b59b6;
+      color:white;
+      border-radius:5px;
+      padding:2px;
+    }
+
+    span.timestamp {
+      font-size:11px;
+    }
+
+    /* Make the images in the post 100% wide so they don't spill over */
+    .post img {
+      width:100%;
+    }
+
+    /* Clear and style the footer */
+    .footer {
+      clear:both;
+      background:white;
+      color:black;
+      padding:20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <!-- 
@@ -86,141 +212,5 @@
        <p class="cred">&copy; Your Name Here</p>
      </div>
    </div>
-
-
-   <style>
-      /* Make sure you are working with border-box */
-      *, *:before, *:after {
-        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-      }
-
-      /* Set your default styles on the body */
-      body {
-        background:#3498db;
-        font-family:sans-serif;
-        color:#fff;
-      }
-
-      /*
-        Style the wrapper to be 1000px wide
-        Match the style of the answer key
-      */
-      .wrapper {
-        width:800px;
-        margin:20px auto;
-        padding:20px;
-        background:#2980b9;
-      }
-
-      /* Use a parent child selector to make the header image fit. Use a percentage */
-      .header img {
-        width:100%;
-      }
-
-      /*
-        Use a parent child selector to style the text like the answer
-        You will need to search around for the answers to spacing and shadow
-       */
-      .header h1 {
-        text-align: center;
-        color:white;
-        font-size:80px;
-        letter-spacing:20px;
-        text-shadow:4px 4px 0 #2c3e50;
-        margin:0;
-      }
-
-      /*Bonus points if you can figure out how to make every other letter a different colour */
-
-      .header h1 span.even {
-        color:#e74c3c;
-      }
-
-      /* Style the featured paragraph (the first one) as the answer shows */
-      p.featured {
-        font-size:20px;
-        line-height: 1.5;
-      }
-
-      /* Use widths, padding and borders to get the sidebar and content div side by side */
-
-      .content {
-        width:70%;
-        float:left;
-        padding-right:20px;
-        border-right: 1px solid white;
-      }
-
-      .sidebar {
-        width:30%;
-        float:left;
-        padding-left:20px;
-      }
-      
-      /* Style the blog posts, three to a line
-        Hint: you will need to use percentage widths, margin and floats here
-        There are a few ways to do this
-      */
-
-      .post {
-        width:31%;
-        float:left;
-        margin-right:3.5%;
-      }
-
-      .post3, .post6 {
-        margin-right: 0;
-      }
-
-      /* Style the tweets as the answer shows 
-        make note of the styling of the twitter name and timestamp
-      */
-
-      .tweet {
-        background:white;
-        padding:10px;
-        margin:10px 0;
-        border-radius:10px;
-        color:grey;
-      }
-
-      /* Use a parent child selector to style all tweet links differently */
-
-      .tweet a {
-        color:red;
-        text-decoration: none;
-      }
-
-      .tweet a.author {
-        background:#9b59b6;
-        color:white;
-        border-radius:5px;
-        padding:2px;
-      }
-
-      span.timestamp {
-        font-size:11px;
-      }
-
-
-
-
-
-      /* Make the images in the post 100% wide so they don't spill over */
-      .post img {
-        width:100%;
-      }
-
-      /* Clear and style the footer */
-      .footer {
-        clear:both;
-        background:white;
-        color:black;
-        padding:20px;
-        text-align: center;
-      }
-   </style>
-
-
 </body>
 </html>

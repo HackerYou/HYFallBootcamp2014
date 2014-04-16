@@ -212,6 +212,14 @@ Amy Allen (now a front-end developer at Demac Media): http://amyallen.ca/blog/
 Gab White (returning to her job in Halifax as a front-end developer, not just a designer): http://gabwhite.com/
 Danielle Webb (full-time freelancer): http://danielleawebb.com/blog/
 
+### Make Share-able Stuff
+
+If you don't like blogging, another great option is to show off your skills by creating things that people will want to share. It's a great way to show off your expertise and build your personal brand, without having to (groan) write.
+
+During her time at HackerYou, Winter 2014 Bootcamp grad Gab White made an app that tells you the weather. But it doesn't just tell you the weather. It tells you if you're going to have a bad hair day or not. Check it out here: <http://gabwhite.com/weather/>
+
+Someone picked it up, and her app ended up being featured in [Yahoo Tech] (https://www.yahoo.com/tech/finally-an-app-that-tells-women-how-the-weather-will-82309720957.html), [Huffington Post] (http://www.huffingtonpost.com/2014/04/11/hair-weather-app_n_5128777.html) and [Cosmopolitan UK] (http://www.dailymail.co.uk/femail/article-2604343/Rain-showers-dont-bother-straightening-hair-New-app-reveals-weather-affect-curls-frizz-stylish-do.html).
+
 ### Twitter
 Tell people what do you in your twitter bio, air on the side of bragging. Look important. This will show people that you are really involved and interesting to follow.
 

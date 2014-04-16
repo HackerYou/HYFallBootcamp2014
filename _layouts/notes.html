@@ -1,4 +1,9 @@
 {% include header.html %}
+{% if customCSS != "" %}
+<style>
+{{customCSS}}
+</style>
+{% endif %}
 <div class="wrapper">
 {{ content }}
 </div>

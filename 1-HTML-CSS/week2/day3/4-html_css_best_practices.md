@@ -12,22 +12,22 @@ CSS can become a tangled mess if isn't managed properly. You might have multiple
 
 Add CSS comments and order your CSS by type to help you stay organized. See the following page for an example:
 
-http://css-tricks.com/poll-results-how-do-you-order-your-css-properties/
+<http://css-tricks.com/poll-results-how-do-you-order-your-css-properties/>
 
 ## Don't repeat yourself
 
 If you have two boxes that are for the most part the same then avoid writing the same CSS rules twice. Write one rule that applies to both boxes and then add individual rules later. For example:
 
 ```
-box1, box2 {
+.box1, .box2 {
 	width: 300px;
 	height: 50px;
 	padding: 10px;
 }
-box1 {
+.box1 {
 	color: #fff;
 }
-box2 {
+.box2 {
 	color: #444;
 }
 ```
@@ -35,15 +35,15 @@ box2 {
 Or an even better way is to create a class that you can reuse for both boxes:
 
 ```
-box {
+.box {
 	width: 300px;
 	height: 50px;
 	padding: 10px;
 }
-box1 {
+.box1 {
 	color: #fff;
 }
-box2 {
+.box2 {
 	color: #444;
 }
 ```
@@ -71,8 +71,10 @@ To make our websites faster we can compress the CSS and images. The CSS minifyin
 
 * minify CSS: [http://www.csscompressor.com/](http://www.csscompressor.com/)
 * compress images: [http://www.smushit.com/](http://www.smushit.com/)
+* OSX impage compression tool: <http://imageoptim.com/>
 
-*JPEG mini in the Apple App Store is a good paid option that enables you to drop a full folder of images. 
+Even with compression tools, it's still a good idea to crop your images to an appropriate dimension before using them on the web.  Users shouldn't have to download a 2000px hi-res photo if it's only going to be 200px wide on their screen. 
+
 
 ## Reduce HTTP Requests & Image Sprites
 
@@ -84,3 +86,7 @@ We can do the same thing with images. These are called **image sprites**. To cre
 2. use CSS `background-position` to show the correct image
 
 Use [http://www.spritecow.com/](http://www.spritecow.com/) to combine images and get the appropriate CSS.
+
+## Automating your Optimizations
+
+You can automate a lot of these best practices with task runner tools like **Grunt** and **Gulp**. Here's a great tutorial from Chris Coyier on getting started with Grunt. <http://24ways.org/2013/grunt-is-not-weird-and-hard/>.

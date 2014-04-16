@@ -12,36 +12,34 @@
 		</ul>
 
 		<style type="text/css">
-			ul {
+			/* Using CSS and percentages, match the styling of the answer 
+				If you resize your browser, but buttons should react
+			*/
+			ul.nav {
 				padding:0;
 				margin:0;
-				background:grey;
-				float:left;
-				border:1px solid grey;
+				width:100%;
+				background:black;
+				float:left; /* If we dont float:left and width:100%, we dont see the background color */
 			}
-				ul li {
+				ul.nav li {
 					display:inline;
 				}
-					ul li a {
+					ul.nav li a {
 						float:left;
-						background:#BEBEBE;
-						padding:10px;
+						background:#3B5998;
+						color:#D8DFEA;
+						padding:10px 0;
+						width:25%;
+						text-align: center;
 						color:white;
 						font-family: sans-serif;
 						text-decoration: none;
-						border-left:1px solid grey;
-						border-right:1px solid white;
 					}
 
-					ul li:first-child a {
-						border-left:0;
-					}
-					ul li:last-child a {
-						border-right:0;
-					}
-					ul li a:hover {
-						text-decoration: underline;
-						background:black;
+					ul.nav li a:hover {
+						background:#4B67A1;
+						color:#D8DFEA;
 					}
 		</style>
 	</body>

@@ -7,7 +7,7 @@
 		<ul class="nav">
 			<li><a href="home.html">Home</a></li>
 			<li><a href="about.html">About <span class="arrow">&#x25BC;</span></a>
-				<ul class="sub-menu">
+				<ul class="sub-nav">
 					<li><a href="#">One</a></li>
 					<li><a href="#">Two</a></li>
 					<li><a href="#">Three</a></li>
@@ -16,7 +16,7 @@
 				</ul>
 			</li>
 			<li><a href="work.html">Work <span class="arrow">&#x25BC;</span></a>
-				<ul class="sub-menu">
+				<ul class="sub-nav">
 					<li><a href="work.html">Work</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -39,7 +39,7 @@
 			color:white;
 			text-decoration: none;
 		}
-		ul {
+		ul.nav, ul.sub-nav {
 			margin:0;
 			padding:0;
 			background:#CA0002;
@@ -47,31 +47,31 @@
 			width:100%;
 			position: relative;
 		}
-			ul li {
+			ul.nav li {
 				display:inline;
 			}
-				ul li a {
+				ul.nav li a {
 					padding:10px;
 					float:left;
 				}
 
-			ul li ul {
+			ul.nav li ul {
 				position: absolute;
 				top:38px;
 				float:left;
 				background:#DFDFDF;
 				display:none;
 			}
-				ul li ul li a {
+				ul.nav li ul li a {
 					padding:5px 10px;
 					color:black;
 				}
 		
-			ul li:hover ul {
+			ul.nav li:hover ul {
 				display:block;				
 			}
 
-			ul li:hover a {
+			ul.nav li:hover a {
 				background:#dfdfdf;
 				color:black;
 			}

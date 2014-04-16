@@ -1,3 +1,8 @@
+---
+layout: default
+title: HTML & CSS Client Challenges
+---
+
 # Challenges: Answers
 
 ## Challenge 1
@@ -33,4 +38,4 @@
 ```
 
 Doing the same for percentage based dimensions:
-http://css-tricks.com/centering-percentage-widthheight-elements/
+<http://css-tricks.com/centering-percentage-widthheight-elements/>

@@ -47,7 +47,7 @@ If we are on another page and want to link to that specific spot:
 
 You can link to any element with an ID, such as a div, span or blockquote but you will generally use heading tags.
 
-Open up **link-within.html** and create a navigation based on the available markup. It can be a single level navigation - no dropdowns required.
+Open up <a href="exercises/link-within.html" class="exercise">**link-within.html**</a> and create a navigation based on the available markup. It can be a single level navigation - no dropdowns required.
 
 ## CSS Display
 
@@ -64,7 +64,7 @@ To explain this, lets take a look at some basic markup.
 	<div>I'm a div</div>
 	<div>I'm a div</div>
 
-How will the above be displayed in the browser? Let's open **display.html** in the browser and see.
+How will the above be displayed in the browser? Let's open <a href="exercises/display.html" class="exercise">**display.html**</a> in the browser and see.
 
 ![](http://wes.io/K21R/Screen%20Shot%202012-10-09%20at%2011.25.42%20AM.png)
 <small>Note: I added a pink background and some margin to tell the elements apart</small>
@@ -133,7 +133,7 @@ Let's try it with our last link:
 		display:inline-block;
 	}
 
-Notice how it now sets the width and remains inline? Next class we will do a bunch of exercises involving `display`.
+Notice how it now sets the width and remains inline? We will do a bunch of exercises involving `display` soon.
 
 ### display:none;
 
@@ -164,7 +164,7 @@ This is what we have worked with so far. You'll never need to set `position:stat
 
 When we position something as **relative**, we unlock the ability to use four more properties: `top`,`right`,`bottom`,`left`. These can be used to nudge the element around.
 
-Open `position-relative.html` in your editor and we will do the following:
+Open <a href="exercises/position-relative.html" class="exercise">**position-relative.html**</a> in your editor and we will do the following:
 
 1. Position the `.box` div to relative.
 1. Try using a `top` and `left` value of 100px each.
@@ -178,7 +178,7 @@ Where exactly is top, left, right and bottom referring to?
 
 `position: absolute` is another way of positioning elements on a page. When you absolute position an element, it no longer takes up the space it used to and is now essentially 'floating' on your screen, above the surrounding elements.
 
-You can now position an absolute value exactly where you want it to go. Open **position-absolute.html** in your browser and editor. Here we have four 100px square divs, all `position:static` (the default).
+You can now position an absolute value exactly where you want it to go. Open <a href="exercises/position-absolute.html" class="exercise">**position-absolute.html**</a> in your browser and editor. Here we have four 100px square divs, all `position:static` (the default).
 
 Go ahead and set .box2 to position absolute:
 
@@ -226,7 +226,7 @@ Now, where do you think top, left, right and bottom referring to?
 
 The last example was good for understanding absolute positioning, but chances are you won't just have elements loose like that in your layout, you will have a wrapper, a sidebar, content, some kind of container.
 
-This is where we need to mix `relative` and `absolute` positioning. Open up **position.html** in your browser and editor.
+This is where we need to mix `relative` and `absolute` positioning. Open up <a href="exercises/position.html" class="exercise">**position.html**</a> in your browser and editor.
 
 Let's write some code so the green box is positioned like this:
 
@@ -265,7 +265,7 @@ Easy fix for this is to position our `.wrapper` as relative:
 
 #### Another Example
 
-Let's take another shot at this. Open up **position2.html** in your browser and editor.
+Let's take another shot at this. Open up <a href="exercises/position2.html" class="exercise">**position2.html**</a> in your browser and editor.
 
 Here we have two divs nested inside of each other: `.wrapper` and `.innerWrapper`
 
@@ -317,7 +317,7 @@ Not exactly what we want, so delete that last line and change  `.innerWrapper` t
 
 The final type of position is similar to `position:absolute` but it **stays in place when you scroll**.
 
-Lets open up **position-fixed.html** in your browser and editor.
+Lets open up <a href="exercises/position-fixed.html" class="exercise">**position-fixed.html**</a> in your browser and editor.
 
 We have a black header at the top. Let's try and use CSS to make it fixed:
 
@@ -339,7 +339,7 @@ For starters, when applying a z-index, **it is only effective when an element is
 
 The value we use for the z-index can be any whole number. You'll often see people assign the value of 9999 which is a huge number that they hope to defeat everything else on the page.
 
-Open up `z-index.html` and you'll see we have our four blocks back.
+Open up <a href="exercises/z-index.html" class="exercise">**z-index.html**</a> and you'll see we have our four blocks back.
 
 They are all positioned absolutely and are overlapping each other. By default, the order in which they appear in the HTML determines how they overlap. The first element in the HTML has the lowest z-index and the last element has the highest.  We manipulate that order by using the `z-index` property and manipulating the number value.
 
@@ -363,7 +363,7 @@ Try changing the red box to `z-index:2;`.
 ## border-radius
 Border radius is one of the fun CSS attributes that has only recently been introduced to web browsers. It adds a rounded corner to any element.
 
-Open up **border-radius.html** in the browser and editor and we can take a look at how it works.
+Open up <a href="exercises/border-radius.html" class="exercise">**border-radius.html**</a> in the browser and editor and we can take a look at how it works.
 
 Basic usage is to supply one value for all corners:
 
@@ -423,7 +423,7 @@ Today we are going to be doing a bunch of small exercises to get comfortable wit
 - rgba colours
 - inline, block and inline-block
 
-You will find them in today's folder along with the answers. There are 7 exercises, labelled from `ex1` to `ex7`.
+You will find them in <a href="exercises/positioning-and-floats.zip">**positioning-and-floats.zip**</a>. There are 7 exercises, labelled from `ex1` to `ex7`.
 
 ## Review
 1. Positioning

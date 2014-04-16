@@ -1,10 +1,10 @@
 ---
 layout: notes
-title: CSS Color and Backgrounds
+title: CSS Color and Background
 topic: html
 ---
 
-# CSS Color and Backgrounds
+# CSS Color and Background
 
 ## Color and Background Color
 
@@ -64,7 +64,7 @@ OR
 		background-image:url(https://www.google.com/images/srpr/logo3w.png)
 	}
 
-Open `bg-images.html` in your editor and give these two a try.
+Open <a href="exercises/bg-images.zip">**bg-images.zip**</a> in your editor and give these two a try.
 
 #### Background Repeating
 You have probably noticed that the background image repeats over and over by default, what if we don't want that functionality? We can specify the `background-repeat` property:
@@ -129,24 +129,25 @@ Writing gradients by hand isn't advised as the syntax is very long and different
 
 #### Additional Color Resources
 
-[The Color Scheme Designer](http://colorschemedesigner.com)
-[http://hex2rgba.devoth.com](http://hex2rgba.devoth.com)
-[Flat UI Colors](http://flatuicolors.com/)
-[Instant Eyedropper](http://instant-eyedropper.com)
-[Color Grab](https://play.google.com/store/apps/details?id=com.loomatix.colorgrab&hl=en)
-[Match Colors To An Image](http://www.pictaculous.com)
-[Kuler](https://kuler.adobe.com/create/color-wheel)
-[0 to 255](http://0to255.com)
-[CSS Colors](http://colours.neilorangepeel.com)
+[The Color Scheme Designer](http://colorschemedesigner.com)<br>
+[http://hex2rgba.devoth.com](http://hex2rgba.devoth.com) <br>
+[Flat UI Colors](http://flatuicolors.com/)<br>
+[Instant Eyedropper](http://instant-eyedropper.com)<br>
+[Color Grab](https://play.google.com/store/apps/details?id=com.loomatix.colorgrab&hl=en)<br>
+[Match Colors To An Image](http://www.pictaculous.com)<br>
+[Kuler](https://kuler.adobe.com/create/color-wheel)<br>
+[0 to 255](http://0to255.com)<br>
+[CSS Colors](http://colours.neilorangepeel.com)<br>
+[Hail Pixel](http://color.hailpixel.com/)<br>
 
 #### Additional Image Resources
 
-[http://join.deathtothestockphoto.com/]
-[http://unsplash.com/]
-[http://365psd.com/]
-[http://freefoodphotos.com/]
-[https://medium.com/p/62ae4bcbe01b]
-[http://pixlr.com/]
-[http://lorempixel.com/]
-[http://www.gratisography.com/]
-[http://www.psdcovers.com/]
+<http://join.deathtothestockphoto.com/><br>
+<http://unsplash.com/><br>
+<http://365psd.com/><br>
+<http://freefoodphotos.com/><br>
+<https://medium.com/p/62ae4bcbe01b><br>
+<http://pixlr.com/><br>
+<http://lorempixel.com/><br>
+<http://www.gratisography.com/><br>
+<http://www.psdcovers.com><br>

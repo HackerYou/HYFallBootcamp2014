@@ -236,13 +236,15 @@ I have 1 google apps account setup for wesbos.com, kaitbos.com and bostype.com.
 
 <http://www.google.ca/enterprise/apps/business/>
 
-It is no longer free, but well worth the $50/year per user. Christopher also found a way to set up a personal email address for free through Bluehost, so you can ask him about it.
+It is no longer free, but well worth the $50/year per user. 
 
 <http://www.google.ca/enterprise/apps/business/pricing.html>
 
+Christopher also found a way to set up a personal email address for free through Bluehost, so you can ask him about it.
+
 ### Speak at conferences 
 
-This is one of the scariest things I ever started to do. The first time someone asked me to speak, it was at a small meetup of about 100 people and I was terrified. I thought I didn't know enough to be a speaker. 
+This is a scary thing to do. The first time someone asked me to speak, it was at a small meetup of about 100 people and I was terrified. I thought I didn't know enough to be a speaker. 
 
 Once you speak and attend enough conferences, you will learn that each person is just sharing what they know about a certain area.
 
@@ -253,6 +255,12 @@ Being a "speaker" doesn't require any prerequisite, but really elevates the leve
 Speaking allows you to travel, most conferences will at least pay for your travel and hotel. This is my secret link many do not know about:
 
 <http://lanyrd.com/calls/>
+
+One of the best ways to start to get comfortable with the idea of speaking is to mentor at Ladies Learning Code, Girls Learning Code and Kids Learning Code events. At these one-day events, you'll be matched up with 3-4 learners, and guide them throughout the day as they learn HTML & CSS, JavaScript, design or anything else.
+
+To sign up for the Ladies Learning Code Mentor mailing list, visit <http://ladieslearningcode.com> and click "Tech Help" at the bottom of the page.
+
+To sign up for the Girls/Kids Learning Code Mentor mailing list, fill in this application form: <https://docs.google.com/spreadsheet/viewform?usp=drive_web&formkey=dFZTSDBJTl9pUTlPUEpHa1J3ak5hN2c6MA#gid=0>
 
 ## Questions to ask
 
@@ -266,3 +274,4 @@ Asking the right questions will get you started with developing your own persona
 4. What shows up when I Google my name? My company name?
 5. What kind of projects do I want to work on? 
 6. How will I position myself as a freelancer? 
+7. How can I make sure people perceive me as an expert in my area of expertise as soon as possible?

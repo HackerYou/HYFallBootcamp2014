@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Styling Lists with CSS
+title: Lists and Navigation
 topic: html
 ---
 
@@ -152,7 +152,7 @@ You can also apply any of these styles to list items if you want to get more spe
 	}
 
 
-** Open up `list-style.html` and write some CSS to do the following:**
+**Open up <a href="exercises/list-style.html" class="exercise">list-style.html</a> and write some CSS to do the following:**
 
 1. Change the ordered list to lowercase roman numerals
 1. Change the unordered list to squares and outside
@@ -192,7 +192,7 @@ How can we target _just_ this nested list level with simple parent child selecto
 		background:red;
 	}
 
-Using the nested lists in `nested-lists.html`
+Using the nested lists in <a href="exercises/nested-lists.html" class="exercise">**nested-lists.html**</a>
 
 1. Make the first nested ordered list list-style-type of binary
 1. Adjust the margin and padding of the first nested ordered list so its not indented so far.
@@ -204,7 +204,7 @@ Using the nested lists in `nested-lists.html`
 
 Now that we have a handle on unordered lists, we can start to use them for creating navigations for our websites.
 
-Almost all navigations on the web are unordered lists filled with list items and links. Lets start with a really simple example. Open up `simple-nav.html` in your browser and editor and we will work through an example.
+Almost all navigations on the web are unordered lists filled with list items and links. Lets start with a really simple example. Open up <a href="exercises/simple-nav.html" class="exercise">**simple-nav.html**</a> in your browser and editor and we will work through an example.
 
 First off we need to take the margin and padding off that unordered list:
 
@@ -237,23 +237,23 @@ Note: its best practice to put your styles on the link themselves rather than th
 
 ### Centering Navigations
 
-Sometimes you'll have a navigation that you want centered on the page. This is easy as pie if you got the last example. Open `centered-nav.html` and we will work through another example.
+Sometimes you'll have a navigation that you want centered on the page. This is easy as pie if you got the last example. Open <a href="exercises/centered-nav.html" class="exercise">**centered-nav.html**</a> and we will work through another example.
 
 First we need to change over our list from bulleted to inline:
 
-	ul li {
+	ul.nav li {
 		display:inline;
 	}
 
 Then its as easy as centering the text inside of the nav:
 
-	ul {
+	ul.nav {
 		text-align:center;
 	}
 
 Super basic, we can take it a step further and style the links for something a little more visually appealing:
 
-	ul li a {
+	ul.nav li a {
 		padding: 5px 10px;
 		color:white;
 		font-family: sans-serif;
@@ -269,26 +269,26 @@ Super basic, we can take it a step further and style the links for something a l
 
 A really useful part of doing navigations with unordered lists is that we can create dropdown navigations with nothing but a few CSS rules, some clever positioning and the `:hover` state.
 
-Lets work through an example. Things can get a little confusing here so stay with me. Open up `dropdown.html` and you'll see a basic navigation unordered list.
+Lets work through an example. Things can get a little confusing here so stay with me. Open up <a href="exercises/dropdown.html" class="exercise">**dropdown.html**</a>and you'll see a basic navigation unordered list.
 
 Lets style the the list and nested list different colours so we know whats going on:
 
-	ul {
+	ul.nav {
 		background:#BADA55;
 	}
-		ul li ul {
+		ul.nav li ul {
 			background:#00E0FF;
 		}
 
 Now we need to make the first list items inline:
 
-	ul li {
+	ul.nav li {
 		display:inline;
 	}
 
 Hrm, but that makes both the parent nav and the sub nav inline, we only want the parent nav to be inline, so lets revert the second nav:
 
-	ul li ul li {
+	ul.nav li ul li {
 		display:list-item; /* Set the sub navs list items back */
 	}
 
@@ -296,7 +296,7 @@ The above uses parent &rarr; child selectors to select only those list items nes
 
 Okay, looking okay so far. Lets get the hover part working. First thing we need to do is hide the sub menus by default.
 
-	ul li ul {
+	ul.nav li ul {
 		background:#00E0FF;
 		color:white;
 		display:none;
@@ -306,7 +306,7 @@ Then, how do we show them only when we hover? What should we trigger the hover o
 
 Since the sub nav is nested inside of the parents `<li>`, we want to trigger it on there. We use display:block to switch it back from display:hidden;
 
-	ul li:hover ul {
+	ul.nav li:hover ul {
 		display:block;
 	}
 
@@ -321,11 +321,11 @@ If only we could position it that it did not take up any extra space. It should 
 
 We want the sub menu to be absolute so it doesn't take up any room within its parent and the parent `<li>` to be relative so we can base out positioning off of that.
 
-	ul li {
+	ul.nav li {
 		display:inline;
 		position: relative;
 	}
-	ul li ul {
+	ul.nav li ul {
 		background:#00E0FF;
 		color:white;
 		display:none;
@@ -336,9 +336,11 @@ Bam! with just that, we now have a very simple dropdown menu. Its very ugly, but
 
 ![](http://wes.io/KATD/Screen%20Shot%202012-10-15%20at%2010.48.37%20AM.png)
 
+Here's the code for the <a href="exercises/dropdownANSWER.html" class="exercise">completed drop down</a>.
+
 ## Exercises
 
-We have a number of exercises today all revolving around menus. Find them in your exercieses folder, labelled `lists-ex1` through `lists-ex6`.
+We have a number of exercises today all revolving around menus. Find them in [**list-exercises.zip**](exercises/list-exercises.zip), labelled `lists-ex1` through `lists-ex6`.
 
 There is a challenge question for you CSS pros - exercise #6.
 

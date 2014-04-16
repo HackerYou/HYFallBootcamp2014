@@ -95,6 +95,8 @@ Makes:
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/Uc4NvjzdHZ8" frameborder="0" allowfullscreen></iframe>
 
+**Potential Gotcha!** YouTube and other embeds will often give you a url like `//wwww.youtube.com/`, without the `http:` part. What gives, YouTube??  This is so your browswer can use either http: or https:, depending on whether or not a secure connection is available. The downside is that these `//` urls won't work locally, so you'll have to add the `http:` in yourself in that case.
+ 
 If you are a keener, you'll figure out that you just need to swap the youtube video ID out each time you want to embed a video.
 
 ### Vimeo

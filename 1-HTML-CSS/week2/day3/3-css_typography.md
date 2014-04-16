@@ -9,7 +9,7 @@ topic: html
 ## CSS Typography
 Having good CSS Typography is one of the best ways to make your site look amazing. With CSS we have complete control over how our text looks and feels. We will spend the next while going through some of the available properties to style your text, but first we let's review a few different ways we can mark up text:
 
-For the next couple examples, open up the file `typography.html`
+For the next couple examples, open up the file 	<a href="exercises/typography.html" class="exercise">**typography.html**</a>
 
 ### Text Markup
 
@@ -22,7 +22,7 @@ For the next couple examples, open up the file `typography.html`
 #### Paragraphs, spans, strong and emphasis
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna deserunt mollit anim id est laborum.</p>
 
-	<p>Hey there my name is <strong>Wes Bos> and I <em>really</em> like to code HTML and CSS.</p>
+	<p>Hey there my name is <strong>HackerYou</strong> and I <em>really</em> like to code HTML and CSS.</p>
 
 	<p>My birthday party is on <span class="date">February 18</span>, please come with presents!</p>
 
@@ -91,10 +91,12 @@ If we then want to target just the second paragraph with the class of `text2`, w
 ## font-weight
 
 If any of you are designers, you will know that fonts come with a variety of weights. The weight of a font controls how bold it is. Most fonts just have **normal** and **bold**, but some can have up to 9 different weights. There are two different ways to specify the font weight:
+
 ### By keyword
 	p.text3 {
 		font-weight: bold; /* Also accepted: bold | bolder | lighter | normal | inherit */
 	}
+
 ### By Value
 	p.text3 {
 		font-weight:600; /* From 100 to 900 in increments of 100 */
@@ -148,6 +150,17 @@ A little trick I like to use with sans-serif fonts is set the letter spacing to 
 <h3 style="color:red; font-size:40px;">Normal letter spacing on a heading</h3>
 <h3 style="color:red; letter-spacing:-1px; font-size:40px;">-1px Spacing on a heading</h3>
 
+Similarly, small caps look great with a little *extra* letter spacing.
+
+	.small-caps {
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
+
+<h4 style="color:red; text-transform:uppercase;">Normal letter spacing for small caps</h4>
+<h4 style="color:red; letter-spacing:3px; text-transform:uppercase;">3px Spacing for small caps</h4>
+
+
 ## text-transform
 Text transform is an extremely handy property that doesn't get used as often as it should As we talked about in the first few courses, your HTML should only describe the content and not worry about the style.
 
@@ -189,6 +202,7 @@ It's not used very often because it's a best practice to only underline links. B
 	.line-through {
 		text-decoration: line-through;
 	}
+
 <p style="font-size:20px; text-decoration:line-through;">line-through</p>
 
 `text-decoration` is used often to take the default underline off of links.
@@ -232,9 +246,9 @@ It's not used very often because it's a best practice to only underline links. B
 		* <span class="white">anything!</span>
 
 #### Exercise
-Its time to flex our typography muscles. Open `typography-exercise1.html` in your browser and editor.
+Its time to flex our typography muscles. Open the html file in <a href="exercises/typography-exercise.zip" class="exercise">**typography-exercise.zip**</a> in your browser and editor.
 
-You can have some fun with this one and pick your own colours, patterns, fonts, widths and whatnot. Match the ruleBox stylings to the answer key.
+You can have some fun with this one and pick your own colours, patterns, fonts, widths and whatnot. Match the ruleBox stylings to the provided answer key</a>
 
 ## Web Fonts (or Using Custom Fonts)
 
@@ -269,7 +283,7 @@ Doing so is fairly easy:
 
 ### Trying it yourself
 
-Go ahead and pick a few fonts that you like from Google Web Fonts and embed them into `web-fonts.html` in place of the ones I already have there. Feel free to write new selectors to change the h2 and h3 headings as well!
+Go ahead and pick a few fonts that you like from Google Web Fonts and embed them into <a href="exercises/web-fonts.html" class="exercise">**web-fonts.html**</a> in place of the ones I already have there. Feel free to write new selectors to change the h2 and h3 headings as well!
 
 ![](http://wes.io/JOcr/Screen%20Shot%202012-09-12%20at%2010.47.08%20AM.png)
 
@@ -285,13 +299,13 @@ Text shadow takes 4 value - horizontal offset, vertical offset, blur, and colour
 
 ![](http://wes.io/JPZK/Screen%20Shot%202012-09-12%20at%201.26.36%20PM.png)
 
-Lets take a look at some different example in `text-shadow.html`
+Lets take a look at some different example in <a href="exercises/text-shadow.html" class="exercise">**text-shadow.html**</a>
 
 
 ### box-shadow
 Similar to text-shadow, we also have box-shadow available to us which allows for adding shadow to the box around text as well as all other elements (such as divs, elements).
 
-Take a look at `box-shadow.html` for two examples on how to use box shadow - you'll notice its exactly the same syntax as text-shadow.
+Take a look at <a href="exercises/box-shadow.html" class="exercise">**box-shadow.html**</a> for two examples on how to use box shadow - you'll notice its exactly the same syntax as text-shadow.
 
 
 **For some great examples of taking pure text to the next level, take a look at the examples at [http://tympanus.net/Tutorials/TypographyStyles/index4.html](http://tympanus.net/Tutorials/TypographyStyles/index4.html)**
@@ -300,13 +314,14 @@ Take a look at `box-shadow.html` for two examples on how to use box shadow - you
 
 ### Additional Resources
 
-[This is a great resource on the google webfonts that look best.](http://sachagreif.com/more-google-webfonts-that-dont-suck/)
-[And more by the same author](http://sachagreif.com/google-webfonts-that-dont-suck/)
-[A library of Typography](http://losttype.com/browse/)
-[CSS Fonts](http://cssfontstack.com/)
-[More Free Fonts...](http://www.fontsquirrel.com/)
-[Wes can tell you about this](http://fontn.com/)
-[Fonts that you have to pay for](http://typecast.com/)
-[http://hellohappy.org/beautiful-web-type/]
-[More tympanus awesomeness](http://tympanus.net/Tutorials/HeadingSets/index6.html)
-[Use the right quotes peeps!](http://practicaltypography.com/straight-and-curly-quotes.html)
+[This is a great resource on the google webfonts that look best.](http://sachagreif.com/more-google-webfonts-that-dont-suck/) <br>
+[And more by the same author](http://sachagreif.com/google-webfonts-that-dont-suck/) <br>
+[A library of Typography](http://losttype.com/browse/) <br>
+[CSS Fonts](http://cssfontstack.com/) <br>
+[More Free Fonts...](http://www.fontsquirrel.com/) <br>
+<!-- [Wes can tell you about this](http://fontn.com/) <br> -->
+[Find the closest Google Font to classic paid fonts](http://joelcrawfordsmith.com/new/font/futura)<br>
+[Fonts that you have to pay for](http://typecast.com/) <br>
+[Beautiful Web Type](http://hellohappy.org/beautiful-web-type/]) <br>
+[More tympanus awesomeness](http://tympanus.net/Tutorials/HeadingSets/index6.html) <br>
+[Use the right quotes peeps!](http://practicaltypography.com/straight-and-curly-quotes.html) <br>

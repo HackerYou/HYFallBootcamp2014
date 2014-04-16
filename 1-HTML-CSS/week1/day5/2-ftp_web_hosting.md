@@ -52,8 +52,11 @@ You can navigate around the files and directories on both sides like in Explorer
 
 ![](http://f.cl.ly/items/432X360I0h2T3H2Y1b24/Screen%20Shot%202014-01-22%20at%202.16.43%20PM.png)
 
-The server works just like your computer, upload an **index.html** and surf to www.yourdomain.com and you will see it. Note that with most server configurations, you'll need to place your files in the  `public_html` directory. 
+The server works just like your computer, upload an **index.html** and surf to www.yourdomain.com and you will see it. Note that with some server configurations, you'll need to place your files in the  `public_html` directory. 
 
 Similarly, you can upload a folder called `finalproject` and surf to `www.yourdomain.com/finalproject` to see it.
 
-A best practice is to edit your website locally (on your computer) until you are happy with your progress. Then just drag and drop the entire folders contents onto your server.
+A best practice is to edit your website locally (on your computer) until you are happy with your progress. Then drag and drop the entire folders contents onto your server.
+
+###Exercise
+Get your week 1 project up online!

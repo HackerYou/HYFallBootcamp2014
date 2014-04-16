@@ -6,7 +6,7 @@ topic: html
 # HTML Forms
 
 ## HTML Forms and Inputs
-There is one part of HTML markup that we haven't talked about yet, and that is HTMl Form.
+There is one part of HTML markup that we haven't talked about yet, and that is HTML Form.
 
 Put simply, forms are a collection of inputs that are used to take in information from a user. When submitted, that information is sent to a server and then the server analyzes the data and does something with it.
 
@@ -35,7 +35,7 @@ When the log in form is submitted, it send the information in the inputs to the 
 The important thing to note here is that we use a form to send information from the **browser** to the **server**.
 
 ## The Server side
-When we work with forms, we start to dip into what we call **server side technologies**, which means a computer in the cloud computes what it is sent based on some logic on the server. In our last example, twitter will check its database to make sure that 1) There is someone by the username of `wesbos` and 2) the password supplied is a match of the one they have on file for the user `wesbos`.
+When we work with forms, we start to dip into what we call **server side technologies**, which means a computer in the cloud computes what it is sent based on some logic on the server. In our last example, twitter will check its database to make sure that 1) There is someone by the username of `joeschmoe` and 2) the password supplied is a match of the one they have on file for the user `joeschmoe`.
 
 With just HTML and CSS, we can't really do much with forms. That is because the HTML only creates the form and the browser only sends the information to the server. Once it hits the server, its up to them to do what they want with it. Such things include:
 
@@ -347,19 +347,19 @@ This can be useful to set browser defaults. For simplicity's sake, we will stick
 
 ##Twitter Form Codealong
 
-Open up [`form.html`](exercises/form.html) in your browser and you'll see a basic form similar to the one on twitter. Lets see how we can use CSS to match it to pretty much the exact style of twitter.
+Open up <a href="exercises/form.html" class="exercise">**form.html**</a> in your browser and you'll see a basic form similar to the one on twitter. Lets see how we can use CSS to match it to pretty much the exact style of twitter.
 
 Most inputs and forms are just like any other element, so we can use whatever CSS we want on them.
 
 Before we go on, we should note that at this time, you cannot style the look and feel of radio buttons, dropdown selects, file inputs, or checkboxes. There are sneaky Javascript ways to fake this, but no pure CSS solution.
 
-The completed version is [here](exercises/form-ANSWER.html) if you need it.
+The completed version is <a href="exercises/form-ANSWER.html" class="exercise">here</a> if you need it.
 
 ##Exercise: Styling Inputs
 
-Getting the hang of both CSS and HTML with forms takes practice, open up [`inputs-exercise.html`](exercises/inputs-exercise.html) and work through the problems, matching both the HTML/functionality as well as the CSS look and feel.
+Getting the hang of both CSS and HTML with forms takes practice, open up <a href="exercises/inputs-exercise.html" class="exercise">**inputs-exercise.html**</a> and work through the problems, matching both the HTML/functionality as well as the CSS look and feel.
 
-Open the [answer](exercises/inputs-exercise-ANSWER.html) in your browser as a reference for how it should look.
+Open the <a href="exercises/inputs-exercise-ANSWER.html" class="exercise">answer</a> in your browser as a reference for how it should look.
 
 
 ## Review

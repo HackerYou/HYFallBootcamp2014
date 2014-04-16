@@ -49,40 +49,61 @@
     path: week1/day4/exercises/devtools-testing.html
   - title: HTML &amp; CSS Challenge 1
     path: week1/day5/challenges/challenge_1.html
-    answerPath: week1/day5/challenges/challenges_answers.md
+    answerPath: week1/day5/challenges/challenges_answers.html
   - title: HTML &amp; CSS Challenge 2
     path: week1/day5/challenges/challenge_2.html
-    answerPath: week1/day5/challenges/challenges_answers.md
-  - title: Border Radius Demo
-    path: week2/day1/exercises/border-radius.html
+    answerPath: week1/day5/challenges/challenges_answers.html
   - title: In-Page Links
     path: week2/day1/exercises/link-within.html
-  - title: CSS Display Demo
+  - title: CSS Display
     path: week2/day1/exercises/display.html
-  - title: Position Relative Exercise
-    path: week2/day1/exercises/ex1-position-relative.html
-    answerPath: week2/day1/exercises/ex1-position-relative-ANSWER.html
-  - title: Position Absolute Exercise
-    path: week2/day1/exercises/ex2-position-absolute.html
-    answerPath: week2/day1/exercises/ex2-position-absolute-ANSWER.html
-  - title: Position Exercise
-    path: week2/day1/exercises/ex3-position.html
-    answerPath: week2/day1/exercises/ex3-position-ANSWER.html
-  - title: Position Relative Exercise 2
-    path: week2/day1/exercises/ex4-position-relative-border.html
-    answerPath: week2/day1/exercises/ex4-position-relative-border-ANSWER.html
-  - title: Floats Exercise
-    path: week2/day1/exercises/ex5-floats.html
-    answerPath: week2/day1/exercises/ex5-floats-ANSWER.html
-  - title: Floats Exercise 2
-    path: week2/day1/exercises/ex6-floats.html
-    answerPath: week2/day1/exercises/ex6-floats-ANSWER.html
-  - title: z-index Exercise
-    path: week2/day1/exercises/ex7-zindex.html
-    answerPath: week2/day1/exercises/ex7-zindex-ANSWER.html
-  - title: Position Fixed Exercise
-    path: week2/day1/exercises/ex8-position-fixed.html
-    answerPath: week2/day1/exercises/ex8-position-fixed-ANSWER.html
+  - title: Position Relative
+    path: week2/day1/exercises/position-relative.html
+  - title: Position Absolute
+    path: week2/day1/exercises/position-absolute.html 
+  - title: Position Relative + Absolute
+    path: week2/day1/exercises/position.html   
+  - title: Position Relative + Absolute 2
+    path: week2/day1/exercises/position2.html 
+  - title: Position Fixed
+    path: week2/day1/exercises/position-fixed.html 
+  - title: Z-Index
+    path: week2/day1/exercises/z-index.html 
+  - title: Border Radius
+    path: week2/day1/exercises/border-radius.html
+  - title: Positioning &amp; Floats Exercises
+    path: week2/day1/exercises/positioning-and-floats.zip
+  - title: List Style
+    path: week2/day2/exercises/list-style.html
+  - title: Nested Lists
+    path: week2/day2/exercises/nested-lists.html
+  - title: Simple Nav
+    path: week2/day2/exercises/simple-nav.html
+  - title: Centered Nav
+    path: week2/day2/exercises/centered-nav.html
+  - title: Dropdown Nav
+    path: week2/day2/exercises/dropdown.html
+    answerPath: week2/day2/exercises/dropdownANSWER.html
+  - title: List Exercises
+    path: week2/day2/exercises/list-exercises.zip
+  - title: Twitter Form codealong
+    path: week2/day2/exercises/form.html
+    answerPath: week2/day2/exercises/form-ANSWER.html
+  - title: Form Inputs Exercise
+    path: week2/day2/exercises/inputs-exercise.html
+    answerPath: week2/day2/exercises/inputs-exercise-ANSWER.html
+  - title: CSS Background Images
+    path: week2/day3/exercises/bg-images.zip
+  - title: Typography
+    path: week2/day3/exercises/typography.html
+  - title: Typography Exercise
+    path: week2/day3/exercises/typography-exercise.zip
+  - title: Web Fonts
+    path: week2/day3/exercises/web-fonts.html
+  - title: Text Shadow
+    path: week2/day3/exercises/text-shadow.html
+  - title: Box Shadow
+    path: week2/day3/exercises/box-shadow.html
 - name: UX and Design
   slug: ux
   directory: 2-Design 

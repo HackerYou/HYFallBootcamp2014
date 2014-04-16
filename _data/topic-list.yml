@@ -24,8 +24,6 @@
     path: week1/day2/exercises/css-class-selector.html
   - title: CSS Multi-Class Selectors
     path: week1/day2/exercises/css-multi-class-selector.html
-  - title: CSS Box Model
-    path: week1/day3/exercises/css-box-model.html
   - title: CSS Width and Height
     path: week1/day3/exercises/css-width-height.html
   - title: CSS Margin and Padding
@@ -33,6 +31,8 @@
   - title: CSS Margin and Padding Exercise
     path: week1/day3/exercises/css-margin-padding-exercise.html
     answerPath: week1/day3/exercises/css-margin-padding-exercise-ANSWER.html
+  - title: CSS Box Model
+    path: week1/day3/exercises/css-box-model.html
   - title: CSS Floats Example 1
     path: week1/day3/exercises/css-floats1.html  
   - title: CSS Floats Example 2
@@ -40,6 +40,11 @@
   - title: CSS Layout Exercise
     path: week1/day3/exercises/css-layout-exercise.html
     answerPath: week1/day3/exercises/css-layout-exercise-ANSWER.html
+  - title: HTML Challenge
+    path: week1/day3/exercises/html-challenge.html
+    answerPath: week1/day3/exercises/html-challenge-ANSWER.html 
+  - title: Planning a Page Structure
+    path:  week1/day3/exercises/page-layout.zip
   - title: DevTools Testing
     path: week1/day4/exercises/devtools-testing.html
   - title: HTML &amp; CSS Challenge 1
@@ -52,9 +57,6 @@
     path: week2/day1/exercises/border-radius.html
   - title: In-Page Links
     path: week2/day1/exercises/link-within.html
-  - title: HTML Challenge
-    path: week2/day1/exercises/html-challenge.html
-    answerPath: week2/day1/exercises/html-challenge-ANSWER.html 
   - title: CSS Display Demo
     path: week2/day1/exercises/display.html
   - title: Position Relative Exercise

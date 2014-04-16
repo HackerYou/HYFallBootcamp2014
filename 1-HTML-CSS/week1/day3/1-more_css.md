@@ -49,7 +49,7 @@ Sometimes we can use keywords for sizes of elements and fonts. You will see the 
 There are a few other measurements that are meant primarily for **printing** documents. These elements are rarely used for styling the web and a usually avoided.
 
 ### Width and Height
-Let start things off easy and work with `width` and `height`. Let's make a quick document with four divs (see <a href="exercises/css-width-height.html" class="exercise">css-width-height.html</a> for the answer, but let's code ours from the ground up.):
+Let start things off easy and work with `width` and `height`. Let's make a quick document with four divs (see <a href="exercises/css-width-height.html" class="exercise">`css-width-height.html`</a> for the answer, but let's code ours from the ground up.):
 
 	<div class="box1"></div>
 	<div class="box2"></div>
@@ -138,7 +138,7 @@ These two properties do what you might think - provide space between elements on
 The only difference between the two is that margin adds space on the **outside** of an element while padding adding space on the **inside** of the element. It can be tough to remember which one does what so a stupid little trick I used was saying "**Padding** protects your **insides**".
 
 #### Giving it a shot
-Let's give it a shot with some real markup. Start off with three basic divs: (See file <a href="exercises/css-margin-padding.html" class="exercise">css-margin-padding.html</a>.
+Let's give it a shot with some real markup. Start off with three basic divs: (See file <a href="exercises/css-margin-padding.html" class="exercise">`css-margin-padding.html`</a>.
 
 	<div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
 	<div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
@@ -210,9 +210,9 @@ In the last examples, we supplied a single value of 20px. What if we want to add
 
 Its time to get comfortable with margin, padding and widths of elements as well as brush up on our selector writing.
 
-Open <a href="exercises/css-margin-padding-exercise.html" class="exercise">css-margin-padding-exercise.html</a> in your code editor and browser. You will find a set of instructions.
+Open <a href="exercises/css-margin-padding-exercise.html" class="exercise">`css-margin-padding-exercise.html`</a> in your code editor and browser. You will find a set of instructions.
 
-Open <a href="exercises/css-margin-padding-exercise-ANSWER.html" class="exercise">css-margin-padding-exercise-ANSWER.html</a> in your browser to see what you are working towards.
+Open <a href="exercises/css-margin-padding-exercise-ANSWER.html" class="exercise">`css-margin-padding-exercise-ANSWER.html`</a> in your browser to see what you are working towards.
 
 
 #### Thats too much typing! - CSS Shorthand
@@ -286,7 +286,7 @@ Chances are you won't be using the above code too much as you usually want the b
 
 #### Exercise
 
-Take a few minutes with <a href="exercises/css-margin-padding-exercise.html" class="exercise">css-margin-padding-exercise.html</a> again and try and change the layout to:
+Take a few minutes with `css-margin-padding-exercise.html` again and try and change the layout to:
 
 1. Add borders to at least three elements
 1. Make the wrapper have a different border for each side
@@ -295,7 +295,7 @@ Take a few minutes with <a href="exercises/css-margin-padding-exercise.html" cla
 
 ### The Box Model
 
-Sweet, now that we are equipped with width, height, padding, margin and borders, it's important to learn about the **box model**. (See **[css-box-model.html](exercises/css-box-model.html download)**);
+Sweet, now that we are equipped with width, height, padding, margin and borders, it's important to learn about the **box model**. (See <a href="exercises/css-box-model.html" class="exercise">`css-box-model.html`</a>)
 
 Lets start off with a simple 150px by 150px box (set with `width` and `height`):
 
@@ -323,7 +323,7 @@ Lucky for us, CSS3 has brought us relief from this. If your project is only goin
         box-sizing: border-box;
     }
 
-By specifying this rule at the top of our CSS, we tell **all** elements (using the wildcard `*` selector) to take **padding** and **border** away from the set width and height. Go ahead and uncomment the selector in <a href="exercise/css-box-model.html" class="exercise">css-box-model.html</a> to see how it works.
+By specifying this rule at the top of our CSS, we tell **all** elements (using the wildcard `*` selector) to take **padding** and **border** away from the set width and height. Go ahead and uncomment the selector in <a href="exercise/css-box-model.html" class="exercise">`css-box-model.html`</a> to see how it works.
 
 <small>**Note:** This is fairly new in the web development world, so chances are most projects you run into in the wild will be using the **old** box model. Its helpful to know both.</small>
 
@@ -340,7 +340,7 @@ By specifying this rule at the top of our CSS, we tell **all** elements (using t
 
 Floats are a really important part of CSS that help you align your elements to either the right or the left.
 
-So far all of our exercises have had elements stacked vertically, what if we want them to be side by side? What if we want text to wrap around an image? Let's look at a few example to wrap our heads around floats. Open up <a href="exercises/css-floats1.html" class="exercise">css-floats1.html</a> in your editor and browser.
+So far all of our exercises have had elements stacked vertically, what if we want them to be side by side? What if we want text to wrap around an image? Let's look at a few example to wrap our heads around floats. Open up <a href="exercises/css-floats1.html" class="exercise">`css-floats1.html`</a> in your editor and browser.
 
 We have a document with a bunch of text, two pictures and a little styling. Whats the deal with the text not wrapping around the pictures of the puppies?
 
@@ -358,12 +358,12 @@ Go ahead and write the CSS to float the other one right. The end result should l
 
 ![](http://wes.io/JGvc/Screen%20Shot%202012-09-06%20at%204.51.21%20PM.png)
 
-**Note: If you take a look at the exercise we did last class with <a href="../day2/exercises/css-selector-exercises.html" class="exercise">css-selector-exercises.html</a> you'll see that I'm using multiple image floats so the team pictures all line up beside each other**
+**Note: If you take a look at the exercise we did last class with `<a href="../day2/exercises/css-selector-exercises.html" class="exercise">`css-selector-exercises.html`</a> you'll see that I'm using multiple image floats so the team pictures all line up beside each other**
 
 ### Floating other elements in a layout
 Let's take a look at a basic HTML layout and see how floats make it happen.
 
-Open up <a href="exercises/css-floats2.html" class="exercise">css-floats2.html</a> and we will take a look at the markup
+Open up <a href="exercises/css-floats2.html" class="exercise">`css-floats2.html`</a> and we will take a look at the markup
 
 We have Four main divs: header,content, sidebar and footer. We want to make them look like a normal website.
 
@@ -456,9 +456,9 @@ There are two fixes for this:
 
 This exercise will throw you into the deep end. We will be using widths, floats, clearing, margin and padding.
 
-Open <a href="exercise/css-layout-exercise.html" class="exercise">css-layout-exercise.html</a> in your editor and browser.
+Open <a href="exercises/css-layout-exercise.html" class="exercise">`css-layout-exercise.html`</a> in your editor and browser.
 
-Write the selectors and the CSS code to make it look like <a href="exercise/css-layout-exercise-ANSWER.html" class="exercise">css-layout-exercise-ANSWER.html</a>
+Write the selectors and the CSS code to make it look like <a href="exercises/css-layout-exercise-ANSWER.html" class="exercise">`css-layout-exercise-ANSWER.html`</a>
 
 Work with each other to write the selectors and please ask questions to me and the mentors. This one is a tough one so you may need to sneak a peak at the answer code every now and then.
 

@@ -53,11 +53,11 @@ The reasoning behind this is that Wes knew he wasn't getting into the web develo
 ### Examples
 Lea Verou <http://lea.verou.me/> — Speaker, Writer, Developer, Designer 
 
-Heather Payne <http://heatherpayne.ca/> — Ladies Learning Code, HackerYou, Speaker, Awesome
-
 Seth Godin <http://www.sethgodin.com/sg/> — Author, Speaker, Bald
 
-George Stroumboulopoulos — <http://www.cbc.ca/strombo/>
+Heather Payne <http://heatherpayne.ca/> — Ladies Learning Code, HackerYou, Investor, Speaker
+
+Wes Bos <http://wesbos.com/> - Freelance Web Developer & Designer, Teacher
 
 ### Running under a company name
 The above won't be the case for everyone. You may have your goals set on eventually (or immediately) creating a team and blooming into an agency.
@@ -68,12 +68,12 @@ Running under a company name isn't always as _personal_ but it certainly can giv
 
 Frank and Vivian are Studio Function <http://studiofunction.com/>
 
-**le graphoir** <http://legraphoir.com/>
+Nascent <http://nascentdigital.com/>
 
-ustwo <http://ustwo.com/>
+Happy Cog <http://happycog.com//>
 
 ### A mix of both
-You may not have a name which is very unique, which in turn isn't going to be very available on twitter/domains nor google-able.
+You may not have a very unique name, so it might not be available on twitter/domains nor google-able.
 
 You may choose to run under an alias or a handle which you have just made up.
 
@@ -85,6 +85,8 @@ Mike Taylor is **MikeTaylr** <https://miketaylr.com/> — Mozilla Web Advocate
 
 Carmen Rose is **Love Carmen Rose** <http://lovecarmenrose.com/>
 
+Jessica Duarte (Winter 2014 Bootcamp grad) is **Jess, Please** <http://jessplease.com/> - Front-End Developer & Freelancer
+
 
 ## Creating and Investing in a personal brand
 Creating a personal brand is extremely valuable and you need to make sure you devote time to creating and maintaining your personal brand. As a freelancer, there will _always_ be work to do and emails to send, so make sure to block time to do so. 
@@ -95,9 +97,9 @@ So, _how_ do you do these things?
 
 THe biggest part of creating your own personal brand is being extremely vocal about what you do. As we said earlier, **you must let everyone know what is it you do.**
 
-Being a freelancer isn't just a job, it's going to be a huge part of your life and you need to make it seem so to others around you. To do this, you must get really involved both within the development community as well as outside. 
+Being a freelancer isn't just a job, it's going to be a huge part of your life and you need to make it seem so to others around you. To do this, you must get really involved both within the development community as well as outside of it. 
 
-Many people don't like to talk about themselves or the work they are doing as it can feel braggy. There is a fine line between being obnoxious and keeping people up to date with what you are doing. This is something we will all have to learn. 
+Many people don't like to talk about themselves or the work they are doing as it can feel braggy. There is a fine line between being obnoxious and keeping people up to date with what you are doing. This is something we all have to learn, and you'll get there eventually...with practice! 
 
 We will go into _how_ you can be vocal in the coming sections. 
 
@@ -109,14 +111,15 @@ These things are going to happen, there is no getting around it. How you handle 
 Tips on being reliable:
 
 1. Respond to initial inquiry emails as soon as you can.
-2. No matter how much you hate it, always pick up the phone.
-3. If you foresee any issues in project timing, let your client know as soon as possible. A client always prefers transparency over hiding possible problems.
-4. If you screw something up, explain the problem along with a solution and time line to get it fixed. 
-5. Under promise, over deliver.
+2. Honour your verbal and written committments
+3. No matter how much you hate it, always pick up the phone.
+4. If you foresee any issues in project timing, let your client know as soon as possible. A client always prefers transparency over hiding possible problems.
+5. If you screw something up, explain the problem along with a solution and time line to get it fixed. 
+6. Under promise, over deliver.
 
 It is so important to be a reliable and consistent person when you are freelancing because so many of our leads come from referral. 
 
-You may stumble upon a contact who can refer a few people a month to you. By referring you, they are sticking their neck out for you, saying you are the right person for the job. If you flake out, that will get back to them and you have burned a very valuable bridge.
+You may stumble upon a contact who can refer a few people a month to you. I do this for Wes, and now I do it for bootcamp grads who have started freelancing. By referring you, they are sticking their neck out for you, saying you are the right person for the job. If you flake out, that will get back to them and you have burned a very valuable bridge.
 
 ### Fresh
 A personal brand isn't something you develop in a few days and then ride out. It's something that you need to be continually working on. At first it may seem like work, but it will soon become second nature as you immerse yourself in being a freelancer.
@@ -124,13 +127,13 @@ A personal brand isn't something you develop in a few days and then ride out. It
 Whether its tweaking your site design, updating business cards, writing a blog post, tweeting or applying to speak at a conference, you should always be building on your brand.
 
 ### Facebook
-Facebook seems like the last place you would go to get work. It's a very personal and private space for family and friends, not really a space where many converse with industry people.
+Facebook seems like the last place you would go to get work. It seems like a very personal and private space for family and friends, not really a space where many converse with industry people.
 
-However, Facebook is a huge tool for building your personal brand. Facebook is a gold mine of people who already trust you and would love to recommend you, if they just knew what you did. 
+However, Facebook is an awesome tool for building your personal brand. Facebook is a gold mine of people who already trust you and would love to recommend you, if they just knew what you did. 
 
 So, I'm not saying to create a facebook page and spam everyone in your list, but rather share links to websites you are building, share pictures of your Hackeryou experience, tell everyone you build websites and are available for work.
 
-Fairly often, I get a message from someone on facebook saying something like this:
+For example, Wes often gets messages from people on facebook saying something like this:
 
 > Hey Wes, hows it going? Long time no talk! Anyways, I see that you are always doing website stuff and I was wondering if you were interested in doing something for my (dad's|uncle's|sister's|friend's brother in law) company.
 
@@ -164,10 +167,23 @@ If you have a friend who is good with words, buy them a beer in trade for a litt
 
 #### Examples
 
+Twitter-length:
+
+@vivianhui:
+
+> Toronto web / interaction / mobile / print graphic designer. Founding Partner of @studiofunction. Likes: the future. Dislikes: olden times.
+
+Quick intro:
+
+@wesbos:
+
 > I'm Wes Bos, a web developer, UI designer and speaker from Toronto. I love business, the internet, cutting edge technology and best practices. I've been creating websites for around 9 years and have become pretty good at it. I hang out on Twitter and would love to meet you.
 
 <http://wesbos.com/about/>
 
+Longer bio:
+
+@heatherpayne
 
 > Hi! I'm Heather Payne. I live in Toronto, Canada, and I'm the founder of HackerYou and Ladies Learning Code. My team and I also run Girls Learning Code and Kids Learning Code. I was ShopLocket's first investor, the founding director of Toronto's Mozilla-backed youth digital literacy initiative, and I'm currently learning Ruby on Rails.
 
@@ -177,18 +193,24 @@ If you have a friend who is good with words, buy them a beer in trade for a litt
 
 ### Avatars & Print pictures
 
-Ditch the picture of your cat and get a real, high quality photo of yourself taken. Having a consistent avatar that really shows your face makes people feel at ease when dealing with you. They know you are a real person. 
+Ditch the picture of your cat and get a real, high quality photo of yourself taken. Having a consistent avatar that shows your face makes people feel at ease when dealing with you. They know you are a real person. 
 
 Have large, high resolution version of your photo available for anyone who asks. When you are featured on a website or in print, the last thing you want is someone pulling a photo from 4 years ago that they found on Google images. 
 
 Take care of your visual identity and always keep it up to date.
 
+Eventually, you might want to set up a page like this: <http://heatherpayne.ca/official-bio>
+
 ### Blog
-You have probably already been told this a million times, but having a blog is _so_ crucial to the success of a freelancer. By sharing what you know — be it about technology, business, or life — you will automatically become an expert in that area.
+You have probably already been told this a million times, but having a blog is _so_ crucial to the success of a freelancer or front-end developer. You're trying to break in to a new industry, and it's going to take some extra work. By sharing what you know — be it about technology, business, or life — you will automatically be perceived as an expert in that area.
 
-I often share short tutorials or examples of code that I found helpful on my blog. These are not only helpful to other developers, but clients can see that you really know your stuff.
+I know, blogging is hard. That's why no one does it. That's why blogging is going to make you stand out.
 
-Every single blog post on my blog has resulted in paid work. Let's take a look at a few examples right now on <http://wesbos.com>
+Wes often shares short tutorials or examples of code that he found helpful on his blog. These are not only helpful to other developers, but clients can see that you really know your stuff. A bunch of students in the last cohort did a great job blogging throughout their time here. Here are some examples:
+
+Amy Allen (now a front-end developer at Demac Media): http://amyallen.ca/blog/
+Gab White (returning to her job in Halifax as a front-end developer, not just a designer): http://gabwhite.com/
+Danielle Webb (full-time freelancer): http://danielleawebb.com/blog/
 
 ### Twitter
 Tell people what do you in your twitter bio, air on the side of bragging. Look important. This will show people that you are really involved and interesting to follow.
@@ -206,7 +228,7 @@ Tell people what do you in your twitter bio, air on the side of bragging. Look i
 <https://twitter.com/skanwar>
 
 ### Email Address
-Having a professional email address on your own domain will really up the level of your credibility. Ditch SuperSexySoccerGurl69@hotmail.com and sign up for a real email provider. 
+Having a professional email address on your own domain will really up the level of your credibility. Ditch SoccerGurl88@hotmail.com and sign up for a real email provider. 
 
 I recommend using Google Apps as it is exactly like Gmail. This will allow you to create an email address @yourdomain.com. You can also create alias to other domain names.
 
@@ -214,7 +236,7 @@ I have 1 google apps account setup for wesbos.com, kaitbos.com and bostype.com.
 
 <http://www.google.ca/enterprise/apps/business/>
 
-It is no longer free, but well worth the $50/year per user.
+It is no longer free, but well worth the $50/year per user. Christopher also found a way to set up a personal email address for free through Bluehost, so you can ask him about it.
 
 <http://www.google.ca/enterprise/apps/business/pricing.html>
 

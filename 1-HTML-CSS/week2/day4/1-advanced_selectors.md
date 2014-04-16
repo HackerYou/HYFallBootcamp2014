@@ -96,7 +96,7 @@ Select elements that follow an element:
 		<p>I'm a paragraph</p>
 		<p>I'm a paragraph</p>
 		<p>I'm a paragraph</p>
-		<img src="http://placedog.com/100/100">
+		<img src="http://placedoge.com/100/100">
 		<p>I'm a paragraph</p>
 		<p>I'm a paragraph</p>
 		<p>I'm a paragraph</p>
@@ -112,7 +112,7 @@ Select elements that follow an element:
 	<p>I'm a paragraph</p>
 	<p>I'm a paragraph</p>
 	<p>I'm a paragraph</p>
-	<img src="http://placedog.com/100/100">
+	<img src="http://placedoge.com/100/100">
 	<p>I'm a paragraph</p>
 	<p>I'm a paragraph</p>
 	<p>I'm a paragraph</p>
@@ -210,15 +210,15 @@ Let's make all https links green:
 
 ## Ends with
 
-Target the end of an attribute. Turn all links to jpgs blue.
+Target the end of an attribute. Turn all links to jpgs goldenrod.
 
 <a href="http://google.com">Google.com</a>
 <a href="http://wesbos.com/logo.png">Wes Bos' logo</a>
-<a href="http://wesbos.com/face.jpg">Wes Bos' picture</a>
+<a href="http://cache.wallpaperdownloader.com/bing/img/BabyRedFox_20110322.jpg">baby fox picture</a>
 
 <style>
 	a[href$="jpg"] {
-		color:blue;
+		color:goldenrod;
 	}
 </style>
 
@@ -346,10 +346,11 @@ Select the first letter of an element
 			font-size:100px;
 		}
 	</style>
-<p class="wes">Wes Bos</p>
+
+<p class="hacker">HackerYou</p>
 
 <style>
-	p.wes::first-letter {
+	p.hacker::first-letter {
 		font-size:100px;
 	}
 </style>
@@ -364,6 +365,7 @@ Select the first letter of an element
 			color:red;	
 		}
 	</style>
+
 <p class="lines">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Aliquam, minus, quos, earum expedita obcaecati reprehenderitinventore libero atque veniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat temporaveniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat temporaveniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat temporaveniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat temporaveniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat temporaveniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat temporaveniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat temporaveniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat temporaveniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat temporaveniam aut repellendus tenetur in repellat necessitatibus eveniet iure eos quaerat tempora!</p>
 
 <style>

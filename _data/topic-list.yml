@@ -104,6 +104,14 @@
     path: week2/day3/exercises/text-shadow.html
   - title: Box Shadow
     path: week2/day3/exercises/box-shadow.html
+  - title: Responsive Demo 1
+    path: week3/day1/exercises/responsive1.html
+  - title: Responsive Demo 2
+    path: week3/day1/exercises/responsive2.html
+  - title: Responsive Demo 3
+    path: week3/day1/exercises/responsive3.html
+  - title: Responsive Exercises
+    path: week3/day1/exercises/responsive-exercises.zip
 - name: UX and Design
   slug: ux
   directory: 2-Design 

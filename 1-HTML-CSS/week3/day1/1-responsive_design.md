@@ -79,7 +79,7 @@ The above CSS gets applied when the browser reaches a width of **940px or smalle
 
 I find the easiest way to visualize breakpoints is to set either a background color or a border on the body to make it obvious which breakpoint you current are on.
 
-Open `responsive1.html` in your editor browser and lets take a look through the source code...
+Open <a href="exercises/responsive1.html" class="exercise">**responsive1.html**</a> in your editor browser and lets take a look through the source code...
 
 ### Targeting Width & Height
 
@@ -260,7 +260,7 @@ If you were to add 5% margin to a 75% width element:
 
 The entire element needs 85% of the parent width.
 
-Let's work through a basic example together, open up `responsive2.html` in your browser and editor.
+Let's work through a basic example together, open up <a href="exercises/responsive2.html" class="exercise">**responsive2.html**</a> in your browser and editor.
 
 ## Min and Max Widths/heights
 
@@ -282,7 +282,7 @@ This is a common problem that happens when your desktop images are large enough 
 ![](http://wes.io/Kjhc/Screen%20Shot%202012-11-07%20at%204.13.58%20PM.png)
 
 
-Open up `responsive3.html` to get an idea of this issue.
+Open up <a href="exercises/responsive3.html" class="exercise">**responsive3.html**</a> to get an idea of this issue.
 
 The fix is easy. We just need to apply a max width to all images. This ensures that images will never be bigger than their parent element.
 
@@ -307,7 +307,7 @@ You simply need to resize your browser to the approximate size of your device. H
 We have been working with our header, footer, content sidebar layout quite a bit. Let's work together to see how we can make it a really great responsive site.
 
 ## Exercises
-Now we are going to work on exercises. Starting with easy media queries and moving on up in complexity. See today's folder for the exercises and answers.
+Now we are going to work on exercises. Starting with easy media queries and moving on up in complexity. See <a href="exercises/responsive-exercises.zip" class="exercise">**responsive-exercises.zip**</a> for the exercises and answers.
 
 
 ## Fav Icons and Touch Icons
@@ -349,7 +349,7 @@ It is reccomended you use at least 144x144 and let the device size it down for y
 	<!-- Retina iPad -->
 	<link rel="apple-touch-icon" sizes="144x144" href="touch-icon-ipad-144.png" />
 
-	<style>span.white {border-bottom:1px solid black; color:white; } span.white:hover {color:black;}}</style>
+<style>span.white {border-bottom:1px solid black; color:white; } span.white:hover {color:black;}}</style>
 
 ##Additional Resources: 
 

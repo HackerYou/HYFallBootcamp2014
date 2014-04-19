@@ -1,8 +1,29 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<title>CSS List Styles</title>
-</head>
+	<head>
+		<title>CSS List Styles</title>
+		<style type="text/css">
+			/* 
+				Using CSS, create a dropdown menu from the above HTML
+				This one is different to pay attention to which element you make position:relative;
+			*/
+			body {
+				margin:0;
+				font-family: sans-serif;
+			}
+			a {
+				color:white;
+				text-decoration: none;
+			}
+			ul {
+				margin:0;
+				padding:0;
+				background:#CA0002;
+				float:left;
+				width:100%;
+			}
+		</style>
+	</head>
 	<body>
 		<ul class="nav">
 			<li><a href="home.html">Home</a></li>
@@ -23,31 +44,5 @@
 			</li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
-
-		<style type="text/css">
-		/* 
-			Using CSS, create a dropdown menu from the above HTML
-			This one is different to pay attention to which element you make position:relative;
-		*/
-
-
-		body {
-			margin:0;
-			font-family: sans-serif;
-		}
-		a {
-			color:white;
-			text-decoration: none;
-		}
-		ul {
-			margin:0;
-			padding:0;
-			background:#CA0002;
-			float:left;
-			width:100%;
-		}
-
-
-		</style>
 	</body>
 </html>

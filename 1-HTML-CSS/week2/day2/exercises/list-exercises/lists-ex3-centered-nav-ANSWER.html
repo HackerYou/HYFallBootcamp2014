@@ -1,16 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<title>CSS List Styles</title>
-</head>
-	<body>
-		<ul class="nav">
-			<li class="currentPage"><a href="home.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="work.html">Work</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-
+	<head>
+		<title>CSS List Styles</title>
 		<style type="text/css">
 			/*
 				With CSS style this nav similar to the answer
@@ -27,31 +18,37 @@
 				margin:20px;
 				text-align: center;
 			}
-				ul.nav li {
-					display:inline;
-				}
-					ul.nav li a {
-						background:#75523D;
-						padding:10px;
-						color:white;
-						border-radius: 2px;
-						margin:0 10px;
-						font-family: sans-serif;
-						text-decoration: none;
-						border-top:2px solid #5C3B28;
-						font-size:20px;
-					}
-
-					ul.nav li a:hover {
-						background:#678686;
-						border-top:2px solid #426161;
-					}
-
-					ul.nav li.currentPage a {
-						font-weight:600;
-						background:#776C7B;
-						border-top:2px solid #5C515F;
-					}
+			ul.nav li {
+				display:inline;
+			}
+			ul.nav li a {
+				background:#75523D;
+				padding:10px;
+				color:white;
+				border-radius: 2px;
+				margin:0 10px;
+				font-family: sans-serif;
+				text-decoration: none;
+				border-top:2px solid #5C3B28;
+				font-size:20px;
+			}
+			ul.nav li a:hover {
+				background:#678686;
+				border-top:2px solid #426161;
+			}
+			ul.nav li.currentPage a {
+				font-weight:600;
+				background:#776C7B;
+				border-top:2px solid #5C515F;
+			}
 		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li class="currentPage"><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="work.html">Work</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
 	</body>
 </html>

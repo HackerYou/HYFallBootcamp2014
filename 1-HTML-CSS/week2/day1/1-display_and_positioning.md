@@ -8,54 +8,55 @@ topic: html
 
 ## CSS Normalize
 
-One other tool that web designers and developers have in their toolbelt is something called a CSS Normalize or a CSS Reset.
+One other tool that web designers and developers have in their tool belt is something called a CSS Normalize or a CSS Reset.
 
-We use CSS Normalize because not all browsers start on the same playing field. All browsers come with style defaults, such as making all h1-h6 elements escalate in size and adding padding and margins to various elements. Though you may want to keep the default styles, they aren't consistent across all the browsers. This can lead to problems down the road because we want our websites to look fairly consistent in all the browsers!
+We use CSS Normalize because not all browsers start on the same playing field. All browsers come with style defaults, such as making all `h1`-`h6` elements escalate in size and adding padding and margins to various elements. Though you may want to keep the default styles, they aren't consistent across all the browsers. This can lead to problems down the road because we want our websites to look fairly consistent in all the browsers!
 
-CSS Normalize fixes this. It's a chunk of CSS code that we can either insert into the top of our CSS Document or add it as a separate stylesheet in the `<head>` of our HTML document.  Note that if you add it as a separate stylesheet, it should be included *before* your custom stylesheet. 
+CSS Normalize fixes this. It's a chunk of CSS code that we can either insert into the top of our CSS Document or add it as a separate stylesheet in the `<head>` of our HTML document.  
+
+**Note:** If you add it as a separate stylesheet, it should be included *before* your custom stylesheet. 
 
 Normalize does exactly what it says - **normalize the default styling of all elements across all browsers**.
 
-You can download normalize at [http://necolas.github.com/normalize.css/](http://necolas.github.com/normalize.css/). We won't be using it for our examples, but any public facing sites (including our final project) should use it.
+You can download Normalize.css at [http://necolas.github.com/normalize.css/](http://necolas.github.com/normalize.css/). We won't be using it for our examples, but any public facing sites (including our final project) should use it.
 
-## Linking within a page (or when its okay to use ids!)
-Ever wonder how link to a certain point within a page?
+## Linking within a page
+
+Ever wonder how to link to a certain point within a page?
 
 To link to a different page, it would look something like this:
 
 	<a href="about.html">About</a>
 
-However, we are able to use a page hash to link to where a certain element starts. Ever see a link that looks like this:
+However, we are able to use a page hash (#) to link to where a certain element starts. Ever see a link that looks like this:
 
 	http://mysite.com/about.html#foods
 
 When you visit it, it automagically links to the header called food! How does it know?
 
-This is where we finally get to use ids! Since you should only ever use an ID once, it makes sense that we would use them to define a specific spot in our page.
+This is where we finally get to use ids! Since you can only use an ID once per page, it makes sense to use them to define a specific spot on the page.
 
-Lets say we have an `h2` element in a document called **about.html**:
+Let's say we have an `h2` element in a document called **about.html**:
 
-	<h2 id="food">Foods I like</h2>
+	<h2 id="food">Foods I Like</h2>
 
 If we are currently inside of **about.html**, we can link to that part of the document simply by referencing the ID name like this:
 
-	<a href="#food">See Foods I like</a>
+	<a href="#food">See Foods I Like</a>
 
 If we are on another page and want to link to that specific spot:
 
-	<a href="about.html#food">See Foods I like on another page</a>
+	<a href="about.html#food">See Foods I Like on another page</a>
 
-You can link to any element with an ID, such as a div, span or blockquote but you will generally use heading tags.
+You can link to any element with an ID, such as a `<div>`, `<span>` or `<blockquote>` but you will generally use heading tags.
 
 Open up <a href="exercises/link-within.html" class="exercise">**link-within.html**</a> and create a navigation based on the available markup. It can be a single level navigation - no dropdowns required.
 
 ## CSS Display
 
-Today we are going to learn about a new CSS property called **`display`**.
+The **`display`** property specifies the type of box used when rendering an element on the page. Let's first discuss `inline` and `block` elements.
 
-The **`display`** property specifies the type of box used when rendering an element on the page. Let's first discuss `inline` and `block`.
-
-To explain this, lets take a look at some basic markup.
+To explain this, let's take a look at some basic markup.
 
 	<span>I'm a span</span>
 	<span>I'm a span</span>
@@ -64,12 +65,12 @@ To explain this, lets take a look at some basic markup.
 	<div>I'm a div</div>
 	<div>I'm a div</div>
 
-How will the above be displayed in the browser? Let's open <a href="exercises/display.html" class="exercise">**display.html**</a> in the browser and see.
+How will the above be displayed in the browser? Let's open <a href="exercises/display.html" class="exercise">**display.html**</a> in the browser.
 
 ![](http://wes.io/K21R/Screen%20Shot%202012-10-09%20at%2011.25.42%20AM.png)
 <small>Note: I added a pink background and some margin to tell the elements apart</small>
 
-**Why do the spans go up against each other and the divs start a new line when their contents are almost identical?**
+**Why do the spans line up beside each other and the divs start on a new line when their contents are almost identical?**
 
 This is the difference between `display:inline` and `display:block`. By default, **spans are inline** and **divs are block**.
 
@@ -87,7 +88,7 @@ Notice how we wrapped different words in a link or a span and everything stays i
 1. Set a width of 400px on the food spans, what happens?
 1. Try changing the spans to divs. See what happens.
 
-You may have figured this out already, but inline elements do not accept a width because, their default behaviour is to only take up as much space as they need to and continue on with the content within that element.
+You may have figured this out already, but inline elements do not accept a width because their default behaviour is to only take up as much space as they need to and continue on with the content within that element.
 
 ### display:block
 
@@ -95,28 +96,28 @@ Block elements, on the other hand, are elements that generally encompass inline 
 
 Block elements accept a width, which is why we use them to lay out our page.
 
-Some examples of block elements are `div`, `h1-h6`, `p`, `ul/ol`, `blockquote`.
+Some examples of block elements are `div`, `h1-h6`, `p`, `ul/ol`, `li`, and `blockquote`.
 
 ### Converting them
 Sometimes you may want a link or span to have a set width. We can use CSS to change the default style by using the `display` property. Let's take this markup for example:
 
-<p>Here is my link to <a href="http://google.com" class="myLink">Google</a>.</p>
+	<p>Here is my link to <a href="http://google.com" class="myLink">Google</a>.</p>
 
 and some CSS
 
-	a.myLink {
-		width:300px;
-		background:red;
-		display:block;
-	}
+    a.myLink {
+        width:300px;
+        background:red;
+        display:block;
+    }
 
 Notice how when we switch from the default `display:inline` to `display:block`, the element takes the 300px width and breaks to a new line?
 
 ### inline-block
 
-There is one more kind of display that we will be looking at today, `inline-block` which isn't supported in IE7. [http://caniuse.com/#search=inline-block](http://caniuse.com/#search=inline-block)
+Inline block is the best of both worlds - you can set a width/height on the element, like block elements, but it will still display side-by-side in the line, just like inline elements. 
 
-Inline block is the best of both worlds - you can set a width/height on the element, like block elements, but it will still display side-by-side in the line, like inline elements. 
+**Note:** `inline-block` isn't supported in IE7. [http://caniuse.com/#search=inline-block](http://caniuse.com/#search=inline-block)
 
 Images are the only element that are by default set to inline-block. Let's see how it works with some markup:
 
@@ -126,12 +127,12 @@ If we wanted to set a width and height on the image, we totally could and it doe
 
 Let's try it with our last link:
 
-	a.myLink {
-		width:300px;
-		height:50px;
-		background:red;
-		display:inline-block;
-	}
+    a.myLink {
+        width:300px;
+        height:50px;
+        background:red;
+        display:inline-block;
+    }
 
 Notice how it now sets the width and remains inline? We will do a bunch of exercises involving `display` soon.
 
@@ -141,9 +142,9 @@ Notice how it now sets the width and remains inline? We will do a bunch of exerc
 
 ## CSS Position: Static, Relative, Absolute and Fixed
 
-So far in CSS we have working with elements that fit up snugly beside each other, and this works great for most use cases.
+So far, we've been working with `float` or `display` to make elements fit snugly beside each other. This works great most of the time.
 
-But, what happens when we want a little more control over how we position elements on our screen? What if we want to:
+But, what happens when we want a little more control over how to position elements on the screen? What if we want to:
 
 1. Bump something up and over a few pixels?
 1. Overlap two elements or have something burst outside of its wrapper.
@@ -154,9 +155,9 @@ So far, every time we add more content to our page, the page gets longer.
 
 ### Default of position:static
 
-All elements in HTML are by default `position:static;` which means that they aren't positioned at all, they just **take up the space they need** and let other elements start after them.
+All elements in HTML are by default `position:static;` which means that they aren't positioned at all, they just **take up the space they need** and other elements start after them.
 
-This is what we have worked with so far. You'll never need to set `position:static;` on an element unless you are overriding something you have set earlier.
+This is what we have worked with so far. You'll won't need to set `position:static;` on an element unless you are overriding something you have set earlier.
 
 ### Enter position:relative
 
@@ -164,7 +165,7 @@ This is what we have worked with so far. You'll never need to set `position:stat
 
 When we position something as **relative**, we unlock the ability to use four more properties: `top`,`right`,`bottom`,`left`. These can be used to nudge the element around.
 
-Open <a href="exercises/position-relative.html" class="exercise">**position-relative.html**</a> in your editor and we will do the following:
+Open <a href="exercises/position-relative.html" class="exercise">**position-relative.html**</a> in your editor and do the following:
 
 1. Position the `.box` div to relative.
 1. Try using a `top` and `left` value of 100px each.
@@ -182,41 +183,41 @@ You can now position an absolute value exactly where you want it to go. Open <a 
 
 Go ahead and set .box2 to position absolute:
 
-	.box2 {
-		background: green;
-		position: absolute;
-	}
+    .box2 {
+        background: green;
+        position: absolute;
+    }
 
-What just happened? Where is the blue .box3? The green box was **positioned absolutely** and no longer takes up any space, so naturally the blue box just bumps itself right up and under green box.
+What just happened? Where is the blue .box3? The green box was set to **position: absolute** and no longer takes up any space, so naturally the blue box just bumps itself right up and under green box.
 
 Lets play with positioning the green box:
 
-	.box2 {
-		background:green;
-		position: absolute;
-		top:500px;
-		left:120px;
-	}
+    .box2 {
+        background:green;
+        position: absolute;
+        top:500px;
+        left:120px;
+    }
 
 Or use bottom and right values:
 
-	.box2 {
-		background:green;
-		position: absolute;
-		bottom:20px;
-		right:20px;
-	}
+    .box2 {
+        background:green;
+        position: absolute;
+        bottom:20px;
+        right:20px;
+    }
 
 You can also use percentages:
 
-	.box2 {
-		background:green;
-		position: absolute;
-		width:5%;
-		height:5%;
-		top:45%;
-		left:45%;
-	}
+    .box2 {
+        background:green;
+        position: absolute;
+        width:5%;
+        height:5%;
+        top:45%;
+        left:45%;
+    }
 
 You'll notice that the box can be positioned at any point on the screen and it doesn't care if there is content where it wants to go or not, it just overlaps everything.
 
@@ -224,7 +225,7 @@ Now, where do you think top, left, right and bottom referring to?
 
 ### Mixing Relative and Absolute
 
-The last example was good for understanding absolute positioning, but chances are you won't just have elements loose like that in your layout, you will have a wrapper, a sidebar, content, some kind of container.
+The last example was good for understanding absolute positioning, but chances are you won't just have elements loose like that in your layout, you will have a wrapper, a sidebar, content or some kind of container.
 
 This is where we need to mix `relative` and `absolute` positioning. Open up <a href="exercises/position.html" class="exercise">**position.html**</a> in your browser and editor.
 
@@ -234,12 +235,12 @@ Let's write some code so the green box is positioned like this:
 
 Our first thought may be to do something like this:
 
-	.box2 {
-		background:green;
-		position: absolute;
-		top:-20px;
-		right:20px;
-	}
+    .box2 {
+        background:green;
+        position: absolute;
+        top:-20px;
+        right:20px;
+    }
 
 And that is right, but why is it positioned way outside of the wrapper div? Try resizing your browser too.
 
@@ -249,18 +250,18 @@ And this is the secret sauce of mixing `relative` and `absolute`:
 
 **When you set the position of an element to absolute and use top, right, bottom, left, it is absolutely positioned relative to its next relative parent.**
 
-So, because we do not have any parent elements set to `relative`, it's positioning is relative to the `<body>` or the browser window.
+So, because we do not have any parent elements set to `relative`, its positioning is relative to the `<body>` or the browser window.
 
 Easy fix for this is to position our `.wrapper` as relative:
 
-	.wrapper {
-		width: 400px;
-		margin:50px auto;
-		border:2px solid #BADA55;
-		
-		/* This relative position will contain the absolute positioned child elements within this box. They will still be absolutely positioned, but now relative to this box, rather than the body. */
-		position: relative; 
-	}
+    .wrapper {
+        width: 400px;
+        margin:50px auto;
+        border:2px solid #BADA55;
+        
+        /* This relative position will contain the absolute positioned child elements within this box. They will still be absolutely positioned, but now relative to this box, rather than the body. */
+        position: relative; 
+    }
 
 
 #### Another Example
@@ -273,34 +274,34 @@ We want to end up with something that looks like this:
 
 ![](http://f.cl.ly/items/1f2C3y2727453I0a2s0d/Screen%20Shot%202012-10-10%20at%2011.33.33%20AM.png)
 
-Our first step would be to position all boxes absolutely and position them in the 4 corners:
+Our first step would be to position all boxes `absolute` and position them in the 4 corners:
 
-	.box {
-		width:100px;
-		height:100px;
-		margin:5px;
-		position: absolute;
-	}
-	.box1 {
-		background:red;
-		top:0;
-		left:0;
-	}
-	.box2 {
-		background:green;
-		top:0;
-		right:0;
-	}
-	.box3 {
-		background:blue;
-		bottom:0;
-		right:0;
-	}
-	.box4 {
-		background:orange;
-		bottom:0;
-		left:0;
-	}
+    .box {
+        width:100px;
+        height:100px;
+        margin:5px;
+        position: absolute;
+    }
+    .box1 {
+        background:red;
+        top:0;
+        left:0;
+    }
+    .box2 {
+        background:green;
+        top:0;
+        right:0;
+    }
+    .box3 {
+        background:blue;
+        bottom:0;
+        right:0;
+    }
+    .box4 {
+        background:orange;
+        bottom:0;
+        left:0;
+    }
 
 So why are the boxes in the corners of the browser even though they are nested inside of two wrapper divs?
 
@@ -321,12 +322,12 @@ Lets open up <a href="exercises/position-fixed.html" class="exercise">**position
 
 We have a black header at the top. Let's try and use CSS to make it fixed:
 
-	.fixedHeader {
-		position: fixed;
-		left:0;
-		top:0;
-		width:100%;
-	}
+    .fixedHeader {
+        position: fixed;
+        left:0;
+        top:0;
+        width:100%;
+    }
 
 Now try and scroll down. See how the header sticks in place?
 
@@ -347,12 +348,12 @@ They are all positioned absolutely and are overlapping each other. By default, t
 
 Let's use z-index to bring the blue block on top of everything else:
 
-	.box3 {
-		background:blue;
-		top:60px;
-		left:60px;
-		z-index: 1;
-	}
+    .box3 {
+        background:blue;
+        top:60px;
+        left:60px;
+        z-index: 1;
+    }
 
 See how the blue box is now above everything else? 
 
@@ -367,25 +368,25 @@ Open up <a href="exercises/border-radius.html" class="exercise">**border-radius.
 
 Basic usage is to supply one value for all corners:
 
-	.box1 {
-		background:red;
-		border-radius:5px;
-	}
+    .box1 {
+        background:red;
+        border-radius:5px;
+    }
 
 But we can also use short hand to specify TRBL (top, right, bottom, left):
 
-	.box3 {
-		background:blue;
-		border-radius:5px 10px 100px 1px;
-	}
+    .box3 {
+        background:blue;
+        border-radius:5px 10px 100px 1px;
+    }
 
 A 50% border radius makes a perfect circle. Go ahead and try some out.
 
 You can even do it on an image:
 
-	img.dog {
-		border-radius: 50%;
-	}
+    img.dog {
+        border-radius: 50%;
+    }
 
 ## Vendor Prefixes
 
@@ -393,21 +394,21 @@ Sometimes features in web browsers are released half baked on purpose. They are 
 
 For example, 2 years ago, border radius had to be written like this:
 
-	.pic {
-		-webkit-border-radius:10px; /* Chrome and Safari */
-		-moz-border-radius:10px; /* Fireofox */
-		-ms-border-radius:10px; /* IE */
-		-o-border-radius: 10px; /* Opera */
-		border-radius:10px; /* For when everyone gets along and moves to unprefixed */
-	}
+    .pic {
+        -webkit-border-radius:10px; /* Chrome and Safari */
+        -moz-border-radius:10px; /* Fireofox */
+        -ms-border-radius:10px; /* IE */
+        -o-border-radius: 10px; /* Opera */
+        border-radius:10px; /* For when everyone gets along and moves to unprefixed */
+    }
 
 Whew.
 
 Luckily for us, we don't have to do that any more, but we will sometimes find features that are prefixed or only available in some browsers. Take blur as an example:
 
-	.myDiv {
-		-webkit-filter:blur(4px); /* Only available in Chrome at the moment, vendor prefixed */
-	}
+    .myDiv {
+        -webkit-filter:blur(4px); /* Only available in Chrome at the moment, vendor prefixed */
+    }
 
 
 ## Exercises

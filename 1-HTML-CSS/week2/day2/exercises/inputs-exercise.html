@@ -1,8 +1,55 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<title>CSS Input styling</title>
-</head>
+	<head>
+		<title>CSS Input styling</title>
+		<style type="text/css">
+			/*
+				Using CSS and by adding HTML to the above, match the styles of the answer key
+				Pay attention to:
+					- font sizes
+					- borders
+					- focus states
+					- padding
+					- margin
+					- placeholder text vs set values
+					- password
+			*/ 
+
+
+
+			/* Box Model fix */
+			* { 
+				-moz-box-sizing: border-box; 
+				-webkit-box-sizing: border-box; 
+				box-sizing: border-box; 
+			}
+
+			body {
+				background:black;
+				background-size: cover;
+				font-family: sans-serif;
+			}
+
+			form.exercise {
+				width:500px;
+				padding:10px;
+				margin:20px auto;
+				background:white;
+				border-radius: 5px;
+			}
+
+			/* Some default styling */
+			input {
+				width:100%;
+				margin:0  0 20px 0;
+				outline:0;
+			}
+				input[type=checkbox],input[type=radio] {
+					width:auto;
+				}
+
+		</style>
+	</head>
 	<body>
 		<form action="login.php" class="exercise">
 			
@@ -77,52 +124,6 @@
 			<!-- Add five animals to this select box, make dog the default -->
 			<select name="countries">
 			</select>
-
-
 		</form>
-
-		<style type="text/css">
-		/*
-			Using CSS and by adding HTML to the above, match the styles of the answer key
-			Pay attention to:
-				- font sizes
-				- borders
-				- focus states
-				- padding
-				- margin
-				- placeholder text vs set values
-				- password
-		*/ 
-
-
-
-		/* We get to use border-box */
-		* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-		body {
-			background:black;
-			background-size: cover;
-			font-family: sans-serif;
-		}
-
-		form.exercise {
-			width:500px;
-			padding:10px;
-			margin:20px auto;
-			background:white;
-			border-radius: 5px;
-		}
-
-		/* Some default styling */
-		input {
-			width:100%;
-			margin:0  0 20px 0;
-			outline:0;
-		}
-			input[type=checkbox],input[type=radio] {
-				width:auto;
-			}
-
-		</style>
 	</body>
 </html>

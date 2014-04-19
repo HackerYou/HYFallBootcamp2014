@@ -67,4 +67,4 @@ Since we spent quite a bit of time on forms, your form should:
 * Creative use of Borders and border radius
 * CSS3 animations (We didn't cover this yet, but do a search)
 
-As always, this will not be graded, but I will ask you to hand it in for me to review.
+As always, this will not be graded, but please submit your project for review.

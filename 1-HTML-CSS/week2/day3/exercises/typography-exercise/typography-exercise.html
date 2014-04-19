@@ -1,8 +1,50 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<title>CSS Exercise</title>
-</head>
+	<head>
+		<title>CSS Exercise</title>
+		<style type="text/css">
+			/* We have the clearfix rule included, you just need to add the class! */
+			.clearfix:after {
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				content: " ";
+				clear: both;
+				height: 0;
+				}
+			* html .clearfix             { zoom: 1; } /* IE6 */
+			*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+			/* Some base body styles, you add the background image */
+			body {
+				font-size:15px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			/* write a selector for the wrapper and style it as you wish! */
+
+
+			/* Select al h1 tags and style the text like the answer key */
+
+
+			/* There is a h3 tag underneath the h1, style the text! */
+
+
+			/* Write a rule to change all spans with the class of hackerYou to the color */
+
+
+			/* We have a bunch of .ruleBox divs, add a blackground pattern, border, margin and padding */
+
+				/* Style the h2 tags within the .ruleBox. Try using rgba for a semi-transparent background */
+				
+
+
+			/* At the bottom of the page we have three boxes that are a third of the size. Use floats widths and margins to do this */
+
+
+			/* Match the styles of the 8 rule boxes in the answer key by writing the proper selectors and applying the correct typography CSS */
+
+		</style>
+	</head>
 	<body>
 		<div class="wrapper clearfix">
 			<div class="header">
@@ -47,54 +89,6 @@
 			<div class="ruleBox ruleBox8 third">
 				<h2>Left and Lowercase</h2>
 			</div>
-
 		</div>
-			       
-
-		<style type="text/css">
-			/* We have the clearfix rule included, you just need to add the class! */
-			.clearfix:after {
-				visibility: hidden;
-				display: block;
-				font-size: 0;
-				content: " ";
-				clear: both;
-				height: 0;
-				}
-			* html .clearfix             { zoom: 1; } /* IE6 */
-			*:first-child+html .clearfix { zoom: 1; } /* IE7 */
-
-			/* Some base body styles, you add the background image */
-			body {
-				font-size:15px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			/* write a selector for the wrapper and style it as you wish! */
-
-
-			/* Select al h1 tags and style the text like the answer key */
-
-
-			/* There is a h3 tag underneath the h1, style the text! */
-
-
-			/* Write a rule to change all spans with the class of hackerYou to the color */
-
-
-			/* We have a bunch of .ruleBox divs, add a blackground pattern, border, margin and padding */
-
-				/* Style the h2 tags within the .ruleBox. Try using rgba for a semi-transparent background */
-				
-
-
-			/* At the bottom of the page we have three boxes that are a third of the size. Use floats widths and margins to do this */
-
-
-			/* Match the styles of the 8 rule boxes in the answer key by writing the proper selectors and applying the correct typography CSS */
-
-
-
-
-		</style>
 	</body>
 </html>

@@ -112,6 +112,10 @@
     path: week3/day1/exercises/responsive3.html
   - title: Responsive Exercises
     path: week3/day1/exercises/responsive-exercises.zip
+  - title: CSS Shooting Star Animation
+    path: week3/day2/examples/animation.html
+  - title: CSS Animations with Transitions
+    path: week3/day2/examples/transitions.html
 - name: UX and Design
   slug: ux
   directory: 2-Design 

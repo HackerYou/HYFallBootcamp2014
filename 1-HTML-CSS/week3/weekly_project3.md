@@ -5,11 +5,12 @@ title: Week 3 Project - Responsive 'Client' Website
 
 # Weekly Project
 
-This week you will be build a responsive multi-page website for a "fake" client. We will provide you with 3-5 designs to choose from (desktop and mobile).
+This week you will be build a responsive multi-page website for a "fake" client. You will be assigned to one of four clients and be given a set of design files. The folder you're given is what the client has given you to work with, so it's up to you to make do with what you've got or follow up with your client for clarification.
 
 ## Requirements
 
-1. It must be entirely responsive. When I resize my browser it should resize with it.
+1. It must be as true to the design as possible. Imagine what the client or designer of the site would think if you showed them your implementation.
+1. It must be entirely responsive. When I resize my browser it should resize with it. You've only been given desktop mockups, so be creative when deciding how the layout should change for smaller screens.
 2. It should be using the latest techniques we have learned in class
 
 
@@ -17,3 +18,13 @@ This week you will be build a responsive multi-page website for a "fake" client.
 I encourage you to think **outside what you think you can do and push yourself**. The best way to learn, is to jump in over your head. We have lots of help here to get you on the right path and tackling something difficult is very rewarding.
 
 If you have ideas that you aren't sure are possible, please run them by us. Usually the JavaScript dependent stuff can be done in a few lines of JS and myself or the mentors have no problem helping you with that!
+
+###Design Files
+
+**Group 1:** [HackerYou](weekly_project/client1-hackeryou.zip)
+
+**Group 2:** [Ladies Learning Code](weekly_project/client2-llc.zip)
+
+**Group 3:** [Heather Payne](weekly_project/client3-heatherpayne.zip)
+
+**Group 4:** [JourneyMade](weekly_project/client4-journeymade.zip)

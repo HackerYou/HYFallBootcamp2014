@@ -67,7 +67,7 @@ Spits out this CSS:
 		background: yellow;
 	}
 
-**The Sass Inception Rule:** "Never nest more than three levels deep." http://thesassway.com/beginner/the-inception-rule
+**The Sass Inception Rule:** "Never nest more than three levels deep." <http://thesassway.com/beginner/the-inception-rule>
 
 ## Partials
 
@@ -127,7 +127,7 @@ There are entire frameworks built on top of SASS and there is a lot to jump into
 
 ## A taste of Sass
 
-To get started, go through the [guide](http://sass-lang.com/guide) and use the [Sassmeister tool](http://sassmeister.com/) to play around with the Sass syntax.
+To get started, go through the [guide](http://sass-lang.com/guide) and use the [Sassmeister tool](http://sassmeister.com/) to play around with the Sass syntax. We've given you a few suggestions to try here: <http://sassmeister.com/gist/11157284>
 
 ## Using Sass in your projects
 
@@ -153,8 +153,8 @@ It's relatively easy to get started with Sass because you can use as little or a
 
 Here are some topics worth exploring:
 
-* How to structure a Sass project: http://thesassway.com/beginner/how-to-structure-a-sass-project
-* Compass Framework: http://compass-style.org/
-* Bourbon Mixin Library: http://bourbon.io/
-* Neat - Grid Framework: http://neat.bourbon.io/
-* Susy - Grid Framework: http://susy.oddbird.net/
+* How to structure a Sass project: <http://thesassway.com/beginner/how-to->structure-a-sass-project
+* Compass Framework: <http://compass-style.org/>
+* Bourbon Mixin Library: <http://bourbon.io/>
+* Neat - Grid Framework: <http://neat.bourbon.io/>
+* Susy - Grid Framework: <http://susy.oddbird.net/>

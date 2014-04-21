@@ -55,7 +55,7 @@ By simply appending a CSS property called `transition` and then specifying *whic
 		width:200px;
 		height:200px;
 		background:red;
-		-webkit-transition:width 1s;
+		-webkit-transition: width 1s;
 	}
 		.myBox2:hover {
 		width:500px;
@@ -213,75 +213,75 @@ However, in any production code, it should look like this:
 	}
 
 ### Rotate
-<style type="text/css">.myBox {width:200px; height:200px; background:purple;}</style>
+<style type="text/css">.myBox6 {width:200px; height:200px; background:purple;}</style>
 
 The most basic and most useful is rotate, which allows us to rotate an object based on a degree.
 
 	<style type="text/css">
-	.myBox {
+	.myBox6 {
 		width:200px;
 		height:200px;
 		background:purple;
 		-webkit-transform:rotate(20deg);
 	}
 	</style>
-	<div class="myBox"></div>
+	<div class="myBox6"></div>
 
-<div class="myBox" style="-webkit-transform:rotate(20deg);"></div>
+<div class="myBox6" style="-webkit-transform:rotate(20deg);"></div>
 
 You can also apply these effects on hover
 	
 	<style type="text/css">
-	.myBox2 {
+	.myBox7 {
 		width:200px;
 		height:200px;
 		background:red;
 	}
-		.myBox2:hover {
+		.myBox7:hover {
 			-webkit-transform:rotate(50deg);
 		}
 	</style>
-	<div class="myBox2"></div>
+	<div class="myBox7"></div>
 
 <style type="text/css">
-.myBox2 {
+.myBox7 {
 	width:200px;
 	height:200px;
 	background:red;
 }
-	.myBox2:hover {
+	.myBox7:hover {
 		-webkit-transform:rotate(50deg);
 	}
 </style>
-<div class="myBox2"></div>
+<div class="myBox7"></div>
 
 And combine them CSS3 transitions:
 
 	<style type="text/css">
-	.myBox3 {
+	.myBox8 {
 		width:200px;
 		height:200px;
 		background:#BADA55;
 		-webkit-transition:all 1s;
 	}
-		.myBox3:hover {
+		.myBox8:hover {
 			-webkit-transform:rotate(360deg);
 		}
 	</style>
-	<div class="myBox3"></div>
+	<div class="myBox8"></div>
 
 <style type="text/css">
-.myBox3 {
+.myBox8 {
 	width:200px;
 	height:200px;
 	background:#BADA55;
 	-webkit-transition:all 1s;
 }
-	.myBox3:hover {
+	.myBox8:hover {
 		-webkit-transform:rotate(360deg);
 	}
 </style>
-<div class="myBox3"></div>
+<div class="myBox8"></div>
 
 
 ## Scale
@@ -290,28 +290,28 @@ Scale is pretty straight forward too, it simply scales an element to be larger o
 The value of scale is a multiple of the original element. So 1 would be the original element. 2 would be twice the size.
 
 	<style type="text/css">
-	.myBox4 {
+	.myBox9 {
 		width:200px;
 		height:200px;
 		background:orange;
 	}
-		.myBox4:hover {
+		.myBox9:hover {
 			-webkit-transform:scale(1.5);
 		}
 	</style>
-	<div class="myBox4"></div>
+	<div class="myBox9"></div>
 
 <style type="text/css">
-.myBox4 {
+.myBox9 {
 	width:200px;
 	height:200px;
 	background:orange;
 }
-	.myBox4:hover {
+	.myBox9:hover {
 		-webkit-transform:scale(1.5);
 	}
 </style>
-<div class="myBox4"></div>
+<div class="myBox9"></div>
 
 As with the last one, we can also animate them.
 <small>Note: because this is new, you may see some screen flickering on mobile devices or even desktop browsers.</small>
@@ -397,24 +397,24 @@ We can also just scale X or Y, not very useful on images but may be useful if yo
 This is where it starts to get a little twisted, we can use skewX and skewY to skew our images a certain **degree**
 
 	<style type="text/css">
-	.myBox5 {
+	.myBox10 {
 		width:200px;
 		height:200px;
 		background:orange;
 		-webkit-transform:skewX(20deg);
 	}
 	</style>
-	<div class="myBox5"></div>
+	<div class="myBox10"></div>
 
 <style type="text/css">
-.myBox5 {
+.myBox10 {
 	width:200px;
 	height:200px;
 	background:orange;
 	-webkit-transform:skewX(20deg);
 }
 </style>
-<div class="myBox5"></div>
+<div class="myBox10"></div>
 
 ## Others
 There are a few more:

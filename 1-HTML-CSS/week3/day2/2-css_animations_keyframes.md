@@ -89,7 +89,16 @@ You can also set them independently as well as add a few other options:
 
 We have animated `top` so far, but just like css transitions, you can animate **any property** you can think of!
 
-width, height, scale, font color, background color, font size, position and so on. If you have some extra time on your final project, add some fun animation to it!
+width, height, scale, font color, background color, font size, position and so on. If you have some extra time on your weekly project, add some fun animation to it!
+
+## Demos
+
+Here are some demos of what you can do with animations:
+
+<a href="examples/animation.html" class="exercise">**Shooting Star Animation**</a>
+
+<a href="examples/transition.html" class="exercise">**Animation with Transitions**</a>
+
 
 Take a look at [this CodePen](http://codepen.io/jessynd/pen/JHeqs) by a past hackerYou student that demonstrates how keyframes work in action. You can even play around with the code. 
 
@@ -108,7 +117,7 @@ Take a look at [this CodePen](http://codepen.io/jessynd/pen/JHeqs) by a past hac
 		position: absolute;
 		font-size:40px;
 		color:white;
-		-webkit-animation:snow 3s linear infinite;
+		/*-webkit-animation:snow 3s linear infinite;*/
 	}
 	@-webkit-keyframes snow {
 		0% {

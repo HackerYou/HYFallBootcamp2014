@@ -21,10 +21,12 @@ If you have ideas that you aren't sure are possible, please run them by us. Usua
 
 ###Design Files
 
-**Group 1:** [HackerYou](weekly_project/client1-hackeryou.zip)
+<!-- files are hosted externally to avoid file size limit in heroku -->
 
-**Group 2:** [Ladies Learning Code](weekly_project/client2-llc.zip)
+**Group 1:** [HackerYou](http://fulltime.hackeryou.com/client1-hackeryou.zip)
 
-**Group 3:** [Heather Payne](weekly_project/client3-heatherpayne.zip)
+**Group 2:** [Ladies Learning Code](http://fulltime.hackeryou.com/client2-llc.zip)
 
-**Group 4:** [JourneyMade](weekly_project/client4-journeymade.zip)
+**Group 3:** [Heather Payne](http://fulltime.hackeryou.com/client3-heatherpayne.zip)
+
+**Group 4:** [JourneyMade](http://fulltime.hackeryou.com/client4-journeymade.zip)

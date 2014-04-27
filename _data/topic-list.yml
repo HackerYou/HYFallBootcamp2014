@@ -116,6 +116,10 @@
     path: week3/day2/examples/animation.html
   - title: CSS Animations with Transitions
     path: week3/day2/examples/transitions.html
+  - title: Inline SVGs (zip)
+    path: week3/day2/exercises/inline-svg.zip
+  - title: Using SVG tags
+    path: week3/day2/exercises/svg-tags.html
 - name: UX and Design
   slug: ux
   directory: 2-Design 

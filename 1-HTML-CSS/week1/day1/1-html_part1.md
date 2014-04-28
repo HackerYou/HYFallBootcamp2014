@@ -17,7 +17,7 @@ topic: html
 
 ## The nuts and bolts of HTML
 * When we write HTML, we create __HTML Elements__ by wrapping our content in __tags__
-* These __tags__ describe the content that is inside of them. __not__ what they look like
+* These __tags__ describe the content that is inside of them, __not__ what they look like
 * We use different kinds of __tags__ to create multiple __elements__ and all together they make up something called our __HTML Document__
 
 ## The makeup of markup

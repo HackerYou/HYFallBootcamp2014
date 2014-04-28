@@ -68,7 +68,7 @@ Clients like to know exactly how much a project will cost. Clients often aren't 
 Freelancers prefer to bill by a fixed price so they have the flexibility to work on the project at their own pace. If you want to work really quickly and earn extra $$, you can. If you wish to take your time and learn as you go, go can. 
 
 ## Value based billing
-This brings us to the next point of value based billing. Don't charge for how long the project takes you, but for the value that you are brining to the client. 
+This brings us to the next point of value based billing. Don't charge for how long the project takes you, but for the value that you are bringing to the client. 
 
 Efficient developers speed up their workflow by creating tools (boilerplate code, snippets, helper functions) that allow them to get the same scope of work done in half the time. Just because you are a fast coder, doesn't mean you should charge less for your projects.
 

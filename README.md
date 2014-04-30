@@ -44,11 +44,16 @@ Title is up to you.
 
 ###Exercises
 
-Links to exercise files should be catalogued in `topic-list.yml` if you want them to appear on the table of contents.  You can also link them from within notes with a relative link:
+Links to exercise files should be catalogued in `topic-list.yml` if you want them to appear on the table of contents.  
+
+We also recommend creating a direct download link within the notes. Use relative link with a class of `exercise`.
 
 ```
-To practice your CSS skills, open up [css-selectors.html](exercises/css-selectors.html)
+To practice your CSS skills, open up <a href="exercises/css-selectors.html" class="exercise">**css-selectors.html**</a>
 ```
+This will appear as: 
+
+![](http://cl.ly/image/2u2A2F1C2O2Y/Screen%20Shot%202014-04-30%20at%2010.23.17%20AM.png)
 
 Exercises that contain multiple files should be zipped for easy download.
 
@@ -65,4 +70,20 @@ When you want to preview the build:
 1. run `bundle exec jekyll serve --watch` to generate the site (the --watch flag will regenerate whenever you edit a file)
 2. You preview awaits you at `http://localhost:4000` !
 
+##Deploying your changes
 
+We have a limited number of free auto-deploys a month, so try to group you changes into fewer larger pull requests if possible.
+
+If you need to deploy a small change or we've run out of free deploys, you can deploy directly from your machine.
+
+####Setup:
+
+1. Install the Heroku toolbelt on your machine <https://toolbelt.heroku.com/>
+3. Run `jekyll-auth new` and follow the setup instructions
+    * Github API keys can be be found under HackerYou account settings > Applications
+    * Use GitHub team ID `680986` for the bootacmp
+
+####Deployment:
+
+1. Make sure you're up to date with the upstream copy
+2. Run `git push heroku master`

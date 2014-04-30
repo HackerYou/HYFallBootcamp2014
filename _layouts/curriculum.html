@@ -6,7 +6,7 @@
 	{% for topic in site.data.topic-list %}
 		{% assign topicNumber = forloop.index %}
 		<h4>{{topicNumber}}. {{topic.name}}</h4>
-		<ul>
+		<ul class="topics">
 			{% assign count = '0' %}
 			{% for lesson in sorted_pages %}
 				{% if lesson.layout == 'notes' and lesson.topic == topic.slug %}

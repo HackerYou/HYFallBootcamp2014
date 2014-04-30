@@ -9,12 +9,17 @@
   <link rel="stylesheet" href="/assets/notes.css">
 </head>
 <body>
+{% if page.layout == 'curriculum' %}
 <header>
   <div class="wrapper"> 
     <img src="/assets/logo-hackeryou.png">
     <h1>FullTime Bootcamp</h1>
-    {% if page.layout == 'notes' or page.layout == 'exercises'%}
-    <a href="/" class="toc">&#9664; Table of Contents</a>
-    {% endif %}
   </div>
 </header>
+{% endif %}
+
+{% if page.layout == 'notes' or page.layout == 'exercises'%}
+<div class="back-link">
+  <a href="/" class="toc">&#9664; Table of Contents</a>
+</div>
+{% endif %}

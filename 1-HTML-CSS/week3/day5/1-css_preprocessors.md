@@ -6,39 +6,57 @@ title: CSS Preprocessors
 
 # CSS preprocessors
 
-Sass (Syntactically Awesome Style Sheets), LESS (The dynamic stylesheet language) and Stylus extend CSS with superpowers! The general idea is that instead of writing CSS you write Sass or LESS and a "compiler" converts what you write to CSS. 
+[Sass](http://sass-lang.com/) (Syntactically Awesome Style Sheets), [Less](http://lesscss.org/) (the dynamic stylesheet language) and [Stylus](http://learnboost.github.io/stylus/) (expressive, dynamic, robust CSS) extend CSS with superpowers! 
 
-We'll be demonstrating the power of pre-processors using Sass. Think of Sass as extension of CSS, and note that all your regular CSS is also valid Sass! Use as much or as little Sass as you're comfortable with when you're getting started.
+But why should I change my CSS workflow? Why make CSS more complicated? Because CSS preprocessors extend the basic functionalities and overcome many limitations of traditional CSS by adding features such as variables, nesting, mixins and many more. These features will actually help to create CSS that is more maintainable, organized and modular.
+
+While each preprocessor language follow similar rules, each has their own syntax different from traditional CSS and must be saved using the file extension associated to each preprocessor language. For Sass, the file extension is `.scss`, `.less` for Less and `.styl` for Stylus.
+
+The browser can only read CSS files with the `.css` extension so these special files need to be *compiled* into regular CSS files to use it with the web. 
+
+## Sass
+Today we'll be demonstrating the power of pre-processors using Sass. Since Sass as an extension of CSS, note that all regular CSS is also valid Sass! Use as much or as little Sass as you're comfortable with when you're getting started.
 
 ![](http://cl.ly/image/15293X1N0c0J/sass-css.png)
 
-## Variables
-Specify values in one place and reuse them throughout the stylesheet. This allows you change a font-size or colour in one place and have the change take effect in multiple places.
+There are many tools you can use to get started with Sass. Let's install an application to compile our files.
+
+[http://sass-lang.com/install](http://sass-lang.com/install)
+
+### Variables
+Variables can be used to hold values.  For example, you can specify a colour value to an easy-to-remember variable name and reuse it throughout the stylesheet.
+
+The variable name is set/declared in one place but can be used wherever the value is needed.
 
 Example:
 
-	$peagreen : #BADA55; 
+	$peagreen: #BADA55; 
+	$graylight: #CCC;
 
 	a.myLink {
-		background:$peagreen;
+		background: $peagreen;
 	}
 
 	p.confirm {
-		border:1px solid $peagreen;
+		border: 1px solid $peagreen;
+		color: $graylight;
 	}
 
 
-## Nested Rules
+### Nested Rules
 You can nest selectors instead of using long selector names. This keeps your stylesheet organized and saves some space. You can even tack on pseudo selectors in a nested rule using the `&` symbol!
 
-SASS:
+**Sass**
 
 	$peagreen : #bada55;
+	
 	ul.nav {
 		background:red;
 		width:100%;
+		
 		li {
 			border-right:1px solid $peagreen;
+			
 			a {
 				background:#bada55;
 				padding:10px;
@@ -69,22 +87,22 @@ Spits out this CSS:
 
 **The Sass Inception Rule:** "Never nest more than three levels deep." <http://thesassway.com/beginner/the-inception-rule>
 
-## Partials
+### Partials
 
 You can break your CSS into organized chunks and they will be stitched together for you. This keeps the CSS organized and more maintainable. 
 
 Files:
 
-	_normalize.scss
-	_nav.scss
+    _normalize.scss
+    _nav.scss
 
 Then in `style.scss`
 
-	@import "normalize"
-	@import "nav"
+    @import "normalize"
+    @import "nav"
 
-## Functions
-SASS has something called functions which can do some of the hard work for you. Let's take a look at a few:
+### Functions
+Sass has something called functions which can do some of the hard work for you. Let's take a look at a few:
 
 <http://sass-lang.com/documentation/Sass/Script/Functions.html>
 
@@ -92,38 +110,40 @@ One I use quite frequently is the [`lighten`](http://sass-lang.com/documentation
     
     $peagreen : #BADA55; 
 
-	a.myLink {
-		background:$peagreen;
+    a.myLink {
+        background:$peagreen;
 
-		&:hover {
-			background: lighten($peagreen, 10) //10% lighter than $peagreen
-		}
-	}
+        &:hover {
+            background: lighten($peagreen, 10) //10% lighter than $peagreen
+        }
+    }
 
-## Mixins
+### Mixins
 
-Remember the DRY rule? It stands for "Don't Repeat Yourself." Sass can help you with this through the use of mixins - little chuncks of CSS that we can call repeatedly in our Sass files.
+Remember the DRY rule? It stands for "Don't Repeat Yourself." Sass can help you with this through the use of mixins - little chunks of CSS that we can call repeatedly in our Sass files.
 
 Let's take a look at a mixin for some flashy text styles you might want to reuse:
-
+	
+    //Create mixin
     @mixin flashy-text {
-    	font-family: "Lobster", serif;
-    	font-size: 30px;
-    	font-weight: bold;
-    	color: DarkSlateGray;
+        font-family: "Lobster", serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: DarkSlateGray;
     }
-    
+   
+   
+    //Apply mixin
     h1 {
-    	@include flashy-text;
+        @include flashy-text;
     }
-    
     .announcementBox p {
-    	@include flashy-text;
+        @include flashy-text;
     }
 
 
-## Much More
-There are entire frameworks built on top of SASS and there is a lot to jump into. Before we look into frameworks, let's get comfortable working with SASS. 
+### Much More
+There are entire frameworks built on top of Sass but there is a lot to jump into. Before we look into frameworks, let's get comfortable working with some Sass basics. 
 
 ## A taste of Sass
 
@@ -147,13 +167,16 @@ Take one of your existing CSS stylesheets and turn it into a Sass file.
 * use nesting to simplify your CSS
 * use partials to better organize your CSS
 
+**Remember to have your compiler app open and watching your file!
+
+
 ## Going forward
 
 It's relatively easy to get started with Sass because you can use as little or as many of the features as you want. You don't have to use all of the features right away (or ever?). The more you work with it the more comfortable you get.
 
 Here are some topics worth exploring:
 
-* How to structure a Sass project: <http://thesassway.com/beginner/how-to->structure-a-sass-project
+* How to structure a Sass project: <http://thesassway.com/beginner/how-to-structure-a-sass-project>
 * Compass Framework: <http://compass-style.org/>
 * Bourbon Mixin Library: <http://bourbon.io/>
 * Neat - Grid Framework: <http://neat.bourbon.io/>

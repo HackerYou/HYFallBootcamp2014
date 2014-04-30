@@ -89,6 +89,33 @@ Margin can be used to add space *outside* of the element. It also accepts negati
 However, use padding and margin to style spacing around the element, not for page layout styling or positioning large structural blocks.
 
 
+####Specificity
+As a general rule of thumb, start general and get as specific as needed. 
+
+Using clear class names vs over-qualifying selectors
+
+```
+img.profile
+```
+```
+.profile-image
+
+```
+
+Skipping a level (or two)
+
+```
+ul.nav li ul.submenu 
+```
+
+```
+ul.submenu
+```
+
+```
+.submenu
+```
+
 ###Lean & Mean CSS
 Writing efficient CSS will makes it easier to make changes.
 
@@ -127,7 +154,7 @@ After:
 
 ####Going Beyond Basic Selectors
 
-Read it. Bookmark it. Now. [The 30 CSS Selectors you Must Memorize](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+Read this: [The 30 CSS Selectors you Must Memorize](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048). Bookmark it. Now. 
 
 Using many of the more advanced selectors will reduce the need to add additional classes to your markup.
 

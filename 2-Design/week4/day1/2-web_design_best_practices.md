@@ -21,7 +21,7 @@ Here are some general guidelines to follow.
 
 * box and text shadows should be subtle - use rgba and/or a darker shade of your background instead of a pure black (#000)
 * similarly, avoid the harsh contrast of pure black on white, a nice dark grey (#333) is much easier on the eyes and makes for easy to read text
-* try pulling your colour scheme out of a photograph or another website you like
+* try pulling your colour scheme out of a photograph or another website you like. Pictaculous <http://www.pictaculous.com/> is a tool that will do that for you.
 * stick to neturals (blacks, whites, greys) plus one or two accent colours, then work with variations on those (http://0to255.com is great for this!)
 
 ##Typography

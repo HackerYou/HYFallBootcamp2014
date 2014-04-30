@@ -10,6 +10,11 @@
 	}
 }
 
+.back-link {
+	max-width: 962px;
+	margin: 30px auto;
+}
+
 a.toc {
 	color: black;
 	font-size: 13px;
@@ -19,6 +24,18 @@ a.toc:hover {
 	color: #d12026;
 	text-decoration: none;
 }
+
+
+@media(min-width: 650px) {
+	ul.topics,
+	ul.exercises {
+		-moz-columns: 2;
+		-webkit-columns: 2;
+		columns: 2;
+		margin-bottom: 50px;
+	}
+}
+
 
 
 /* exercises page styles */

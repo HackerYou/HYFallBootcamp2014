@@ -6,96 +6,118 @@ title: Git and GitHub
 
 # Git and GitHub
 
-Version control allows us to keep a record of what has changed in our directories/files so that we can revert back if needed. Git is a version control system. With Git we:
+Version control allows us to keep a record of any kind of changes in our directories/files such as updates to the contents of the file as well as adding, removing and renaming files.  It manages changes without overwriting any part of the project.
 
-1. take snapshots of our project folder whenever we want (every type of file is saved, it doesn't have to be code)
-2. can "time travel" between snapshots
-3. can easily collaborate with team members on code
-4. can easily share our code with others by using GitHub.com
+You may have been in a situation where you've created an "index-version1.html" and "index-version2.html" or something similar in an effort to preserve a "good" copy while experimenting with another copy.  Version control allows us to save different versions of our entire project, compare different versions and revert back to previous versions, if needed.  It's also great for sharing and collaboration.
 
-## Download & Install Git
+**Git** is type of version control system. With Git we can:
 
-Windows: http://msysgit.github.com/
-Mac: http://code.google.com/p/git-osx-installer
+* take snapshots of our project folder whenever we want (every type of file is saved, it doesn't have to be code)
+* "time travel" between snapshots
+* easily collaborate with team member's code
+* have different people edit the same file at the same time
+* easily share our code with others by using services like [GitHub.com](http://github.com)
 
-## Configure Git
+## Getting Started
+http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#awesm=~oCX648ZyjWDjos
 
-When Git takes snapshots of your code it can associate them with your name and email address. This is useful when collaborating and sharing your work. Once you have git installed, open up the command line and type the following commands:
+To get started, we'll be using [GitHub.com](http://github.com) to host our version-controlled projects. This will bring your projects to the web and allow us to easily share our code and collaborate with others.
 
-```
-$ git config --global user.name "Your Actual Name"
-$ git config --global user.email "Your Actual Email"
-```
+There are two ways to access Git: using a GUI (graphical user interface) or via the command line. There mare many GUI clients to choose from (of course). Let's trying using GitHub for Mac ([https://mac.github.com/](https://mac.github.com/)) or for Windows ([https://windows.github.com/](https://windows.github.com/)).
 
-Confirm that everything is working by typing:
-
-```
-$ git config --get user.name
-$ git config --get user.email
-```
-
-It should print the name and email address that you set.
-
-## Initialize a Git Repository
-
-From the command line go into any directory and type `$ git init` to turn any directory into a Git repository. The directory will not visibly change in any way. The `git init` command actually creates a hidden folder called "git" inside of the directory.
-
-## Git in a nutshell
-
-We can get most of the benefits of Git with pretty much two commands. To help you understand when to use these commands visualize your directory as being in one of three stages:
-
-1. Working Directory (you're working and haven't taken a snapshot)
-2. Staging Area (you collect files/folders here to eventually be saved in a snapshot)
-3. Git repository (snapshot taken)
-
-The workflow then looks like this:
-
-1. Work (code, write a story, photoshop images, etc.)
-2. Add files to staging area when you're ready (`$ git add <file>`)
-3. Take a snapshot (`$ git commit -m "a useful commit message here"`)
-
-### Exercise
-
-* Open up the folder for your Week-2 project and make it a Git repository. 
-* Add all of the files into the staging area.
-* Take a snapshot by committing with the message "initial commit".
+We will discuss how to use Git with the command line in another lesson.
 
 
-## Git Status
 
-To see which files are in the working directory and which are in the staging area just type `$ git status`.
+### What is a repository?
 
-## Git push
+The purpose of Git is to manage & stores information about the changes in a project/set of files. Git stores this information in a **repository** also referred to as "repo" for short.
 
-Your Git repository can be shared with others by putting it on github.com. 
+After you create a repository, it is stored in the same folder as the project itself, in a subfolder called **.git**. Note that directories that start with a "dot" are usually hidden by default.  So, you may not see this .git directory on your computer but it may show in other places such as your FTP client.
 
-1. Create a free account on github.com
-2. Follow the instructions for creating a repository: https://help.github.com/articles/create-a-repo but skip the "Create a README for your repository" section.
-3. From the command line navigate to your local repository
-4. Add the Github repository as a remote `$ git remote add origin https://github.com/<username>/<repo-name>.git`
-5. Push your code `git push origin master -u`
+Local folder, .git directory hidden:  
+![image](http://cl.ly/VHsU/folder-git.png)
 
-That's it! Now you have a local (your machine) repository and a remote (Github) repository.
+FTP client, .git directory (and other dot files) not hidden:  
+![](http://cl.ly/VI8T/ftp-git.png)
 
-**Workflow from now on**:
 
-1. Work (code, write a story, photoshop images, etc.)
-2. Add files to staging area when you're ready (`$ git add <file>`)
-3. Take a snapshot (`$ git commit -m "a useful commit message here"`)
-4. `$ git push` to update GitHub
+### Creating a new repository
 
-### Exercise
+Open your GitHub app and go through the setup and login instructions.  Once you are setup and logged into your account, you will see something like this:
 
-Github is a great place to put all of your web development work. Your GitHub account will become a portfolio to showcase your code. 
+Mac Github app:
+![](images/github-app-logged-in.jpg)
 
-**Your task**: put all of your work on GitHub!
+Windows Github app:
+
+On the left, you'll see an option for the repositories on your computer, as well as your GitHub account and any organizations you're a part of. Clicking on a name will show you which repositories are available. 
+
+In the bottom menu, you have the option to create a new repo or add a local repo.  Let's create a new one.  Add a project name (no spaces).  The project description is optional and can be edited later. For your local path, navigate to the directory where you'd like to save your project on your computer.  Check "Push to Github" to add the repo to github.com as well.
+
+![](images/new-project.png)
+
+Once the repository is created, the app will automatically take you to your new repository (which is currently empty since this is a new repo).
+
+![](images/app-new-repo.png)
+
+In your github.com account, you will now see your new repo under the **Repositories** tab.
+
+![](images/github-new-repo.png)
+
+Congratulations, you have now created your first Git repository!
+
+**RECAP:**  
+We just created a local project folder on our computer.  We used the Github app to create a *Git repository* and pushed it up to github.com to *host* our repository on the web. Hosting it allows us to be able to share and collaborate with others.
+
+#### Adding new content
+Now that we've created a new project repository, we can start adding our project files.
+
+Github recommends adding a README file which contains any kind of information about your project.  You will see readme files using an `.md` extension. This stands for Markdown. Markdown is a text-to-HTML conversion tool. Github has is own variation of [Markdown](https://help.github.com/articles/github-flavored-markdown).
+
+**Exercise:**
+
+1. Create a readme.md file. (While there are specific Markdown editors, we can create one in Sublime.)
+
+	The GitHub app will recognize when a change has occurred in the project folder.
+
+	![](images/changes.png)
+
+2. **Commit** and **push/sync** the changes to the repository.
+
+	**Commit:** This command is telling Git to take a "snapshot" of your repository and creates a checkpoint of the state of your project files. Right now, this is still occurring locally on your computer. You should also include a *commit message* to describe what changes are being added. The description is optional but allows for elaboration of the changes if needed.
+	
+	**Push:** When you commit only, these changes are still only available to you since they are still housed on your computer. **Push** is the command that pushes these changes up to your github.com repository moving it from your local computer to the web. This is how other people/team members can access any changes made to the repository.  In the Github app, the push command is referred to as **Sync**. 
+	
+	The app gives you the option to:  
+	a) **commit** and **push/sync** in two separate steps
+	
+	![](images/commit-sync-separate.png)
+	
+	b) or **commit** and **push/sync** in one step:
+	![](images/commit-sync.png)
+
+Any changes, whether it's revisions to existing files or adding/deleting files, need to be committed and pushed to the repository.
+
+###Adding a local repository
+In the previous example, we created a brand spanking new repo, then added files to it. However, if you already have a project with existing files, you can also take those existing files and create a new repo to start versioning your files. Remember, there's a second option in the app:
+
+![](images/github-app-logged-in.jpg)
+
+###Cloning a repository
+**Cloning** a repo refers to creating a local copy of an existing repository that you may have access to in your github.com account.  
+
+Where do these repositories come from?  Several sources. If you've been added to an organization, you will have access to repos that have been created in the organization's account.  You can also **fork** other public repos and make contributions to them. 
 
 ## Learning more
 
-Atlassian has created a great resource for learning Git. Look through it to learn a few tricks that might come in handy:
+In our next Git lesson, we'll be going over how to use Git in the command line.  If you want to get a sneak peek or get comfortable with some of the terminology, Atlassian has created a great resource for learning Git. Look through it to learn a few tricks that might come in handy:
 
-https://www.atlassian.com/git/tutorial/git-basics
+[https://www.atlassian.com/git/tutorial/git-basics](https://www.atlassian.com/git/tutorial/git-basics)
 
 ## The golden rule of source control
 
-**Commit Early - Commit Often** is a rule that you should go by from now on. Your goal for the rest of the day is to turn every project that you have into a Git repository and push it to GitHub. Every project from now on should be a  Git repository. Make Git part of your workflow; commit early and commit often.
+**Commit Early - Commit Often** is a rule that you should go by. Making Git part of your workflow when working on a team is crucial. Even when working alone, versioning will give you piece of mind because you'll always have a backup!  Need more convincing?  Check out some of these articles:
+
+* [What Is Git & Why You Should Use Version Control If You’re a Developer](http://www.makeuseof.com/tag/git-version-control-youre-developer/)
+* [GitHub For Beginners: Don't Get Scared, Get Started](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#awesm=~oCX648ZyjWDjos)

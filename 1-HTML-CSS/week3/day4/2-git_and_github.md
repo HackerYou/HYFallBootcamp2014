@@ -19,15 +19,11 @@ You may have been in a situation where you've created an "index-version1.html" a
 * easily share our code with others by using services like [GitHub.com](http://github.com)
 
 ## Getting Started
-http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#awesm=~oCX648ZyjWDjos
-
 To get started, we'll be using [GitHub.com](http://github.com) to host our version-controlled projects. This will bring your projects to the web and allow us to easily share our code and collaborate with others.
 
 There are two ways to access Git: using a GUI (graphical user interface) or via the command line. There mare many GUI clients to choose from (of course). Let's trying using GitHub for Mac ([https://mac.github.com/](https://mac.github.com/)) or for Windows ([https://windows.github.com/](https://windows.github.com/)).
 
 We will discuss how to use Git with the command line in another lesson.
-
-
 
 ### What is a repository?
 
@@ -47,7 +43,7 @@ FTP client, .git directory (and other dot files) not hidden:
 Open your GitHub app and go through the setup and login instructions.  Once you are setup and logged into your account, you will see something like this:
 
 Mac Github app:
-![](images/github-app-logged-in.jpg)
+![](lesson-images/github-app-logged-in.jpg)
 
 Windows Github app:
 
@@ -55,15 +51,15 @@ On the left, you'll see an option for the repositories on your computer, as well
 
 In the bottom menu, you have the option to create a new repo or add a local repo.  Let's create a new one.  Add a project name (no spaces).  The project description is optional and can be edited later. For your local path, navigate to the directory where you'd like to save your project on your computer.  Check "Push to Github" to add the repo to github.com as well.
 
-![](images/new-project.png)
+![](lesson-images/new-project.png)
 
 Once the repository is created, the app will automatically take you to your new repository (which is currently empty since this is a new repo).
 
-![](images/app-new-repo.png)
+![](lesson-images/app-new-repo.png)
 
 In your github.com account, you will now see your new repo under the **Repositories** tab.
 
-![](images/github-new-repo.png)
+![](lesson-images/github-new-repo.png)
 
 Congratulations, you have now created your first Git repository!
 
@@ -81,7 +77,7 @@ Github recommends adding a README file which contains any kind of information ab
 
 	The GitHub app will recognize when a change has occurred in the project folder.
 
-	![](images/changes.png)
+	![](lesson-images/changes.png)
 
 2. **Commit** and **push/sync** the changes to the repository.
 
@@ -92,17 +88,17 @@ Github recommends adding a README file which contains any kind of information ab
 	The app gives you the option to:  
 	a) **commit** and **push/sync** in two separate steps
 	
-	![](images/commit-sync-separate.png)
+	![](lesson-images/commit-sync-separate.png)
 	
 	b) or **commit** and **push/sync** in one step:
-	![](images/commit-sync.png)
+	![](lesson-images/commit-sync.png)
 
 Any changes, whether it's revisions to existing files or adding/deleting files, need to be committed and pushed to the repository.
 
 ###Adding a local repository
 In the previous example, we created a brand spanking new repo, then added files to it. However, if you already have a project with existing files, you can also take those existing files and create a new repo to start versioning your files. Remember, there's a second option in the app:
 
-![](images/github-app-logged-in.jpg)
+![](lesson-images/github-app-logged-in.jpg)
 
 ###Cloning a repository
 **Cloning** a repo refers to creating a local copy of an existing repository that you may have access to in your github.com account.  

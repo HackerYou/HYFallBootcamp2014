@@ -30,10 +30,10 @@ For Windows, open the application called **Powershell**:
 
 What you should see is a relatively blank window. Terminal (Mac) has a white background and the Powershell (Windows) has a blue/black background, by default.
 
-Terminal (Mac)
+**Terminal (Mac)** 
 ![terminal](lesson-images/terminal.jpg)
 
-Powershell (Windows)
+**Powershell (Windows)**
 ![powershell](lesson-images/powershell.jpg)
 
 ### The prompt

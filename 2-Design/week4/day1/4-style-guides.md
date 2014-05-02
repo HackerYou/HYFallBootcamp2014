@@ -27,7 +27,7 @@ Not everything made the cut, but you can see how some elements translated into t
 ####Establish a Colour Scheme
 Pull some colours that you like out of what you've collected.
 
-Use `style-guide.html` (or your favourite design software). and try editing and adding to the colour swatches. This will give you a preview of how all your colours work together. Keep editing until you find something you love! If you're using Sass, you can create and .scss file and start keeping those colours in variables for later.
+Use the <a href="exercises/style-guide.html" class="exercise">**style-guide.html**</a> starter file (or your favourite design software). and try editing and adding to the colour swatches. This will give you a preview of how all your colours work together. Keep editing until you find something you love! If you're using Sass, you can create and .scss file and start keeping those colours in variables for later.
 
 You can also add swatches for background patterns and textures here if you're using them.
 

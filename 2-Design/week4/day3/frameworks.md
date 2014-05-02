@@ -74,5 +74,9 @@ So, our above HTML might look like this:
 
 Ugly for real HTML, great for wireframing!
 
-Open up `grid.html` and we will have a play with it.
+###Exercise
+
+Let's take a sketched wireframe and code it up as a prototype in Foundation. 
+
+Head over to <http://foundation.zurb.com/> and download the complete version of Foundation to get started.
 

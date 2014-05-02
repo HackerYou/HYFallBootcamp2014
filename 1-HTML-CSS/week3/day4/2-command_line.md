@@ -1,87 +1,256 @@
 ---
 layout: notes
 topic: tools
-title: Intro to the Command Line
+title: Command Line & Git
 ---
 
-# Command Line
+# Intro to Command Line
 
-The command line (terminal in Mac, powershell in PC) is a tool that allows us to interact directly with the operating system. The Operating System's user interface is pretty much just a layer on top of the command line. We can do tasks that the UI does through the command line (open files, edit files, delete files, run programs etc.). 
+The command line (**Terminal** in Mac, **Powershell** in PC) is a tool that allows us to interact *directly* with the operating system. The Operating System's *user interface* is pretty much just a visual layer on top of the command line. We can run tasks that the UI does through the command line (i.e. open files, edit files, delete files, run programs). 
+
+Nearly all software programs have a graphical user interface, or GUI. This means the program includes graphical controls, which the user can select using a mouse or keyboard. A typical GUI of a software program includes a menu bar, toolbar, windows, buttons, and other controls. 
+
 
 ## Why should a front-end developer learn to use the command line?
 
-* Tools like Git (we'll be learning this next) rely on you being comfortable with the command line. Git allows you to take snapshots of your work and retrieve them after you've royally messed up.
+* Tools like Git often rely on being comfortable with the command line (even when GUIs are available to use).
 * Production servers (i.e. your web host) don't have a user interface so knowing how to use the command line will be handy.
-* Many tools that speed up development rely on the command line (e.g. Grunt, Saas/LESS, etc.).
+* Many tools that speed up development rely on the command line (e.g. Grunt, Sass/Less).
 * You'll feel like a hacker and that's super awesome.
 
 ## Opening the command line
 
-If you are using a Mac then just open up the application called "Terminal". If you're using a Windows PC then follow these instructions:
+For Mac users, open the application called **Terminal**:
 
-1. Click Start
-2. Click "Search programs and files"
-3. Type "powershell" and hit enter
+* Applications -> Utilities -> Terminal (or search for it in Spotlight)
+   
+For Windows, open the application called **Powershell**:
 
-What you should see is a relatively blank window. The terminal (Mac) has a white background and the powershell (Windows) has a blue/black background.
+* Start -> Search programs and files -> type "powershell" and hit enter
 
-## The prompt
+What you should see is a relatively blank window. Terminal (Mac) has a white background and the Powershell (Windows) has a blue/black background, by default.
 
-Think of the command line as a direct interface to your computer. You give it one instruction, it **R**eads it, **E**xecutes it, **P**rints a response (when appropriate) and then returns/**L**oops (ready to do the next task). This behaviour is called REPL (Read, Evaluate/Execute, Print, Loop) and you will see it again when we get to programming.
+**Terminal (Mac)**  
 
-The place where you put your instruction is called the **Prompt**. In the powershell you'll see `PS C:\Users\your-username>` and then a blinking curser. In the terminal you will see `$` and a blinking cursor. From now on we'll refer to the prompt with a dollar sign (`$`) - don't actually type the `$`.
+![terminal](lesson-images/terminal.jpg)
+
+**Powershell (Windows)**
+
+![powershell](lesson-images/powershell.jpg)
+
+### The prompt
+
+Think of the command line as a direct interface to your computer. You give it one instruction, it **R**eads it, **E**xecutes it, **P**rints a response (when appropriate) and then returns/**L**oops (ready to do the next task). This behaviour is called REPL (Read, Evaluate/Execute, Print, Loop) and you will see it again when we get into programming.
+
+The **prompt** is where you will write your commands/instructions. 
+
+In Terminal you will see:
+
+	Computer-Name:~ Your-Username$ 
+	
+In Powershell you'll see:
+
+	PS C:\Users\Your-Username>
+	
+Note the `>` in Powershell or `$` in Terminal at the end. This is referred to as the **prompt** and since it always appears, you don't actually type the `>` or `$` symbol.
+
+
 
 ## Command Line Tools
 
-The command line gives us access to many small tools that can be used to perform tasks. Each tool is a piece of software much like Sublime Text or Google Chrome, the big difference is that these tools are tiny.
+The command line gives us access to many small tools that can be used to perform tasks. While there are many tools, today we'll look at a few basic commands that will get us up and running.
 
-In the command prompt we usually type: `$ <tool_name> <arguments>`. options, and Arguments are used to set various options and are optional for some tools.
+### Print working directory (pwd)
 
-## See where you are
+The print working directory command (pwd) a.k.a "where are we?" shows which directory you are currently in. Remember, the `$` and `>` are only referring to the the prompt. Don't actually type it, just type the command and enter.  
 
-`$ pwd` this is a tool that says "present working directory", which is equivalent to asking "Where am I?". Go ahead try it!
+The output will appear immediately after you enter, followed by another prompt.
 
-Notice that the paths are shown using forward slashes `/`.  Here are some examples:
+**Terminal `$ pwd`**
 
-`/`  => "root" directory
-`/Users` => directory called "Users" which is a sub-directory of the / "root" directory.
-`/Users/lukeskywalker` => lukeskywalker is a subdirectory of /Users
+	Computer-Name:~ yourusername$ pwd
+	/Users/yourusername
+	Computer-Name:~ yourusername$
 
-## Make a directory
+**Powershell `> pwd`**
 
-`$ mkdir HYCommandLine` means make a directory (folder) called "HYCommandLine". `mkdir` is the name of the tool and `HYCommandLine` is an argument or piece of information that we give the tool. 
+	PS C:\Users\yourusername> pwd
+	Path
+	----
+	C:\Users\yourusername
+	PS C:\Users\yourusername>
+	
 
-## Moving around
+### List Directory (ls) / Change Directory (cd)
+The `ls` command will list all the directories inside of your current directory. To move around between directories (folders) use `cd` to change to a specific directory. 
 
-`$ cd HYCommandLine` means go inside the "HYCommandLine" directory. Try that, then confirm that you're there by typing `pwd`. 
+Let's first list our directories, then change to our Desktop.
 
-There are a few helpful shortcuts so that you don't have to type too much. `.` is the current directory, `..` is the parent directory, and `~` is home. So `cd ..` means change up to the parent directory.
+	$ ls
+	list of all directories will appear here
+	
+	$ cd Desktop
+	Computer-Name:Desktop yourusername$
+	
+Note how "Desktop" gets added to the output. That shows that you've changed to that directory. You can even type `$ pwd` to double check for good measure!
 
-**Relative Paths**:
-The "paths" that you saw above which started with the `/` are absolute paths, meaning that they start at the root directory. Relative paths omit the `/` and use the current location as a starting point. So `lukeskywalker/Obi-Wan` means the subdirectory called "Obi-Wan" inside the directory called "lukeskywalker" which is a subdirectory of the current directory that I am in.
+#### Moving between many levels of directories
+If you want to go to directory within a directory, use `/` followed by the subdirectory name to go into it.
 
-## Manual
+	$ cd Desktop/projects-folder/project-one
 
-The command line has a manual tool `man` which gives us information about all of the command line tools. Type `$ man ls` to see this in action. What we're doing is asking for the manual for the tool `ls`.
+What does the above command mean?
 
-> You will see a colon at the bottom of the screen and you will not be able to type anything. Don't panic, this means you are in a command line program that extends beyond the view/window. To see more press the **Enter** key. To exit press the **q** key.
+To go back up a folder, use `..` with the `cd` command.
+	
+	$ cd ..
+
+
+`~ ` changes to the home directory (back to where you started when you first opened Terminal/Powershell), even if you're many directory levels deep.
+
+	$ cd ~ 
+
+After you've started to type a directory name, you can also press the tab key and command line will finish it for you.  If there are more than one directory that starts with the same characters it will list all matching directory names.
+
+Typed "D" then tabbed
+
+	$ cd D  
+	
+Result:
+
+	Desktop/   Documents/   Downloads/   Dropbox/   
+	Christinas-MacBook-Air:~ christinatruong$ cd D
+
+
+### Make a directory (mkdir)
+
+`mkdir` is the command for making a new directory. The *argument* that follows this command is the name that you want to give the directory (folder).
+
+	$ mkdir new-folder-name
+
+Note, you should make sure you are in the directory where you want to create this folder first before making a new directory, though you can move the folder afterwards through the command line or through your OS interface.
+
+
+### Manual
+
+The command line also includes a handy manual tool. `man` gives us information about all of the different commands. 
+
+Type `$ man` and whichever command you'd like to get more information on.
+
+Show info about the `ls` command:
+	
+	$ man ls
+	
+
+> You will see a colon at the bottom of the screen and you will not be able to type anything. Don't panic! This means you are in a command line program that extends beyond the view/window.
+> 
+>To see more press the **Enter** key. To exit press the **q** key.
 
 **Exercise 1**:
-Use the man pages to explore the following command-line tools: `ls`, `cp`, `mv`, `rm`, `rmdir`, `touch`, `cat`. The "command-line" folder has all of the files and folders that you will need for this exercise.
+Use the man pages to explore the following command-line tools: `ls`, `cp`, `mv`, `rm`, `rmdir`, `touch`, `cat`.
 
-* Change directory into `command-line`
-* List the directory contents of `command-line`
-* Change directory into `dir5` and move back up to `command-line`
-* Move `move-me.txt` to the `files` directory
-* Remove `delete-me.txt` and `delete-me-too.txt`
-* Remove the directory `remove-me`
-* Create a text file called `create-me.txt`
-* List the hidden contents of the directory `secrets`
-* Print the contents of the files in the directory `samples`
+Want to know more? Check out [The Command Line Crash Course](http://cli.learncodethehardway.org/book/).
+
+## Command Line and Git
+
+Download and install [the latest version of Git](http://git-scm.com/downloads).
+
+## Configure Git
+
+When Git takes snapshots of your code it can associate them with your name and email address. This is useful when collaborating and sharing your work. Once you have git installed, open up the command line and type the following commands:
+
+```
+$ git config --global user.name "Your Actual Name"
+$ git config --global user.email "Your Actual Email"
+```
+
+Confirm that everything is working by typing:
+
+```
+$ git config --get user.name
+$ git config --get user.email
+```
+
+It should print the name and email address that you set.
+
+## Create a repository
+Before we start adding and pushing changes to a repository, we first need a repository to push to. When we used the GitHub GUI, we were able to create it from the program.  Though it is possible to [create a GitHub repo via the command line by accessing their API](https://developer.github.com/v3/repos/#create), it's much more straightforward to just do it from the website itself.  
+
+1. Create or login into [github.com](http://github.com).
+2. Follow the instructions for creating a repository here: [https://help.github.com/articles/create-a-repo](https://help.github.com/articles/create-a-repo) but skip the "Create a README for your repository" section.
+3. From the command line navigate to your local repository (hint: use `$ cd`)
+4. Add the Github repository as a **remote** using the following command:
+
+```
+$ git remote add origin https://github.com/<yourusername>/<your-repo-name>.git
+```
+This step basically "connects" your local copy on your computer to the repository hosted on github.com. This will allow you to push your changes from your computer up into the repo.
 
 
-**Exercise 2**:
 
-Watch Star Wars from your command line! Just type the following in the prompt and press enter: `telnet towel.blinkenlights.nl`.
+## Initialize a Git Repository
+Now that the repository is all set up, we're ready to *git* started (heh heh).
 
-After doing this exercise you might want a few minutes of your life back...
+From the command line, run `$ git init` to turn any directory into a Git repository. (You should still be in your project directory from the previous step) 
+
+The directory will not visibly change in any way. The `$ git init` command actually creates a hidden folder called **.git** inside of the directory.
+
+## Git workflow
+When using Git, whether through a GUI or command line, there is a specific workflow that is required. Let's go over the process and some terminology.
+
+#### Working directory
+The **working directory** is the folder that contains all your project files.  This is where you make your changes to code, add any files and removing files are also considered changes that will need to be included in the versioning process.
+
+#### Staging area / adding updated files
+The **staging area** is where you collect updated files/folders to eventually be saved as a "snapshot" or version of your project files up to the point.  Only the files that have been changed need to be staged.
+
+In the Github GUI, when any files are changed, it shows up in the **Changes** tab but nothing happens to them until you **commit** them.
+
+When using the command line, changes need to be *added* to the staging area. You can do so with the `$ git add <file>` command. There are several different ways to add files (surprise surprise).
+
+Add/stage a specific file: `$ git add file-name`  
+Add/stage all new, modified and deleted files: `$git add -A`  
+Add/stage new and modified, without deleted: `$git add .`  
+Add/stages modified and deleted, without new: `$git add -u`
+
+#### Commit your changes
+**Commit** your changes and updates to take the snapshot of your project.  Every commit should contain a short message to summarize the changes being committed. (`-m` stands for message)
+
+	$ git commit -m "a useful commit message here"
+
+For your first commit, it's common for your message to be "initial commit".
+
+#### Git Status
+
+To see which files are in the working directory and which are in the staging area or just to what's going on in general, use `$ git status`.  You can use this command at any step to check the status.
+
+#### Git push
+
+Note that all these steps are still happening *locally* on your computer.  Your repository that is hosted online via github.com has not changed yet. We need to **push** the code to get it go up into the repository.
+
+	$ git push origin master
+
+You should now see your changes on github.com.
+
+
+**Git workflow**:
+
+1. Work (code, make changes, add/remove files, etc.)
+2. Add files to staging area when you're done a chunk of work. (`$ git add <file>`)
+3. Take a snapshot (`$ git commit -m "a useful commit message here"`)
+4. `$ git push` to update github.com repository.
+5. Repeat steps 1-4.
+
+### Exercise
+
+* Navigate to one of your project folders and make it a Git repository. 
+* Add all of the files into the staging area.
+* Take a snapshot by committing with the message "initial commit".
+
+**Pro-tip: Commit Early - Commit Often**
+
+It's tempting to wait until you're "done" to make a commit but it's better to commit early and often.  Commit every time you've completed a small chunk of code, milestone or feature. The more often you commit, the more "snapshots" and backup copies you'll have to roll back to if you've really messed up your code!  
+
+When you are actively working on a project, try to commit at **least** at the end of the day (though it'll probably be more likely that you'll commit several times a day).  Even if you're not done a feature, your commit message could just be "saving work".  
+
+**Bonus:** [Git cheatsheet](https://help.github.com/articles/git-cheatsheet)!

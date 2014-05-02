@@ -34,7 +34,6 @@ The two most popular frameworks are [Bootstrap](http://twitter.github.io/bootstr
 
 We will be taking a look at foundation today. Let's take a quick look at that they have available at <http://foundation.zurb.com/docs/>
 
-I have loaded up foundation for you in the `foundation` folder to give it a shot.
 
 ## Grids and Wireframing
 Foundation is a fantastic wireframing tool. It allows you to quickly mockup the layout and responsive layout of a website without too much (or any) code. 

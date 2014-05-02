@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: Working with PSDs
-topic: html
+topic: ux
 ---
 
 #Working with PSDs

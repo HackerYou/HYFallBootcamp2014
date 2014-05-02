@@ -30,10 +30,12 @@ For Windows, open the application called **Powershell**:
 
 What you should see is a relatively blank window. Terminal (Mac) has a white background and the Powershell (Windows) has a blue/black background, by default.
 
-**Terminal (Mac)** 
+**Terminal (Mac)**  
+
 ![terminal](lesson-images/terminal.jpg)
 
 **Powershell (Windows)**
+
 ![powershell](lesson-images/powershell.jpg)
 
 ### The prompt
@@ -250,3 +252,5 @@ You should now see your changes on github.com.
 It's tempting to wait until you're "done" to make a commit but it's better to commit early and often.  Commit every time you've completed a small chunk of code, milestone or feature. The more often you commit, the more "snapshots" and backup copies you'll have to roll back to if you've really messed up your code!  
 
 When you are actively working on a project, try to commit at **least** at the end of the day (though it'll probably be more likely that you'll commit several times a day).  Even if you're not done a feature, your commit message could just be "saving work".  
+
+**Bonus:** [Git cheatsheet](https://help.github.com/articles/git-cheatsheet)!

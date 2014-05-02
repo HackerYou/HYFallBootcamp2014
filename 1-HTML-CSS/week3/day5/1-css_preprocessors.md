@@ -98,8 +98,8 @@ Files:
 
 Then in `style.scss`
 
-    @import "normalize"
-    @import "nav"
+    @import "normalize";
+    @import "nav";
 
 ### Functions
 Sass has something called functions which can do some of the hard work for you. Let's take a look at a few:

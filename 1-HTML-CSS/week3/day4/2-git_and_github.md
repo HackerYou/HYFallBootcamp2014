@@ -31,10 +31,12 @@ The purpose of Git is to manage & stores information about the changes in a proj
 
 After you create a repository, it is stored in the same folder as the project itself, in a subfolder called **.git**. Note that directories that start with a "dot" are usually hidden by default.  So, you may not see this .git directory on your computer but it may show in other places such as your FTP client.
 
-Local folder, .git directory hidden:  
+Local folder, **.git** directory hidden:
+    
 ![image](http://cl.ly/VHsU/folder-git.png)
 
-FTP client, .git directory (and other dot files) not hidden:  
+FTP client, **.git** directory (and other dot files) not hidden:
+
 ![](http://cl.ly/VI8T/ftp-git.png)
 
 
@@ -43,9 +45,8 @@ FTP client, .git directory (and other dot files) not hidden:
 Open your GitHub app and go through the setup and login instructions.  Once you are setup and logged into your account, you will see something like this:
 
 Mac Github app:
-![](lesson-images/github-app-logged-in.jpg)
 
-Windows Github app:
+![](lesson-images/github-app-logged-in.jpg)
 
 On the left, you'll see an option for the repositories on your computer, as well as your GitHub account and any organizations you're a part of. Clicking on a name will show you which repositories are available. 
 

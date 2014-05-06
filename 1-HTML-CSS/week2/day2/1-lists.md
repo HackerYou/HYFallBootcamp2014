@@ -245,7 +245,7 @@ First we need to change over our list from bulleted to inline:
 		display:inline;
 	}
 
-Then its as easy as centering the text inside of the nav:
+Then it's as easy as centering the text inside of the nav:
 
 	ul.nav {
 		text-align:center;

@@ -34,7 +34,7 @@ We want to set up your clone to be able to stay up to date with the original rep
 
 ###Making your own changes
 
-Work on your own copy, and use the new workflow we learned above - make changes, add files to a staging area, committ and push. They'll only affect your forked copy so far.
+Work on your own copy, and use the new workflow we learned above - make changes, add files to a staging area, commit and push. They'll only affect your forked copy so far.
 
 ###Asking for your changes to be incorporated
 

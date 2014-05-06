@@ -4,7 +4,7 @@ title: Design Theory Resources
 topic: ux
 ---
 
-#Futher Reading: Design Theory Resources
+#Further Reading: Design Theory Resources
 
 If you're curious about some of the theory behind what we've learned today, here are some things to read up on.
 

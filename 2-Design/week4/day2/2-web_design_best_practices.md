@@ -22,7 +22,7 @@ Here are some general guidelines to follow.
 * box and text shadows should be subtle - use rgba and/or a darker shade of your background instead of a pure black (#000)
 * similarly, avoid the harsh contrast of pure black on white, a nice dark grey (#333) is much easier on the eyes and makes for easy to read text
 * try pulling your colour scheme out of a photograph or another website you like. Pictaculous <http://www.pictaculous.com/> is a tool that will do that for you.
-* stick to neturals (blacks, whites, greys) plus one or two accent colours, then work with variations on those (http://0to255.com is great for this!)
+* stick to neutrals (blacks, whites, greys) plus one or two accent colours, then work with variations on those (http://0to255.com is great for this!)
 
 ##Typography
 
@@ -33,7 +33,7 @@ Here are some general guidelines to follow.
 * for big headings, decreased letter spacing looks much better than the default
 * for small caps, increased letter spacing looks great
 * (Use smart quotes!)[http://practicaltypography.com/straight-and-curly-quotes.html] Designers will LOVE you. 
-* make sure your line-length (measure) is appropriate for readability - you want to aim for 50 - 80 characters (incuding spaces) per line.  Adjust font-size or the element's width to get it right.
+* make sure your line-length (measure) is appropriate for readability - you want to aim for 50 - 80 characters (including spaces) per line.  Adjust font-size or the element's width to get it right.
 
 ##Interactivity
 
@@ -43,6 +43,12 @@ Here are some general guidelines to follow.
 
 ###Exercise: Design Critique 
 
-Pick out a few websites that you think look great, then try to dissect *what makes them look great*.  Which best practices have they employed and how? Is there anything you think could be imporoved upon?
+Pick out a few websites that you think look great, then try to dissect *what makes them look great*.  Which best practices have they employed and how? Is there anything you think could be improved upon?
 
 If you don't have an awesome site in mind, check out [The Best Designs](http://www.thebestdesigns.com/) or [Design Fridge](http://www.designfridge.co.uk/).
+
+**Exercise**  
+Let's take a look at [kalynnakano.com](kalynnakano.com) and discuss the design details.  Then download the below zip file to work on the exercise.
+
+<a href="exercise/kalynnakano.com.zip" class="exercise">kalynnakano.com (zip)</a>  
+<a href="exercise/kalynnakano.com-answer.zip" class="exercise">kalynnakano.com-answer (zip)</a>

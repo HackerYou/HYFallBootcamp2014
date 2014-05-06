@@ -16,7 +16,7 @@ You have written a few programs -- congratulations! It's time to learn a very po
 JavaScript can be included inside of HTML files in two ways:
 
 ### Linking an external JavaScript File
-Linking to a JavaScript file (.js extension) works similarily to how we used external CSS:
+Linking to a JavaScript file (.js extension) works similarly to how we used external CSS:
 
 	<script type="text/javascript" src="app.js"></script>
 

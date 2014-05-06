@@ -74,7 +74,7 @@ All the above can be mixed and matched, try some of the following:
 * `ul.list.list-number-$*2>li.item.item$*2>h2{intense}+p>span{woah}`
 
 ### Emmet and CSS
-When in css, you can usually just type the first few letters of what you want, and emmet will figure out what you were looking for. Try some of the following:
+When in css, you can usually just type the first few letters of what you want, and Emmet will figure out what you were looking for. Try some of the following:
 
 * `posrel` →  `position: relative;`
 * `posab` →  `position: absolute;`

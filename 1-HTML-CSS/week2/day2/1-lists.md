@@ -42,7 +42,7 @@ You'll see it look like this:
 
 ### list-style-type
 
-Filled in dots, or "disc", are the default for unordered lists and decimal numbers for ordered lists, but we have total control over that:
+Filled-in dots, or "discs", are the default for unordered lists and decimal numbers for ordered lists, but we have total control over that:
 
 	ul {
 		list-style-type: square;
@@ -200,7 +200,7 @@ Using the nested lists in <a href="exercises/nested-lists.html" class="exercise"
 1. colors its sub lists background red
 
 
-## Using lists for Navigation
+## Using Lists for Navigation
 
 Now that we have a handle on unordered lists, we can start to use them for creating navigations for our websites.
 
@@ -229,7 +229,7 @@ Note how the bullets disappear. We could also float them left and set the list-s
 	}
 
 
-We can now go ahead and style it as we wish. Lets make it look like this:
+We can now go ahead and style it as we wish. Let's make it look like this:
 
 ![](http://f.cl.ly/items/2Z0E1Y3l403L410l251G/Screen%20Shot%202012-10-14%20at%209.55.39%20PM.png)
 

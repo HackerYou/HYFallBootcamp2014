@@ -437,7 +437,7 @@ Solution: <span class="solution">Syntax error. Missing a double-quote. `"JavaScr
 
 
 ##Adding Javascript to HTML Pages
-Similar to CSS, to add JavaScript to your HTML pages, you can include it inline or as an external file.
+Similar to CSS, to add JavaScript to your HTML pages, you can include it inline on the HTML page or as an external file.
 
 To include it internally, write all of your JavaScript within a `<script></script>` tag. Though the tags can be added in the `<head>` or anywhere in the `<body>`, it is usually added at the bottom of the page, just before the closing `</body>` tag.
 	
@@ -461,15 +461,13 @@ In the external JavaScript file you don't include `<script>` tags; just JavaScri
 We've already looked `prompt()`, `alert()` and `confirm()` but there are many more built-in functions. For example:
 
 * console.log()
-* Type `Math.` (without hitting enter) and you'll see a list pop up of available math related functions. E.g., Math.cos(), Math.max(), Math.min().
+* `Math.`
+Type `Math.` (without hitting enter) and you'll see a list pop up of available math related functions. E.g., `Math.cos()`, `Math.max()`, `Math.min()` and many more.
 
+Note that these functions look a little different from the previously discussed since they have a `prefix.functionname()` syntax. We will be discussing **objects** in another lesson and will expand on this.
 
-<div class="note">
-> Teacher note: Students might ask why some of these functions have the prefix "Math" or "console". For now it is sufficient to say that these functions are inside of the Math "box" (object might be too abstract of a idea at the moment).
-</div>
+Just like CSS properties, there are too many different functions to memorize them all so it's a good idea to have some handy resources nearby. Go to the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) and use the search box at the top of the page to learn more about these functions. 
 
+**HINT:** You will need to use these functions for the following exercises.
 
-Just like CSS properties, there are too many different functions to memorize them all so it's a good idea to have some handy resources nearby. Go to the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) and use the search box at the top of the page to learn more about these functions. You will need to use the functions for the following exercises.
-
-
-Download the exercises <a href="" class="exercise">variables-operators-functions.zip</a> for some practice using all the above concepts. 
+Download the exercises <a href="" class="exercise">variables-operators-functions.zip</a> for some practice using all the concepts covered in this lesson. 

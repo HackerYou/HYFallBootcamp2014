@@ -15,7 +15,7 @@ Break the website down into sections that need to be integrated into the website
 
 ## Creating a style guide
 
-Using the <a href="day1/exercises/style-guide.html" class="exercise">**style-guide.html**</a> collection of HTML elements, create your own `style.css` or `style.scss` file to start building out the basic styles. Without focusing on the layout and design of the website, design how each of the elements on this page will look. Pay special attention to typography, colours, sizes, padding and margin.
+Using the <a href="day2/exercises/style-guide.html" class="exercise">**style-guide.html**</a> collection of HTML elements, create your own `style.css` or `style.scss` file to start building out the basic styles. Without focusing on the layout and design of the website, design how each of the elements on this page will look. Pay special attention to typography, colours, sizes, padding and margin.
 
 ##Bonus:
 

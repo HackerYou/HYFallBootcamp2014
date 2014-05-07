@@ -60,7 +60,7 @@ What does a general day in the life of a freelancer look like?
 
 Every freelance developer is different and you will find what works for you. With the flexibility of being a freelancer, you can _somewhat_ pick your own hours.
 
-Some developers get up really early and finish early. Some split their day into two major chunks.
+Some developers get up really early and finish early, some split their day into two major chunks.
 
 Let's hear from Dara and Wes as to what a regular day looks like for them.
 

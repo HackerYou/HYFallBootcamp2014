@@ -5,7 +5,7 @@ topic: freelance
 ---
 
 # What is a sole proprietorship?
-In Ontario, a sole proprietorship is the simplest form of running a business. At it's core you, and only you, own and operate the business. The business is essentially an extension of yourself. 
+In Ontario, a sole proprietorship is the simplest form of running a business. At its core you, and only you, own and operate the business. The business is essentially an extension of yourself. 
 
 ## What type of person might want to register a Sole Proprietorship?
 * A Photographer/video producer who works independently for other companies and clients of his/her own

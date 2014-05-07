@@ -6,7 +6,7 @@ topic: ux
 
 #Style Guides
 
-To help you turn your design ideas into beautiful CSS, it's helpful to have a step in between your vision and the finsihed product. We use style guides to test our ideas and establish a soild design direction. They will help you to build modularly, which makes your CSS more lean and organized. Style guide also make for easy collaboration by providing living documentation of front-end code.
+To help you turn your design ideas into beautiful CSS, it's helpful to have a step in between your vision and the finished product. We use style guides to test our ideas and establish a soild design direction. They will help you to build modularly, which makes your CSS more lean and organized. Style guide also make for easy collaboration by providing living documentation of front-end code.
 
 ##Style Guide How To
 

@@ -7,15 +7,15 @@ topic: freelance
 # Client and Time Management
 Managing both your time as well as your clients requests can take up a large portion of your day. 
 
-It's important to learn how to properly manage these things so you can focus on the paying parts of your job.
+It's important to learn how to properly manage these things, so you can focus on the paying parts of your job.
 
 ## Client Management
 
-Communication with your clients is extremely important, however, you will find that some clients can eat up a large part of your working day. How do we balance both our clients and the work we need to do for them?
+Communication with your clients is extremely important; however, you will find that some clients can eat up a large part of your working day. How do we balance both our clients and the work we need to do for them?
 
 ### Skip email, Use Project Management Systems
 
-Email is great for conversing with a client initially, but once things turn into back and forth about a website specifics, email can get out of control very quickly. This is especially true when you work on projects with more than 2 people. 
+Email is great for conversing with a client initially, but once things turn into back and forth about a website's specifics, email can get out of control very quickly. This is especially true when you work on projects with more than 2 people. 
 
 To make things much more manageable, we can use a project management tool. This allows you to make your conversations modular and easier to track.
 
@@ -29,7 +29,7 @@ Such tools include:
 
 All of the above, with the exception of Trello, work on a "thread" based system similar to email. You can create a message/post, say "Website Navigation Errors" and proceed to converse on that topic. Any files or notes about that specific need stay in the thread.
 
-Trello is a little different as it a more visual way to see what needs to be done. Each topic/issue/request is a "card" in which you can discuss, upload files and assign tasks and to-do lists. 
+Trello is a little different as it is a more visual way to see what needs to be done. Each topic/issue/request is a "card" in which you can discuss, upload files and assign tasks and to-do lists. 
 
 Trello is great because you can have columns of cards and drag/drop them into meaning full categories. Let's look at a few examples now. 
 

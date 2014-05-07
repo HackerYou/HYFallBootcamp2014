@@ -16,6 +16,12 @@ topic: js
 	.solution:hover {
 		color:black;
 	}
+	.solution code {
+		border:none;
+	}
+	.solution:hover code {
+		border: 1px solid #ddd;
+	}
 
 </style>
 #Introduction to JavaScript
@@ -74,9 +80,9 @@ Vocabulary is very important because it helps us ask coherent questions and adds
 
 ##Intro to Functions
 
-**Functions** are used to make the code "do things" and are basically chunks of code/instructions that can be repeated and run any time. We can create our own functions (to be discussed later) but there many handy ones already built into JavaScript. 
+**Functions** are used to make the code "do things" and are basically chunks of code/instructions that can be repeated and run any time. We can create our own functions (to be discussed later) but there are many handy ones already built into JavaScript. 
 
-To get the function to execute, you have to *call the function*. The syntax is the function name followed by parentheses. 
+To get the function to execute, you have to *call the function* using the function name followed by parentheses. 
 
 **Calling a function:** 
 	
@@ -97,27 +103,39 @@ Let's take a closer look at some terminology:
 
 A few built-in JavaScript functions are `prompt()`, `alert()` and `confirm()`. All three display a dialog box containing a message but `prompt()` also allows the user to input some text and `confirm()` also includes a "cancel" button in addition to "ok".
 
-Let's try calling these functions in the browser console with and without arguments and see what happens.
+Let's try calling these functions in the browser console with and without arguments and see what happens, one function at a time.
 	
-** Without arguments **
+**Without arguments**
 
 	prompt();
 	alert();	
 	confirm();
 	
-** With arguments **
+**With arguments**  
+Note that the argument are contained in quotes.
 
 	prompt("What is your name?");
 	alert("hello");
 	comfirm("yay or nay?");
 
+
 In the example above, the *value* "What's your name?", "hello" and "yay or nay" was *passed* as an *argument* to the function named `prompt` and `alert`. We *called* the function and it *returned* different values for each function.
 
-For the `prompt()` function, when the user clicks OK, the text entered in the input field is returned. If the user clicks OK without entering any text, an empty *string* is returned. If the user clicks the Cancel button, this function returns `null`.
+`prompt()`:
 
-For the `alert()` function, the *argument* shows in the dialogue but returns an `undefined` value in the console.
+* when the user clicks OK, the text entered in the input field is returned
+* if the user clicks OK without entering any text, an empty string is returned
+* if the user clicks the Cancel button, the function returns `null` (means "value of nothing")
 
-`confirm()` returns `true` if "ok" was selected and `false` if "cancel" was selected.
+`alert()`:
+
+* the *argument* shows in the dialogue (The text written in the parenthesis)
+* returns an `undefined` value (means "does not have a value"")
+
+`confirm()`:
+
+* returns `true` if "ok" was selected
+* `false` if "cancel" was selected
 
 Note that the arguments being passed were contained within quotes as well as some of the values being returned. That's because different values have different **types**. Let's go over these different types of values that were returned.
 
@@ -175,7 +193,7 @@ Now reference it's value by typing 'email'. What do you see? Nothing! We have cr
 
 
 ### Assigning a value to a variable
-We can make a variable refer to a value by using the assignment operator `=`:
+Assign a value to the variable with the `=` operator:
 
 ```
 > var email;
@@ -184,7 +202,10 @@ We can make a variable refer to a value by using the assignment operator `=`:
 ```
 *The value on the right hand side is stored in the variable on the left hand side.*
 
-Now type `email` into your console again. What do you see? 
+Now type `email` into your console again. The value has been assigned to `email` so now we can access it just by its name. You should see:
+	
+	> email
+	"hello@email.com"
 
 Variables can also be declared and assigned a value in a single line of code:
 
@@ -196,7 +217,9 @@ undefined
 Why did the above example return undefined?   
 No value is returned because `var email = "hello@email.com";` is not an expression, it's a **statement**. 
 
-**Statements** are similar to expressions, as they both give instructions to the computer but expressions *always* return a value, statements *don't always* return a value. It's best practice to declare variables using the keyword `var` and at the top of your code to avoid confusion.
+**Statements** are similar to expressions, as they both give instructions to the computer but expressions *always* return a value, statements *don't always* return a value. 
+
+It's best practice to declare variables using the keyword `var` and at the top of your code to avoid confusion.
 
 Once you have declared a variable with `var` you don't need to keep using the keyword `var`. We've already seen that referencing the variable name returns it value but you can also *reassign* a variable to another value without using `var`. 
 
@@ -220,12 +243,13 @@ Consider the following code:
 	
 	var 8 = x;
 	
-What the result will be?
-Solution: SyntaxError: Unexpected number
+The result will show an error when the syntax rules are not followed.
+
+	SyntaxError: Unexpected number
 
 
 ### Using variables as values
-After a variable is declared, it can be used as an *expression* in another variable declaration by referring to the name of the variable.
+After a variable is declared, it can be used as an *expression* in another  variable. In the example below, `years` is being reused in the `days` variable.
 
 ```
 > var years = 25;
@@ -251,7 +275,7 @@ Parentheses can be used to group operations. Just like you learned in grade scho
 **A**ddition  
 **S**ubtraction 
 
-**Note:** When numbers are contained within quotes, they are considered strings and arithmetic operations cannot be performed.
+**Note:** When numbers are contained within quotes, they are considered **strings** and arithmetic operations cannot be performed.
 
 **Exercise**  
 In pairs, solve the following questions by using **operators**. You can type all your equations into the Chrome developer tools console. 
@@ -277,7 +301,7 @@ To join strings and variables, it would be:
 	var sentence = language + " is awesome!";
 	sentence;
 	
-What happens when you type in the console:
+What happens when you type the below expressions in the console?
 
 ```
 'HackerYou' * 6 
@@ -312,16 +336,17 @@ Solution: <span class="solution">a space is needed between `var` and `email` but
 
 ##Variables and Functions
 
-Let's look at another example of reassigning a variable to another value using a function.  We know that the `prompt()` function allows the user to input text. What if we wanted to hold onto that text input value to use for later?
+Let's look at an example of using variables and functions.  We know that the `prompt()` function allows the user to input text. What if we wanted to hold onto that text input to use for later?
 
-Remember, functions are also a data **type** and can therefore be assigned to a variable as a value. Since variables are used to hold a value, it can also be passed as an argument in a function.
+Since functions are also a data **type**, they can be assigned to a variable. 
 
-**Exercise:** Using `prompt("What is your name?")`, let's create a variable to hold the value and `alert()` a message with that value.
+**Exercise:**  
+Using `prompt("What is your name?")`, let's create a variable to hold the value and `alert()` a message with that value.
 
 	var name = prompt("What is your name?");
 	alert("Hello " + name + ".");
 
-The text added by the user in the prompt window is passed as a *value* into the variable `name`. `name` is then passed as an *argument* into the alert function and will reassign the value of `name` every time the user inputs new text.
+The text added by the user in the prompt window is passed as a *value* into the variable `name` which is then passed as an *argument* into the alert function.
 
 
 ##Syntax & Code Conventions
@@ -337,7 +362,7 @@ Code is composed of **statements** (instructions) that are usually executed one 
 	
 	var name = "Your Name"; name;
 
-**Note:** Because of a technique called **automatic semicolon insertion** (ASI), some statements that are well formed on a new line will be executed as if a semicolon had been added. 
+**Note:** Because of a technique called **automatic semicolon insertion** (ASI), some statements that are "well formed" on a new line will be executed as if a semicolon had been added. 
 	
 	// will execute both statements
 	var name = "Your Name" 
@@ -362,7 +387,7 @@ In the example above, when the statement is on a new line, the instruction will 
 Here's a handy [Stack Overflow discussion](http://stackoverflow.com/questions/1834642/best-practice-for-semicolon-after-every-function-in-javascript) about when semi-colons are needed.
 
    
-**Exercise**: Add semicolons and line breaks where appropriate to make the below code work without errors.
+**Exercise**: In the example below, where should the semicolons and line breaks be to make the below code work without errors.
 
 ```
 "I'm just a value!" var schoolName = "HackerYou" var numOfStudents = 25 schoolName + " has " + numOfStudents + " students." 
@@ -387,7 +412,7 @@ schoolName + " has " + numOfStudents + " students.";
 
 ###Variable declarations
 
-All variables should be declared before used. JavaScript does not require this, but doing so makes the program easier to read.
+All variables should be declared *before* they are used. In some instances, JavaScript does not require this, but doing so makes the program easier to read.
 
 ###Quotes
 Single or double quotes can be used but pick one and be consistent.  Also, make sure that the closing quote matches the opening quote.  
@@ -405,12 +430,32 @@ Solution: <span class="solution">`ReferenceError: myNme is not defined`. The var
 Now repeat the above steps with the following code:
 
 ```
-"JavaScript" + " is " + 18 + years old";
+> "JavaScript" + " is " + 18 + years old";
 ```
 
 Solution: <span class="solution">Syntax error. Missing a double-quote. `"JavaScript" + " is " + 18 + "years old";`</span>
 
 
+##Adding Javascript to HTML Pages
+Similar to CSS, to add JavaScript to your HTML pages, you can include it inline or as an external file.
+
+To include it internally, write all of your JavaScript within a `<script></script>` tag. Though the tags can be added in the `<head>` or anywhere in the `<body>`, it is usually added at the bottom of the page, just before the closing `</body>` tag.
+	
+	...
+	<script>
+		// js code here
+	</script> 
+	</body>
+
+To include it as an external file, save your file using a `.js` extension and link to it using the script tag as well but add the `src` attribute like this:
+	
+	<script src="scripts.js"></script> 
+	
+Note that prior to HTML5, an additional `type` attribute was required so you may see external javascript files linked this way as well:
+
+	<script type="text/javascript" src="scripts.js"></script> 
+
+In the external JavaScript file you don't include `<script>` tags; just JavaScript code itself.
 
 ##More built-in functions
 We've already looked `prompt()`, `alert()` and `confirm()` but there are many more built-in functions. For example:
@@ -424,55 +469,7 @@ We've already looked `prompt()`, `alert()` and `confirm()` but there are many mo
 </div>
 
 
-Go to the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) and use the search box at the top of the page to learn more about these functions.
-
-After 5 minutes we will review each of these functions together.
-
-<div class="note">
-**Teacher note**: It's a good idea at this point to model what the students should do in order to research these "functions". Open up the MDN website and search for one of the Math methods. Show the students how to read the Documentation.
-</div>
-
-**Exercise 1**: Create a program that asks for a person's age in years and then returns their age in seconds.
-[ * Note that these lines have to be executed at once, not line by line *]
- 
-Solution:
-[**change to age = age * etc... to show reassignment more clearly **]
-<div class="solution">
+Just like CSS properties, there are too many different functions to memorize them all so it's a good idea to have some handy resources nearby. Go to the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) and use the search box at the top of the page to learn more about these functions. You will need to use the functions for the following exercises.
 
 
-<pre>
-var age = prompt("What's your age in years?");
-age * 365 * 24 * 60 * 60
-</pre>
-
-
-
-Multiply by 365 to get days, by 24 to get hours, by 60 to get minutes and then 60 again for seconds.
-
-</div>
-
-**Exercise 2**: Create a program that asks for three numbers and then returns the maximum of the three.
-
-Solution:
-<div class="solution">
-
-
-<pre>
-var num1 = prompt("First number");
-var num2 = prompt("Second number");
-var num3 = prompt("Third number");
-Math.max(num1, num2, num3);
-</pre>
-
-</div>
-**Exercise 3**: Create a program of your choosing. Bonus points if you can use everything that we've covered so far. Here are a few ideas from easy to challenging 
-
-1. A program that finds the youngest person out of three ages.
-2. A program that converts the oldest of three student's age into dog years.
-3. A program that adds sales tax to a price.
-1. A program that returns a random number between 1 and 100
-1. A program that returns "Your random number is : " and a random number between 16 and 79.
-
-<div class="note">
-> **Teacher Note**: Get a few students to share their program with the class. Get them to explain their code by using the vocabulary from this lesson.
-</div>
+Download the exercises <a href="" class="exercise">variables-operators-functions.zip</a> for some practice using all the above concepts. 

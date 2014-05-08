@@ -10,7 +10,9 @@ title: Functions
 
 Just to recap, we said that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language but this is especially true for JavaScript. Understand functions and you can become a JavaScript wizard or at the very least a latte artist.
 
-So far you have seen built-in functions but it is time to take things to the next level. You will now learn how to create your own functions.
+So far you have seen built-in functions but it is time to take things to the next level. You will now learn how to create your own functions. 
+
+A function is best used to reduce verbosity in your code. Why write something multiple times when you can simply create a function to do the work for you.
 
 ## Defining Functions
 

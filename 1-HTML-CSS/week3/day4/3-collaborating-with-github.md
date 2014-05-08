@@ -10,14 +10,15 @@ When working in teams or on open source projects, you will often use GitHub to c
 
 ###Forking a Repo
 
-To fork a repo, visit its GitHub page and click the Fork button.
+To fork a repo, visit its GitHub page and click the Fork button. This will create a copy of the repo under your account on Github.
+
 ![](http://f.cl.ly/items/0d2K0n2l1M131S170j3v/Bootcamp-Fork.png).
 
 Now visit your own GitHub page, click on the Repositories tab, and you'll see you have your own copy! 
 
 ###Cloning your fork locally
 
-To work on your forked copy, you'll need to get it on your local machine.  That's where cloning comes in.
+To work on your forked copy, you'll need to get it on your local machine.  That's where cloning comes in. Cloning is the process of 
 
 1. From your forked copy on GitHub.com, find and copy the SSH clone URL  
 ![](http://f.cl.ly/items/3s1A0d0s0u2R3r3o0G2R/Screen%20Shot%202014-02-06%20at%202.44.44%20PM.png)

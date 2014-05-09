@@ -8,53 +8,38 @@ title: Control Flow
 
 # Control Flow
 
-You have written a few programs -- congratulations! It's time to learn a very powerful programming concept but the console is an awkward place to write a lot of code. We need a more convenient way of writing Javascript.
+Normally, instructions or **statements** in a JavaScript are executed one after the other, in the order in which they are written. 
 
+**Control flow** is referring to the order of instructions that are executed based on a decision and is used to change the flow of statements. 
 
-## Linking JavaScript
+An example of a control flow statement is an if/else statement.
 
-JavaScript can be included inside of HTML files in two ways:
-
-### Linking an external JavaScript File
-Linking to a JavaScript file (.js extension) works similarly to how we used external CSS:
-
-	<script type="text/javascript" src="app.js"></script>
-
-Its a best practice to put these *just before* the closing body tag as they will not affect your site load at all. Unfortunately with some WordPress plugins, they might need to go in the head. 
-<<<<<<< HEAD
-
-### Script Tags
-
-Using `<script></script>` tags like so:
-
-	<script>
-		alert('holla');
-	</script>
-
-=======
-
-### Script Tags
-
-Using `<script></script>` tags like so:
-
-	<script>
-		alert('holla');
-	</script>
+"If this condition is true, do this. Else, do this."
 
 ## Booleans
 
-Our code so far is executed top to bottom. If that's all we could do then our programs would be limited. This is where **control flow** comes in. We can write code so that a statement or group of statements is only executed if a logical condition is true (or false).
+Our code so far is executed top to bottom. If that's all we could do then our programs would be limited. This is where **control flow** comes in. We can write code so that a statement or group of statements is only executed if a logical condition is true or false.
 
-> Teacher note: Discussion: What is a logical condition anyhow? Can students think of examples that are unrelated to programming? For example => "If hungry then eat.".
-
-A type of value that we need for conditionals is the **boolean** type. This type has two possible values: `true` or `false`. **Boolean expressions** produce boolean values. For example, when checking if two numbers are equal the value returned should be either true or false.
+A type of value that we need for conditionals is the **boolean** type. This type has two possible values: `true` or `false`. For example, when checking if two numbers are equal the value returned should be either true or false.
 
 ### Comparison operators
 
-* Check equality with `===` (equal) and `!==` (not-equal). Note how we **do not use regular equals**. Why?
-* Check inequality with `>=` `<=` `>` `<` (greater than and less than)
+Operator     |  Description  
+------------ | -------------
+==	 | is equal to 
+===	 | is exactly equal to (value and type)
+!=	| is not equal to
+&nbsp; >	| greater than 
+&nbsp;<	| less than
+&nbsp;>=	| greater than or equal to	
+&nbsp;<=	| less than for equal to
 
-**Exercises**: Write two expressions that return the boolean value `false` and two that return `true`.
+
+Check equality with `===` (equal) and `!==` (not-equal). Note how we **do not use regular equals**. Why?
+
+Check inequality with `>=` `<=` `>` `<` (greater than and less than)
+
+**Exercises**: In the console, write two expressions that return the boolean value `false` and two that return `true`.
 
 Solution:
 <div class="solution">
@@ -74,21 +59,27 @@ true
 
 ### Combining boolean expressions
 
-We can combine boolean expressions with the and(&&) and or(||) operators.
+**Logical operators**  
+&&	means and  
+|| means or  
+! means not
 
-* true && true // true
-* true && false // false
-* false && true // false
-* false && false // false
-* true || true // true
-* false || true // true
-* true || false // true
-* false || false // false
+
+We can combine boolean expressions using (&&) and (||) operators.
+
+	true && true // returns true
+	true && false // returns false
+	false && true // returns false
+	false && false // returns false
+	true || true // returns true
+	false || true // returns true
+	true || false // returns true
+	false || false // returns false
 
 ## Conditional statements
-Now that you're familiar with booleans, it's time to meet **conditional statements**. Simply put, these statements allow us to run a statement or group of statements only when a condition is true (or false).
+Now that you're familiar with booleans, it's time to meet **conditional statements**. Simply put, these statements allow us to run a statement or group of statements only when a condition is true or false.
 
-This is what they look like:
+Here is the syntax for an if/else statement:
 
 ```
 if (condition) {
@@ -97,33 +88,29 @@ if (condition) {
 	// block statement (do something)
 }
 ```
-<div class="note">
-> **Teacher note**: Read this code to give students the idea that it reads very much like a natural language. "If condition is true then do the following, otherwise do this."
-</div>
+
 
 Let's break that down.
 
 1. `if` is a keyword
 2. `condition` is usually a boolean expression
 3. `block statement` will be explained below
-4. `else` is a keyword. a synonym in english would be "otherwise". 
+4. `else` is a keyword. 
 5. another `block statement`. Note that the `else` block is optional.
 
-<div class="note">
-> **Teacher note**: Have students draw a diagram to represent the conditional statement. It should look something like this: 
-</div>
 
 ![image](control-flow.png)
 
 ### Block Statements
-A block statement is used to group statements. The block is delimited by a pair of curly brackets:
+A block statement is used to group statements (instructions). The block is delimited by a pair of curly brackets `{}`:
 
 ```
-if (name == 'wes') {
+if ( time === 'morning') {
    // do all of the following things
-   fadeInModal();
-   logRequest();
-   addToCart();
+   console.log("Good morning!");
+} else {
+	// do all the following things if the first condition is false
+	console.log("Good evening!");
 }
 ```
 
@@ -168,7 +155,7 @@ if (name == 'wes') {
 
 ## Loops
 
-Another powerful concept in programming is "loops". With loops, a block of statements is repeatedly executed while a condition is true.
+Another powerful concept in programming is **loops**. With loops, a block of statements are repeatedly executed while a condition is true.
 
 ![image](loops.png)
 
@@ -182,9 +169,11 @@ for (initialExpression; condition; incrementExpression) {
 
 When a **for loop** executes, the following happens:
 
-1. The `initialExpression` is executed. This expression usually initializes one or more loop counters. *This expression can also declare variables.*
-2. The `condition` expression is evaluated. If the value of condition is `true`, the `loop statements` execute. If the value of condition is `false`, the for loop terminates.
-3. The `incrementExpression` executes and control returns to step 2.
+1. The **initialExpression** is typically used to initialize (start) a counter variable. *This expression can also declare variables with the `var` keyword.* 
+
+2. The **condition** is an expression that is evaluated before each loop iteration. If this expression evaluates to true, the statement is executed. If this expression evaluates to false, the `for loop` ends.
+
+3. The **incrementExpression** is evaluated at the end of each loop iteration. Generally used to update or increment the counter variable.
 
 Let's look at an example:
 
@@ -200,6 +189,16 @@ for (var i = 0; i < 10; i = i + 1) {
 }
 ```
 
+When would you want to use this? Let's say you have a music playlist containing 10 songs. You want the songs to auto play the next song until you get to the end of the playlist. The for loop may look something like this:
+
+	for (var i = 0; i < 10; i = i + 1) {
+		playNextSong(i);
+	}
+
+`var i = 0;` Start at the first song.   
+`i < 10` If the current song that is playing is less than 10, you are not at the end of the list yet, so play the next song.    
+`i + 1` To move to the next song on the list, add 1 to the current index number to move onto the next song.
+
 **Exercises**:
 Complete the following exercises in pairs.
 
@@ -207,9 +206,9 @@ Complete the following exercises in pairs.
 > **Teacher note**: It might be a good idea at this point to explain how pair programming works, its benefits, who uses it etc. 
 </div>
 
-**Level 1** Log the numbers between 5 and 12.
+**Level 1** Log into the console the numbers between 5 and 12.
 
-**Level 2**. Log the numbers between 1 and 10 in reverse (i.e. starting with 10). The output should look something like this:
+**Level 2**. Log into the console the numbers between 1 and 10 in reverse (i.e. starting with 10). The output should look something like this:
 
 ```
 10

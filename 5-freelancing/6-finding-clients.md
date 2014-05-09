@@ -9,7 +9,7 @@ topic: freelance
 Finding clients for established freelancers is incredibly easy. Finding clients for beginner freelancers can be tough, but it doesn't have to be. Since a large majority of your clients will come from referrals, breaking into the referral scene will take some work.
 
 ## Job Boards and Online listings
-You won't find good work on job boards. Any time someone posts online saying that they are looking for a freelance web developer, one of the two will happen:
+You won't find good work on job boards. Any time someone posts online saying that they are looking for a freelance web developer, one of the two things will happen:
 
 1. The poster is looking for free or undervalued work. This isn't work your time. See Craigslist. 
 2. THe poster will get a million responses. Both from local developers who are desperate for work (bid to the bottom) as well as offshore development teams which are very popular in countries where the cost of living is much lower. 

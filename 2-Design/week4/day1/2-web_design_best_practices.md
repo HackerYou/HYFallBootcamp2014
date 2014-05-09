@@ -48,7 +48,7 @@ Pick out a few websites that you think look great, then try to dissect *what mak
 If you don't have an awesome site in mind, check out [The Best Designs](http://www.thebestdesigns.com/) or [Design Fridge](http://www.designfridge.co.uk/).
 
 **Exercise**  
-Let's take a look at [kalynnakano.com](kalynnakano.com) and discuss the design details.  Then download the below zip file to work on the exercise.
+Let's take a look at [kalynnakano.com](http://kalynnakano.com) and discuss the design details.  Then download the below zip file to work on the exercise.
 
-<a href="exercise/kalynnakano.com.zip" class="exercise">kalynnakano.com (zip)</a>  
-<a href="exercise/kalynnakano.com-answer.zip" class="exercise">kalynnakano.com-answer (zip)</a>
+<a href="exercises/kalynnakano.com.zip" class="exercise">kalynnakano.com (zip)</a>  
+<a href="exercises/kalynnakano.com-answer.zip" class="exercise">kalynnakano.com-answer (zip)</a>

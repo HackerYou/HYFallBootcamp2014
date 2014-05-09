@@ -6,7 +6,7 @@ topic: ux
 
 ##UX (User Experience) Design
 
-User experience design is about enabling visitors to effectively and enjoyably use your website. Good UX is informed by many different disiplines - design, psychology, communication - but a lot of it comes down to plain old common sense. You're a user of the web too! Try to keep in mind sites you find easy to use or features that frustrate you as a web user.
+User experience design is about enabling visitors to effectively and enjoyably use your website. Good UX is informed by many different disciplines - design, psychology, communication - but a lot of it comes down to plain old common sense. You're a user of the web too! Try to keep in mind sites you find easy to use or features that frustrate you as a web user.
 
 ###Exercise: What Grinds Your Gears?
 Share a bad user experience you've had on a website and discuss how you might fix it.
@@ -29,7 +29,7 @@ Some will be specific to the site you're building. For example,
 **Once your goals have been established, make your UX decisions based on whether or not those goals will be met.**
 
 **Goal:** easy to digest content
-**Good UX:** using clear and consice wording, adjusting paragraph line-height to make text more legible,  use of headings to establish a content heirarchy
+**Good UX:** using clear and concise wording, adjusting paragraph line-height to make text more legible,  use of headings to establish a content hierarchy
 
 **Goal:** browse product selection easily on an e-commerce site
 **Good UX:** displaying thumbnails on a product listing page, allowing users to browse variations without leaving the list view:
@@ -70,3 +70,4 @@ Dispels commonly misheld beliefs about user experience design. Great for educati
 
 
 **A word of caution:** Not everything that's popular is good UI design! Web design can be prone to fads, so always ask yourself if a design pattern is *functional* before implementing it.
+

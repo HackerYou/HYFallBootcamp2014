@@ -10,14 +10,15 @@ When working in teams or on open source projects, you will often use GitHub to c
 
 ###Forking a Repo
 
-To fork a repo, visit its GitHub page and click the Fork button.
+To fork a repo, visit its GitHub page and click the Fork button. This will create a copy of the repo under your account on Github.
+
 ![](http://f.cl.ly/items/0d2K0n2l1M131S170j3v/Bootcamp-Fork.png).
 
 Now visit your own GitHub page, click on the Repositories tab, and you'll see you have your own copy! 
 
 ###Cloning your fork locally
 
-To work on your forked copy, you'll need to get it on your local machine.  That's where cloning comes in.
+To work on your forked copy, you'll need to get it on your local machine.  That's where cloning comes in. Cloning is the process of 
 
 1. From your forked copy on GitHub.com, find and copy the SSH clone URL  
 ![](http://f.cl.ly/items/3s1A0d0s0u2R3r3o0G2R/Screen%20Shot%202014-02-06%20at%202.44.44%20PM.png)
@@ -34,7 +35,7 @@ We want to set up your clone to be able to stay up to date with the original rep
 
 ###Making your own changes
 
-Work on your own copy, and use the new workflow we learned above - make changes, add files to a staging area, committ and push. They'll only affect your forked copy so far.
+Work on your own copy, and use the new workflow we learned above - make changes, add files to a staging area, commit and push. They'll only affect your forked copy so far.
 
 ###Asking for your changes to be incorporated
 
@@ -46,9 +47,9 @@ ask with something called a `pull request`. To open a new pull request:
 ![](http://f.cl.ly/items/0N203l3v3O0f1v47051c/Screen%20Shot%202014-02-07%20at%2010.16.33%20AM.png)
 3. On the next page, click "Create Pull Request."  
 ![](http://f.cl.ly/items/462Q1S101A2h2I2B2C3j/Screen%20Shot%202014-02-07%20at%2010.18.43%20AM.png)
-4. Add a useful title (and optionally, a desription) describing your changes and click "Send pull request."  
+4. Add a useful title (and optionally, a description) describing your changes and click "Send pull request."  
 ![](http://f.cl.ly/items/2m3F442l1r371O1q0s47/Screen%20Shot%202014-02-07%20at%2010.35.30%20AM.png)
-6. You're done! It's now up to the original owener to approve your changes. 
+6. You're done! It's now up to the original owner to approve your changes. 
 
 ###Exercise
 Our course notes are stored in a GitHub repository! https://github.com/HackerYou/web_dev_full_time 

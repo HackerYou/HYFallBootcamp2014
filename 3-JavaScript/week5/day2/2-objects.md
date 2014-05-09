@@ -39,7 +39,7 @@ You may remember a similar layout from your sublime text settings:
 * the value of an object property can be any of the primitive types or an object (creating a tree structure)
 * the last property is not followed by a comma.
 
-Here is an example object. Note how objects can be nested inside eachother. 
+Here is an example object. Note how objects can be nested inside each other. 
 
 ```
 var clothing = {

@@ -8,7 +8,7 @@ topic: html
 
 ## Color and Background Color
 
-You have probably caught onto this one already, but lets take a second to talk about CSS color.
+You have probably caught onto this one already, but let's take a second to talk about CSS color.
 
 The first thing to note is that the property is **color** not **colour**. Although the spellings of both **grey** and **gray** are accepted.
 
@@ -107,7 +107,7 @@ No kidding! Lucky for us we can specify everything in the `background` single ke
 
 	background: red url(images/dog2.jpg) top right repeat-y fixed;
 
-Woah, thats:
+Woah, that's:
 
 `[background-color] [background-image] [background-position] [background-repeat] [background-attachment]`
 
@@ -125,7 +125,7 @@ Another really cool feature of CSS3 is the ability to create gradients in pure C
 
 [http://www.colorzilla.com/gradient-editor/](http://www.colorzilla.com/gradient-editor/) is an excellent site for creating gradients, it even has an image uploader.
 
-Writing gradients by hand isn't advised as the syntax is very long and different for each browser, so the tool at ColorZilla is a great resources.
+Writing gradients by hand isn't advised as the syntax is very long and different for each browser, so the tool at ColorZilla is a great resource.
 
 #### Additional Color Resources
 

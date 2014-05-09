@@ -165,6 +165,8 @@ Remember, HTML is used to describe the meaning of the content to the browser.  A
 
 Additional Resource: [Slaying the Dragon: Refactoring CSS for Maintainability](http://blog.alicialiu.net/post/46971921553/html5devconf-slaying-the-dragon-refactoring-css-for)
 
+###Use a CSS preprocessor
+Use a CSS preprocessor like [Sass](http://sass-lang.com/) to be organized and more efficient by using variables, nesting, mixins and many more features.  Download a sample for setting up your <a href="examples/refactoring/sass-example.zip" class="exercise">Sass files (zip)</a>.
 
 
 

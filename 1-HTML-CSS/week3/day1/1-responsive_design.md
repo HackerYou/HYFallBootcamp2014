@@ -19,11 +19,11 @@ Responsive design introduces the concept of a single codebase and one website th
 
 ### How?
 
-Responsive design is done entirely with well thought out HTML and CSS Media Queries. So far we have been crafting our sites with really clean HTML and percentage based elements. We are going to see how we can take that a step further an rearrange and restyle our elements based on what screen size we are on.
+Responsive design is done entirely with well thought out HTML and CSS Media Queries. So far we have been crafting our sites with really clean HTML and percentage based elements. We are going to see how we can take that a step further and rearrange and restyle our elements based on what screen size we are on.
 
 ## Viewport
 
-Before we jump into media queries, its important to note a new tag that goes in the `<head>` of your HTML document - the **viewport** meta tag.
+Before we jump into media queries, it's important to note a new tag that goes in the `<head>` of your HTML document - the **viewport** meta tag.
 
 Quick reminder: Meta tags in our `<head>` provide data or information on current page - anything from keywords to facebook image paths. The viewport tells browsers (primarily mobile browsers like the one on my iPad) how to size itself.
 

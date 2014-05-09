@@ -8,31 +8,50 @@ title: Reading jQuery Documentation
 
 # Reading jQuery API documentation
 
-jQuery objects have tons of methods, it would take forever to cover how all of them work. What we will do here is introduce you to the jQuery API documentation. The jQuery API will be an invaluable resource as your write jQuery code. 
+jQuery objects have tons of methods, but lucky for us, they're extremely well documented and always available at [api.jquery.com](http://api.jquery.com).
 
-Go to: [api.jquery.com](http://api.jquery.com)
+Get used to having to look things up, even seasoned developers do it!
 
-## Finding DOM elements
 
-There is an overwhelming amount of information so we have to narrow things down a bit. If I want to find an element on the page, which section of the API should I look under? Read the API navigation and decide which section to look in.
+## If you're not sure what method to use
 
-<div class="note">
-> **Teacher note**: Ask students to get involved here. Ask students to suggest a section or start eliminating one section at a time. "Oh is it the CSS section, nope, the documentation says 'These methods get and set CSS-related properties of elements.'. 
-</div>
+Take a look at the side panel on <http://api.jquery.com>. This is a really great categorization of all the various methods.  See if what you want fits into one of these categories.
 
-Solution: What we're looking for is the 'selectors' section. The main "selectors" category has a lot of infomation too. So we look at the sub-categories, again doing the same thing we did above. The "basic" sub-category tells us what we want.
 
-Under the "basic" sub-category click on `Class Selector (“.class”)`. Let's have a look at the detailed view. On this page you'll see:
+**Example**
 
-- description of the method
-- method syntax
-- examples
+How do we find DOM elements with jQuery?
 
-<div class="note">
-> **Teacher note**: Walk through each section (description, method syntax and examples). Point out that terminology/vocabulary is really important here. Understanding the vocabulary will help students decipher the documentation.
-</div>
+Things like `Ajax`, `CSS`, and `Deprecated` don't look like they fit the bill, but if you keep going you'll see `Selectors`.  That sounds promising, so let's look at a sub-category like "Basic". You'll see some familiar methods like the Class Selector. From here you can explore an individual method to see if it does what you want. For example, the docs for Class Selector says it "Selects all elements with the given class." 
 
-## Do the same for:
+If it doesn't seem appropriate, head back up the categories list and try again!
+
+You can also try searching if you have a vague idea of what you want. For example, a search for `class` returns results for Class Selector, the .addClass() method etc.
+
+If you're really really stuck on which method to use, you can also google "how to do x with jQuery" and will probably find an answer that points you to the right method.
+
+##To find out how to use a method
+
+When you think you know what method you want, take a look at it's docs page to find out how to use it.
+
+Let's look at the docs for the `.html()` method <https://api.jquery.com/html/> to see how we can change the text inside an h1 tag.
+
+1. Check to make sure the **Description** matches what you're trying to accomplish. Note that some methods are **getters and setters** This means they can do two different things. You may have to scroll down to see the right one. In our example, we want to change the text, so move down to the section that says "**Set** the HTML contents..." 
+
+	![](https://i.cloudup.com/VWmTxZ1eOT-1200x1200.png)
+
+2. Look at the **syntax** description to see what arugments (if any) your method takes.
+In this case, it takes 1 argument, `htmlString`.
+
+	![](https://i.cloudup.com/HfrGuwa5ME-3000x3000.png)
+
+A lot of methods can take different types or amounts of arguments, so pick the one that's best stuited to what you need.
+
+3. When in doubt, scroll down to find an **example** of this method in practice!
+
+###Exercise 
+
+Explore some methods in the following categories and give them a try on your own.
 
 - document traversal
 - DOM manipulation

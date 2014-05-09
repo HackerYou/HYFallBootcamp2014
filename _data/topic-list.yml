@@ -151,9 +151,9 @@
     path: week5/day2/arrays.html
     answerPath: week5/day2/arrays-ANSWER.html
   - title: Try jQuery
-    path: week5/day3/try-jquery.html
+    path: week5/day3/exercises/try-jquery.html
   - title: jQuery Events
-    path: week5/day3/jquery-events.html
+    path: week5/day3/exercises/jquery-events.html
   - title: Array Loop 
     path: week5/day3/exercises/array-loop.html
     answerPath: week5/day3/exercises/array-loop-ANSWER.html

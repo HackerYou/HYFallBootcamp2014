@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 topic: js
 title: Functions as first-class objects
 ---

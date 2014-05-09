@@ -150,6 +150,9 @@
   - title: Arrays Practice
     path: week5/day2/arrays.html
     answerPath: week5/day2/arrays-ANSWER.html
+  - title: Functions Practice
+    path: week5/day2/exercises/functions.html
+    answerPath: week5/day2/exercises/functions-ANSWER.html
   - title: Try jQuery
     path: week5/day3/try-jquery.html
   - title: jQuery Events

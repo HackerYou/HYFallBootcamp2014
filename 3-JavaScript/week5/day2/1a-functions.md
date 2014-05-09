@@ -16,7 +16,7 @@ A function is best used to reduce verbosity in your code. Why write something mu
 
 ## Defining Functions
 
-A function is `defined` and then `called` at a later point in the code. The syntax looks like this:
+A function is `defined` by giving it a name and the code you would like it to execute, and then `called` by referencing the name at a later point in the code. The syntax looks like this:
 
 ```
 function nameOfFunction() {
@@ -44,7 +44,7 @@ We call the function by typing its name including the parentheses. Note that you
 
 ## Parameters
 
-Functions can do much more than this. This is where **parameters** come in. Parameters are the comma separated list of variables that serve as placeholders for the values passed to the function (i.e. arguments).
+Functions can do much more than simply executing the same code over and over. This is where **parameters** come in. Parameters are the comma separated list of variables that serve as placeholders for the values passed to the function (i.e. arguments).
 
 ```
 function nameOfFunction(parameter1, parameter2) {
@@ -60,6 +60,8 @@ function nameOfFunction(parameter1, parameter2) {
 - Pass: to provide arguments to a function
 - Call: ask JavaScript to evaluate a function
 - Return: pass back a value
+
+Using these parameters, you can define a function that will return a result based on the arguments passed.
 
 **Example**:
 
@@ -158,7 +160,9 @@ The above function returns the sum of all positive integers between 0 and n (inc
 Going from a problem described in our everyday language to actual code is not easy. So the "Problem Solving Lesson" will help with that. Let's jump to those notes before doing these exercises.
 
 ## Exercises
-1. The following function isn't printing anything to the console.  What did we forget?
+Complete the functions exercises.
+
+<!-- 1. The following function isn't printing anything to the console.  What did we forget?
 	```
 	function iLovePizza(){
 		console.log("Pizza is my favourite food!");
@@ -174,7 +178,7 @@ Going from a problem described in our everyday language to actual code is not ea
 	iLoveCoffee();
 	```
 
-3. Write a fucntion `myInfo()` that logs both your name and email to the console.
+3. Write a function `myInfo()` that logs both your name and email to the console.
 
 
 3. Edit this `iLovePizza` function to accept a single `topping` argument, then log the argument to the console.
@@ -201,7 +205,7 @@ Start with this code:
 10. Write a function `charIsVowel(c)` that takes a character (i.e. a string of length 1) as argument and returns true if it is a vowel, false otherwise. E.g. `charIsVowel("b")` returns `false`.
 
 
-<!-- 
+
 4. (**) Write a function `palindrome(string)` which returns `true` if the string is a palindrome, i.e. it reads the same both backwards and forwards. E.g. `palindrome("pumpkin");` returns `false` and `palindrome("civic");` returns `true`.
 
 5. (**) Write a function that prints the numbers from 1 to n (n being an argument). But for multiples of 3 print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiple of both 3 and 5, print “FizzBuzz”. 

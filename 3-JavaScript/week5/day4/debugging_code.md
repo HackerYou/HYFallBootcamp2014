@@ -21,7 +21,7 @@ Complete level 4 of CodeSchool's free course "Discover Devtools" to learn the ab
 
 ## Exercises
 
-Open up [`debugging.html`](exercises/debugging.html) and make sure your console in chrome is open! Errors will be printed there.
+Open up <a href="exercises/debugging.html" class="exercise">**debugging.html**</a> and make sure your console in chrome is open! Errors will be printed there.
 
 1. The function in **bug 3** should log our current location. Why isn't it working?
 2. In **bug 2** we  want to print a DOM object to the console. Instead of the object we get an error message; what's wrong?
@@ -31,4 +31,4 @@ Open up [`debugging.html`](exercises/debugging.html) and make sure your console 
 6. In **bug 6** we've defined two functions at the bottom and we call them both at the top of the script. The `sayHello` function seems to work just fine but we get an error for `sayGoodbye`. The code seems the same. What's going on here?
 7. We have a select element in **bug 7**, where the "small" option has been given value of 1. When the selection changes, we check to see if the selected value matches 1 for small, and alert "Thanks for ordering a small". This should work but it isn't. What's going on?
 
-The squashed bug version is [here](exercises/debugging-answer.html).
+The squashed bug version is <a href="exercises/debugging-answer.html" class="exercise">**here**</a>.

@@ -1,11 +1,11 @@
 - name: HTML & CSS
   slug: html
-  directory: 1-HTML-CSS 
+  directory: 1-HTML-CSS
   exercises:
   - title: hello-world example
-    path: week1/day1/exercises/hello-world.html 
+    path: week1/day1/exercises/hello-world.html
   - title: HTML Intro
-    path: week1/day1/exercises/intro.html 
+    path: week1/day1/exercises/intro.html
     answerPath: week1/day1/exercises/intro-ANSWER.html
   - title: Markup Excercise
     path: week1/day1/exercises/markup-exercise.zip
@@ -34,15 +34,15 @@
   - title: CSS Box Model
     path: week1/day3/exercises/css-box-model.html
   - title: CSS Floats Example 1
-    path: week1/day3/exercises/css-floats1.html  
+    path: week1/day3/exercises/css-floats1.html
   - title: CSS Floats Example 2
-    path: week1/day3/exercises/css-floats2.html    
+    path: week1/day3/exercises/css-floats2.html
   - title: CSS Layout Exercise
     path: week1/day3/exercises/css-layout-exercise.html
     answerPath: week1/day3/exercises/css-layout-exercise-ANSWER.html
   - title: HTML Challenge
     path: week1/day3/exercises/html-challenge.html
-    answerPath: week1/day3/exercises/html-challenge-ANSWER.html 
+    answerPath: week1/day3/exercises/html-challenge-ANSWER.html
   - title: Planning a Page Structure
     path:  week1/day3/exercises/page-layout.zip
   - title: DevTools Testing
@@ -60,15 +60,15 @@
   - title: Position Relative
     path: week2/day1/exercises/position-relative.html
   - title: Position Absolute
-    path: week2/day1/exercises/position-absolute.html 
+    path: week2/day1/exercises/position-absolute.html
   - title: Position Relative + Absolute
-    path: week2/day1/exercises/position.html   
+    path: week2/day1/exercises/position.html
   - title: Position Relative + Absolute 2
-    path: week2/day1/exercises/position2.html 
+    path: week2/day1/exercises/position2.html
   - title: Position Fixed
-    path: week2/day1/exercises/position-fixed.html 
+    path: week2/day1/exercises/position-fixed.html
   - title: Z-Index
-    path: week2/day1/exercises/z-index.html 
+    path: week2/day1/exercises/z-index.html
   - title: Border Radius
     path: week2/day1/exercises/border-radius.html
   - title: Positioning &amp; Floats Exercises
@@ -122,7 +122,7 @@
     path: week3/day2/exercises/svg-tags.html
 - name: UX and Design
   slug: ux
-  directory: 2-Design 
+  directory: 2-Design
   exercises:
   - title: Style Guide Starter HTML
     path: day1/exercises/style-guide.html
@@ -137,13 +137,13 @@
   - title: clearfix snippet
     path: week2/day1/snippets/clearfix.sublime-snippet
   - title: normalize.css snippet
-    path: week2/day1/snippets/normalize.sublime-snippet 
+    path: week2/day1/snippets/normalize.sublime-snippet
   - title: jQuery CDN snippet
-    path: week2/day1/snippets/jquerycdn.sublime-snippet  
+    path: week2/day1/snippets/jquerycdn.sublime-snippet
   directory: 1-HTML-CSS
 - name: JavaScript & jQuery
   slug: js
-  directory: 3-JavaScript  
+  directory: 3-JavaScript
   exercises:
   - title: JS Cheat Sheet
     path: javascript-cheat-sheet.html
@@ -157,30 +157,27 @@
     path: week5/day3/exercises/try-jquery.html
   - title: jQuery Events
     path: week5/day3/exercises/jquery-events.html
-  - title: Array Loop 
-    path: week5/day3/exercises/array-loop.html
-    answerPath: week5/day3/exercises/array-loop-ANSWER.html
-  - title: Adding and Removing Classes 
-    path: week5/day3/exercises/add-remove-toggle-class.html
-    answerPath: week5/day3/exercises/add-remove-toggle-class-ANSWER.html
-  - title: Countdown Clock
-    path: week5/day3/exercises/countdown.html
-    answerPath: week5/day3/exercises/countdown-ANSWER.html  
-  - title: Adding and Removing Classes 
-    path: week5/day3/exercises/add-remove-toggle-class.html
-    answerPath: week5/day3/exercises/add-remove-toggle-class-ANSWER.html
-  - title: Random Colours 
-    path: week5/day3/exercises/randowm-colours.html
-    answerPath: week5/day3/exercises/randowm-colours-ANSWER.html
-  - title: jQuery Challenge 1 
-    path: week5/day3/exercises/challenge-1.html
-  - title: jQuery Challenge 2 
-    path: week5/day3/exercises/challenge-2.html
   - title: To-do App Exercise
     path: week5/to-do-app/to-do-app.html
     answerPath: week5/to-do-app/to-do-app-answer.html
   - title: To-do App Extras
     path: week5/to-do-app/to-do-app-extras.html
+  - title: Array Loop
+    path: week5/day3/exercises/array-loop.html
+    answerPath: week5/day3/exercises/array-loop-ANSWER.html
+  - title: Adding and Removing Classes
+    path: week5/day3/exercises/add-remove-toggle-class.html
+    answerPath: week5/day3/exercises/add-remove-toggle-class-ANSWER.html
+  - title: Countdown Clock
+    path: week5/day3/exercises/countdown.html
+    answerPath: week5/day3/exercises/countdown-ANSWER.html
+  - title: Random Colours
+    path: week5/day3/exercises/randowm-colours.html
+    answerPath: week5/day3/exercises/randowm-colours-ANSWER.html
+  - title: jQuery Challenge 1
+    path: week5/day3/exercises/challenge-1.html
+  - title: jQuery Challenge 2
+    path: week5/day3/exercises/challenge-2.html
   - title: Degbugging JavaScript
     path: week5/day4/exercises/debugging.html
     answerPath: week5/day4/exercises/debugging-answer.html

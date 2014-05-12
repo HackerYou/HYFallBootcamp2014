@@ -4,11 +4,13 @@ topic: js
 title: jQuery to-do app code along
 ---
 
-# A simple to-do app with JS and jQuery.
+# A to-do app with JS and jQuery.
 
-This is a pair programming exercise. In pairs you will follow the instructions below to build a to-do list app. You will get an opportunity at the end to customize it but at first the functionality will be similar for everyone.
+Today we will work together to code a to-do app in JavaScript and jQuery, following the steps below.
 
-Open up `to-do-app.html` in Sublime Text and Google Chrome. You'll see that bootstrap and jQuery have already been loaded for you. We've also gone ahead and added the skeleton markup required for the app. The basic app should work like this:
+Open up <a href="to-do-app/to-do-app.html" class="exercise">**to-do-app.html**</a> in Sublime Text and Google Chrome. We've loaded in jQuerty and bootstrap for some basic styles. We've also gone ahead and added the skeleton markup required for the app.
+
+Here's what we want our app to do:
 
 * Users type in the input field and press enter.
 * As soon as they press enter we'll take their input and add it as a list item to the unordered list under the input field.
@@ -24,12 +26,18 @@ $(document).ready(function(){
 });
 ``` 
 
+**Or** use the shorthand version:
+
+$(function(){
+	//code goes here
+});
+
 ### Event binding
 
 The first thing we need to do is add an event listener to the form. We want to listen to the `submit` event and then run our code when the form is submitted (i.e. someone pressed enter).
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function() {
 		// do something
 	});
@@ -39,7 +47,7 @@ $(document).ready(function(){
 For testing purposes let's print something to the console.
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function() {
 		console.log("form is submitted!")
 	});
@@ -53,7 +61,7 @@ At first this doesn't seem to work and it's hard to debug the issue because we d
 The default behaviour of a form is a browser refresh so we need to somehow prevent this default behaviour. The callback function to the event listener can optionally give us access to the event that triggered the function. We just need to pass a parameter into the function like so:
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function(event) {
 		// we can now do stuff to the event!
 		console.log("form is submitted!")
@@ -64,7 +72,7 @@ $(document).ready(function(){
 Notice that the only difference is the `event` variable. We can call this anything we want. It's just a variable/parameter that holds the event. By convention `e` is used. The event has a method called `preventDefault()` which can stop the default behaviour of the `submit` event.
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 		console.log("form is submitted!")
@@ -79,7 +87,7 @@ We should now see `form is submitted!` in the console. This means that we've pre
 Instead of printing `form is submitted!` lets print the value that the user put in the input field. The jQuery documentation has an `attributes` category which will help here. In there you should find `val()`. This method will allow us to get the values of form elements.
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 		
@@ -92,7 +100,7 @@ $(document).ready(function(){
 This works but there is a usability issue. After submitting the form users need to empty the input field manually before adding a second item. Let's empty the input field by setting its value to an empty string.
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 		
@@ -106,7 +114,7 @@ $(document).ready(function(){
 We should only do something if the input value is not empty otherwise we would be adding empty items to our list.
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 		var toDoItem = $('input').val();
@@ -124,7 +132,7 @@ $(document).ready(function(){
 Lets construct an HTML string using concatenation that will in the end look like this: `<li> toDoItem </li>`.
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 		var toDoItem = $('input').val();
@@ -142,7 +150,7 @@ Instead of printing it to the console lets put these list items inside of our un
 We want to add list items to the end of `ul` so `append()` will do. If we wanted the latest item to be added to the top then we would use `prepend()`. Let's find the `ul` element and append the list item inside of it.
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 		
@@ -158,7 +166,7 @@ $(document).ready(function(){
 Since we have bootstrap we can add glyphicons indicating that the item is incomplete. `<span class='glyphicon glyphicon-unchecked'></span>` will do the trick.
 
 ```
-$(document).ready(function(){
+$(function(){
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 		
@@ -272,7 +280,11 @@ $('ul').on('click', 'li', function(){
 });
 ```
 
-Have a look at `to-do-app-answer.html` for the complete app. There is so much more that you can do, here are some suggestions:
+Have a look at <a href="to-do-app/to-do-app-answer.html" class="exercise">**to-do-app-answer.html**</a> for the complete app. 
+
+##Kicking it up a notch. (BAM!)
+
+There is so much more that you can do, here are some suggestions:
 
 - allow the removal of items completely from the list
 - drag/drop sort items (have a look at jQuery UI)
@@ -281,4 +293,4 @@ Have a look at `to-do-app-answer.html` for the complete app. There is so much mo
 - error if input is empty
 - automatically move completed items to the bottom
 
-Have a look at `to-do-app-extras.html` to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.
+Have a look at <a href="to-do-app/to-do-app-extras.html" class="exercise">**to-do-app-extras.html**</a> to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.

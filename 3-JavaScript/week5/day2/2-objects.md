@@ -8,9 +8,9 @@ title: Objects
 
 # Week 5, Day 2 Objects
 
-The **primitive types** of JavaScript values are numbers, strings, booleans (true and false), null (haven't discussed this yet), and undefined. All other values are something called **objects**.
+The **primitive types** of JavaScript values are *numbers*, *strings*, *boolean values* (true and false), *null* (haven't discussed this yet), and *undefined*. All other values are something called **objects**.
 
-We can think of objects as containers. Inside the container are **properties** (pairs of names and values).
+We can think of objects as containers. Inside the container are **properties** , which are referred to as key-value pairs. Each property contains a *name* and *value* which can be referenced directly.
 
 ![image](objects.png)
 
@@ -21,9 +21,9 @@ The syntax for creating an object looks like this:
 
 ```
 var myObject = {
-	propertyOne: value,
-	propertyTwo: value,
-	propertyThree: value
+	propertyOneName: propertyOneValue,
+	propertyTwoName: propertyOneValue,
+	propertyThreeName: propertyOneValue
 }
 ```
 
@@ -36,7 +36,7 @@ You may remember a similar layout from your sublime text settings:
 **Note**:
 
 * property names are always strings but the quotes are optional if the strings are valid variable names
-* the value of an object property can be any of the primitive types or an object (creating a tree structure)
+* the value of an object property can be any of the primitive types (number, string, boolean, null and undefined) or another object (creating a nested tree structure)
 * the last property is not followed by a comma.
 
 Here is an example object. Note how objects can be nested inside each other. 
@@ -47,6 +47,7 @@ var clothing = {
 	socks: 34,
 	shoes: 2,
 	pants: 3,
+	hat: true,
 	tShirts: {
 		smallSize: 3,
 		mediumSize: 4,

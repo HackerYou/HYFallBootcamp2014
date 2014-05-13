@@ -120,18 +120,18 @@ function add(a,b) {
 **Exercise**: How can we use the `add()` function to add three numbers together?
 
 Solution 1:
-<div class="solution">
-<pre>
-var sum = add(1,2);
+
+<div class="white">
+<pre><code>var sum = add(1,2);
 var sum2 = add(3, sum);
-</pre>
+</code></pre>
 </div>
 
 Solution 2:
 
-```
-add(1,add(2,3))
-```
+<div class="white">
+<pre><code>add(1,add(2,3))</code></pre>
+</div>
 
 The second solution above shows a function calling itself. A function can even call itself **from inside its own definition**; this is a very powerful if mind-blowing concept called **recursion**. For beginners, it is much easier to use the first method as it makes more sense with reading the code. Don't worry about recursion for now.
 
@@ -155,12 +155,16 @@ The above function returns the sum of all positive integers between 0 and n (inc
 - a **reduction step** -- addAll(n) = n + addAll(n-1) -- the value of addAll(n) is defined in terms of addAll(n-1) -- one step closer to our special addAll(0).
 
 -->
-## Problem Solving Lesson
+
+<!-- ## Problem Solving Lesson
 
 Going from a problem described in our everyday language to actual code is not easy. So the "Problem Solving Lesson" will help with that. Let's jump to those notes before doing these exercises.
+ -->
 
 ## Exercises
-Complete the functions exercises.
+Complete the functions exercises in <a href="exercises/functions.html" class="exercise">**functions.html**</a>
+
+The solutions are available <a href="exercises/functions-ANSWER.html" class="exercise">**here**</a>
 
 <!-- 1. The following function isn't printing anything to the console.  What did we forget?
 	```

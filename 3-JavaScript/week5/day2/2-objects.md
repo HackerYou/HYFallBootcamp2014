@@ -131,7 +131,7 @@ var hackerYou = {
 	schoolName: "HackerYou",
 	numberOfCourses: 4,
 	age: 1,
-	nameOfInstructor: "Wes Bos"
+	nameOfInstructor: "Brenna O'Brien"
 }
 </pre>
 </div>

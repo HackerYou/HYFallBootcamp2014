@@ -5,7 +5,7 @@ title: Week 5 Project - jQuery Gallery
 
 # Weekly Project: jQuery Gallery
 
-This week you are going to write some JavaScript using the jQuery library in order to build an interactive gallery. [Here is a demo](gallery-demo/index.html) of what the gallery should look like. We've given you the HTML, CSS and assets to start:  [`gallery-start.zip`](gallery-start.zip).
+This week you are going to write some JavaScript using the jQuery library in order to build an interactive gallery. [Here is a demo](gallery-demo/index.html) of what the gallery should look like. We've given you the HTML, CSS and assets to start:  [`gallery-start.zip`](gallery-start.zip). The zip file has three collections of images that you can work with that will help to keep your project unique. Choose one collection to display in the gallery and remove the others that you aren't using.
 
 ## Gallery requirements
 
@@ -41,10 +41,16 @@ During the first time-block on Friday you should pair up with another student an
 - readability: do you understand the code or do you need to ask for clarifications often?
 - use of comments: not over-done but at the same time enough information to be informative
 
-## Extension exercise
+## Extension exercise suggestions
 
-When you mouse over the large/full image a zoomed version of the image should appear allowing you to see a more detailed view of that portion of the image.
+- When you mouse over the large/full image a zoomed version of the image should appear allowing you to see a more detailed view of that portion of the image.
 
 **Example**: http://epic-image-zoom.webfactoryltd.com/
 
 Note that the example is from a paid jQuery plugin. Don't buy it. Be resourceful and find a free solution.
+
+- All images in the gallery are in grayscale until they are hovered over.
+
+**Example**: http://www.kfsoft.info/MyFadeOverImage/demo.php
+
+- Change the styling to something that meets your own aesthetic.

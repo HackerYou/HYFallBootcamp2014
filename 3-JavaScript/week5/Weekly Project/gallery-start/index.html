@@ -9,21 +9,21 @@
       <h1>jQuery Gallery</h1>
 
       <div class="previews">
-          <a href="#" class="selected" data-full="images/top1large.jpg"><img src="images/top1small.jpg" /></a>
-          <a href="#" data-full="images/top2large.jpg"><img src="images/top2small.jpg" /></a>
-          <a href="#" data-full="images/top3large.jpg"><img src="images/top3small.jpg" /></a>
-          <a href="#" data-full="images/top4large.jpg"><img src="images/top4small.jpg" /></a>
-          <a href="#" data-full="images/top5large.jpg"><img src="images/top5small.jpg" /></a>
+          <a href="#" class="selected" data-full="images/fashion/top1large.jpg"><img src="images/fashion/top1small.jpg" /></a>
+          <a href="#" data-full="images/fashion/top2large.jpg"><img src="images/fashion/top2small.jpg" /></a>
+          <a href="#" data-full="images/fashion/top3large.jpg"><img src="images/fashion/top3small.jpg" /></a>
+          <a href="#" data-full="images/fashion/top4large.jpg"><img src="images/fashion/top4small.jpg" /></a>
+          <a href="#" data-full="images/fashion/top5large.jpg"><img src="images/fashion/top5small.jpg" /></a>
       </div>
 
       <div class="full">
           <!-- first image is viewable to start -->
-          <img src="images/top1large.jpg" />
+          <img src="images/fashion/top1large.jpg" />
       </div>
 
     </div>
   </div>
-  
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="fancybox/jquery.fancybox.js?v=2.1.4"></script>
   <script>
@@ -31,7 +31,7 @@
       $('.preview a').on('click',function(e){
         var src = $(this).data('src');
         $('img.previewFull').attr('src',src);
-        
+
       });
     });
   </script>

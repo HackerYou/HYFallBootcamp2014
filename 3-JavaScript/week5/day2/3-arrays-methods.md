@@ -165,23 +165,22 @@ To add an item to an array, we use push
 
 	`var names = [];`
 
-2. Next, add the following names to it: Wes, Brenna, Christina
+2. Next, add the following names to it: Brenna, Christina
 
 ```
-names.push("Wes");
 names.push("Brenna");
 names.push("Christina");
 ```	
 
-3. How would I get "Brenna"?
+3. How would I get "Christina"?
 
 	`names[1]; // why 1? Isn't it the 2nd`
 
-4. We forgot to add Dara. As an apology, we will add her to the front of the list. To do this, we can use unshift to **add to the front of an array**.
+4. We forgot to add Drew. As an apology, we will add her to the front of the list. To do this, we can use unshift to **add to the front of an array**.
 	
-	`names.unshift("Dara");`
+	`names.unshift("Drew");`
 
-5. Now how would I access "Brenna"?
+5. Now how would I access "Christina"?
 
 	`names[2]`
 
@@ -200,15 +199,15 @@ names.push("Christina");
 
 1. Let's start with	a base array of names:
 	
-	`var names = ["Wes","Dara","Brenna","Christina","Heather","Jared"];`
+	`var names = ["Brenna","Christina","Drew","Heather","Christopher"];`
 
-2. Let's get rid of "Wes". Since he is the first item in the array:
+2. Let's get rid of "Brenna". Since she is the first item in the array:
 
 	`names.shift();`
 
-3. Is it gone? Type `names` into console again. See that "Wes" is no longer there
+3. Is it gone? Type `names` into console again. See that "Brenna" is no longer there
 
-4. What about getting rid of the last item in the array? Get rid of "Jared". 
+4. What about getting rid of the last item in the array? Get rid of "Christopher". 
 
 	`names.pop()`
 
@@ -241,7 +240,7 @@ Bookmark the cheatsheets at <http://www.cheatography.com/davechild/cheat-sheets/
 
 #### Array Exercise
 
-Open `arrays.html`. Manipulate the array using the above methods. There are comments in the source for each item you should do.
+Open <a href="exercises/arrays.html" class="exercise">**arrays.html**</a>. Manipulate the array using the above methods. There are comments in the source for each item you should do.
 
 You will need to use `console.log()` to log it to the console as well as create your own variables when required. 
 
@@ -250,6 +249,8 @@ Your final output should look like this:
 ![](http://wes.io/U1sB/content)
 
 Let's start the first few together.
+
+The full solution is <a href="exercises/arrays-ANSWER.html" class="exercise">here.</a>
 
 ## This
 

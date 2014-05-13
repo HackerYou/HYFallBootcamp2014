@@ -65,7 +65,7 @@ true
 ! means not
 
 
-We can combine boolean expressions using (&&) and (||) operators.
+We can combine boolean expressions using (`&&`) and (`||`) operators.
 
 	true && true // returns true
 	true && false // returns false

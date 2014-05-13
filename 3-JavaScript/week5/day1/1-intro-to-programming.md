@@ -470,4 +470,4 @@ Just like CSS properties, there are too many different functions to memorize the
 
 **HINT:** You will need to use these functions for the following exercises.
 
-Download the exercises <a href="" class="exercise">variables-operators-functions.zip</a> for some practice using all the concepts covered in this lesson. 
+Download the exercises <a href="exercises/variables-operators-functions.zip" class="exercise">variables-operators-functions.zip</a> for some practice using all the concepts covered in this lesson. 

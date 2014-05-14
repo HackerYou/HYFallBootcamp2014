@@ -119,6 +119,12 @@ The same example using bracket-notation looks like this:
 4
 ```
 
+To add a new property to an existing object, simply use those one of the above notations to define a new property and value. This will update your object with the new property and value.
+
+```
+> clothing.scarves = 5;
+```
+
 **Exercise 1**:
 
 Create an object called "HackerYou" which contains information about the number of courses offered, age of the school, name of instructor, etc. (any information you want to store really…). 
@@ -138,12 +144,11 @@ var hackerYou = {
 
 **Exercise 2**:
 
-Create an object called "student" which has the properties: `id`, `name`, `age`, `GPA`, and `highSchool`. Add some reasonable values to the object. Write an expression that combines retrieving values from your object (e.g. student["id"]) with string concatenation to output a string
-that looks like the following: `"The student Homer Simpson (ID: 1) is 15 years old. He has a GPA of 1.4 and is from Springfield High"`.
+Create an object called "student" which has the properties: `id`, `name`, `age`, `GPA`, and `highSchool`. Add some values to the object. Write an expression that retrievesays the following: `"The student Homer Simpson (ID: 1) is 15 years old. He has a GPA of 1.4 and is from Springfield High"`.
 
 Solution: <span class="solution">`"The student " + student["name"] + " " + "(ID: " + student["id"] + ") is " + student["age"] + " years old. He has a GPA of " + student["GPA"] + " and is from " + student["highSchool"] + "."`</span>
 
-## Enumeration 
+## Enumeration
 The **for-in loop** can be used to iterate over the properties of an object and execute a block of statements.
 
 The syntax looks like this:
@@ -215,7 +220,8 @@ Solution:
 <div class="solution">
 <pre>
 for (item in inventory) {
-  console.log(item);
+  var listItem = "There are" + inventory[item] + item;
+  console.log(listItem);
 }
 </pre>
 </div>

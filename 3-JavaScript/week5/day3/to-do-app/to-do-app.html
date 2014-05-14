@@ -27,32 +27,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script>
-$(document).ready(function(){
-  //regular event listner
-  $('form').on('submit', function(event){
-    event.preventDefault();
 
-    var toDoItem = "<li><span class='completion glyphicon glyphicon-unchecked'></span>" + $('input').val() + "<span class='glyphicon glyphicon-trash'></span></li>";
-
-    $('ul').append(toDoItem);
-
-    $('input').val('');
-  });
-
-  // delegated event listner
-  $('ul').on('click', 'li', function(){
-    $(this).find('.completion').toggleClass('glyphicon-unchecked glyphicon-check');
-    $(this).toggleClass('text-muted');
-  });
-
-  //sort list
-  $('ul').sortable();
-
-  //delete list items
-  $('ul').on('click', '.glyphicon-trash', function(){
-    $(this).parent().remove();
-  });
-});
 </script>
 </body>
 </html>

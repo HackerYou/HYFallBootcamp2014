@@ -101,11 +101,11 @@ JavaScript can find and modify any DOM node. Some things you might change with J
 
 We can access the DOM in JavScript with the word `document`.
 
-Try typing `document` into the developer tools console.  You get the whole HTML for the page back!  
+Try typing `document` into the developer tools console.  You get the whole HTML for the page back!
 
 We can access specific parts of the DOM with some built in JavaScript methods.
 
-`document.getElementByID('#myID')` finds an element with and ID of 'myID'
+`document.getElementByID('myID')` finds an element with and ID of 'myID'
 
 `document.getElementsByTagName('p')` finds and paragraphs
 

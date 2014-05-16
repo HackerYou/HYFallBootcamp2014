@@ -1,70 +1,72 @@
----
-layout: notes
-topic: js
-title: Movie API Exercise
----
+<!-- OMIT: old version -->
 
 # API Exercise
 
 ## Start with some structure
 
-Let's build an app that retrieves the top rated movies from the movie database and displays them on an HTML page. Open up `app.js` in Sublime Text and `movieapp.html` in Chrome.
+Let's build an app that retrieves 10 art pieces with monkeys from the museum collection. Open up `app.js` in Sublime Text and `index.html` in Chrome.
 
 The first step is to create an object for our app:
 
 ```
-var movieApp = {};
+var artApp = {};
 ```
 
-We can initialize the app and get things started inside of a document-ready.
+Next, add an empty init method that eventually hold our code to get the app started.
+
+````
+artApp.init = function(){
+  //code to kick off app goes here
+};
+````
+
+We initialize the app inside a document ready by calling the init function.
 
 ```
-$(document).ready(function(){
-  movieApp.init();
+$(function(){
+  artApp.init();
 });
 ```
 
 ## Test the requests
 
-At first we just want to make the API requests and print out the JSON data. We need to be sure that the requests are being made correctly.
+The first thing we'll want to get working is making the API request and ensuring we're getting the expected data back.
 
-* Using jQuery make a request to get the top rated movies.
-* Using jQuery make a request to get the configuration object
-* Print the two response data objects to the console.
+1. Make a jQuery ajax request to get 10 top pieces
+2. Print response data objects to the console.
 
-The API calls will require an API key, instead of repeating this every request we'll create a property to hold the key. We'll also need a method called `init` that starts/initializes our app.
+The API calls will require an API key, instead of repeating this every request let's create a property to hold the key. 
 
-```
-var movieApp = {
-	api_key: '###',
-	init: function(){
-		// start here
-	}
+````
+artApp.key = "#####";
+````
+
+Create a new app method to do the single task of making the AJAX request for the top pieces.
+
+artApp.getPieces = function(){
+  
 };
+
+Inside of the `getPieces` function we'll make our AJAX request:
+
+```
+artApp.getPieces = function(){
+  $.ajax({
+    url: 'https://www.rijksmuseum.nl/api/en/collection',
+    type: 'GET',
+    data: {
+      key: artApp.apikey,
+      format: 'jsonp'
+    },
+    dataType: 'jsonp',
+    success: function(result){
+      console.log(result);
+    }
+  });
+}
 ```
 
-Inside of the init function we'll make two ajax requests like so:
-
-```
-$.ajax({
-  url: 'http://api.themoviedb.org/3/movie/top_rated',
-  type: 'GET',
-  data: {api_key: movieApp.api_key},
-  dataType: 'jsonp',
-  success: function(response) {
-    console.log(response);
-  }
-});
-$.ajax({
-  url: 'http://api.themoviedb.org/3/configuration',
-  type: 'GET',
-  data: {api_key: movieApp.api_key},
-  dataType: 'jsonp',
-  success: function(response) {
-    console.log(response);
-  }
-});
-```
+Note that we've added a new parameter, `q: monkey`, to make sure we get only artwork with monkeys.
 
 Open up the response objects in the JavaScript console and have a look at the structure of the data. The response object has a lot of data, we just need one property and that is the "results" array. The results array contains 20 objects, one for each movie:
 
@@ -136,6 +138,10 @@ $('#movie_list').append(movieDiv);
 ```
 
 ### Images
+
+* undocumented part of API to get a smaller image size, take a look at demos, 
+* we can do a str-replace on s=0 http://rijksmuseum.github.io/demos/
+
 The images will not appear because the poster_path is just the name of the image and not the full path to where it is hosted.
 
 The configuration object will provide us with the required information. If we save the configuration object in a property  called `configuration` then we can construct the poster image path like so:

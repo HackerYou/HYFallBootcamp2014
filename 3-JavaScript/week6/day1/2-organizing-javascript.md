@@ -134,7 +134,7 @@ Most apps will have a special function called `init` that kicks things off. Anyt
 ```
 var widgetApp = {};
 
-widgetApp.init(){
+widgetApp.init = function(){
   myApp.widgetContainer = $('#widget');
   myApp.widgetContainer.addClass('active');
   

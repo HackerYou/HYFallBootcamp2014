@@ -195,6 +195,9 @@
   - title: Weather App Code Along
     path: week6/day2/weather-app.zip
     answerPath: week6/day2/weather-app-answer.zip
+  - title: Art App Code Along
+    path: week6/art-app-start.zip
+    answerPath: week6/art-app-answer.zip
 - name: WordPress
   slug: wp
   directory: 4-Wordpress

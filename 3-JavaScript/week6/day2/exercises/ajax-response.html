@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Logging an AJAX Response</title>
 </head>
-<body>	
+<body>
 	<p>Open up your console to the response object.</p>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
@@ -13,8 +13,8 @@
 			url: 'http://api.wunderground.com/api/61f0a55cb00602dc/conditions/q/Ontario/Toronto.json',
 			type: 'GET',
 			dataType: 'jsonp',
-			success: function(){
-				console.log("It worked!");
+			success: function(response){
+				console.log(response)
 			}
 		});
 	});

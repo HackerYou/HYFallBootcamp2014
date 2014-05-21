@@ -32,7 +32,7 @@ artApp.getPieces = function(query){
 
 artApp.displayPieces = function(data){
   $.each(data, function(i, piece){
-    var image = $('<img>').attr('src', piece.webImage.url.replace('s0', 's' + artApp.thumbSize));
+    var image = $('<img>').attr('src', piece.webImage.url);
     var title = $('<h2>').text(piece.title);
     var artist = $('<p>').addClass('artist').text(piece.principalOrFirstMaker);
     var artPiece = $('<div>').addClass('piece').append(image, title, artist);

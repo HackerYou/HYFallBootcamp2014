@@ -6,7 +6,7 @@ title: Museum API Exercise
 
 #API Exercise
 
-Today we're going to build a small JavaScript app that uses the Rijksmuseum API to search for artwork. Open up `app.js` in Sublime Text and `index.html` in Chrome.
+Today we're going to build a small JavaScript app that uses the Rijksmuseum API to search for artwork. Download the starter files in [art-app-start.zip](art-app-start.zip) and open up `app.js` in Sublime Text and `index.html` in Chrome.
 
 #Phase 1: Art with Monkeys
 
@@ -20,7 +20,7 @@ The first step is to create an object for our app:
 var artApp = {};
 ```
 
-Next, add an empty init method that eventually hold our code to get the app started.
+Every app needs an `init` function that will get things started, so let's create one. We'll fill in the code to run on init later.
 
 ````
 artApp.init = function(){
@@ -28,7 +28,7 @@ artApp.init = function(){
 };
 ````
 
-We initialize the app inside a document ready by calling the init function.
+Since the `init` function is everything that needs to run on page load, let's call it inside a jQuery doc ready.
 
 ```
 $(function(){
@@ -36,24 +36,34 @@ $(function(){
 });
 ```
 
+Test that you have no syntax errors in your code.
+
 ## Test the requests
 
 The first thing we'll want to get working is making the API request and ensuring we're getting the expected data back.
 
-1. Make a jQuery ajax request to get 10 top pieces
-2. Print response data objects to the console.
+1. Make a jQuery ajax request to get museum pieces
+2. Print the response data to the console
 
-The API calls will require an API key, instead of repeating this every request let's create a property to hold the key. 
+The API calls will require an API key. Instead of repeating this every request, let's create a property to hold the key. 
 
 ````
 artApp.key = "#####";
 ````
 
-Create a new app method to do the single task of making the AJAX request for the top pieces.
+Let's also create a new app method that will make the AJAX request to get art pieces. It'll be called inside our `init` function.
 
-artApp.getPieces = function(){
-  
+```
+artApp.init = function(){
+  artApp.getPieces();
 };
+```
+
+```
+artApp.getPieces = function(){
+  //AJAX request for art pieces goes here
+};
+```
 
 Inside of the `getPieces` function we'll make our AJAX request and log the results.
 
@@ -74,9 +84,21 @@ artApp.getPieces = function(){
 }
 ```
 
+Note that we're using `artApp.apikey` for the `key` parameter, and `jsonp` for both `format` and `dataType`.  We then log the result to see what the data looks like.
+
+Check to see you get back a result object in the console. Note that the actual art data is contained inside the `artObjects` property.
+
+Refine your log message to only show the `artObjects` data and verify the output.
+
+```
+console.log(result.artObjects);
+```
+
 ##Make our request find only images with monkeys
 
-The Rijksmusuem API allows us to submit a search query along with our request. Let's go ahead and add the `q` parameter with a value of `monkey` to the data object in the request.
+Now that we've got the basic API call working, let's refine our request a bit.
+
+The Rijksmusuem API allows us to submit a search query along with our request. To search for art pieces with monkeys, add the `q` parameter with a value of `monkey` to the data object in the request.
 
 ```
 data: {
@@ -86,26 +108,101 @@ data: {
 },
 ```
 
-<!-- fill in details here -->
+Check your console to verify that you're getting a different set of results.
 
 ##Output the results on the page
 
 We're getting data, great! Now let's try and get it to show up on the page.
 
-Create a new `displayPieces` method:
+Create a new `displayPieces` method that will handle parsing the result object and displaying it on the page. It takes a single parameter, a data object.
 
 ```
-artApp.displayPieces = function(results){
+artApp.displayPieces = function(data){
     //put art stuff on the page
 };
 ```
 
-<!-- fill in details here -->
+We'll want the `displayPieces` method to run *after* the API call has succeeded. Update the success callback in `getPieces` to call `displayPieces`, instead of logging the results. Make sure you pass the results data as an argument.
 
+```
+success: function(result){
+    //console.log(result.artObjects);
+    artApp.displayPieces(result.artObjects);
+}
+```
+
+Let's now fill in the details of `displayPieces`. We want to work through all the results data, one piece at a time.  We can do that with jQuery's `$.each()` method. It's like a for loop but specially meant for looping over a collection of things - in our case, the art data.  
+
+```
+artApp.displayPieces = function(data){
+  $.each(data, function(i, piece){
+    console.log(piece);
+  });
+};
+```
+
+Check to see that your `$.each()` method is working correctly by logging out a single art piece's data.
+
+###Building the HTML
+
+We want our HTML output to look like this:
+
+```
+<div class="piece">
+  <h2>Title of Art Piece</h2>
+  <p class="artist">Artist Name</p>
+  <img src="url-to-image" alt="">
+</div>
+```
+
+Let's take a look at a single piece's data in the console to see how we can get the info we need: 
+
+![](https://i.cloudup.com/92tuZgBhos.png)
+
+* title can be found in `piece.title`
+* artist name is found in `piece.principaolOrFirstMaker`
+* img url is found in `piece.webImage.url`
+
+
+Inside the `$.each`, function we'll generate that HTML with the following code.
+
+```
+var title = $('<h2>').text(piece.title);
+var artist = $('<p>').addClass('artist').text(piece.principalOrFirstMaker);
+var image = $('<img>').attr('src', piece.webImage.url;
+var artPiece = $('<div>').addClass('piece').append(image, title, artist);
+```
+
+Note that by passing an element tag like `<h2>` into `$()`, we can create a new DOM node. We do that for the heading, paragraph, image and container div, then use `append` to insert the heading, paragraph and image into the container.  We can also use the usual jQuery methods like `addClass` and `text` to customize the nodes.
+
+Finally, we append the completed `artPiece` divs into the DOM.
+
+```
+$('#artwork').append(artPiece);
+```
+
+Your completed `displayPieces` function should look like this:
+
+```
+artApp.displayPieces = function(data){
+  $.each(data, function(i, piece){
+    console.log(piece);
+    var title = $('<h2>').text(piece.title);
+    var artist = $('<p>').addClass('artist').text(piece.principalOrFirstMaker);
+    var image = $('<img>').attr('src', piece.webImage.url);
+    var artPiece = $('<div>').addClass('piece').append(image, title, artist);
+    $('#artwork').append(artPiece);
+  });
+};
+```
+
+Test your code to see if your artwork shows up on the page! 
+
+The completed phase 1 code is [here](art-app-phase1-answer.zip) if you need a clean slate before moving on to phase 2.
 
 #Phase 2: Art with [choose your animal!]
 
-Let's make this app more useful and allow user input to change the API results!
+Let's make this app more useful and allow user input to change the API results! It will look like (this)[art-app-answer/index.html] when we're done.
 
 ##Add a UI control for the user
 To get started, let's give the user a way to pick an animal. Add this select element markup to your HTML file on line 12:
@@ -123,7 +220,7 @@ To get started, let's give the user a way to pick an animal. Add this select ele
 
 ##Make our request more versatile
 
-We also need a way to change the search query in our request. Let's update our `getPieces` method to accept a single parameter, a search query. Add the parameter `query` to the function definition, and change the hard-coded `'monkey'` to use the new `query` argument.
+We also need a way to change the search query in our request. Let's update our `getPieces` method to accept a single parameter, a search query. Add the parameter `query` to the function definition, and change the request to use `query` instead of `monkey`.
 
 ```
 artApp.getPieces = function(query){
@@ -159,18 +256,18 @@ $("#animal-select").on("change", function(){
 });
 ```
 
-Test that your change handler is working.
+Test that your change handler is working. If it is, remove or comment out that log message.
 
-Next, let's get the selected animal with jQuery's `.val()` method. Replace your log message with this:
+Next, let's find which animal the user selected with jQuery's `.val()` method.
 
 ```
 var animal = $(this).val();
 console.log(animal);
 ```
 
-Test that your code logs the selected animal.
+Test that your code logs the selected animal. If it does, remove or comment out that log message.
 
-Finally, let's make a new request to the API based on the new animal choice.
+Finally, let's make a new request to the API based on the new animal choice. Remember, our `getPieces` method is what makes the request, so we need to call that with the new animal choice as an argument.
 
 ```
 var animal = $(this).val();
@@ -184,7 +281,7 @@ We expect our app to:
 
 Let's see if that worked.
 
-**Where are my new animals??**
+###Where are my new animals??
 
 It looks like our code isn't doing what we expected but there are no errors.  Let's check the network tab to see if our new request is being made.
 
@@ -225,13 +322,34 @@ artApp.updateTitle = function(subject){
 };
 ```
 
+Finally, let's call `updateTitle` after the new animal has been selected, passing it the selected animal.
 
+```
+$('#animal-select').on("change", function(){
+  var animal = $(this).val();
+  artApp.updateTitle(animal);
+  artApp.getPieces(animal);
+});
+```
 
+Check to see that your title has changed. It has! But there's a little problem. We're getting the uncapitalized input value `eagle`, not the friendly label, `Eagles`.
 
+We can get the friendly label by using the `:selected` pseudo selector to search for the selected option in the drop-down.
 
+```
+var animalName = $(this).find(':selected').text();
+artApp.updateTitle(animalName);
+```
 
+Test your code one last time to make sure the title gets updated properly.
 
+And that's it! We made an app that searches for artwork with animals in it! The completed code for the app is [here](art-app-answer.zip).
 
+##More possibilities
 
+Some other ideas to think about to enhance our app:
 
-
+* modify the img url to generate thumbnail sized images (see <http://rijksmuseum.github.io/demos/>)
+* use the pagination parameters and a 'Load More' button to allow the user to display additional results
+* make another request to the Collection Details endpoint to display more information like colour palattes
+* use the Tiles endpoint to create a [sliding puzzle game](http://upload.wikimedia.org/wikipedia/commons/a/a5/Batgirl.gif)

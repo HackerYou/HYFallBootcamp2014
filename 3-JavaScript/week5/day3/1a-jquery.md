@@ -4,147 +4,157 @@ topic: js
 title: Intro to jQuery
 ---
 
-# Intro to jQuery
+#Intro to jQuery
 
-We have covered most of what you need to know of the JavaScript language. We will now see that variables, values, expressions, statements, objects and functions can be combined to do some amazing things on the web.
 
-## Quick Review:
+## What is jQuery
 
-**String**
-	
-	var myString = "Hello There";
+jQuery calls itself the "The write less, do more, Javascript library."  What does that mean?  
 
-**Number**
+Think of jQuery as a collection of helpful pre-written JavaScript code that you can use to quickly solve some common front-end problems.  While you'll probably use jQuery on most of your projects, remember that it's all JavaScript behind the scenes. 
 
-	var myNumber = 10;
+## Why Use jQuery?
 
-**Array**
-	
-	var myArray = ["Wes","Brenna",54];
+There are two main reasons you might want to use jQuery
+
+###1. jQuery shortcuts a lot of common front-end tasks 
+
+There are some things you want to do all the time in your front-end JavaScript code, like animating an element open and closed.  jQuery has it's own built in functions like `.show()`, `.hide()`, `.slideUp()`, `.fadeOut()` etc. that can do the heavy lifting for you.
+
+###2. jQuery irons out a lot of cross browser inconsistencies. 
+
+As you've seen with HTML & CSS, each browser interprets your code a little differently.  This is also a problem with JavaScript, so jQuery does a lot of work behind the scenes to make sure the code you write is cross-browser compliant.
+
+
+##Terminology Review
+
+jQuery is really one big object with a lot of helpful methods that you get to use. Let's review what those terms mean before we dive in.
 
 **Object**
-	
-	var myObject = {
-		name : "Wes",
-		age : 47 // jokes
+In JavaScript, an object is a collection of various properties - each property defined by a key value pair. 
+
+````
+var pet = {
+	species: "cat",
+	color: "black",
+	name: "Mittens"
+}
+````
+
+We can recall a property's value with dot notation and the key:
+
+````
+console.log(pet.name); //logs "Mittens"
+````
+
+We can also change a property's value with dot notation and assigning a new value.
+
+````
+pet.name = "Spot";
+console.log(pet.name); //logs "Spot";
+````
+
+**Method**
+Functions in JavaScript are cray and can be stored inside properties! When a function lives in side an object, we call it a method.
+
+````
+var pet = {
+	species: "cat",
+	color: "black",
+	name: "Mittens",
+	sayHi : function(){
+		alert("meow!");
 	}
+}
+````
 
-**Function**
-	
-	var findSquareRoot = function(width,height) {
-		return width * height;
-	}
+We call methods with dot notation too. Just make sure to include parentheses.
 
-**Boolean**
-	
-	var myBoolean = true; // true
-	var myBoolean = 1; // true
-	var myBoolean = false; // false
-	var myBoolean = 0; // false
+````
+pet.sayHi(); //alerts "meow!" 
+````
 
+Sometimes a method will return a value:
 
-**Operators**
+```
+var rando = Math.rand(); // rando = 0.8 or another random number 
+```
 
-`>` - Greater than
-`<` - Less than
-`>=` Greater or equal
-`<=` Less or equal
+Sometimes a method takes arguments when called.
 
-`!` - Opposite
-
-`!true` // false
-
+```
+var result = Math.sqrt(16); //result = 4
+var result = Math.sqrt(15); //result = 3.8729
+```
 
 ## The DOM
-We need a way to programatically work with HTML and the browser allows us to do this through the **DOM**. 
 
-DOM stands for **document object model**. The HTML document is represented as a tree with each element being a node on the tree. 
+DOM stands for **document object model**, and it represents all the HTML elements on your page. It's represented with a tree structure, where each element is a **node**. You've already seen the DOM when you look at the elements panel in dev tools! 
 
-With JavaScript we can access any element/node and modify it however we want. With JavaScript, we can:
+JavaScript can find and modify any DOM node. Some things you might change with JavaScript:
 
-- Add or remove a class which can trigger CSS3 transitions
-- Update the text in any element
+- Update the text inside an element
+- Add or remove a class to trigger CSS3 transitions
 - hide / show elements
-
-Have a look at the following HTML document:
-
-```
-<!DOCTYPE html>
-<html>
-<head>
-  <title>I'm a page!</title>
-</head>
-<body>
-  <h1>A header with valuable information</h1>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit….</p>
-
-  <p>Suscipit, maiores, commodi, sunt et laborum reiciendis est aliquam ….</p>
-</body>
-</html>
-```
-
-The DOM for the HTML document above can be visualized like this:
-
-![image](dom.png)
-
-Each node can be accessed with JavaScript and converted into a JavaScript `Object`. In the chrome JavaScript console type `document` to get access to an `object` that represents the current HTML document. This object has many properties and many methods that the browser defines.
 
 ### Exploring the DOM
 
-The Mozilla developer network has [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document) with information about all of the properties and methods of the `document` object. The methods of importance for now are `getElementById()`, `getElementsByTagName()` and `getElementsByClassName()`.
+We can access the DOM in JavScript with the word `document`.
+
+Try typing `document` into the developer tools console.  You get the whole HTML for the page back!
+
+We can access specific parts of the DOM with some built in JavaScript methods.
+
+`document.getElementByID('myID')` finds an element with and ID of 'myID'
+
+`document.getElementsByTagName('p')` finds and paragraphs
+
+`document.getElementByClassName('hey')` finds all elements with a class of 'hey'
+
+The Mozilla developer network has [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document) with information about all of the properties and methods of the `document` object.
+
 
 **Exercises**:
 
-Open up hackeryou.com and use the console to programatically explore the page.
+Open up <http://hackeryou.com> and use the console to find elements on the page.
 
-* get the element with id of "mainHead"
-* get the elements with the class of "sidebar".
-* get all anchor elements on the page.
+1. get the element with id of "mainHead"
+2. get the elements with the class of "sidebar".
+3. get all anchor elements on the page.
+
+**Solutions**
+
+1. <span class="white"> `document.getElementByID("mainHead");` </span>
+2. <span class="white"> `document.getElementByClassName('sidebar');` </span>
+3. <span class="white"> `document.getElementsByTagName('a');` </span>
 
 **Hint**: Don't forget to call your objects on the document object.
-
-
-**Solutions**:
-
-* `document.getElementById("mainHead");`
-* `document.getElementsByClassName("sidebar");`
-* `document.getElementsByTagName("a");`
 
 The methods above return a DOM object representing the element. If more than one element is found (in the case of class name or tag name for example) then an array of objects is returned.
 
 ### Manipulating the DOM
 
-The Mozilla developer network has [documentation](https://developer.mozilla.org/en-US/docs/Web/API/element) with information about all of the properties and methods of the element objects. We can for example get/set the `id` and `class` attributes of an element. We can get/set the HTML that makes up the element with `element.outerHTML`. Note that outerHTML is a property. 
+The Mozilla developer network has [great documentation](https://developer.mozilla.org/en-US/docs/Web/API/element) with information about all of the properties and methods of the element objects. We can take our DOM examples from the last exercise further and start changing things. 
 
 **Exercises**:
 
-* get the element with id of "mainHead" and change the HTML to a simple paragraph containing the text 'Hello World!'. 
-* get the elements with the class "overlay" and add a class of "box" 
+1. Try setting the `outerHTML` property of `#mainHead` to a paragraph with the text "Hello World!"
+2. Get all `h3`s and add a class of `smallcaps` to the first one
 
 **Solutions**:
 
-* `document.getElementById("mainHead").outerHTML = "<p> 'Hello World!' </p>";`
-* `document.getElementsByClassName("overlay")[0].className = "overlay box";`
+1. <span class="white"> `document.getElementById("mainHead").outerHTML = "<p>Hello World!</p>";`</span>
+2. <span class="white">`document.getElementsByTagName("h3")[0].className = "smallcaps";`</span>
 
 
-## jQuery
+## jQuery and the DOM
 
-Working with the DOM can be tedious because:
-
-* the API (methods & properties) for manipulating the DOM can be limiting
-* the API requires quite a bit of coding
-* different browsers implement the API differently.
-
-
-jQuery is the solution to poor cross-browser APIs. jQuery is a JavaScript Library that makes doing things with the DOM much, much easier. Without it, your JavaScript would be much harder to write and your code would be much longer. 
-
-**jQuery is JavaScript**. When you write jQuery, you are writing javascript, you can and will still use all the existing things you learned about numbers/strings/arrays/objects and if statements.
+Pretty cool, right? But we can do event better with jQuery. The syntax is cleaner and we don't have to worry about cross-browser bugs. Let's give it a try.
 
 ## Tutorial: manipulating the DOM with jQuery
 
 ### Load jQuery
-- Open `try-jquery.html` in sublime text.
+- Open <a href="exercises/try-jquery.html" class="exercise">**try-jquery.html**</a>
 - We need to load the jQuery library before we can work with it. A simple way to do this is to use a remote copy via a CDN. Scroll to the bottom of the main page of jquery.com to find the "Quick Access" URL to jQuery which is served by google. Include this URL in script tags in your HTML file. 
 
 - Aside: CDN stands for "content delivery network". A CDN is a network of computers which provides static resources (images, javascript, css, etc.) to users based on proximity. The resources are hosted in multiple locations and the closest computer to the user will serve the resource. CDNs are fast.
@@ -152,7 +162,7 @@ jQuery is the solution to poor cross-browser APIs. jQuery is a JavaScript Librar
 Solution: `<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>`.
 
 ### Test that jQuery is loaded
-- Open `try-jquery.html` in Chrome. We can test that jQuery has been successfully loaded by going to the JavaScript console. The console should show no errors. Type `jQuery` into the console and press enter. The return value should be `function (e,t){return new x.fn.init(e,t,r)}`. This is telling you that **jQuery is a function**. Type `$` and press enter, you should get the same return value. `$` **is an alias for jQuery**, meaning both will do the same thing, $ is just easier. 
+- Open <a href="exercises/try-jquery.html" class="exercise">**try-jquery.html**</a> in Chrome. We can test that jQuery has been successfully loaded by going to the JavaScript console. The console should show no errors. Type `jQuery` into the console and press enter. The return value should be `function (e,t){return new x.fn.init(e,t,r)}`. This is telling you that **jQuery is a function**. Type `$` and press enter, you should get the same return value. `$` **is an alias for jQuery**, meaning both will do the same thing, $ is just easier. 
 
 ### Selecting elements
 jQuery is a function that is defined with multiple parameters, but they are optional. The `selector` parameter is all we need for the time being. To find an element on the page we call the jQuery function and pass it a selector that corresponds to the element.
@@ -214,7 +224,7 @@ $(selector).on(event, function(){
 });
 ```
 
-Open `jQuery-events.html` in sublime text. jQuery has already been loaded for you. We will be writing JavaScript inside of this HTML file so we will run into an issue that we didn't see when working in the console. While in the console all of the code that we wrote was executed after the page was fully loaded. The JavaScript that we will be writing will be loading within the HTML document so there is a chance that it will execute before the page is fully loaded.
+Open <a href="exercises/jquery-events.html" class="exercise">**jquery-events.html**</a> in sublime text. jQuery has already been loaded for you. We will be writing JavaScript inside of this HTML file so we will run into an issue that we didn't see when working in the console. While in the console all of the code that we wrote was executed after the page was fully loaded. The JavaScript that we will be writing will be loading within the HTML document so there is a chance that it will execute before the page is fully loaded.
 
 If we try to find an element using jQuery before it's loaded, we will get an error. To prevent this from happening we use a jQuery method that will let us know when the document is ready to be manipulated.
 

@@ -8,9 +8,9 @@ title: Objects
 
 # Week 5, Day 2 Objects
 
-The **primitive types** of JavaScript values are numbers, strings, booleans (true and false), null (haven't discussed this yet), and undefined. All other values are something called **objects**.
+The **primitive types** of JavaScript values are *numbers*, *strings*, *boolean values* (true and false), *null* (haven't discussed this yet), and *undefined*. All other values are something called **objects**.
 
-We can think of objects as containers. Inside the container are **properties** (pairs of names and values).
+We can think of objects as containers. Inside the container are **properties** , which are referred to as key-value pairs. Each property contains a *name* and *value* which can be referenced directly.
 
 ![image](objects.png)
 
@@ -21,9 +21,9 @@ The syntax for creating an object looks like this:
 
 ```
 var myObject = {
-	propertyOne: value,
-	propertyTwo: value,
-	propertyThree: value
+	propertyOneName: propertyOneValue,
+	propertyTwoName: propertyOneValue,
+	propertyThreeName: propertyOneValue
 }
 ```
 
@@ -36,10 +36,10 @@ You may remember a similar layout from your sublime text settings:
 **Note**:
 
 * property names are always strings but the quotes are optional if the strings are valid variable names
-* the value of an object property can be any of the primitive types or an object (creating a tree structure)
+* the value of an object property can be any of the primitive types (number, string, boolean, null and undefined) or another object (creating a nested tree structure)
 * the last property is not followed by a comma.
 
-Here is an example object. Note how objects can be nested inside eachother. 
+Here is an example object. Note how objects can be nested inside each other. 
 
 ```
 var clothing = {
@@ -47,6 +47,7 @@ var clothing = {
 	socks: 34,
 	shoes: 2,
 	pants: 3,
+	hat: true,
 	tShirts: {
 		smallSize: 3,
 		mediumSize: 4,
@@ -118,6 +119,12 @@ The same example using bracket-notation looks like this:
 4
 ```
 
+To add a new property to an existing object, simply use those one of the above notations to define a new property and value. This will update your object with the new property and value.
+
+```
+> clothing.scarves = 5;
+```
+
 **Exercise 1**:
 
 Create an object called "HackerYou" which contains information about the number of courses offered, age of the school, name of instructor, etc. (any information you want to store really…). 
@@ -130,19 +137,18 @@ var hackerYou = {
 	schoolName: "HackerYou",
 	numberOfCourses: 4,
 	age: 1,
-	nameOfInstructor: "Wes Bos"
+	nameOfInstructor: "Brenna O'Brien"
 }
 </pre>
 </div>
 
 **Exercise 2**:
 
-Create an object called "student" which has the properties: `id`, `name`, `age`, `GPA`, and `highSchool`. Add some reasonable values to the object. Write an expression that combines retrieving values from your object (e.g. student["id"]) with string concatenation to output a string
-that looks like the following: `"The student Homer Simpson (ID: 1) is 15 years old. He has a GPA of 1.4 and is from Springfield High"`.
+Create an object called "student" which has the properties: `id`, `name`, `age`, `GPA`, and `highSchool`. Add some values to the object. Write an expression that retrievesays the following: `"The student Homer Simpson (ID: 1) is 15 years old. He has a GPA of 1.4 and is from Springfield High"`.
 
 Solution: <span class="solution">`"The student " + student["name"] + " " + "(ID: " + student["id"] + ") is " + student["age"] + " years old. He has a GPA of " + student["GPA"] + " and is from " + student["highSchool"] + "."`</span>
 
-## Enumeration 
+## Enumeration
 The **for-in loop** can be used to iterate over the properties of an object and execute a block of statements.
 
 The syntax looks like this:
@@ -214,7 +220,8 @@ Solution:
 <div class="solution">
 <pre>
 for (item in inventory) {
-  console.log(item);
+  var listItem = "There are" + inventory[item] + item;
+  console.log(listItem);
 }
 </pre>
 </div>

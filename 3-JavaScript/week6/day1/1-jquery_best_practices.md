@@ -40,7 +40,7 @@ var favouriteColour = "salmon";
 
 ##IDs are faster to find than classes (yes, you get to use IDs now)
 
-Remember IDs, which we told you to never use for CSS? They're actually really helpful for JavaScript and jQuery.  Since IDs are unique, jQuery will stop looking as soon as it finds a single match! This is much faster than a class or element selector, which keeps looking through the whole document to find all possible matches. 
+Remember IDs, which we told you to never use for CSS? They're actually really helpful for JavaScript and jQuery.  Since IDs are unique, jQuery will stop looking as soon as it finds a single match! This is much faster than a class or element selector, which keeps looking through the whole document to find all possible matches.
 
 ```
 $('.widget'); //slow

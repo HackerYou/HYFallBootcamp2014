@@ -42,8 +42,8 @@ Check inequality with `>=` `<=` `>` `<` (greater than and less than)
 **Exercises**: In the console, write two expressions that return the boolean value `false` and two that return `true`.
 
 Solution:
-<div class="solution">
 
+<div class="solution">
 <pre>
 > 55 >= 65;
 false
@@ -54,7 +54,6 @@ true
 > 2 > 1.5;
 true
 </pre>
-
 </div>
 
 ### Combining boolean expressions
@@ -122,33 +121,35 @@ if ( time === 'morning') {
 
 1. Consider the code below; what is printed to the console?
 
-	```
-	var n = 4;
-	if (n > 10) {
-		console.log("That's a big number");
-	} else {
-		console.log("It's a small number");
-	}
-	```
+```
+var n = 4;
 
-	Solution: <span class="solution">`"It's a small number"` is printed.</span>
+if (n > 10) {
+	console.log("That's a big number");
+} else {
+	console.log("It's a small number");
+}
+```
+
+Solution: <span class="solution">`"It's a small number"` is printed.</span>
 
 2. Create a quizzing program. The program asks a question, the user is prompted to answer, the answer is checked and then a score is printed to the console.
 
 3. Consider the code below; what is printed to the console? What is `else if`?
 
-	```
-	var n = 55;
-	if (n > 100) {
-		console.log("That's a big number");
-	} else if (n > 10 ) {
-		console.log("It's kinda big");
-	} else {
-		console.log("It's a small number");
-	}
-	```
+```
+var n = 55;
 
-	Solution: <span class="solution">`"It's kinda big"` is printed. `else if` is used to add branches to the conditional statement.</span>
+if (n > 100) {
+	console.log("That's a big number");
+} else if (n > 10 ) {
+	console.log("It's kinda big");
+} else {
+	console.log("It's a small number");
+}
+```
+
+Solution: <span class="solution">`"It's kinda big"` is printed. `else if` is used to add branches to the conditional statement.</span>
 
 4. Create a simple "rock-paper-scissors" game. Prompt the user to enter their choice of "rock", "paper" or "scissors" and store this value in a variable. Always compare the user's input with the value "rock" (we'll work on making this more dynamic later). If the user's input is "paper" then print to the console "You Win!". If the input is "rock" then print "Tie" and print "You Lose" if the user's input is "scissors". 
 
@@ -224,6 +225,7 @@ Complete the following exercises in pairs.
 ```
 
 Solution:
+
 <div class="solution">
 <pre>
 for(var i = 10; i > 0; i--){
@@ -250,6 +252,7 @@ for(var i = 10; i > 0; i--){
 Hint: Look up the modulo operator and use an if statement.
 
 Solution:
+
 <div class="solution">
 <pre>
 for(var i = 1; i <= 20; i++){
@@ -284,6 +287,7 @@ FizzBuzz
 Hints: Look up combining boolean expressions with &&. Also look up modulo.
 
 Solution:
+
 <div class="solution">
 <pre>
 for(var i = 1; i < 100; i++){

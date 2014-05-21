@@ -202,7 +202,7 @@ The completed phase 1 code is [here](art-app-phase1-answer.zip) if you need a cl
 
 #Phase 2: Art with [choose your animal!]
 
-Let's make this app more useful and allow user input to change the API results! It will look like (this)[art-app-answer/index.html] when we're done.
+Let's make this app more useful and allow user input to change the API results! It will look like [this](art-app-answer/index.html) when we're done.
 
 ##Add a UI control for the user
 To get started, let's give the user a way to pick an animal. Add this select element markup to your HTML file on line 12:

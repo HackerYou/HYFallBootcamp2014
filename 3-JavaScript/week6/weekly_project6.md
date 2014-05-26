@@ -11,9 +11,14 @@ We've provided a lits of RESTful APIs that can be accessed publicly and have goo
 
 ##API choices
 * TTC data feed <http://myttc.ca/developers>
-* New York Times Best Sellers list <http://developer.nytimes.com/docs/best_sellers_api>
 * The MovieDB movie and TV info <https://www.themoviedb.org/documentation/api>
 * Disccogs.com music info <http://www.discogs.com/developers/>
+* Yummly Recipes <https://developer.yummly.com/>
+* Last.FM Artist and Concert Info <http://www.last.fm/api/>
+* Dribbble <https://dribbble.com/api/>
+* Flickr Photos <https://www.flickr.com/services/api/>
+* Wikipedia <http://www.mediawiki.org/wiki/API:Main_page/>
+* Petfinder <http://www.petfinder.com/developers/api-docs/>
 
 
 ## Minimum Requirements

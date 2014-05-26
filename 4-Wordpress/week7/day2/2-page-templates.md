@@ -16,6 +16,7 @@ Each of these files are responsible for part of all of a layout.
 
 #### 404.php
 Controls and lays out the 404 page
+
 #### archive.php
 Controls and lays out the archive pages. Want to see posts from March 2012? `archive.php` controls this layout.
 
@@ -24,6 +25,7 @@ When a user clicks an attachment (usually an image), this is the page that displ
 
 #### author.php
 When viewing all posts from a certain author. THis is a great space to pull a bio for the currently viewed author. 
+
 #### category.php
 When filtering posts by category, this template lays it out. 
 

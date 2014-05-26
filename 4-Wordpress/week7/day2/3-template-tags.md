@@ -34,7 +34,7 @@ These are some of the most common template tags you'll see, but there are [many 
 
 Let's explore the various author template tags to find out more about how they work: <https://codex.wordpress.org/Template_Tags#Author_tags>.
 
-Notice there are several paris of similar looking tags - like `the_author` and `get_the_author`, `the_author_link`  and `get_the_author_link`.
+Notice there are several pairs of similar looking tags - like `the_author` and `get_the_author`, `the_author_link`  and `get_the_author_link`.
 
 Exploring the documentation for [`the_author`](https://codex.wordpress.org/Function_Reference/the_author) and [`get_the_author`](https://codex.wordpress.org/Function_Reference/get_the_author),
 we see that `the author` is used to **display** the author of a post, and `get_the_author` is used to **retrieve** the post author.  This is a common naming convention for template tags.
@@ -45,7 +45,7 @@ we see that `the author` is used to **display** the author of a post, and `get_t
 
 `<h1><?php the_title(); ?></h1>`
 
-Typically, when using a `get_the_` template tag, you'll store the return value in a variable so you can manipulate it or pass it into another functoin. Note that in PHP, we declare variables by starting thier names with a `$`.
+Typically, when using a `get_the_` template tag, you'll store the return value in a variable so you can manipulate it or pass it into another function. Note that in PHP, we declare variables by starting their names with a `$`.
 
     $postTitle = get_the_title();
     $postTitle = strtoupper($postTitle); //a PHP function that makes a string all caps

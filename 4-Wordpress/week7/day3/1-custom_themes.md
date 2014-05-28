@@ -14,8 +14,9 @@ When creating Wordpress themes we can build everything ourself or use a starter 
 
 **Starter Themes**:
 
-* http://themble.com/bones/
-* http://underscores.me/
+* [http://themble.com/bones/](http://themble.com/bones/)
+* [http://underscores.me/](http://underscores.me/)
+* [http://html5blank.com/](http://html5blank.com/)
 * Wes Bos starter theme
 
 **Why use starter themes?**
@@ -25,10 +26,8 @@ When creating Wordpress themes we can build everything ourself or use a starter 
 * Good defaults for CSS
 * Files already organized into folders
 * Commented code that we can learn from
-* 1000-hour head start! (idk about this one...)
 
-
-We are going to be building a Wordpress theme by using an existing HTML template called "Zerofour" from HTML5Up. We will do the minimum amount of work that it takes to take a template and convert it into a theme. 
+We are going to be building a Wordpress theme by using an existing HTML template called <a href="custom-zero-theme-start.zip" class="exercises">Zerofour from HTML5Up</a>. We will do the minimum amount of work that it takes to take a template and convert it into a theme. 
 
 ## Build the custom theme
 
@@ -40,9 +39,9 @@ Our goal is to take some components from the template and "Wordpressify" it. The
 
 Make sure that your local Wordpress environment is running.
 
-Start by creating a folder called "custom_theme" in your Wordpress themes directory. Open up this folder in sublime text. At the very minimum the theme requires a style.css and an index.php file. Lets create these and then activate the theme from the Wordpress admin area.
+Start by creating a folder called "custom_theme" in your Wordpress themes directory. Open up this folder in sublime text. At the very minimum the theme requires a **style.css** and an **index.php** file. Let's create these files, then activate the theme from the Wordpress admin area.
 
-When we make changes to the theme you should be able to see the changes after refreshing the page. For now your Wordpress website should be blank since our index.php file is blank.
+When we make changes to the theme you should be able to see the changes after refreshing the page. For now your Wordpress website should be blank since our **index.php** file is blank.
 
 ### Step 2: Make it yours
 
@@ -69,21 +68,23 @@ Copy the contents of style.css from the template and move it to the theme's styl
 
 ### Step 4: Add Markup
 
-Copy the contents of index.html from the template and move it to the theme's index.php file. You should now see the markup visible when you refresh the page.
+Copy the contents of **index.html** from the template and move it to the theme's **index.php** file. You should now see the markup when you refresh the page.
 
 ### Step 5: Fix references
 
-Notice that the stylesheet is not being loaded properly. This is because in reality this file is under `/wp-content/themes/<theme_name>/style.css` but the style sheet references the path `/css/style.css`. To fix this we'll need to reference the stylesheet by using the `get_stylesheet_uri()` method.
+Notice that the stylesheet is not loading properly. This is because the file is under `/wp-content/themes/<theme_name>/style.css` but the style sheet references the path `/css/style.css`. To fix this we'll need to reference the stylesheet by using the Wordpress `get_stylesheet_uri()` method.
 
 Replace `css/style.css` with `<?php echo get_stylesheet_uri(); ?>`.
 
-If you open up the Chrome Console you will see that there are many 404 (Not Found) errors. This is because our theme is missing JavaScript, images and fonts. We'll need to move them there. The stylesheet expects the images to be in a folder called "images" at the same level as the style.css file. So move the images folder from "<template_folder>/css/images" to "<theme_folder>/images". The rest of the images are considered "content" so we won't worry about them for now.
+If you open up the Chrome Console you will see that there are many 404 (Not Found) errors. This is because our theme is missing JavaScript, images and fonts. We'll need to move the files to the appropriate directory. 
 
-We'll do the same thing with the fonts by moving the fonts folder from "<template_folder>/css/font" to "<theme_folder>/font".
+The stylesheet expects the images to be in a folder called **images** at the same level as the **style.css** file. So move the images folder from **<template_folder>/css/images** to **<theme_folder>/images**. The rest of the images are considered "content" so we won't worry about them for now.
+
+We'll do the same thing with the fonts by moving the fonts folder from **<template_folder>/css/font** to **<theme_folder>/font**.
 
 ### Step 6: Enqueue scripts
 
-Our template requires three JavaScript files. The recommended way of linking JavaScript to a WordPress theme is by using the `wp_enqueue_script` function. To add functions to our theme we'll need  to create a functions.php file.
+This template requires three JavaScript files. The recommended way of linking JavaScript to a WordPress theme is by using the `wp_enqueue_script` function ([http://codex.wordpress.org/Function_Reference/wp_enqueue_script](http://codex.wordpress.org/Function_Reference/wp_enqueue_script)). To add functions to our theme we'll need to create a **functions.php** file.
 
 The scripts need to be loaded in the right order so the following function will do just that.
 
@@ -112,26 +113,26 @@ add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
 ?>
 ```
-
 Wordpress already has jQuery loaded. Next we remove the JavaScript references from our theme's index.php file. Copy the js folder to the theme. The errors will go away but the drop-down menu will not work yet. 
 
 Open up the resources tab in Developer tool and look under the "Frames -> localhost" folder. There you'll see the images, CSS and HTML for the page. You will not see any JavaScript there - so what is the problem? Well our Wordpress theme is not much of a theme, it's mostly HTML. Wordpress needs a few hooks in the theme to be able to dynamically add the JavaScript.
 
 ### Step 7: Header and Footer
 
-Let's take the top part of our website (the header) and put it in header.php and the lower part (i.e. footer) in a file called footer.php. Splitting up our template like this will keep the code organized because we will be adding a bit of PHP to make this a real Wordpress theme.
+Let's take the top part of our website (the header) and put it in **header.php** and the lower part (i.e. footer) in a file called **footer.php**. Splitting up our template like this will keep the code organized because we will be adding a bit of PHP to make this a real Wordpress theme.
 
-Cut from the `<!DOCTYPE HTML>` all the way down to **but not including** `<!-- Main Wrapper -->` and paste it in header.php. Add `<?php get_header(); ?>` at the top of index.php and Wordpress will know what to do! Refresh the page to verify that the website still works.
+Cut from the `<!DOCTYPE HTML>` all the way down to **but not including** `<!-- Main Wrapper -->` and paste it in **header.php**. Add `<?php get_header(); ?>` at the top of index.php and Wordpress will know what to do! Refresh the page to verify that the website still works.
 
 Cut from `<!-- Footer Wrapper -->` all the way to very bottom of the page and paste it in footer.php. Add `<?php get_footer(); ?>` and refresh the website to verify that it still works.
 
 ### Step 8: Header
 
-Let's focus our attention on header.php for the next little while. We want to:
+Let's focus our attention on header.php. We want to:
 
 1. Make titles dynamic: replace `<title>Right Sidebar - ZeroFour by HTML5 UP</title>` with `<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>`.
 2. Add ping back: Add `<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">` just before the `</head>` tag.
-3. Add the Wordpress header hook: Add `<?php wp_head(); ?>`just before the `</head>` tag. Wordpress and plugins will hook into this function to add functionality to your theme.
+3. Add the Wordpress header hook:   
+Add `<?php wp_head(); ?>`just before the `</head>` tag. Many Wordpress plugins use this hook to add elements to <head> such as styles, scripts, and meta tags.
 4. Link logo dynamically to homepage: Replace `<h1><a href="#" id="logo">ZeroFour</a></h1>` with `<h1><a href="<?php echo home_url(); ?>" id="logo"><?php bloginfo('name'); ?></a></h1>`. Now the logo will always link to home.
 
 If you refresh the page and look at the HTML you will see that the header looks a lot different. Wordpress is hooking in and adding a bunch of stuff.
@@ -267,18 +268,18 @@ And we're done!
 
 ## Test the theme
 
-Using test data/content will help us see more components so that we can design them. http://wptest.io/ is a plugin that adds test data so that we can avoid the tedious task of adding dummy content for each theme that we develop.
+Using test data/content will help us see more components so that we can design them. [http://wptest.io/](http://wptest.io/) is a plugin that adds test data so that we can avoid the tedious task of adding dummy content for each theme that we develop.
 
 Use the following plugin for testing your theme against the latest Wordpress standards and practices:
-http://wordpress.org/plugins/theme-check/
+[http://wordpress.org/plugins/theme-check/](http://wordpress.org/plugins/theme-check/)
 
 Resources:
-How To Improve And Refine Your WordPress Theme Development Process => http://wp.smashingmagazine.com/2013/02/21/wp-theme-development-process/
+How To Improve And Refine Your WordPress Theme Development Process => [http://wp.smashingmagazine.com/2013/02/21/wp-theme-development-process/](http://wordpress.org/plugins/theme-check/)
 
-Theme testing process: http://codex.wordpress.org/Theme_Development#Theme_Testing_Process
+Theme testing process: [http://codex.wordpress.org/Theme_Development#Theme_Testing_Process](http://codex.wordpress.org/Theme_Development#Theme_Testing_Process)
 
 ## Debugging & Developer plugin
 
-To fully test the theme it's a good idea to install and activate the "developer" plugin: http://wordpress.org/plugins/developer/. 
+To fully test the theme it's a good idea to install and activate the "developer" plugin: [http://wordpress.org/plugins/developer/](http://wordpress.org/plugins/developer/). 
 
 This plugin will help you see if you have all of the essential developer plugins installed. These plugins allow you to see logs, easily switch users, test widgets, check for deprecation warnings, etc.

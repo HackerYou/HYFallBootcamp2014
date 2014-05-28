@@ -274,7 +274,7 @@ Use the following plugin for testing your theme against the latest Wordpress sta
 [http://wordpress.org/plugins/theme-check/](http://wordpress.org/plugins/theme-check/)
 
 Resources:
-How To Improve And Refine Your WordPress Theme Development Process => [http://wp.smashingmagazine.com/2013/02/21/wp-theme-development-process/](http://wordpress.org/plugins/theme-check/)
+How To Improve And Refine Your WordPress Theme Development Process => [http://wp.smashingmagazine.com/2013/02/21/wp-theme-development-process/](http://wp.smashingmagazine.com/2013/02/21/wp-theme-development-process/)
 
 Theme testing process: [http://codex.wordpress.org/Theme_Development#Theme_Testing_Process](http://codex.wordpress.org/Theme_Development#Theme_Testing_Process)
 

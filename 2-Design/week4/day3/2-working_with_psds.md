@@ -26,8 +26,8 @@ Save for web and choose the appropriate image file type.
 
 **For cutting images:**
 
-* Slice tool: [Photoshop CS6: Slice Tool](http://www.youtube.com/watch?v=zOpkh2om1tI) (Video)
 * Crop tool: [Introducing the New Crop Tool in Photoshop CS6](http://psd.tutsplus.com/tutorials/tools-tips/photoshop-cs6-crop-tool/) (Video)
+* Slice tool: Not used that often anymore but here's a resource anyway! [Photoshop CS6: Slice Tool](http://www.youtube.com/watch?v=zOpkh2om1tI) (Video)
 
 **For measuring:**
 
@@ -36,7 +36,3 @@ Save for web and choose the appropriate image file type.
 
 ###Exercise
 Let's download the <a href="examples/hackeryou.psd" class="exercises">HackerYou PSD</a> and practice using some of these tools.
-
-##Extra resources
-* [How to Make Slicing Suck Less: Tips and Tricks for Slicing a PSD](http://designshack.net/articles/graphics/how-to-make-slicing-suck-less-tips-and-tricks-for-slicing-a-psd/)
-* [Slicing PSDs: Decision Points &amp; Techniques](http://zoerooney.com/blog/tutorials/slicing-psds-decision-points-techniques/)

@@ -17,7 +17,7 @@ Security is a major issue online. You need to build websites for clients that wi
 * turn off editor in appearance menu
 * require SSL for the admin area
 
-There are plugins that can achieve all of the above, checkout [Better WP SEcurity](http://wordpress.org/plugins/better-wp-security/).
+There are plugins that can achieve all of the above, checkout [Better WP Security](http://wordpress.org/plugins/better-wp-security/).
 
 ### HTTPS & SSL
 
@@ -27,19 +27,19 @@ If you have a form or shopping cart that takes sensitive data from your users (l
 
 To get access to HTTPS you need to purchase and SSL certificate and install it on your server. Once you have an SSL certificate, most hosts will help you install it.
 
-To use HTTPS with Wordpress just follow these instructions:
-http://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/
+To use HTTPS with Wordpress you can follow these instructions:
+<http://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/>
 
 
 ### DDOS
 
 Distributed Denial Of Service attacks pretty much amount of million of people visiting your website at the same time. So it crashes your server.
 
-https://www.cloudflare.com/ provides some protection from this.
+<https://www.cloudflare.com/> provides some protection from this.
 
 
 The codex has more:
-http://codex.wordpress.org/Hardening_WordPress#Securing_wp-admin
+<http://codex.wordpress.org/Hardening_WordPress#Securing_wp-admin>
 
 ## SPAM
 
@@ -48,4 +48,4 @@ Most if not all spam is done by bots. So if you don't protect your website you'l
 Akismet is a plugin that will provide some protection against spam.
 
 The codex has more:
-http://codex.wordpress.org/Combating_Comment_Spam
+<http://codex.wordpress.org/Combating_Comment_Spam>

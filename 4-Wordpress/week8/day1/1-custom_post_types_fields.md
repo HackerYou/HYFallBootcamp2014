@@ -101,7 +101,12 @@ This comes with a number of custom fields and is totally free. Later on we will 
 
 For learning purposes, I have a license to share with you. However, on your own projects / clients you must buy your own. Each plugin is $25 and has an unlimited site license.
 
-To install these, move all four plugins form our `assets folder` (found on basecamp last week) into our plugins directory.
+To install these, download and unzip the following files and move them into our plugins directory.
+
+* [acf-flexible-content.zip](../../assets/acf-flexible-content.zip)
+* [acf-gallery.zip](../../assets/acf-gallery.zip)
+* [acf-options-page.zip](../../assets/acf-options-page.zip)
+* [acf-repeater.zip](../../assets/acf-repeater.zip)
 
 ![](http://wes.io/UNOD/content)
 
@@ -140,7 +145,7 @@ To create a field, click the ![](http://wes.io/UMu6/content) + Add Field button.
 
 ![](http://wes.io/UMCP/content)
 
-**Note: There are many different kinds of fields availble here. You should take some time to try each one and see what they produce.**
+**Note: There are many different kinds of fields available here. You should take some time to try each one and see what they produce.**
 
 When finished, click "Close Field" at the bottom and repeat for the client name field and click **publish**.
 
@@ -155,7 +160,7 @@ Now, when you add a portfolio item, you will see your custom fields:
 
 Occasionally you will have a situation where you wish to add between 1 and n items. For our portfolio items, we may 1 image, or we may have 10 images.
 
-How do we properly prepare for any amount of images? We can't assume there will always be 4 and we can't just make 15 fields as a 'just incase' situation.
+How do we properly prepare for any amount of images? We can't assume there will always be 4 and we can't just make 15 fields as a 'just in case' situation.
 
 This is where the repeater field will come in. It allows your users to add as many fields to your post type as you wish.
 
@@ -204,42 +209,48 @@ We want the design of our blog posts to be different from the portfolio items, s
 
 Create a new file and name it `single-portfolio.php`. We can start with some base PHP/HTML:
 
-  <?php get_header(); ?>
-  <div class="section">
-    <div class="innerWrapper">
-      <div class="full">
-        <?php
-         if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+````
+<?php get_header(); ?>
 
-          
-        <?php endwhile; // end of the loop. ?>
+<div class="section">
+  <div class="innerWrapper">
+    <div class="full">
+      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+        
+      <?php endwhile; // end of the loop. ?>
+    </div>
+  </div> <!-- /.innerWrapper -->
+</div> <!-- /.section -->
 
-      </div>
-    </div> <!-- /.innerWrapper -->
-  </div> <!-- /.section -->
-  <?php get_footer(); ?>
+<?php get_footer(); ?>
+````
 
 We already know how to get the default text and body:
 
-  <h2><?php the_title(); ?></h2>
-  <?php the_content(); ?>
-
+```
+<h2><?php the_title(); ?></h2>
+<?php the_content(); ?>
+```
 
 But how do we get the custom fields? For that we use the `the_field()` template tags and pass it the field name. You can see a list of all available ACF template tags at the ACF docs: <http://www.advancedcustomfields.com/resources/#functions>
 
-  <?php the_field('client_name'); ?>
-  <?php the_field('short_desc'); ?>
+```
+<?php the_field('client_name'); ?>
+<?php the_field('short_desc'); ?>
+```
 
 When it comes to styling, that is up to you. You may want to wrap the different tags in their own tags:
 
-  <h2><?php the_title(); ?></h2>
-  <p class="client"><?php the_field('client_name'); ?></p> 
+```
+<h2><?php the_title(); ?></h2>
+<p class="client"><?php the_field('client_name'); ?></p> 
 
-  <div class="shortDesc">
-    <?php the_field('short_desc'); ?>
-  </div>
+<div class="shortDesc">
+  <?php the_field('short_desc'); ?>
+</div>
 
-  <?php the_content(); ?>
+<?php the_content(); ?>
+```
 
 Hot Tip: forget the name of your fields? Grab it from `Field Name` in your custom field group:
 
@@ -257,15 +268,19 @@ Remember that we named our repeater field `images`:
 
 So, we will use the following code to setup our field loop. Note that this isn't the same thing as our WordPress Loop, but just a way to iterate over a repeater field.
 
-  <?php while( has_sub_field('images') ): ?>
-    <!-- Our sub fields go here -->
-  <?php endwhile; ?>
+```
+<?php while( has_sub_field('images') ): ?>
+  <!-- Our sub fields go here -->
+<?php endwhile; ?>
+```
 
 Then, inside this loop, we can use `<?php the_sub_field('caption'); ?>` to grab the caption. I recommend putting it inside a div with a class so we can style it later.
 
-  <div class="image">
-    <p><?php the_sub_field('caption'); ?></p>
-  </div>
+```
+<div class="image">
+  <p><?php the_sub_field('caption'); ?></p>
+</div>
+```
 
 Great, but what about the image? If we use `<?php the_sub_field('image'); ?>` we get this error: 
 
@@ -274,13 +289,17 @@ Great, but what about the image? If we use `<?php the_sub_field('image'); ?>` we
 
 What?! This is because the image doesn't just return a *string* but an *Array* almost exactly the same as objects in JavaScript. So, how do we properly view this array? First, we need to assign it to a variable:
 
-  <?php $image = get_sub_field('image'); ?>
+```
+<?php $image = get_sub_field('image'); ?>
+```
 
 <small>Notice how we use **get**_sub_field() rather than the_sub_field()? This is because we are assigning it to a variable rather than printing/echoing it.</small>
 
 Then we can view the entire variable by using `<pre>` tags and dumping it to the screen:
 
-  <pre><?php print_r($image);?></pre>
+```
+<pre><?php print_r($image);?></pre>
+```
 
 will output all the information in the array:
 
@@ -290,35 +309,41 @@ See the sizes? If you have previously defined a custom size in your `functions.p
 
 How do I access those paths? Just like JavaScript arrays/objects, we can use square brackets:
 
-  <img src="<?php echo $image['sizes']['square'] ?>">
+```
+<img src="<?php echo $image['sizes']['square'] ?>">
+```
 
 <small>Notice how we used echo to print out the variable</small>
 
 All said and done, our repeater should look something like this:
 
-  <div class="images">
-    <?php while( has_sub_field('images') ): ?>
-      <div class="image">
-        <p><?php the_sub_field('caption'); ?></p>
-        <?php $image = get_sub_field('image'); ?>
-        <img src="<?php echo $image['sizes']['square'] ?>">
-      </div>
-    <?php endwhile; ?>
-  </div>
+```
+<div class="images">
+  <?php while( has_sub_field('images') ): ?>
+    <div class="image">
+      <p><?php the_sub_field('caption'); ?></p>
+      <?php $image = get_sub_field('image'); ?>
+      <img src="<?php echo $image['sizes']['square'] ?>">
+    </div>
+  <?php endwhile; ?>
+</div>
+```
 
 If you were using flexslider, your could modify the markup to look something like this:
 
-    <div class="flexslider">
-      <ul class="slides">
-        <?php while( has_sub_field('images') ): ?>
-          <li>
-            <p><?php the_sub_field('caption'); ?></p>
-            <?php $image = get_sub_field('image'); ?>
-            <img src="<?php echo $image['sizes']['square'] ?>">
-          </li>
-        <?php endwhile; ?>
-      </ul>
-    </div>
+```
+<div class="flexslider">
+  <ul class="slides">
+    <?php while( has_sub_field('images') ): ?>
+      <li>
+        <p><?php the_sub_field('caption'); ?></p>
+        <?php $image = get_sub_field('image'); ?>
+        <img src="<?php echo $image['sizes']['square'] ?>">
+      </li>
+    <?php endwhile; ?>
+  </ul>
+</div>
+```
 
 ## Viewing them all at once
 If we go to <http://localhost/wordpress/portfolio/javascript-weather-app> or any other single portfolio item, we can see the content for that specific portfolio item.

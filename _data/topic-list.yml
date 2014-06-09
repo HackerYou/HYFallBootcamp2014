@@ -3,56 +3,56 @@
   directory: 1-HTML-CSS
   exercises:
   - title: hello-world example
-    path: week1/day1/exercises/hello-world.html
+    path: exercises/hello-world.html
   - title: HTML Intro
-    path: week1/day1/exercises/intro.html
-    answerPath: week1/day1/exercises/intro-ANSWER.html
+    path: exercises/intro.html
+    answerPath: exercises/intro-ANSWER.html
   - title: Markup Excercise
-    path: week1/day1/exercises/markup-exercise.zip
-    answerPath: week1/day1/exercises/markup-exercise-answers.zip
+    path: exercises/markup-exercise.zip
+    answerPath: exercises/markup-exercise-answers.zip
   - title: CSS Fun
-    path: week1/day1/exercises/css-fun.html
+    path: exercises/css-fun.html
   - title: Explore CSS
-    path: week1/day2/exercises/explore_css_exercise.html
+    path: exercises/explore_css_exercise.html
   - title: CSS Selectors Exercise
-    path: week1/day2/exercises/css-selector-exercises.html
-    answerPath: week1/day2/exercises/css-selector-exercises-ANSWER.html
+    path: exercises/css-selector-exercises.html
+    answerPath: exercises/css-selector-exercises-ANSWER.html
   - title: CSS Selector Challenge
-    path: week1/day2/exercises/css-challenge-selectors.html
-    answerPath: week1/day2/exercises/css-challenge-selectors-ANSWER.html
+    path: exercises/css-challenge-selectors.html
+    answerPath: exercises/css-challenge-selectors-ANSWER.html
   - title: CSS Class Selectors
-    path: week1/day2/exercises/css-class-selector.html
+    path: exercises/css-class-selector.html
   - title: CSS Multi-Class Selectors
-    path: week1/day2/exercises/css-multi-class-selector.html
+    path: exercises/css-multi-class-selector.html
   - title: CSS Width and Height
-    path: week1/day3/exercises/css-width-height.html
+    path: exercises/css-width-height.html
   - title: CSS Margin and Padding
-    path: week1/day3/exercises/css-margin-padding.html
+    path: exercises/css-margin-padding.html
   - title: CSS Margin and Padding Exercise
-    path: week1/day3/exercises/css-margin-padding-exercise.html
-    answerPath: week1/day3/exercises/css-margin-padding-exercise-ANSWER.html
+    path: exercises/css-margin-padding-exercise.html
+    answerPath: exercises/css-margin-padding-exercise-ANSWER.html
   - title: CSS Box Model
-    path: week1/day3/exercises/css-box-model.html
+    path: exercises/css-box-model.html
   - title: CSS Floats Example 1
-    path: week1/day3/exercises/css-floats1.html
+    path: exercises/css-floats1.html
   - title: CSS Floats Example 2
-    path: week1/day3/exercises/css-floats2.html
+    path: exercises/css-floats2.html
   - title: CSS Layout Exercise
-    path: week1/day3/exercises/css-layout-exercise.html
-    answerPath: week1/day3/exercises/css-layout-exercise-ANSWER.html
+    path: exercises/css-layout-exercise.html
+    answerPath: exercises/css-layout-exercise-ANSWER.html
   - title: HTML Challenge
-    path: week1/day3/exercises/html-challenge.html
-    answerPath: week1/day3/exercises/html-challenge-ANSWER.html
+    path: exercises/html-challenge.html
+    answerPath: exercises/html-challenge-ANSWER.html
   - title: Planning a Page Structure
-    path:  week1/day3/exercises/page-layout.zip
+    path:  exercises/page-layout.zip
   - title: DevTools Testing
-    path: week1/day4/exercises/devtools-testing.html
+    path: exercises/devtools-testing.html
   - title: HTML &amp; CSS Challenge 1
-    path: week1/day5/challenges/challenge_1.html
-    answerPath: week1/day5/challenges/challenges_answers.html
+    path: challenges/challenge_1.html
+    answerPath: challenges/challenges_answers.html
   - title: HTML &amp; CSS Challenge 2
-    path: week1/day5/challenges/challenge_2.html
-    answerPath: week1/day5/challenges/challenges_answers.html
+    path: challenges/challenge_2.html
+    answerPath: challenges/challenges_answers.html
   - title: In-Page Links
     path: week2/day1/exercises/link-within.html
   - title: CSS Display

@@ -2,10 +2,13 @@
 {% comment %}force ordering of lesson by file path {% endcomment %}
 {% assign sorted_pages = site.pages | sort:"path" %}
 <div class="wrapper">
+
+
 	<h2>Curriculum</h2>
 	{% for topic in site.data.topic-list %}
 		{% assign topicNumber = forloop.index %}
-		<h4>{{topicNumber}}. {{topic.name}}</h4>
+		<h4>{{topicNumber}}. {{topic.name}} </h4>
+		<a class="exercises" href="exercises.html/#{{topic.name | cgi_escape }}">resources</a>
 		<ul class="topics">
 			{% assign count = '0' %}
 			{% for lesson in sorted_pages %}
@@ -24,7 +27,7 @@
 	<a href="/4-Wordpress/php-cheat-sheet.html">PHP Cheat Sheet</a></p>
 
 	<h2>Weekly Projects</h2>
-	
+
 	{% for project in sorted_pages %}
 		{% if project.layout == 'project' %}
 			<p><a href="{{project.url}}">{{project.title}}</a></p>

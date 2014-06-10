@@ -30,7 +30,7 @@ Here's an overview of the process. We'll go into details of each of these steps.
 
 ##1. Upload your files to your production server
 
-Use an FTP program to upload all your WordPress site files to your server. This should be everythign in your project folder (`wp-admin`, `wp-blog-header.php`, etc.).
+Use an FTP program to upload all your WordPress site files to your server. This should be everything in your project folder (`wp-admin`, `wp-blog-header.php`, etc.).
 
 ##2. Export your local database.
 
@@ -51,7 +51,7 @@ You may need to click **Custom - display all possible options** and then select 
 
 Check off "Save as File", then click GO to download a copy of your export. You don't need to change any of the other settings.
 
-##3. Create a new databse on your production server
+##3. Create a new database on your production server
 
 Log in to your hosting account (eg. <http://bluehost.com>), and head to your cPanel(control panel) if you're not brought there automatically.  Find and click on the option for "MySQL Databases" (search the page if you can't find it right away!).
 

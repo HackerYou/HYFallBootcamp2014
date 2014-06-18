@@ -54,72 +54,72 @@
     path: challenges/challenge_2.html
     answerPath: challenges/challenges_answers.html
   - title: In-Page Links
-    path: week2/day1/exercises/link-within.html
+    path: exercises/link-within.html
   - title: CSS Display
-    path: week2/day1/exercises/display.html
+    path: exercises/display.html
   - title: Position Relative
-    path: week2/day1/exercises/position-relative.html
+    path: exercises/position-relative.html
   - title: Position Absolute
-    path: week2/day1/exercises/position-absolute.html
+    path: exercises/position-absolute.html
   - title: Position Relative + Absolute
-    path: week2/day1/exercises/position.html
+    path: exercises/position.html
   - title: Position Relative + Absolute 2
-    path: week2/day1/exercises/position2.html
+    path: exercises/position2.html
   - title: Position Fixed
-    path: week2/day1/exercises/position-fixed.html
+    path: exercises/position-fixed.html
   - title: Z-Index
-    path: week2/day1/exercises/z-index.html
+    path: exercises/z-index.html
   - title: Border Radius
-    path: week2/day1/exercises/border-radius.html
+    path: exercises/border-radius.html
   - title: Positioning &amp; Floats Exercises
-    path: week2/day1/exercises/positioning-and-floats.zip
+    path: exercises/positioning-and-floats.zip
   - title: List Style
-    path: week2/day2/exercises/list-style.html
+    path: exercises/list-style.html
   - title: Nested Lists
-    path: week2/day2/exercises/nested-lists.html
+    path: exercises/nested-lists.html
   - title: Simple Nav
-    path: week2/day2/exercises/simple-nav.html
+    path: exercises/simple-nav.html
   - title: Centered Nav
-    path: week2/day2/exercises/centered-nav.html
+    path: exercises/centered-nav.html
   - title: Dropdown Nav
-    path: week2/day2/exercises/dropdown.html
-    answerPath: week2/day2/exercises/dropdownANSWER.html
+    path: exercises/dropdown.html
+    answerPath: exercises/dropdownANSWER.html
   - title: List Exercises
-    path: week2/day2/exercises/list-exercises.zip
+    path: exercises/list-exercises.zip
   - title: Twitter Form codealong
-    path: week2/day2/exercises/form.html
-    answerPath: week2/day2/exercises/form-ANSWER.html
+    path: exercises/form.html
+    answerPath: exercises/form-ANSWER.html
   - title: Form Inputs Exercise
-    path: week2/day2/exercises/inputs-exercise.html
-    answerPath: week2/day2/exercises/inputs-exercise-ANSWER.html
+    path: exercises/inputs-exercise.html
+    answerPath: exercises/inputs-exercise-ANSWER.html
   - title: CSS Background Images
-    path: week2/day3/exercises/bg-images.zip
+    path: exercises/bg-images.zip
   - title: Typography
-    path: week2/day3/exercises/typography.html
+    path: exercises/typography.html
   - title: Typography Exercise
-    path: week2/day3/exercises/typography-exercise.zip
+    path: exercises/typography-exercise.zip
   - title: Web Fonts
-    path: week2/day3/exercises/web-fonts.html
+    path: exercises/web-fonts.html
   - title: Text Shadow
-    path: week2/day3/exercises/text-shadow.html
+    path: exercises/text-shadow.html
   - title: Box Shadow
-    path: week2/day3/exercises/box-shadow.html
+    path: exercises/box-shadow.html
   - title: Responsive Demo 1
-    path: week3/day1/exercises/responsive1.html
+    path: exercises/responsive1.html
   - title: Responsive Demo 2
-    path: week3/day1/exercises/responsive2.html
+    path: exercises/responsive2.html
   - title: Responsive Demo 3
-    path: week3/day1/exercises/responsive3.html
+    path: exercises/responsive3.html
   - title: Responsive Exercises
-    path: week3/day1/exercises/responsive-exercises.zip
+    path: exercises/responsive-exercises.zip
   - title: CSS Shooting Star Animation
-    path: week3/day2/examples/animation.html
+    path: examples/animation.html
   - title: CSS Animations with Transitions
-    path: week3/day2/examples/transitions.html
+    path: examples/transitions.html
   - title: Inline SVGs (zip)
-    path: week3/day2/exercises/inline-svg.zip
+    path: exercises/inline-svg.zip
   - title: Using SVG tags
-    path: week3/day2/exercises/svg-tags.html
+    path: exercises/svg-tags.html
 - name: UX and Design
   slug: ux
   directory: 2-Design
@@ -133,13 +133,13 @@
   slug: tools
   exercises:
   - title: border-box snippet
-    path: week2/day1/snippets/border-box.sublime-snippet
+    path: snippets/border-box.sublime-snippet
   - title: clearfix snippet
-    path: week2/day1/snippets/clearfix.sublime-snippet
+    path: snippets/clearfix.sublime-snippet
   - title: normalize.css snippet
-    path: week2/day1/snippets/normalize.sublime-snippet
+    path: snippets/normalize.sublime-snippet
   - title: jQuery CDN snippet
-    path: week2/day1/snippets/jquerycdn.sublime-snippet
+    path: snippets/jquerycdn.sublime-snippet
   directory: 1-HTML-CSS
 - name: JavaScript & jQuery
   slug: js

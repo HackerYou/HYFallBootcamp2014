@@ -19,6 +19,7 @@ We've provided a lits of RESTful APIs that can be accessed publicly and have goo
 * Flickr Photos <https://www.flickr.com/services/api/>
 * Wikipedia <http://www.mediawiki.org/wiki/API:Main_page/>
 * Petfinder <http://www.petfinder.com/developers/api-docs/>
+* Ted Talks <http://developer.ted.com/API_Docs>
 
 
 ## Minimum Requirements

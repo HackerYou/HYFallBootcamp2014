@@ -153,6 +153,38 @@ Links take an *attribute* of `href` which tells the link where to link do. Here 
 		<img src="images/contact.png" alt="">
 	</a>
 
+### Linking within a page
+
+Ever wonder how to link to a certain point within a page?
+
+To link to a different page, it would look something like this:
+
+	<a href="about.html">About</a>
+
+However, we are able to use a page hash (#) to link to where a certain element starts. Ever see a link that looks like this:
+
+	http://mysite.com/about.html#foods
+
+When you visit it, it automagically links to the header called food! How does it know?
+
+This is where we finally get to use ids! Since you can only use an ID once per page, it makes sense to use them to define a specific spot on the page.
+
+Let's say we have an `h2` element in a document called **about.html**:
+
+	<h2 id="food">Foods I Like</h2>
+
+If we are currently inside of **about.html**, we can link to that part of the document simply by referencing the ID name like this:
+
+	<a href="#food">See Foods I Like</a>
+
+If we are on another page and want to link to that specific spot:
+
+	<a href="about.html#food">See Foods I Like on another page</a>
+
+You can link to any element with an ID, such as a `<div>`, `<span>` or `<blockquote>` but you will generally use heading tags.
+
+Open up <a href="exercises/link-within.html" class="exercise">**link-within.html**</a> and create a navigation based on the available markup. It can be a single level navigation - no dropdowns required.
+
 ### `<span></span>` Spans
 The span tag is a small, yet mighty HMTL tag. A span is an **inline element** which means that you can pop one right in the middle of a sentence and it wont give you a line break or any other unwanted effect. The span tag itself, like divs, have no semantic meaning.
 

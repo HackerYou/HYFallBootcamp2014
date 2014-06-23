@@ -4,53 +4,7 @@ title: Normalize, In-page Links, Display and Positioning
 topic: html
 ---
 
-# Normalize, In-page Links, Display and Positioning
-
-## CSS Normalize
-
-One other tool that web designers and developers have in their tool belt is something called a CSS Normalize or a CSS Reset.
-
-We use CSS Normalize because not all browsers start on the same playing field. All browsers come with style defaults, such as making all `h1`-`h6` elements escalate in size and adding padding and margins to various elements. Though you may want to keep the default styles, they aren't consistent across all the browsers. This can lead to problems down the road because we want our websites to look fairly consistent in all the browsers!
-
-CSS Normalize fixes this. It's a chunk of CSS code that we can either insert into the top of our CSS Document or add it as a separate stylesheet in the `<head>` of our HTML document.  
-
-**Note:** If you add it as a separate stylesheet, it should be included *before* your custom stylesheet. 
-
-Normalize does exactly what it says - **normalize the default styling of all elements across all browsers**.
-
-You can download Normalize.css at [http://necolas.github.com/normalize.css/](http://necolas.github.com/normalize.css/). We won't be using it for our examples, but any public facing sites (including our final project) should use it.
-
-## Linking within a page
-
-Ever wonder how to link to a certain point within a page?
-
-To link to a different page, it would look something like this:
-
-	<a href="about.html">About</a>
-
-However, we are able to use a page hash (#) to link to where a certain element starts. Ever see a link that looks like this:
-
-	http://mysite.com/about.html#foods
-
-When you visit it, it automagically links to the header called food! How does it know?
-
-This is where we finally get to use ids! Since you can only use an ID once per page, it makes sense to use them to define a specific spot on the page.
-
-Let's say we have an `h2` element in a document called **about.html**:
-
-	<h2 id="food">Foods I Like</h2>
-
-If we are currently inside of **about.html**, we can link to that part of the document simply by referencing the ID name like this:
-
-	<a href="#food">See Foods I Like</a>
-
-If we are on another page and want to link to that specific spot:
-
-	<a href="about.html#food">See Foods I Like on another page</a>
-
-You can link to any element with an ID, such as a `<div>`, `<span>` or `<blockquote>` but you will generally use heading tags.
-
-Open up <a href="exercises/link-within.html" class="exercise">**link-within.html**</a> and create a navigation based on the available markup. It can be a single level navigation - no dropdowns required.
+# Display and Positioning
 
 ## CSS Display
 

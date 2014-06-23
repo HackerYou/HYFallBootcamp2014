@@ -146,3 +146,57 @@ Here is a list of settings you will probably enjoy. Feel free to modify or delet
 **If you change "theme", You will need to restart sublime text after you save this settings file as you are changing the skin of sublime**
 
 A full list of available setting defaults is available at `Preferences` → `Settings - Default` (Do not change these, simply restate them in your own file).
+
+## Emmet Shortcuts
+
+Lets look at how to code quicker with emmet:
+
+### Emmet and HTML
+
+* `[element]` + `tab` creates that element and puts your cursor inside:
+  * `span` + `tab` → `<span></span>`
+  * `div` + `tab` → `<div></div>`
+  * `p` + `tab` → `<p></p>`
+
+* `[element.className]` + `tab` creates that element with the associated class(es)
+  * `span.hello` + `tab` → `<span class="hello"></span>`
+  * `div.goodDay` + `tab` → `<div class="goodDay"></div>`
+  * `p.odd.warning` + `tab` → `<p class="odd warning"></p>`
+
+* `[element#idName]` + `tab` creates that element with the associated ID
+  * `div#contact` + `tab` → `<div id="contact"></div>`
+
+* `[element>childElement]` + `tab` creates nested elements
+  * `ul>li` + `tab` → `<ul><li></li></ul>`
+  * `p>span` + `tab` → `<p><span></span></p>`
+
+* `[element*5]` + `tab` creates that element times the number
+  * `span*2` + `tab` → `<span></span><span></span>`
+  * `p.hello*2` + `tab` → `<p class="hello"></p><p class="hello"></p>`
+  * `div.box.box$*5` + `tab` → `<div class="box box1"></div> <div class="box box2"></div> <div class="box box3"></div> <div class="box box4"></div> <div class="box box5"></div>`
+
+All the above can be mixed and matched, try some of the following:
+
+* `ul>li.food.food$*10`
+* `div.wrapper>div.content+div.sidebar`
+* `ul.list.list-number-$*2>li.item.item$*2>h2{intense}+p>span{woah}`
+
+### Emmet and CSS
+When in css, you can usually just type the first few letters of what you want, and Emmet will figure out what you were looking for. Try some of the following:
+
+* `posrel` →  `position: relative;`
+* `posab` →  `position: absolute;`
+* `fl` →  `float: `
+* `fr` →  `float: right;`
+* `db` →  `display: block;`
+* `dib` →  `display: inline-block;`
+* `tdn` →  `text-decoration: none;`
+* `c` →  `color: #`
+* `w` →  `width: `
+* `w100` →  `width: 100px;`
+* `w100p` →  `width: 100%;`
+* `p` →  `padding: `
+* `p10` →  `padding: 10px;`
+* `p10p` →  `padding: 10%;`
+* `bt` →  `border-top: `
+* `bb` →  `border-bottom: `

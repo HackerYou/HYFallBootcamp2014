@@ -4,7 +4,21 @@ title: Units, Box Model, and Floats
 topic: html
 ---
 
-# Units, Box Model, and Floats
+# Normalize, Units, Box Model, and Floats
+
+## CSS Normalize
+
+One other tool that web designers and developers have in their tool belt is something called a CSS Normalize or a CSS Reset.
+
+We use CSS Normalize because not all browsers start on the same playing field. All browsers come with style defaults, such as making all `h1`-`h6` elements escalate in size and adding padding and margins to various elements. Though you may want to keep the default styles, they aren't consistent across all the browsers. This can lead to problems down the road because we want our websites to look fairly consistent in all the browsers!
+
+CSS Normalize fixes this. It's a chunk of CSS code that we can either insert into the top of our CSS Document or add it as a separate stylesheet in the `<head>` of our HTML document.
+
+**Note:** If you add it as a separate stylesheet, it should be included *before* your custom stylesheet.
+
+Normalize does exactly what it says - **normalize the default styling of all elements across all browsers**.
+
+You can download Normalize.css at [http://necolas.github.com/normalize.css/](http://necolas.github.com/normalize.css/). We won't be using it for our examples, but any public facing sites (including our final project) should use it.
 
 ## Starting the Styling!
 Now that we have a good handle on selectors, we can get to work on writing the styles (or **properties** and **values**) for the selected elements.

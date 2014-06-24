@@ -46,21 +46,21 @@ Open your GitHub app and go through the setup and login instructions.  Once you 
 
 Mac Github app:
 
-![](lesson-images/github-app-logged-in.jpg)
+![](images/github-app-logged-in.jpg)
 
 On the left, you'll see an option for the repositories on your computer, as well as your GitHub account and any organizations you're a part of. Clicking on a name will show you which repositories are available. 
 
 In the bottom menu, you have the option to create a new repo or add a local repo.  Let's create a new one.  Add a project name (no spaces).  The project description is optional and can be edited later. For your local path, navigate to the directory where you'd like to save your project on your computer.  Check "Push to Github" to add the repo to github.com as well.
 
-![](lesson-images/new-project.png)
+![](images/new-project.png)
 
 Once the repository is created, the app will automatically take you to your new repository (which is currently empty since this is a new repo).
 
-![](lesson-images/app-new-repo.png)
+![](images/app-new-repo.png)
 
 In your github.com account, you will now see your new repo under the **Repositories** tab.
 
-![](lesson-images/github-new-repo.png)
+![](images/github-new-repo.png)
 
 Congratulations, you have now created your first Git repository!
 
@@ -78,7 +78,7 @@ Github recommends adding a README file which contains any kind of information ab
 
 	The GitHub app will recognize when a change has occurred in the project folder.
 
-	![](lesson-images/changes.png)
+	![](images/changes.png)
 
 2. **Commit** and **push/sync** the changes to the repository.
 
@@ -89,17 +89,17 @@ Github recommends adding a README file which contains any kind of information ab
 	The app gives you the option to:  
 	a) **commit** and **push/sync** in two separate steps
 	
-	![](lesson-images/commit-sync-separate.png)
+	![](images/commit-sync-separate.png)
 	
 	b) or **commit** and **push/sync** in one step:
-	![](lesson-images/commit-sync.png)
+	![](images/commit-sync.png)
 
 Any changes, whether it's revisions to existing files or adding/deleting files, need to be committed and pushed to the repository.
 
 ###Adding a local repository
 In the previous example, we created a brand spanking new repo, then added files to it. However, if you already have a project with existing files, you can also take those existing files and create a new repo to start versioning your files. Remember, there's a second option in the app:
 
-![](lesson-images/github-app-logged-in.jpg)
+![](images/github-app-logged-in.jpg)
 
 ###Cloning a repository
 **Cloning** a repo refers to creating a local copy of an existing repository that you may have access to in your github.com account.  

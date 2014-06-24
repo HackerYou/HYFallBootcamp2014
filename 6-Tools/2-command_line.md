@@ -32,11 +32,11 @@ What you should see is a relatively blank window. Terminal (Mac) has a white bac
 
 **Terminal (Mac)**  
 
-![terminal](lesson-images/terminal.jpg)
+![terminal](images/terminal.jpg)
 
 **Powershell (Windows)**
 
-![powershell](lesson-images/powershell.jpg)
+![powershell](images/powershell.jpg)
 
 ### The prompt
 

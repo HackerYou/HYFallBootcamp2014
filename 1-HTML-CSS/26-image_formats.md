@@ -164,3 +164,11 @@ Extra readings:
 
 * [How to optimize images for the web](http://johnkuefler.com/how-to-optimize-images-for-the-web/)
 * [10 Must Know Image Optimization Tips](http://www.shopify.ca/blog/7412852-10-must-know-image-optimization-tips)
+
+
+## Image Replacement
+
+CSS image replacement is used in situation where you want text for accessibility and SEO but would rather show an image than text. A great example is a website's logo. Many techniques have been developed to accomplish this; CSS Tricks has created a museum that showcases all of the methods: [http://css-tricks.com/examples/ImageReplacement/](http://css-tricks.com/examples/ImageReplacement/)
+
+We recommend using the one here:
+[http://css-tricks.com/examples/ImageReplacement/#kellum](http://css-tricks.com/examples/ImageReplacement/#kellum)

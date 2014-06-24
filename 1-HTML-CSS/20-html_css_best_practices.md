@@ -58,12 +58,6 @@ CSS selectors are read from right to left by the browsers. So for the selector `
 
 Resource: [https://developers.google.com/speed/docs/best-practices/rendering?csw=1](https://developers.google.com/speed/docs/best-practices/rendering?csw=1)
 
-## Image Replacement
-
-CSS image replacement is used in situation where you want text for accessibility and SEO but would rather show an image than text. A great example is a website's logo. Many techniques have been developed to accomplish this; CSS Tricks has created a museum that showcases all of the methods: [http://css-tricks.com/examples/ImageReplacement/](http://css-tricks.com/examples/ImageReplacement/)
-
-We recommend using the one here:
-[http://css-tricks.com/examples/ImageReplacement/#kellum](http://css-tricks.com/examples/ImageReplacement/#kellum)
 
 ## Compression
 

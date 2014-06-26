@@ -52,29 +52,29 @@ Used for titles and emphasis
 
 * List Element - li
 
-    <li>List Element</li>
+    `<li>List Element</li>`
 
 * Unordered List - ul
   * Element 1
   * Element 2
   * Element 3
 
-      <ul>
-        <li>Element 1</li>
-        <li>Element 2</li>
-        <li>Element 3</li>
-      </ul>
+        <ul>
+          <li>Element 1</li>
+          <li>Element 2</li>
+          <li>Element 3</li>
+        </ul>`
 
 * Ordered List - ol
   1. Element 1
   2. Element 2
   3. Element 3
 
-      <ol>
-          <li>Element 1</li>
-          <li>Element 2</li>
-          <li>Element 3</li>
-        </ol>
+          <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+          </ol>
 
 ###HTML5 Elements
 HTML5 introduced new elements that were descriptive as to what part of the page they represented. Instead of using __div id="header"__, you can use __header__ along with a class or id for specific styling.
@@ -96,15 +96,15 @@ HTML5 introduced new elements that were descriptive as to what part of the page 
 
     <nav>
       <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="page.html">Page</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="page.html">Page</a></li>
       </ul>
     </nav>
 
 **Section** - Defines a section in a document. Use an ID or a class to add styling and specificity.
 
     <section class="post">
-      Content Goes Here
+      <p>Content Goes Here</p>
     </section>
 
 **Article** - Defines an individual section of content. Typically used for a post in a blog or a collection of content.

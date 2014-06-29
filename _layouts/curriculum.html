@@ -7,8 +7,10 @@
 	<h2>Curriculum</h2>
 	{% for topic in site.data.topic-list %}
 		{% assign topicNumber = forloop.index %}
-		<h4>{{topicNumber}}. {{topic.name}} </h4>
-		<a class="exercises" href="exercises.html/#{{topic.name | cgi_escape }}">resources</a>
+		<h4>{{topicNumber}}. {{topic.name}}</h4>
+
+		<h5><a class="resources" href="resources.html/#{{topic.name | cgi_escape }}">resources</a></h5>
+
 		<ul class="topics">
 			{% assign count = '0' %}
 			{% for lesson in sorted_pages %}
@@ -18,10 +20,12 @@
 				{% endif %}
 			{% endfor %}
 		</ul>
+
 	{% endfor %}
 
+
 	<h2>Exercises, Examples and Cheat Sheets</h2>
-	Most exercises are linked within your notes, but you can also view a full catalogue <a href="exercises.html">here</a>.
+	Most exercises are linked within your notes, but you can also view a full catalogue <a href="resources.html">here</a>.
 
 	<p><a href="/3-JavaScript/javascript-cheat-sheet.html">JavaScript Cheat Sheet</a><br>
 	<a href="/4-Wordpress/php-cheat-sheet.html">PHP Cheat Sheet</a></p>

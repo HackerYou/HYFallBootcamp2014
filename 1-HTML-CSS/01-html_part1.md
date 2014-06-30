@@ -144,14 +144,14 @@ It used to be:
 	<b>bold text</b>
 	<i>italic text</i>
 	<strong>text with stronger emphasis</strong>
-	<emphasis>test with emphasis</emphasis>
+	<em>test with emphasis</em>
 
 In HTML5, it now means: 
 	
 	<b>stylistically offset text</b>
 	<i>text in an "alternative voice"</i>
 	<strong>strong importance</strong>
-	<emphasis>stress emphasis</emphasis>
+	<em>stress emphasis</em>
 
 **More info:** [HTML5Doctor: The i, b, em, & strong elements](http://html5doctor.com/i-b-em-strong-element/)
 

@@ -19,8 +19,16 @@
 			body {
 				font-size:15px;
 				font-family:Arial, Helvetica, sans-serif;
+				background:url(images/pattern.png) fixed;
 			}
-			/* write a selector for the wrapper and style it as you wish! */
+
+			.wrapper {
+				width:800px;
+				margin:20px auto;
+				background:white;
+				padding:20px;
+				border:1px solid #8c97c3;
+			}
 
 
 			/* Select al h1 tags and style the text like the answer key */
@@ -32,13 +40,21 @@
 			/* Write a rule to change all spans with the class of hackerYou to the color */
 
 
-			/* We have a bunch of .ruleBox divs, add a blackground pattern, border, margin and padding */
+			.ruleBox {
+				background:url(images/noisy_grid.png);
+				border:1px dotted #C4C4C4;
+				margin-bottom:10px;
+				padding:10px;
+			}
 
-				/* Style the h2 tags within the .ruleBox. Try using rgba for a semi-transparent background */
-				
+			/* Style the h2 tags within the .ruleBox. Try using rgba for a semi-transparent background */
 
 
-			/* At the bottom of the page we have three boxes that are a third of the size. Use floats widths and margins to do this */
+			.ruleBox.third {
+				width: 230px;
+				float: left;
+				margin: 7px;
+			}
 
 
 			/* Match the styles of the 8 rule boxes in the answer key by writing the proper selectors and applying the correct typography CSS */

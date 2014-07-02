@@ -172,14 +172,3 @@ CSS image replacement is used in situation where you want text for accessibility
 
 We recommend using the one here:
 [http://css-tricks.com/examples/ImageReplacement/#kellum](http://css-tricks.com/examples/ImageReplacement/#kellum)
-
-## Reduce HTTP Requests & Image Sprites
-
-Every image, CSS and JavaScript file referenced in your HTML file will make an HTTP request. Each request takes time to execute so it will increase the load time of your website. One way of reducing HTTP requests is to combine files. Stylesheets should be combined together into one file.
-
-We can do the same thing with images. These are called **image sprites**. To create sprites:
-
-1. combine images into one image file
-2. use CSS `background-position` to show the correct image
-
-Use [http://www.spritecow.com/](http://www.spritecow.com/) to combine images and get the appropriate CSS.

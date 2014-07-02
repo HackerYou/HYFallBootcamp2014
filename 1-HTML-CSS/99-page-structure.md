@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: Planning a page structure
-topic: html
+topic: omit
 
 ---
 

@@ -16,7 +16,7 @@ Chrome dev tools are packed with tons of helpful little tools for developing a w
 ### Trying Dev Tools
 Open up <a href="exercises/devtools-testing.html" class="exercise">`devtools-testing.html`</a> in Google Chrome. You'll notice this is the same markup and CSS from our selector exercise.
 
-Let's left click our page and select **inspect element**. This brings up two panels:
+Let's right click our page and select **inspect element**. This brings up two panels:
 
 ![](http://wes.io/JOER/Screen%20Shot%202012-09-11%20at%201.37.32%20PM.png)
 

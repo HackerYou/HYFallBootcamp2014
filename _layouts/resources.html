@@ -7,28 +7,28 @@
 		<ul class="exercises">
 		{% for exercise in topic.exercises %}
 			<li>
-				<a href="{{topic.directory}}/{{exercise.path}}" target="_blank">
+				<a href="/{{topic.directory}}/{{exercise.path}}" target="_blank">
 					{{topicNumber}}-{{site.data.alphabet[forloop.index0]}} {{exercise.title}}
 				{% if exercise.path contains ".zip" %}
 				(zip)
 				</a>
 				{% else %}
 				</a>
-				<a href="{{topic.directory}}/{{exercise.path}}" download class="download-link">
+				<a href="/{{topic.directory}}/{{exercise.path}}" download class="download-link">
 					&#9660;
 				</a>
 				{% endif %}
 			</li>
 			{% if exercise.answerPath %}
 			<li class="answer">
-				<a href="{{topic.directory}}/{{exercise.answerPath}}" target="_blank">
+				<a href="/{{topic.directory}}/{{exercise.answerPath}}" target="_blank">
 					{{topicNumber}}-{{site.data.alphabet[forloop.index0]}} {{exercise.title}} [ANSWER]
 				{% if exercise.path contains ".zip" %}
 				(zip)
 				</a>
 				{% else %}
 				</a>
-				<a href="{{topic.directory}}/{{exercise.answerPath}}" download  class="download-link">
+				<a href="/{{topic.directory}}/{{exercise.answerPath}}" download  class="download-link">
 					&#9660;
 				</a>
 				{% endif %}

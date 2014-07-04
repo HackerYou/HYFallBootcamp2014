@@ -45,11 +45,12 @@ topic: html
 		* <span class="hide">They can only be used once!</span>
 	1. How would I select a span with the class or warning? -->
 
-## Including CSS
 
-* What are the three ways of including CSS to style HTML elements?
-* What are the pros and cons of each approach?
+#Why should I keep my code clean and organized
 
+Writing clean, organized and efficient code will not only make your pages run faster but it will be easier to maintain and can potentially reduce browser bugs. It's tempting to say "I'll fix it later" but later doesn't always come. It's important to refactor your code as you go along.
+
+Here are some tips for writing purty code.
 
 ## Firefox 3D View
 Let's look at css-fun.html in 3D view. This should help you get a better idea as to how and why we nest elements.
@@ -142,6 +143,9 @@ Sometimes you will also have to indent several lines at a time. To do this, sele
 
 **cmd⌘ on mac, ctrl on windows**
 
+###Lists or divs?
+Remember, HTML is used to describe the meaning of the content to the browser.  A `<div>` has no meaning and is used purely to put a box around an element to style it.  Often, divs are used to style multiple elements that share the same styles when a list can be used instead.  It 	can give the content more semantic meaning as well as provide an alternate way to add CSS.
+
 ## Organizing CSS
 
 CSS can become a tangled mess if isn't managed properly. You might have multiple selectors styling the same element. You change the font-size but it doesn't do anything because the style is being re-defined somewhere else.
@@ -208,6 +212,40 @@ CSS selectors are read from right to left by the browsers. So for the selector `
 
 Resource: [https://developers.google.com/speed/docs/best-practices/rendering?csw=1](https://developers.google.com/speed/docs/best-practices/rendering?csw=1)
 
+###Going Beyond Basic Selectors
+
+Read this: [The 30 CSS Selectors you Must Memorize](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048). Bookmark it. Now.
+
+Using many of the more advanced selectors will reduce the need to add additional classes to your markup.
+
+###Creating page layouts
+
+How do you know when to use float, position, margin or padding?
+
+####Float vs Position
+
+If both float and position can be used to align elements, when should one be used over the other?
+
+Recommended usage for floats:
+
+* Content that needs to be flexible, variable content that may get bigger or smaller (ex. blog posts, sidebar content)
+* block level elements related to the structure of the page.
+
+Recommended usage for positioning:
+
+* Content that doesn't interact with the structure of the page. (ex. positioning elements within a specific block of the page)
+* Elements that exist outside the document flow. Positioning an element does not rely on it's surrounding elements. (ex. fixed nav)
+
+Note: When using absolute or fixed positioning, floats are no longer effective.
+
+####Margin & Padding
+
+Padding adds space *inside* an element. It does not accept negative values.
+
+Margin can be used to add space *outside* of the element. It also accepts negative values to which means it can have the appearance of removing space and making elements overlap.
+
+However, use padding and margin to style spacing around the element, not for page layout styling or positioning large structural blocks.
+
 
 ## Compression
 
@@ -218,6 +256,9 @@ To make our websites faster we can compress the CSS and images. The CSS minifyin
 * OSX impage compression tool: <http://imageoptim.com/>
 
 Even with compression tools, it's still a good idea to crop your images to an appropriate dimension before using them on the web.  Users shouldn't have to download a 2000px hi-res photo if it's only going to be 200px wide on their screen.
+
+##Use a CSS preprocessor
+Use a CSS preprocessor like [Sass](http://sass-lang.com/) to be organized and more efficient by using variables, nesting, mixins and many more features.  Download a sample for setting up your <a href="examples/refactoring/sass-example.zip" class="exercise">Sass files (zip)</a>.
 
 ## Automating your Optimizations
 

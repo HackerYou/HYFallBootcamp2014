@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: Refactoring HTML & CSS
-topic: html
+topic: omit
 ---
 
 #Refactoring and Maintaining HTML & CSS
@@ -160,7 +160,7 @@ Using many of the more advanced selectors will reduce the need to add additional
 
 
 ###Lists or divs?
-Remember, HTML is used to describe the meaning of the content to the browser.  A `<div>` has no meaning and is used purely to put a box around an element to style it.  Often, divs are used to style multiple elements that share the same styles when a list can be used instead.  It can give the content more semantic meaning as well as provide an alternate way to add CSS.
+Remember, HTML is used to describe the meaning of the content to the browser.  A `<div>` has no meaning and is used purely to put a box around an element to style it.  Often, divs are used to style multiple elements that share the same styles when a list can be used instead.  It 	can give the content more semantic meaning as well as provide an alternate way to add CSS.
 
 
 ###Use a CSS preprocessor

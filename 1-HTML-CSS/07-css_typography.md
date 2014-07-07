@@ -248,7 +248,7 @@ It's not used very often because it's a best practice to only underline links. B
 #### Exercise
 Its time to flex our typography muscles. Open the html file in <a href="exercises/typography-exercise.zip" class="exercise">**typography-exercise.zip**</a> in your browser and editor.
 
-You can have some fun with this one and pick your own colours, patterns, fonts, widths and whatnot. Match the ruleBox stylings to the provided answer key</a>
+You can have some fun with this one and pick your own colours, patterns, fonts, widths and whatnot. Match the ruleBox stylings to the provided answer key.
 
 ## Web Fonts (or Using Custom Fonts)
 

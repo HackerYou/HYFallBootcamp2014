@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Normalize, In-page Links, Display and Positioning
+title: Display and Positioning
 topic: html
 ---
 

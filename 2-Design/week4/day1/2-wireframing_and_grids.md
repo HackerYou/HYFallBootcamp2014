@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 title: Wire-framing and Grids
 topic: ux
 ---

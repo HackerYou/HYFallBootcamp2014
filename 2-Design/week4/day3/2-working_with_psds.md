@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 title: Working with PSDs
 topic: ux
 ---

@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 title: Front-end Frameworkds
 topic: ux
 ---

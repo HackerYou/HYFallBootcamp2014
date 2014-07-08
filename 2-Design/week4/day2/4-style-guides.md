@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 title: Style Guides
 topic: ux
 ---

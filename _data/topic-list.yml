@@ -120,15 +120,15 @@
     path: exercises/inline-svg.zip
   - title: Using SVG tags
     path: exercises/svg-tags.html
-- name: UX and Design
-  slug: ux
-  directory: 2-Design
-  exercises:
-  - title: Style Guide Starter HTML
-    path: day1/exercises/style-guide.html
-  - title: kalynnakano.com Design Details
-    path: day1/exercises/kalynnakano.com.zip
-    answerPath: day1/exercises/kalynnakano.com-answer.zip
+# - name: UX and Design
+#   slug: ux
+#   directory: 2-Design
+#   exercises:
+#   - title: Style Guide Starter HTML
+#     path: day1/exercises/style-guide.html
+#   - title: kalynnakano.com Design Details
+#     path: day1/exercises/kalynnakano.com.zip
+#     answerPath: day1/exercises/kalynnakano.com-answer.zip
 - name: Tools of the Trade
   slug: tools
   exercises:

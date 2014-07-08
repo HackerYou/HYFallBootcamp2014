@@ -1,3 +1,9 @@
+---
+layout: notes
+title: Grunt
+topic: tools
+---
+
 #Grunt
 
 ##What the heck is it?

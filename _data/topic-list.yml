@@ -129,7 +129,7 @@
 #   - title: kalynnakano.com Design Details
 #     path: day1/exercises/kalynnakano.com.zip
 #     answerPath: day1/exercises/kalynnakano.com-answer.zip
-- name: Tools of the Trade
+- name: 2 - Tools of the Trade
   slug: tools
   exercises:
   - title: border-box snippet

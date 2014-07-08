@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: omit
 title: Week 4 Project - Wireframe and Style Guide
 ---
 

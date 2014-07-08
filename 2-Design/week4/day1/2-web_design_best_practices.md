@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 title: Web Design Best Practices
 topic: ux
 ---

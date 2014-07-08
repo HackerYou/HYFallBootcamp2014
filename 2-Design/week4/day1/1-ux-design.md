@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 title: UX (User Experience) Design 
 topic: ux
 ---

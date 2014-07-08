@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 title: Design Theory Resources
 topic: ux
 ---

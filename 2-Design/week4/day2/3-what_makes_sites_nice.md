@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 title: What makes websites look nice?
 topic: ux
 ---

@@ -146,6 +146,7 @@ You  can also pass it **multiple="true"** to allow for multiple file selection
 Another new input as of HTML5 - will fall back to input text if not available.
 
 	<input type="color" name="bgColor">
+
 <input type="color" name="bgColor">
 
 ### Input type=range
@@ -153,11 +154,13 @@ Another new input as of HTML5 - will fall back to input text if not available.
 Allows you to implement sliders - handy for when users need to gauge something based on a numerical value. I use this sometimes to get a zoom % from the user when zooming into photos.
 
 	<input type="range" name="zoomLevel">
+
 <input type="range" name="zoomLevel" style="width:100%;">
 
 You can set the max and min values as well as a step value.
 
 	<input type="range" name="zoomLevel" min="30" max="150" step="10">
+
 <input type="range" name="zoomLevel" min="0" max="250" step="20" style="width:100%;">
 
 ### textarea
@@ -239,12 +242,14 @@ Note that we cannot use any HTML inside of an option tag.
 Kind of a fun and useful attribute you can add to your HTML is `x-webkit-speech` which allows users to speak their text inputs. This only works on chrome at the moment.
 
 	<input type="text" x-webkit-speech="true">
+
 <input type="text" x-webkit-speech="true" style="font-size:25px; width:100%;">
 
 ### Making an input required
 Another handy part of HTML5 allows us to easily make an input required. Before this we needed to use JavaScript to check if inputs were valid, now we just pass the required attribute
 
 	<input type="text" name="firstName" required="true">
+
 <input type="text" name="firstName" required="true">
 
 ### Other attributes
@@ -253,18 +258,21 @@ Another handy part of HTML5 allows us to easily make an input required. Before t
 If you want to have default text in your input that clears when a user starts typing, use the **placeholder** atrribute.
 
 	<input type="email" name="emailAddress" palceholder="Please enter your email address">
+
 <input type="email" name="emailAddress" palceholder="Please enter your email address" style="width:100%; font-size:20px;">
 
 #### Character Limit
 Limit the number of characters a box will take. Useful for limiting how long a username can be.
 
 	<input type="text" name="userName" placeholder="max 6 chars please" maxlength="6">
+
 <input type="text" name="userName" placeholder="max 6 chars please" maxlength="6">
 
 #### Default Value
 You can set the default value on any input by simply setting the value attribute
 
 	<input type="text" name="phoneNumber" value="416-">
+
 <input type="text" name="phoneNumber" value="416-">
 
 Note: there is also an input for phone numbers called `<input type="tel">`
@@ -273,6 +281,7 @@ Note: there is also an input for phone numbers called `<input type="tel">`
 Disable an input
 
 	<input type="text" value="you cant edit me!" disabled>
+
 <input type="text" value="you cant edit me!" disabled>
 
 #### Hidden

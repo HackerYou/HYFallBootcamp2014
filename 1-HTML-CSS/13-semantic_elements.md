@@ -77,7 +77,7 @@ Used for titles and emphasis
           </ol>
 
 ###HTML5 Elements
-HTML5 introduced new elements that were descriptive as to what part of the page they represented. Instead of using __div id="header"__, you can use __header__ along with a class or id for specific styling.
+HTML5 introduced new elements that were descriptive as to what part of the page they represented. Instead of using __div class="header"__, you can use __header__ along with a class for specific styling.
 
 ###New HTML5 Elements include
 **Header** - Defines the header of a page or a section. Contains the title of a page or a section.

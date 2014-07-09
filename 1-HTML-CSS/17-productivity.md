@@ -35,7 +35,7 @@ If completed correctly, you will now have access to the following snippets:
 * `clearfix` + `tab`
 * `jquerycdn` + `tab`
 
-**Note**: If another plugin prevents the tab trigger form working, you can also access your snippets throught th command pallette. `cmd/ctrl` + `shift` + `P`, then start typing `snippet` or the name of your snippet, then the enter key to insert.
+**Note**: If another plugin prevents the tab trigger form working, you can also access your snippets throught th command pallette. `cmd/ctrl` + `shift` + `P`, then start typing `snippet` or the name of your snippet, then the enter key to insert. This will be the case if you're working with CSS snippets on an HTML page.
 
 Feel free to make your own as you go!
 

@@ -52,9 +52,6 @@ Writing clean, organized and efficient code will not only make your pages run fa
 
 Here are some tips for writing purty code.
 
-## Firefox 3D View
-Let's look at css-fun.html in 3D view. This should help you get a better idea as to how and why we nest elements.
-
 ## Code Organization
 As your website projects get bigger, they can become more difficult to navigate. Because of this, we its helpful to put code organization best practices into place.
 
@@ -84,7 +81,6 @@ When the number of files in your project becomes large, its helpful to group sim
 
 
 ### Code Indentation
-The last tip of code organization is probably the most important one: code indentation.
 
 As your code grows, it gets more confusing. We already learned that commenting can help this, but keeping the levels of your elements properly indented is just as important and it should soon become second nature.
 

@@ -28,6 +28,8 @@ Internet Explorer is the pain in every developer's ass. There are currently vers
 
 Right now, most developers still support IE8, which is considered the last of the buggy browsers to support. 
 
+If you're catering to a modern audience, you may be okay supporting IE9 and above. When in doubt, look at analytics data on what browsers site visitors are actually using.
+
 ### Testing Internet Explorer
 
 #### IE Tester
@@ -69,3 +71,42 @@ Many cities have Device Labs where you can go and test your website on every sin
 HackerYou is starting a device lab that will be up and running very soon!
 
 [http://devicelab.fi/](http://devicelab.fi/)
+
+
+### Remote Debugging
+
+If you do find bugs specific to mobile devices, you can use remote debugging to inspect and debug your page from your computer. 
+
+You can remote debug Chrome for Android using the phone's USB cable and desktop Chrome and (OSX and Windows). <https://developer.chrome.com/devtools/docs/remote-debugging>
+
+Similarly, you can remote debug iOS Safari using the iPhone/iPad USB cable and desktop Safari (OSX only). <http://moduscreate.com/enable-remote-web-inspector-in-ios-6/>
+
+### Writing cross-browser code with Modernizr
+
+If you want to use the new and shiny HTML5 & CSS3 features but still support older browsers, Modernizr (<http://modernizr.com/>) can help write cross-browser compatible code.
+
+Modernizr tests to see which features are supported and then classes the HTML element with the test results.
+
+Chrome 38 gets the following classes. We can see things like `flexbox` and `rgba` are supported.
+
+![](https://i.cloudup.com/I7tMBL9wHU.png)
+
+Compare this with IE9. `rgba` is supported but `flexbox` is not.
+
+![](http://cl.ly/image/4123102x2l0C/ie8-modernizr.png)
+
+Say we found a browser where box-shadow isn't supported.  We can use Modernizr's `.no-boxshadow` class to provide an alternate style.
+
+    .widget {
+        background: #fff;
+        padding: 10px;
+        /* this shadow won't show up in really old browsers*/
+        box-shadow: 1px 1px 5px #aaa; 
+    }
+
+    .no-boxshadow .widget {
+        /* give it a border in old browsers */
+        border: solid 1px #ddd;
+    }
+
+![](https://i.cloudup.com/uJyJEkiH2A.png)

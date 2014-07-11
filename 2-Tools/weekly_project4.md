@@ -14,6 +14,7 @@ Use the [http://gruntjs.com/plugins](http://gruntjs.com/plugins) directory to fi
 * add this project to github
 
 Implement at least three of the following optimizations with Grunt:
+* Set up a local server on your machine.
 * smush your images to reduce file size
 * minify CSS
 * minify JS

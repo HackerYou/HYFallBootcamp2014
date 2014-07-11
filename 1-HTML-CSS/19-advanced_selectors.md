@@ -213,7 +213,7 @@ Let's make all https links green:
 Target the end of an attribute. Turn all links to jpgs goldenrod.
 
 <a href="http://google.com">Google.com</a>
-<a href="http://wesbos.com/logo.png">Wes Bos' logo</a>
+<a href="http://wesbos.com/wp-content/themes/wb2012/i/picure.png">Wes Bos' Headshot</a>
 <a href="http://cache.wallpaperdownloader.com/bing/img/BabyRedFox_20110322.jpg">baby fox picture</a>
 
 <style>
@@ -223,12 +223,12 @@ Target the end of an attribute. Turn all links to jpgs goldenrod.
 </style>
 
 	<a href="http://google.com">Google.com</a>
-	<a href="http://wesbos.com/logo.png">Wes Bos' logo</a>
-	<a href="http://wesbos.com/face.jpg">Wes Bos' picture</a>
+	<a href="http://wesbos.com/logo.png">Wes Bos' Headshot</a>
+	<a href="http://cache.wallpaperdownloader.com/bing/img/BabyRedFox_20110322.jpg">baby fox picture</a>
 
 	<style>
 		a[href$="jpg"] {
-			color:blue;
+			color:goldenrod;
 		}
 	</style>
 

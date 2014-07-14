@@ -6,11 +6,11 @@ title: Museum API Exercise
 
 #API Exercise
 
-Today we're going to build a small JavaScript app that uses the Rijksmuseum API to search for artwork. Download the starter files in [art-app-start.zip](art-app-start.zip) and open up `app.js` in Sublime Text and `index.html` in Chrome.
+Today we're going to build a small JavaScript app that uses the Rijksmuseum API to search for artwork. Download the starter files in [art-app-start.zip](exercises/art-app-start.zip) and open up `app.js` in Sublime Text and `index.html` in Chrome.
 
 #Phase 1: Art with Monkeys
 
-To get started, let's build some functionality to retrieve artwork with monkeys in it. It'll look like <a href="art-app-phase1-answer/index.html" target="_blank">this</a> when it's done.
+To get started, let's build some functionality to retrieve artwork with monkeys in it. It'll look like <a href="exercises/art-app-phase1-answer/index.html" target="_blank">this</a> when it's done.
 
 ##Setup your app structure
 
@@ -198,11 +198,11 @@ artApp.displayPieces = function(data){
 
 Test your code to see if your artwork shows up on the page! 
 
-The completed phase 1 code is [here](art-app-phase1-answer.zip) if you need a clean slate before moving on to phase 2.
+The completed phase 1 code is [here](exercises/art-app-phase1-answer.zip) if you need a clean slate before moving on to phase 2.
 
 #Phase 2: Art with [choose your animal!]
 
-Let's make this app more useful and allow user input to change the API results! It will look like [this](art-app-answer/index.html) when we're done.
+Let's make this app more useful and allow user input to change the API results! It will look like [this](exercises/art-app-answer/index.html) when we're done.
 
 ##Add a UI control for the user
 To get started, let's give the user a way to pick an animal. Add this select element markup to your HTML file on line 12:
@@ -343,7 +343,7 @@ artApp.updateTitle(animalName);
 
 Test your code one last time to make sure the title gets updated properly.
 
-And that's it! We made an app that searches for artwork with animals in it! The completed code for the app is [here](art-app-answer.zip).
+And that's it! We made an app that searches for artwork with animals in it! The completed code for the app is [here](exercises/art-app-answer.zip).
 
 ##More possibilities
 

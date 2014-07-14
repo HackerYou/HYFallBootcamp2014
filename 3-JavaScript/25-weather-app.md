@@ -20,7 +20,9 @@ For this widget we need the following data:
 * `icon_url`: image representing the weather
 
 
-We will combine this information to create a weather widget together. The HTML & CSS for the widget has been provided for you. Just open up `weather-app.html` to get started. jQuery has been included for you as well. We will write JavaScript inside of the `weather-app.js` file.
+We will combine this information to create a weather widget together. Download **[weather-app.zip](exercises/weather-app.zip)** to get started.
+
+The HTML & CSS for the widget has been provided for you in `weather-app.html`. jQuery has been included for you as well. We will write JavaScript inside of the `weather-app.js` file.
  
 For this app/widget we'll create an object called `weatherWidget` to namespace our code and organize it. The object will have several properties:
 
@@ -32,9 +34,14 @@ For this app/widget we'll create an object called `weatherWidget` to namespace o
 ### Reminder
 We will prefix all property calls with `weatherWidget`. So `weatherWidget.parseData` instead of just `weatherWidget`.
 
+You can view a complete working version of the app [here](exercises/weather-app-answer.zip).
 
 ## Extension exercises:
 
 * Create a button to update data on click
 * Change the background colour based on the weather condition
 * Provide an input field for state and city. Refresh the widget with the right data when the form is submitted.
+
+
+
+

@@ -98,7 +98,7 @@ Let's break that down.
 5. another `block statement`. Note that the `else` block is optional.
 
 
-![image](control-flow.png)
+![image](assets/control-flow.png)
 
 ### Block Statements
 A block statement is used to group statements (instructions). The block is delimited by a pair of curly brackets `{}`:
@@ -158,7 +158,7 @@ Solution: <span class="solution">`"It's kinda big"` is printed. `else if` is use
 
 Another powerful concept in programming is **loops**. With loops, a block of statements are repeatedly executed while a condition is true.
 
-![image](loops.png)
+![image](assets/loops.png)
 
 ### For Statement
 

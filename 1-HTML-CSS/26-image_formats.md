@@ -91,7 +91,7 @@ See the [full list of SVG properties](http://www.w3.org/TR/SVG/propidx.html).
 
 ###Exercise
 
-Download <a href="exercises/inline-svg.zip" class="exercise">inline-svg.zip</a> and open [inline-svg.html](exercises/inline-svg.html) in your editor. Let's try adding images using the `<img>` tag and inline (there's a few to choose from in the **images** folder) and some CSS!
+Download <a href="exercises/inline-svg.zip" class="exercise">inline-svg.zip</a> and open [inline-svg-answer.html](exercises/inline-svg-answer.html) in your editor. Let's try adding images using the `<img>` tag and inline (there's a few to choose from in the **images** folder) and some CSS!
 
 
 ###The `<svg>` element

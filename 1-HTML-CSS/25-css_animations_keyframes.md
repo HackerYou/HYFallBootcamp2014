@@ -97,7 +97,7 @@ Here are some demos of what you can do with animations:
 
 <a href="examples/animation.html" class="exercise">**Shooting Star Animation**</a>
 
-<a href="examples/transition.html" class="exercise">**Animation with Transitions**</a>
+<a href="examples/transitions.html" class="exercise">**Animation with Transitions**</a>
 
 
 Take a look at [this CodePen](http://codepen.io/jessynd/pen/JHeqs) by a past hackerYou student that demonstrates how keyframes work in action. You can even play around with the code. 

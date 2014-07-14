@@ -5,7 +5,7 @@ title: Week 5 Project - jQuery Gallery
 
 # Weekly Project: jQuery Gallery
 
-This week you are going to write some JavaScript using the jQuery library in order to build an interactive gallery. [Here is a demo](gallery-demo/index.html) of what the gallery should look like. We've given you the HTML, CSS and assets to start:  [`gallery-start.zip`](gallery-start.zip). The zip file has three collections of images that you can work with that will help to keep your project unique. Choose one collection to display in the gallery and remove the others that you aren't using.
+This week you are going to write some JavaScript using the jQuery library in order to build an interactive gallery. [Here is a demo](weekly_project5_files/gallery-demo/index.html) of what the gallery should look like. We've given you the HTML, CSS and assets to start:  [`gallery-start.zip`](weekly_project5_files/gallery-start.zip). The zip file has three collections of images that you can work with that will help to keep your project unique. Choose one collection to display in the gallery and remove the others that you aren't using.
 
 ## Gallery requirements
 

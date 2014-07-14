@@ -12,7 +12,7 @@ The **primitive types** of JavaScript values are *numbers*, *strings*, *boolean 
 
 We can think of objects as containers. Inside the container are **properties** , which are referred to as key-value pairs. Each property contains a *name* and *value* which can be referenced directly.
 
-![image](objects.png)
+![image](assets/objects.png)
 
 Another way to think about JavaScript objects is to compare them to real-life objects. An apple is an object and it has properties like colour, size, sugar-content, etc.
 

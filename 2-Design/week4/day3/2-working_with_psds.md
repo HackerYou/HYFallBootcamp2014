@@ -6,6 +6,8 @@ topic: ux
 
 #Working with PSDs
 
+Often you will receive a design from a client and be asked to translate it into a HTML document. The most common tool for viewing and interacting with images is Photoshop.
+
 ##Setting units
 Set your units to pixels in the **Preferences**. It will make your life easier. Promise.
 
@@ -27,7 +29,6 @@ Save for web and choose the appropriate image file type.
 **For cutting images:**
 
 * Crop tool: [Introducing the New Crop Tool in Photoshop CS6](http://psd.tutsplus.com/tutorials/tools-tips/photoshop-cs6-crop-tool/) (Video)
-* Slice tool: Not used that often anymore but here's a resource anyway! [Photoshop CS6: Slice Tool](http://www.youtube.com/watch?v=zOpkh2om1tI) (Video)
 
 **For measuring:**
 
@@ -36,3 +37,11 @@ Save for web and choose the appropriate image file type.
 
 ###Exercise
 Let's download the <a href="examples/hackeryou.psd" class="exercises">HackerYou PSD</a> and practice using some of these tools.
+
+##But, I don't want to buy Photoshop
+
+So Photoshop costs a lot and for a lot of uses, is overkill. Enter the replacemants.
+
+* Sketch is the biggest competitor entering the field. It is being adopted widely through the industry. $79 - [http://bohemiancoding.com/sketch/](http://bohemiancoding.com/sketch/)
+* Adobe has offered a tool called Project Parfait to help people without Photoshop view PSD's online [https://projectparfait.adobe.com/](https://projectparfait.adobe.com/)
+

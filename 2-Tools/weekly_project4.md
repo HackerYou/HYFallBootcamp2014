@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: project
 title: Week 4 Project - Optimize Your Workflow
 ---
 

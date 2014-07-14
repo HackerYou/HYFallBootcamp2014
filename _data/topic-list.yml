@@ -148,56 +148,56 @@
   - title: JS Cheat Sheet
     path: javascript-cheat-sheet.html
   - title: Arrays Practice
-    path: week5/day2/arrays.html
-    answerPath: week5/day2/arrays-ANSWER.html
+    path: exercises/arrays.html
+    answerPath: exercises/arrays-ANSWER.html
   - title: Functions Practice
-    path: week5/day2/exercises/functions.html
-    answerPath: week5/day2/exercises/functions-ANSWER.html
+    path: exercises/functions.html
+    answerPath: exercises/functions-ANSWER.html
   - title: Try jQuery
-    path: week5/day3/exercises/try-jquery.html
+    path: exercises/try-jquery.html
   - title: jQuery Events
-    path: week5/day3/exercises/jquery-events.html
+    path: exercises/jquery-events.html
   - title: To-do App Exercise
-    path: week5/to-do-app/to-do-app.html
-    answerPath: week5/to-do-app/to-do-app-answer.html
+    path: exercises/to-do-app/to-do-app.html
+    answerPath: exercises/to-do-app/to-do-app-answer.html
   - title: To-do App Extras
-    path: week5/to-do-app/to-do-app-extras.html
+    path: exercises/to-do-app/to-do-app-extras.html
   - title: Array Loop
-    path: week5/day3/exercises/array-loop.html
-    answerPath: week5/day3/exercises/array-loop-ANSWER.html
+    path: exercises/array-loop.html
+    answerPath: exercises/array-loop-ANSWER.html
   - title: Adding and Removing Classes
-    path: week5/day3/exercises/add-remove-toggle-class.html
-    answerPath: week5/day3/exercises/add-remove-toggle-class-ANSWER.html
+    path: exercises/add-remove-toggle-class.html
+    answerPath: exercises/add-remove-toggle-class-ANSWER.html
   - title: Countdown Clock
-    path: week5/day3/exercises/countdown.html
-    answerPath: week5/day3/exercises/countdown-ANSWER.html
+    path: exercises/countdown.html
+    answerPath: exercises/countdown-ANSWER.html
   - title: Random Colours
-    path: week5/day3/exercises/randowm-colours.html
-    answerPath: week5/day3/exercises/randowm-colours-ANSWER.html
+    path: exercises/random-colours.html
+    answerPath: exercises/random-colours-ANSWER.html
   - title: jQuery Challenge 1
-    path: week5/day3/exercises/challenge-1.html
+    path: exercises/challenge-1.html
   - title: jQuery Challenge 2
-    path: week5/day3/exercises/challenge-2.html
+    path: exercises/challenge-2.html
   - title: Degbugging JavaScript
-    path: week5/day4/exercises/debugging.html
-    answerPath: week5/day4/exercises/debugging-answer.html
+    path: exercises/debugging.html
+    answerPath: exercises/debugging-answer.html
   - title: Tic Tac Toe App Exercise
-    path: week6/day1/exercises/tic-tac-toe.html
-    answerPath: week6/day1/exercises/tic-tac-toe-answer.html
+    path: exercises/tic-tac-toe.html
+    answerPath: exercises/tic-tac-toe-answer.html
   - title: First AJAX Request
-    path: week6/day2/exercises/first-ajax-request.html
-    answerPath: week6/day2/exercises/first-ajax-request-fixed.html
+    path: exercises/first-ajax-request.html
+    answerPath: exercises/first-ajax-request-fixed.html
   - title: Sample AJAX Request and Response
-    path: week6/day2/exercises/ajax-response.html
+    path: exercises/ajax-response.html
   - title: AJAX Practice
-    path: week6/day2/exercises/ajax-practice.html
-    answerPath: week6/day2/exercises/ajax-practice-answer.html
+    path: exercises/ajax-practice.html
+    answerPath: exercises/ajax-practice-answer.html
   - title: Weather App Code Along
-    path: week6/day2/weather-app.zip
-    answerPath: week6/day2/weather-app-answer.zip
+    path: exercises/weather-app.zip
+    answerPath: exercises/weather-app-answer.zip
   - title: Art App Code Along
-    path: week6/art-app-start.zip
-    answerPath: week6/art-app-answer.zip
+    path: exercises/art-app-start.zip
+    answerPath: exercises/art-app-answer.zip
 - name: WordPress
   slug: wp
   directory: 4-Wordpress

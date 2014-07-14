@@ -16,14 +16,14 @@ AJAX is used all over the web to help provide continuous user experiences. Infin
 
 We can also use AJAX to asynchronously request data from an API in our own apps. Our JavaScript can "talk" to another server, gets some data, and update the current page without a browser refresh.
 
-Take a look at the [weather app](weather-app-answer/weather-app.html) we'll be building to see this in action.  Our weather app requests data from the Wundergrond API and displays it on the page in our desired format.
+Take a look at the [weather app](exercises/weather-app-answer/weather-app.html) we'll be building to see this in action.  Our weather app requests data from the Wundergrond API and displays it on the page in our desired format.
 
 **Unfortunate sidenote:** AJAX got named a long time ago when XML was popular. Don't worry, it still works with JSON! That's what we'll be using.
 
 
 ## $.ajax with jQuery
 
-AJAX has a few cross-browser quirks, so we'll work with jQuerys' **`$.ajax()` ** method to handle our requests.
+AJAX has a few cross-browser quirks, so we'll work with jQuerys' **`$.ajax()`** method to handle our requests.
 
 [Looking at the documentation](https://api.jquery.com/jQuery.ajax/), the `$.ajax()` method requires us to specify the url we're requesting from, and an optional settings object. Or you can pass *everything* in the settings object. I prefer this second syntax because it's easier to read and less error prone.
 
@@ -123,4 +123,4 @@ and update the DOM:
 
 ##Exercise
 
-Get some practice debugging and working with `$.ajax()` in [`ajax-practice.html`](exercises/ajax-practice.html).<br> Solution is [here](exercises/ajax-practice.html).
+Get some practice debugging and working with `$.ajax()` in <a href="exercises/ajax-practice.html" class="exercise">**ajax-practice.html**</a>.<br> Solution is [here](exercises/ajax-practice.html).

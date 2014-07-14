@@ -8,7 +8,7 @@ title: jQuery to-do app code along
 
 Today we will work together to code a to-do app in JavaScript and jQuery, following the steps below.
 
-Open up <a href="to-do-app/to-do-app.html" class="exercise">**to-do-app.html**</a> in Sublime Text and Google Chrome. We've loaded in jQuerty and bootstrap for some basic styles. We've also gone ahead and added the skeleton markup required for the app.
+Open up <a href="exercises/to-do-app/to-do-app.html" class="exercise">**to-do-app.html**</a> in Sublime Text and Google Chrome. We've loaded in jQuerty and bootstrap for some basic styles. We've also gone ahead and added the skeleton markup required for the app.
 
 Here's what we want our app to do:
 
@@ -280,7 +280,7 @@ $('ul').on('click', 'li', function(){
 });
 ```
 
-Have a look at <a href="to-do-app/to-do-app-answer.html" class="exercise">**to-do-app-answer.html**</a> for the complete app. 
+Have a look at <a href="exercises/to-do-app/to-do-app-answer.html" class="exercise">**to-do-app-answer.html**</a> for the complete app. 
 
 ##Kicking it up a notch. (BAM!)
 
@@ -293,4 +293,4 @@ There is so much more that you can do, here are some suggestions:
 - error if input is empty
 - automatically move completed items to the bottom
 
-Have a look at <a href="to-do-app/to-do-app-extras.html" class="exercise">**to-do-app-extras.html**</a> to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.
+Have a look at <a href="exercises/to-do-app/to-do-app-extras.html" class="exercise">**to-do-app-extras.html**</a> to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.

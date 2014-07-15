@@ -1,7 +1,7 @@
 ---
 layout: tools
 title: Working with PSDs
-topic: ux
+topic: tools
 ---
 
 #Working with PSDs

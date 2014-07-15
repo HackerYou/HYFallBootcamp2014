@@ -44,4 +44,5 @@ So Photoshop costs a lot and for a lot of uses, is overkill. Enter the replacema
 
 * Sketch is the biggest competitor entering the field. It is being adopted widely through the industry. $79 - [http://bohemiancoding.com/sketch/](http://bohemiancoding.com/sketch/)
 * Adobe has offered a tool called Project Parfait to help people without Photoshop view PSD's online [https://projectparfait.adobe.com/](https://projectparfait.adobe.com/)
-
+* Gimp is a free alternative to Photoshop that has many of the main features of Photoshop [http://www.gimp.org/](http://www.gimp.org/)
+* Pixlr is a free online alternative to Photoshop that works right in the browser [http://pixlr.com/](http://pixlr.com/)

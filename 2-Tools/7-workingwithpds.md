@@ -1,5 +1,5 @@
 ---
-layout: tools
+layout: notes
 title: Working with PSDs
 topic: tools
 ---

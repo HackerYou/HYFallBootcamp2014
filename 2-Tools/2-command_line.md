@@ -18,6 +18,8 @@ Nearly all software programs have a graphical user interface, or GUI. This means
 * Many tools that speed up development rely on the command line (e.g. Grunt, Sass/Less).
 * You'll feel like a hacker and that's super awesome.
 
+![thematrix](http://media.giphy.com/media/R7HJ4LnMhOJPO/giphy.gif)
+
 ## Opening the command line
 
 For Mac users, open the application called **Terminal**:

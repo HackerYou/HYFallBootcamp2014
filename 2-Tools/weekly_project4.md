@@ -17,7 +17,10 @@ Use the [http://gruntjs.com/plugins](http://gruntjs.com/plugins) directory to fi
 
 Implement at least three of the following optimizations with Grunt:
 * Set up a local server on your machine.
-* smush your images to reduce file size
+* Smush your images to reduce file size
+* Work with a Development and Production folder
+* Compile your HTML files from HAML or Jade
+* Use HAML or Jade to create template includes
 * minify CSS
 * minify JS
 * concatenate JS files

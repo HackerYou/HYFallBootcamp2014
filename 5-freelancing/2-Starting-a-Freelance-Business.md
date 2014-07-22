@@ -185,7 +185,7 @@ Understanding your commitment to the government is crucial when running your own
 Don't get me wrong, **You will have to pay a ton in personal taxes**, but many people are deterred from starting their own business because they think they will have to pay too much in taxes. THe reality is that **a sole proprietorship pays the same ammount of taxes as someone working at a job for an employer.** In fact, in most cases, you will be paying less taxes! More on this in the expenses section.
 
 ## Personal Taxes: A Refresher
-If you have worked a job for an employer before you may not totally understand how Canadian taxes work. Let's take a look. For most of these examples I'll be using $100,00 because it is a nice round number.
+If you have worked a job for an employer before you may not totally understand how Canadian taxes work. Let's take a look. For most of these examples I will be using $100,00 because it is a nice round number.
 
 ### Terms / Buzzwords
 

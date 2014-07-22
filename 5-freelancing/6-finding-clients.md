@@ -12,7 +12,7 @@ Finding clients for established freelancers is incredibly easy. Finding clients 
 You won't find good work on job boards. Any time someone posts online saying that they are looking for a freelance web developer, one of the two things will happen:
 
 1. The poster is looking for free or undervalued work. This isn't work your time. See Craigslist. 
-2. THe poster will get a million responses. Both from local developers who are desperate for work (bid to the bottom) as well as offshore development teams which are very popular in countries where the cost of living is much lower. 
+2. The poster will get a million responses. Both from local developers who are desperate for work (bid to the bottom) as well as offshore development teams which are very popular in countries where the cost of living is much lower. 
 
 We have all handed out a million resumes before, knowing that it will just go into a pile with the others. Getting work from job boards is no different. 
 
@@ -49,7 +49,7 @@ Agencies are huge for finding well-paying jobs. There are three ways you can ben
 
 1. When agencies are busy and do not have enough staff, they will often bring on a freelancer to help with the workload. Since you are not on their payroll, taking up deskspace or using their benefits, you can earn much more than a regular employee.
 2. Agencies will sometimes get projects that are outside their talent pool. Agencies often will bring me on for work specific to things I blog about - JavaScript and Wordpress. Since they aren't able to do it in house, they hire me
-3. Agencies take a _large_ projects. Generally anything under 5-10k isn't worth their time. So, clients who come to the agency with "smaller" budgets, get refereed to a list of known, reputable freelancers. For a freelancer, 5-10k can be _huge_, so grab that chaff. 
+3. Agencies take _large_ projects. Generally anything under 5-10k isn't worth their time. So, clients who come to the agency with "smaller" budgets, get referred to a list of known, reputable freelancers. For a freelancer, 5-10k can be _huge_, so grab that chaff. 
 
 ## Lunch, Beer, Coffee
 Once you have a few clients, its tempting to stay indoors and no longer make it out the events. It is so important to keep up your relationships, no matter how busy you are. 

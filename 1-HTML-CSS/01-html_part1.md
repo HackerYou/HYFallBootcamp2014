@@ -36,7 +36,7 @@ Let's take a second to breakdown what the code in a HTML document looks like. Yo
 You can view this in your browser or code editor by viewing <a href="exercises/hello-world.html" class="exercise">**hello-world.html**</a>.
 	
 1. #### The `DOCTYPE`
-	Before we even start to markup our document, we need to define what the __doctype__ is. The __doctype__ is a way of telling the browser what version of HTML we are using. In the past these have been long, archaic string of text that corresponded with the version of HTML. Since we are only teaching the latest and greatest, we get to use the new, short HTML5 doctype!
+	Before we even start to markup our document, we need to define what the __doctype__ is. The __doctype__ is a way of telling the browser what version of HTML we are using. In the past, these were long and archaic strings of text that corresponded with the version of HTML. Since we are only teaching the latest and greatest, we get to use the new, short HTML5 doctype!
 
 	**Gross XHTML 1.0 Strict**
 

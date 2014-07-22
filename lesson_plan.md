@@ -28,7 +28,7 @@ It is very hard to predict how long a lesson or exercise might take to complete.
 
 ## Responding to Question Queue 
 
-CURRI allows students to "toggle" a help switch and add themselves to a queue. Instructors can then go through the queue when they have time. Students are more likely to ask for help this way and help is fairly distributed. If a student asks for help outside of the queue then it's highly recommended that you politely ask them use the queue system to keep requests in one place.
+CURRI allows students to "TOGGLE" a help switch and add themselves to a queue. Instructors can then go through the queue when they have time. Students are more likely to ask for help this way and help is fairly distributed. If a student asks for help outside of the queue then it's highly recommended that you politely ask them use the queue system to keep requests in one place.
 
 ## End of Day
 

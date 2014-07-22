@@ -6,7 +6,7 @@ title: Git and GitHub
 
 # Git and GitHub
 
-Version control allows us to keep a record of any kind of changes in our directories/files such as updates to the contents of the file as well as adding, removing and renaming files.  It manages changes without overwriting any part of the project.
+Version control allows us to keep a record of any kind of changes in our directories/files such as updates to the contents of the files as well as adding, removing and renaming files.  It manages changes without overwriting any part of the project.
 
 You may have been in a situation where you've created an "index-version1.html" and "index-version2.html" or something similar in an effort to preserve a "good" copy while experimenting with another copy.  Version control allows us to save different versions of our entire project, compare different versions and revert back to previous versions, if needed.  It's also great for sharing and collaboration.
 
@@ -21,13 +21,13 @@ You may have been in a situation where you've created an "index-version1.html" a
 ## Getting Started
 To get started, we'll be using [GitHub.com](http://github.com) to host our version-controlled projects. This will bring your projects to the web and allow us to easily share our code and collaborate with others.
 
-There are two ways to access Git: using a GUI (graphical user interface) or via the command line. There mare many GUI clients to choose from (of course). Let's trying using GitHub for Mac ([https://mac.github.com/](https://mac.github.com/)) or for Windows ([https://windows.github.com/](https://windows.github.com/)).
+There are two ways to access Git: using a GUI (graphical user interface) or via the command line. There are many GUI clients to choose from (of course). Let's trying using GitHub for Mac ([https://mac.github.com/](https://mac.github.com/)) or for Windows ([https://windows.github.com/](https://windows.github.com/)).
 
 We will discuss how to use Git with the command line in another lesson.
 
 ### What is a repository?
 
-The purpose of Git is to manage & stores information about the changes in a project/set of files. Git stores this information in a **repository** also referred to as "repo" for short.
+The purpose of Git is to manage and store information about the changes in a project/set of files. Git stores this information in a **repository** also referred to as "repo" for short.
 
 After you create a repository, it is stored in the same folder as the project itself, in a subfolder called **.git**. Note that directories that start with a "dot" are usually hidden by default.  So, you may not see this .git directory on your computer but it may show in other places such as your FTP client.
 

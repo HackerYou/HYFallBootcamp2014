@@ -45,9 +45,9 @@ By blogging about a topic you really like, you will position yourself as the exp
 We have said this before. Blogging takes a lot of time and effort, but even small 20-min blog posts will help you gain clients. In two years, the momentum from having a full blog will be an invaluable asset. 
 
 ## Agencies
-Agencies are huge for finding well paying jobs. There are three ways you can benefit from becoming friends with agencies.
+Agencies are huge for finding well-paying jobs. There are three ways you can benefit from becoming friends with agencies.
 
-1. When agencies are busy and do not have enough staff, they will often bring on a freelancer to help with the work load. Since you are not on their payroll, taking up deskspace or using their benefits, you can earn much more than a regular employee.
+1. When agencies are busy and do not have enough staff, they will often bring on a freelancer to help with the workload. Since you are not on their payroll, taking up deskspace or using their benefits, you can earn much more than a regular employee.
 2. Agencies will sometimes get projects that are outside their talent pool. Agencies often will bring me on for work specific to things I blog about - JavaScript and Wordpress. Since they aren't able to do it in house, they hire me
 3. Agencies take a _large_ projects. Generally anything under 5-10k isn't worth their time. So, clients who come to the agency with "smaller" budgets, get refereed to a list of known, reputable freelancers. For a freelancer, 5-10k can be _huge_, so grab that chaff. 
 
@@ -58,7 +58,7 @@ Find time to ask people in the industry to have lunch/coffee/beer every once in 
 
 This is especially true when you see on twitter that someone is visiting Toronto from another city/country. A $7 sushi lunch turned into 30k worth of work for me from a single client.
 
-## Build Bridges, don't burn them
+## Build bridges, don't burn them
 We talked about this last week, but it is important to note this again. Keep your clients and those who refer you happy. 
 
 Say thanks for the referral if you were referred. I don't pay for leads, but I will buy them lunch or a small thank you gift. 
@@ -66,7 +66,7 @@ Say thanks for the referral if you were referred. I don't pay for leads, but I w
 ## Don't be the busy girl/guy
 No matter how busy you are, don't lead on that you are "UGH SO BUSY". This can be dangerous, because no one likes to bug the busy guy. 
 
-I often have people ask me if it's okay that they send clients my way. As if the client was not worthy of my dev skills because of being busy. Always be open to leads, always take the time to take to someone even if you are busy. 
+I often have people ask me if it's okay that they send clients my way. As if the client was not worthy of my dev skills because of being busy. Always be open to leads, always take the time to take to someone even if you **are** busy. 
 
 If someone is sending an introduction to you, make them feel comfortable with that. 
 

@@ -91,7 +91,7 @@ The selector for any element is just that element without the open `<` and close
 `<blockquote>Some quote</blockquote>` &rarr;`blockquote { ... }`
 
 ### Getting more specific with CSS Selectors
-The above is great, but what if we do not want to apply a style to every h2 element on the page? What if one of them is a different size, font or colour than the rest?
+The above is great, but what if we do not want to apply a style to every h2 element on the page? What if one of them is a different size, font, or colour than the rest?
 
 To do this, we need to get a little more specific with our selectors to only pick the elements we do want. Remember **attributes**? We will be using the **class** and **id** attributes here.
 

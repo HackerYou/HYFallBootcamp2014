@@ -185,6 +185,8 @@ Open the above codepen and let's step through the HTML, adding class names where
 
 When you finish that, try read through the CSS code and make some changes. Try and change values for sizes, fonts, borders, widths, padding and margin. See what happens.
 
+This is a test committed on June.22.14, I'm adding text to check if my code will work when fored to git hub.
+
 ## More Questions
 1. What does HTML stand for? CSS?
 	* <span class="hide">HyperText Markup Language, Cascading Stylesheets</span>

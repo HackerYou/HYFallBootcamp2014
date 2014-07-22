@@ -3,6 +3,7 @@ layout: notes
 title: HTML Elements
 topic: html
 ---
+what the heck are we doing?
 
 # HTML Elements
 

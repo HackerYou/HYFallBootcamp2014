@@ -263,7 +263,7 @@ Before we jump into all the tags, its important to understand what **attributes*
 
 Attributes are used to provide additional info on the HTML element. Different elements require different types of attributes. Here are some common ones you will be using:
 
-**src** - used to pass in the source of an element. Most commonly used on an image element:
+**src** - is used to pass in the source of an element. Most commonly used on an image element:
 
 	<img src="dog.jpg" alt="My Dog">
 	

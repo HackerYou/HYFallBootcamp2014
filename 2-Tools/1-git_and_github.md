@@ -27,7 +27,7 @@ We will discuss how to use Git with the command line in another lesson.
 
 ### What is a repository?
 
-The purpose of Git is to manage & stores information about the changes in a project/set of files. Git stores this information in a **repository** also referred to as "repo" for short.
+The purpose of Git is to manage and store information about the changes in a project/set of files. Git stores this information in a **repository** also referred to as "repo" for short.
 
 After you create a repository, it is stored in the same folder as the project itself, in a subfolder called **.git**. Note that directories that start with a "dot" are usually hidden by default.  So, you may not see this .git directory on your computer but it may show in other places such as your FTP client.
 

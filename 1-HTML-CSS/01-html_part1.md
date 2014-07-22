@@ -6,7 +6,7 @@ topic: html
 
 #Intro to HTML Part
 
-## What the heck is HTML?
+## What the f is HTML?
 
 * HTML stands for HyperText Markup Language
 * HTML is the language we use to present content onto our web page

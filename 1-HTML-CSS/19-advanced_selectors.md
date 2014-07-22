@@ -20,12 +20,12 @@ By now, we have become pretty comfortable with the following selectors:
 	.warning, .error {...}
 
 
-CSS3 (and CSS2 in some cases) has ushered in a set of new, more complex, selectors. Let's take a look at Some of them. Compatability and examples of each can be found at the excellent article by net tuts [http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/](http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/)
+CSS3 (and CSS2 in some cases) has ushered in a set of new, more complex, selectors. Let's take a look at some of them. Compatibility and examples of each can be found at the excellent article by net tuts [http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/](http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/)
 
 
 ## Adjacent Selectors — .cat + .dog {}
 
-Select an element right next to another element. Cats and dogs should not be beside eachother. Let's flag it!
+Select an element right next to another element. Cats and dogs should not be beside each other. Let's flag it!
 
 	<div class="cat">Cat</div>
 	<div class="dog">Dog</div>
@@ -159,6 +159,7 @@ Select elements with specific attribute. We have done this with input types befo
 ## Contains — a[href*="hack"]
 
 We can be a bit more lax with this. 
+<img src="http://mumbaitv.org/wp-content/uploads/2013/07/CHILLED-OUT-DOG.jpg" alt="pug relaxing">
 
 <a href="http://hack.ca">Hack.ca</a>
 <a href="http://www.google.com">Google</a>

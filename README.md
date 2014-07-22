@@ -7,7 +7,7 @@ http://hackeryou.herokuapp.com/
 This course covers:
 
 1. HTML & CSS
-2. Web Desgin Fundamentals
+2. Web Design Fundamentals
 3. JavaScript & jQuery
 4. WordPress
 5. Freelancing Tips

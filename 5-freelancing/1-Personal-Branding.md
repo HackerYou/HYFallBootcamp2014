@@ -28,7 +28,7 @@ In Wes's case, he worked really hard create a personal brand so that people asso
 The personal branding space carries around skeeze. Much of the personal branding world revolves around tips, tricks and gimmicks on how to stand out, how to model yourself after Apple Computers. It's often littered with stock images such as:
 
 ![](http://spinsucks.com/wp-content/uploads/2012/06/Personal-Brand.jpg)
-
+![](https://c1.staticflickr.com/5/4123/4865692323_5f40605d79_z.jpg)
 ![](http://www.explorics.com/wp-content/uploads/2013/07/Personal-Brand.png)
 
 Personal branding isn't about business cards or a gimmicky fedora that you always wear. It's about creating a **rock solid and well rounded perception*** of yourself, your skills, your work ethic and your business.

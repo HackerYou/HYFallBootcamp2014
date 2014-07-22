@@ -63,7 +63,7 @@ We talked about this last week, but it is important to note this again. Keep you
 
 Say thanks for the referral if you were referred. I don't pay for leads, but I will buy them lunch or a small thank you gift. 
 
-## Don't be the busy girl/guy
+## Don't be the busy girl/guy!!!
 No matter how busy you are, don't lead on that you are "UGH SO BUSY". This can be dangerous, because no one likes to bug the busy guy. 
 
 I often have people ask me if it's okay that they send clients my way. As if the client was not worthy of my dev skills because of being busy. Always be open to leads, always take the time to take to someone even if you **are** busy. 

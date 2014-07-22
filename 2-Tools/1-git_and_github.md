@@ -21,7 +21,7 @@ You may have been in a situation where you've created an "index-version1.html" a
 ## Getting Started
 To get started, we'll be using [GitHub.com](http://github.com) to host our version-controlled projects. This will bring your projects to the web and allow us to easily share our code and collaborate with others.
 
-There are two ways to access Git: using a GUI (graphical user interface) or via the command line. There mare many GUI clients to choose from (of course). Let's trying using GitHub for Mac ([https://mac.github.com/](https://mac.github.com/)) or for Windows ([https://windows.github.com/](https://windows.github.com/)).
+There are two ways to access Git: using a GUI (graphical user interface) or via the command line. There are many GUI clients to choose from (of course). Let's trying using GitHub for Mac ([https://mac.github.com/](https://mac.github.com/)) or for Windows ([https://windows.github.com/](https://windows.github.com/)).
 
 We will discuss how to use Git with the command line in another lesson.
 

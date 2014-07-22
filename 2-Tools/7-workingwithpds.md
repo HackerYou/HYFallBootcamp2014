@@ -36,7 +36,7 @@ Save for web and choose the appropriate image file type.
 * Rectangular Marquee Tool: [Photoshop CS6: Working with Marquee tools](http://www.youtube.com/watch?v=zCIwIaLhRsw)
 
 ###Exercise
-Let's download the <a href="examples/hackeryou.psd" class="exercises">HackerYou PSD</a> and practice using some of these tools.
+Let’s download the <a href="examples/hackeryou.psd" class="exercises">HackerYou PSD</a> and practice using some of these tools.
 
 ##But, I don't want to buy Photoshop
 

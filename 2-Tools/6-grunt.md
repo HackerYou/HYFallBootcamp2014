@@ -6,6 +6,8 @@ topic: tools
 
 #Grunt
 
+![grunt logo](https://pbs.twimg.com/profile_images/2563508262/falgg2jybmhgk16y62lr.png)
+
 ##What the heck is it?
 Grunt is a taskrunner tool that can be modified to your needs. Need to compile Sass, shrink images, ensure compliance across all devices? Use Grunt.
 

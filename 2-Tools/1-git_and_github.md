@@ -6,7 +6,7 @@ title: Git and GitHub
 
 # Git and GitHub
 
-Version control allows us to keep a record of any kind of changes in our directories/files such as updates to the contents of the file as well as adding, removing and renaming files.  It manages changes without overwriting any part of the project.
+Version control allows us to keep a record of any kind of changes in our directories/files such as updates to the contents of the files as well as adding, removing and renaming files.  It manages changes without overwriting any part of the project.
 
 You may have been in a situation where you've created an "index-version1.html" and "index-version2.html" or something similar in an effort to preserve a "good" copy while experimenting with another copy.  Version control allows us to save different versions of our entire project, compare different versions and revert back to previous versions, if needed.  It's also great for sharing and collaboration.
 

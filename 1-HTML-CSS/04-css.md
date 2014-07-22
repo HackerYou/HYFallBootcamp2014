@@ -42,7 +42,7 @@ If you aren't one for colours, I like to use the website [http://www.colourlover
 ## Let's play with CSS a little (Exercise 2)
 Writing CSS from scratch can be confusing if you are new to the game. The best way is to take some existing CSS, read it over, understand it and *hack it*.
 
-In coming classes, we will be learning a **ton** more about CSS, and what the values are, but for now we will be playing with some simple CSS properties and values.
+In coming classes, we will be learning a **tonne** more about CSS, and what the values are, but for now we will be playing with some simple CSS properties and values.
 
 Go ahead and open up [css-fun.html](exercises/css-fun.html) in both your browser and your text editor. Change around the css values and see what happens!
 

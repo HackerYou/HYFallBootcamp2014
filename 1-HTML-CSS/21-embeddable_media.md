@@ -27,7 +27,7 @@ The Via is a way to give props to the site you got it from. So globe and mail mi
 
 The **recommended** is kind of a neat way to get more followers. When one is finished tweeting a link from your website, it can suggest people to follow.
 
-The Hash tag is pretty straightforward.
+The hash tag is pretty straight-forward.
 
 Additionally you can set a large button and opt out of tailoring.
 
@@ -36,15 +36,15 @@ Finally we are done and get a chunk of code that looks like this:
 	<a href="https://twitter.com/share" class="twitter-share-button" data-via="wesbos">Tweet</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-There are two parts here and as a best practice, we are going to separate them. The reason we do this is because sometimes we might want multiple tweet buttons on a page. For example a blog might have 10 posts on a page, each with a tweet button.
+There are two parts here, and as a best practice we are going to separate them. The reason we do this is because sometimes we might want multiple tweet buttons on a page. For example, a blog might have 10 posts on a page, each with a tweet button.
 
 From your experience in HTML, you can probably pick out which line is the HTML link. **Put this line where you want the tweet button to appear**
 
-The other line is the javascript that turns your normal link into a tweet button. **Put this line in your head, below your stylesheet links**. This will make sure that we only load the JavaScript once, regardless of how many buttons we have on our page.
+The other line is the JavaScript that turns your normal link into a tweet button. **Put this line in your head, below your stylesheet links**. This will make sure that we only load the JavaScript once, regardless of how many buttons we have on our page.
 
 
 #### Widgets
-A twitter widget allows you to embed your tweet stream into your webpage. To get started, simply log into twitter and visit [https://twitter.com/settings/widgets](https://twitter.com/settings/widgets) and click 'create new'.
+A Twitter widget allows you to embed your tweet stream into your webpage. To get started, simply log into twitter and visit [https://twitter.com/settings/widgets](https://twitter.com/settings/widgets) and click 'create new'.
 
 Fill out the settings based on what you require. The tricky part / downside here is that you have to specify the domain name that you will be running it on. If you don't know the URL right now, then you'll have to go back and edit your widget once completed.
 
@@ -55,14 +55,14 @@ Once you have completed it, you'll have two lines of code that look something li
 	<a class="twitter-timeline" href="https://twitter.com/wesbos" data-widget-id="262938723455483904">Tweets by @wesbos</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-Paste this wherever you wish to have your twitter box and you are off to the races. **Note that if you already have a twitter button, you dont need the second line**. The Javascript will already be embedded into your page and you will simply just need the first HTML line!
+Paste this wherever you wish to have your Twitter box and you are off to the races. **Note that if you already have a twitter button, you dont need the second line**. **Note also that no one says "off to the races" anymore.** The Javascript will already be embedded into your page and you will just need the first HTML line!
 
-Since twitter uses an element called an `<iframe>`. An iframe is basically a way of framing other websites into your own website. You are able to see all that websites content, but we don't have access to it via CSS. 
+Since Twitter uses an element called an `<iframe>`. An iframe is basically a way of framing other websites into your own website. You are able to see all that websites content, but we don't have access to it via CSS. 
 
 
 ### Facebook
 
-Facebook is very similar to twitter in process. There is a little snippet of JavaScript that we add to our page as well as some HTML to embed the widget/like button.
+Facebook is very similar to Twitter in process. There is a little snippet of JavaScript that we add to our page as well as some HTML to embed the widget/like button.
 
 Head on over to [http://developers.facebook.com/docs/reference/plugins/like/](http://developers.facebook.com/docs/reference/plugins/like/) and fill out the required information.
 
@@ -70,18 +70,18 @@ If you put a website in the **Page URL field** then it will create a like button
 
 ![](http://wes.io/KV5O/Screen%20Shot%202012-10-29%20at%2012.04.11%20PM.png)
 
-When done, click "Get Code" and a popup will show.
+When done, click "Get Code" and a popup will appear.
 
 ![](http://wes.io/KUK1/Screen%20Shot%202012-10-29%20at%2012.01.04%20PM.png)
 
-The first part is the JavaScript. Facebook suggests we put this right after the opening `<body>` tag so go ahead and do that.
+The first part is the JavaScript. Facebook suggests we put this right after the opening `<body>` tag, so go ahead and do that.
 
 Then you can put the second snippet of HTML wherever you wish to have the like button.
 
 ### Youtube
-Whew, those last two were tough. Lets do something a lot easier.
+Whew, those last two were tough. Let's do something a lot easier.
 
-To embed a youtube video, simply visit any youtube video URL and click the **share** button under the player.
+To embed a YouTube video, simply visit any YouTube video URL and click the **share** button under the player.
 
 ![](http://wes.io/KUXr/Screen%20Shot%202012-10-29%20at%2012.07.01%20PM.png)
 

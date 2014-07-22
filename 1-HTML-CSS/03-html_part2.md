@@ -6,7 +6,7 @@ topic: html
 
 # HTML Elements
 
-## Viewing HTML in the browser
+## Viewing HTML in the browser 
 
 When we write HTML, we save our files with the extension of `.html`. To open an HTML file, you can either double click the file in your computer's file finder/explorer or right from Sublime Text, you can right click and select "Open in browser"
 
@@ -68,7 +68,7 @@ Suppose you wanted to create a bulleted list in html. You may be tempted to put 
 *	**Ordered lists** for when the order *does* matter:
 	1. Combine Ingredients
 	1. Blend Mixture _slowly_
-	1. Bake at 350 for 30 mins
+	1. Bake at 350 for 40 mins
 
 Each item inside an unordered or ordered list is called a **list item** and is wrapped inside `<li></li>`. So our first unordered and ordered lists look like this:
 	

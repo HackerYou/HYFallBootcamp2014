@@ -14,7 +14,7 @@ The following advice comes from two tutoring sessions that I did with students. 
 
 ### General advice
 
-* Avoid talking about things people haven't learned yet. Everything should be taught in familiar context.
+* Avoid talking about things people haven't learned yet. Everything should be taught in a familiar context.
 * Remind students that it helps to declare variables at the top of a function (and they can comma separate them).
 * Students struggle with syntax: common errors include `functionName ()`, a space is placed between the name and the parenthesis.
 * Formatting if/else statements and placing the brackets in the right place (stylistically) is difficult so suggest that they put the skeleton for the conditional in first before writing any other code.

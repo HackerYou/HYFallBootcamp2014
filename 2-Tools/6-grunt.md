@@ -6,6 +6,8 @@ topic: tools
 
 #Grunt
 
+![grunt logo](https://pbs.twimg.com/profile_images/2563508262/falgg2jybmhgk16y62lr.png)
+
 ##What the heck is it?
 Grunt is a taskrunner tool that can be modified to your needs. Need to compile Sass, shrink images, ensure compliance across all devices? Use Grunt.
 
@@ -32,7 +34,7 @@ Grunt and Grunt Plugins are installed via NPM (Node.js Package Manager). Visit [
 
 In order to use Grunt, we need to install the tools on our command line
 
-	$ npm install -g grunt-cli
+    $ npm install -g grunt-cli
 
 What this command does is the following
 
@@ -54,54 +56,53 @@ This file is used by npm to store metadata for projects published as npm modules
 This file is used to configure or define tasks and load Grunt plugins.
 
 
-##How to use Grunt while starting from scratch
+##How to start from scratch and add new plugins
 
 1. In your terminal, navigate to your project folder and then run the `npm init` command.
 2. Via the terminal prompt, give your Grunt Project a name, a version, etc, and anything else needed. If you would like to use the defaults, simply press enter at each question.
 3. Install Grunt within this project by running the command `npm install grunt --save-dev`
-4. Within your Gruntfile.js, insert the following code
-		
-		module.exports = function(grunt) {
+4. Within your Gruntfile.js, you'll see the following code
 
-  			// Project configuration.
-  			grunt.initConfig({
-    			pkg: grunt.file.readJSON('package.json'),
-  			});
+    module.exports = function(grunt) {
 
-  			// Default task(s).
-  			grunt.registerTask('default', []);
+        // Project configuration.
+        grunt.initConfig({
+          pkg: grunt.file.readJSON('package.json'),
+        });
 
-		};
+        // Default task(s).
+        grunt.registerTask('default', []);
+
+    };
 5. Install new plugins using the `npm install pluginName --save-dev` command. This will download the file and add it to your package.json file.
 6. Add the task and define it's action within your Gruntfile.js. The following example is using the Grunt Sass task.
 
-		
-		module.exports = function(grunt) {
 
-  			// Project configuration.
-  			grunt.initConfig({
-    			pkg: grunt.file.readJSON('package.json'),
-    			// Set up configuration options
-    			sass: {
-        			dist: {
-            			options: {
-                			includePaths: ['imports/are/here/'],
-                			outputStyle: 'nested'
-            			},
-            			files: {
-                			'main.css': 'main.scss'
-            			}
-        			}
-    			}
-  			});
-  			
-  			// Load the task plugins
-  			grunt.loadNpmTasks('grunt-sass');
+          module.exports = function(grunt) {
+                // Project configuration.
+                grunt.initConfig({
+                    pkg: grunt.file.readJSON('package.json'),
+                    // Set up configuration options
+                    sass: {
+                        dist: {
+                            options: {
+                                includePaths: ['imports/are/here/'],
+                                outputStyle: 'nested'
+                            },
+                            files: {
+                                'main.css': 'main.scss'
+                            }
+                        }
+                    }
+                });
 
-  			// Define Tasks.
-  			grunt.registerTask('default', ['sass']);
+                // Load the task plugins
+                grunt.loadNpmTasks('grunt-sass');
 
-		};
+                // Define Tasks.
+                grunt.registerTask('default', ['sass']);
+
+            };
 
 7. Run `grunt` in your terminal!
 
@@ -114,8 +115,8 @@ This file is used to configure or define tasks and load Grunt plugins.
 
 By default the `grunt.registerTask('default', []);` portion of the Gruntfile.js is where you list the tasks that want run and in what order they should be run in. However, you can group tasks into relative groups eg Autoprefixer and UnCSS which will only run when you define a task that includes them.
 
-	grunt.registerTask('clean', ['autoprefixer', 'uncss']);
-	
+  grunt.registerTask('clean', ['autoprefixer', 'uncss']);
+
 ##Recommended Grunt Tasks
 As always, read the documentation on how to use the plugins
 

@@ -91,11 +91,11 @@ The selector for any element is just that element without the open `<` and close
 `<blockquote>Some quote</blockquote>` &rarr;`blockquote { ... }`
 
 ### Getting more specific with CSS Selectors
-The above is great, but what if we do not want to apply a style to every h2 element on the page? What if one of them is a different size, font or colour than the rest?
+The above is great, but what if we do not want to apply a style to every h2 element on the page? What if one of them is a different size, font, or colour than the rest?
 
 To do this, we need to get a little more specific with our selectors to only pick the elements we do want. Remember **attributes**? We will be using the **class** and **id** attributes here.
 
-Lets say we have three paragraphs, yet only want one of them to have a yellow background. Our normal rule of `p { background:yellow; }` wouldn't work here because it would turn them all yellow.
+Let's say we have three paragraphs, yet only want one of them to have a yellow background. Our normal rule of `p { background:yellow; }` wouldn't work here because it would turn them all yellow.
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 	<p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -122,14 +122,14 @@ And then in our CSS, we can write a new selector. We use the `.` period to denot
 
 As a general rule of thumb, it's best to start writing your CSS using less specific selectors, and then get as specific as you need. In the first rule, the .special class has to be applied specifically to a `<p>` tag in order for the style to appear.  In the second example, the class can be applied to any element (p, div, a, etc). Decide how specific you need to be. 
 
-**Note**: you may also sometimes see elements with an **ID** instead of a class such as `<p id="special">...</p>`. IDs are just like classes, but they can **only be used once** per page. As a best practice, we won't be using IDs in this class, however, if you run into them in the wild, simple substitute the `.` period for the `#` hash like so:
+**Note**: you may also sometimes see elements with an **ID** instead of a class such as `<p id="special">...</p>`. IDs are just like classes, but they can **only be used once** per page. As a best practice, we won't be using IDs in this class, however, if you run into them in the wild, simply substitute the `.` period for the `#` hash like so:
 
 	/* Turns the only paragraph with the id of special yellow */
 	p#special {
 		background:yellow;
 	}
 
-You can name your classes and ids anything you want but choose a specific, functional name that describes the what the style is being used for. 
+You can name your classes and ids anything you want but choose a specific, functional name that describes what the style is being used for. 
 
 The name cannot contains spaces. Use camel casing (myClassName), dashes (my-class-name) or underscores (my_class_name) to separate words. Pick one and be consistent.
 
@@ -219,7 +219,7 @@ So we use a parent child selector:
 
 This parent/child selector selects only the `a` elements within `ul` with the class of `groceries`.
 
-There is no limit to the number child selectors you can use, however, try and take the shortest route when creating parent/child selectors and try not to go more than three levels deep (like Inception!). 
+There is no limit to the number of child selectors you can use, however, try and take the shortest route when creating parent/child selectors and try not to go more than three levels deep (like Inception!). 
 
 For this same example, we could have written `ul.groceries li a` which adds the step to make sure the `a` has a parent of `li`.
 

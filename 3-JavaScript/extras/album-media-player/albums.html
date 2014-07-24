@@ -28,6 +28,34 @@
       background:#EBEBEB;
       font-family: sans-serif;
     }
-    
+
+    .albums img {
+      border: 1px solid #ccc;
+      background: white;
+      padding: 5px;
+      width: 200px;
+      margin: 10px;
+      -webkit-transition: all 0.5s;
+      cursor: pointer;
+    }
+
+    .albums img.selected {
+      background: #333;
+    }
+
+    .albums img.playing {
+      -webkit-animation: pulse 0.25s infinite alternate;
+    }
+
+    @-webkit-keyframes pulse {
+      0% {
+        box-shadow: 0 0 10px red;
+      }
+      100% {
+        box-shadow: 0 0 20px red;
+      }
+    }
+  </style>
+
 </body>
 </html>

@@ -36,7 +36,7 @@ Let's take a second to breakdown what the code in a HTML document looks like. Yo
 You can view this in your browser or code editor by viewing <a href="exercises/hello-world.html" class="exercise">**hello-world.html**</a>.
 	
 1. #### The `DOCTYPE`
-	Before we even start to markup our document, we need to define what the __doctype__ is. The __doctype__ is a way of telling the browser what version of HTML we are using. In the past these have been long, archaic string of text that corresponded with the version of HTML. Since we are only teaching the latest and greatest, we get to use the new, short HTML5 doctype!
+	Before we even start to markup our document, we need to define what the __doctype__ is. The __doctype__ is a way of telling the browser what version of HTML we are using. In the past, these were long and archaic strings of text that corresponded with the version of HTML. Since we are only teaching the latest and greatest, we get to use the new, short HTML5 doctype!
 
 	**Gross XHTML 1.0 Strict**
 
@@ -184,6 +184,8 @@ This exercise is designed to give you a little taste of what we will be working 
 Open the above codepen and let's step through the HTML, adding class names where the comments say to do so.
 
 When you finish that, try read through the CSS code and make some changes. Try and change values for sizes, fonts, borders, widths, padding and margin. See what happens.
+
+This is a test committed on June.22.14, I'm adding text to check if my code will work when fored to git hub.
 
 ## More Questions
 1. What does HTML stand for? CSS?

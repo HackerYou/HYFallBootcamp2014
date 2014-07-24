@@ -51,6 +51,8 @@ ask with something called a `pull request`. To open a new pull request:
 ![](http://f.cl.ly/items/2m3F442l1r371O1q0s47/Screen%20Shot%202014-02-07%20at%2010.35.30%20AM.png)
 6. You're done! It's now up to the original owner to approve your changes. 
 
+![](http://natcooper.com/images/GitHub-Diagram.jpg)
+
 ###Exercise
 Our course notes are stored in a GitHub repository! https://github.com/HackerYou/web_dev_full_time 
 

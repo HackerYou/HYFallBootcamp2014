@@ -6,7 +6,7 @@ title: Objects
 
 <style> .note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; } </style>
 
-# Week 5, Day 2 Objects
+# Objects
 
 The **primitive types** of JavaScript values are *numbers*, *strings*, *boolean values* (true and false), *null* (haven't discussed this yet), and *undefined*. All other values are something called **objects**.
 

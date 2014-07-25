@@ -46,9 +46,9 @@ Even if you aren't developing a responsive site, this tag is useful for when you
 ## Media Queries
 Media Queries are the bees knees when it comes to making a responsive website.
 
-To put it simply, Media Queries allow you to apply CSS to your document only when the screen has reach a certain size (or other params which we will learn about soon).
+To put it simply, Media Queries allow you to apply CSS to your document only when the screen has reached a certain size (or other params which we will learn about soon).
 
-So, you can code block of CSS that is only applied at certain points of your website, otherwise it is not applied to your elements.
+So, you can code a block of CSS that is only applied at certain points of your website, otherwise it is not applied to your elements.
 
 Lets take a look
 
@@ -268,7 +268,7 @@ Now that last example worked great, but what if we only want our site to be so a
 
 Easy, we just use a new CSS property called `max-width` which will allow it to be any size with up to this value.
 
-Open up our last example and lets add int he following code:
+Open up our last example and lets add in the following code:
 
 	.wrapper {
 		max-width:960px;
@@ -355,7 +355,7 @@ It is reccomended you use at least 144x144 and let the device size it down for y
 
 How do you go about designing and planning the structure a website? Should you start in Photoshop? Draw on paper? Code right away?
 
-There are many different ways and many different programs that can be used to create wireframes. But many developers and designers stick to a sharp pencil and graph paper. These sketches do not need to look perfect, they are simply for creating blueprint for your designs.
+There are many different ways and many different programs that can be used to create wireframes. But many developers and designers stick to a sharp pencil and graph paper. These sketches do not need to look perfect, they are simply for creating a blueprint for your designs.
 
 Do what works for you. If you already have a workflow that works for you (especially if you're a graphic designer) then you can stick to it. On the other hand, if you don't have a workflow yet then try the following:
 
@@ -367,7 +367,7 @@ Think about the goal of the website. Who is the target audience? What content ne
 
 Get out some paper and a pen/pencil and start drawing rough sketches. The sketches serve as mockups and wireframes for the website. The focus of the wireframe should be on information & content placement while taking into consideration how the users will interact with the content.
 
-Do not think about the design of the site, just the layout of where content will go. It is helpful to make a list of everything that needs to go on site site as well and start to block off where things will go.
+Do not think about the design of the site, just the layout of where content will go. It is helpful to make a list of everything that needs to go on the site as well and start to block off where things will go.
 
 ##Additional Resources: 
 

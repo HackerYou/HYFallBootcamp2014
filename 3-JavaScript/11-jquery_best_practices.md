@@ -1,7 +1,7 @@
 ---
 layout: notes
 topic: js
-title: jQuery Best Pracitces
+title: jQuery Best Practices
 ---
 
 # jQuery Best Practices
@@ -78,8 +78,10 @@ $(#widget).css('background', 'grey');
 
 This can improve readability of your code and is also another technique to cache a selector.
 
-###Exercise: Group Code Review & Refactor
+###Exercise: Code Review & Refactor
 
-Let's take a look at the jQuery gallery we made last week and see if we can improved our code with the best practices above.
+Work in pairs and review your jQuery exercises from earlier in the week to see if you can improve your code quality with the best practices above. 
 
-This is also an opportunity to review any other questions from the exercise.
+<!-- Let's take a look at the jQuery gallery we made last week and see if we can improved our code with the best practices above.
+
+This is also an opportunity to review any other questions from the exercise. -->

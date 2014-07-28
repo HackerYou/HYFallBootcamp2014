@@ -65,7 +65,7 @@ There will come a time when emailing back and forth with a client turns into a t
 
 While email can often work for smaller projects, anything larger should use a proper project management system to keep track of everything going on.
 
-Project management software will allow you to create threads for discussion, create lists of items required to be finished, upload screenshots, embed media and many more things. You are also able to create a shared calendar with important project milestones.
+Project management software will allow you to create threads for discussion, create lists of items required to be finished, upload screen shots, embed media and many more things. You are also able to create a shared calendar with important project milestones.
 
  
 ### Basecamp
@@ -119,7 +119,7 @@ This increase the professionalism of your company as well as cut down on expensi
 
 ## Skype Out
 
-In Canada we aren't lucky enough to be able to have Skype In numbers which assigns a number to your skype account. You can, however, get something call Skype out that allows you to call anyone from skype while the caller ID still shows up as your normal phone number. I have an unlimited plan within North America and it costs me $3/month. 
+In Canada we aren't lucky enough to be able to have Skype In numbers which assigns a number to your Skype account. You can, however, get something call Skype out that allows you to call anyone from Skype while the caller ID still shows up as your normal phone number. I have an unlimited plan within North America and it costs me $3/month. 
 
 ## Microsoft LX-3000
 
@@ -130,17 +130,19 @@ There are many headsets like these. I've found these to be the best for your mon
 <http://www.microsoft.com/hardware/en-us/p/lifechat-lx-3000>
 
 
-## Sign Documents with Adobe Reader
+## Sign Documents with Adobe Reader or OSX Preview
 Chances are you will be signing a lot of contracts and Non-disclosure agreements. It's 2014 and I still have people tell me where I can fax documents. What a joke! 
 
 I used to print contract, sign them, scan them in, and them somehow cobble them back together into a single PDF. Here is how I handle signing contracts now.
 
 1. Sign a piece of paper and scan it in, or take a photo with a good camera.
-2. Bring that into photoshop a separate it into a a layered signature. This usually involves playing with the brightness/contrast.
+2. Bring that into Photoshop a separate it into a a layered signature. This usually involves playing with the brightness/contrast.
 3. Save as a transparent PNG file.
 4. Download and install Adobe Reader
 
 Now, when you open PDF files with Adobe Reader, you have the option to sign documents. Simply import your signature and continue signing away. 
+
+OSX preview does this and is built in, but I've found it doesn't handle some fields properly as well as a encrypting a digital signature. 
 
 ## Faxing wit HelloFax.
 Once in a blue moon you will actually have to fax something. I have about 4 times in my career. 
@@ -158,4 +160,4 @@ For shorter clips, you can use free, web-based software screenr. It is based on 
 
 <http://www.screenr.com/>
 
-Another option is to "broadcast" a public google hangout which can then be pushed to youtube. This doesn't provide any editing tools. 
+Another option is to "broadcast" a public Google hangout which can then be pushed to YouTube. This doesn't provide any editing tools. 

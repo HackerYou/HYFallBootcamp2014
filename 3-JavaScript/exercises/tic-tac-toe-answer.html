@@ -41,7 +41,7 @@
 			margin-top: 20px;
 	 	}
 		button:hover {
-			color: #222;	
+			color: #222;
 		}
 
 		.grid {
@@ -89,7 +89,7 @@
 			<div class="square"></div>
 		</div>
 		<p class="player"><span>X</span>'s turn to play.</p>
-		<button class="clear">New Game</button>	
+		<button class="clear">New Game</button>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
@@ -98,11 +98,10 @@
 		ticTacToeApp.currentPlayer = "X";
 
 		ticTacToeApp.init = function() {
-			ticTacToeApp.container = $('#grid');
-			ticTacToeApp.squares = ticTacToeApp.container.find('.square');
-			ticTacToeApp.playerLabel = $('.player span')
+			ticTacToeApp.$squares = $('#grid').find('.square');
+			ticTacToeApp.$playerLabel = $('.player span')
 
-			ticTacToeApp.squares.on('click', function(){
+			ticTacToeApp.$squares.on('click', function(){
 				ticTacToeApp.placeMarker($(this));
 			});
 
@@ -116,7 +115,7 @@
 			if ($square.hasClass('inactive')){
 				return;
 			}
-		  // puts an X or an O on the board 
+		  // puts an X or an O on the board
 		  // and marks the square as unavailable
 			$square.html(ticTacToeApp.currentPlayer).addClass('inactive');
 
@@ -137,15 +136,19 @@
 		  }
 
 		  //also update the player playerLabel
-		  ticTacToeApp.playerLabel.html(ticTacToeApp.currentPlayer);
+		  ticTacToeApp.$playerLabel.html(ticTacToeApp.currentPlayer);
+		}
+
+		ticTacToeApp.clearBoard = function(){
+		  ticTacToeApp.$squares.html("").removeClass('inactive');
 		}
 
 		ticTacToeApp.checkForWin = function(){
 		  //checks to see if there is a row of three anywhere
 		  var moves = [];
 		  var movesMade = 0;
-		  
-		  ticTacToeApp.squares.each(function(){
+
+		  ticTacToeApp.$squares.each(function(){
 		  	if ($(this).html() == "X") {
 		  		moves.push(1);
 		  		movesMade ++;
@@ -159,32 +162,29 @@
 
 		  var wins = [
 		  	//rows
-		  	moves[0] + moves[1] + moves[2], 
+		  	moves[0] + moves[1] + moves[2],
 		  	moves[3] + moves[4] + moves[5],
 		  	moves[6] + moves[7] + moves[8],
 		  	//cols
-		  	moves[0] + moves[3] + moves[6], 
+		  	moves[0] + moves[3] + moves[6],
 		  	moves[1] + moves[4] + moves[7],
 		  	moves[2] + moves[5] + moves[8],
 		  	//diagonals
-		  	moves[0] + moves[4] + moves[8], 
+		  	moves[0] + moves[4] + moves[8],
 		  	moves[2] + moves[4] + moves[6]
 		  ];
 
 		  if (wins.indexOf(3) >= 0) {
 		  	alert("X wins!");
-		  	ticTacToeApp.squares.addClass('inactive');
+		  	ticTacToeApp.$squares.addClass('inactive');
 		  } else if (wins.indexOf(-3) >= 0){
 		  	alert("O wins!");
-		  	ticTacToeApp.squares.addClass('inactive');
+		  	ticTacToeApp.$squares.addClass('inactive');
 		  } else if (movesMade == 9){
 		  	alert("Game over! It's a draw.");
 		  }
 		}
 
-		ticTacToeApp.clearBoard = function(){
-		  ticTacToeApp.squares.html("").removeClass('inactive');
-		}
 
 		$(function(){
 			ticTacToeApp.init();

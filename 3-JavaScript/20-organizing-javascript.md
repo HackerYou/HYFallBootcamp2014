@@ -156,7 +156,7 @@ $(function(){
 
 Create a tic-tac-toe app in jQuery, organized using an app object. 
 
-Use <a href="exercises/tic-tac-toe.html" downlaod>`tic-tac-toe.html`</a> to get you started. The solution is<a href="exercises/tic-tac-toe-answer.html" downlaod> here.</a>
+Use <a href="exercises/tic-tac-toe.html" class="exercise">**tic-tac-toe.html**</a> to get you started. The solution is<a href="exercises/tic-tac-toe-answer.html" downlaod> here.</a>
 
 <!-- # Closure - too complex, removing for now
 

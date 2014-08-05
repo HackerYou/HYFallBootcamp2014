@@ -41,7 +41,7 @@
 			margin-top: 20px;
 	 	}
 		button:hover {
-			color: #222;	
+			color: #222;
 		}
 
 		.grid {
@@ -89,7 +89,7 @@
 			<div class="square"></div>
 		</div>
 		<p class="player"><span>X</span>'s turn to play.</p>
-		<button class="clear">New Game</button>	
+		<button class="clear">New Game</button>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
@@ -98,41 +98,51 @@
 		/* 2. add a new variable for the current player to your app
 		and give it a value of "X", the starting player */
 
-		/* 3. create an init function.
-		 It should include some cached jQuery selectors and
-		 click handlers for the game squares and the clear button */
+		/* 3a. create an init function. */
 
-		/* 4. Think of all the other bits of funcitonality your 
-		 app might need to do and create EMPTY functions for them. 
+
+		/* 3b. cache some jQuery selectors inside your init function,
+			eg. ticTacToeApp.$squares = $('#grid').find('.square');
+
+
+		/* 3c. Create two click handlers - one for the squares and one
+		  for the clear button, also inside your init function.
+		  Leave them empty for now.
+
+
+		/* 4. Think of all the small bits of functionality your
+		 app might need to do and create EMPTY functions for them.
 		 We'll fill in the details later.
-		 
-		 For example, you'll probably need a function that switches the 
-		 active player from "X" to "O" and vice versa when a turn is done.  
+
+		 For example, you'll probably need a function that switches the
+		 active player from "X" to "O" and vice versa when a turn is done.
 		 We've added that one for you below. */
 
-		 tictacToeApp.switchPlayer = function(){
-			//switch the active player 
+		 ticTacToeApp.switchPlayer = function(){
+			//switch the active player
 		 };
 
 		/* 5. Call your init function within a jQuery doc ready*/
 
-		/* 6. Go back to all your empty functions and start filling 
-		 in the details for each one - work on one piece of funcitonality
+		/* 6. Go back to all your empty functions and start filling
+		 in the details for each one - work on one piece of functionality
 		 at a time.  Some functions will call other functions or reference
-		 other variables in your app. */
+		 other variables in your app. You can also fill in the click
+		 handlers in your init function to each call a single function. */
 
 
 		/* HINT: the logic for checking if a player has won is a
 		 little tricky so we've written that app function for you already.
-		 You'll just need to call it in the appropriate place. */
- 
+		 You'll just need to call it in the appropriate place.
+		 Make sure you have a `ticTacToeApp.$squares` variable. */
+
  		/* BEGIN check for winner function */
 		ticTacToeApp.checkForWin = function(){
 		  //checks to see if there is a completed row of three
 		  var moves = [];
 		  var movesMade = 0;
-		  
-		  ticTacToeApp.squares.each(function(){
+
+		  ticTacToeApp.$squares.each(function(){
 		  	if ($(this).html() == "X") {
 		  		moves.push(1);
 		  		movesMade ++;
@@ -146,24 +156,24 @@
 
 		  var wins = [
 		  	//rows
-		  	moves[0] + moves[1] + moves[2], 
+		  	moves[0] + moves[1] + moves[2],
 		  	moves[3] + moves[4] + moves[5],
 		  	moves[6] + moves[7] + moves[8],
 		  	//cols
-		  	moves[0] + moves[3] + moves[6], 
+		  	moves[0] + moves[3] + moves[6],
 		  	moves[1] + moves[4] + moves[7],
 		  	moves[2] + moves[5] + moves[8],
 		  	//diagonals
-		  	moves[0] + moves[4] + moves[8], 
+		  	moves[0] + moves[4] + moves[8],
 		  	moves[2] + moves[4] + moves[6]
 		  ];
 
 		  if (wins.indexOf(3) >= 0) {
 		  	alert("X wins!");
-		  	ticTacToeApp.squares.addClass('inactive');
+		  	ticTacToeApp.$squares.addClass('inactive');
 		  } else if (wins.indexOf(-3) >= 0){
 		  	alert("O wins!");
-		  	ticTacToeApp.squares.addClass('inactive');
+		  	ticTacToeApp.$squares.addClass('inactive');
 		  } else if (movesMade == 9){
 		  	alert("Game over! It's a draw.");
 		  }

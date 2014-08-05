@@ -200,3 +200,8 @@ When in css, you can usually just type the first few letters of what you want, a
 * `p10p` →  `padding: 10%;`
 * `bt` →  `border-top: `
 * `bb` →  `border-bottom: `
+
+### Additional Resources:
+
+* [Emmet Cheatsheet](http://mmcfadyen.ca/blog/all-the-emmet-shortcuts-you-forgot/)
+

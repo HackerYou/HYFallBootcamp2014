@@ -227,7 +227,7 @@ You can use logical operators (and, or, not) to create more complex conditional 
     var email = "bob@hotmail.com"
     var hairColour = "blonde"
 
-    if (firstName === "Bob" && email === "bob@hotmail.com"){
+    if (name === "Bob" && email === "bob@hotmail.com"){
         // this code only evaluates if BOTH conditions hold true
         console.log('identity verified');
     }

@@ -98,11 +98,10 @@
 		ticTacToeApp.currentPlayer = "X";
 
 		ticTacToeApp.init = function() {
-			ticTacToeApp.container = $('#grid');
-			ticTacToeApp.squares = ticTacToeApp.container.find('.square');
-			ticTacToeApp.playerLabel = $('.player span')
+			ticTacToeApp.$squares = $('#grid').find('.square');
+			ticTacToeApp.$playerLabel = $('.player span')
 
-			ticTacToeApp.squares.on('click', function(){
+			ticTacToeApp.$squares.on('click', function(){
 				ticTacToeApp.placeMarker($(this));
 			});
 
@@ -137,7 +136,11 @@
 		  }
 
 		  //also update the player playerLabel
-		  ticTacToeApp.playerLabel.html(ticTacToeApp.currentPlayer);
+		  ticTacToeApp.$playerLabel.html(ticTacToeApp.currentPlayer);
+		}
+
+		ticTacToeApp.clearBoard = function(){
+		  ticTacToeApp.$squares.html("").removeClass('inactive');
 		}
 
 		ticTacToeApp.checkForWin = function(){
@@ -145,7 +148,7 @@
 		  var moves = [];
 		  var movesMade = 0;
 
-		  ticTacToeApp.squares.each(function(){
+		  ticTacToeApp.$squares.each(function(){
 		  	if ($(this).html() == "X") {
 		  		moves.push(1);
 		  		movesMade ++;
@@ -173,18 +176,15 @@
 
 		  if (wins.indexOf(3) >= 0) {
 		  	alert("X wins!");
-		  	ticTacToeApp.squares.addClass('inactive');
+		  	ticTacToeApp.$squares.addClass('inactive');
 		  } else if (wins.indexOf(-3) >= 0){
 		  	alert("O wins!");
-		  	ticTacToeApp.squares.addClass('inactive');
+		  	ticTacToeApp.$squares.addClass('inactive');
 		  } else if (movesMade == 9){
 		  	alert("Game over! It's a draw.");
 		  }
 		}
 
-		ticTacToeApp.clearBoard = function(){
-		  ticTacToeApp.squares.html("").removeClass('inactive');
-		}
 
 		$(function(){
 			ticTacToeApp.init();

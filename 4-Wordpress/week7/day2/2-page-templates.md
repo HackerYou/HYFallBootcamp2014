@@ -49,7 +49,7 @@ Header of your site. Usually contains your logo, navigation as well as the start
 eg `<div class="wrapper"></div>` or `<div class="container"></div>`. These would then be _closed_ in the `footer.php` file.
 
 #### humans.txt
-This is a file where you can attribute yourself, others and technologies used in the site. More info: http://humanstxt.org/
+This is a file where you can attribute yourself, others and technologies used in the site. More info: <http://humanstxt.org/>
 
 #### index.php
 Usually you would think index.php would be the home page of your site. And with a default wordpress, this is true. However, if we set another page to be the home page, `index.php` controls the *front page of your blog*.

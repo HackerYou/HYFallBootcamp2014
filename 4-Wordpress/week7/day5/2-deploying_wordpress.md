@@ -38,7 +38,7 @@ To export our local databse, we need to access our local phpMyAdmin.
 
 From MAMP, click "Open StartPage", then from the start page, click Tools>phpMyAdmin in the top bar. From XAMPP, click the "Admin" button to the right of MySQL.
 
-From XAMPP, 
+From XAMPP, click the "Admin" button next to MySQL.
 
 In phpMyAdmin, select your WordPress database from the sidebar, then click the "Export" tab.
 

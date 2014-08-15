@@ -205,6 +205,9 @@
   - title: HackerYou Starter Theme
     path: assets/theme-hackeryou.zip
   - title: ACF Repeater
+  - title: Custom Theme Exercise
+    path: week7/day3/custom-zero-theme-start.zip
+    answerPath: week7/day3/custom-zero-theme-answer.zip
     path: assets/acf-repeater.zip
   - title: ACF Flexible Content
     path: assets/acf-flexible-content.zip
@@ -212,9 +215,6 @@
     path: assets/acf-gallery.zip
   - title: ACF Options Page
     path: assets/acf-options-page.zip
-  - title: Custom Theme Exercise
-    path: week7/day3/custom-theme-start.zip
-    answerPath: week7/day3/custom-theme-answer.zip
 - name: Freelancing
   slug: freelance
   directory: 5-freelancing

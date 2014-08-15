@@ -18,7 +18,7 @@ We want to install a WordPress theme from the theme directory. You can do this b
 
 Find a theme that you like in the Wordpress Theme Directory, install it in your development environment and activate it.
 
-1. Find a theme in the directory: http://wordpress.org/extend/themes/
+1. Find a theme in the directory: <http://wordpress.org/extend/themes/>
 2. Follow the instructions in the "Adding New Themes using the Administration Panels" section of the codex above. Put the name of the theme in the search input field and you should see it.
 3. Follow the instructions in the "Selecting the Active Theme" section of the codex above to active the theme.
 
@@ -28,7 +28,7 @@ Does your version of the theme look exactly like the demo? Usually it doesn't be
 
 Woothemes is a very popular place to get professionally designed themes. Woothemes are the makers of Woocommerce which is a shopping cart plugin for Wordpress so their themes have built-in support for the plugin.
 
-1. Find a free theme that you like from: http://www.woothemes.com/product-category/themes/?prod_cat%5B%5D=100&s=&post_type=product
+1. Find a free theme that you like from: <http://www.woothemes.com/product-category/themes/?prod_cat%5B%5D=100&s=&post_type=product>
 2. Install, activate and set it up so that it looks similar to the theme's demo.
 
 To install a theme from outside of the Wordpress Theme Directory follow these instructions:

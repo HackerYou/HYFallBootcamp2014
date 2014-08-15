@@ -14,10 +14,10 @@ When creating Wordpress themes we can build everything ourself or use a starter 
 
 **Starter Themes**:
 
-* [http://themble.com/bones/](http://themble.com/bones/)
 * [http://underscores.me/](http://underscores.me/)
+* [http://themble.com/bones/](http://themble.com/bones/)
 * [http://html5blank.com/](http://html5blank.com/)
-* Wes Bos starter theme
+* HackerYou starter theme
 
 **Why use starter themes?**
 
@@ -94,7 +94,7 @@ The scripts need to be loaded in the right order so the following function will 
 function my_scripts_method() {
   wp_enqueue_script(
     'dropotron', //handle
-    get_stylesheet_directory_uri() . '/js/jquery.dropotron.min.js', //source
+    get_template_directory_uri() . '/js/jquery.dropotron.min.js', //source
     array( 'jquery' ), //dependencies
     null, // version number
     true //load in footer
@@ -102,7 +102,7 @@ function my_scripts_method() {
 
   wp_enqueue_script(
     'config', //handle
-    get_stylesheet_directory_uri() . '/js/config.js', //source
+    get_template_directory_uri() . '/js/config.js', //source
     array( 'dropotron' ), //dependencies
     null, // version number
     true //load in footer

@@ -124,7 +124,7 @@ Here are some videos:
 
 * **phpMyAdmin** is a user interface for working with the MySQL database.
 * There is a directory called `htdocs` where we'll put our WordPress files.
-* When the Apache server is on, the home directory can be accessed on port `8080`, i.e. `http://localhost:8080`.
+* When the Apache server is on, the home directory can be accessed on port `8888`, i.e. `http://localhost:8888`.
 
 ### Installing Wordpress
 

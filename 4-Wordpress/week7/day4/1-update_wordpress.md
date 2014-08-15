@@ -25,6 +25,6 @@ http://codex.wordpress.org/WordPress_Backups
 
 There are services and plugins that can help do automatic backups:
 
-* http://vaultpress.com/
-* http://wordpress.org/plugins/backwpup/
-* https://wpremote.com/
+* <http://wordpress.org/plugins/backwpup/>
+* <http://vaultpress.com/>
+* <https://wpremote.com/>

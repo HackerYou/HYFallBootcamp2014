@@ -14,7 +14,7 @@ Wordpress has a huge ecosystem of plugins to add functionality to your website. 
 
 Go to your WordPress Admin Panel and select **Plugins > Add New**.
 
-![plugin dropdown](http://cl.ly/UIrx/plugins-dd.jpg)
+![plugin dropdown](https://i.cloudup.com/acjEDMtk12.png)
 
 You will then see these options:
 

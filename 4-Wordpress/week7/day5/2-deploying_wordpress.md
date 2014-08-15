@@ -8,7 +8,7 @@ title: Deploying Wordpress
 
 Once you've finished developing your WordPress site locally, you'll want to send it out into the wild by deploying to a production server.
 
-Most servers (and definitley Bluehost) will have everything you need to host a WordPress site. If you're not sure, make sure you have the following:
+Most servers (and definitely Bluehost) will have everything you need to host a WordPress site. If you're not sure, make sure you have the following:
 
 * FTP access to your server
 * an FTP client (like Filezilla or Transmit)
@@ -35,21 +35,24 @@ Use an FTP program to upload all your WordPress site files to your server. This 
 ##2. Export your local database.
 
 To export our local databse, we need to access our local phpMyAdmin. 
-From MAMP, click "Open StartPage", then from the start page, click phpMyAdmin in the top bar. From XAMPP, click the "Admin" button to the right of MySQL.
 
-From phpMyAdmin, select your WordPress database from the sidebar, then click the "Export" tab.
+From MAMP, click "Open StartPage", then from the start page, click Tools>phpMyAdmin in the top bar. From XAMPP, click the "Admin" button to the right of MySQL.
 
-You should see this screen:
+From XAMPP, 
 
-![](http://f.cl.ly/items/3q0t0s0I3k3j0L181C3U/exportDB.png)
+In phpMyAdmin, select your WordPress database from the sidebar, then click the "Export" tab.
 
-Some phpMyAdmin installs are a little different. You will encounter different interfaces for phpMyAdmin on different hosts.
+You should see this screen or something similar, depending what version of phpMyAdmin is running:
 
-You may need to click **Custom - display all possible options** and then select **Save output to file** :
+![](https://i.cloudup.com/_enp1lr-Ce.png)
+
+We want to be able to download our database export by saving it as a file.
+
+On the latest phpMyAdmin, click **Custom - display all possible options** and then select **Save output to file**:
 
 ![](http://wes.io/UeOr/content)
 
-Check off "Save as File", then click GO to download a copy of your export. You don't need to change any of the other settings.
+You don't need to change any of the other settings. Scroll down to the bottom and click GO to download a copy of your export. 
 
 ##3. Create a new database on your production server
 
@@ -103,7 +106,7 @@ Vist your production site ("http://mysiste.com") to ensure the database connecti
 
 ##8. Run a find/replace tool on the production database
 
-WordPress stores the URL of your site all over the place in the database.  When developing locally, your site URL is something like "http://localhost:888/mysite". For production, we want the site URL to be something like "http://mysite.com".  To switch all the instances of "http://localhost:8888/mysite" over to "http://mysite.com", we can use a database serach & replace tool.
+WordPress stores the URL of your site all over the place in the database.  When developing locally, your site URL is something like "http://localhost:8888/mysite". For production, we want the site URL to be something like "http://mysite.com".  To switch all the instances of "http://localhost:8888/mysite" over to "http://mysite.com", we can use a database serach & replace tool.
 
 [Search Replace DB](https://interconnectit.com/products/search-and-replace-for-wordpress-databases/) does a great job on WordPress databases. Go ahead and download the latest stable version (v 2.1.0). Extract the .zip file and upload the `searchreplacedb2.php` file to your server - again, in the same spot as all your WordPress files.
 
@@ -111,11 +114,14 @@ In your browser, head to `http://mysite.com/searchreplacedb2.php` to run the too
 
 Allow the tool to autopopulate your database info from wp-config by clicking "Submit, then click "Submit DB details."
 
-The tool will then ask you which tables you want to run the search replace on. They should all be selected by default. If not, make sure they all are, and click "Continue."
+The tool will then ask you which tables you want to run the search replace on. They should all be selected by default. This is what we want, click "Continue."
 
 Now you can provide the search and replace details. You want to search for your local site URL and replace with your production URL.
 
+**Important:** Do NOT include the trailing slash in either URL.
+
 ![](http://cl.ly/image/0Z2Y3P1o3g16/Screen%20Shot%202014-03-06%20at%208.14.56%20PM.png)
+
 
 Go ahead and click "Submit Search String" to run the replace.
 

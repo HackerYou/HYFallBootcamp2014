@@ -26,7 +26,7 @@
 			}
 		});
 
-		
+
 		/* 1b. debugging cross-domain errors
 			Run this code as is, and check out the error you get.
 			Fix it by changing the dataType setting to something
@@ -42,7 +42,7 @@
 		});
 
 		/* 2. Working with output data
-			You can't print an entire JavaScript object out on to the 
+			You can't print an entire JavaScript object out on to the
 			page, so let's practice getting specific bits of info out
 			of the returned data.*/
 
@@ -50,7 +50,7 @@
 			url: 'https://api.github.com/users/hackeryou',
 			type: 'GET',
 			dataType: 'jsonp',
-			/*2a. We need to give our success function a placeholder 
+			/*2a. We need to give our success function a placeholder
 				argument to hold the data the API passes back.
 				One convention is to call this 'response'. Go ahead and write
 				that inside the function parentheses. */
@@ -70,9 +70,9 @@
 		});
 
 		/* 3. Adding a query string to your GET request
-			
-			The Chuck Norris Joke generator give us the option of 
-			changing the subject of the joke by passing first and 
+
+			The Chuck Norris Joke generator give us the option of
+			changing the subject of the joke by passing first and
 			last name in a query string. Check out
 			http://api.icndb.com/jokes/random?firstName=Paul&lastName=Irish
 			We can send query string options in $.ajax by adding
@@ -84,9 +84,9 @@
 			dataType: 'jsonp',
 			/* 3a. Go to the $.ajax documentation page:
 				https://api.jquery.com/jQuery.ajax/
-				and search the page (cmd/ctrl+F) for query string to find 
+				and search the page (cmd/ctrl+F) for query string to find
 				out what setting you need to add. You should see that it's
-				a settng called data.  Add in this new option on the line 
+				a settng called data.  Add in this new option on the line
 				below and set it equal to the query string (don't include
 				the question mark). */
 			data: "firstName=Paul&lastName=Irish",
@@ -99,16 +99,16 @@
 		});
 
 		/*3c. Alternate syntax for passing a query string.
-			If you're passing a lot of options in a query string, you 
-			might want to list them as their own object of key-value 
-			pairs. 
-			Copy your ajax request from above and try replacing the 
+			If you're passing a lot of options in a query string, you
+			might want to list them as their own object of key-value
+			pairs.
+			Copy your ajax request from above and try replacing the
 			query string with an object of your own first and last name.
 			Remeber, object syntax goes like this:
 			{
 				city: "Toronto",
 				province: "Ontario"
-			} 
+			}
 			*/
 
 		$.ajax({
@@ -117,9 +117,9 @@
 			dataType: 'jsonp',
 			/* 3a. Go to the $.ajax documentation page:
 				https://api.jquery.com/jQuery.ajax/
-				and search the page (cmd/ctrl+F) for query string to find 
+				and search the page (cmd/ctrl+F) for query string to find
 				out what setting you need to add. You should see that it's
-				a settng called data.  Add in this new option on the line 
+				a settng called data.  Add in this new option on the line
 				below and set it equal to the query string (don't include
 				the question mark). */
 			data: {

@@ -56,8 +56,11 @@ The post type name should be **singular**, **lowercase** and **without spaces** 
 We should use:
 
 **Post Type Name :** portfolio
+
 **Label :** Portfolio
+
 **Singular Label :** Portfolio Item
+
 **Description :** Portfolio of web development work
 
 ![](http://wes.io/UHra/content)

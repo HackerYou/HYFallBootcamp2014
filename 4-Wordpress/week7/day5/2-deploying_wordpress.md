@@ -32,6 +32,8 @@ Here's an overview of the process. We'll go into details of each of these steps.
 
 Use an FTP program to upload all your WordPress site files to your server. This should be everything in your project folder (`wp-admin`, `wp-blog-header.php`, etc.).
 
+If you've used Grunt or Git, be sure NOT to include the `node_modules` and the hidden `.git` file. These are massive files and will slow down your upload significantly.
+
 ##2. Export your local database.
 
 To export our local databse, we need to access our local phpMyAdmin. 

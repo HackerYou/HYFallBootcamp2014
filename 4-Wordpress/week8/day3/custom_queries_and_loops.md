@@ -45,7 +45,7 @@ Creating your own loop with WP_Query doesn't actually look very different from a
 			[stuff that happens while inside the loop]
 		<?php endwhile; ?>
 
-	  	<?php wp_reset_postdata(); ?>
+			<?php wp_reset_postdata(); ?>
 
 	<?php else:  ?>
 		[stuff that happens if there aren't any posts]
@@ -135,48 +135,54 @@ Let's break that down a bit and look at the parameters that we passed our new WP
 
 Then, inside the loop, we grabbed the featured image for each item, and linked to the item using the title as the link text. 
 
-##A custom query for a one-page site
+##A custom query for bringing in a custom post type
 
 	<?php
-	
-	$onePageQuery = new WP_Query( 
-		array( 
+
+	$onePageQuery = new WP_Query(
+		array(
 			'posts_per_page' => -1,
-			'post_type' => 'page', 
-			'orderby' => 'menu_order',
-			'order' => 'ASC',
-			'post__not_in' => array( 42 ) // if you wanted to exclude a page with the ID of 42
-			) 
+			'post_type' => 'portfolio',
+			'order' => 'ASC'
+			)
 	); ?>
-	
+
 	<?php if ( $onePageQuery->have_posts() ) : ?>
-	
+
 		<?php while ($onePageQuery->have_posts()) : $onePageQuery->the_post(); ?>
 
 			<section id="<?php echo $post->post_name; ?>">
 				<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
+				<p><?php the_sub_field('skills'); ?></p>
+				<div class="images">
+					<?php while( has_sub_field('images') ): ?>
+						<div class="image">
+							<p><?php the_sub_field('caption'); ?></p>
+							<?php $image = get_sub_field('image'); ?>
+							<img src="<?php echo $image['sizes']['square'] ?>">
+						</div>
+					<?php endwhile; ?>
+				</div>
 			</section>
 		<?php endwhile; ?>
-		
+
 		<?php wp_reset_postdata(); ?>
-		
+
 	<?php else:  ?>
 		[stuff that happens if there aren't any posts]
 	<?php endif; ?>
-	
+
 Now, let's break this one down as well.
 
 * **'posts_per_page' => -1** means that this loop will run for as many items match the query. -1 means unlimited. We're doing this because your WordPress settings might default to showing 5 or 10 posts per page, but if there are more sections than this, we want the loop to go as long as it has to.
-* **'post_type' => 'page'** tells the custom loop to only display pages, as opposed to posts and custom post types
-* **'orderby' => 'menu_order'** This parameter tells us how to order the posts. We could have told the query to order the pages chronologically or alphabetically, but this is a little arbitrary, and you might not get the posts in the order you actually want them. By setting the order to **"menu_order"**, this lets us set the order from the WordPress editor. You do that here, right below the Template in the Page Attributes: ![](http://cl.ly/image/3e2v1K3d321x/Screen%20Shot%202014-03-18%20at%202.30.50%20PM.png)
-* **'post__not_in' => array( 42 )** tells the loop to exclude a specific page by ID, if you wanted to do so.
+* **'post_type' => 'portfolio'** tells the custom loop to only display pages, as opposed to posts and custom post types
+* **'order' => 'ASC'** This parameter tells us how to order the posts. We could have told the query to order the pages chronologically or alphabetically, but this is a little arbitrary, and you might not get the posts in the order you actually want them. By setting the order to **"menu_order"**, this lets us set the order from the WordPress editor. You do that here, right below the Template in the Page Attributes: ![](http://cl.ly/image/3e2v1K3d321x/Screen%20Shot%202014-03-18%20at%202.30.50%20PM.png)
 
-You might also notice that, in the loop, we surrounded the content with a section and gave it the class of **"$post->post_name"**. That's a bit of WordPress code that outputs the name of the 'slug' of each page, and that gives us a unique ID to link to in the nav menu.
+<!-- You might also notice that, in the loop, we surrounded the content with a section and gave it the class of **"$post->post_name"**. That's a bit of WordPress code that outputs the name of the 'slug' of each page, and that gives us a unique ID to link to in the nav menu. -->
 
 
-One page site accomplished!
-
+<!-- One page site accomplished! -->
 
 ##The possibilities are nearly endless
 

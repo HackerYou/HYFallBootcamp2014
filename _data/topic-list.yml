@@ -206,8 +206,8 @@
     path: assets/theme-hackeryou.zip
   - title: ACF Repeater
   - title: Custom Theme Exercise
-    path: week7/day3/custom-zero-theme-start.zip
-    answerPath: week7/day3/custom-zero-theme-answer.zip
+    path: exercises/custom-zero-theme-start.zip
+    answerPath: exercises/custom-zero-theme-answer.zip
     path: assets/acf-repeater.zip
   - title: ACF Flexible Content
     path: assets/acf-flexible-content.zip

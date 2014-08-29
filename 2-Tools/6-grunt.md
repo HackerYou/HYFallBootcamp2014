@@ -120,6 +120,20 @@ By default the `grunt.registerTask('default', []);` portion of the Gruntfile.js 
 ##Recommended Grunt Tasks
 As always, read the documentation on how to use the plugins
 
-- Autoprefixer [https://github.com/nDmitry/grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
-- SVG Inject [https://github.com/PencilScoop/grunt-svginject](https://github.com/PencilScoop/grunt-svginject)
-- Jade [https://github.com/gruntjs/grunt-contrib-jade](https://github.com/gruntjs/grunt-contrib-jade)
+###JS Hint 
+
+[https://github.com/gruntjs/grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
+
+JSHint is a popular web developer tool that scans your JavaScript code and makes suggestions on how to improve with best practices. eg. using `===` instead of `==`, including semi-colons. It'll also catch syntax errors.  
+
+###Autoprefixer 
+
+[https://github.com/nDmitry/grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
+
+Autoprefixer is a great tool that will turn simple un-vendor-prefixed CSS (eg. `transform`) into cross-browser compatible prefixed code! 
+
+###SVG Inject 
+
+[https://github.com/PencilScoop/grunt-svginject](https://github.com/PencilScoop/grunt-svginject)
+
+SVG inject allows you to catalog SVG icons in a separate JS file so you can keep your HTML lean and squeaky clean.

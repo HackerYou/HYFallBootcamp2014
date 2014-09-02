@@ -9,21 +9,23 @@ GitHub pages can be used to create websites for you and your projects, hosted di
 
 You can made a website for your user account, organization or individual projects. You get one site per GitHub account and organization, and unlimited project sites.
 
+Sites can written through the use of Markdown to ease formatting issues, and then given a prepackaged theme through the Github site. For help with formatting Markdown, use this [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
 ##Project site
 Let's start with a new site for an individual project. There are two options:
 
 * generate a site with one of the pre-built themes
 * create a site from scratch
 
-###Create a site from scratch
+##Create a site from scratch
 
 1. Head over to GitHub.com and create a new repository including a read me file. **If using an existing repo, skip to step 3.**
 1. Clone the repo to make a local copy. Then cd (change directory) into the new repo. 
 
-	```
-	$ git clone https://github.com/username/repo-name.git
-	$ cd repo-name
-	```
+
+		$ git clone https://github.com/username/repo-name.git
+		$ cd repo-name
+
 
 1. Create and switch to the gh-pages branch.
 
@@ -73,7 +75,7 @@ Now we have to `push` it into the repository.
 [Read more about rebasing here.](http://gitready.com/intermediate/2009/01/31/intro-to-rebase.html)
 
 
-###Site with pre-built theme
+##Site with pre-built theme
 1. Go to [github.com](http://github.com) and create a **new repo**.
 2. Click on Settings on the right hand side.
 3. Scroll down to the GitHub Pages module and select Automatic Page Generator.
@@ -84,6 +86,15 @@ Your site url is **http://username.github.io/repository**. It may take a couple 
 
 ###Optional: Make gh-pages the default branch
 In the repository, go to the **Settings** page. Then in **Options** in the top section, set the default branch in the dropdown.
+
+##Static site generators
+There are a few tools available that can help you build a full blog that can be hosted on Github Pages
+
+* [http://octopress.org/](http://octopress.org/) - Ruby
+*	[http://jekyllrb.com/](http://jekyllrb.com/) - Ruby
+* [http://hexo.io/](http://hexo.io/) - Node.js
+
+
 
 ###Extra resources & references
 

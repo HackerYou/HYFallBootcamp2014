@@ -208,7 +208,8 @@
   - title: Custom Theme Exercise
     path: exercises/custom-zero-theme-start.zip
     answerPath: exercises/custom-zero-theme-answer.zip
-    path: assets/acf-repeater.zip
+  - title: Style Guide Sample HTML
+    path: exercises/style-guide.html
   - title: ACF Flexible Content
     path: assets/acf-flexible-content.zip
   - title: ACF Gallery

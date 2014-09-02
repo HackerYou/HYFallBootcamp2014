@@ -129,18 +129,6 @@
 #   - title: kalynnakano.com Design Details
 #     path: day1/exercises/kalynnakano.com.zip
 #     answerPath: day1/exercises/kalynnakano.com-answer.zip
-- name: 2 - Tools of the Trade
-  slug: tools
-  exercises:
-  - title: border-box snippet
-    path: snippets/border-box.sublime-snippet
-  - title: clearfix snippet
-    path: snippets/clearfix.sublime-snippet
-  - title: normalize.css snippet
-    path: snippets/normalize.sublime-snippet
-  - title: jQuery CDN snippet
-    path: snippets/jquerycdn.sublime-snippet
-  directory: 1-HTML-CSS
 - name: JavaScript & jQuery
   slug: js
   directory: 3-JavaScript
@@ -198,6 +186,19 @@
   - title: Art App Code Along
     path: exercises/art-app-start.zip
     answerPath: exercises/art-app-answer.zip
+- name: Tools of the Trade
+  slug: tools
+  directory: 2-Tools
+  exercises:
+  - title: border-box snippet
+    path: snippets/border-box.sublime-snippet
+  - title: clearfix snippet
+    path: snippets/clearfix.sublime-snippet
+  - title: normalize.css snippet
+    path: snippets/normalize.sublime-snippet
+  - title: jQuery CDN snippet
+    path: snippets/jquerycdn.sublime-snippet
+  directory: 1-HTML-CSS
 - name: WordPress
   slug: wp
   directory: 4-Wordpress

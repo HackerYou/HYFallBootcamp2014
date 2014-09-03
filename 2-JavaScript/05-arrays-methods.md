@@ -64,7 +64,7 @@ The following exercises use this array object:
 
 `var theArray = ["Homer likes pie", 34, { name: "First", age: 66 } ]`
 
-1. Retrieve the 2nd value in the array.
+1. Retrieve the 2nd value in the array.s
 2. Update the first value to `"Homer likes beer"`
 3. Retrieve the age property of the object in the array.
 4. Update the name property of the object in the array to `"Jack"`.
@@ -102,7 +102,7 @@ We already know that objects can hold strings, numbers and arrays. Now we will l
 
 A function that is a property of an object is called a **method**. 
 
-Once more: Any time a function is in an object, we call it a method. It does the same name, just called something different. So, for ease of understanding right now a method is a function.
+Once more: Any time a function is in an object, we call it a method. It does the same thing, just called something different. So, for ease of understanding right now a method is a function.
 
 We define methods like this:
 
@@ -111,7 +111,7 @@ var myObject = {
 	propertyName: value,
 	propertyName: value,
 	methodName: function() {
-		// statements
+		// do something
 	}
 }
 ```

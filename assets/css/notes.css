@@ -62,4 +62,19 @@ div.hide:hover,
   color:black !important;
 }
 
-.note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; }
+/* fix ginormous tabs */
+pre {
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+}
+
+.note {display: none; /* Hide teachers notes */ }
+
+/* hide & reveal for solutions */
+.solution,
+.solution .hljs,
+.solution .hljs span {color:white;}
+.solution:hover,
+.solution:hover .hljs,
+.solution:hover .hljs span {color: currentColor; }

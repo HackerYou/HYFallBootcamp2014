@@ -4,8 +4,6 @@ topic: js
 title: Functions
 ---
 
-<style> .note {display: none; /* Hide teachers notes */ } .solution {color:white; } .solution:hover {color:black; } </style>
-
 # Functions
 
 Just to recap, we said that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language but this is especially true for JavaScript. Understand functions and you can become a JavaScript wizard or at the very least a latte artist.
@@ -28,7 +26,7 @@ function nameOfFunction() {
 
 ```
 function helloWorld() {
-	console.log("Hello there!");
+  console.log("Hello there!");
 }
 ```
 
@@ -67,7 +65,7 @@ Using these parameters, you can define a function that will return a result base
 
 ```
 > function add(a, b) {
-	return a + b;
+  return a + b;
 }
 
 > add(2, 4);
@@ -86,7 +84,7 @@ For example, the following function prints a value to the console.
 
 ```
 function add(a,b) {
-	console.log(a+b);
+  console.log(a+b);
 }
 ```
 If we try to store the result of the function we see that our variable stored nothing; the value is undefined.
@@ -101,7 +99,7 @@ If we use the `return` statement then we can make the function a lot more useful
 
 ```
 function add(a,b) {
-	return a+b;
+  return a+b;
 }
 ```
 
@@ -121,7 +119,7 @@ function add(a,b) {
 
 Solution 1:
 
-<div class="white">
+<div class="solution">
 <pre><code>var sum = add(1,2);
 var sum2 = add(3, sum);
 </code></pre>
@@ -129,7 +127,7 @@ var sum2 = add(3, sum);
 
 Solution 2:
 
-<div class="white">
+<div class="solution">
 <pre><code>add(1,add(2,3))</code></pre>
 </div>
 

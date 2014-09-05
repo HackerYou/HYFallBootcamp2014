@@ -19,9 +19,9 @@ All course notes and exercises &copy; 2014 [HackerYou Inc.](http://hackeryou.com
 
 ###Lessons/Notes
 
-All lessons are written in markdown.
+All lessons are written in Markdown.
 
-New lessons will be indexed in the order they appear if you tag them with YAML front matter at the top of the markdown file:
+New lessons will be indexed in the order they appear if you tag them with YAML front matter at the top of the Markdown file:
 
 ```
 ---
@@ -34,7 +34,7 @@ title: Intro to HTML
 Choices for topics are:
 
 `html` for HTML & CSS  
-`tools` for GitHub, SublimeText etc.   
+`tools` for GitHub, Sublime Text, etc.   
 `ux` for Design and UX  
 `js` for JavaScript and jQuery  
 `wp` for WordPress
@@ -62,7 +62,7 @@ Exercises that contain multiple files should be zipped for easy download.
 Behind the scenes, the hosted notes are generated with Jekyll and GitHub Pages. To get setup for local preview:
 
 1. make sure you have Ruby v1.9.3 or above installed
-2. install Bundler (a Ruby pagckage manager) `gem install bundler`
+2. install Bundler (a Ruby package manager) `gem install bundler`
 3. run `bundle install` to install Jekyll and GitHub pages
 
 When you want to preview the build:
@@ -81,7 +81,7 @@ If you need to deploy a small change or we've run out of free deploys, you can d
 1. Install the Heroku toolbelt on your machine <https://toolbelt.heroku.com/>
 3. Run `jekyll-auth new` and follow the setup instructions
     * Github API keys can be be found under HackerYou account settings > Applications
-    * Use GitHub team ID `680986` for the bootacmp
+    * Use GitHub team ID `680986` for the bootcamp
 
 ####Deployment:
 

@@ -63,7 +63,7 @@ Behind the scenes, the hosted notes are generated with Jekyll and GitHub Pages. 
 
 1. make sure you have Ruby v1.9.3 or above installed
 2. install Bundler (a Ruby pagckage manager) `gem install bundler`
-3. run `bundle intall` to install Jekyll and GitHub pages
+3. run `bundle install` to install Jekyll and GitHub pages
 
 When you want to preview the build:
 

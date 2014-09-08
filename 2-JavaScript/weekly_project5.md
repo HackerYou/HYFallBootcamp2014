@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Week 5 Project - jQuery Gallery
+title: Week 4 Project - jQuery Gallery
 ---
 
 # Weekly Project: jQuery Gallery

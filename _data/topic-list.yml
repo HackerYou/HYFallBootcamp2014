@@ -186,6 +186,12 @@
   - title: Art App Code Along
     path: exercises/art-app-start.zip
     answerPath: exercises/art-app-answer.zip
+  - title: ColourMe Plugin
+    path: exercises/colourMe-starter.zip
+    answerPath: exercises/colourMe-complete.zip
+  - title: Lightbox Plugin
+    path: exercises/lightbox-starter.zip
+    answerPath: exercises/lightbox-complete.zip
 - name: Tools of the Trade
   slug: tools
   directory: 2-Tools

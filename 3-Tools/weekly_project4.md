@@ -1,29 +1,22 @@
 ---
 layout: project
-title: Week 4 Project - Optimize Your Workflow
+title: Week 6 Project - jQuery Plugin with Documentation
 ---
 
-# Week 4 Project
-For this week's project, you will optimize a previous project using Grunt. Implement Grunt into a site and create tasks that will aid in the quick development of your projects.
+# Weekly Project: jQuery Plugin with Documentation
+For this week's project, you will use jQuery to recreate an UI effect you've seen online, and package it as a plugin that fellow developers can utilize on their own projects.
 
-Once you have implemented a Gruntfile in your project, you will use Github to host the files. Ensure that the project is accessible by everyone with a readme.md file that explains the commands on how to install and use the project.
+As with this other tools in this industry, open-source development is a great tool not only in your resume, but
 
-Use the [http://gruntjs.com/plugins](http://gruntjs.com/plugins) directory to find Grunt plugins that meet your needs and read the documentation for each plugin for the correct way to implement it.
+Once the plugin has been created, create a Github repository to host the plugin, and create a Github Page that will contain documentation for a user to utilize your tool.
+
+Be sure to include default options and allow the user to input their own values to modify the plugin to their own needs.
 
 ##Technical requirements
-* use a Grunt file to automate all your optimization
-* implement a watch task so your other tasks run automatically on save
-* add this project to github
+* Provide default options for the user.
+* Package the plugin with an example.
 
-Implement at least three of the following optimizations with Grunt:
-* Set up a local server on your machine.
-* Smush your images to reduce file size
-* Work with a Development and Production folder
-* Compile your HTML files from HAML or Jade
-* Use HAML or Jade to create template includes
-* minify CSS
-* minify JS
-* concatenate JS files
-* compile your Sass with Grunt
-* Autoprefix your CSS with browser prefixes
-* Implement LiveReload to refresh your browser when a file changes - Requires Chrome Extension [http://livereload.com/](http://livereload.com/)
+## Deliverable
+* Complete plugin hosted on Github
+* Create a Github Page with documentation on how to use the plugin
+* Live examples

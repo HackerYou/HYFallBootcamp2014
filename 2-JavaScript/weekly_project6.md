@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Week 6 Project - jQuery API App
+title: Week 5 Project - jQuery API App
 ---
 
 # Weekly Project

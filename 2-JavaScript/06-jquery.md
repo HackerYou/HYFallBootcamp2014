@@ -273,12 +273,12 @@ jQuery has the method `hide()` that will come in handy. Let's select the box aga
 ```
 $(document).ready(function(){
 	$(".box").on("click", function(){
-		$("box").hide();
+		$(".box").hide();
 	});
 });
 ```
 
-All of the boxes disappeared! This is because `$("box")` selects all of the boxes. Ok, how do we select on the box that was clicked? jQuery provides us with the variable `this` inside of the anonymous function which refers to the element that triggered the event. How convenient!
+All of the boxes disappeared! This is because `$(".box")` selects all of the boxes. Ok, how do we select on the box that was clicked? jQuery provides us with the variable `this` inside of the anonymous function which refers to the element that triggered the event. How convenient!
 
 ```
 $(document).ready(function(){

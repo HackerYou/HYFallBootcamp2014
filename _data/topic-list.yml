@@ -131,7 +131,7 @@
 #     answerPath: day1/exercises/kalynnakano.com-answer.zip
 - name: JavaScript & jQuery
   slug: js
-  directory: 3-JavaScript
+  directory: 2-JavaScript
   exercises:
   - title: JS Cheat Sheet
     path: javascript-cheat-sheet.html
@@ -194,7 +194,7 @@
     answerPath: exercises/lightbox-complete.zip
 - name: Tools of the Trade
   slug: tools
-  directory: 2-Tools
+  directory: 3-Tools
   exercises:
   - title: border-box snippet
     path: snippets/border-box.sublime-snippet

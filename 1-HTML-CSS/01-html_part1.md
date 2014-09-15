@@ -179,7 +179,7 @@ The first few days of learning HTML & CSS can be a bit limiting because you have
 
 This exercise is designed to give you a little taste of what we will be working with over the course of HackerYou. 
 
-<http://codepen.io/wesbos/pen/Dovrc>
+<http://codepen.io/drewminns/pen/emBLF>
 
 Open the above codepen and let's step through the HTML, adding class names where the comments say to do so.
 

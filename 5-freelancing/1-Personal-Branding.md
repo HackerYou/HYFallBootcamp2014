@@ -1,3 +1,9 @@
+---
+layout: notes
+title: So You Want a New Career
+topic: freelance
+---
+
 # So You Want a New Career
 
 Whether you want to land a job as a front-end developer or start a freelance business, there's a lot you need to know. HTML5, CSS3, Responsive Design, JavaScript, jQuery and Wordpress are just the technical skills you need, and that's what Brenna, Drew, Sacha and Kristen will spend the next eight weeks teaching you.

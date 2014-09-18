@@ -156,7 +156,7 @@ You should have a ready-to-go bios that are tweet-length (for your website homep
 
 Writing a bio is hard, I usually start by writing down what I want to get across by answering the following questions:
 
-1. Who am I
+1. Who am I?
 2. What do I do? What's my speciality?
 3. What/who do I work with?
 4. What am I passionate about?

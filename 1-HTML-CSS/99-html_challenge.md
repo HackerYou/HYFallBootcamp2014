@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: omit
 title: HTML Challenge
 topic: html
 ---

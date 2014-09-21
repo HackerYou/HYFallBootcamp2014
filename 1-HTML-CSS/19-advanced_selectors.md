@@ -49,7 +49,7 @@ Select an element right next to another element. Cats and dogs should not be bes
 
 This can be handy when you are trying to pad text, but only when it comes after an image element.
 
-## Direct Child Selector — .cat > .kitten
+## Child Selector — .cat > .kitten
 
 Select elements only when they are a direct descendant. No children should be selected.
 	

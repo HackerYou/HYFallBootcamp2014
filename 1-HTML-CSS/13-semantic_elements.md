@@ -119,6 +119,19 @@ HTML5 introduced new elements that were descriptive as to what part of the page 
       <p>Vestibulum id ligula porta felis euismod semper. Donec sed odio dui.</p>
     </aside>
 
+**Figure** - specifies an image, code chunk, illustration or a diagram. Used as the parent element to a img, code or video tag.
+
+    <figure>
+      <img src="mysweetpicture.jpg">
+    </figure>
+
+**Figcaption** - Defines a caption for the figure item. Can be used before or after the contained element.
+
+    <figure>
+      <figcaption>My cool headshot</figcaption>
+      <img src="mysweetpicture.jpg">
+    </figure>
+
 
 ##Exercise: Using Semantic Elements
 

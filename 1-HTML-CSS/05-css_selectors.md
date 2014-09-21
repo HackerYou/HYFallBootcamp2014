@@ -186,7 +186,7 @@ Well, there are certain styles that get passed down from the parent to the child
 
 Not all styles are inherited, they almost all refer to typography and fonts.
 
-### Parent Child Selectors
+### Descendant Selectors
 Another way to target elements is to use parent child selectors.
 
 It may not always be the best case for us to go through our code and add a special class to every single element we want to select. Sometimes it's just as easy to first select the parent and then narrow in on the children.

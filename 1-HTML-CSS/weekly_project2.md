@@ -79,13 +79,13 @@ Here are some samples from the HackerYou Cohort 1:
 * Embedded media (e.g. Youtube, Maps, Twitter, etc.)
 * 1 background image
 * 2 links within the page
-* 1 Contact form
+<!-- * 1 Contact form -->
 
 
-Since we spent quite a bit of time on forms, your form should:
+<!-- Since we spent quite a bit of time on forms, your form should:
 
 * be functional. i.e. use Wufoo.com to receive the data that users submit through the form.
-* have custom CSS form styles ([http://www.wufoo.com/2011/05/20/form-anatomy-custom-css/](http://www.wufoo.com/2011/05/20/form-anatomy-custom-css/))
+* have custom CSS form styles ([http://www.wufoo.com/2011/05/20/form-anatomy-custom-css/](http://www.wufoo.com/2011/05/20/form-anatomy-custom-css/)) -->
 
 ## Bonus points for
 

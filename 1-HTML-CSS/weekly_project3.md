@@ -5,7 +5,7 @@ title: Week 3 Project - Responsive 'Client' Website
 
 # Weekly Project
 
-This week you will be build a responsive multi-page website for a "fake" client. You will be assigned to one of three clients and be given a set of design files. The folder you're given is what the client has given you to work with, so it's up to you to make do with what you've got or follow up with your client for clarification.
+This week you will be build a responsive multi-page website for a "fake" client. You will be assigned to one of four clients and be given a set of design files. The folder you're given is what the client has given you to work with, so it's up to you to make do with what you've got or follow up with your client for clarification.
 
 ## Requirements
 

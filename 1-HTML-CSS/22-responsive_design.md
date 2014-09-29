@@ -302,13 +302,10 @@ You simply need to resize your browser to the approximate size of your device. H
 1. Dock your dev tools to the right of the screen. Click the gear icon in the bottom right of dev tools and check 'Dock to right'
 1. You may want to break your dev tools away into a new window - click the window icon in the bottom left corner to pop them out.
 1. Check out the new firefox developer tools responsive design view. Go to `Tools` --> `Web Developer` --> `Responsive Design View`
+1. Chrome has a similar device emulator. Click the phone icon in your devtools toolbar to open it and test out different screen sizes and connection speeds.
 
 ## Basic Layout
 We have been working with our header, footer, content sidebar layout quite a bit. Let's work together to see how we can make it a really great responsive site.
-
-## Exercises
-Now we are going to work on exercises. Starting with easy media queries and moving on up in complexity. See <a href="exercises/responsive-exercises.zip" class="exercise">**responsive-exercises.zip**</a> for the exercises and answers.
-
 
 ## Fav Icons and Touch Icons
 
@@ -334,11 +331,7 @@ The HTML is really similar to a fav icon:
 
 	<link rel="apple-touch-icon" href="somepath/image.png" />
 
-If you don't want the apple 'gloss' on your icon, use the following:
-
-	<link rel="apple-touch-icon-precomposed" href="somepath/image.png" />
-
-It is reccomended you use at least 144x144 and let the device size it down for you. However, you can specify them like this as well:
+It is recommended you use at least 144x144 and let the device size it down for you. However, you can specify them like this as well:
 
 	<!-- Standard iPhone -->
 	<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone-114.png" />
@@ -373,8 +366,10 @@ Do not think about the design of the site, just the layout of where content will
 
 Here is a list of useful cross-browser testing sites for you to explore: 
 * <http://www.responsinator.com/>
-* <http://quirktools.com/screenfly/ (This one is awesome!)>
-* <http://responsive.victorcoulon.fr/>
+* <http://re-view.emmet.io/>
+
+## Exercises
+Now we are going to work on exercises. Starting with easy media queries and moving on up in complexity. See <a href="exercises/responsive-exercises.zip" class="exercise">**responsive-exercises.zip**</a> for the exercises and answers.
 
 	 
 

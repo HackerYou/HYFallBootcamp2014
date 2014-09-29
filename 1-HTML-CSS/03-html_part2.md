@@ -99,6 +99,11 @@ Remember when I said using the `<b>` tag and `<i>` tag was not preferred?
 
 Instead, STRONG and EM to note that they are important and should have emphasis. Default styling in the browser already bolds and italicizes them accordingly.)
 
+**Note**
+
+These tags are not completely gone though. Many have been re-purposed. Systems like [Font Awesome](http://fortawesome.github.io/Font-Awesome/) have used the i tag to represent an icon.
+
+
 ### `<div></div>` divs
 The DIV tag in HTML is foundation for laying out a web page. We use divs to group together HTML elements into a defined section of content. Divs are also one of the few tags that have *no semantic meaning* and is used as a generic container. 
 
@@ -246,9 +251,9 @@ For each of the above, instead of setting the image src to a .jpg url, we set it
 
 <img src="http://placehold.it/350x150">
 
-	<img src="http://placekitten.com/200/200">
+	<img src="http://www.fillmurray.com/200/200">
 
-<img src="http://placekitten.com/200/200">
+<img src="http://www.fillmurray.com/200/200">
 
 	http://baconmockup.com/400/200	
 

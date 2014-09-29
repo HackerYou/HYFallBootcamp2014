@@ -257,9 +257,9 @@ Another handy part of HTML5 allows us to easily make an input required. Before t
 #### Placeholder
 If you want to have default text in your input that clears when a user starts typing, use the **placeholder** atrribute.
 
-	<input type="email" name="emailAddress" palceholder="Please enter your email address">
+	<input type="email" name="emailAddress" placeholder="Please enter your email address">
 
-<input type="email" name="emailAddress" palceholder="Please enter your email address" style="width:100%; font-size:20px;">
+<input type="email" name="emailAddress" placeholder="Please enter your email address" style="width:100%; font-size:20px;">
 
 #### Character Limit
 Limit the number of characters a box will take. Useful for limiting how long a username can be.

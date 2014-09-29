@@ -5,7 +5,7 @@ title: Week 3 Project - Responsive 'Client' Website
 
 # Weekly Project
 
-This week you will be build a responsive multi-page website for a "fake" client. You will be assigned to one of four clients and be given a set of design files. The folder you're given is what the client has given you to work with, so it's up to you to make do with what you've got or follow up with your client for clarification.
+This week you will be build a responsive multi-page website for a "fake" client. You will be assigned to one of three clients and be given a set of design files. The folder you're given is what the client has given you to work with, so it's up to you to make do with what you've got or follow up with your client for clarification.
 
 ## Requirements
 
@@ -17,16 +17,18 @@ This week you will be build a responsive multi-page website for a "fake" client.
 ### Motivation
 I encourage you to think **outside what you think you can do and push yourself**. The best way to learn, is to jump in over your head. We have lots of help here to get you on the right path and tackling something difficult is very rewarding.
 
-If you have ideas that you aren't sure are possible, please run them by us. Usually the JavaScript dependent stuff can be done in a few lines of JS and myself or the mentors have no problem helping you with that!
+If you have ideas that you aren't sure are possible, please run them by us. Usually the JavaScript dependent stuff can be done in a few lines of JS and the instructors have no problem helping you with that!
 
 ###Design Files
 
 <!-- files are hosted externally to avoid file size limit in heroku -->
 
-**Group 1:** [HackerYou](http://fulltime.hackeryou.com/client1-hackeryou.zip)
+**Group 1:** [Pioneer](http://fulltime.hackeryou.com/client1-pioneer.zip)
 
-**Group 2:** [Ladies Learning Code](http://fulltime.hackeryou.com/client2-llc.zip)
+**Group 2:** [Solido](http://fulltime.hackeryou.com/client2-solido.zip)
 
-**Group 3:** [Heather Payne](http://fulltime.hackeryou.com/client3-heatherpayne.zip)
+**Group 3:** [Master](http://fulltime.hackeryou.com/client3-master.zip)
 
-**Group 4:** [JourneyMade](http://fulltime.hackeryou.com/client4-journeymade.zip)
+**Group 4:** [Luxen](http://fulltime.hackeryou.com/client4-luxen.zip)
+
+<!-- **Group 4:** [JourneyMade](http://fulltime.hackeryou.com/client4-journeymade.zip) -->

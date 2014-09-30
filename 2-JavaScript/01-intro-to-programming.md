@@ -40,6 +40,45 @@ Programming is like having a conversation with your computer so sticking to the 
 
 The role of a programmer is to think of a solution to a real-world problem and break the solution down into "code" (simple mechanical instructions that the computer can understand). The computer simply runs the series of instructions in it's environment.
 
+##Think Like A Computer
+
+Learning a new programming language is a lot like learning a new spoken language - there are new words and grammar rules to learn, and the best way to learn is by practicing speaking that language.  
+
+It also helps to try and "think like a computer."  Our spoken language vocabulary is very rich in comparison to most programming language. We have to be much more explicit and break down instructions into very small steps when speaking in a limited language.
+
+**Let's try it together.** 
+
+Imagine an alien - of average human intelligence but only very basic English vocabulary - has landed in the classroom. How would you give this alien instructions for getting to the washrooms?  
+
+Tell them it's "just down the hall"? Wait. What if they don't know what "hall" means?
+
+We'll have to be more specific.  Think about breaking down all the little steps we take for granted that it takes to get to the washroom.
+
+* Go to the door. Maybe we even have to specify which door out of multiple doors should be used. Maybe we even need to specify "walk forward 10 steps, turn to your left, walk 3 steps" to even *get* to the door.
+* Open the door.
+* Walk through the door.
+* Turn to the right.
+* etc.
+
+It seems like we're explaining things in *too* much detail, but this strategy is very helpful in translating things like "I want to have parallax effects on this div." into a bunch of lines of code that accomplish that.
+
+####Exercise: Computerthink
+
+In small groups, write out detailed step by step instructions for how to make a peanut butter and jelly sandwich. We'll compare your answers together to see just how specific you can get!
+
+####Psuedocode
+
+Sometimes when you're writing JavaScript and other programming language it can be helpful to road-map the detailed steps your program will carry out in plain English, just like we did above.  This is called **pseudocode** and it's a very helpful strategy for getting your ideas about how a program runs out down without worrying about the specific syntax of how to write it. Think of it like outlining an essay with point form notes before going back and filling in each point with complete sentences.
+
+````
+when the user scrolls down the page:
+* measure how far they've scrolled
+* if they've scrolled more than 400px
+	- show a tooltip
+* otherwise
+	- hide the tooltip
+````
+
 ## JavaScript
 Instructions to the computer are given by using a series of 0’s and 1’s. Programming languages, such as JavaScript, have been created to allow us to communicate with the computer in a more natural way.
 

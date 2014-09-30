@@ -98,7 +98,7 @@ With all of these grid systems, you will need to download or link the needed CSS
 
 <a href="exercises/semanticelements/grid-system-exercise.zip" class="exercise">**grid-system-exercise.zip**</a>
 
-Semantic GS is a great system, because it is incredibly easy to use, maintain and modify.
+[http://semantic.gs/](http://semantic.gs/) is a great system, because it is incredibly easy to use, maintain and modify. It is implemented using non-presentational classes so if there are any changes to the structure, we simply change CSS rules, not classes on elements
 The system is available as LESS, SCSS or Stylus. For this example we'll use SCSS.
 
 Work with the grid system and the SCSS to create a flexible layout like the example above. Try to also include media queries to restructure the grid system for mobile devices.

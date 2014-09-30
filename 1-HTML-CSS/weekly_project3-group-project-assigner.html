@@ -32,30 +32,35 @@
 	<script>
 	$(function(){
 		var students = [
-			"Anna Colebatch",
-			"Corbin Jensen",
-			"Daniel Guay",
-			"Elyse Schipper",
-			"Emily Porta",
-			"Jennifer Abela-Froese",
-			"Jessie Willms",
-			"Jonny James",
-			"Krisztina Kun",
-			"Lili Ye",
-			"Logan Greer",
-			"Margaret Reffell",
-			"Matt McFadyen",
-			"Meagan O'Hara",
-			"Nerissa Martin",
-			"Rasin Zakaria",
-			"Rayhan Vevaina",
-			"Sarah Capecci",
-			"Simon Proudfoot",
-			"Vanessa Merritt",
-			"Victoria  Vaitekunas",
-			"Wisam Zaghal",
-			"Zoe Daniels",
-			"Robin Woollacott"];
+			"Shane Keulen",
+			"Jillian Wallace",
+			"Lindsay Hartfiel",
+			"Nikin Nagewadia",
+			"Ben Weddel",
+			"Kristine Planche",
+			"Andrew Nguyen",
+			"Michaelangelo Yambao",
+			"Emilia Dallman",
+			"George Balkouras",
+			"Erika Pierre",
+			"Matt Fairley",
+			"Stephanie Celani",
+			"Andrea Saxe",
+			"Julie McCulloch",
+			"Sarah Roberts",
+			"Dana Werpny",
+			"Marlène Giraud",
+			"Moya Miller",
+			"Francine Navarro",
+			"Thomas Mattacchione",
+			"Ivailo Ivanov",
+			"Sam Chun",
+			"Sylvia Nguyen",
+			"Phil Richards",
+			"Rachel Bloom",
+			"Deborah Chan",
+			"Frank Wang"
+			];
 
 		var projects = ["HackerYou", "Ladies Learning Code","Heather Payne", "JourneyMade"]
 
@@ -71,14 +76,14 @@
 			var $body = $('body');
 
 			for (var i = 0; i < students.length; i++) {
-				if (i < 6){
+				if (i < 7){
 				$('.hy').addClass('found');
 					$('.hy').append('<li>' + students[i] + '</li>');
 				}
-				else if (i < 12){
+				else if (i < 14){
 					$('.llc').append('<li>' + students[i] + '</li>');
 				}
-				else if (i < 18){
+				else if (i < 21){
 					$('.hp').append('<li>' + students[i] + '</li>');
 				}
 				else  {
@@ -98,30 +103,30 @@
 		<h1>Week 3 Project Assigner</h1>
 		<button class="go">Make Groups</button>
 		<div class="group">
-			<h2>Team HackerYou</h2>
+			<h2>Team Pioneer</h2>
 			<ul class="hy">
-			
+
 			</ul>
 		</div>
 
 		<div class="group">
-			<h2>Team Ladies Learning Code</h2>
+			<h2>Team Solido</h2>
 			<ul class="llc">
-			
+
 			</ul>
 		</div>
 
 		<div class="group">
-			<h2>Team Heather Payne</h2>
+			<h2>Team Master</h2>
 			<ul class="hp">
-			
+
 			</ul>
 		</div>
 
 		<div class="group">
-			<h2>Team JourneyMade</h2>
+			<h2>Team Luxen</h2>
 			<ul class="jm">
-			
+
 			</ul>
 		</div>
 	</div>

@@ -73,6 +73,13 @@ HackerYou is starting a device lab that will be up and running very soon!
 [http://devicelab.fi/](http://devicelab.fi/)
 
 
+### Mobile Testing with Localhost
+
+Some test cases require you to use the physical device for testing. You can do cross browser testing via localhost without pushing to a live sandbox site. A good article describing the process on how to utilize localhost testing on devices using your local IP can be found at the following link:
+
+[http://support.apple.com/kb/ts5329](http://support.apple.com/kb/ts5329)
+
+
 ### Remote Debugging
 
 If you do find bugs specific to mobile devices, you can use remote debugging to inspect and debug your page from your computer. 

@@ -38,25 +38,6 @@ var $listItems = $('li');
 var favouriteColour = "salmon";
 ```
 
-##IDs are faster to find than classes (yes, you get to use IDs now)
-
-Remember IDs, which we told you to never use for CSS? They're actually really helpful for JavaScript and jQuery.  Since IDs are unique, jQuery will stop looking as soon as it finds a single match! This is much faster than a class or element selector, which keeps looking through the whole document to find all possible matches.
-
-```
-$('.widget'); //slow
-$('#widget'); //fast
-```
-
-###But I need to find multiple things!
-
-Sometimes you actually need to find more than one element, like all links in the nav. You can still take advantage of ID magic by combining it with the `.find()` method. Select a parent element with an ID to narrow the area we're searching in, then use `.find()` to search for matching children. 
-
-```
-$('.nav a'); //super slow
-$('#nav a'); //still pretty slow
-$('#nav').find('a'); //fast!
-```
-
 ## Chain your methods
 
 A lot of jQuery methods will return the original object that you were working with. 

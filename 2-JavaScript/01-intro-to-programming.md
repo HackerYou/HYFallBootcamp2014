@@ -26,15 +26,28 @@ topic: js
 </style>
 #Introduction to JavaScript
 
-##Programming languages
 
-Programming languages are used to communicate a set of instructions to a machine. There are many different programming languages for different situations / projects.
+*A programmer’s wife sends him to the grocery store with instructions: "Get a litre of milk. If they have eggs, get a dozen."*
 
-For example, Objective C is used for iPhone apps. Java is used for Android Apps. Ruby, Python and PHP are great for the backend of websites and web apps. 
+*He comes home a short while later, an armful of milk cartons in tow.*
 
-JavaScript is used primarily for front-end programming; things that happen in the browser. 
+*"Why did you get so much milk?" the flabbergasted wife asks.*
 
-Programming is like having a conversation with your computer so sticking to the "grammar rules", known as the **syntax**, specific to each language is important. For example, spitting out the text "Hello World" is different in each language. Let's look at a few examples:
+*"They had eggs," the programmer replies.*
+
+
+##A Quick Primer on Programming Languages
+
+
+So far, we've created our projects using HTML and CSS, tools that allow us to add content and style to our pages. But what if we wanted to do more complex things on a page? Things like adding interactivity, responding to events, communicating with services or modifying styles on the fly?
+
+For that, we need to have a deeper conversation with the computer. We need a programming language. 
+
+Programming languages are used to communicate a set of instructions to a machine. There are many different programming languages for different situations / projects: Objective-C and Swift are used for iPhone apps. Java is used for Android Apps. Ruby, Python and PHP are great for the backend of websites and web apps. 
+
+For things that happen in the browser, we primarily use a language called JavaScript.
+
+Since programming is like having a conversation in a foreign language with your computer, sticking to the "grammar rules" — known as the **syntax** — specific to each language is important. For example, spitting out the text "Hello World" is different in each language. Let's look at a few examples:
 
 <http://en.wikipedia.org/wiki/List_of_Hello_world_program_examples>
 
@@ -42,13 +55,13 @@ The role of a programmer is to think of a solution to a real-world problem and b
 
 ##Think Like A Computer
 
-Learning a new programming language is a lot like learning a new spoken language - there are new words and grammar rules to learn, and the best way to learn is by practicing speaking that language.  
+As we've already discussed, learning a new programming language is a lot like learning a new spoken language - there are new words and grammar rules to learn, and the best way to learn is by practicing speaking that language.  
 
 It also helps to try and "think like a computer."  Our spoken language vocabulary is very rich in comparison to most programming language. We have to be much more explicit and break down instructions into very small steps when speaking in a limited language.
 
 **Let's try it together.** 
 
-Imagine an alien - of average human intelligence but only very basic English vocabulary - has landed in the classroom. How would you give this alien instructions for getting to the washrooms?  
+Imagine an alien - of average human intelligence but **only very basic English vocabulary** - has landed in the classroom. How would you give this alien instructions for getting to the washrooms?  
 
 Tell them it's "just down the hall"? Wait. What if they don't know what "hall" means?
 

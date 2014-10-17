@@ -30,6 +30,8 @@ For Windows, open the application called **Powershell**:
 
 * Start -> Search programs and files -> type "powershell" and hit enter
 
+**A great alternative for Windows computers is [http://bliker.github.io/cmder/](http://bliker.github.io/cmder/). This app will provide us with more abilities system wide when we move into other programs and toolsets.**
+
 What you should see is a relatively blank window. Terminal (Mac) has a white background and the Powershell (Windows) has a blue/black background, by default.
 
 **Terminal (Mac)**  

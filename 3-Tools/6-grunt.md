@@ -6,8 +6,6 @@ topic: tools
 
 #Grunt
 
-![grunt logo](https://pbs.twimg.com/profile_images/2563508262/falgg2jybmhgk16y62lr.png)
-
 ##What the heck is it?
 Grunt is a taskrunner tool that can be modified to your needs. Need to compile Sass, shrink images, ensure compliance across all devices? Use Grunt.
 
@@ -56,43 +54,50 @@ This file is used by npm to store metadata for projects published as npm modules
 This file is used to configure or define tasks and load Grunt plugins.
 
 
-##How to start from scratch and add new plugins
+##How to use Grunt while starting from scratch
 
 1. In your terminal, navigate to your project folder and then run the `npm init` command.
+
 2. Via the terminal prompt, give your Grunt Project a name, a version, etc, and anything else needed. If you would like to use the defaults, simply press enter at each question.
-3. Install Grunt within this project by running the command `npm install grunt --save-dev`
-4. Within your Gruntfile.js, you'll see the following code
 
-    module.exports = function(grunt) {
+3. Install Grunt within this project by running the command `npm install grunt --save-dev`. This will create a folder called **node_modules** in the same directory. This folder holds all the information needed to run the plugins. All other plugins installed will have their dependencies installed to this folder.
 
-        // Project configuration.
-        grunt.initConfig({
-          pkg: grunt.file.readJSON('package.json'),
-        });
+4. Create a file called ``Gruntfile.js``, insert the following code. **Note the capitalization of the filename**
 
-        // Default task(s).
-        grunt.registerTask('default', []);
 
-    };
+        module.exports = function(grunt) {
+
+                // Project configuration.
+                grunt.initConfig({
+                    pkg: grunt.file.readJSON('package.json'),
+                });
+
+                // Default task(s).
+                grunt.registerTask('default', []);
+
+        };
+
 5. Install new plugins using the `npm install pluginName --save-dev` command. This will download the file and add it to your package.json file.
-6. Add the task and define it's action within your Gruntfile.js. The following example is using the Grunt Sass task.
+
+6. Add the task and define it's action within your Gruntfile.js. The following example is using the Grunt Sass task which has documentation for installing found [here](https://github.com/sindresorhus/grunt-sass).
 
 
-          module.exports = function(grunt) {
+        module.exports = function(grunt) {
+
                 // Project configuration.
                 grunt.initConfig({
                     pkg: grunt.file.readJSON('package.json'),
                     // Set up configuration options
                     sass: {
-                        dist: {
-                            options: {
-                                includePaths: ['imports/are/here/'],
-                                outputStyle: 'nested'
-                            },
-                            files: {
-                                'main.css': 'main.scss'
+                            dist: {
+                                    options: {
+                                            includePaths: ['imports/are/here/'],
+                                            outputStyle: 'nested'
+                                    },
+                                    files: {
+                                            'main.css': 'main.scss'
+                                    }
                             }
-                        }
                     }
                 });
 
@@ -102,7 +107,7 @@ This file is used to configure or define tasks and load Grunt plugins.
                 // Define Tasks.
                 grunt.registerTask('default', ['sass']);
 
-            };
+        };
 
 7. Run `grunt` in your terminal!
 
@@ -115,25 +120,14 @@ This file is used to configure or define tasks and load Grunt plugins.
 
 By default the `grunt.registerTask('default', []);` portion of the Gruntfile.js is where you list the tasks that want run and in what order they should be run in. However, you can group tasks into relative groups eg Autoprefixer and UnCSS which will only run when you define a task that includes them.
 
-  grunt.registerTask('clean', ['autoprefixer', 'uncss']);
+    grunt.registerTask('clean', ['autoprefixer', 'uncss']);
+
+##Important Notes
+When committing a project to Github or another Version Control tool, remove the node_modules from the commit. This file can be huge, and by simply running `npm install`, it will read from `package.json`, create the node_modules folder and download all the dependencies.
 
 ##Recommended Grunt Tasks
 As always, read the documentation on how to use the plugins
 
-###JS Hint 
-
-[https://github.com/gruntjs/grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
-
-JSHint is a popular web developer tool that scans your JavaScript code and makes suggestions on how to improve with best practices. eg. using `===` instead of `==`, including semi-colons. It'll also catch syntax errors.  
-
-###Autoprefixer 
-
-[https://github.com/nDmitry/grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
-
-Autoprefixer is a great tool that will turn simple un-vendor-prefixed CSS (eg. `transform`) into cross-browser compatible prefixed code! 
-
-###SVG Inject 
-
-[https://github.com/PencilScoop/grunt-svginject](https://github.com/PencilScoop/grunt-svginject)
-
-SVG inject allows you to catalog SVG icons in a separate JS file so you can keep your HTML lean and squeaky clean.
+- Autoprefixer [https://github.com/nDmitry/grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)
+- SVG Inject [https://github.com/PencilScoop/grunt-svginject](https://github.com/PencilScoop/grunt-svginject)
+- Jade [https://github.com/gruntjs/grunt-contrib-jade](https://github.com/gruntjs/grunt-contrib-jade)

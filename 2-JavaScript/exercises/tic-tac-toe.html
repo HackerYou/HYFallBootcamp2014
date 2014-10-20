@@ -93,45 +93,53 @@
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
-		/* 1. create an empty app object named ticTacToeApp */
+		/* 1. Let's start with an empty app object named ticTacToeApp */
 
-		/* 2. add a new variable for the current player to your app
+		var ticTacToeApp = {}; 
+
+
+		/* PROPERTIES */
+		/* 2. In a game of Tic Tac Toe, we need to be able to track which player's turn it currently is. Add a new variable for the current player to your app
 		and give it a value of "X", the starting player */
 
-		/* 3a. create an init function. */
 
-
-		/* 3b. cache some jQuery selectors inside your init function,
+		/* FUNCTIONS */
+		/* 3. We'll need a way to start the game. Create an init function within ticTacToeApp. */
+		
+		/* 3a. Let's keep track of the different parts of the board we'll need to interact by adding a jQuery selector cache or two inside your init function.
 			eg. ticTacToeApp.$squares = $('#grid').find('.square');
-
-
-		/* 3c. Create two click handlers - one for the squares and one
+			*/
+		/* 3b. Create two click handlers - one for the squares and one
 		  for the clear button, also inside your init function.
-		  Leave them empty for now.
+		  We can leave them empty for now — we'll fill them in later on. */
 
 
 		/* 4. Think of all the small bits of functionality your
-		 app might need to do and create EMPTY functions for them.
-		 We'll fill in the details later.
+		 app might need to do and create functions for them. Again, we'll fill in the details later.
 
 		 For example, you'll probably need a function that switches the
 		 active player from "X" to "O" and vice versa when a turn is done.
-		 We've added that one for you below. */
+		 We've added that one for you below.
+
+		 What other things have to happen during a game? 
+		  */
 
 		 ticTacToeApp.switchPlayer = function(){
 			//switch the active player
 		 };
 
-		/* 5. Call your init function within a jQuery doc ready*/
-
-		/* 6. Go back to all your empty functions and start filling
+		 /* 5. Go back to all your empty functions and start filling
 		 in the details for each one - work on one piece of functionality
 		 at a time.  Some functions will call other functions or reference
 		 other variables in your app. You can also fill in the click
 		 handlers in your init function to each call a single function. */
 
 
-		/* HINT: the logic for checking if a player has won is a
+		/* 6. Don't forget to call your init function within a jQuery doc ready! */
+
+		
+
+		/* One more thing: The logic for checking if a player has won is a
 		 little tricky so we've written that app function for you already.
 		 You'll just need to call it in the appropriate place.
 		 Make sure you have a `ticTacToeApp.$squares` variable. */

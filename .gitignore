@@ -1,8 +1,0 @@
-Icon
-.DS_Store
-*.sublime-project
-*.sublime-workspace
-.bundle
-.env
-vendor
-_site

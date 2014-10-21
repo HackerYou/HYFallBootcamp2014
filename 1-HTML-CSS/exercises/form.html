@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<title>CSS Forms</title>
+		<style type="text/css">
+			/* Box model fix */
+			* { 
+				-moz-box-sizing: border-box; 
+				-webkit-box-sizing: border-box; 
+				box-sizing: border-box; 
+			}
+			body {
+				background:black url(http://a0.twimg.com/a/1350417493/t1/img/front_page/city-balcony@2x.jpg) top no-repeat;
+				background-size: cover;
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="login.php" class="login">
+			<input type="text" name="username" class="username" placeholder="Username or email">
+			<input type="password" name="userpass" class="userpass" placeholder="Password">
+			<input type="submit" value="Sign in" class="submitButton">
+			<label for="rememberPassword">Remember Me</label>
+			<input type="checkbox" name="rememberPasword">
+			<a href="#" class="forgot">&bull; Forgot Password?</a>
+		</form>
+	</body>
+</html>

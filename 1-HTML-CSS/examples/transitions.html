@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animations</title>
+</head>
+<body>
+  <div class="square"></div>
+
+  <style>
+
+    .square {
+      /* Set up the normal state */
+      display: block;
+      width:350px;
+      height:350px;
+      /* apply the animation */
+      -webkit-animation:box 3s linear infinite;
+      -webkit-transition:all 1s;
+      margin: 200px auto;
+    }
+
+    @-webkit-keyframes box {
+      0% {
+        -webkit-transform:scale(0.2) rotate(0deg);
+        background:#41A9F0;
+      }
+      50% {
+       -webkit-transform:scale(2) rotate(180deg);
+       border-radius: 50%;
+       background:#5ABE8A;
+
+      }
+      100% {
+        -webkit-transform:scale(0.2) rotate(360deg);
+        background:#41A9F0;
+      }
+    }
+  </style>
+</body>
+</html>

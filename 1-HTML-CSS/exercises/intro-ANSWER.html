@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Intro to CSS</title>
+		<style>
+			.wrapper {
+				width:80%;
+				margin:20px;
+				padding:20px;
+				background:#efefef;
+				font-family: sans-serif;
+				font-size:20px;
+				line-height: 1.5;
+				overflow: hidden;
+			}
+			
+			.featured {
+				font-size:30px;
+			}
+
+			img.puppy {
+				float:left;
+				margin-right: 20px;
+				border:2px solid black;
+				padding:10px;
+				background:white;
+			}
+
+			.alert {
+				padding:10px;
+				background:#FAFFD5;
+				border:1px solid #C9C935;
+			}
+
+			.alert.success {
+				background:#D3F0D3;
+				border:1px solid green;
+			}
+			.alert.warning {
+				background:#FFD5D5;
+				border:1px solid red;
+
+			}
+
+			.button {
+				padding:10px 15px;
+				border:1px solid #ccc;
+				text-decoration: none;
+				background:#FFB800;
+				color:white;
+			}
+
+			.button.rounded {
+				border-radius: 10px;
+			}
+
+			.button.large {
+				font-size:35px;
+			}
+
+			.button.green {
+				background:green;
+			}
+
+			ul.nav {
+				list-style:none;
+				clear:both;
+				float:left;
+				width: 100%;
+				padding:0;
+				background:white;
+				text-align: center;
+			}
+			ul.nav li {
+				display: inline;
+			}
+			ul.nav li a {
+				padding:10px;
+				float:left;
+				text-decoration: none;
+				border-right:1px solid black;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Add class of wrapper -->
+		<div class="wrapper">
+			<!-- Add class of nav -->
+			<ul class="nav">
+				<li><a href="http://hackeryou.com">Home</a></li>
+				<li><a href="http://hackeryou.com">About</a></li>
+				<li><a href="http://hackeryou.com">Pictures</a></li>
+				<li><a href="http://hackeryou.com">Directions</a></li>
+				<li><a href="http://hackeryou.com">Portfolio</a></li>
+			</ul>
+
+			<!-- Add class of featured -->
+			<p class="featured">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum assumenda vitae quis molestiae labore sint iusto rerum ipsa aliquid accusamus suscipit itaque nesciunt voluptatem recusandae quia in eaque natus!</p>
+			<!-- Add a class of puppy to the image -->
+			<p><img class="puppy" src="http://placedog.com/200/200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum assumenda vitae quis molestiae labore sint iusto rerum ipsa aliquid accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum assumenda vitae quis molestiae labore sint iusto rerum ipsa aliquid accusamus suscipit itaque nesciunt voluptatem recusandae quia in eaque natus!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum assumenda vitae quis molestiae labore sint iusto rerum ipsa aliquid accusamus suscipit itaque nesciunt voluptatem recusandae quia in eaque natus!</p>
+			
+
+			<!-- Add alert class -->
+			<p class="alert">You are about to learn about adding classes to elements</p>
+
+			<!-- Add alert and success -->
+			<p class="alert success">You are successfully signed up for HackerYou!</p>
+
+			<!-- Add alert and warning -->
+			<p class="alert warning">Warning: You will becoming addicted to making websites</p>
+
+			<!-- Add button -->
+			<a class="button" href="http://hackeryou.com">Buy it now!</a>
+
+			<!-- Add button and rounded -->
+			<a class="button rounded" href="http://hackeryou.com">Buy it now!</a>
+			
+			<!-- Add button and large -->
+			<a class="button large" href="http://hackeryou.com">Buy it now!</a>
+
+			<!-- Add button and green -->
+			<a class="button green" href="http://hackeryou.com">Buy it now!</a>
+		</div>
+	</body>
+</html>
+

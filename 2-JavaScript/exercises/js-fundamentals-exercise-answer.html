@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Coin Flippin' Machine</title>
+</head>
+<body>
+  <script>
+    /* A coin flip is a 50/50 chance that you will get heads or tails.
+
+    If you flip a coin 100 times, how many of them will be heads and how many will be tails? Sometimes you get 55/45, maybe even 60/40.
+
+    Let's make a coin flipping machine in JavaScript that flips a virtual "coin" 100 times and tells us the results. Way faster than doing this by hand!
+
+    So, to approach it from a programming perspective: */
+
+    // 1. Write a flip() function that flips a coin and returns heads or tails based on a random number.
+
+    function flip(){
+
+      //generate a random integer that is either 0 or 1
+      //see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+      var flip = Math.floor(Math.random()*2);;
+
+      //check to see if our flip is a 1 or a 0, then return "heads" for 0 and "tails" for 1
+      if (flip === 0){
+        return "heads";
+      } else {
+        return "tails";
+      }
+    }
+
+    // 2. Write a function flipMany() that calls flip() 100 times.  It should record a running tally of heads and tails. Return an object of the final results. ie. {"heads": 20, "tails": 80}
+
+    function flipMany(){
+
+      //start our tally for the number of heads and the number of tails at 0
+      var numHeads = 0;
+      var numTails = 0;
+
+      //"flip" 100 times by calling running a for loop from 0 to 99
+      for (var i = 0; i < 100; i++) {
+
+        //get the result of a single flip and hold it in a new variable
+        var result = flip();
+
+        //add to the heads tally if the result is "heads", otherwise add to the tails tally
+        if (result === "heads"){
+          numHeads++;
+        } else {
+          numTails++;
+        }
+      }
+
+      // after the loop is finished, return an object summarizing the results
+      return {
+        "heads" : numHeads,
+        "tails" : numTails
+      }
+    }
+
+    // 3. Call you flipMany() function and use document.write() to print a sentence summarizing the results.
+    // HINT: document.write() is way to print info from JavaScript into the page HTML. It's not used in best practice, but until we learn some more, we can use it to quickly display info.  Look it up if you're not sure how it works.
+
+    //call our flipMany() function and store the results object in a variable
+    var results = flipMany();
+
+    //print to the page using document.write and concatenation.
+    document.write("Out of 100 coin flips, " + results.heads + " were heads and " + results.tails + " were tails.");
+
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+

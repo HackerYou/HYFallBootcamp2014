@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Playground</title>
+
+  <style>
+  /*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+
+    /*Layout*/
+
+    .header{
+      padding: 50px;
+      background: black;
+      background-image: url('http://lorempixel.com/1000/300');
+      background-size: cover;
+      color: white;
+      /*text-align: center; */
+    }
+    .header h1{
+      background: yellow;
+      color: black;
+      display: inline-block; 
+      padding: 5px 60px; 
+    }
+
+    .main{
+      padding: 20px; 
+      max-width: 800px; 
+      margin: 0px auto;
+    }
+
+    .gallery{
+      margin: 20px;
+    }
+    .gallery img{
+      width: 24%;
+    }
+
+    .footer{
+      padding: 10px;
+      background: #5A7989;
+      color: white; 
+    }
+
+    /*UTILS*/
+    .highlight {
+      background: yellow;
+    }
+
+    .active{
+    }
+    .disabled{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1 id="pagetitle">jQuery Playground</h1>
+  </div>
+
+  <div class="main">
+    <div class="text-container tc1"> 
+
+      <h2>Trying using the various elements on this page as a playground to do DOM manipulations with.</h2>
+
+      <h3>Here are some ideas of things you should try:</h3>
+
+      <ul>
+        <li>Changing the content of an element</li>
+        <li>Adding or removing elements</li>
+        <li>Changing the background of an element</li>
+        <li>Adding or removing classes to an element</li>
+        <li>Changing the size of an element</li>
+        <li>Adding event listeners on objects, and having them react appropriately</li>
+        <li>Playing with forms, and their behaviours. (Try manipulating form contents with code!)</li>
+      </ul>
+      <p class="intro">Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, velit, rerum, aspernatur reiciendis cumque incidunt itaque at autem ullam earum rem asperiores. Sequi distinctio temporibus est provident veniam. Ab, iste.</p>
+
+      <p class="">Paragraph 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, repudiandae, dolorum neque veritatis eos reprehenderit consequuntur velit dolores necessitatibus error nulla rerum nam vel quos quidem expedita molestias perspiciatis perferendis.</p>
+
+      <p class="">
+        <img src="http://lorempixel.com/500/200">        
+      </p>
+
+      <p class="">Lorem ipsum Exercitation proident consequat do incididunt minim sint elit nulla sint laborum mollit sed sed sed velit elit laboris culpa cupidatat ad elit in consequat nostrud elit incididunt irure aliqua culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, velit, rerum, aspernatur reiciendis cumque incidunt itaque at autem ullam earum rem asperiores. Sequi distinctio temporibus est provident veniam. Ab, iste.</p>
+
+      <p class="">Lorem ipsum Incididunt officia amet adipisicing velit ex Duis aliqua fugiat ullamco velit occaecat ex eiusmod velit non eiusmod ullamco est occaecat exercitation consequat nulla nulla anim officia ullamco ad culpa sit est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, repudiandae, dolorum neque veritatis eos reprehenderit consequuntur velit dolores necessitatibus error nulla rerum nam vel quos quidem expedita molestias perspiciatis perferendis.</p>
+
+      <p class="">Lorem ipsum Pariatur dolore nostrud magna dolor aute dolor consequat Ut do incididunt qui reprehenderit enim minim est laborum commodo consectetur officia voluptate commodo ea dolor id cillum velit culpa quis in cillum velit reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, repudiandae, dolorum neque veritatis eos reprehenderit consequuntur velit dolores necessitatibus error nulla rerum nam vel quos quidem expedita molestias perspiciatis perferendis.</p>      
+
+    </div> <!-- /text-container -->
+
+    <div class="form">
+      <form method="post" action="">  
+      Name: <input type="text" name="name" value="">
+      <span class="error"></span>
+      <br><br>
+      E-mail: <input type="text" name="email" value="">
+      <span class="error"></span>
+      <br><br>
+      Website: <input type="text" name="website" value="">
+      <span class="error"></span>
+      <br><br>
+      Comment: <textarea name="comment"></textarea>
+      <br><br>
+      Here are some buttoons: <br>
+      <button class="button_one">Button One</button>
+      <button class="button_two">Button Two</button>
+      <button class="button_three">Button Three</button>
+      <br><br>
+      Fave food: 
+      <input type="radio" name="food_choice" value="bacon" id="bacon"><label for="bacon">Bacon</label>
+      <input type="radio" name="food_choice" value="cayenne" id="cayenne"><label for="cayenne">Cayenne</label>
+      <input type="radio" name="food_choice" value="chocolate" id="chocolate"><label for="chocolate">Chocolate</label>
+      <span class="error"></span>
+      <br><br>
+      <input type="submit" name="submit" value="Submit">  
+      </form>
+
+    </div>
+
+    <div class="text-container tc2">
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, velit, rerum, aspernatur reiciendis cumque incidunt itaque at autem ullam earum rem asperiores. Sequi distinctio temporibus est provident veniam. Ab, iste.</p>
+
+    </div> <!-- /text-container --> 
+
+  
+
+    <div class="gallery">
+
+      <h4>Gallery</h4>
+      <img src="http://lorempixel.com/200/200?1">
+      <img src="http://lorempixel.com/200/200?2">
+      <img src="http://lorempixel.com/200/200?3">
+      <img src="http://lorempixel.com/200/200?4">
+      <img src="http://lorempixel.com/200/200?5">
+      <img src="http://lorempixel.com/200/200?6">
+      <img src="http://lorempixel.com/200/200?7">
+      <img src="http://lorempixel.com/200/200?8">
+    </div> <!-- /gallery -->
+
+    <div class="text-container tc3">
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, velit, rerum, aspernatur reiciendis cumque incidunt itaque at autem ullam earum rem asperiores. Sequi distinctio temporibus est provident veniam. Ab, iste.</p>
+
+    </div> <!-- /text-container --> 
+
+
+
+
+  </div> <!-- /main -->
+
+  <div class="footer">
+    <p class="">Footer aspernatur reiciendis cumque incidunt itaque.</p>
+
+  </div>
+
+<!-- Include jQuery below this line -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</body>
+</html>

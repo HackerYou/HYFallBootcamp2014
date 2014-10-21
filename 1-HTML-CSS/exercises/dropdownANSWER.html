@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<title>CSS List Styles</title>
+		<style type="text/css">
+			ul.nav {
+				background:#BADA55;
+			}
+			ul.nav li {
+				display:inline;
+				position: relative;
+			}
+			ul.nav li ul {
+				background:#00E0FF;
+				color:white;
+				display:none;
+				position: absolute;
+			}
+			ul.nav li:hover ul {
+				display:block;				
+			}
+			ul.nav li ul li {
+				display:list-item; /* Set the sub navs list items back */
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About &#x25BC;</a>
+				<ul class="sub-menu">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+			<li><a href="work.html">Work &#x25BC;</a>
+				<ul class="sub-menu">
+					<li><a href="work.html">Work</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</body>
+</html>
